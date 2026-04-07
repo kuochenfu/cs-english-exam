@@ -1,0 +1,63 @@
+{
+  "title": "Listening Comprehension",
+  "intro": "Listen to a short conversation, then answer the questions. You can replay the dialogue as many times as you want.",
+  "dialogues": [
+    {
+      "id": "library",
+      "title": "At the Library",
+      "lines": [
+        { "speaker": "Anna", "text": "Hi Mr. Lee, I'm looking for a book about volcanoes for my science project." },
+        { "speaker": "Mr. Lee", "text": "Sure, Anna. Science books are on the third row by the window. Do you need a picture book or something more detailed?" },
+        { "speaker": "Anna", "text": "Something more detailed, please. My project is due on Friday and I need real facts." },
+        { "speaker": "Mr. Lee", "text": "Then I'd recommend 'Volcanoes of the World.' It has diagrams and a glossary at the back." },
+        { "speaker": "Anna", "text": "Thank you! Can I also borrow a book about earthquakes? My friend Mia is doing earthquakes." },
+        { "speaker": "Mr. Lee", "text": "Of course. You can borrow up to four books with your library card." }
+      ],
+      "questions": [
+        { "q": "Why did Anna go to the library?", "choices": ["To return a book", "To find a book for a science project", "To meet her friend Mia", "To get a new library card"], "answer": 1 },
+        { "q": "When is Anna's project due?", "choices": ["Monday", "Wednesday", "Friday", "Sunday"], "answer": 2 },
+        { "q": "Which book did Mr. Lee recommend?", "choices": ["Volcanoes of the World", "Earthquakes Today", "Science for Kids", "The Big Book of Rocks"], "answer": 0 },
+        { "q": "How many books can Anna borrow with her library card?", "choices": ["Two", "Three", "Four", "Five"], "answer": 2 },
+        { "q": "Who is Mia?", "choices": ["Anna's sister", "Anna's teacher", "Anna's friend doing a project on earthquakes", "The librarian"], "answer": 2 }
+      ]
+    },
+    {
+      "id": "weekend",
+      "title": "Weekend Plans",
+      "lines": [
+        { "speaker": "Ben", "text": "Hey Lily, do you want to go to the park on Saturday? My dad is taking me to fly a kite." },
+        { "speaker": "Lily", "text": "I'd love to, but I have piano practice on Saturday morning. Can we go in the afternoon?" },
+        { "speaker": "Ben", "text": "Sure! How about two o'clock? My dad said we can also bring sandwiches and have a picnic." },
+        { "speaker": "Lily", "text": "That sounds perfect. I'll bring lemonade and some cookies my mom baked." },
+        { "speaker": "Ben", "text": "Great! Don't forget a jacket. The weather report said it might be windy." },
+        { "speaker": "Lily", "text": "Good idea. Windy is perfect for kites, but I get cold easily." }
+      ],
+      "questions": [
+        { "q": "What does Ben want to do at the park?", "choices": ["Ride bikes", "Fly a kite", "Play soccer", "Have a swimming lesson"], "answer": 1 },
+        { "q": "Why can't Lily go in the morning?", "choices": ["She has to study", "She has piano practice", "She has to babysit", "She isn't allowed"], "answer": 1 },
+        { "q": "What time will they meet?", "choices": ["10 AM", "12 PM", "2 PM", "4 PM"], "answer": 2 },
+        { "q": "What will Lily bring?", "choices": ["Sandwiches and juice", "Lemonade and cookies", "A kite and a blanket", "Nothing"], "answer": 1 },
+        { "q": "Why does Ben tell Lily to bring a jacket?", "choices": ["It might rain", "It might be windy", "It will snow", "The park is cold inside"], "answer": 1 }
+      ]
+    },
+    {
+      "id": "lost_dog",
+      "title": "The Lost Dog",
+      "lines": [
+        { "speaker": "Sam", "text": "Excuse me, have you seen a small brown dog? His name is Cookie and I've been looking for him for an hour." },
+        { "speaker": "Mrs. Park", "text": "Oh no, I haven't, but I can help you look. Does he have a collar?" },
+        { "speaker": "Sam", "text": "Yes, a red collar with a silver tag. The tag has my phone number on it." },
+        { "speaker": "Mrs. Park", "text": "That's smart. Where did you last see him?" },
+        { "speaker": "Sam", "text": "Near the playground. He was chasing a squirrel and then he ran behind the trees." },
+        { "speaker": "Mrs. Park", "text": "Let's check the trees first, then ask the people at the ice cream shop. They notice everything that goes by." }
+      ],
+      "questions": [
+        { "q": "What is the problem in this conversation?", "choices": ["Sam is hungry", "Sam can't find his dog", "Mrs. Park is lost", "The squirrel is hurt"], "answer": 1 },
+        { "q": "What does Cookie look like?", "choices": ["A big black dog", "A small brown dog", "A medium gray dog", "A tiny white puppy"], "answer": 1 },
+        { "q": "What is on Cookie's collar?", "choices": ["A bell", "A silver tag with a phone number", "A name tag only", "Nothing"], "answer": 1 },
+        { "q": "Where did Sam last see Cookie?", "choices": ["At the ice cream shop", "Near the playground", "In his backyard", "At school"], "answer": 1 },
+        { "q": "Why does Mrs. Park want to ask the people at the ice cream shop?", "choices": ["They have free dog treats", "They notice everything that goes by", "They are Sam's friends", "They have a phone"], "answer": 1 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "lists": [
+    {
+      "id": "w1_spelling",
+      "title": "Module 6 Week 1 — Spelling",
+      "words": [
+        { "word": "ache", "sentence": "My head started to ache after I read for too long." },
+        { "word": "attack", "sentence": "The lion got ready to attack its prey." },
+        { "word": "attic", "sentence": "We found old toys in the dusty attic." },
+        { "word": "equal", "sentence": "Cut the pizza into equal slices for everyone." },
+        { "word": "earthquake", "sentence": "The earthquake made the dishes rattle on the shelf." },
+        { "word": "pocket", "sentence": "I put the coin into my jacket pocket." },
+        { "word": "public", "sentence": "We met at the public library after school." },
+        { "word": "question", "sentence": "Raise your hand if you have a question." },
+        { "word": "risky", "sentence": "Climbing without a rope is too risky." },
+        { "word": "stomach", "sentence": "My stomach growled because I was hungry." }
+      ]
+    },
+    {
+      "id": "w2_spelling",
+      "title": "Module 6 Week 2 — Spelling (final /j/ and /s/)",
+      "words": [
+        { "word": "bandage", "sentence": "Mom put a bandage on my scraped knee." },
+        { "word": "glance", "sentence": "I took a quick glance at the clock." },
+        { "word": "knowledge", "sentence": "Reading books gives you a lot of knowledge." },
+        { "word": "marriage", "sentence": "We danced at my aunt's marriage celebration." },
+        { "word": "message", "sentence": "I left a message on Grandma's phone." },
+        { "word": "misjudge", "sentence": "Don't misjudge a book by its cover." },
+        { "word": "notice", "sentence": "Did you notice the new sign by the door?" },
+        { "word": "package", "sentence": "A big package arrived for me today." },
+        { "word": "practice", "sentence": "I have soccer practice after school." },
+        { "word": "science", "sentence": "Science class is my favorite subject." }
+      ]
+    },
+    {
+      "id": "w3_spelling",
+      "title": "Module 6 Week 3 — Spelling (prefixes re-, un-, dis-)",
+      "words": [
+        { "word": "disagree", "sentence": "My friend and I sometimes disagree about games." },
+        { "word": "disobey", "sentence": "It is not safe to disobey the crossing guard." },
+        { "word": "displeased", "sentence": "The coach looked displeased when we lost the game." },
+        { "word": "rebuild", "sentence": "After the storm, we had to rebuild the treehouse." },
+        { "word": "redo", "sentence": "I had to redo my homework because I lost it." },
+        { "word": "refresh", "sentence": "A cool drink will refresh you on a hot day." },
+        { "word": "undaunted", "sentence": "She was undaunted by the long climb up the hill." },
+        { "word": "unpaid", "sentence": "The library bill is still unpaid." },
+        { "word": "unplanned", "sentence": "Our trip to the park was unplanned but fun." }
+      ]
+    },
+    {
+      "id": "phonics_k_ng_kw",
+      "title": "Phonics — /k/, /ng/, /kw/",
+      "sortGame": true,
+      "groups": {
+        "/k/": ["topic", "chicken", "school", "chorus", "luck", "hectic", "broken", "blanket", "picnic", "pack", "rocket", "tricky", "static", "stick", "clock", "character"],
+        "/ng/ (nk)": ["skunk", "think", "risk", "tank", "thankful"],
+        "/kw/ (qu)": ["quart", "queen", "sequence", "qualify"]
+      }
+    },
+    {
+      "id": "phonics_final_j_s",
+      "title": "Phonics — Final /j/ and /s/",
+      "sortGame": true,
+      "groups": {
+        "Final /j/ (ge / dge)": ["badge", "storage", "cage", "knowledge", "postage", "passage", "bridge", "cabbage", "strange", "arrange", "judge", "image"],
+        "Final /s/ (ce / ss / s)": ["prince", "once", "presence", "ice", "France", "grass", "slice", "retrace", "sequence", "sauce", "twice", "necklace", "lettuce"]
+      }
+    },
+    {
+      "id": "phonics_prefixes",
+      "title": "Phonics — Prefixes re-, un-, dis-",
+      "sortGame": true,
+      "groups": {
+        "re-": ["refill", "repaid", "recount", "repaint", "reread", "resell", "readmit", "regrow"],
+        "un-": ["unsafe", "untidy", "untrue", "unlock", "unfold", "unhappy", "unknown", "unclasp", "untie"],
+        "dis-": ["dislike", "distaste", "disagree", "discharge", "disbelief"]
+      }
+    }
+  ]
+}

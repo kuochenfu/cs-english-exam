@@ -1,0 +1,178 @@
+:root {
+  --bg: #fff8ec;
+  --card: #ffffff;
+  --primary: #ff8b3d;
+  --primary-dark: #e36a16;
+  --good: #2bb673;
+  --bad: #e54848;
+  --text: #2d2a26;
+  --muted: #7a7770;
+  --border: #f0e2c8;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, "Comic Sans MS", "Helvetica Neue", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+header {
+  text-align: center;
+  padding: 24px 16px 8px;
+}
+header h1 { margin: 0; font-size: 2rem; color: var(--primary-dark); }
+.subtitle { margin: 4px 0 0; color: var(--muted); }
+
+main {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+footer {
+  text-align: center;
+  padding: 24px;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+  border-radius: 14px;
+  padding: 14px 22px;
+  background: var(--primary);
+  color: white;
+  font-weight: bold;
+  margin: 6px;
+  transition: transform 0.05s, background 0.15s;
+}
+button:hover { background: var(--primary-dark); }
+button:active { transform: scale(0.97); }
+button.ghost {
+  background: transparent;
+  color: var(--muted);
+  border: 2px solid var(--border);
+}
+button.ghost:hover { background: var(--border); color: var(--text); }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+.card {
+  background: var(--card);
+  border: 2px solid var(--border);
+  border-radius: 18px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.card:hover { transform: translateY(-3px); box-shadow: 0 8px 18px rgba(0,0,0,0.08); }
+.card .icon { font-size: 3rem; }
+.card h2 { margin: 8px 0 4px; font-size: 1.3rem; }
+.card .progress { color: var(--muted); font-size: 0.9rem; }
+
+.panel {
+  background: var(--card);
+  border: 2px solid var(--border);
+  border-radius: 18px;
+  padding: 24px;
+  margin-top: 16px;
+}
+.panel h2 { margin-top: 0; color: var(--primary-dark); }
+
+.question {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+}
+.choices {
+  display: grid;
+  gap: 10px;
+}
+.choices button {
+  background: white;
+  color: var(--text);
+  border: 2px solid var(--border);
+  text-align: left;
+  padding: 14px 18px;
+}
+.choices button:hover { background: #fff3df; border-color: var(--primary); }
+.choices button.correct { background: #d9f4e6; border-color: var(--good); color: var(--good); }
+.choices button.wrong { background: #fbdcdc; border-color: var(--bad); color: var(--bad); }
+.choices button:disabled { cursor: default; }
+
+.feedback { margin-top: 12px; font-weight: bold; }
+.feedback.good { color: var(--good); }
+.feedback.bad { color: var(--bad); }
+
+.progress-bar {
+  height: 10px;
+  background: var(--border);
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 8px 0 16px;
+}
+.progress-bar > div {
+  height: 100%;
+  background: var(--primary);
+  transition: width 0.3s;
+}
+
+.passage {
+  background: #fffaf0;
+  border-left: 6px solid var(--primary);
+  padding: 14px 18px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  white-space: pre-wrap;
+}
+
+input[type=text] {
+  font: inherit;
+  padding: 12px 16px;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 360px;
+}
+input[type=text]:focus { outline: none; border-color: var(--primary); }
+
+.tag {
+  display: inline-block;
+  background: var(--border);
+  color: var(--muted);
+  border-radius: 12px;
+  padding: 2px 10px;
+  font-size: 0.8rem;
+  margin-right: 4px;
+}
+
+.sort-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0; }
+.sort-word {
+  background: white;
+  border: 2px solid var(--border);
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: grab;
+  user-select: none;
+}
+.sort-word.placed { opacity: 0.5; cursor: default; }
+.sort-bin {
+  border: 2px dashed var(--border);
+  border-radius: 12px;
+  padding: 12px;
+  min-height: 60px;
+  margin-bottom: 10px;
+}
+.sort-bin h4 { margin: 0 0 8px; }
+
+details { margin: 10px 0; }
+details summary { cursor: pointer; font-weight: bold; padding: 8px 0; }

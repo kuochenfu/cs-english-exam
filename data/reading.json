@@ -1,0 +1,65 @@
+{
+  "skills": {
+    "ideas_support": "Ideas and Support",
+    "text_structure": "Text Structure",
+    "figurative_language": "Figurative Language",
+    "central_idea": "Central Idea",
+    "text_features": "Text and Graphic Features",
+    "summary": "Summary",
+    "theme": "Theme"
+  },
+  "passages": [
+    {
+      "id": "natural_wonders",
+      "title": "Earth's Seven Natural Wonders",
+      "skills": ["central_idea", "text_features", "ideas_support"],
+      "body": "Long ago, people made a list of the most amazing places on Earth and called them the Seven Natural Wonders. These places remind us how powerful and beautiful nature can be.\n\nThe list includes the Grand Canyon in the United States, Mount Everest in Asia, the Great Barrier Reef in Australia, the Northern Lights in the far north, Paricutin Volcano in Mexico, the Harbor of Rio de Janeiro in Brazil, and Victoria Falls in Africa. Each one was chosen because it is huge, rare, or breathtaking.\n\nFor example, Mount Everest is the tallest mountain in the world. Climbers train for years before they try to reach its summit. The Great Barrier Reef is so large that astronauts can see it from space, and it is home to thousands of kinds of fish. The Northern Lights paint the night sky with green and pink waves of light.\n\nThe Seven Natural Wonders show that our planet is full of surprises. They invite us to explore, to protect, and to feel small in the best way.\n\n[Map: locations of the Seven Natural Wonders] [Photo caption: The Great Barrier Reef from above.]",
+      "questions": [
+        { "q": "What is the central idea of this text?", "choices": ["Mount Everest is the tallest mountain.", "The Seven Natural Wonders show how amazing Earth is.", "The Great Barrier Reef has many fish.", "Astronauts can see Earth from space."], "answer": 1, "skill": "central_idea" },
+        { "q": "Which detail SUPPORTS the idea that the wonders are huge or rare?", "choices": ["People made a list long ago.", "Climbers train for years to reach Everest's summit.", "We should protect the planet.", "The list has seven wonders."], "answer": 1, "skill": "ideas_support" },
+        { "q": "What does the [Map: locations of the Seven Natural Wonders] feature help readers do?", "choices": ["Hear how the names sound", "See where the wonders are around the world", "Learn how tall Everest is", "Count the wonders"], "answer": 1, "skill": "text_features" },
+        { "q": "Which sentence is the BEST one-sentence summary?", "choices": ["Mount Everest is in Asia.", "Earth has seven famous natural places that show how powerful nature is.", "The Northern Lights are green and pink.", "Astronauts saw the reef from space."], "answer": 1, "skill": "summary" },
+        { "q": "What is the topic of the text?", "choices": ["Mountain climbing", "The Seven Natural Wonders of Earth", "Australia", "Astronauts"], "answer": 1, "skill": "central_idea" }
+      ]
+    },
+    {
+      "id": "mariana_trench",
+      "title": "Down to the Deepest Place",
+      "skills": ["text_structure", "ideas_support", "summary"],
+      "body": "First, scientists wanted to know what was at the bottom of the ocean. They knew the deepest spot was the Mariana Trench, but no one had ever been there. Next, they had a problem: the water near the bottom pushes down with the weight of an elephant on every fingertip. A normal submarine would be crushed.\n\nSo, engineers built a special submersible with very thick walls and tiny windows. They tested it carefully. Then, in 1960, two explorers climbed inside and rode it almost seven miles down into the trench. The trip took five hours.\n\nWhen they finally landed on the bottom, they were surprised. They expected the trench to be empty. Instead, they saw a small fish swim past their window. Even in the darkest, coldest place on Earth, life had found a way.\n\nFinally, what they learned changed science forever. Today, autonomous robots also visit the trench to take pictures and bring back samples, so we can keep learning about this amazing place.",
+      "questions": [
+        { "q": "How is this text organized?", "choices": ["Compare and contrast", "Sequence (in time order)", "Description only", "Problem and solution only"], "answer": 1, "skill": "text_structure" },
+        { "q": "Which signal words tell you about the text structure?", "choices": ["like, unlike, both", "first, next, then, finally", "for example, such as", "because, so, since"], "answer": 1, "skill": "text_structure" },
+        { "q": "What problem did the engineers have to solve?", "choices": ["The trench was too far away.", "The water pressure would crush a normal submarine.", "Nobody wanted to go.", "The trench had no fish."], "answer": 1, "skill": "ideas_support" },
+        { "q": "Which sentence is the BEST summary?", "choices": ["A fish lives in the trench.", "Scientists built a special submersible to reach the deepest place on Earth and discovered life there.", "The trip took five hours.", "Robots take pictures."], "answer": 1, "skill": "summary" },
+        { "q": "What happened AFTER the explorers landed on the bottom?", "choices": ["They built the submersible.", "They saw a fish swim by.", "They tested the windows.", "They wrote a book first."], "answer": 1, "skill": "text_structure" }
+      ]
+    },
+    {
+      "id": "weird_rocks",
+      "title": "Weird and Wondrous Rocks",
+      "skills": ["figurative_language", "central_idea", "ideas_support"],
+      "body": "Rocks may look quiet and boring, but some rocks are as strange as anything in a story book. The Wave, in Arizona, swirls across the desert like ribbons of orange candy. Giant's Causeway, in Ireland, is a row of stone columns that fit together as neatly as honeycomb. People long ago thought a giant must have built it.\n\nIn Norway, a huge rock called Kjeragbolten is wedged between two cliffs, sitting in the air like a frozen marble. Brave hikers stand on top of it, while the wind whispers around them.\n\nHow did these wonders form? Patient nature is the artist. Wind, water, and ice slowly shape the stone for millions of years. A river can carve a canyon as easily as a knife slices cake — if you give it long enough.\n\nThe next time you pick up a plain pebble, remember: every rock has a long, secret story.",
+      "questions": [
+        { "q": "Which sentence uses a SIMILE?", "choices": ["Rocks may look quiet and boring.", "The Wave swirls across the desert like ribbons of orange candy.", "How did these wonders form?", "Brave hikers stand on top of it."], "answer": 1, "skill": "figurative_language" },
+        { "q": "\"The wind whispered around them\" is an example of —", "choices": ["a metaphor", "personification", "a hyperbole", "an idiom"], "answer": 1, "skill": "figurative_language" },
+        { "q": "What does the author mean by \"Patient nature is the artist\"?", "choices": ["A real artist painted the rocks.", "Nature slowly shapes the rocks like an artist makes art.", "Artists are patient people.", "Rocks are made of paint."], "answer": 1, "skill": "figurative_language" },
+        { "q": "What is the central idea of this text?", "choices": ["Rocks are boring.", "Some rocks around the world are amazing, and nature shaped them slowly.", "Ireland has columns.", "Hikers like cliffs."], "answer": 1, "skill": "central_idea" },
+        { "q": "Which detail SUPPORTS the idea that rocks take a long time to form?", "choices": ["A giant built the columns.", "Wind, water, and ice slowly shape stone for millions of years.", "Hikers stand on Kjeragbolten.", "The Wave is in Arizona."], "answer": 1, "skill": "ideas_support" }
+      ]
+    },
+    {
+      "id": "grand_canyon_trial",
+      "title": "Maya and the Grand Canyon",
+      "skills": ["theme", "summary", "central_idea"],
+      "body": "Maya stared down into the Grand Canyon and her stomach flipped. The trail looked like a tiny brown thread along the cliff. \"I can't do this,\" she whispered. Her older brother, Leo, just smiled. \"Yes you can. One step at a time.\"\n\nThe first hour was the hardest. Maya's legs shook, and twice she sat down and almost cried. Each time, Leo waited. He didn't laugh, and he didn't tell her to hurry. He pointed at lizards on the rocks and at hawks circling far below. Slowly, Maya started to look around instead of straight down.\n\nBy lunchtime, she had walked farther than she ever had in her life. By afternoon, she was the one pointing things out to Leo. When they finally reached the bottom and stood beside the wide green river, Maya laughed out loud.\n\nThat night, in her sleeping bag, she thought about the trail. She had been so afraid at the top. But the canyon hadn't gotten smaller — she had gotten braver. From now on, when something looked too big to do, she would remember: one step at a time.",
+      "questions": [
+        { "q": "What is the THEME of this story?", "choices": ["Hiking is dangerous.", "Big problems can be solved one small step at a time.", "Brothers are annoying.", "Always bring lunch on a hike."], "answer": 1, "skill": "theme" },
+        { "q": "How does Maya CHANGE from the beginning to the end?", "choices": ["She gets more scared.", "She becomes braver and more confident.", "She gets tired and gives up.", "She learns to climb cliffs."], "answer": 1, "skill": "theme" },
+        { "q": "Which is the BEST summary of the story?", "choices": ["Maya saw a lizard and a hawk.", "Maya was afraid to hike the Grand Canyon, but with her brother's patient help she made it to the bottom and felt proud.", "The river at the bottom was green.", "Leo did not laugh at his sister."], "answer": 1, "skill": "summary" },
+        { "q": "What is the central message the author wants us to remember?", "choices": ["Canyons are deep.", "The canyon hadn't gotten smaller — she had gotten braver.", "Hawks circle in the sky.", "Sleeping bags are warm."], "answer": 1, "skill": "central_idea" },
+        { "q": "What did Leo do that helped Maya the most?", "choices": ["He carried her down.", "He waited patiently and pointed out interesting things.", "He told her to go faster.", "He left her alone on the trail."], "answer": 1, "skill": "theme" }
+      ]
+    }
+  ]
+}

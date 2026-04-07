@@ -1,0 +1,26 @@
+{
+  "title": "Grammar — Modal Verbs (My Next Grammar, Lesson 14)",
+  "intro": "Modal verbs are helping verbs like can, could, may, might, must, should, and would. They tell us about ability, permission, possibility, advice, or what we have to do.",
+  "items": [
+    { "q": "I ____ swim very well. I have practiced for years.", "choices": ["can", "must", "should", "might"], "answer": 0, "use": "ability" },
+    { "q": "____ I borrow your pencil, please?", "choices": ["Must", "May", "Would", "Should"], "answer": 1, "use": "permission" },
+    { "q": "It looks cloudy. It ____ rain later.", "choices": ["must", "should", "might", "can"], "answer": 2, "use": "possibility" },
+    { "q": "You ____ wear a helmet when you ride a bike. It's the rule.", "choices": ["might", "could", "must", "may"], "answer": 2, "use": "obligation" },
+    { "q": "You look tired. You ____ go to bed early tonight.", "choices": ["should", "might", "can", "would"], "answer": 0, "use": "advice" },
+    { "q": "When I was little, I ____ climb that tree easily.", "choices": ["can", "could", "must", "should"], "answer": 1, "use": "past ability" },
+    { "q": "____ you like some apple juice?", "choices": ["Must", "Should", "Would", "Can"], "answer": 2, "use": "polite offer" },
+    { "q": "Students ____ not run in the hallway.", "choices": ["might", "must", "could", "would"], "answer": 1, "use": "rule" },
+    { "q": "I'm not sure where Sam is. He ____ be at the library.", "choices": ["must", "should", "might", "can"], "answer": 2, "use": "possibility" },
+    { "q": "You ____ brush your teeth before bed.", "choices": ["should", "might", "could", "would"], "answer": 0, "use": "advice" },
+    { "q": "The baby is only one year old. She ____ talk yet.", "choices": ["must not", "cannot", "should not", "would not"], "answer": 1, "use": "inability" },
+    { "q": "____ you please close the window?", "choices": ["Could", "Must", "Should", "Might"], "answer": 0, "use": "polite request" },
+    { "q": "He is the best player on the team. He ____ practice a lot.", "choices": ["might", "must", "could", "would"], "answer": 1, "use": "logical guess" },
+    { "q": "We ____ go to the park if the weather is nice.", "choices": ["must", "should", "may", "would"], "answer": 2, "use": "possibility" },
+    { "q": "If I had wings, I ____ fly to the moon.", "choices": ["can", "must", "would", "should"], "answer": 2, "use": "imagined situation" },
+    { "q": "You ____ not eat my lunch without asking.", "choices": ["should", "might", "would", "could"], "answer": 0, "use": "advice" },
+    { "q": "Birds ____ build nests with twigs and grass.", "choices": ["should", "must", "can", "would"], "answer": 2, "use": "ability" },
+    { "q": "It's getting dark. We ____ go home now.", "choices": ["might", "should", "could", "may"], "answer": 1, "use": "advice" },
+    { "q": "____ I help you carry that bag?", "choices": ["May", "Must", "Should", "Would"], "answer": 0, "use": "polite offer" },
+    { "q": "She ____ speak three languages: English, Chinese, and Spanish.", "choices": ["must", "should", "might", "can"], "answer": 3, "use": "ability" }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "words": [
+    { "week": 1, "word": "glimpse", "pos": "n", "definition": "a quick look at something", "example": "I caught a glimpse of a deer running into the woods." },
+    { "week": 1, "word": "prehistoric", "pos": "adj", "definition": "from a time long ago, before people wrote things down", "example": "Dinosaurs lived in prehistoric times." },
+    { "week": 1, "word": "remotely", "pos": "adv", "definition": "from far away", "example": "Scientists can control the robot remotely from a computer." },
+    { "week": 1, "word": "summit", "pos": "n", "definition": "the very top of a mountain", "example": "The climbers cheered when they reached the summit." },
+    { "week": 1, "word": "thrive", "pos": "v", "definition": "to grow well and be healthy", "example": "Plants thrive when they get enough sunlight and water." },
+    { "week": 1, "word": "vital", "pos": "adj", "definition": "very important; needed", "example": "Water is vital for all living things." },
+    { "week": 1, "word": "submersible", "pos": "adj", "definition": "able to go under water", "example": "The submersible vehicle dove deep into the ocean." },
+    { "week": 1, "word": "trench", "pos": "n", "definition": "a long, narrow, deep ditch in the ground or ocean floor", "example": "The Mariana Trench is the deepest trench in the ocean." },
+    { "week": 1, "word": "autonomous", "pos": "adj", "definition": "able to work or move by itself without help", "example": "An autonomous robot can clean the floor on its own." },
+
+    { "week": 2, "word": "collision", "pos": "n", "definition": "when two things crash into each other", "example": "The collision between the two cars made a loud bang." },
+    { "week": 2, "word": "core", "pos": "n", "definition": "the center or middle of something", "example": "The core of the Earth is very hot." },
+    { "week": 2, "word": "diverse", "pos": "adj", "definition": "many different kinds", "example": "The rainforest has a diverse group of animals." },
+    { "week": 2, "word": "eternal", "pos": "adj", "definition": "lasting forever", "example": "The friends made an eternal promise to stay close." },
+    { "week": 2, "word": "idle", "pos": "adj", "definition": "not doing anything; not active", "example": "The machine sat idle when nobody was using it." },
+    { "week": 2, "word": "intriguing", "pos": "adj", "definition": "very interesting; making you want to know more", "example": "The mystery book had an intriguing first chapter." },
+    { "week": 2, "word": "organic", "pos": "adj", "definition": "coming from living things; grown without chemicals", "example": "We bought organic apples at the farmer's market." },
+    { "week": 2, "word": "fathom", "pos": "v", "definition": "to understand something fully", "example": "I can't fathom how the magician did that trick." },
+    { "week": 2, "word": "wrath", "pos": "n", "definition": "very strong anger", "example": "The villagers feared the wrath of the storm." },
+
+    { "week": 3, "word": "chasm", "pos": "n", "definition": "a deep crack or opening in the earth", "example": "We looked down into the wide chasm in the rocks." },
+    { "week": 3, "word": "erode", "pos": "v", "definition": "to slowly wear away", "example": "Waves can erode the rocks along the beach." },
+    { "week": 3, "word": "glisten", "pos": "v", "definition": "to shine softly with reflected light", "example": "Dewdrops glisten on the grass in the morning." },
+    { "week": 3, "word": "shatter", "pos": "v", "definition": "to break suddenly into many pieces", "example": "The glass fell and shattered on the floor." },
+    { "week": 3, "word": "embedded", "pos": "adj", "definition": "stuck firmly inside something", "example": "The fossil was embedded in the rock." },
+    { "week": 3, "word": "sentry", "pos": "n", "definition": "a person who stands guard and keeps watch", "example": "A sentry stood at the gate of the castle." }
+  ]
+}
