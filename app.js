@@ -28,6 +28,7 @@ function loadVoices() {
     return s;
   };
   voices.sort((a, b) => score(b) - score(a));
+  voices = voices.slice(0, 5);
   const saved = localStorage.getItem(VOICE_KEY);
   selectedVoice = voices.find(v => v.voiceURI === saved) || voices[0] || null;
 }
@@ -382,44 +383,44 @@ function showAnchorCharts() {
     { name: "Ideas and Support",
       body: "<b>Main idea</b> = what a paragraph is mostly about. <b>Support</b> = the details, facts, or examples that prove it.<br><br>Ask: What is this paragraph telling me? Which sentences give proof?",
       ex: [
-        "<b>Idea:</b> Bats are helpful animals. <b>Support:</b> They eat mosquitoes, pollinate flowers, and spread seeds.",
-        "<b>Idea:</b> Recycling is good for the planet. <b>Support:</b> It saves trees, uses less energy than making new things, and keeps trash out of the ocean."
+        "<b>Idea:</b> The deep ocean remains largely unexplored. <b>Support:</b> Scientists estimate that over 80% of the ocean floor has never been mapped, and new species are discovered on nearly every deep-sea expedition.",
+        "<b>Idea:</b> Ancient Rome's road system was key to its power. <b>Support:</b> The Romans built over 50,000 miles of roads, allowing armies to march quickly and merchants to trade across the empire."
       ] },
     { name: "Text Structure",
       body: "How an author organizes ideas:<ul><li><b>Description</b> — for example, such as</li><li><b>Sequence</b> — first, next, then, finally</li><li><b>Compare/Contrast</b> — like, unlike, both</li><li><b>Cause/Effect</b> — because, so, since</li><li><b>Problem/Solution</b> — problem, solved, fixed</li></ul>",
       ex: [
-        "<b>Sequence:</b> First, mix the flour and sugar. Next, add the eggs. Then, pour the batter into a pan. Finally, bake for 30 minutes.",
-        "<b>Cause &amp; Effect:</b> The road was icy, so the cars drove very slowly. Because of the cold, several drivers slid into the ditch."
+        "<b>Compare/Contrast:</b> Both alligators and crocodiles are large reptiles, but they differ in important ways. Unlike crocodiles, which have V-shaped snouts, alligators have wide, U-shaped ones. Crocodiles also tolerate salt water, while alligators prefer freshwater.",
+        "<b>Problem/Solution:</b> By the 1960s, bald eagles were nearly extinct because the pesticide DDT was weakening their eggshells. To solve this, the government banned DDT in 1972 and launched breeding programs. As a result, the bald eagle population recovered and was removed from the endangered list in 2007."
       ] },
     { name: "Figurative Language",
       body: "<ul><li><b>Simile</b>: compares with <i>like</i>/<i>as</i> — <i>her smile was like sunshine</i></li><li><b>Metaphor</b>: says one thing IS another — <i>the classroom was a zoo</i></li><li><b>Personification</b>: gives human traits to things — <i>the wind whispered</i></li><li><b>Hyperbole</b>: huge exaggeration — <i>I've told you a million times</i></li><li><b>Idiom</b>: hidden meaning — <i>raining cats and dogs</i></li></ul>",
       ex: [
-        "<b>Simile:</b> The snow was as white as a fresh sheet of paper, and the trees stood like silent guards along the road.",
-        "<b>Personification + Hyperbole:</b> The old door groaned when I pushed it open, and the room was so dusty I thought I would sneeze a thousand times."
+        "<b>Metaphor:</b> \"The detective's mind was a steel trap — once a clue entered, it never escaped.\" The author compares the mind to a steel trap to show how sharp and focused the detective is.",
+        "<b>Personification:</b> \"The volcano slept for centuries, then awoke with a furious roar that shook the countryside.\" The volcano is given human actions — sleeping and waking — to dramatize how suddenly it erupted."
       ] },
     { name: "Central Idea",
       body: "The most important point of the <b>whole text</b>. Bigger than the topic.<br><br><b>Topic</b> = one or two words. <b>Central idea</b> = a full sentence. Look at the title, first paragraph, last paragraph, and ideas that repeat.",
       ex: [
-        "<b>Topic:</b> honeybees. <b>Central idea:</b> Honeybees do important jobs that help farmers grow food.",
-        "<b>Topic:</b> the rainforest. <b>Central idea:</b> Rainforests are home to thousands of plants and animals that we cannot find anywhere else."
+        "<b>Topic:</b> the water cycle. <b>Central idea:</b> Earth constantly recycles its water through evaporation, condensation, and precipitation, which means the water you drink today may have once been part of a glacier thousands of years ago.",
+        "<b>Topic:</b> the Great Wall of China. <b>Central idea:</b> The Great Wall was built over many centuries by multiple dynasties, not as a single project but as a series of walls meant to protect China's northern borders from invasion."
       ] },
     { name: "Text and Graphic Features",
       body: "Special parts that help readers: <b>headings, bold words, captions, maps, diagrams, charts, photos, sidebars</b>. Ask: what does this feature show me that the words alone don't?",
       ex: [
-        "A science book about volcanoes has a <b>diagram</b> with arrows showing where the lava, ash, and gas come from — you can SEE the inside of the volcano without reading a long paragraph.",
-        "A book about animals has a <b>photo</b> of a sloth with a <b>caption</b> that says, \"A sloth can sleep up to 20 hours a day.\" The caption gives a fact you might miss in the main text."
+        "An article about climate change includes a <b>line graph</b> showing global temperatures rising from 1900 to today. The graph makes the trend instantly clear in a way that paragraphs of data alone cannot.",
+        "A history textbook has a <b>sidebar</b> with a primary source — a letter written by a Civil War soldier. This feature lets readers hear a real person's voice from that era, adding depth beyond the main text."
       ] },
     { name: "Summary",
       body: "A short retelling in your own words. Rules:<ol><li>Short</li><li>Your own words</li><li>Most important ideas only</li><li>No opinions</li><li>In order</li></ol>For stories try: <i>Somebody / Wanted / But / So / Then</i>.",
       ex: [
-        "<b>Story:</b> Somebody: a girl named Mia. Wanted: to win the spelling bee. But: she got nervous and forgot a word. So: she practiced every night. Then: she came in second and felt proud.",
-        "<b>Nonfiction:</b> Honeybees are important insects. They pollinate flowers for farmers, make honey, and live in hives run by a queen and thousands of workers."
+        "<b>Story:</b> Somebody: a young inventor named Elara. Wanted: to win the school science fair with a solar-powered water filter. But: her prototype broke the night before. So: she stayed up redesigning it with simpler parts. Then: she didn't win first place, but a local engineer offered to help her build a full-scale version.",
+        "<b>Nonfiction:</b> The International Space Station orbits Earth at about 17,500 mph and has been continuously occupied since 2000. Astronauts from many countries live aboard for months, conducting experiments in microgravity that cannot be done on Earth."
       ] },
     { name: "Theme",
       body: "The <b>lesson or message</b> of a story. Look at: what the character learns, how the character changes. A theme is a full sentence — not just \"friendship\" but <i>\"True friends help each other even when it's hard.\"</i>",
       ex: [
-        "A boy is afraid to try out for the soccer team but tries anyway and discovers he's better than he thought. <b>Theme:</b> You won't know what you can do until you try.",
-        "Two sisters fight over a toy, then realize they had more fun playing together. <b>Theme:</b> Sharing with people you love is better than having something all to yourself."
+        "A student copies her friend's homework to save time, then both receive zeros when the teacher notices. She realizes the shortcut cost her more than the effort would have. <b>Theme:</b> Dishonesty may seem easier in the moment, but it leads to consequences that honest effort would have avoided.",
+        "A boy refuses to include a new classmate in his group project. Later, when he's the new kid at a different school, no one picks him either. <b>Theme:</b> Treat others the way you would want to be treated, because you never know when you'll be in their shoes."
       ] },
   ];
   app.innerHTML = `
