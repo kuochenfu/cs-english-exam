@@ -441,6 +441,11 @@ function readPassage(passage) {
       <h2>${passage.title}</h2>
       <div>${passage.skills.map(s => `<span class="tag">${data.reading.skills[s]}</span>`).join("")}</div>
       <div class="passage">${passage.body}</div>
+      ${voicePicker()}
+      <div style="margin:8px 0;display:flex;gap:8px;flex-wrap:wrap">
+        <button id="play-passage">🔊 Listen to Passage</button>
+        <button id="stop-passage" class="ghost">⏹ Stop</button>
+      </div>
       <h3>Questions</h3>
       <p style="color:var(--muted)">Read the passage above (you can scroll back any time), pick one answer for each question, then click <b>Submit all answers</b> at the bottom.</p>
       ${passage.questions.map((q, qi) => `
@@ -458,6 +463,13 @@ function readPassage(passage) {
       <button id="submit-all">✅ Submit all answers</button>
       <button class="ghost" onclick="readingTopic()">← Back</button>
     </div>`;
+
+  bindVoicePicker();
+  $("play-passage").onclick = () => {
+    const plain = passage.body.replace(/\[.*?\]/g, "");
+    speak(plain);
+  };
+  $("stop-passage").onclick = () => speechSynthesis.cancel();
 
   $("submit-all").onclick = () => {
     let correct = 0;
