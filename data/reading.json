@@ -6,7 +6,9 @@
     "central_idea": "Central Idea",
     "text_features": "Text and Graphic Features",
     "summary": "Summary",
-    "theme": "Theme"
+    "theme": "Theme",
+    "context_clues": "Context Clues",
+    "poetry": "Poetry"
   },
   "passages": [
     {
@@ -59,6 +61,74 @@
         { "q": "Which is the BEST summary of the story?", "choices": ["Maya saw a lizard and a hawk.", "Maya was afraid to hike the Grand Canyon, but with her brother's patient help she made it to the bottom and felt proud.", "The river at the bottom was green.", "Leo did not laugh at his sister."], "answer": 1, "skill": "summary" },
         { "q": "What is the central message the author wants us to remember?", "choices": ["Canyons are deep.", "The canyon hadn't gotten smaller — she had gotten braver.", "Hawks circle in the sky.", "Sleeping bags are warm."], "answer": 1, "skill": "central_idea" },
         { "q": "What did Leo do that helped Maya the most?", "choices": ["He carried her down.", "He waited patiently and pointed out interesting things.", "He told her to go faster.", "He left her alone on the trail."], "answer": 1, "skill": "theme" }
+      ]
+    },
+    {
+      "id": "trip_to_remember",
+      "title": "A Trip to Remember",
+      "skills": ["central_idea", "ideas_support", "context_clues"],
+      "body": "Monica was so excited! She was visiting her cousin Ben in Arizona, and today they were going to see the Grand Canyon. Monica had never been to the Southwest. She lived in the Red River Valley of Minnesota, where the natural landscape was very different from the Southwest.\n\nLast year, in social studies, Monica's class had studied the Grand Canyon, but she never dreamed that she would get to see it in person. Her parents had decided they wanted to take the family out West and had planned a trip to visit Ben's family in the spring.\n\nMonica hoped to uncover many secrets about the canyon. Her teacher, Ms. Jones, had told the students that Grand Canyon National Park was one of the oldest parks in the United States.\n\nAs they drove, Monica wondered if any Native Americans had lived in and near the Grand Canyon. She also recalled her teacher saying that scientists had found artifacts in caves in the canyon. As she watched the bright, sunny desert roll by just outside the car window, Monica wondered if she would find an ancient artifact. She remembered hearing that people used to come to the canyon in search of gold. Those tales proved to be untrue. There was no gold in the canyon.\n\nMs. Jones had told the class that mules are still used to carry people to the bottom of the canyon and back up. Monica was curious to discover how the mules climbed over the uneven ground. She couldn't wait to get there and unearth the canyon's secrets for herself.",
+      "questions": [
+        { "q": "Has Monica visited the Grand Canyon before this trip?", "choices": ["Yes, she visits every summer.", "No, she had never been to the Southwest.", "Yes, she went with her school.", "No, but her cousin Ben had visited Minnesota."], "answer": 1, "skill": "ideas_support" },
+        { "q": "Why was Monica excited to visit the Grand Canyon?", "choices": ["She wanted to move to Arizona.", "She had learned about it in social studies and always wanted to see it.", "Her cousin had never been to Minnesota.", "She wanted to find gold in the canyon."], "answer": 1, "skill": "ideas_support" },
+        { "q": "What did Monica wonder about on the drive?", "choices": ["If she would find an ancient artifact", "If her cousin had ever been to Minnesota", "If the canyon was smaller than she expected", "If her teacher would be there"], "answer": 0, "skill": "ideas_support" },
+        { "q": "What does the phrase \"unearth the canyon's secrets\" mean?", "choices": ["Dig up buried treasure in the rocks", "Find gold hidden in the canyon", "Learn new things about the canyon", "Travel through underground caves"], "answer": 2, "skill": "context_clues" },
+        { "q": "What evidence in the text supports that the Grand Canyon is historically important?", "choices": ["The desert was bright and sunny.", "Scientists have found artifacts in caves in the canyon.", "It is located near Minnesota.", "Monica's family planned a trip in the spring."], "answer": 1, "skill": "ideas_support" },
+        { "q": "What is the central idea of this passage?", "choices": ["Gold was found at the Grand Canyon.", "Monica is excited to finally visit the Grand Canyon and discover its secrets.", "Mules are used to carry people in Arizona.", "Ms. Jones teaches social studies."], "answer": 1, "skill": "central_idea" }
+      ]
+    },
+    {
+      "id": "thunderstorm_safety",
+      "title": "Thunderstorm Safety",
+      "skills": ["central_idea", "ideas_support", "text_structure"],
+      "body": "Thunderstorms are dangerous. Every thunderstorm contains lightning, and lightning kills more people each year than tornadoes and hurricanes! Do you know what to do to remain safe during a thunderstorm?\n\nFirst, go inside a sturdy building or a vehicle and close the windows. Furthermore, the National Weather Service recommends that you stay inside for at least thirty minutes after the last rumble of thunder is heard. Do not use telephones or electrical equipment. Avoid taking showers or baths. If you are unable to get safely inside a building, avoid taking cover beneath tall, isolated trees. Also avoid water, high ground, and metal objects. Knowing what to do (and what not to do) during a thunderstorm could save your life.",
+      "questions": [
+        { "q": "What is the central idea of this passage?", "choices": ["Lightning is pretty to watch.", "There are important things you should do to remain safe during a thunderstorm.", "Thunderstorms only happen in summer.", "You should always stay outside during storms."], "answer": 1, "skill": "central_idea" },
+        { "q": "What should you do FIRST during a thunderstorm?", "choices": ["Call someone on the phone", "Go inside a sturdy building or a vehicle and close the windows", "Take a shower or bath", "Stand under a tall tree"], "answer": 1, "skill": "ideas_support" },
+        { "q": "How long does the National Weather Service recommend you stay inside after the last thunder?", "choices": ["Ten minutes", "At least thirty minutes", "One hour", "Five minutes"], "answer": 1, "skill": "ideas_support" },
+        { "q": "Which of the following should you AVOID during a thunderstorm?", "choices": ["Going inside a sturdy building", "Closing the windows", "Using telephones or electrical equipment", "Staying away from tall trees"], "answer": 2, "skill": "ideas_support" },
+        { "q": "What kills more people each year than tornadoes and hurricanes?", "choices": ["Floods", "Earthquakes", "Lightning", "Hail"], "answer": 2, "skill": "ideas_support" }
+      ]
+    },
+    {
+      "id": "brave_mouse",
+      "title": "The Brave Mouse",
+      "skills": ["theme", "poetry", "figurative_language"],
+      "body": "¹ A very hungry mouse who said,\n\"I'll do just what I please!\"\nSnuck into a house one night\nAnd stole a chunk of cheese.\n\n² He scampered down the passageway\nAnd thinking that was that,\nWas very unprepared to see\nThe shadow of a cat!\n\n³ He dropped the cheese\nAnd turned around,\nAnd headed for his hole\nAnd didn't even think about\nThe big cheese that he stole.\n\n⁴ When he was finally safe at home\nAnd telling all the mice\nHe couldn't help but add some girth to\nThe abandoned slice.\n\n⁵ The kitty, too, became a huge\nAnd formidable beast\nTo hear the brave mouse tell it\nHe had nearly been a feast.\n\n⁶ His friends, they all believed him,\nFor they did not know he lied\nAnd so, the not-so-brave mouse\nWas allowed to keep his pride!",
+      "questions": [
+        { "q": "What kind of attitude does the hungry mouse have at the beginning of the poem?", "choices": ["That he deserves some cheese", "That he can do whatever he wants", "That he is worried about the cat", "That he is braver than the other mice"], "answer": 0, "skill": "theme" },
+        { "q": "How did the mouse feel when he saw the shadow of a cat?", "choices": ["He felt frightened.", "He felt like fighting.", "He felt brave.", "He felt hungry."], "answer": 0, "skill": "theme" },
+        { "q": "Did the mouse ever actually come in contact with, or really see, the cat?", "choices": ["Yes, they fought over the cheese.", "No, he only saw the cat's shadow.", "Yes, the cat chased him home.", "No, but the cat ate the cheese."], "answer": 1, "skill": "ideas_support" },
+        { "q": "Why does the mouse exaggerate when he tells the others what happened?", "choices": ["He wants them to admire him.", "He wants to explain why he didn't bring back the cheese.", "He wants them to think he was brave.", "All of the above"], "answer": 3, "skill": "figurative_language" },
+        { "q": "What are the two rhyming words in stanza 1?", "choices": ["mouse / house", "said / night", "please / cheese", "one / chunk"], "answer": 2, "skill": "poetry" }
+      ]
+    },
+    {
+      "id": "deep_sea_lights",
+      "title": "Lights in the Deep Sea",
+      "skills": ["central_idea", "ideas_support", "context_clues", "text_structure"],
+      "body": "Imagine diving thousands of feet below the ocean's surface, far beyond where sunlight can reach. Down here, in what scientists call the midnight zone, the water is pitch black and near freezing. Yet this dark wilderness is anything but lifeless — it is home to some of the most remarkable creatures on Earth.\n\nMany deep-sea animals produce their own light through a chemical process called bioluminescence. The anglerfish, for example, dangles a glowing lure from its forehead to attract smaller fish right into its jaws. Jellyfish pulse with ghostly blue and green flashes to startle predators. Tiny shrimp-like krill glow along their bellies so that, when seen from below, they blend in with the faint light filtering down from above — a clever trick known as counter-illumination.\n\nWhy did so many unrelated species develop the ability to glow? Scientists believe the answer lies in survival. In a world without sunlight, light becomes a powerful tool. Some animals use it to hunt, others to hide, and still others to communicate with mates across the vast darkness.\n\nRecent expeditions using remotely operated vehicles have revealed that bioluminescence is not rare at all. In fact, researchers estimate that up to ninety percent of creatures in the deep ocean can produce light. What once seemed like a strange exception turns out to be the rule. The deep sea glows, and we are only beginning to understand why.",
+      "questions": [
+        { "q": "What is the central idea of this passage?", "choices": ["The ocean is very deep and cold.", "Bioluminescence is widespread in the deep sea and is essential for survival.", "Anglerfish are dangerous predators.", "Scientists use submarines to explore."], "answer": 1, "skill": "central_idea" },
+        { "q": "How is this passage mainly organized?", "choices": ["In time order from past to present", "By comparing the deep sea to outer space", "By explaining what bioluminescence is, giving examples, and then explaining why it exists", "By listing problems and their solutions"], "answer": 2, "skill": "text_structure" },
+        { "q": "Based on context clues, what does the word \"counter-illumination\" most likely mean?", "choices": ["Shining a light to count objects in the dark", "Using light on the body to match the surrounding brightness and avoid being seen", "A type of lamp used on submarines", "Turning off all light to become invisible"], "answer": 1, "skill": "context_clues" },
+        { "q": "Which detail BEST supports the idea that bioluminescence helps animals survive?", "choices": ["The midnight zone is near freezing.", "The anglerfish dangles a glowing lure to attract prey into its jaws.", "Researchers use remotely operated vehicles.", "Up to ninety percent of deep-sea creatures glow."], "answer": 1, "skill": "ideas_support" },
+        { "q": "What does the author mean by \"What once seemed like a strange exception turns out to be the rule\"?", "choices": ["There are rules against studying the deep sea.", "Scientists used to think bioluminescence was rare, but now know it is extremely common.", "Glowing animals are breaking the laws of nature.", "Only exceptional animals can produce light."], "answer": 1, "skill": "context_clues" },
+        { "q": "According to the passage, approximately what percentage of deep-sea creatures can produce light?", "choices": ["About ten percent", "About fifty percent", "Up to ninety percent", "One hundred percent"], "answer": 2, "skill": "ideas_support" }
+      ]
+    },
+    {
+      "id": "oak_and_reed",
+      "title": "The Oak and the Reed",
+      "skills": ["theme", "figurative_language", "poetry", "ideas_support"],
+      "body": "¹ A mighty oak stood tall and proud\nBeside a winding stream,\nIts trunk as thick as castle walls,\nIts crown a leafy dream.\n\n² Beside it grew a slender reed\nThat swayed with every breeze.\nThe oak looked down and laughed aloud,\n\"You bow to winds with ease!\"\n\n³ \"How pitiful you are,\" it said,\n\"To bend at every gust.\nI stand unbowed through every storm —\nMy strength is what I trust.\"\n\n⁴ The reed just smiled and softly said,\n\"Perhaps you're right, old friend.\nBut I have learned a simple truth:\nThe wise know when to bend.\"\n\n⁵ That night a furious tempest came\nWith thunder, rain, and hail.\nThe wind roared like a thousand drums\nAnd sang a howling tale.\n\n⁶ The oak held firm, refused to sway,\nAnd fought the raging gale.\nBut crack! — its mighty trunk gave way\nAnd crashed into the vale.\n\n⁷ Come morning, when the sun returned\nAnd birds began to sing,\nThe little reed stood straight once more\nAnd danced with early spring.",
+      "questions": [
+        { "q": "What is the THEME of this poem?", "choices": ["Big trees are stronger than small plants.", "Being flexible and humble can be wiser than being rigid and proud.", "Storms are dangerous and should be avoided.", "Reeds are better than oak trees."], "answer": 1, "skill": "theme" },
+        { "q": "Which line contains a SIMILE?", "choices": ["Its crown a leafy dream", "The wind roared like a thousand drums", "That night a furious tempest came", "The little reed stood straight once more"], "answer": 1, "skill": "figurative_language" },
+        { "q": "\"The wind roared\" and \"sang a howling tale\" are examples of —", "choices": ["simile", "personification", "hyperbole", "alliteration"], "answer": 1, "skill": "figurative_language" },
+        { "q": "What happens to the oak tree during the storm?", "choices": ["It bends gracefully in the wind.", "Its trunk cracks and it crashes to the ground.", "It loses a few leaves but survives.", "It is struck by lightning."], "answer": 1, "skill": "ideas_support" },
+        { "q": "What does the reed mean when it says \"The wise know when to bend\"?", "choices": ["Smart people exercise every day.", "It is wise to be flexible and adapt rather than stubbornly resist.", "Bending down is a sign of respect.", "Reeds are the wisest plants in the forest."], "answer": 1, "skill": "theme" },
+        { "q": "Which pair of words rhyme in stanza 5?", "choices": ["came / hail", "drums / tale", "hail / tale", "night / rain"], "answer": 2, "skill": "poetry" }
       ]
     }
   ]
