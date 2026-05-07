@@ -1,0 +1,126 @@
+{
+  "title": "Grammar — Adjectives and Adverbs (My Next Grammar, Lessons 15-16)",
+  "intro": "Adjectives describe nouns. They can come before nouns or after a be verb. Adverbs tell more about verbs and often end in -ly.",
+  "items": [
+    {
+      "q": "Which word is the adjective? The girl has a pretty dress.",
+      "choices": ["girl", "has", "pretty", "dress"],
+      "answer": 2,
+      "use": "adjective"
+    },
+    {
+      "q": "Which word is the adjective? Seoul is a big city.",
+      "choices": ["Seoul", "is", "big", "city"],
+      "answer": 2,
+      "use": "adjective"
+    },
+    {
+      "q": "Choose the best adjective: My room is ____. I just cleaned it.",
+      "choices": ["clean", "quickly", "noisily", "easily"],
+      "answer": 0,
+      "use": "adjective"
+    },
+    {
+      "q": "Choose the best adjective: My brother is six years old. He is ____.",
+      "choices": ["slowly", "old", "neatly", "loudly"],
+      "answer": 1,
+      "use": "adjective"
+    },
+    {
+      "q": "Choose the best adjective: I don't like hot summers. I like ____ winters.",
+      "choices": ["cold", "carefully", "quickly", "softly"],
+      "answer": 0,
+      "use": "adjective"
+    },
+    {
+      "q": "Which pair are opposite adjectives?",
+      "choices": ["long / short", "quick / quickly", "clean / neatly", "soft / softly"],
+      "answer": 0,
+      "use": "opposites"
+    },
+    {
+      "q": "Which pair are opposite adjectives?",
+      "choices": ["slow / slowly", "happy / sad", "careful / carefully", "quiet / quietly"],
+      "answer": 1,
+      "use": "opposites"
+    },
+    {
+      "q": "Which word is an adverb? John did his homework quickly.",
+      "choices": ["John", "homework", "quickly", "did"],
+      "answer": 2,
+      "use": "adverb"
+    },
+    {
+      "q": "Which word is an adverb? Mary dances beautifully.",
+      "choices": ["Mary", "dances", "beautifully", "none"],
+      "answer": 2,
+      "use": "adverb"
+    },
+    {
+      "q": "Choose the best adverb: Please write ____ in your notebook.",
+      "choices": ["neatly", "neat", "new", "quiet"],
+      "answer": 0,
+      "use": "adverb"
+    },
+    {
+      "q": "Choose the best adverb: The students ran into the classroom ____.",
+      "choices": ["noisily", "noisy", "new", "young"],
+      "answer": 0,
+      "use": "adverb"
+    },
+    {
+      "q": "Choose the best adverb: My dog learns new tricks ____.",
+      "choices": ["easy", "easily", "clean", "old"],
+      "answer": 1,
+      "use": "adverb"
+    },
+    {
+      "q": "Which sentence uses the adverb correctly?",
+      "choices": ["They are happily children.", "They answered the question simply.", "The room is quietly.", "Sarah has a softly voice."],
+      "answer": 1,
+      "use": "adjective vs adverb"
+    },
+    {
+      "q": "Which sentence uses the adjective correctly?",
+      "choices": ["Sarah has a soft voice.", "Sarah speaks soft.", "The baby is crying soft.", "He runs quick."],
+      "answer": 0,
+      "use": "adjective vs adverb"
+    },
+    {
+      "q": "Change the adjective to an adverb: careful",
+      "choices": ["carefuly", "carefully", "carefull", "careful"],
+      "answer": 1,
+      "use": "-ly ending"
+    },
+    {
+      "q": "Change the adjective to an adverb: happy",
+      "choices": ["happyly", "happily", "happiely", "happy"],
+      "answer": 1,
+      "use": "y to i + -ly"
+    },
+    {
+      "q": "Change the adjective to an adverb: simple",
+      "choices": ["simplely", "simply", "simple", "simplily"],
+      "answer": 1,
+      "use": "le to ly"
+    },
+    {
+      "q": "Put the words in the correct order.",
+      "choices": ["Mr. Johnson speaks clearly English.", "Mr. Johnson speaks English clearly.", "Clearly Mr. Johnson English speaks.", "English clearly speaks Mr. Johnson."],
+      "answer": 1,
+      "use": "word order"
+    },
+    {
+      "q": "Put the words in the correct order.",
+      "choices": ["They quietly study in the library.", "They study in the library quietly.", "Quietly they in the library study.", "In the study they library quietly."],
+      "answer": 0,
+      "use": "word order"
+    },
+    {
+      "q": "Put the words in the correct order.",
+      "choices": ["The girl ate the ice cream slowly.", "The girl slowly the ice cream ate.", "Slowly the ice cream the girl ate.", "The ice cream slowly ate the girl."],
+      "answer": 0,
+      "use": "word order"
+    }
+  ]
+}

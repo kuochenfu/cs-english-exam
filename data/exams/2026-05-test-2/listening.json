@@ -1,0 +1,63 @@
+{
+  "title": "Listening Comprehension",
+  "intro": "Listen to a classroom dialogue, then answer multiple choice questions. You can replay the dialogue as many times as you want.",
+  "dialogues": [
+    {
+      "id": "traditional_tales_project",
+      "title": "Choosing a Traditional Tale",
+      "lines": [
+        { "speaker": "Ms. Rivera", "text": "Today each group will choose one traditional tale and explain the lesson it teaches." },
+        { "speaker": "Mia", "text": "Can our group choose a trickster story? I like stories where a small character outsmarts a big one." },
+        { "speaker": "Ms. Rivera", "text": "Yes, but remember to explain whether the trick is helpful or harmful." },
+        { "speaker": "Leo", "text": "We should also include one proverb that matches the story, like honesty is the best policy." },
+        { "speaker": "Mia", "text": "Good idea. I will write about the characters, and you can find the proverb." },
+        { "speaker": "Ms. Rivera", "text": "Excellent. Be ready to share your central idea tomorrow." }
+      ],
+      "questions": [
+        { "q": "What will each group choose?", "choices": ["A science experiment", "A traditional tale", "A spelling list", "A weather report"], "answer": 1 },
+        { "q": "Why does Mia like trickster stories?", "choices": ["They are always about mountains.", "A small character may outsmart a big one.", "They never teach lessons.", "They are written as poems."], "answer": 1 },
+        { "q": "What does Ms. Rivera want students to explain about the trick?", "choices": ["Whether it is helpful or harmful", "Whether it is expensive", "Whether it happens at night", "Whether it has ten characters"], "answer": 0 },
+        { "q": "Which proverb does Leo mention?", "choices": ["Look before you leap", "Many hands make light work", "Honesty is the best policy", "Practice makes perfect"], "answer": 2 },
+        { "q": "What will Mia write about?", "choices": ["The characters", "The weather", "The homework folder", "The spelling words"], "answer": 0 }
+      ]
+    },
+    {
+      "id": "anchor_chart_review",
+      "title": "Reviewing the Anchor Chart",
+      "lines": [
+        { "speaker": "Noah", "text": "I mixed up theme and central idea again." },
+        { "speaker": "Ava", "text": "Our anchor chart says theme is the lesson of a story. Central idea is the most important point of a text." },
+        { "speaker": "Noah", "text": "So if a story shows that greed causes trouble, that is the theme?" },
+        { "speaker": "Ava", "text": "Right. And if an article explains that legends often teach cultural values, that is a central idea." },
+        { "speaker": "Noah", "text": "What about characters?" },
+        { "speaker": "Ava", "text": "Look at what they say, do, think, and learn. Those details help you describe them." }
+      ],
+      "questions": [
+        { "q": "What two skills does Noah mix up?", "choices": ["Theme and central idea", "Spelling and grammar", "Maps and captions", "Adjectives and adverbs"], "answer": 0 },
+        { "q": "According to Ava, what is theme?", "choices": ["The lesson of a story", "The title of a chart", "A list of characters", "A type of punctuation"], "answer": 0 },
+        { "q": "Which example does Noah give for theme?", "choices": ["Legends teach cultural values", "Greed causes trouble", "A caption explains a photo", "A character has a name"], "answer": 1 },
+        { "q": "What details help readers describe characters?", "choices": ["What they say, do, think, and learn", "Only their names", "Only the setting", "The page number"], "answer": 0 },
+        { "q": "What is Ava doing in this dialogue?", "choices": ["Helping Noah review reading skills", "Asking Noah to leave class", "Reading a weather report", "Choosing lunch"], "answer": 0 }
+      ]
+    },
+    {
+      "id": "presentation_plan",
+      "title": "Planning a Class Presentation",
+      "lines": [
+        { "speaker": "Ben", "text": "Our presentation is on a legend about too much heat from the sky." },
+        { "speaker": "Lily", "text": "Then we should explain the setting first. It happens long ago, before people understood the sun in a scientific way." },
+        { "speaker": "Ben", "text": "I can draw a picture with a caption. The caption will explain why the land is drying up." },
+        { "speaker": "Lily", "text": "I will talk about the main problem. The characters do not use their power wisely." },
+        { "speaker": "Ben", "text": "What theme should we choose?" },
+        { "speaker": "Lily", "text": "Maybe power should be used carefully. That matches the story and the picture." }
+      ],
+      "questions": [
+        { "q": "What is the presentation about?", "choices": ["A legend about too much heat from the sky", "A recipe for soup", "A map of the school", "A poem about winter"], "answer": 0 },
+        { "q": "What literary element does Lily want to explain first?", "choices": ["Setting", "Rhyme", "Dialogue tags", "Spelling"], "answer": 0 },
+        { "q": "What will Ben draw?", "choices": ["A picture with a caption", "A bar graph", "A birthday card", "A spelling chart"], "answer": 0 },
+        { "q": "What is the main problem Lily mentions?", "choices": ["The characters do not use their power wisely.", "The class has no markers.", "The presentation is cancelled.", "The caption is too short."], "answer": 0 },
+        { "q": "Which theme do they choose?", "choices": ["Power should be used carefully.", "Lunch should be shared.", "Every story needs a fox.", "Pictures are better than words."], "answer": 0 }
+      ]
+    }
+  ]
+}

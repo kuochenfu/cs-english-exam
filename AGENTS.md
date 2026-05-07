@@ -1,6 +1,6 @@
-# CLAUDE.md
+# AGENTS.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file provides guidance to Codex (Codex.ai/code) when working with code in this repository.
 
 ## What this is
 A static, single-page review web app to help a Grade 4 student prepare for recurring English tests. No build system, no dependencies, no tests. Open in a browser via a local static server.

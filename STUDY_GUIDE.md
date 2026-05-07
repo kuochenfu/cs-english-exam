@@ -1,6 +1,6 @@
 # Grade 4 — 2026 Spring Semester Midterm Study Guide
 
-Source: `raw/english_midterm_notice_and_study_guide.JPG`
+Source: `raw/202604/english_midterm_notice_and_study_guide.JPG`
 Scope: HMH **Into Reading, Module 6, Weeks 1–3**.
 
 > Only the **Skills and Learning Goals** table is transcribed here. The "Schedule" and "How to Study" tables are intentionally skipped.

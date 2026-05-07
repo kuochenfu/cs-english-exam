@@ -1,0 +1,27 @@
+{
+  "words": [
+    { "week": 1, "word": "commendable", "pos": "adj", "definition": "worthy of praise; deserving approval", "example": "Helping a new student feel welcome is a commendable act." },
+    { "week": 1, "word": "devastation", "pos": "n", "definition": "great damage or destruction", "example": "The storm left devastation across the small town." },
+    { "week": 1, "word": "partial", "pos": "adj", "definition": "not complete; only part of something", "example": "The teacher gave us a partial list of the questions." },
+    { "week": 1, "word": "recall", "pos": "v", "definition": "to remember something", "example": "I can recall the story we read last week." },
+    { "week": 1, "word": "resourceful", "pos": "adj", "definition": "good at finding clever ways to solve problems", "example": "The resourceful hikers made a shelter from branches." },
+    { "week": 1, "word": "vividly", "pos": "adv", "definition": "in a clear, bright, or detailed way", "example": "She vividly described the fireworks in the night sky." },
+    { "week": 1, "word": "accentuate", "pos": "v", "definition": "to make something stand out or seem stronger", "example": "The dark frame accentuates the bright painting." },
+    { "week": 1, "word": "disposition", "pos": "n", "definition": "a person's usual mood, attitude, or nature", "example": "His cheerful disposition made everyone smile." },
+    { "week": 1, "word": "splendor", "pos": "n", "definition": "great beauty or magnificence", "example": "The splendor of the palace amazed the visitors." },
+
+    { "week": 2, "word": "character", "pos": "n", "definition": "a person or animal in a story, play, or movie", "example": "The main character learns an important lesson." },
+    { "week": 2, "word": "clamp", "pos": "v", "definition": "to hold something tightly in place", "example": "Dad clamped the wood to the table before cutting it." },
+    { "week": 2, "word": "fascinate", "pos": "v", "definition": "to interest someone very much", "example": "The old legend fascinated the whole class." },
+    { "week": 2, "word": "generous", "pos": "adj", "definition": "willing to give or share more than expected", "example": "Her generous friend shared his snack with everyone." },
+    { "week": 2, "word": "succulent", "pos": "adj", "definition": "juicy and tender; full of moisture", "example": "The succulent peach was sweet and fresh." },
+    { "week": 2, "word": "thrifty", "pos": "adj", "definition": "careful about spending money or using resources", "example": "A thrifty shopper compares prices before buying." },
+
+    { "week": 3, "word": "assume", "pos": "v", "definition": "to think something is true without being sure", "example": "Do not assume the answer before you read the question." },
+    { "week": 3, "word": "gratitude", "pos": "n", "definition": "a feeling of thankfulness", "example": "She showed gratitude by writing a thank-you note." },
+    { "week": 3, "word": "prosper", "pos": "v", "definition": "to succeed, grow, or do well", "example": "The small garden prospered in the warm sunshine." },
+    { "week": 3, "word": "reckless", "pos": "adj", "definition": "careless about danger or consequences", "example": "Riding a bike without looking is reckless." },
+    { "week": 3, "word": "scorching", "pos": "adj", "definition": "very hot", "example": "We stayed inside during the scorching afternoon." },
+    { "week": 3, "word": "wither", "pos": "v", "definition": "to dry up, shrink, or lose freshness", "example": "The flowers began to wither without water." }
+  ]
+}

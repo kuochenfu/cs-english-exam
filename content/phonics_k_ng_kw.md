@@ -1,6 +1,6 @@
 # Phonics — Words with /k/, /ng/, and /kw/
 
-Source: `raw/phonics01.JPG` (Show-It workbook pp. 118 & 122)
+Source: `raw/202604/phonics01.JPG` (Show-It workbook pp. 118 & 122)
 
 ## Rule
 There are multiple ways to spell the **/k/** sound, including **k**, **ck**, and **ch**. The letter **n** stands for **/ng/** when it appears before **k**. The letters **qu** before a vowel can stand for **/kw/**.

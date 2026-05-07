@@ -1,6 +1,6 @@
 # Module 6 — Vocabulary & Spelling Lists
 
-Sources: `raw/module6_vocabulary_spelling.JPG`, `raw/IMG_8851.PNG`
+Sources: `raw/202604/module6_vocabulary_spelling.JPG`, `raw/202604/IMG_8851.PNG`
 
 ## Week 7 — Module 6 Week 1
 

@@ -76,9 +76,22 @@ button.ghost:hover { background: var(--border); color: var(--text); }
   transition: transform 0.15s, box-shadow 0.15s;
 }
 .card:hover { transform: translateY(-3px); box-shadow: 0 8px 18px rgba(0,0,0,0.08); }
+.card.disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+.card.disabled:hover {
+  box-shadow: none;
+  transform: none;
+}
 .card .icon { font-size: 3rem; }
 .card h2 { margin: 8px 0 4px; font-size: 1.3rem; }
 .card .progress { color: var(--muted); font-size: 0.9rem; }
+
+.exam-label {
+  color: var(--muted);
+  margin-top: -8px;
+}
 
 .panel {
   background: var(--card);

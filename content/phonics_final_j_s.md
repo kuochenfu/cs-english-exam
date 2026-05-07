@@ -1,6 +1,6 @@
 # Phonics — Words with Final /j/ and /s/
 
-Source: `raw/phonics02.JPG` (Show-It workbook pp. 126 & 130)
+Source: `raw/202604/phonics02.JPG` (Show-It workbook pp. 126 & 130)
 
 ## Rule
 The final **/j/** sound can be spelled **ge** or **dge**.

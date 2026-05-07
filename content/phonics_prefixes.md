@@ -1,6 +1,6 @@
 # Phonics — Prefixes re-, un-, and dis-
 
-Source: `raw/phonics03.JPG` (Show-It workbook pp. 134 & 139)
+Source: `raw/202604/phonics03.JPG` (Show-It workbook pp. 134 & 139)
 
 ## Rule
 A **prefix** is a word part that appears before a root word and changes the root word's meaning.

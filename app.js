@@ -1,4 +1,4 @@
-// Grade 4 English Midterm Review — quiz engine
+// Grade 4 English Review — quiz engine
 // Run via local server: `python3 -m http.server` then open http://localhost:8000
 
 const $ = (id) => document.getElementById(id);
@@ -6,6 +6,7 @@ const app = $("app");
 
 const STORE_KEY = "cs-english-exam-progress";
 const VOICE_KEY = "cs-english-exam-voice";
+const EXAM_KEY = "cs-english-exam-current-exam";
 const progress = JSON.parse(localStorage.getItem(STORE_KEY) || "{}");
 const saveProgress = () => localStorage.setItem(STORE_KEY, JSON.stringify(progress));
 
@@ -68,15 +69,49 @@ function bindVoicePicker() {
   $("voice-test").onclick = () => speak("Hi! Listen to this sentence and type the spelling word.");
 }
 
+const examIndex = { defaultExamId: null, exams: [] };
 const data = {};
+let currentExam = null;
+
+function progressKey(topicId) {
+  return currentExam ? `${currentExam.id}:${topicId}` : topicId;
+}
+
+function readProgress(topicId) {
+  const key = progressKey(topicId);
+  return progress[key] || (currentExam?.id === examIndex.defaultExamId ? progress[topicId] : null);
+}
+
+function writeProgress(topicId, pct) {
+  const key = progressKey(topicId);
+  const today = new Date().toISOString().slice(0,10);
+  const prev = readProgress(topicId);
+  progress[key] = { best: Math.max(prev?.best || 0, pct), lastDate: today, lastScore: pct };
+  saveProgress();
+}
 
 async function loadAll() {
   const files = ["vocabulary", "spelling", "grammar", "reading", "listening"];
   try {
+    const examRes = await fetch("data/exams.json");
+    const index = await examRes.json();
+    examIndex.defaultExamId = index.defaultExamId;
+    examIndex.exams = index.exams;
+
+    const savedExamId = localStorage.getItem(EXAM_KEY);
+    const savedExam = examIndex.exams.find(e => e.id === savedExamId && e.available);
+    if (!savedExam) {
+      currentExam = null;
+      renderExamPicker();
+      return;
+    }
+
+    currentExam = savedExam;
     for (const f of files) {
-      const r = await fetch(`data/${f}.json`);
+      const r = await fetch(`data/exams/${currentExam.id}/${f}.json`);
       data[f] = await r.json();
     }
+    localStorage.setItem(EXAM_KEY, currentExam.id);
   } catch (e) {
     app.innerHTML = `<div class="panel"><h2>⚠️ Couldn't load data</h2>
       <p>This app loads JSON files, which browsers block when opened directly.</p>
@@ -88,21 +123,66 @@ python3 -m http.server</pre>
   }
 }
 
+async function selectExam(examId) {
+  const exam = examIndex.exams.find(e => e.id === examId);
+  if (!exam || !exam.available) return;
+  currentExam = exam;
+  localStorage.setItem(EXAM_KEY, currentExam.id);
+  await loadAll();
+  renderHome();
+}
+
+function renderExamPicker() {
+  app.innerHTML = `
+    <div class="panel">
+      <h2>Choose a test to practice</h2>
+      <div class="cards">
+        ${examIndex.exams.map(exam => `
+          <div class="card ${exam.available ? "" : "disabled"}" data-exam="${exam.id}">
+            <div class="icon">${exam.available ? "📘" : "🗂️"}</div>
+            <h2>${exam.title}</h2>
+            <div>${exam.subtitle}</div>
+            <div class="progress">${exam.status}</div>
+          </div>`).join("")}
+      </div>
+    </div>`;
+  document.querySelectorAll(".card[data-exam]").forEach(c => {
+    const exam = examIndex.exams.find(e => e.id === c.dataset.exam);
+    if (exam?.available) c.onclick = () => selectExam(exam.id);
+  });
+}
+
 // ---------- Home ----------
+function moduleWeeksLabel() {
+  const match = currentExam?.subtitle.match(/Module\s+(\d+).*Weeks?\s+([0-9-]+)/i);
+  return match ? `Module ${match[1]} W${match[2]}` : currentExam?.subtitle || "Current test";
+}
+
+function grammarLabel() {
+  return (data.grammar?.title || "Grammar")
+    .replace(/^Grammar\s*[—-]\s*/, "")
+    .replace(/^(.+?)\s*\(My Next Grammar,\s*/, "$1 (")
+    .replace("Lessons ", "L")
+    .replace("Lesson ", "L");
+}
+
 function renderHome() {
+  if (!currentExam) return renderExamPicker();
+  const moduleLabel = moduleWeeksLabel();
   const topics = [
-    { id: "vocab",   icon: "📖", title: "Vocabulary",       desc: "Module 6 W1–3 words" },
+    { id: "vocab",   icon: "📖", title: "Vocabulary",       desc: `${moduleLabel} words` },
     { id: "spell",   icon: "🔤", title: "Phonics & Spelling", desc: "Dictation + sound sorts" },
-    { id: "grammar", icon: "✏️", title: "Grammar",          desc: "Modal verbs (Lesson 14)" },
+    { id: "grammar", icon: "✏️", title: "Grammar",          desc: grammarLabel() },
     { id: "reading", icon: "📚", title: "Reading",          desc: "Anchor charts + passages" },
     { id: "listen",  icon: "👂", title: "Listening",        desc: "Dialogue + questions" },
   ];
   app.innerHTML = `
     <div class="panel">
       <h2>Pick a topic to practice</h2>
+      <p class="exam-label">${currentExam.title} · ${currentExam.subtitle}</p>
       <div class="cards">
         ${topics.map(t => {
-          const p = progress[t.id];
+          const p = readProgress(t.id);
           const pStr = p ? `Best: ${p.best}% · ${p.lastDate}` : "Not tried yet";
           return `<div class="card" data-topic="${t.id}">
             <div class="icon">${t.icon}</div>
@@ -112,10 +192,12 @@ function renderHome() {
           </div>`;
         }).join("")}
       </div>
+      <button class="ghost" id="change-exam">Change test</button>
     </div>`;
   document.querySelectorAll(".card").forEach(c => {
     c.onclick = () => routes[c.dataset.topic]();
   });
+  $("change-exam").onclick = renderExamPicker;
 }
 
 // ---------- Generic Quiz Runner ----------
@@ -162,10 +244,7 @@ function runQuiz(topicId, title, items, getQ) {
 
   function finish() {
     const pct = Math.round((correct/order.length)*100);
-    const today = new Date().toISOString().slice(0,10);
-    const prev = progress[topicId];
-    progress[topicId] = { best: Math.max(prev?.best || 0, pct), lastDate: today, lastScore: pct };
-    saveProgress();
+    writeProgress(topicId, pct);
     app.innerHTML = `
       <div class="panel">
         <h2>🎉 Done!</h2>
@@ -181,9 +260,19 @@ function runQuiz(topicId, title, items, getQ) {
 
 function shuffle(a) { for (let i=a.length-1;i>0;i--) { const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
 
+function emptyTopic(title) {
+  app.innerHTML = `
+    <div class="panel">
+      <h2>${title}</h2>
+      <p>This section does not have practice items yet.</p>
+      <button class="ghost" onclick="renderHome()">🏠 Home</button>
+    </div>`;
+}
+
 // ---------- Vocabulary ----------
 function vocabularyTopic() {
   const words = data.vocabulary.words;
+  if (!words.length) return emptyTopic("Vocabulary");
   app.innerHTML = `
     <div class="panel">
       <h2>📖 Vocabulary</h2>
@@ -214,6 +303,7 @@ function vocabularyTopic() {
 // ---------- Spelling / Phonics ----------
 function spellingTopic() {
   const lists = data.spelling.lists;
+  if (!lists.length) return emptyTopic("Phonics & Spelling");
   app.innerHTML = `
     <div class="panel">
       <h2>🔤 Phonics & Spelling</h2>
@@ -273,10 +363,7 @@ function dictation(list) {
 
   function finish() {
     const pct = Math.round((correct/order.length)*100);
-    const today = new Date().toISOString().slice(0,10);
-    const prev = progress.spell;
-    progress.spell = { best: Math.max(prev?.best || 0, pct), lastDate: today, lastScore: pct };
-    saveProgress();
+    writeProgress("spell", pct);
     app.innerHTML = `
       <div class="panel">
         <h2>🎉 Done!</h2>
@@ -342,10 +429,7 @@ function sortGame(list) {
       const total = allWords.length;
       const right = Object.entries(placed).filter(([w,g]) => wordGroup[w] === g).length;
       const pct = Math.round((right/total)*100);
-      const today = new Date().toISOString().slice(0,10);
-      const prev = progress.spell;
-      progress.spell = { best: Math.max(prev?.best || 0, pct), lastDate: today, lastScore: pct };
-      saveProgress();
+      writeProgress("spell", pct);
     }
   }
   render();
@@ -354,6 +438,7 @@ function sortGame(list) {
 // ---------- Grammar ----------
 function grammarTopic() {
   const items = data.grammar.items;
+  if (!items.length) return emptyTopic("Grammar");
   runQuiz("grammar", data.grammar.title, items, (it) => ({
     prompt: it.q + (it.use ? ` <span class="tag">${it.use}</span>` : ""),
     choices: it.choices,
@@ -363,23 +448,26 @@ function grammarTopic() {
 
 // ---------- Reading ----------
 function readingTopic() {
+  const passages = data.reading.passages || [];
+  const charts = data.reading.anchorCharts || [];
+  if (!passages.length && !charts.length) return emptyTopic("Reading Comprehension");
   app.innerHTML = `
     <div class="panel">
       <h2>📚 Reading Comprehension</h2>
       <p>Choose what to do:</p>
-      <button id="charts">📋 Anchor Charts (review skills)</button>
-      <h3>Then practice with a passage:</h3>
-      ${data.reading.passages.map((p,i) => `<button data-p="${i}">${p.title}</button>`).join("")}
+      ${charts.length ? `<button id="charts">📋 Anchor Charts (review skills)</button>` : ""}
+      ${passages.length ? `<h3>Then practice with a passage:</h3>
+      ${passages.map((p,i) => `<button data-p="${i}">${p.title}</button>`).join("")}` : ""}
       <br><button class="ghost" onclick="renderHome()">🏠 Home</button>
     </div>`;
-  $("charts").onclick = showAnchorCharts;
+  if ($("charts")) $("charts").onclick = showAnchorCharts;
   document.querySelectorAll("button[data-p]").forEach(b => {
     b.onclick = () => readPassage(data.reading.passages[+b.dataset.p]);
   });
 }
 
 function showAnchorCharts() {
-  const charts = [
+  const defaultCharts = [
     { name: "Ideas and Support",
       body: "<b>Main idea</b> = what a paragraph is mostly about. <b>Support</b> = the details, facts, or examples that prove it.<br><br>Ask: What is this paragraph telling me? Which sentences give proof?",
       ex: [
@@ -423,10 +511,11 @@ function showAnchorCharts() {
         "A boy refuses to include a new classmate in his group project. Later, when he's the new kid at a different school, no one picks him either. <b>Theme:</b> Treat others the way you would want to be treated, because you never know when you'll be in their shoes."
       ] },
   ];
+  const charts = data.reading.anchorCharts || defaultCharts;
   app.innerHTML = `
     <div class="panel">
       <h2>📋 Anchor Charts</h2>
-      ${charts.map(c => `<details><summary>${c.name}</summary><div>${c.body}<div style="margin-top:10px"><b>Examples:</b><ol><li>${c.ex[0]}</li><li>${c.ex[1]}</li></ol></div></div></details>`).join("")}
+      ${charts.map(c => `<details><summary>${c.name}</summary><div>${c.body}<div style="margin-top:10px"><b>Examples:</b><ol>${(c.ex || []).map(x => `<li>${x}</li>`).join("")}</ol></div></div></details>`).join("")}
       <br><button onclick="readingTopic()">← Back</button>
       <button class="ghost" onclick="renderHome()">🏠 Home</button>
     </div>`;
@@ -440,7 +529,7 @@ function readPassage(passage) {
   app.innerHTML = `
     <div class="panel">
       <h2>${passage.title}</h2>
-      <div>${passage.skills.map(s => `<span class="tag">${data.reading.skills[s]}</span>`).join("")}</div>
+      <div>${passage.skills.map(s => `<span class="tag">${data.reading.skills[s] || s}</span>`).join("")}</div>
       <div class="passage">${passage.body}</div>
       ${voicePicker()}
       <div style="margin:8px 0;display:flex;gap:8px;flex-wrap:wrap">
@@ -451,7 +540,7 @@ function readPassage(passage) {
       <p style="color:var(--muted)">Read the passage above (you can scroll back any time), pick one answer for each question, then click <b>Submit all answers</b> at the bottom.</p>
       ${passage.questions.map((q, qi) => `
         <div class="qa-block" data-qi="${qi}" style="margin:18px 0;padding:14px;border:2px solid var(--border);border-radius:14px">
-          <div class="question"><b>${qi+1}.</b> ${q.q} <span class="tag">${data.reading.skills[q.skill]}</span></div>
+          <div class="question"><b>${qi+1}.</b> ${q.q} <span class="tag">${data.reading.skills[q.skill] || q.skill}</span></div>
           <div class="choices">
             ${qOrders[qi].map(idx => `
               <label style="display:block;background:white;border:2px solid var(--border);padding:12px 16px;border-radius:12px;margin:6px 0;cursor:pointer">
@@ -505,10 +594,7 @@ function readPassage(passage) {
 
     const total = passage.questions.length;
     const pct = Math.round((correct/total)*100);
-    const today = new Date().toISOString().slice(0,10);
-    const prev = progress.reading;
-    progress.reading = { best: Math.max(prev?.best || 0, pct), lastDate: today, lastScore: pct };
-    saveProgress();
+    writeProgress("reading", pct);
 
     // Show summary at top, scroll to it
     const summary = document.createElement("div");
@@ -530,6 +616,7 @@ function readPassage(passage) {
 
 // ---------- Listening ----------
 function listeningTopic() {
+  if (!data.listening.dialogues.length) return emptyTopic("Listening Comprehension");
   app.innerHTML = `
     <div class="panel">
       <h2>👂 Listening Comprehension</h2>

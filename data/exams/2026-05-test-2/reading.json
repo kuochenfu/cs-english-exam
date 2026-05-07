@@ -1,0 +1,137 @@
+{
+  "skills": {
+    "characters": "Characters",
+    "adages_proverbs": "Adages and Proverbs",
+    "figurative_language": "Figurative Language",
+    "central_idea": "Central Idea",
+    "text_features": "Text and Graphic Features",
+    "literary_elements": "Literary Elements",
+    "theme": "Theme",
+    "summary": "Summary"
+  },
+  "anchorCharts": [
+    {
+      "name": "Characters",
+      "body": "Characters are the people, animals, or beings in a story. To understand a character, look at what the character says, does, thinks, wants, and learns.",
+      "ex": [
+        "If a character shares food during a storm, that action shows kindness.",
+        "If a character brags but later apologizes, the character changes from proud to humble."
+      ]
+    },
+    {
+      "name": "Adages and Proverbs",
+      "body": "An adage or proverb is a short saying that gives advice or teaches a lesson. Ask what the saying means in the story, not just what the words literally say.",
+      "ex": [
+        "\"Look before you leap\" means think before you act.",
+        "\"Many hands make light work\" means a hard job is easier when people help."
+      ]
+    },
+    {
+      "name": "Figurative Language",
+      "body": "Figurative language uses words in a creative way. Look for similes, metaphors, personification, hyperbole, idioms, and vivid descriptions.",
+      "ex": [
+        "\"The rain tapped on the roof like tiny fingers\" is a simile.",
+        "\"The proud mountain wore a crown of snow\" is personification."
+      ]
+    },
+    {
+      "name": "Central Idea",
+      "body": "The central idea is the most important point of a nonfiction text or section. It is bigger than one detail and is usually a full sentence.",
+      "ex": [
+        "Topic: traditional tales. Central idea: Traditional tales often teach lessons through memorable characters.",
+        "Topic: tricksters. Central idea: Trickster stories show how cleverness can help or hurt others."
+      ]
+    },
+    {
+      "name": "Text and Graphic Features",
+      "body": "Text and graphic features include headings, captions, maps, diagrams, photos, charts, and sidebars. They help readers find or understand information.",
+      "ex": [
+        "A caption under a picture can explain who a character is.",
+        "A sidebar can give background information about a culture or place."
+      ]
+    },
+    {
+      "name": "Literary Elements",
+      "body": "Literary elements are story parts such as setting, characters, plot, problem, solution, narrator, and point of view.",
+      "ex": [
+        "The setting might be a dusty ranch, a village, or the sky above Earth.",
+        "The plot includes the problem, important events, and how the problem is solved."
+      ]
+    },
+    {
+      "name": "Theme",
+      "body": "The theme is the lesson or message of a story. It is usually a full sentence about life, choices, or character.",
+      "ex": [
+        "A story about a boastful hero who learns to listen may have the theme: Pride can make people miss good advice.",
+        "A story about neighbors sharing water may have the theme: Working together helps a community survive."
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "traditional_tales",
+      "title": "Why Traditional Tales Travel",
+      "skills": ["central_idea", "text_features", "characters"],
+      "body": "Traditional tales are stories that people tell again and again. Long before many stories were written in books, families and neighbors shared them aloud. A tale might explain why the sun rises, why a river bends, or why a small animal can outsmart a larger one.\n\nThese stories often have unforgettable characters. A hero may be brave, a trickster may be clever, and a foolish character may learn a lesson the hard way. Because the characters are easy to remember, the lesson is easier to remember too.\n\nTraditional tales also change as they travel. A storyteller in one country may add a mountain, while another storyteller near the sea may add a fishing boat. The details change, but the heart of the story often stays the same: choices have consequences, and wisdom matters.\n\n[Sidebar: Traditional tales include folktales, legends, fables, tall tales, and myths.]",
+      "questions": [
+        { "q": "What is the central idea of this passage?", "choices": ["Traditional tales are always written in books.", "Traditional tales travel, change details, and teach lessons through memorable characters.", "All traditional tales are about fishing boats.", "Only heroes appear in traditional tales."], "answer": 1, "skill": "central_idea" },
+        { "q": "What does the sidebar help readers understand?", "choices": ["The names of some kinds of traditional tales", "The exact year the first tale was told", "The author's opinion about mountains", "The ending of every folktale"], "answer": 0, "skill": "text_features" },
+        { "q": "According to the passage, why are characters important in traditional tales?", "choices": ["They make the lesson easier to remember.", "They always live near the sea.", "They never make mistakes.", "They keep every story exactly the same."], "answer": 0, "skill": "characters" },
+        { "q": "Which detail supports the idea that tales change as they travel?", "choices": ["A storyteller in one country may add a mountain.", "Families shared stories aloud.", "A hero may be brave.", "Wisdom matters."], "answer": 0, "skill": "central_idea" },
+        { "q": "Which saying best matches the passage?", "choices": ["A story grows in the telling.", "Never count your chickens before they hatch.", "The early bird catches the worm.", "A penny saved is a penny earned."], "answer": 0, "skill": "adages_proverbs" }
+      ]
+    },
+    {
+      "id": "storm_rider",
+      "title": "Mara and the Storm Cloud",
+      "skills": ["characters", "figurative_language", "theme"],
+      "body": "Mara was born during a thunderstorm so loud that the windows jumped in their frames. By age seven, she could whistle louder than a train and toss hay bales as if they were pillows. Everyone in Dusty Bend knew Mara was strong.\n\nOne summer, a black cloud rolled toward the town. It growled like a hungry bear, and the wind snapped at the rooftops. The townspeople ran to tie down wagons and shut barn doors, but the cloud kept coming.\n\nMara climbed the water tower and shouted, \"You can roar all you want, but you cannot scare my town!\" Then she began to hum the lullaby her grandmother sang every night. The sound floated upward, soft at first, then steady as a drumbeat. The cloud slowed. Its thunder faded. At last it opened into gentle rain that filled the dry wells.\n\nAfterward, Mara did not brag. She helped patch fences and laughed when her little brother said, \"That cloud just needed a song.\"",
+      "questions": [
+        { "q": "Which detail shows that Mara is a tall-tale character?", "choices": ["She can toss hay bales as if they were pillows.", "She has a little brother.", "She lives in a town.", "She helps patch fences."], "answer": 0, "skill": "literary_elements" },
+        { "q": "What does \"the cloud growled like a hungry bear\" show?", "choices": ["The cloud was quiet.", "The cloud seemed powerful and threatening.", "The cloud was really an animal.", "The town had many bears."], "answer": 1, "skill": "figurative_language" },
+        { "q": "How does Mara solve the problem?", "choices": ["She runs away from the town.", "She uses a song to calm the storm cloud.", "She throws the cloud into the river.", "She hides in a barn."], "answer": 1, "skill": "literary_elements" },
+        { "q": "Which character trait best describes Mara at the end?", "choices": ["greedy", "humble", "lazy", "careless"], "answer": 1, "skill": "characters" },
+        { "q": "What is a theme of this story?", "choices": ["Strength is always louder than thunder.", "Courage and kindness can solve problems in surprising ways.", "Never sing during a storm.", "Small towns do not need help."], "answer": 1, "skill": "theme" }
+      ]
+    },
+    {
+      "id": "king_adobe_style",
+      "title": "The Clever Weaver",
+      "skills": ["characters", "adages_proverbs", "theme"],
+      "body": "In a dry village beside a red cliff, the mayor owned the only deep well. He charged one silver coin for every bucket of water. \"That is the rule,\" he said, though everyone knew the rule helped only him.\n\nA weaver named Lina watched her neighbors grow thirsty. She carried an empty basket to the mayor and said, \"I wish to buy the shadow of your well. Shadows cost nothing, yes?\" The mayor laughed and agreed.\n\nAt noon, Lina placed her basket where the well's shadow fell. She invited the villagers to stand in the shade and rest. Soon the mayor shouted, \"Move away! You are blocking my customers.\" Lina smiled. \"But I bought the shadow. If you want it back, trade fairly. One bucket of water for every family each day.\"\n\nThe mayor frowned, but the villagers were listening. At last he agreed. Lina bowed and said, \"A clever thread can mend a torn blanket.\"",
+      "questions": [
+        { "q": "What problem does Lina notice?", "choices": ["The mayor charges too much for water.", "The village has too many baskets.", "The cliff is too red.", "No one knows how to weave."], "answer": 0, "skill": "literary_elements" },
+        { "q": "What does Lina's plan show about her character?", "choices": ["She is clever and cares about others.", "She is afraid of the mayor.", "She wants all the water for herself.", "She dislikes her neighbors."], "answer": 0, "skill": "characters" },
+        { "q": "What does the saying \"A clever thread can mend a torn blanket\" mean in this story?", "choices": ["A small clever idea can fix a big problem.", "Blankets are more useful than wells.", "Only weavers can solve problems.", "Threads should be kept in baskets."], "answer": 0, "skill": "adages_proverbs" },
+        { "q": "What is the theme of this story?", "choices": ["Rules should always help only rich people.", "Cleverness can be used to make life fairer.", "Water is not important.", "Never stand in the shade."], "answer": 1, "skill": "theme" },
+        { "q": "Which is the best summary?", "choices": ["Lina buys a basket and walks near a cliff.", "A mayor owns a well, so Lina cleverly buys its shadow and helps the village get fair water.", "The mayor teaches Lina how to weave.", "The villagers decide to leave their homes."], "answer": 1, "skill": "summary" }
+      ]
+    },
+    {
+      "id": "pair_of_tricksters_style",
+      "title": "Fox and Turtle Trade Tricks",
+      "skills": ["characters", "theme", "literary_elements"],
+      "body": "Fox loved winning more than he loved being fair. One morning he challenged Turtle to a race around the pond. \"Winner gets the basket of berries,\" Fox said. Turtle agreed, but she noticed Fox hiding a shortcut map under his tail.\n\nWhen the race began, Fox dashed into the reeds. Turtle walked slowly to the bridge and called, \"Fox, I found a basket even bigger than yours!\" Fox stopped at once. He imagined berries piled higher than his ears. He ran back to see.\n\nThere was no bigger basket. There was only Turtle, still moving toward the finish line. Fox growled, \"You tricked me!\" Turtle blinked. \"I thought you liked tricks. You brought a shortcut map.\"\n\nFox's ears drooped. He had lost because he trusted his own greed more than the path. Turtle shared the berries anyway, but she kept the map and used it to teach the younger animals where not to step.",
+      "questions": [
+        { "q": "What is Fox's main character flaw?", "choices": ["He is too sleepy.", "He loves winning more than being fair.", "He is afraid of ponds.", "He shares too much."], "answer": 1, "skill": "characters" },
+        { "q": "Why does Fox run back during the race?", "choices": ["He wants to help Turtle.", "He believes there is a bigger basket of berries.", "He forgets where the pond is.", "He wants to give up."], "answer": 1, "skill": "literary_elements" },
+        { "q": "What lesson does Fox learn?", "choices": ["Greed and cheating can make a person lose.", "Maps are never useful.", "Turtles always run fast.", "Berries should not be shared."], "answer": 0, "skill": "theme" },
+        { "q": "Which proverb best fits this story?", "choices": ["Honesty is the best policy.", "All that glitters is not gold.", "Practice makes perfect.", "A stitch in time saves nine."], "answer": 0, "skill": "adages_proverbs" },
+        { "q": "How are Fox and Turtle different?", "choices": ["Fox is unfair and greedy, while Turtle is patient and clever.", "Fox is slow and Turtle is fast.", "Fox is kind and Turtle is rude.", "Fox shares berries and Turtle hides them."], "answer": 0, "skill": "characters" }
+      ]
+    },
+    {
+      "id": "ten_lamps_legend",
+      "title": "The Ten Lamps of the Mountain",
+      "skills": ["theme", "figurative_language", "text_features"],
+      "body": "Long ago, a mountain village used ten great lamps to guide travelers at night. Each lamp was carried by one guardian. The guardians took turns, so the path was bright but never too hot.\n\nOne evening, the youngest guardians grew bored. \"Why should we walk alone?\" they asked. \"Let us all climb the ridge together.\" When all ten lamps burned at once, the mountain became a furnace. Pine needles curled. Streams shrank into silver threads. Travelers covered their eyes and stumbled.\n\nThe village elder lifted her walking stick and called the guardians down. \"Light is a gift only when it is shared wisely,\" she said. Nine guardians lowered their lamps. One stayed on the ridge, glowing calmly until morning.\n\n[Caption: In many legends, impossible events explain something in the natural world.]",
+      "questions": [
+        { "q": "What natural idea does this legend-like story explain?", "choices": ["Why one guiding light is enough at night", "Why mountains are made of stone", "Why people carry baskets", "Why pine trees have needles"], "answer": 0, "skill": "literary_elements" },
+        { "q": "What does \"the mountain became a furnace\" mean?", "choices": ["The mountain was made of metal.", "The mountain became extremely hot.", "The mountain disappeared.", "The guardians built a house."], "answer": 1, "skill": "figurative_language" },
+        { "q": "What does the caption help readers understand?", "choices": ["A feature of legends", "The exact size of each lamp", "The name of every guardian", "How to build a lamp"], "answer": 0, "skill": "text_features" },
+        { "q": "Which sentence states a theme?", "choices": ["The guardians used lamps.", "The mountain village had a path.", "Power should be used with wisdom.", "Pine needles curled."], "answer": 2, "skill": "theme" },
+        { "q": "Why do the youngest guardians cause trouble?", "choices": ["They are bored and do not think about the results of their choice.", "They want to help the village elder.", "They cannot find their lamps.", "They are afraid of travelers."], "answer": 0, "skill": "characters" }
+      ]
+    }
+  ]
+}

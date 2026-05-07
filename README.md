@@ -1,6 +1,6 @@
 # cs-english-exam
 
-A small, static web app to help a Grade 4 student prepare for an HMH **Into Reading, Module 6 (Weeks 1–3)** English midterm. No build step, no dependencies — just open it in a browser.
+A small, static web app to help a Grade 4 student prepare for English tests. It now supports multiple test sets, starting with the 2026 April HMH **Into Reading, Module 6 (Weeks 1–3)** midterm. No build step, no dependencies — just open it in a browser.
 
 ## Topics
 
@@ -9,10 +9,10 @@ A small, static web app to help a Grade 4 student prepare for an HMH **Into Read
 | 📖 | **Vocabulary** | 24 Module 6 words across 3 modes: word→definition, definition→word, and fill-in-the-blank |
 | 🔤 | **Phonics & Spelling** | TTS dictation for the 3 weekly spelling lists, plus drag-to-bin sort games for /k/·/ng/·/kw/, final /j/·/s/, and prefixes re-/un-/dis- |
 | ✏️ | **Grammar** | 20 multiple-choice items on modal verbs (My Next Grammar, Lesson 14) |
-| 📚 | **Reading** | 7 anchor charts (Ideas & Support, Text Structure, Figurative Language, Central Idea, Text & Graphic Features, Summary, Theme) + 4 original passages with single-page scrollable quizzes |
+| 📚 | **Reading** | Anchor charts + per-passage single-page scrollable quizzes |
 | 👂 | **Listening** | TTS-played dialogues with two voices, replay button on every question, and an MCQ quiz |
 
-Per-topic best scores are saved in `localStorage`.
+Per-topic best scores are saved in `localStorage` by test id, so practice from different tests does not overwrite itself.
 
 ## Run
 
@@ -35,9 +35,11 @@ The voice picker on the dictation and listening screens auto-ranks Premium voice
 ## Project layout
 
 ```
-raw/        # original photos of the printed study guide / worksheets
+raw/        # original photos, grouped by source month
 content/    # markdown transcriptions of raw/ + reading anchor charts
-data/       # runtime JSON consumed by the app
+data/
+  exams.json              # test picker metadata
+  exams/<exam-id>/*.json  # runtime JSON consumed by the app
 index.html  # shell
 app.js      # everything (router, quiz engine, TTS layer)
 styles.css
@@ -45,10 +47,11 @@ STUDY_GUIDE.md
 CLAUDE.md   # notes for working in this repo with Claude Code
 ```
 
-`raw/` is read-only source material. `content/*.md` are human-readable transcriptions. `data/*.json` is the runtime source of truth — edit those to add or change practice items. See [`CLAUDE.md`](CLAUDE.md) for architecture notes.
+`raw/` is read-only source material. `content/*.md` are human-readable transcriptions. `data/exams/<exam-id>/*.json` is the runtime source of truth — edit those to add or change practice items. See [`CLAUDE.md`](CLAUDE.md) for architecture notes.
 
 ## Adding content
 
-- **Vocab / spelling / grammar / listening**: edit the matching `data/*.json`. Schemas are obvious from existing entries.
-- **Reading passage**: add an object to `data/reading.json` `passages[]`. Each question has a `skill` field that must match a key in the top-level `skills` map.
-- **Phonics sort game**: add a list to `data/spelling.json` with `sortGame: true` and a `groups` map of `groupName → [words]`.
+- **New test**: add an entry to `data/exams.json`, then create `data/exams/<exam-id>/vocabulary.json`, `spelling.json`, `grammar.json`, `reading.json`, and `listening.json`.
+- **Vocab / spelling / grammar / listening**: edit the matching file under `data/exams/<exam-id>/`. Schemas are obvious from existing entries.
+- **Reading passage**: add an object to `data/exams/<exam-id>/reading.json` `passages[]`. Each question has a `skill` field that must match a key in the top-level `skills` map.
+- **Phonics sort game**: add a list to `data/exams/<exam-id>/spelling.json` with `sortGame: true` and a `groups` map of `groupName → [words]`.

@@ -1,0 +1,81 @@
+{
+  "lists": [
+    {
+      "id": "m7_w1_spelling",
+      "title": "Module 7 Week 1 — Spelling (word endings)",
+      "words": [
+        { "word": "appointment", "sentence": "I have a dentist appointment after school." },
+        { "word": "beautiful", "sentence": "The sunset looked beautiful over the lake." },
+        { "word": "breathless", "sentence": "I felt breathless after running up the stairs." },
+        { "word": "clumsiness", "sentence": "His clumsiness made him drop the spoon." },
+        { "word": "effortless", "sentence": "The dancer made the jump look effortless." },
+        { "word": "endless", "sentence": "The road seemed endless on the long trip." },
+        { "word": "enjoyment", "sentence": "Reading brings me a lot of enjoyment." },
+        { "word": "graceful", "sentence": "The swan moved in a graceful way." },
+        { "word": "treatment", "sentence": "The doctor gave the patient careful treatment." },
+        { "word": "weakness", "sentence": "Everyone has a strength and a weakness." }
+      ]
+    },
+    {
+      "id": "m7_w2_spelling",
+      "title": "Module 7 Week 2 — Spelling (VCCV syllable pattern)",
+      "words": [
+        { "word": "borrow", "sentence": "May I borrow your pencil for the quiz?" },
+        { "word": "collect", "sentence": "We collect leaves for our science project." },
+        { "word": "engine", "sentence": "The train engine made a loud sound." },
+        { "word": "million", "sentence": "A million stars seemed to shine in the sky." },
+        { "word": "publish", "sentence": "The class will publish a book of poems." },
+        { "word": "support", "sentence": "My family will support me at the concert." },
+        { "word": "suppose", "sentence": "I suppose we should start our homework now." },
+        { "word": "survive", "sentence": "Plants need water and sunlight to survive." },
+        { "word": "thirty", "sentence": "There are thirty students in the room." },
+        { "word": "traffic", "sentence": "Heavy traffic made us late for school." }
+      ]
+    },
+    {
+      "id": "m7_w3_spelling",
+      "title": "Module 7 Week 3 — Spelling (VCV syllable pattern)",
+      "words": [
+        { "word": "award", "sentence": "She won an award for her story." },
+        { "word": "broken", "sentence": "The broken cup was on the table." },
+        { "word": "decode", "sentence": "We learned how to decode the secret message." },
+        { "word": "detail", "sentence": "Add one more detail to your paragraph." },
+        { "word": "event", "sentence": "The school event begins at nine o'clock." },
+        { "word": "frozen", "sentence": "The pond was frozen in the winter." },
+        { "word": "polite", "sentence": "It is polite to say thank you." },
+        { "word": "private", "sentence": "Please keep this note private." },
+        { "word": "punish", "sentence": "The coach did not punish the team for one mistake." },
+        { "word": "relief", "sentence": "I felt relief when I found my lost book." }
+      ]
+    },
+    {
+      "id": "m7_word_endings",
+      "title": "Phonics — Word Endings -ful, -less, -ness, -ment",
+      "sortGame": true,
+      "groups": {
+        "-ful": ["beautiful", "graceful"],
+        "-less": ["breathless", "effortless", "endless"],
+        "-ness": ["clumsiness", "weakness"],
+        "-ment": ["appointment", "enjoyment", "treatment"]
+      }
+    },
+    {
+      "id": "m7_vccv_patterns",
+      "title": "Phonics — VCCV Syllable Division",
+      "sortGame": true,
+      "groups": {
+        "Double consonants": ["support", "borrow", "collect", "traffic", "attend"],
+        "Different consonants": ["thirty", "pattern", "perfect", "fortune", "picture", "plastic", "seldom"]
+      }
+    },
+    {
+      "id": "m7_vcv_patterns",
+      "title": "Phonics — VCV Syllable Patterns",
+      "sortGame": true,
+      "groups": {
+        "Open first syllable": ["mutant", "music", "siren", "polite", "motel", "relay", "unite", "frozen", "detail"],
+        "Closed first syllable": ["habit", "punish", "figure"]
+      }
+    }
+  ]
+}
