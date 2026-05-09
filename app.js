@@ -530,6 +530,7 @@ function readPassage(passage) {
     <div class="panel">
       <h2>${passage.title}</h2>
       <div>${passage.skills.map(s => `<span class="tag">${data.reading.skills[s] || s}</span>`).join("")}</div>
+      ${passage.image ? `<img class="passage-image" src="${passage.image}" alt="${passage.imageAlt || passage.title}">` : ""}
       <div class="passage">${passage.body}</div>
       ${voicePicker()}
       <div style="margin:8px 0;display:flex;gap:8px;flex-wrap:wrap">

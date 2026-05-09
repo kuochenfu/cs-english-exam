@@ -168,7 +168,9 @@
           "answer": 0,
           "skill": "adages_proverbs"
         }
-      ]
+      ],
+      "image": "assets/passages/traditional-tales-travel.png",
+      "imageAlt": "A poster showing traditional tales traveling from mountains to sea."
     },
     {
       "id": "storm_rider",
@@ -235,7 +237,9 @@
           "answer": 1,
           "skill": "theme"
         }
-      ]
+      ],
+      "image": "assets/passages/mara-storm-cloud.png",
+      "imageAlt": "A poster showing Mara singing to calm a storm cloud."
     },
     {
       "id": "king_adobe_style",
@@ -302,7 +306,9 @@
           "answer": 1,
           "skill": "summary"
         }
-      ]
+      ],
+      "image": "assets/passages/clever-weaver.png",
+      "imageAlt": "A poster showing Lina the weaver beside the village well."
     },
     {
       "id": "pair_of_tricksters_style",
@@ -369,7 +375,9 @@
           "answer": 0,
           "skill": "characters"
         }
-      ]
+      ],
+      "image": "assets/passages/fox-turtle-tricks.png",
+      "imageAlt": "A poster showing Fox and Turtle racing around a pond."
     },
     {
       "id": "ten_lamps_legend",
@@ -436,7 +444,9 @@
           "answer": 0,
           "skill": "characters"
         }
-      ]
+      ],
+      "image": "assets/passages/ten-lamps-mountain.png",
+      "imageAlt": "A poster showing guardians carrying lamps on a mountain path."
     }
   ]
 }
