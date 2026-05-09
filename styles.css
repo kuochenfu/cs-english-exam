@@ -189,3 +189,37 @@ input[type=text]:focus { outline: none; border-color: var(--primary); }
 
 details { margin: 10px 0; }
 details summary { cursor: pointer; font-weight: bold; padding: 8px 0; }
+
+.anchor-chart-content {
+  display: grid;
+  grid-template-columns: minmax(220px, 320px) 1fr;
+  gap: 20px;
+  align-items: start;
+  padding: 8px 0 18px;
+}
+
+.anchor-chart-image {
+  width: 100%;
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  background: #fffaf0;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+.anchor-chart-examples {
+  margin-top: 10px;
+}
+
+.anchor-chart-examples ol {
+  margin-top: 8px;
+}
+
+@media (max-width: 640px) {
+  .anchor-chart-content {
+    grid-template-columns: 1fr;
+  }
+
+  .anchor-chart-image {
+    max-width: 320px;
+  }
+}

@@ -515,7 +515,7 @@ function showAnchorCharts() {
   app.innerHTML = `
     <div class="panel">
       <h2>📋 Anchor Charts</h2>
-      ${charts.map(c => `<details><summary>${c.name}</summary><div>${c.body}<div style="margin-top:10px"><b>Examples:</b><ol>${(c.ex || []).map(x => `<li>${x}</li>`).join("")}</ol></div></div></details>`).join("")}
+      ${charts.map(c => `<details><summary>${c.name}</summary><div class="anchor-chart-content">${c.image ? `<img class="anchor-chart-image" src="${c.image}" alt="${c.imageAlt || c.name}">` : ""}<div>${c.body}<div class="anchor-chart-examples"><b>Examples:</b><ol>${(c.ex || []).map(x => `<li>${x}</li>`).join("")}</ol></div></div></div></details>`).join("")}
       <br><button onclick="readingTopic()">← Back</button>
       <button class="ghost" onclick="renderHome()">🏠 Home</button>
     </div>`;
