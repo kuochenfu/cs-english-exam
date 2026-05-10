@@ -5,10 +5,13 @@ const $ = (id) => document.getElementById(id);
 const app = $("app");
 
 const STORE_KEY = "cs-english-exam-progress";
+const MISSED_KEY = "cs-english-exam-missed";
 const VOICE_KEY = "cs-english-exam-voice";
 const EXAM_KEY = "cs-english-exam-current-exam";
 const progress = JSON.parse(localStorage.getItem(STORE_KEY) || "{}");
+const missed = JSON.parse(localStorage.getItem(MISSED_KEY) || "{}");
 const saveProgress = () => localStorage.setItem(STORE_KEY, JSON.stringify(progress));
+const saveMissed = () => localStorage.setItem(MISSED_KEY, JSON.stringify(missed));
 
 // ---------- Voice selection ----------
 let voices = [];
@@ -77,6 +80,10 @@ function progressKey(topicId) {
   return currentExam ? `${currentExam.id}:${topicId}` : topicId;
 }
 
+function missedKey(topicId) {
+  return progressKey(topicId);
+}
+
 function readProgress(topicId) {
   const key = progressKey(topicId);
   return progress[key] || (currentExam?.id === examIndex.defaultExamId ? progress[topicId] : null);
@@ -88,6 +95,60 @@ function writeProgress(topicId, pct) {
   const prev = readProgress(topicId);
   progress[key] = { best: Math.max(prev?.best || 0, pct), lastDate: today, lastScore: pct };
   saveProgress();
+}
+
+function readTopicProgress(topicId) {
+  const exact = readProgress(topicId);
+  if (!currentExam) return null;
+
+  const prefix = `${currentExam.id}:${topicId}:`;
+  const entries = Object.entries(progress)
+    .filter(([key]) => key.startsWith(prefix))
+    .map(([,value]) => value);
+  if (exact && !entries.length) return { text: `Best: ${exact.best}% · ${exact.lastDate}` };
+  if (!entries.length) return null;
+
+  const best = Math.max(...entries.map(p => p.best || 0));
+  const latest = entries
+    .map(p => p.lastDate)
+    .filter(Boolean)
+    .sort()
+    .pop();
+  return { text: `Best: ${best}% · ${entries.length} mode${entries.length === 1 ? "" : "s"}${latest ? ` · ${latest}` : ""}` };
+}
+
+function recordMissed(topicId, item) {
+  const key = missedKey(topicId);
+  if (!missed[key]) missed[key] = [];
+  const next = { ...item, missedAt: new Date().toISOString().slice(0,10) };
+  const idx = missed[key].findIndex(x => x.id === next.id);
+  if (idx >= 0) missed[key][idx] = next;
+  else missed[key].push(next);
+  saveMissed();
+}
+
+function clearMissed(topicId, id) {
+  const key = missedKey(topicId);
+  if (!missed[key]) return;
+  missed[key] = missed[key].filter(x => x.id !== id);
+  if (!missed[key].length) delete missed[key];
+  saveMissed();
+}
+
+function missedItems(topicId) {
+  return missed[missedKey(topicId)] || [];
+}
+
+function missedCount(topicId) {
+  return missedItems(topicId).length;
+}
+
+function missedCountForPrefix(topicId) {
+  if (!currentExam) return 0;
+  const prefix = `${currentExam.id}:${topicId}`;
+  return Object.entries(missed)
+    .filter(([key]) => key === prefix || key.startsWith(`${prefix}:`))
+    .reduce((sum, [,items]) => sum + items.length, 0);
 }
 
 async function loadAll() {
@@ -182,13 +243,14 @@ function renderHome() {
       <p class="exam-label">${currentExam.title} · ${currentExam.subtitle}</p>
       <div class="cards">
         ${topics.map(t => {
-          const p = readProgress(t.id);
-          const pStr = p ? `Best: ${p.best}% · ${p.lastDate}` : "Not tried yet";
+          const p = readTopicProgress(t.id);
+          const miss = missedCountForPrefix(t.id);
+          const pStr = p ? p.text : "Not tried yet";
           return `<div class="card" data-topic="${t.id}">
             <div class="icon">${t.icon}</div>
             <h2>${t.title}</h2>
             <div>${t.desc}</div>
-            <div class="progress">${pStr}</div>
+            <div class="progress">${pStr}${miss ? ` · ${miss} to review` : ""}</div>
           </div>`;
         }).join("")}
       </div>
@@ -201,11 +263,23 @@ function renderHome() {
 }
 
 // ---------- Generic Quiz Runner ----------
-function runQuiz(topicId, title, items, getQ) {
+function runQuiz(topicId, title, items, getQ, options = {}) {
   // items: array; getQ(item) -> {prompt, choices, answer, extra?}
+  if (!items.length) {
+    app.innerHTML = `
+      <div class="panel">
+        <h2>${title}</h2>
+        <p>No review items are available right now.</p>
+        <button class="ghost" onclick="renderHome()">🏠 Home</button>
+      </div>`;
+    return;
+  }
   let i = 0, correct = 0;
   const missed = [];
   const order = shuffle([...items.keys()]);
+  const itemId = options.itemId || ((item) => item.id || item.word || item.q);
+  const itemLabel = options.itemLabel || ((item) => item.word || item.q || "Question");
+  const afterFinish = options.afterFinish || renderHome;
 
   function step() {
     if (i >= order.length) return finish();
@@ -227,19 +301,28 @@ function runQuiz(topicId, title, items, getQ) {
       b.onclick = () => {
         const picked = +b.dataset.idx;
         const isCorrect = picked === answer;
+        const id = String(itemId(item));
         document.querySelectorAll(".choices button").forEach(x => {
           x.disabled = true;
           if (+x.dataset.idx === answer) x.classList.add("correct");
           else if (x === b) x.classList.add("wrong");
         });
         const fb = $("fb");
-        if (isCorrect) { correct++; fb.textContent = "✅ Correct!"; fb.className = "feedback good"; }
+        if (isCorrect) {
+          correct++;
+          clearMissed(topicId, id);
+          fb.textContent = "✅ Correct!";
+          fb.className = "feedback good";
+        }
         else { missed.push({ item, picked: choices[picked], answer: choices[answer] });
+               recordMissed(topicId, { id, label: itemLabel(item), title });
                fb.innerHTML = `❌ The answer is <b>${choices[answer]}</b>.`;
                fb.className = "feedback bad"; }
         setTimeout(() => { i++; step(); }, isCorrect ? 700 : 1600);
       };
     });
+    if (options.afterRender) options.afterRender(item);
+    if (options.onStep) options.onStep(item);
   }
 
   function finish() {
@@ -251,8 +334,10 @@ function runQuiz(topicId, title, items, getQ) {
         <p>Score: <b>${correct} / ${order.length}</b> (${pct}%)</p>
         ${missed.length ? `<details open><summary>Review ${missed.length} missed:</summary>
           <ul>${missed.map(m => `<li>${getQ(m.item).prompt.replace(/<[^>]+>/g,'')} → <b>${m.answer}</b> (you said: ${m.picked})</li>`).join("")}</ul></details>` : "<p>Perfect score! 🌟</p>"}
-        <button onclick="renderHome()">🏠 Home</button>
+        <button id="finish-next">Done</button>
+        <button class="ghost" onclick="renderHome()">🏠 Home</button>
       </div>`;
+    $("finish-next").onclick = afterFinish;
   }
 
   step();
@@ -273,6 +358,28 @@ function emptyTopic(title) {
 function vocabularyTopic() {
   const words = data.vocabulary.words;
   if (!words.length) return emptyTopic("Vocabulary");
+  const missedDef = missedCount("vocab:definition");
+  const missedWord = missedCount("vocab:word");
+  const missedBlank = missedCount("vocab:blank");
+
+  const reviewWords = (topicId) => words.filter(w => missedItems(topicId).some(m => m.id === w.word));
+  const startDefinition = (items = words) => runQuiz("vocab:definition", "Word → Definition", items, (w) => {
+    const wrongs = shuffle(words.filter(x => x.word !== w.word)).slice(0,3);
+    const choices = shuffle([w, ...wrongs]).map(x => x.definition);
+    return { prompt: `What does <b>${w.word}</b> (${w.pos}) mean?`, choices, answer: choices.indexOf(w.definition) };
+  }, { itemId: w => w.word, itemLabel: w => w.word, afterFinish: vocabularyTopic });
+  const startWord = (items = words) => runQuiz("vocab:word", "Definition → Word", items, (w) => {
+    const wrongs = shuffle(words.filter(x => x.word !== w.word)).slice(0,3);
+    const choices = shuffle([w, ...wrongs]).map(x => x.word);
+    return { prompt: `Which word means: <i>"${w.definition}"</i>?`, choices, answer: choices.indexOf(w.word) };
+  }, { itemId: w => w.word, itemLabel: w => w.word, afterFinish: vocabularyTopic });
+  const startBlank = (items = words) => runQuiz("vocab:blank", "Fill in the Blank", items, (w) => {
+    const blanked = w.example.replace(new RegExp(`\\b${w.word}\\w*`, "i"), "____");
+    const wrongs = shuffle(words.filter(x => x.word !== w.word)).slice(0,3);
+    const choices = shuffle([w, ...wrongs]).map(x => x.word);
+    return { prompt: blanked, choices, answer: choices.indexOf(w.word) };
+  }, { itemId: w => w.word, itemLabel: w => w.word, afterFinish: vocabularyTopic });
+
   app.innerHTML = `
     <div class="panel">
       <h2>📖 Vocabulary</h2>
@@ -280,24 +387,17 @@ function vocabularyTopic() {
       <button id="m1">Word → Definition</button>
       <button id="m2">Definition → Word</button>
       <button id="m3">Fill in the Blank</button>
+      ${missedDef ? `<button class="ghost" id="r1">Review Word → Definition (${missedDef})</button>` : ""}
+      ${missedWord ? `<button class="ghost" id="r2">Review Definition → Word (${missedWord})</button>` : ""}
+      ${missedBlank ? `<button class="ghost" id="r3">Review Fill in the Blank (${missedBlank})</button>` : ""}
       <button class="ghost" onclick="renderHome()">🏠 Home</button>
     </div>`;
-  $("m1").onclick = () => runQuiz("vocab", "Word → Definition", words, (w) => {
-    const wrongs = shuffle(words.filter(x => x.word !== w.word)).slice(0,3);
-    const choices = shuffle([w, ...wrongs]).map(x => x.definition);
-    return { prompt: `What does <b>${w.word}</b> (${w.pos}) mean?`, choices, answer: choices.indexOf(w.definition) };
-  });
-  $("m2").onclick = () => runQuiz("vocab", "Definition → Word", words, (w) => {
-    const wrongs = shuffle(words.filter(x => x.word !== w.word)).slice(0,3);
-    const choices = shuffle([w, ...wrongs]).map(x => x.word);
-    return { prompt: `Which word means: <i>"${w.definition}"</i>?`, choices, answer: choices.indexOf(w.word) };
-  });
-  $("m3").onclick = () => runQuiz("vocab", "Fill in the Blank", words, (w) => {
-    const blanked = w.example.replace(new RegExp(`\\b${w.word}\\w*`, "i"), "____");
-    const wrongs = shuffle(words.filter(x => x.word !== w.word)).slice(0,3);
-    const choices = shuffle([w, ...wrongs]).map(x => x.word);
-    return { prompt: blanked, choices, answer: choices.indexOf(w.word) };
-  });
+  $("m1").onclick = () => startDefinition();
+  $("m2").onclick = () => startWord();
+  $("m3").onclick = () => startBlank();
+  if ($("r1")) $("r1").onclick = () => startDefinition(reviewWords("vocab:definition"));
+  if ($("r2")) $("r2").onclick = () => startWord(reviewWords("vocab:word"));
+  if ($("r3")) $("r3").onclick = () => startBlank(reviewWords("vocab:blank"));
 }
 
 // ---------- Spelling / Phonics ----------
@@ -308,25 +408,92 @@ function spellingTopic() {
     <div class="panel">
       <h2>🔤 Phonics & Spelling</h2>
       <p>Pick a list:</p>
-      ${lists.map((l,idx) => `<button data-i="${idx}">${l.title}</button>`).join("")}
+      ${lists.map((l,idx) => {
+        const topicId = `spell:${l.id || idx}`;
+        const p = readTopicProgress(topicId);
+        const miss = missedCountForPrefix(topicId);
+        return `<button data-i="${idx}">${l.title}${p ? ` · ${p.text}` : ""}</button>${miss ? `<button class="ghost" data-review-i="${idx}">Review missed (${miss})</button>` : ""}`;
+      }).join("")}
       <button class="ghost" onclick="renderHome()">🏠 Home</button>
     </div>`;
   document.querySelectorAll(".panel button[data-i]").forEach(b => {
     b.onclick = () => {
       const list = lists[+b.dataset.i];
-      if (list.sortGame) sortGame(list); else dictation(list);
+      if (list.sortGame) sortGame(list); else spellingListMenu(list);
+    };
+  });
+  document.querySelectorAll(".panel button[data-review-i]").forEach(b => {
+    b.onclick = () => {
+      const list = lists[+b.dataset.reviewI];
+      if (list.sortGame) sortGame(list, true); else spellingListMenu(list);
     };
   });
 }
 
-function dictation(list) {
+function spellingListMenu(list) {
+  window.__currentSpellingList = list;
+  const baseId = `spell:${list.id || list.title}`;
+  const chooseId = `${baseId}:choose`;
+  const typeId = `${baseId}:type`;
+  const chooseProgress = readProgress(chooseId);
+  const typeProgress = readProgress(typeId);
+  const chooseMissed = missedCount(chooseId);
+  const typeMissed = missedCount(typeId);
+
+  app.innerHTML = `
+    <div class="panel">
+      <h2>${list.title}</h2>
+      <p>Start with listening practice, then try the full spelling test.</p>
+      <button id="spell-choose">Listen & Choose${chooseProgress ? ` · Best ${chooseProgress.best}%` : ""}</button>
+      ${chooseMissed ? `<button class="ghost" id="spell-choose-review">Review Listen & Choose (${chooseMissed})</button>` : ""}
+      <button id="spell-type">Type Spelling${typeProgress ? ` · Best ${typeProgress.best}%` : ""}</button>
+      ${typeMissed ? `<button class="ghost" id="spell-type-review">Review Type Spelling (${typeMissed})</button>` : ""}
+      <button class="ghost" onclick="spellingTopic()">← More lists</button>
+      <button class="ghost" onclick="renderHome()">🏠 Home</button>
+    </div>`;
+  $("spell-choose").onclick = () => spellingChoiceQuiz(list);
+  $("spell-type").onclick = () => dictation(list);
+  if ($("spell-choose-review")) $("spell-choose-review").onclick = () => spellingChoiceQuiz(list, true);
+  if ($("spell-type-review")) $("spell-type-review").onclick = () => dictation(list, true);
+}
+
+function spellingChoiceQuiz(list, reviewOnly = false) {
+  const topicId = `spell:${list.id || list.title}:choose`;
+  const words = reviewOnly ? list.words.filter(w => missedItems(topicId).some(m => m.id === w.word)) : list.words;
+  const makeChoices = (item) => {
+    const wrongs = shuffle(list.words.filter(w => w.word !== item.word)).slice(0, 3);
+    return shuffle([item, ...wrongs]).map(w => w.word);
+  };
+  runQuiz(topicId, `${list.title} — Listen & Choose`, words, (item) => {
+    const choices = makeChoices(item);
+    window.__spellReplay = () => speak(item.sentence);
+    return {
+      prompt: "Which word completes the sentence?",
+      choices,
+      answer: choices.indexOf(item.word),
+      extra: `${voicePicker()}<button onclick="window.__spellReplay()" class="ghost" style="margin-bottom:8px">🔊 Replay sentence</button>`
+    };
+  }, {
+    itemId: item => item.word,
+    itemLabel: item => item.word,
+    afterFinish: () => spellingListMenu(list),
+    afterRender: bindVoicePicker,
+    onStep: item => speak(item.sentence)
+  });
+}
+
+function dictation(list, reviewOnly = false) {
+  window.__currentSpellingList = list;
   let i = 0, correct = 0;
-  const order = shuffle([...list.words.keys()]);
+  const topicId = `spell:${list.id || list.title}:type`;
+  const words = reviewOnly ? list.words.filter(w => missedItems(topicId).some(m => m.id === w.word)) : list.words;
+  if (!words.length) return spellingTopic();
+  const order = shuffle([...words.keys()]);
   const missed = [];
 
   function step() {
     if (i >= order.length) return finish();
-    const item = list.words[order[i]];
+    const item = words[order[i]];
     app.innerHTML = `
       <div class="panel">
         <div class="progress-bar"><div style="width:${(i/order.length)*100}%"></div></div>
@@ -350,10 +517,12 @@ function dictation(list) {
       const fb = $("fb");
       if (guess === item.word.toLowerCase()) {
         correct++;
+        clearMissed(topicId, item.word);
         fb.textContent = `✅ "${item.word}" — ${item.sentence}`;
         fb.className = "feedback good";
       } else {
         missed.push({ word: item.word, guess, sentence: item.sentence });
+        recordMissed(topicId, { id: item.word, label: item.word, title: list.title });
         fb.innerHTML = `❌ Correct spelling: <b>${item.word}</b><br><i>${item.sentence}</i>`;
         fb.className = "feedback bad";
       }
@@ -363,27 +532,38 @@ function dictation(list) {
 
   function finish() {
     const pct = Math.round((correct/order.length)*100);
-    writeProgress("spell", pct);
+    writeProgress(topicId, pct);
     app.innerHTML = `
       <div class="panel">
         <h2>🎉 Done!</h2>
         <p>Score: <b>${correct} / ${order.length}</b> (${pct}%)</p>
         ${missed.length ? `<details open><summary>Review ${missed.length} missed:</summary>
           <ul>${missed.map(m => `<li><b>${m.word}</b> — you wrote "${m.guess}"</li>`).join("")}</ul></details>` : "<p>Perfect! 🌟</p>"}
-        <button onclick="spellingTopic()">More lists</button>
+        <button id="more-spelling-modes">More modes</button>
+        ${missedCount(topicId) ? `<button class="ghost" id="review-dictation">Review this list (${missedCount(topicId)})</button>` : ""}
         <button class="ghost" onclick="renderHome()">🏠 Home</button>
       </div>`;
+    $("more-spelling-modes").onclick = () => spellingListMenu(list);
+    if ($("review-dictation")) $("review-dictation").onclick = () => dictation(list, true);
   }
 
   step();
 }
 
-function sortGame(list) {
+function sortGame(list, reviewOnly = false) {
   // Build flat word→correctGroup map
+  const topicId = `spell:${list.id || list.title}`;
+  const reviewIds = new Set(missedItems(topicId).map(m => m.id));
   const groupNames = Object.keys(list.groups);
   const wordGroup = {};
   const allWords = [];
-  groupNames.forEach(g => list.groups[g].forEach(w => { wordGroup[w] = g; allWords.push(w); }));
+  groupNames.forEach(g => list.groups[g].forEach(w => {
+    if (!reviewOnly || reviewIds.has(w)) {
+      wordGroup[w] = g;
+      allWords.push(w);
+    }
+  }));
+  if (!allWords.length) return spellingTopic();
 
   const placed = {}; // word -> chosen group
   let remaining = shuffle([...allWords]);
@@ -412,14 +592,19 @@ function sortGame(list) {
     document.querySelectorAll(".sort-word[data-w]").forEach(el => {
       el.onclick = () => {
         selected = el.dataset.w;
-        document.querySelectorAll(".sort-word[data-w]").forEach(x => x.style.borderColor = "");
-        el.style.borderColor = "var(--primary)";
+        document.querySelectorAll(".sort-word[data-w]").forEach(x => x.classList.remove("selected"));
+        el.classList.add("selected");
       };
     });
     document.querySelectorAll(".sort-bin").forEach(bin => {
       bin.onclick = () => {
         if (!selected) return;
         placed[selected] = bin.dataset.g;
+        if (wordGroup[selected] === bin.dataset.g) {
+          clearMissed(topicId, selected);
+        } else {
+          recordMissed(topicId, { id: selected, label: selected, title: list.title });
+        }
         remaining = remaining.filter(w => w !== selected);
         selected = null;
         render();
@@ -429,7 +614,7 @@ function sortGame(list) {
       const total = allWords.length;
       const right = Object.entries(placed).filter(([w,g]) => wordGroup[w] === g).length;
       const pct = Math.round((right/total)*100);
-      writeProgress("spell", pct);
+      writeProgress(topicId, pct);
     }
   }
   render();
@@ -439,11 +624,23 @@ function sortGame(list) {
 function grammarTopic() {
   const items = data.grammar.items;
   if (!items.length) return emptyTopic("Grammar");
-  runQuiz("grammar", data.grammar.title, items, (it) => ({
+  const topicId = "grammar:main";
+  const start = (quizItems = items) => runQuiz(topicId, data.grammar.title, quizItems, (it) => ({
     prompt: it.q + (it.use ? ` <span class="tag">${it.use}</span>` : ""),
     choices: it.choices,
     answer: it.answer
-  }));
+  }), { itemId: it => it.q, itemLabel: it => it.q, afterFinish: grammarTopic });
+  const reviewItems = items.filter(it => missedItems(topicId).some(m => m.id === it.q));
+  app.innerHTML = `
+    <div class="panel">
+      <h2>✏️ Grammar</h2>
+      <p>Choose a practice set:</p>
+      <button id="grammar-all">All questions</button>
+      ${reviewItems.length ? `<button class="ghost" id="grammar-review">Review missed (${reviewItems.length})</button>` : ""}
+      <button class="ghost" onclick="renderHome()">🏠 Home</button>
+    </div>`;
+  $("grammar-all").onclick = () => start(items);
+  if ($("grammar-review")) $("grammar-review").onclick = () => start(reviewItems);
 }
 
 // ---------- Reading ----------
@@ -457,12 +654,20 @@ function readingTopic() {
       <p>Choose what to do:</p>
       ${charts.length ? `<button id="charts">📋 Anchor Charts (review skills)</button>` : ""}
       ${passages.length ? `<h3>Then practice with a passage:</h3>
-      ${passages.map((p,i) => `<button data-p="${i}">${p.title}</button>`).join("")}` : ""}
+      ${passages.map((p,i) => {
+        const topicId = `reading:${p.id || p.title}`;
+        const miss = missedCount(topicId);
+        const prog = readProgress(topicId);
+        return `<button data-p="${i}">${p.title}${prog ? ` · Best ${prog.best}%` : ""}</button>${miss ? `<button class="ghost" data-review-p="${i}">Review missed (${miss})</button>` : ""}`;
+      }).join("")}` : ""}
       <br><button class="ghost" onclick="renderHome()">🏠 Home</button>
     </div>`;
   if ($("charts")) $("charts").onclick = showAnchorCharts;
   document.querySelectorAll("button[data-p]").forEach(b => {
     b.onclick = () => readPassage(data.reading.passages[+b.dataset.p]);
+  });
+  document.querySelectorAll("button[data-review-p]").forEach(b => {
+    b.onclick = () => readPassage(data.reading.passages[+b.dataset.reviewP], true);
   });
 }
 
@@ -521,10 +726,15 @@ function showAnchorCharts() {
     </div>`;
 }
 
-function readPassage(passage) {
+function readPassage(passage, reviewOnly = false) {
+  const topicId = `reading:${passage.id || passage.title}`;
+  const reviewIds = new Set(missedItems(topicId).map(m => m.id));
+  const questions = reviewOnly ? passage.questions.filter(q => reviewIds.has(q.q)) : passage.questions;
+  if (!questions.length) return readingTopic();
   window.__currentPassage = passage;
+  window.__currentPassageReviewOnly = reviewOnly;
   // Pre-shuffle choice order per question so answer letters aren't always in the same spot.
-  const qOrders = passage.questions.map(q => shuffle([...q.choices.keys()]));
+  const qOrders = questions.map(q => shuffle([...q.choices.keys()]));
 
   app.innerHTML = `
     <div class="panel">
@@ -539,7 +749,8 @@ function readPassage(passage) {
       </div>
       <h3>Questions</h3>
       <p style="color:var(--muted)">Read the passage above (you can scroll back any time), pick one answer for each question, then click <b>Submit all answers</b> at the bottom.</p>
-      ${passage.questions.map((q, qi) => `
+      ${reviewOnly ? `<p class="review-note">Reviewing missed questions only.</p>` : ""}
+      ${questions.map((q, qi) => `
         <div class="qa-block" data-qi="${qi}" style="margin:18px 0;padding:14px;border:2px solid var(--border);border-radius:14px">
           <div class="question"><b>${qi+1}.</b> ${q.q} <span class="tag">${data.reading.skills[q.skill] || q.skill}</span></div>
           <div class="choices">
@@ -566,7 +777,8 @@ function readPassage(passage) {
     let correct = 0;
     const missed = [];
     let unanswered = 0;
-    passage.questions.forEach((q, qi) => {
+    questions.forEach((q, qi) => {
+      const qId = q.q;
       const picked = document.querySelector(`input[name="q${qi}"]:checked`);
       const fb = $(`fb${qi}`);
       const block = document.querySelector(`.qa-block[data-qi="${qi}"]`);
@@ -584,18 +796,21 @@ function readPassage(passage) {
         missed.push({ q: q.q, answer: q.choices[q.answer], picked: "(no answer)" });
       } else if (+picked.value === q.answer) {
         correct++;
+        clearMissed(topicId, qId);
         fb.textContent = "✅ Correct!";
         fb.className = "feedback good";
       } else {
         fb.innerHTML = `❌ Correct: <b>${q.choices[q.answer]}</b>`;
         fb.className = "feedback bad";
+        recordMissed(topicId, { id: qId, label: q.q, title: passage.title });
         missed.push({ q: q.q, answer: q.choices[q.answer], picked: q.choices[+picked.value] });
       }
+      if (!picked) recordMissed(topicId, { id: qId, label: q.q, title: passage.title });
     });
 
-    const total = passage.questions.length;
+    const total = questions.length;
     const pct = Math.round((correct/total)*100);
-    writeProgress("reading", pct);
+    writeProgress(topicId, pct);
 
     // Show summary at top, scroll to it
     const summary = document.createElement("div");
@@ -604,7 +819,7 @@ function readPassage(passage) {
     summary.innerHTML = `
       <h2>🎉 Score: ${correct} / ${total} (${pct}%)</h2>
       ${unanswered ? `<p style="color:var(--bad)">${unanswered} question(s) left blank.</p>` : ""}
-      <button onclick="readPassage(window.__currentPassage)">🔁 Try again</button>
+      <button onclick="readPassage(window.__currentPassage, window.__currentPassageReviewOnly)">🔁 Try again</button>
       <button class="ghost" onclick="readingTopic()">← Back to passages</button>
       <button class="ghost" onclick="renderHome()">🏠 Home</button>
     `;
@@ -622,11 +837,19 @@ function listeningTopic() {
     <div class="panel">
       <h2>👂 Listening Comprehension</h2>
       <p>Pick a dialogue. You'll hear a short conversation, then answer the questions. You can replay it any time.</p>
-      ${data.listening.dialogues.map((d,i) => `<button data-d="${i}">${d.title}</button>`).join("")}
+      ${data.listening.dialogues.map((d,i) => {
+        const topicId = `listen:${d.id || d.title}`;
+        const miss = missedCount(topicId);
+        const prog = readProgress(topicId);
+        return `<button data-d="${i}">${d.title}${prog ? ` · Best ${prog.best}%` : ""}</button>${miss ? `<button class="ghost" data-review-d="${i}">Review missed (${miss})</button>` : ""}`;
+      }).join("")}
       <br><button class="ghost" onclick="renderHome()">🏠 Home</button>
     </div>`;
   document.querySelectorAll("button[data-d]").forEach(b => {
     b.onclick = () => playDialogue(data.listening.dialogues[+b.dataset.d]);
+  });
+  document.querySelectorAll("button[data-review-d]").forEach(b => {
+    b.onclick = () => playDialogue(data.listening.dialogues[+b.dataset.reviewD], true);
   });
 }
 
@@ -637,7 +860,11 @@ function pickTwoVoices() {
   return [female || selectedVoice, male || selectedVoice];
 }
 
-function playDialogue(dialogue) {
+function playDialogue(dialogue, reviewOnly = false) {
+  const topicId = `listen:${dialogue.id || dialogue.title}`;
+  const reviewIds = new Set(missedItems(topicId).map(m => m.id));
+  const questions = reviewOnly ? dialogue.questions.filter(q => reviewIds.has(q.q)) : dialogue.questions;
+  if (!questions.length) return listeningTopic();
   const [vA, vB] = pickTwoVoices();
   const speakers = {};
   let speakerOrder = 0;
@@ -670,6 +897,7 @@ function playDialogue(dialogue) {
       <div id="transcript" style="display:none;margin-top:12px">
         ${dialogue.lines.map(l => `<p><b>${l.speaker}:</b> ${l.text}</p>`).join("")}
       </div>
+      ${reviewOnly ? `<p class="review-note">Reviewing missed questions only.</p>` : ""}
       <br><button id="quiz">I'm ready — start questions →</button>
     </div>`;
   bindVoicePicker();
@@ -681,12 +909,12 @@ function playDialogue(dialogue) {
   };
   window.__replayDialogue = playAll;
   $("quiz").onclick = () => {
-    runQuiz("listen", dialogue.title, dialogue.questions, (q) => ({
+    runQuiz(topicId, dialogue.title, questions, (q) => ({
       prompt: q.q,
       choices: q.choices,
       answer: q.answer,
       extra: `<button onclick="window.__replayDialogue()" class="ghost" style="margin-bottom:8px">🔊 Replay dialogue</button>`
-    }));
+    }), { itemId: q => q.q, itemLabel: q => q.q, afterFinish: listeningTopic });
   };
   // Auto-play once on entry
   setTimeout(playAll, 300);
@@ -705,7 +933,9 @@ $("home-btn").onclick = renderHome;
 $("reset-btn").onclick = () => {
   if (confirm("Reset all progress?")) {
     localStorage.removeItem(STORE_KEY);
+    localStorage.removeItem(MISSED_KEY);
     for (const k in progress) delete progress[k];
+    for (const k in missed) delete missed[k];
     renderHome();
   }
 };

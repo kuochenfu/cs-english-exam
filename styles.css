@@ -93,6 +93,11 @@ button.ghost:hover { background: var(--border); color: var(--text); }
   margin-top: -8px;
 }
 
+.review-note {
+  color: var(--primary-dark);
+  font-weight: bold;
+}
+
 .panel {
   background: var(--card);
   border: 2px solid var(--border);
@@ -183,10 +188,21 @@ input[type=text]:focus { outline: none; border-color: var(--primary); }
 .sort-word {
   background: white;
   border: 2px solid var(--border);
+  color: var(--text);
   padding: 8px 14px;
   border-radius: 10px;
   cursor: grab;
   user-select: none;
+}
+.sort-word:hover {
+  background: #fff3df;
+  border-color: var(--primary);
+  color: var(--text);
+}
+.sort-word.selected {
+  background: var(--primary);
+  border-color: var(--primary-dark);
+  color: white;
 }
 .sort-word.placed { opacity: 0.5; cursor: default; }
 .sort-bin {
