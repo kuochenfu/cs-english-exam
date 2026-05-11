@@ -622,25 +622,58 @@ function sortGame(list, reviewOnly = false) {
 
 // ---------- Grammar ----------
 function grammarTopic() {
-  const items = data.grammar.items;
-  if (!items.length) return emptyTopic("Grammar");
-  const topicId = "grammar:main";
-  const start = (quizItems = items) => runQuiz(topicId, data.grammar.title, quizItems, (it) => ({
+  const mainItems = data.grammar.items || [];
+  const practiceSets = [
+    ...(mainItems.length ? [{
+      id: "main",
+      title: "Mixed Practice",
+      description: "Adjectives, adverbs, opposites, spelling rules, and word order.",
+      items: mainItems
+    }] : []),
+    ...(data.grammar.practiceSets || [])
+  ];
+  if (!practiceSets.length) return emptyTopic("Grammar");
+
+  const makeQuestion = (it) => ({
     prompt: it.q + (it.use ? ` <span class="tag">${it.use}</span>` : ""),
     choices: it.choices,
     answer: it.answer
-  }), { itemId: it => it.q, itemLabel: it => it.q, afterFinish: grammarTopic });
-  const reviewItems = items.filter(it => missedItems(topicId).some(m => m.id === it.q));
+  });
+
+  const start = (set, quizItems = set.items) => {
+    const topicId = `grammar:${set.id}`;
+    runQuiz(topicId, set.title, quizItems, makeQuestion, {
+      itemId: it => it.id || it.q,
+      itemLabel: it => it.q,
+      afterFinish: grammarTopic
+    });
+  };
+
   app.innerHTML = `
     <div class="panel">
       <h2>✏️ Grammar</h2>
       <p>Choose a practice set:</p>
-      <button id="grammar-all">All questions</button>
-      ${reviewItems.length ? `<button class="ghost" id="grammar-review">Review missed (${reviewItems.length})</button>` : ""}
+      ${practiceSets.map((set, idx) => {
+        const topicId = `grammar:${set.id}`;
+        const p = readProgress(topicId);
+        const miss = missedCount(topicId);
+        return `<button data-grammar-set="${idx}">${set.title}${p ? ` · Best ${p.best}%` : ""}</button>
+          ${set.description ? `<div class="practice-desc">${set.description}</div>` : ""}
+          ${miss ? `<button class="ghost" data-grammar-review="${idx}">Review missed (${miss})</button>` : ""}`;
+      }).join("")}
       <button class="ghost" onclick="renderHome()">🏠 Home</button>
     </div>`;
-  $("grammar-all").onclick = () => start(items);
-  if ($("grammar-review")) $("grammar-review").onclick = () => start(reviewItems);
+  document.querySelectorAll("button[data-grammar-set]").forEach(b => {
+    b.onclick = () => start(practiceSets[+b.dataset.grammarSet]);
+  });
+  document.querySelectorAll("button[data-grammar-review]").forEach(b => {
+    b.onclick = () => {
+      const set = practiceSets[+b.dataset.grammarReview];
+      const topicId = `grammar:${set.id}`;
+      const reviewItems = set.items.filter(it => missedItems(topicId).some(m => m.id === String(it.id || it.q)));
+      start(set, reviewItems);
+    };
+  });
 }
 
 // ---------- Reading ----------

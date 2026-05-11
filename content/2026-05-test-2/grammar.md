@@ -7,6 +7,8 @@ Sources:
 - `raw/202605/IMG_9266.JPG`
 - `raw/202605/IMG_9267.JPG`
 - `raw/202605/IMG_9268.JPG`
+- `raw/202605/IMG_9300.JPG`
+- `raw/202605/IMG_9301.JPG`
 
 Scope: **My Next Grammar, Lesson 15 and Lesson 16**
 
@@ -47,6 +49,8 @@ Patterns seen in the workbook:
 - Identify the verb and adverb in a sentence.
 - Choose the correct form of an adjective or adverb.
 - Write sentences in the correct word order.
+- Label the adjective(s) and adverb in full sentences.
+- Fill in the blank with the correct adjective or adverb form of a root word.
 
 Common adverbs:
 - quickly
@@ -66,3 +70,13 @@ Spelling rules:
 - Most adjectives: add **-ly**.
 - Adjectives ending in **-y**: change **y** to **i** and add **-ly**.
 - Adjectives ending in consonant + **le**: change final **e** to **y**.
+
+## Quiz #2 Grammar Review Sheets
+
+`IMG_9300.JPG` is a labeling review sheet. It asks students to underline and label the adjective and adverb in 24 sentences. Some sentences have no adverb, and a few have more than one adjective.
+
+`IMG_9301.JPG` is a form-choice review sheet. It asks students to fill in each blank with the adjective or adverb form of the word in parentheses. The web app turns these into multiple-choice practice so the student can get immediate feedback and review missed items.
+
+Two extra generated practice sets mirror those same formats:
+- Label adjective/adverb in new sentences.
+- Fill in the correct adjective or adverb form in new sentences.

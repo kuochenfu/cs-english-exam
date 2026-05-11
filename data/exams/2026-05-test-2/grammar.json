@@ -122,5 +122,623 @@
       "answer": 0,
       "use": "word order"
     }
+  ],
+  "practiceSets": [
+    {
+      "id": "label-adj-adv-sheet",
+      "title": "Review Sheet 1 — Label adjective/adverb",
+      "description": "From IMG_9300: choose the adjective(s) and adverb in each sentence.",
+      "items": [
+        {
+          "id": "label-01",
+          "q": "The happy children laughed happily during the party. Which label is correct?",
+          "choices": ["adjective: happy / adverb: happily", "adjective: children / adverb: party", "adjective: happily / adverb: happy", "adjective: laughed / adverb: during"],
+          "answer": 0,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-02",
+          "q": "Kevin carefully carried the heavy box upstairs. Which label is correct?",
+          "choices": ["adjective: carefully / adverb: heavy", "adjective: heavy / adverb: carefully", "adjective: Kevin / adverb: upstairs", "adjective: carried / adverb: box"],
+          "answer": 1,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-03",
+          "q": "The bright sun shined strongly in the sky. Which label is correct?",
+          "choices": ["adjective: sun / adverb: sky", "adjective: strongly / adverb: bright", "adjective: bright / adverb: strongly", "adjective: shined / adverb: bright"],
+          "answer": 2,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-04",
+          "q": "Sarah quickly answered the difficult question. Which label is correct?",
+          "choices": ["adjective: difficult / adverb: quickly", "adjective: quickly / adverb: difficult", "adjective: Sarah / adverb: question", "adjective: answered / adverb: difficult"],
+          "answer": 0,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-05",
+          "q": "The old man walked slowly down the street. Which label is correct?",
+          "choices": ["adjective: slowly / adverb: old", "adjective: street / adverb: down", "adjective: old / adverb: slowly", "adjective: walked / adverb: man"],
+          "answer": 2,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-06",
+          "q": "Jenny wore a beautiful dress to the concert. Which label is correct?",
+          "choices": ["adjective: beautiful / adverb: none", "adjective: concert / adverb: beautiful", "adjective: Jenny / adverb: wore", "adjective: dress / adverb: to"],
+          "answer": 0,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-07",
+          "q": "The baby slept peacefully in the quiet room. Which label is correct?",
+          "choices": ["adjective: baby / adverb: room", "adjective: quietly / adverb: peaceful", "adjective: peaceful / adverb: quiet", "adjective: quiet / adverb: peacefully"],
+          "answer": 3,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-08",
+          "q": "My brother is a careful driver on busy roads. Which label is correct?",
+          "choices": ["adjectives: careful, busy / adverb: none", "adjective: carefully / adverb: busy", "adjective: brother / adverb: roads", "adjective: driver / adverb: careful"],
+          "answer": 0,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-09",
+          "q": "The tall basketball player jumped high for the ball. Which label is correct?",
+          "choices": ["adjective: high / adverb: tall", "adjective: tall / adverb: high", "adjective: player / adverb: ball", "adjective: jumped / adverb: basketball"],
+          "answer": 1,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-10",
+          "q": "Cindy quietly opened the wooden door. Which label is correct?",
+          "choices": ["adjective: quietly / adverb: wooden", "adjective: opened / adverb: door", "adjective: wooden / adverb: quietly", "adjective: Cindy / adverb: wooden"],
+          "answer": 2,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-11",
+          "q": "The brave firefighter rescued the cat quickly. Which label is correct?",
+          "choices": ["adjective: cat / adverb: brave", "adjective: quickly / adverb: brave", "adjective: rescued / adverb: firefighter", "adjective: brave / adverb: quickly"],
+          "answer": 3,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-12",
+          "q": "Dad cooked a delicious meal for our family. Which label is correct?",
+          "choices": ["adjective: delicious / adverb: none", "adjective: cooked / adverb: delicious", "adjective: family / adverb: meal", "adjective: Dad / adverb: our"],
+          "answer": 0,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-13",
+          "q": "The angry teacher spoke loudly to the class. Which label is correct?",
+          "choices": ["adjective: angry / adverb: loudly", "adjective: loudly / adverb: angry", "adjective: teacher / adverb: class", "adjective: spoke / adverb: angry"],
+          "answer": 0,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-14",
+          "q": "The turtle moved very slowly across the sand. Which label is correct?",
+          "choices": ["adjective: turtle / adverb: sand", "adjective: slow / adverb: very", "adjective: none / adverb: slowly", "adjective: moved / adverb: across"],
+          "answer": 2,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-15",
+          "q": "Mike completed the hard test easily. Which label is correct?",
+          "choices": ["adjective: hard / adverb: easily", "adjective: easily / adverb: hard", "adjective: completed / adverb: test", "adjective: Mike / adverb: hard"],
+          "answer": 0,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-16",
+          "q": "The colorful bird sang sweetly in the tree. Which label is correct?",
+          "choices": ["adjective: bird / adverb: tree", "adjective: colorful / adverb: sweetly", "adjective: sweet / adverb: colorful", "adjective: sang / adverb: bird"],
+          "answer": 1,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-17",
+          "q": "The strong wind blew fiercely last night. Which label is correct?",
+          "choices": ["adjective: fiercely / adverb: strong", "adjective: night / adverb: last", "adjective: blew / adverb: wind", "adjective: strong / adverb: fiercely"],
+          "answer": 3,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-18",
+          "q": "Amy happily shared her snacks with her friends. Which label is correct?",
+          "choices": ["adjective: happy / adverb: none", "adjective: none / adverb: happily", "adjective: snacks / adverb: friends", "adjective: shared / adverb: Amy"],
+          "answer": 1,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-19",
+          "q": "The clever student solved the problem quickly. Which label is correct?",
+          "choices": ["adjective: clever / adverb: quickly", "adjective: quickly / adverb: clever", "adjective: problem / adverb: student", "adjective: solved / adverb: clever"],
+          "answer": 0,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-20",
+          "q": "The noisy students talked excitedly after school. Which label is correct?",
+          "choices": ["adjective: excited / adverb: noisy", "adjective: students / adverb: school", "adjective: noisy / adverb: excitedly", "adjective: talked / adverb: after"],
+          "answer": 2,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-21",
+          "q": "The friendly clerk smiled warmly at the customers. Which label is correct?",
+          "choices": ["adjective: warmly / adverb: friendly", "adjective: friendly / adverb: warmly", "adjective: clerk / adverb: customers", "adjective: smiled / adverb: friendly"],
+          "answer": 1,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-22",
+          "q": "The shiny stars twinkled brightly above us. Which label is correct?",
+          "choices": ["adjective: shiny / adverb: brightly", "adjective: brightly / adverb: shiny", "adjective: stars / adverb: above", "adjective: twinkled / adverb: us"],
+          "answer": 0,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-23",
+          "q": "The hungry lion roared loudly in the zoo. Which label is correct?",
+          "choices": ["adjective: hungry / adverb: loudly", "adjective: loudly / adverb: hungry", "adjective: lion / adverb: zoo", "adjective: roared / adverb: hungry"],
+          "answer": 0,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-24",
+          "q": "Ben is a quiet student in class. Which label is correct?",
+          "choices": ["adjective: quiet / adverb: none", "adjective: quietly / adverb: quiet", "adjective: Ben / adverb: class", "adjective: student / adverb: quiet"],
+          "answer": 0,
+          "use": "label adjective/adverb"
+        }
+      ]
+    },
+    {
+      "id": "label-adj-adv-generated",
+      "title": "Extra Practice — Label adjective/adverb",
+      "description": "Generated practice with the same labeling pattern: choose the adjective(s) and adverb in each sentence.",
+      "items": [
+        {
+          "id": "label-extra-01",
+          "q": "The sleepy puppy yawned softly under the table. Which label is correct?",
+          "choices": ["adjective: sleepy / adverb: softly", "adjective: softly / adverb: sleepy", "adjective: puppy / adverb: table", "adjective: yawned / adverb: under"],
+          "answer": 0,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-extra-02",
+          "q": "Mia carefully painted the tiny flower. Which label is correct?",
+          "choices": ["adjective: carefully / adverb: tiny", "adjective: tiny / adverb: carefully", "adjective: flower / adverb: Mia", "adjective: painted / adverb: tiny"],
+          "answer": 1,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-extra-03",
+          "q": "The loud bell rang suddenly in the hallway. Which label is correct?",
+          "choices": ["adjective: bell / adverb: hallway", "adjective: suddenly / adverb: loud", "adjective: loud / adverb: suddenly", "adjective: rang / adverb: bell"],
+          "answer": 2,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-extra-04",
+          "q": "Noah proudly showed his clean desk to the teacher. Which label is correct?",
+          "choices": ["adjective: proud / adverb: clean", "adjective: teacher / adverb: proudly", "adjective: showed / adverb: desk", "adjective: clean / adverb: proudly"],
+          "answer": 3,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-extra-05",
+          "q": "The red kite flew smoothly above the park. Which label is correct?",
+          "choices": ["adjective: red / adverb: smoothly", "adjective: smoothly / adverb: red", "adjective: kite / adverb: park", "adjective: flew / adverb: above"],
+          "answer": 0,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-extra-06",
+          "q": "Emma wrote a neat note for her mother. Which label is correct?",
+          "choices": ["adjective: neat / adverb: none", "adjective: neatly / adverb: neat", "adjective: note / adverb: mother", "adjective: wrote / adverb: Emma"],
+          "answer": 0,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-extra-07",
+          "q": "The gentle nurse spoke kindly to the patient. Which label is correct?",
+          "choices": ["adjective: kindly / adverb: gentle", "adjective: patient / adverb: nurse", "adjective: gentle / adverb: kindly", "adjective: spoke / adverb: gentle"],
+          "answer": 2,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-extra-08",
+          "q": "Lucas quickly found the missing pencil. Which label is correct?",
+          "choices": ["adjective: found / adverb: missing", "adjective: missing / adverb: quickly", "adjective: quickly / adverb: pencil", "adjective: Lucas / adverb: missing"],
+          "answer": 1,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-extra-09",
+          "q": "The small child waited patiently by the door. Which label is correct?",
+          "choices": ["adjective: patiently / adverb: small", "adjective: child / adverb: door", "adjective: waited / adverb: by", "adjective: small / adverb: patiently"],
+          "answer": 3,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-extra-10",
+          "q": "The smooth stone rolled slowly down the hill. Which label is correct?",
+          "choices": ["adjective: smooth / adverb: slowly", "adjective: slowly / adverb: smooth", "adjective: stone / adverb: hill", "adjective: rolled / adverb: down"],
+          "answer": 0,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-extra-11",
+          "q": "A nervous singer waited quietly behind the curtain. Which label is correct?",
+          "choices": ["adjective: singer / adverb: curtain", "adjective: quietly / adverb: nervous", "adjective: nervous / adverb: quietly", "adjective: waited / adverb: behind"],
+          "answer": 2,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-extra-12",
+          "q": "The fast runner crossed the finish line easily. Which label is correct?",
+          "choices": ["adjective: fast / adverb: easily", "adjective: easily / adverb: fast", "adjective: runner / adverb: line", "adjective: crossed / adverb: finish"],
+          "answer": 0,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-extra-13",
+          "q": "Sophie packed her heavy bag neatly. Which label is correct?",
+          "choices": ["adjective: neatly / adverb: heavy", "adjective: bag / adverb: Sophie", "adjective: packed / adverb: heavy", "adjective: heavy / adverb: neatly"],
+          "answer": 3,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-extra-14",
+          "q": "The sweet music played softly in the room. Which label is correct?",
+          "choices": ["adjective: room / adverb: music", "adjective: sweet / adverb: softly", "adjective: softly / adverb: sweet", "adjective: played / adverb: room"],
+          "answer": 1,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-extra-15",
+          "q": "The careful chef sliced the fresh fruit. Which label is correct?",
+          "choices": ["adjectives: careful, fresh / adverb: none", "adjective: carefully / adverb: fresh", "adjective: chef / adverb: fruit", "adjective: sliced / adverb: careful"],
+          "answer": 0,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-extra-16",
+          "q": "The dark clouds moved slowly across the sky. Which label is correct?",
+          "choices": ["adjective: slowly / adverb: dark", "adjective: dark / adverb: slowly", "adjective: clouds / adverb: sky", "adjective: moved / adverb: across"],
+          "answer": 1,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-extra-17",
+          "q": "Jack politely asked the helpful librarian a question. Which label is correct?",
+          "choices": ["adjective: helpful / adverb: politely", "adjective: politely / adverb: helpful", "adjective: librarian / adverb: question", "adjective: asked / adverb: Jack"],
+          "answer": 0,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-extra-18",
+          "q": "The icy sidewalk looked dangerous this morning. Which label is correct?",
+          "choices": ["adjectives: icy, dangerous / adverb: none", "adjective: dangerously / adverb: icy", "adjective: sidewalk / adverb: morning", "adjective: looked / adverb: dangerous"],
+          "answer": 0,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-extra-19",
+          "q": "A cheerful girl waved happily at the parade. Which label is correct?",
+          "choices": ["adjective: happily / adverb: cheerful", "adjective: parade / adverb: girl", "adjective: cheerful / adverb: happily", "adjective: waved / adverb: parade"],
+          "answer": 2,
+          "use": "label adjective/adverb"
+        },
+        {
+          "id": "label-extra-20",
+          "q": "The quiet class worked silently after recess. Which label is correct?",
+          "choices": ["adjective: class / adverb: recess", "adjective: silently / adverb: quiet", "adjective: worked / adverb: after", "adjective: quiet / adverb: silently"],
+          "answer": 3,
+          "use": "label adjective/adverb"
+        }
+      ]
+    },
+    {
+      "id": "adj-adv-form-sheet",
+      "title": "Review Sheet 2 — Fill adjective/adverb form",
+      "description": "From IMG_9301: choose the correct adjective or adverb form of the word in parentheses.",
+      "items": [
+        {
+          "id": "form-01",
+          "q": "The baby is sleeping very ____ now. (quiet)",
+          "choices": ["quiet", "quietly", "quieter", "quietness"],
+          "answer": 1,
+          "use": "adverb form"
+        },
+        {
+          "id": "form-02",
+          "q": "Tina answered the question ____. (quick)",
+          "choices": ["quick", "quickly", "quicker", "quickness"],
+          "answer": 1,
+          "use": "adverb form"
+        },
+        {
+          "id": "form-03",
+          "q": "The movie was really ____. (excite)",
+          "choices": ["excite", "excitedly", "exciting", "excitement"],
+          "answer": 2,
+          "use": "adjective form"
+        },
+        {
+          "id": "form-04",
+          "q": "The cat moved ____ across the floor. (slow)",
+          "choices": ["slow", "slowly", "slower", "slowness"],
+          "answer": 1,
+          "use": "adverb form"
+        },
+        {
+          "id": "form-05",
+          "q": "This puzzle is too ____ for young children. (difficult)",
+          "choices": ["difficult", "difficultly", "difficulty", "difficultness"],
+          "answer": 0,
+          "use": "adjective form"
+        },
+        {
+          "id": "form-06",
+          "q": "Ryan cleaned his room ____. (careful)",
+          "choices": ["careful", "carefully", "careless", "care"],
+          "answer": 1,
+          "use": "adverb form"
+        },
+        {
+          "id": "form-07",
+          "q": "The soup smells ____. (wonderful)",
+          "choices": ["wonderful", "wonderfully", "wonder", "wondering"],
+          "answer": 0,
+          "use": "adjective after linking verb"
+        },
+        {
+          "id": "form-08",
+          "q": "The students listened ____ to the teacher. (attentive)",
+          "choices": ["attentive", "attentively", "attention", "attending"],
+          "answer": 1,
+          "use": "adverb form"
+        },
+        {
+          "id": "form-09",
+          "q": "The little boy shouted ____ for help. (angry)",
+          "choices": ["angry", "angrily", "anger", "angrier"],
+          "answer": 1,
+          "use": "y to i + -ly"
+        },
+        {
+          "id": "form-10",
+          "q": "My backpack is very ____ to carry. (heavy)",
+          "choices": ["heavy", "heavily", "heavier", "heaviness"],
+          "answer": 0,
+          "use": "adjective form"
+        },
+        {
+          "id": "form-11",
+          "q": "The birds sang ____ in the morning. (beautiful)",
+          "choices": ["beautiful", "beautifully", "beauty", "beautify"],
+          "answer": 1,
+          "use": "adverb form"
+        },
+        {
+          "id": "form-12",
+          "q": "The old bridge looks ____. (dangerous)",
+          "choices": ["dangerous", "dangerously", "danger", "endanger"],
+          "answer": 0,
+          "use": "adjective after linking verb"
+        },
+        {
+          "id": "form-13",
+          "q": "Olivia danced ____ on the stage. (graceful)",
+          "choices": ["graceful", "gracefully", "grace", "gracious"],
+          "answer": 1,
+          "use": "adverb form"
+        },
+        {
+          "id": "form-14",
+          "q": "The test was surprisingly ____. (easy)",
+          "choices": ["easy", "easily", "easier", "ease"],
+          "answer": 0,
+          "use": "adjective form"
+        },
+        {
+          "id": "form-15",
+          "q": "Ethan waited ____ outside the office. (patient)",
+          "choices": ["patient", "patiently", "patience", "patients"],
+          "answer": 1,
+          "use": "adverb form"
+        },
+        {
+          "id": "form-16",
+          "q": "The fresh bread smells ____. (delicious)",
+          "choices": ["delicious", "deliciously", "delight", "deliciousness"],
+          "answer": 0,
+          "use": "adjective after linking verb"
+        },
+        {
+          "id": "form-17",
+          "q": "The soccer players practiced ____ after school. (serious)",
+          "choices": ["serious", "seriously", "series", "seriousness"],
+          "answer": 1,
+          "use": "adverb form"
+        },
+        {
+          "id": "form-18",
+          "q": "The classroom became very ____ after lunch. (messy)",
+          "choices": ["messy", "messily", "mess", "messes"],
+          "answer": 0,
+          "use": "adjective form"
+        },
+        {
+          "id": "form-19",
+          "q": "The teacher explained the lesson ____. (clear)",
+          "choices": ["clear", "clearly", "clearer", "clearness"],
+          "answer": 1,
+          "use": "adverb form"
+        },
+        {
+          "id": "form-20",
+          "q": "The excited fans cheered ____ at the concert. (wild)",
+          "choices": ["wild", "wildly", "wilder", "wildness"],
+          "answer": 1,
+          "use": "adverb form"
+        }
+      ]
+    },
+    {
+      "id": "adj-adv-form-generated",
+      "title": "Extra Practice — Fill adjective/adverb form",
+      "description": "Generated practice with the same blank-fill pattern: choose the adjective or adverb form that fits the sentence.",
+      "items": [
+        {
+          "id": "form-extra-01",
+          "q": "The kitten walked ____ across the sofa. (gentle)",
+          "choices": ["gentle", "gently", "gentler", "gentleness"],
+          "answer": 1,
+          "use": "adverb form"
+        },
+        {
+          "id": "form-extra-02",
+          "q": "The garden looks ____ after the rain. (fresh)",
+          "choices": ["fresh", "freshly", "fresher", "freshness"],
+          "answer": 0,
+          "use": "adjective after linking verb"
+        },
+        {
+          "id": "form-extra-03",
+          "q": "Lily finished her homework ____. (neat)",
+          "choices": ["neat", "neatly", "neater", "neatness"],
+          "answer": 1,
+          "use": "adverb form"
+        },
+        {
+          "id": "form-extra-04",
+          "q": "The mountain trail was very ____. (steep)",
+          "choices": ["steep", "steeply", "steeper", "steepness"],
+          "answer": 0,
+          "use": "adjective form"
+        },
+        {
+          "id": "form-extra-05",
+          "q": "The children laughed ____ at the funny story. (happy)",
+          "choices": ["happy", "happily", "happier", "happiness"],
+          "answer": 1,
+          "use": "y to i + -ly"
+        },
+        {
+          "id": "form-extra-06",
+          "q": "The soup tasted ____. (salty)",
+          "choices": ["salty", "saltily", "salt", "saltiness"],
+          "answer": 0,
+          "use": "adjective after linking verb"
+        },
+        {
+          "id": "form-extra-07",
+          "q": "Mark carried the glass ____ to the sink. (careful)",
+          "choices": ["careful", "carefully", "careless", "care"],
+          "answer": 1,
+          "use": "adverb form"
+        },
+        {
+          "id": "form-extra-08",
+          "q": "The classroom became ____ before the test. (quiet)",
+          "choices": ["quiet", "quietly", "quieter", "quietness"],
+          "answer": 0,
+          "use": "adjective form"
+        },
+        {
+          "id": "form-extra-09",
+          "q": "The dancer moved ____ across the stage. (graceful)",
+          "choices": ["graceful", "gracefully", "grace", "gracious"],
+          "answer": 1,
+          "use": "adverb form"
+        },
+        {
+          "id": "form-extra-10",
+          "q": "The box felt very ____. (light)",
+          "choices": ["light", "lightly", "lighter", "lightness"],
+          "answer": 0,
+          "use": "adjective after linking verb"
+        },
+        {
+          "id": "form-extra-11",
+          "q": "Dad spoke ____ because the baby was asleep. (soft)",
+          "choices": ["soft", "softly", "softer", "softness"],
+          "answer": 1,
+          "use": "adverb form"
+        },
+        {
+          "id": "form-extra-12",
+          "q": "The sky looked ____ before sunset. (colorful)",
+          "choices": ["colorful", "colorfully", "color", "coloring"],
+          "answer": 0,
+          "use": "adjective after linking verb"
+        },
+        {
+          "id": "form-extra-13",
+          "q": "The team worked ____ to finish the project. (hard)",
+          "choices": ["hard", "hardly", "harder", "hardness"],
+          "answer": 0,
+          "use": "adverb form"
+        },
+        {
+          "id": "form-extra-14",
+          "q": "The baby smiled ____ at her brother. (sweet)",
+          "choices": ["sweet", "sweetly", "sweeter", "sweetness"],
+          "answer": 1,
+          "use": "adverb form"
+        },
+        {
+          "id": "form-extra-15",
+          "q": "This chair is too ____ for the small room. (wide)",
+          "choices": ["wide", "widely", "wider", "width"],
+          "answer": 0,
+          "use": "adjective form"
+        },
+        {
+          "id": "form-extra-16",
+          "q": "The students walked ____ into the library. (silent)",
+          "choices": ["silent", "silently", "silence", "silencer"],
+          "answer": 1,
+          "use": "adverb form"
+        },
+        {
+          "id": "form-extra-17",
+          "q": "The puppy seemed ____ after its nap. (playful)",
+          "choices": ["playful", "playfully", "play", "player"],
+          "answer": 0,
+          "use": "adjective after linking verb"
+        },
+        {
+          "id": "form-extra-18",
+          "q": "Ava answered the question ____. (correct)",
+          "choices": ["correct", "correctly", "correction", "correctness"],
+          "answer": 1,
+          "use": "adverb form"
+        },
+        {
+          "id": "form-extra-19",
+          "q": "The old house looked ____ at night. (scary)",
+          "choices": ["scary", "scarily", "scare", "scared"],
+          "answer": 0,
+          "use": "adjective form"
+        },
+        {
+          "id": "form-extra-20",
+          "q": "The rain fell ____ on the roof. (heavy)",
+          "choices": ["heavy", "heavily", "heavier", "heaviness"],
+          "answer": 1,
+          "use": "y to i + -ly"
+        }
+      ]
+    }
   ]
 }

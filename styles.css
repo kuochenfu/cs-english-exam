@@ -98,6 +98,12 @@ button.ghost:hover { background: var(--border); color: var(--text); }
   font-weight: bold;
 }
 
+.practice-desc {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin: -2px 8px 10px;
+}
+
 .panel {
   background: var(--card);
   border: 2px solid var(--border);
