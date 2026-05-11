@@ -101,7 +101,31 @@ button.ghost:hover { background: var(--border); color: var(--text); }
 .practice-desc {
   color: var(--muted);
   font-size: 0.95rem;
-  margin: -2px 8px 10px;
+  margin: 8px 6px 0;
+}
+
+.practice-list {
+  display: grid;
+  gap: 18px;
+  margin: 18px 0 12px;
+}
+
+.practice-set {
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 18px;
+}
+
+.practice-set:last-child {
+  border-bottom: 0;
+}
+
+.practice-set button {
+  margin-left: 0;
+}
+
+.practice-set .review-button {
+  display: block;
+  margin-top: 12px;
 }
 
 .panel {

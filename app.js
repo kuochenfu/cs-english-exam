@@ -653,14 +653,18 @@ function grammarTopic() {
     <div class="panel">
       <h2>✏️ Grammar</h2>
       <p>Choose a practice set:</p>
-      ${practiceSets.map((set, idx) => {
-        const topicId = `grammar:${set.id}`;
-        const p = readProgress(topicId);
-        const miss = missedCount(topicId);
-        return `<button data-grammar-set="${idx}">${set.title}${p ? ` · Best ${p.best}%` : ""}</button>
-          ${set.description ? `<div class="practice-desc">${set.description}</div>` : ""}
-          ${miss ? `<button class="ghost" data-grammar-review="${idx}">Review missed (${miss})</button>` : ""}`;
-      }).join("")}
+      <div class="practice-list">
+        ${practiceSets.map((set, idx) => {
+          const topicId = `grammar:${set.id}`;
+          const p = readProgress(topicId);
+          const miss = missedCount(topicId);
+          return `<div class="practice-set">
+            <button data-grammar-set="${idx}">${set.title}${p ? ` · Best ${p.best}%` : ""}</button>
+            ${set.description ? `<div class="practice-desc">${set.description}</div>` : ""}
+            ${miss ? `<button class="ghost review-button" data-grammar-review="${idx}">Review missed (${miss})</button>` : ""}
+          </div>`;
+        }).join("")}
+      </div>
       <button class="ghost" onclick="renderHome()">🏠 Home</button>
     </div>`;
   document.querySelectorAll("button[data-grammar-set]").forEach(b => {
