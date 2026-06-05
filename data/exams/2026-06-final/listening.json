@@ -1,0 +1,40 @@
+{
+  "title": "Listening Comprehension",
+  "intro": "Listen to a dialogue, then answer multiple choice questions. These are generated review dialogues because the final exam dialogue is not provided in advance.",
+  "dialogues": [
+    {
+      "id": "healthy_lunch_plan",
+      "title": "Planning a Healthy Lunch",
+      "lines": [
+        { "speaker": "Mina", "text": "Our health poster needs a main idea and three supporting details." },
+        { "speaker": "Owen", "text": "How about this main idea: A balanced lunch helps students learn and play." },
+        { "speaker": "Mina", "text": "Good. We can support it with fruit, vegetables, whole grains, and water." },
+        { "speaker": "Owen", "text": "Should we add a picture of a lunch tray with labels?" },
+        { "speaker": "Mina", "text": "Yes, the labels will help younger students understand the food groups." }
+      ],
+      "questions": [
+        { "q": "What are Mina and Owen making?", "choices": ["A health poster", "A spelling list", "A field trip map", "A tall tale"], "answer": 0 },
+        { "q": "What main idea does Owen suggest?", "choices": ["A balanced lunch helps students learn and play.", "Water should never be part of lunch.", "Students should skip vegetables.", "A lunch tray needs no labels."], "answer": 0 },
+        { "q": "Which detail supports the main idea?", "choices": ["Fruit and vegetables", "A train car", "A subway tunnel", "A thunderstorm"], "answer": 0 },
+        { "q": "Why do they want labels on the picture?", "choices": ["To help younger students understand the food groups", "To make the poster harder to read", "To hide the main idea", "To practice spelling names"], "answer": 0 }
+      ]
+    },
+    {
+      "id": "eco_fair_booth",
+      "title": "The Eco Fair Booth",
+      "lines": [
+        { "speaker": "Teacher", "text": "Tomorrow each group will explain one eco-friendly choice." },
+        { "speaker": "Jay", "text": "Our group wants to explain why reusable containers are better than throwaway bags." },
+        { "speaker": "Teacher", "text": "Who is your intended audience?" },
+        { "speaker": "Jay", "text": "Families at the school fair. We want them to pack snacks with less waste." },
+        { "speaker": "Teacher", "text": "Then use clear examples and a chart that compares the two choices." }
+      ],
+      "questions": [
+        { "q": "What topic will Jay's group explain?", "choices": ["Reusable containers and throwaway bags", "How to play soccer", "Why tall tales are funny", "How to build a tunnel"], "answer": 0 },
+        { "q": "Who is the intended audience?", "choices": ["Families at the school fair", "Only firefighters", "Only restaurant chefs", "New York subway workers"], "answer": 0 },
+        { "q": "What does the teacher suggest adding?", "choices": ["A chart that compares two choices", "A secret code", "A list of spelling words only", "A poem with no examples"], "answer": 0 },
+        { "q": "What is Jay's purpose?", "choices": ["To persuade families to pack snacks with less waste", "To entertain people with a tall tale", "To describe a storm cloud", "To ask for a new notebook"], "answer": 0 }
+      ]
+    }
+  ]
+}

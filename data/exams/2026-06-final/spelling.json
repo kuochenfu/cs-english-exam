@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "id": "m8_w1_pattern_practice",
+      "title": "Module 8 Week 1 — Pattern Practice (VCCV / VCV)",
+      "words": [
+        { "word": "rabbit", "sentence": "The rabbit jumped behind the garden wall." },
+        { "word": "basket", "sentence": "Put the apples in the basket." },
+        { "word": "finish", "sentence": "Please finish your work before lunch." },
+        { "word": "silent", "sentence": "The room was silent during the test." },
+        { "word": "pilot", "sentence": "The pilot spoke clearly to the passengers." },
+        { "word": "music", "sentence": "Soft music played in the kitchen." },
+        { "word": "human", "sentence": "A human body needs water and food." },
+        { "word": "moment", "sentence": "Wait a moment before you answer." },
+        { "word": "problem", "sentence": "The class worked together to solve the problem." },
+        { "word": "river", "sentence": "The river moved quickly after the rain." }
+      ]
+    },
+    {
+      "id": "m8_w2_pattern_practice",
+      "title": "Module 8 Week 2 — Pattern Practice (VCCV with digraphs and blends)",
+      "words": [
+        { "word": "chapter", "sentence": "We read one chapter after dinner." },
+        { "word": "children", "sentence": "The children brought healthy snacks." },
+        { "word": "blanket", "sentence": "She folded the warm blanket." },
+        { "word": "plastic", "sentence": "Use less plastic to help the earth." },
+        { "word": "publish", "sentence": "Our class will publish a small book." },
+        { "word": "shelter", "sentence": "The hikers found shelter from the storm." },
+        { "word": "basket", "sentence": "The picnic basket was full of fruit." },
+        { "word": "subtract", "sentence": "Subtract the smaller number from the larger one." },
+        { "word": "complex", "sentence": "The machine looked complex at first." },
+        { "word": "kitchen", "sentence": "Grandma washed vegetables in the kitchen." }
+      ]
+    },
+    {
+      "id": "m8_vccv_vcv_sort",
+      "title": "Phonics — Sort VCCV and VCV Words",
+      "sortGame": true,
+      "groups": {
+        "VCCV": ["rabbit", "basket", "finish", "moment", "problem"],
+        "VCV": ["silent", "pilot", "music", "human", "river"]
+      }
+    },
+    {
+      "id": "m8_vccv_digraph_blend_sort",
+      "title": "Phonics — VCCV with Digraphs and Blends",
+      "sortGame": true,
+      "groups": {
+        "Digraph": ["chapter", "children", "publish", "shelter", "kitchen"],
+        "Blend": ["blanket", "plastic", "subtract", "complex"]
+      }
+    }
+  ]
+}

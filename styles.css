@@ -137,6 +137,221 @@ button.ghost:hover { background: var(--border); color: var(--text); }
 }
 .panel h2 { margin-top: 0; color: var(--primary-dark); }
 
+.quest-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.stars-box {
+  min-width: 116px;
+  min-height: 76px;
+  border: 2px solid #c9e6ff;
+  border-radius: 14px;
+  background: #eef8ff;
+  color: #24577a;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+}
+
+.stars-box span { font-size: 1.4rem; line-height: 1; }
+.stars-box b { font-size: 1.4rem; line-height: 1; }
+.stars-box small { color: #54748c; }
+
+.mission-panel,
+.badges-panel {
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+  margin: 18px 0;
+  background: #fbfdff;
+}
+
+.mission-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.mission-head h3,
+.badges-panel h3 {
+  margin: 0;
+  color: #24577a;
+}
+
+.mission-head p {
+  margin: 2px 0 0;
+  color: var(--muted);
+}
+
+.mission-ring {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 4px solid #69b3e7;
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+  color: #24577a;
+  background: white;
+  flex: 0 0 auto;
+}
+
+.mission-list {
+  display: grid;
+  gap: 10px;
+}
+
+button.mission {
+  width: 100%;
+  margin: 0;
+  background: white;
+  color: var(--text);
+  border: 2px solid #c9e6ff;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  align-items: center;
+  text-align: left;
+}
+
+button.mission:hover {
+  background: #eef8ff;
+  border-color: #69b3e7;
+}
+
+button.mission.complete {
+  background: #d9f4e6;
+  border-color: var(--good);
+  color: #1d7650;
+}
+
+.boss-button {
+  width: 100%;
+  margin: 8px 0 16px;
+  background: #5b4aa8;
+}
+
+.boss-button:hover { background: #45348d; }
+
+.boss-clear {
+  border: 2px solid #d3eadc;
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin: 8px 0 16px;
+  background: #f0fbf4;
+  color: #1d7650;
+  font-weight: bold;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  border-radius: 999px;
+  padding: 5px 11px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  border: 2px solid var(--border);
+}
+
+.badge.earned {
+  background: #fff5cf;
+  border-color: #f3cc58;
+  color: #704f00;
+}
+
+.badge.locked {
+  background: #f4f1eb;
+  color: var(--muted);
+}
+
+.badge-unlocks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.quest-map {
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+}
+
+.quest-card {
+  min-height: 226px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quest-card.done-today {
+  border-color: var(--good);
+  box-shadow: 0 8px 18px rgba(43,182,115,0.18);
+}
+
+.quest-place {
+  color: #24577a;
+  font-weight: bold;
+  font-size: 0.85rem;
+  min-height: 1.4em;
+}
+
+.reward-box {
+  border: 2px solid #c9e6ff;
+  border-radius: 14px;
+  background: #eef8ff;
+  color: #24577a;
+  padding: 12px 14px;
+  margin: 12px 0;
+}
+
+.boss-list {
+  display: grid;
+  gap: 12px;
+  margin: 18px 0;
+}
+
+button.boss-card {
+  margin: 0;
+  background: white;
+  color: var(--text);
+  border: 2px solid #d8d0ff;
+  border-radius: 14px;
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 12px;
+  text-align: left;
+  align-items: center;
+}
+
+button.boss-card:hover {
+  background: #f5f2ff;
+  border-color: #8e7be8;
+}
+
+.boss-card small {
+  display: block;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.boss-icon {
+  font-size: 2rem;
+  text-align: center;
+}
+
 .question {
   font-size: 1.2rem;
   margin-bottom: 16px;

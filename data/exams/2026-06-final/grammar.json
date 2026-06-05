@@ -1,0 +1,170 @@
+{
+  "title": "Grammar — Infinitives and Gerunds as Objects (My Next Grammar, Lessons 20-21)",
+  "intro": "An infinitive is to + verb, such as to read. A gerund is a verb ending in -ing used as a noun, such as reading.",
+  "items": [
+    {
+      "id": "inf-01",
+      "q": "Choose the infinitive as the object: Maya wants ____ after school.",
+      "choices": ["to practice", "practice", "practiced", "practices"],
+      "answer": 0,
+      "use": "infinitive as object"
+    },
+    {
+      "id": "inf-02",
+      "q": "Choose the infinitive as the object: The class decided ____ a garden.",
+      "choices": ["planting", "planted", "to plant", "plants"],
+      "answer": 2,
+      "use": "infinitive as object"
+    },
+    {
+      "id": "inf-03",
+      "q": "Which words are the infinitive? Leo hopes to join the soccer team.",
+      "choices": ["Leo hopes", "to join", "soccer team", "the team"],
+      "answer": 1,
+      "use": "identify infinitive"
+    },
+    {
+      "id": "inf-04",
+      "q": "Which sentence uses an infinitive as an object correctly?",
+      "choices": ["I enjoy to swimming.", "She wants to learn.", "They finished to eat.", "We avoided to run."],
+      "answer": 1,
+      "use": "infinitive after verb"
+    },
+    {
+      "id": "inf-05",
+      "q": "Choose the best answer: My brother promised ____ his room.",
+      "choices": ["cleaning", "to clean", "cleaned", "cleans"],
+      "answer": 1,
+      "use": "infinitive after verb"
+    },
+    {
+      "id": "inf-06",
+      "q": "Choose the best answer: We need ____ more water.",
+      "choices": ["to drink", "drinking", "drank", "drinks"],
+      "answer": 0,
+      "use": "infinitive after verb"
+    },
+    {
+      "id": "inf-07",
+      "q": "Choose the best answer: I would like ____ a healthy lunch.",
+      "choices": ["eating", "ate", "to eat", "eats"],
+      "answer": 2,
+      "use": "infinitive after verb"
+    },
+    {
+      "id": "inf-08",
+      "q": "Which sentence has the same meaning? Sam plans a visit to the museum.",
+      "choices": ["Sam plans to visit the museum.", "Sam enjoys visiting the museum.", "Sam visited the museum.", "Sam is visiting the museum now."],
+      "answer": 0,
+      "use": "rewrite with infinitive"
+    },
+    {
+      "id": "ger-01",
+      "q": "Choose the gerund as the object: Nora enjoys ____ stories.",
+      "choices": ["to write", "writes", "writing", "wrote"],
+      "answer": 2,
+      "use": "gerund as object"
+    },
+    {
+      "id": "ger-02",
+      "q": "Choose the gerund as the object: Dad finished ____ dinner.",
+      "choices": ["to cook", "cooking", "cooked", "cooks"],
+      "answer": 1,
+      "use": "gerund as object"
+    },
+    {
+      "id": "ger-03",
+      "q": "Which word is the gerund? Talia likes reading after breakfast.",
+      "choices": ["Talia", "likes", "reading", "breakfast"],
+      "answer": 2,
+      "use": "identify gerund"
+    },
+    {
+      "id": "ger-04",
+      "q": "Which sentence uses a gerund as an object correctly?",
+      "choices": ["He enjoys playing chess.", "He wants playing chess.", "He decided playing chess.", "He hopes playing chess."],
+      "answer": 0,
+      "use": "gerund after verb"
+    },
+    {
+      "id": "ger-05",
+      "q": "Choose the best answer: Please stop ____ during the movie.",
+      "choices": ["talking", "to talk", "talked", "talks"],
+      "answer": 0,
+      "use": "gerund after verb"
+    },
+    {
+      "id": "ger-06",
+      "q": "Choose the best answer: The kids practiced ____ the song.",
+      "choices": ["to sing", "sang", "singing", "sings"],
+      "answer": 2,
+      "use": "gerund after verb"
+    },
+    {
+      "id": "ger-07",
+      "q": "Choose the best answer: We discussed ____ less plastic.",
+      "choices": ["using", "to use", "used", "uses"],
+      "answer": 0,
+      "use": "gerund after verb"
+    },
+    {
+      "id": "ger-08",
+      "q": "Which sentence has a gerund used as a noun?",
+      "choices": ["Running is good exercise.", "She is running fast.", "They ran yesterday.", "Run to the door."],
+      "answer": 0,
+      "use": "gerund as subject"
+    },
+    {
+      "id": "mix-01",
+      "q": "Choose the best answer: I hope ____ a scientist one day.",
+      "choices": ["becoming", "to become", "became", "becomes"],
+      "answer": 1,
+      "use": "infinitive vs gerund"
+    },
+    {
+      "id": "mix-02",
+      "q": "Choose the best answer: I avoid ____ too much candy.",
+      "choices": ["to eat", "eating", "ate", "eats"],
+      "answer": 1,
+      "use": "infinitive vs gerund"
+    },
+    {
+      "id": "mix-03",
+      "q": "Choose the best answer: They agreed ____ the classroom.",
+      "choices": ["cleaning", "cleaned", "to clean", "cleans"],
+      "answer": 2,
+      "use": "infinitive vs gerund"
+    },
+    {
+      "id": "mix-04",
+      "q": "Choose the best answer: She misses ____ with her old friends.",
+      "choices": ["playing", "to play", "played", "plays"],
+      "answer": 0,
+      "use": "infinitive vs gerund"
+    }
+  ],
+  "practiceSets": [
+    {
+      "id": "infinitives-only",
+      "title": "Lesson 20 — Infinitives as Objects",
+      "description": "Choose or identify to + verb used after verbs like want, need, hope, plan, decide, and promise.",
+      "items": [
+        { "id": "l20-01", "q": "Choose the best answer: I forgot ____ my notebook.", "choices": ["bringing", "to bring", "brought", "brings"], "answer": 1, "use": "infinitive" },
+        { "id": "l20-02", "q": "Choose the best answer: The team plans ____ early.", "choices": ["arriving", "arrived", "to arrive", "arrives"], "answer": 2, "use": "infinitive" },
+        { "id": "l20-03", "q": "Which words are the infinitive? We learned to recycle bottles.", "choices": ["We learned", "to recycle", "recycle bottles", "bottles"], "answer": 1, "use": "identify infinitive" },
+        { "id": "l20-04", "q": "Which sentence is correct?", "choices": ["Ana hopes to win.", "Ana hopes winning.", "Ana enjoys to win.", "Ana finished to win."], "answer": 0, "use": "infinitive" }
+      ]
+    },
+    {
+      "id": "gerunds-only",
+      "title": "Lesson 21 — Gerunds as Objects",
+      "description": "Choose or identify -ing verbs used as nouns after verbs like enjoy, finish, practice, avoid, stop, and discuss.",
+      "items": [
+        { "id": "l21-01", "q": "Choose the best answer: Ben enjoys ____ about bugs.", "choices": ["reading", "to read", "read", "reads"], "answer": 0, "use": "gerund" },
+        { "id": "l21-02", "q": "Choose the best answer: We finished ____ the poster.", "choices": ["to make", "making", "made", "makes"], "answer": 1, "use": "gerund" },
+        { "id": "l21-03", "q": "Which word is the gerund? The chef loves cooking with fresh food.", "choices": ["chef", "loves", "cooking", "fresh"], "answer": 2, "use": "identify gerund" },
+        { "id": "l21-04", "q": "Which sentence is correct?", "choices": ["She avoided wasting food.", "She wanted wasting food.", "She promised wasting food.", "She decided wasting food."], "answer": 0, "use": "gerund" }
+      ]
+    }
+  ]
+}

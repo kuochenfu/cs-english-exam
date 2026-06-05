@@ -1,0 +1,410 @@
+{
+  "skills": {
+    "authors_purpose": "Author's Purpose",
+    "intended_audience": "Intended Audience",
+    "ideas_support": "Ideas and Support",
+    "figurative_language": "Figurative Language",
+    "central_idea": "Central Idea",
+    "text_features": "Text and Graphic Features",
+    "literary_elements": "Literary Elements",
+    "summary": "Summary"
+  },
+  "anchorCharts": [
+    {
+      "name": "Author's Purpose",
+      "body": "Authors write to persuade, inform, entertain, or explain. Look for clues: facts often inform, directions explain, strong opinions persuade, and story events entertain.",
+      "ex": [
+        "A tall tale about an amazing firefighter is mostly written to entertain.",
+        "An article that gives facts about food groups is mostly written to inform.",
+        "A poster asking families to use reusable containers is written to persuade."
+      ]
+    },
+    {
+      "name": "Intended Audience",
+      "body": "The intended audience is who the author is writing for. Clues include the title, word choice, pictures, examples, and what the author asks readers to do.",
+      "ex": [
+        "A school lunch poster with simple labels may be for students and families.",
+        "A recipe with step-by-step directions may be for cooks or people preparing food.",
+        "A safety notice with rules may be for people who visit a place."
+      ]
+    },
+    {
+      "name": "Ideas and Support",
+      "body": "An idea is what the author wants readers to understand. Supporting details are facts, examples, reasons, or story events that prove or explain the idea.",
+      "ex": [
+        "Idea: A balanced lunch gives students energy. Support: Whole grains, protein, fruits, vegetables, and water help the body work.",
+        "Idea: A character is brave. Support: She helps others even when the job is difficult."
+      ]
+    },
+    {
+      "name": "Figurative Language",
+      "body": "Figurative language makes writing vivid. A simile compares two things using like or as. A metaphor says one thing is another. Hyperbole is a huge exaggeration.",
+      "ex": [
+        "\"His shovel was as big as a train car\" is a simile.",
+        "\"The city was an oven\" is a metaphor.",
+        "\"I have told you a million times\" is hyperbole."
+      ]
+    },
+    {
+      "name": "Central Idea",
+      "body": "The central idea is the most important point of a nonfiction text or section. It is bigger than one detail and should be a complete sentence.",
+      "ex": [
+        "Topic: insect hotels. Central idea: Insect hotels can give helpful insects a safe place to rest and lay eggs.",
+        "Topic: healthy cooking. Central idea: Small choices in the kitchen can help families build healthier meals."
+      ]
+    },
+    {
+      "name": "Text and Graphic Features",
+      "body": "Headings, captions, labels, charts, diagrams, sidebars, and bold words help readers find and understand information.",
+      "ex": [
+        "A chart can compare two choices quickly.",
+        "Labels on a diagram can name important parts.",
+        "A sidebar can give extra facts without interrupting the main text."
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "giant_soup_pot",
+      "title": "Penny Pepper and the Giant Soup Pot",
+      "skills": [
+        "authors_purpose",
+        "figurative_language",
+        "literary_elements",
+        "ideas_support"
+      ],
+      "body": "This story is a tall tale. A tall tale is a story with unbelievable and fantastic details, told as if it were true and factual.\n\n1 Penny Pepper lived in a windy town called Spoonville. She was nothing like the other cooks. People said she could stir soup with one hand and lift a flour sack with one finger. Her laugh was as loud as a school bell, so everyone knew when Penny was in the kitchen.\n\n2 One winter morning, a snowstorm covered Spoonville. The roads disappeared under drifts of snow, and the town's food delivery wagon could not get through. Families were hungry, and the mayor worried that there would not be enough lunch for the school.\n\n3 Penny looked at the empty pantry and then at the frozen pond. She got an idea. She rolled her biggest soup pot to the pond and chopped a circle in the ice. Then she pulled carrots from her garden, shook snow from a mountain of potatoes, and added one onion that made the whole town cry.\n\n4 Penny stirred and stirred until steam rose higher than the clock tower. The smell floated down every street. Children carried bowls, parents brought spoons, and even the mayor brought a loaf of bread. Within an hour, every person in Spoonville had warm soup.\n\n5 By sunset, the storm had stopped. The next spring, the place where Penny chopped the ice became the town's first public well. People still say Penny's soup was so hot it melted winter itself.",
+      "questions": [
+        {
+          "q": "Penny Pepper spoke quietly.",
+          "choices": ["True", "False"],
+          "answer": 1,
+          "skill": "ideas_support"
+        },
+        {
+          "q": "\"Her laugh was as loud as a school bell\" is a simile.",
+          "choices": ["True", "False"],
+          "answer": 0,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "The author's purpose of this story is to persuade people to become cooks.",
+          "choices": ["True", "False"],
+          "answer": 1,
+          "skill": "authors_purpose"
+        },
+        {
+          "q": "What is the main conflict Penny faces in the story?",
+          "choices": [
+            "The town needs food during a snowstorm.",
+            "Penny cannot find her favorite spoon.",
+            "The mayor wants to close the school.",
+            "The pond is too warm for cooking."
+          ],
+          "answer": 0,
+          "skill": "literary_elements"
+        },
+        {
+          "q": "What is the last step Penny takes before everyone gets soup?",
+          "choices": [
+            "She rolls her soup pot to the pond.",
+            "She stirs until steam rises higher than the clock tower.",
+            "She asks the mayor to bring bread.",
+            "She waits for the food delivery wagon."
+          ],
+          "answer": 1,
+          "skill": "summary"
+        },
+        {
+          "q": "Why does Penny chop a circle in the frozen pond?",
+          "choices": [
+            "To get water for the soup",
+            "To go ice skating",
+            "To build a new school",
+            "To hide the vegetables"
+          ],
+          "answer": 0,
+          "skill": "ideas_support"
+        },
+        {
+          "q": "What is the author's purpose in writing this passage?",
+          "choices": [
+            "To entertain the reader with an exaggerated story about a helpful cook",
+            "To inform the reader about the true history of public wells",
+            "To persuade the reader to eat soup every day",
+            "To explain how to cook a real recipe"
+          ],
+          "answer": 0,
+          "skill": "authors_purpose"
+        },
+        {
+          "q": "Which sentence from the passage contains a simile?",
+          "choices": [
+            "\"Her laugh was as loud as a school bell.\"",
+            "\"Penny looked at the empty pantry.\"",
+            "\"The smell floated down every street.\"",
+            "\"By sunset, the storm had stopped.\""
+          ],
+          "answer": 0,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "According to the story, how was Penny different from the other cooks?",
+          "type": "short",
+          "sampleAnswer": "Penny was different because she was extremely strong, had a very loud laugh, and could make enough soup to feed the whole town.",
+          "skill": "ideas_support"
+        }
+      ]
+    },
+    {
+      "id": "lunch_tray_team",
+      "title": "The Lunch Tray Team",
+      "skills": [
+        "central_idea",
+        "ideas_support",
+        "text_features",
+        "intended_audience"
+      ],
+      "body": "A healthy lunch does not need to be fancy. It needs balance. A balanced meal gives your body energy, helps your brain stay alert, and keeps you from feeling hungry too soon.\n\n[Chart: A balanced tray can include 1 fruit, 1 vegetable, 1 grain, 1 protein, and water or milk.]\n\nAt West Park School, a group of fourth graders called themselves the Lunch Tray Team. They noticed that many students ate only chips or sweets at lunch. The team made a poster for the cafeteria. It showed a tray with labeled sections for apple slices, carrots, brown rice, chicken, and water.\n\nThe poster did not tell students to stop eating treats forever. Instead, it asked them to add one healthy choice each day. On Monday, students could add fruit. On Tuesday, they could try a vegetable. By Friday, many students were building meals with more colors and fewer empty calories.\n\nThe principal liked the poster because it was clear and friendly. Younger students could understand the labels, and families saw the same idea in the weekly school newsletter.",
+      "questions": [
+        {
+          "q": "What is the central idea of this passage?",
+          "choices": [
+            "A balanced lunch can help students have energy and make healthier choices.",
+            "Students should never eat lunch at school.",
+            "Only fourth graders need vegetables.",
+            "A cafeteria poster should not have labels."
+          ],
+          "answer": 0,
+          "skill": "central_idea"
+        },
+        {
+          "q": "Which detail supports the idea that the poster was easy to understand?",
+          "choices": [
+            "It showed a tray with labeled sections.",
+            "It was made on a Monday.",
+            "It had no pictures.",
+            "It told students to stop eating treats forever."
+          ],
+          "answer": 0,
+          "skill": "ideas_support"
+        },
+        {
+          "q": "What does the chart help readers understand?",
+          "choices": [
+            "The parts of a balanced tray",
+            "The price of school lunch",
+            "The names of every fourth grader",
+            "The history of West Park School"
+          ],
+          "answer": 0,
+          "skill": "text_features"
+        },
+        {
+          "q": "Who is one intended audience for the poster?",
+          "choices": [
+            "Younger students in the cafeteria",
+            "Only restaurant owners",
+            "Only bus drivers",
+            "Firefighters in New York"
+          ],
+          "answer": 0,
+          "skill": "intended_audience"
+        },
+        {
+          "q": "What did the poster ask students to do?",
+          "choices": [
+            "Add one healthy choice each day",
+            "Skip lunch every Friday",
+            "Eat only chips and sweets",
+            "Bring no food to school"
+          ],
+          "answer": 0,
+          "skill": "ideas_support"
+        },
+        {
+          "q": "Why did the author include the weekly plan from Monday to Friday?",
+          "choices": [
+            "To show a simple sequence students could follow",
+            "To explain why Friday is longer than Monday",
+            "To compare two different schools",
+            "To describe how to grow carrots"
+          ],
+          "answer": 0,
+          "skill": "text_features"
+        },
+        {
+          "q": "Write one detail from the passage that supports the idea that healthy choices can be simple.",
+          "type": "short",
+          "sampleAnswer": "One detail is that the poster asked students to add one healthy choice each day instead of changing everything at once.",
+          "skill": "ideas_support"
+        }
+      ]
+    },
+    {
+      "id": "bug_hotel_helpers",
+      "title": "Bug Hotel Helpers",
+      "skills": [
+        "central_idea",
+        "text_features",
+        "intended_audience",
+        "ideas_support"
+      ],
+      "body": "Not every bug in a garden is a pest. Bees, ladybugs, and lacewings can help plants grow or protect them from harmful insects. One way to welcome helpful insects is to build a small bug hotel.\n\nA bug hotel is a box filled with natural materials. Hollow stems give tiny bees a safe place to lay eggs. Pinecones and dry leaves make hiding spots for ladybugs. Small sticks create cracks where insects can rest away from wind and rain.\n\n[Diagram: A bug hotel has sections labeled hollow stems, pinecones, dry leaves, and sticks.]\n\nA school garden club made signs beside its bug hotel. The signs reminded visitors not to shake the box or spray chemicals nearby. The club wrote the signs for students, families, and anyone who walked through the garden.\n\nAfter a month, the garden had more flowers and fewer aphids. The club could not see every insect at work, but the plants looked healthier. Sometimes the smallest helpers make a big difference.",
+      "questions": [
+        {
+          "q": "What is the central idea of this passage?",
+          "choices": [
+            "Bug hotels can give helpful insects safe places in a garden.",
+            "All insects are dangerous pests.",
+            "Garden clubs should never make signs.",
+            "Pinecones are only useful for art projects."
+          ],
+          "answer": 0,
+          "skill": "central_idea"
+        },
+        {
+          "q": "What does the diagram help readers understand?",
+          "choices": [
+            "The sections and materials inside a bug hotel",
+            "The price of flowers",
+            "The name of every club member",
+            "The weather for next month"
+          ],
+          "answer": 0,
+          "skill": "text_features"
+        },
+        {
+          "q": "Who is the intended audience for the garden signs?",
+          "choices": [
+            "Students, families, and garden visitors",
+            "Only scientists in a lab",
+            "Only people who dislike gardens",
+            "Only bus drivers"
+          ],
+          "answer": 0,
+          "skill": "intended_audience"
+        },
+        {
+          "q": "Which detail supports the idea that the bug hotel helped the garden?",
+          "choices": [
+            "After a month, the garden had more flowers and fewer aphids.",
+            "The box was filled with natural materials.",
+            "The signs stood beside the bug hotel.",
+            "The club could not see every insect."
+          ],
+          "answer": 0,
+          "skill": "ideas_support"
+        },
+        {
+          "q": "What should visitors avoid doing near the bug hotel?",
+          "choices": [
+            "Shaking the box or spraying chemicals",
+            "Reading the signs",
+            "Looking at the flowers",
+            "Walking through the garden"
+          ],
+          "answer": 0,
+          "skill": "ideas_support"
+        },
+        {
+          "q": "\"Sometimes the smallest helpers make a big difference\" means helpful insects can be important.",
+          "choices": ["True", "False"],
+          "answer": 0,
+          "skill": "central_idea"
+        },
+        {
+          "q": "Explain why a bug hotel can be useful in a school garden.",
+          "type": "short",
+          "sampleAnswer": "A bug hotel can be useful because it gives helpful insects safe places to rest or lay eggs, and those insects can help plants grow or protect them from pests.",
+          "skill": "ideas_support"
+        }
+      ]
+    },
+    {
+      "id": "rocks_tell_stories",
+      "title": "Rocks Tell Stories",
+      "skills": [
+        "central_idea",
+        "figurative_language",
+        "text_features",
+        "authors_purpose"
+      ],
+      "body": "Rocks may look silent, but they can tell stories about Earth. A smooth pebble may show that water rolled it for a long time. A rock with tiny shell marks may tell scientists that the place was once under the sea.\n\nThere are three main kinds of rocks. Igneous rocks form when melted rock cools. Sedimentary rocks form when layers of sand, mud, or shells press together. Metamorphic rocks form when heat and pressure change one kind of rock into another.\n\n[Sidebar: The word metamorphic comes from words that mean changed form.]\n\nA geologist studies rocks like a detective studies clues. The color, shape, layers, and fossils all matter. A dark, glassy rock might come from a volcano. A striped rock might show years of pressure deep underground.\n\nThe next time you pick up a stone, do not think of it as ordinary. It may be a tiny page from Earth's very old book.",
+      "questions": [
+        {
+          "q": "What is the central idea of this passage?",
+          "choices": [
+            "Rocks give clues about Earth's past.",
+            "All rocks come from volcanoes.",
+            "Pebbles cannot change shape.",
+            "Geologists only study books."
+          ],
+          "answer": 0,
+          "skill": "central_idea"
+        },
+        {
+          "q": "What does the sidebar explain?",
+          "choices": [
+            "The meaning of the word metamorphic",
+            "The exact age of every rock",
+            "The name of a geologist",
+            "The color of the ocean"
+          ],
+          "answer": 0,
+          "skill": "text_features"
+        },
+        {
+          "q": "Which sentence uses figurative language?",
+          "choices": [
+            "\"It may be a tiny page from Earth's very old book.\"",
+            "\"There are three main kinds of rocks.\"",
+            "\"Igneous rocks form when melted rock cools.\"",
+            "\"The color, shape, layers, and fossils all matter.\""
+          ],
+          "answer": 0,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "What is the author's purpose?",
+          "choices": [
+            "To inform readers about how rocks can show clues about Earth",
+            "To persuade readers to stop collecting rocks",
+            "To entertain readers with a tall tale about a giant rock",
+            "To explain how to cook with stones"
+          ],
+          "answer": 0,
+          "skill": "authors_purpose"
+        },
+        {
+          "q": "Which detail supports the idea that rocks can show where water once was?",
+          "choices": [
+            "A smooth pebble may show that water rolled it for a long time.",
+            "Metamorphic means changed form.",
+            "A geologist studies clues.",
+            "A rock can be dark and glassy."
+          ],
+          "answer": 0,
+          "skill": "ideas_support"
+        },
+        {
+          "q": "According to the passage, how do sedimentary rocks form?",
+          "choices": [
+            "Layers of sand, mud, or shells press together.",
+            "Melted rock cools quickly.",
+            "A detective solves a mystery.",
+            "A pebble rolls down a hill."
+          ],
+          "answer": 0,
+          "skill": "ideas_support"
+        },
+        {
+          "q": "Write one clue a geologist might study in a rock.",
+          "type": "short",
+          "sampleAnswer": "A geologist might study a rock's color, shape, layers, fossils, shell marks, or whether it is dark and glassy.",
+          "skill": "ideas_support"
+        }
+      ]
+    }
+  ]
+}

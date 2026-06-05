@@ -6,12 +6,165 @@ const app = $("app");
 
 const STORE_KEY = "cs-english-exam-progress";
 const MISSED_KEY = "cs-english-exam-missed";
+const GAME_KEY = "cs-english-exam-game";
 const VOICE_KEY = "cs-english-exam-voice";
 const EXAM_KEY = "cs-english-exam-current-exam";
 const progress = JSON.parse(localStorage.getItem(STORE_KEY) || "{}");
 const missed = JSON.parse(localStorage.getItem(MISSED_KEY) || "{}");
+const game = JSON.parse(localStorage.getItem(GAME_KEY) || "{}");
 const saveProgress = () => localStorage.setItem(STORE_KEY, JSON.stringify(progress));
 const saveMissed = () => localStorage.setItem(MISSED_KEY, JSON.stringify(missed));
+const saveGame = () => localStorage.setItem(GAME_KEY, JSON.stringify(game));
+
+// ---------- Game layer ----------
+const TOPIC_META = {
+  vocab: { id: "vocab", icon: "📖", title: "Vocabulary", place: "Vocabulary Village" },
+  spell: { id: "spell", icon: "🔤", title: "Phonics & Spelling", place: "Phonics Forest" },
+  grammar: { id: "grammar", icon: "✏️", title: "Grammar", place: "Grammar Tower" },
+  reading: { id: "reading", icon: "📚", title: "Reading", place: "Reading River" },
+  listen: { id: "listen", icon: "👂", title: "Listening", place: "Listening Lab" },
+};
+
+const BADGES = [
+  { id: "first_quest", icon: "⭐", name: "First Quest", desc: "Complete any practice round." },
+  { id: "daily_hero", icon: "🏁", name: "Daily Hero", desc: "Finish today's missions." },
+  { id: "reading_detective", icon: "🔎", name: "Reading Detective", desc: "Complete 3 reading passages." },
+  { id: "grammar_wizard", icon: "🧙", name: "Grammar Wizard", desc: "Score 90%+ in grammar." },
+  { id: "spelling_champ", icon: "🏆", name: "Spelling Champ", desc: "Get a perfect spelling or phonics score." },
+  { id: "listening_star", icon: "🎧", name: "Listening Star", desc: "Complete 2 listening dialogues." },
+  { id: "boss_defeated", icon: "💥", name: "Boss Defeated", desc: "Clear all missed questions." },
+];
+
+function todayString() {
+  const d = new Date();
+  const yyyy = d.getFullYear();
+  const mm = String(d.getMonth() + 1).padStart(2, "0");
+  const dd = String(d.getDate()).padStart(2, "0");
+  return `${yyyy}-${mm}-${dd}`;
+}
+
+function ensureExamGame() {
+  const id = currentExam?.id || "default";
+  if (!game[id]) {
+    game[id] = {
+      stars: 0,
+      dates: {},
+      totals: { vocab: 0, spell: 0, grammar: 0, reading: 0, listen: 0 },
+      best: { vocab: 0, spell: 0, grammar: 0, reading: 0, listen: 0 },
+      badges: {},
+      hadMissed: false
+    };
+  }
+  return game[id];
+}
+
+function ensureTodayGame() {
+  const examGame = ensureExamGame();
+  const today = todayString();
+  if (!examGame.dates[today]) {
+    examGame.dates[today] = {
+      topics: {},
+      completions: 0,
+      stars: 0
+    };
+  }
+  return examGame.dates[today];
+}
+
+function topicCategory(topicId) {
+  if (topicId.startsWith("vocab")) return "vocab";
+  if (topicId.startsWith("spell")) return "spell";
+  if (topicId.startsWith("grammar")) return "grammar";
+  if (topicId.startsWith("reading")) return "reading";
+  if (topicId.startsWith("listen")) return "listen";
+  return "vocab";
+}
+
+function topicIsAvailable(topicId) {
+  if (topicId === "vocab") return !!data.vocabulary?.words?.length;
+  if (topicId === "spell") return !!data.spelling?.lists?.length;
+  if (topicId === "grammar") return !!(data.grammar?.items?.length || data.grammar?.practiceSets?.length);
+  if (topicId === "reading") return !!(data.reading?.passages?.length || data.reading?.anchorCharts?.length);
+  if (topicId === "listen") return !!data.listening?.dialogues?.length;
+  return false;
+}
+
+function dailyMissions() {
+  return [
+    { id: "reading", topic: "reading", text: "Complete one reading passage" },
+    { id: "spell", topic: "spell", text: "Practice phonics or spelling" },
+    { id: "grammar", topic: "grammar", text: "Win one grammar round" },
+    { id: "listen", topic: "listen", text: "Finish one listening dialogue" },
+    { id: "vocab", topic: "vocab", text: "Practice vocabulary" },
+  ].filter(m => topicIsAvailable(m.topic)).slice(0, 3);
+}
+
+function dailyMissionCount() {
+  const today = ensureTodayGame();
+  const missions = dailyMissions();
+  const done = missions.filter(m => today.topics[m.topic]).length;
+  return { done, total: missions.length };
+}
+
+function totalMissedForCurrentExam() {
+  if (!currentExam) return 0;
+  const prefix = `${currentExam.id}:`;
+  return Object.entries(missed)
+    .filter(([key]) => key.startsWith(prefix))
+    .reduce((sum, [,items]) => sum + items.length, 0);
+}
+
+function unlockBadges(topicId, pct) {
+  const examGame = ensureExamGame();
+  const category = topicCategory(topicId);
+  const { done, total } = dailyMissionCount();
+  const earned = [];
+  const canEarn = {
+    first_quest: Object.values(examGame.totals).reduce((sum, n) => sum + n, 0) >= 1,
+    daily_hero: total > 0 && done >= total,
+    reading_detective: examGame.totals.reading >= 3,
+    grammar_wizard: category === "grammar" && pct >= 90,
+    spelling_champ: category === "spell" && pct === 100,
+    listening_star: examGame.totals.listen >= 2,
+    boss_defeated: examGame.hadMissed && totalMissedForCurrentExam() === 0,
+  };
+
+  BADGES.forEach(b => {
+    if (canEarn[b.id] && !examGame.badges[b.id]) {
+      examGame.badges[b.id] = todayString();
+      earned.push(b);
+    }
+  });
+  return earned;
+}
+
+function recordGameCompletion(topicId, pct, correct, total) {
+  const examGame = ensureExamGame();
+  const today = ensureTodayGame();
+  const category = topicCategory(topicId);
+  const firstTopicToday = !today.topics[category];
+  const starsEarned = Math.max(3, pct === 100 ? 10 : pct >= 80 ? 8 : pct >= 60 ? 6 : 4) + (firstTopicToday ? 2 : 0);
+
+  today.topics[category] = true;
+  today.completions++;
+  today.stars += starsEarned;
+  examGame.stars += starsEarned;
+  examGame.totals[category] = (examGame.totals[category] || 0) + 1;
+  examGame.best[category] = Math.max(examGame.best[category] || 0, pct);
+
+  const badges = unlockBadges(topicId, pct);
+  saveGame();
+
+  return { starsEarned, badges, correct, total };
+}
+
+function gameRewardHTML(result) {
+  if (!result) return "";
+  return `<div class="reward-box">
+    <div><b>+${result.starsEarned} stars</b> added to your quest map.</div>
+    ${result.badges.length ? `<div class="badge-unlocks">${result.badges.map(b => `<span class="badge earned" title="${b.desc}">${b.icon} ${b.name}</span>`).join("")}</div>` : ""}
+  </div>`;
+}
 
 // ---------- Voice selection ----------
 let voices = [];
@@ -124,7 +277,9 @@ function recordMissed(topicId, item) {
   const idx = missed[key].findIndex(x => x.id === next.id);
   if (idx >= 0) missed[key][idx] = next;
   else missed[key].push(next);
+  ensureExamGame().hadMissed = true;
   saveMissed();
+  saveGame();
 }
 
 function clearMissed(topicId, id) {
@@ -227,30 +382,94 @@ function grammarLabel() {
     .replace("Lesson ", "L");
 }
 
+function topicCards(moduleLabel) {
+  return [
+    { ...TOPIC_META.vocab, desc: `${moduleLabel} words` },
+    { ...TOPIC_META.spell, desc: "Dictation + sound sorts" },
+    { ...TOPIC_META.grammar, desc: grammarLabel() },
+    { ...TOPIC_META.reading, desc: "Anchor charts + passages" },
+    { ...TOPIC_META.listen, desc: "Dialogue + questions" },
+  ];
+}
+
+function dailyMissionsHTML() {
+  const today = ensureTodayGame();
+  const missions = dailyMissions();
+  const { done, total } = dailyMissionCount();
+  if (!missions.length) return "";
+  return `<div class="mission-panel">
+    <div class="mission-head">
+      <div>
+        <h3>Today's Missions</h3>
+        <p>${done}/${total} complete</p>
+      </div>
+      <div class="mission-ring" aria-label="${done} of ${total} daily missions complete">${done}/${total}</div>
+    </div>
+    <div class="mission-list">
+      ${missions.map(m => {
+        const meta = TOPIC_META[m.topic];
+        const complete = !!today.topics[m.topic];
+        return `<button class="mission ${complete ? "complete" : ""}" data-mission-topic="${meta.id}">
+          <span>${complete ? "✓" : meta.icon}</span>
+          <span>${m.text}</span>
+        </button>`;
+      }).join("")}
+    </div>
+  </div>`;
+}
+
+function badgesHTML() {
+  const examGame = ensureExamGame();
+  return `<div class="badges-panel">
+    <h3>Badges</h3>
+    <div class="badges">
+      ${BADGES.map(b => {
+        const earned = !!examGame.badges[b.id];
+        return `<span class="badge ${earned ? "earned" : "locked"}" title="${b.desc}">
+          ${earned ? b.icon : "◇"} ${b.name}
+        </span>`;
+      }).join("")}
+    </div>
+  </div>`;
+}
+
 function renderHome() {
   if (!currentExam) return renderExamPicker();
   const moduleLabel = moduleWeeksLabel();
-  const topics = [
-    { id: "vocab",   icon: "📖", title: "Vocabulary",       desc: `${moduleLabel} words` },
-    { id: "spell",   icon: "🔤", title: "Phonics & Spelling", desc: "Dictation + sound sorts" },
-    { id: "grammar", icon: "✏️", title: "Grammar",          desc: grammarLabel() },
-    { id: "reading", icon: "📚", title: "Reading",          desc: "Anchor charts + passages" },
-    { id: "listen",  icon: "👂", title: "Listening",        desc: "Dialogue + questions" },
-  ];
+  const topics = topicCards(moduleLabel);
+  const examGame = ensureExamGame();
+  const today = ensureTodayGame();
+  const missedTotal = totalMissedForCurrentExam();
   app.innerHTML = `
     <div class="panel">
-      <h2>Pick a topic to practice</h2>
+      <div class="quest-header">
+        <div>
+          <h2>Final Exam Quest Map</h2>
+          <p class="exam-label">${currentExam.title} · ${currentExam.subtitle}</p>
+        </div>
+        <div class="stars-box">
+          <span>⭐</span>
+          <b>${examGame.stars}</b>
+          <small>stars</small>
+        </div>
+      </div>
+      ${dailyMissionsHTML()}
+      ${missedTotal ? `<button id="boss-review" class="boss-button">💥 Boss Review · ${missedTotal} missed</button>` : `<div class="boss-clear">💥 Boss defeated: no missed questions waiting.</div>`}
+      ${badgesHTML()}
+      <h3>Quest Map</h3>
       <p class="exam-label">${currentExam.title} · ${currentExam.subtitle}</p>
-      <div class="cards">
+      <div class="cards quest-map">
         ${topics.map(t => {
           const p = readTopicProgress(t.id);
           const miss = missedCountForPrefix(t.id);
           const pStr = p ? p.text : "Not tried yet";
-          return `<div class="card" data-topic="${t.id}">
+          const doneToday = !!today.topics[t.id];
+          return `<div class="card quest-card ${doneToday ? "done-today" : ""}" data-topic="${t.id}">
             <div class="icon">${t.icon}</div>
+            <div class="quest-place">${t.place}</div>
             <h2>${t.title}</h2>
             <div>${t.desc}</div>
-            <div class="progress">${pStr}${miss ? ` · ${miss} to review` : ""}</div>
+            <div class="progress">${doneToday ? "Today complete · " : ""}${pStr}${miss ? ` · ${miss} to review` : ""}</div>
           </div>`;
         }).join("")}
       </div>
@@ -259,7 +478,46 @@ function renderHome() {
   document.querySelectorAll(".card").forEach(c => {
     c.onclick = () => routes[c.dataset.topic]();
   });
+  document.querySelectorAll("button[data-mission-topic]").forEach(b => {
+    b.onclick = () => routes[b.dataset.missionTopic]();
+  });
+  if ($("boss-review")) $("boss-review").onclick = bossReview;
   $("change-exam").onclick = renderExamPicker;
+}
+
+function bossReview() {
+  const topics = topicCards(moduleWeeksLabel())
+    .map(t => ({ ...t, missed: missedCountForPrefix(t.id) }))
+    .filter(t => t.missed);
+
+  if (!topics.length) {
+    const badges = unlockBadges("reading:boss-clear", 100);
+    saveGame();
+    app.innerHTML = `
+      <div class="panel boss-panel">
+        <h2>💥 Boss Defeated</h2>
+        <p>No missed questions are waiting right now.</p>
+        ${gameRewardHTML({ starsEarned: 0, badges })}
+        <button onclick="renderHome()">Back to Quest Map</button>
+      </div>`;
+    return;
+  }
+
+  app.innerHTML = `
+    <div class="panel boss-panel">
+      <h2>💥 Boss Review</h2>
+      <p>Clear missed questions to defeat each boss.</p>
+      <div class="boss-list">
+        ${topics.map(t => `<button data-boss-topic="${t.id}" class="boss-card">
+          <span class="boss-icon">${t.icon}</span>
+          <span><b>${t.title}</b> <small>${t.missed} missed question${t.missed === 1 ? "" : "s"}</small></span>
+        </button>`).join("")}
+      </div>
+      <button class="ghost" onclick="renderHome()">🏠 Quest Map</button>
+    </div>`;
+  document.querySelectorAll("button[data-boss-topic]").forEach(b => {
+    b.onclick = () => routes[b.dataset.bossTopic]();
+  });
 }
 
 // ---------- Generic Quiz Runner ----------
@@ -328,10 +586,12 @@ function runQuiz(topicId, title, items, getQ, options = {}) {
   function finish() {
     const pct = Math.round((correct/order.length)*100);
     writeProgress(topicId, pct);
+    const reward = recordGameCompletion(topicId, pct, correct, order.length);
     app.innerHTML = `
       <div class="panel">
         <h2>🎉 Done!</h2>
         <p>Score: <b>${correct} / ${order.length}</b> (${pct}%)</p>
+        ${gameRewardHTML(reward)}
         ${missed.length ? `<details open><summary>Review ${missed.length} missed:</summary>
           <ul>${missed.map(m => `<li>${getQ(m.item).prompt.replace(/<[^>]+>/g,'')} → <b>${m.answer}</b> (you said: ${m.picked})</li>`).join("")}</ul></details>` : "<p>Perfect score! 🌟</p>"}
         <button id="finish-next">Done</button>
@@ -533,10 +793,12 @@ function dictation(list, reviewOnly = false) {
   function finish() {
     const pct = Math.round((correct/order.length)*100);
     writeProgress(topicId, pct);
+    const reward = recordGameCompletion(topicId, pct, correct, order.length);
     app.innerHTML = `
       <div class="panel">
         <h2>🎉 Done!</h2>
         <p>Score: <b>${correct} / ${order.length}</b> (${pct}%)</p>
+        ${gameRewardHTML(reward)}
         ${missed.length ? `<details open><summary>Review ${missed.length} missed:</summary>
           <ul>${missed.map(m => `<li><b>${m.word}</b> — you wrote "${m.guess}"</li>`).join("")}</ul></details>` : "<p>Perfect! 🌟</p>"}
         <button id="more-spelling-modes">More modes</button>
@@ -567,8 +829,19 @@ function sortGame(list, reviewOnly = false) {
 
   const placed = {}; // word -> chosen group
   let remaining = shuffle([...allWords]);
+  let finalRecorded = false;
+  let finalReward = null;
 
   function render() {
+    if (remaining.length === 0 && !finalRecorded) {
+      const total = allWords.length;
+      const right = Object.entries(placed).filter(([w,g]) => wordGroup[w] === g).length;
+      const pct = Math.round((right/total)*100);
+      writeProgress(topicId, pct);
+      finalReward = recordGameCompletion(topicId, pct, right, total);
+      finalRecorded = true;
+    }
+
     app.innerHTML = `
       <div class="panel">
         <h2>${list.title}</h2>
@@ -586,7 +859,7 @@ function sortGame(list, reviewOnly = false) {
               }).join("")}
             </div>
           </div>`).join("")}
-        ${remaining.length === 0 ? `<button onclick="renderHome()">🏠 Home</button>` : ""}
+        ${remaining.length === 0 ? `${gameRewardHTML(finalReward)}<button onclick="renderHome()">🏠 Home</button>` : ""}
       </div>`;
     let selected = null;
     document.querySelectorAll(".sort-word[data-w]").forEach(el => {
@@ -610,12 +883,6 @@ function sortGame(list, reviewOnly = false) {
         render();
       };
     });
-    if (remaining.length === 0) {
-      const total = allWords.length;
-      const right = Object.entries(placed).filter(([w,g]) => wordGroup[w] === g).length;
-      const pct = Math.round((right/total)*100);
-      writeProgress(topicId, pct);
-    }
   }
   render();
 }
@@ -627,7 +894,7 @@ function grammarTopic() {
     ...(mainItems.length ? [{
       id: "main",
       title: "Mixed Practice",
-      description: "Adjectives, adverbs, opposites, spelling rules, and word order.",
+      description: data.grammar.intro || "Mixed grammar review.",
       items: mainItems
     }] : []),
     ...(data.grammar.practiceSets || [])
@@ -771,7 +1038,7 @@ function readPassage(passage, reviewOnly = false) {
   window.__currentPassage = passage;
   window.__currentPassageReviewOnly = reviewOnly;
   // Pre-shuffle choice order per question so answer letters aren't always in the same spot.
-  const qOrders = questions.map(q => shuffle([...q.choices.keys()]));
+  const qOrders = questions.map(q => q.choices ? shuffle([...q.choices.keys()]) : []);
 
   app.innerHTML = `
     <div class="panel">
@@ -790,12 +1057,13 @@ function readPassage(passage, reviewOnly = false) {
       ${questions.map((q, qi) => `
         <div class="qa-block" data-qi="${qi}" style="margin:18px 0;padding:14px;border:2px solid var(--border);border-radius:14px">
           <div class="question"><b>${qi+1}.</b> ${q.q} <span class="tag">${data.reading.skills[q.skill] || q.skill}</span></div>
-          <div class="choices">
+          ${q.choices ? `<div class="choices">
             ${qOrders[qi].map(idx => `
               <label style="display:block;background:white;border:2px solid var(--border);padding:12px 16px;border-radius:12px;margin:6px 0;cursor:pointer">
                 <input type="radio" name="q${qi}" value="${idx}" style="margin-right:8px"> ${q.choices[idx]}
               </label>`).join("")}
-          </div>
+          </div>` : `<textarea name="q${qi}" rows="3" style="width:100%;box-sizing:border-box;font:inherit;border:2px solid var(--border);border-radius:12px;padding:12px;margin-top:8px" placeholder="Write your answer here."></textarea>
+          <p style="color:var(--muted);font-size:0.9rem">This short answer will show a sample answer after you submit.</p>`}
           <div class="feedback" id="fb${qi}"></div>
         </div>
       `).join("")}
@@ -814,11 +1082,23 @@ function readPassage(passage, reviewOnly = false) {
     let correct = 0;
     const missed = [];
     let unanswered = 0;
+    let shortAnswers = 0;
+    let blankShortAnswers = 0;
     questions.forEach((q, qi) => {
       const qId = q.q;
-      const picked = document.querySelector(`input[name="q${qi}"]:checked`);
       const fb = $(`fb${qi}`);
       const block = document.querySelector(`.qa-block[data-qi="${qi}"]`);
+      if (!q.choices) {
+        shortAnswers++;
+        const response = document.querySelector(`textarea[name="q${qi}"]`);
+        if (!response.value.trim()) blankShortAnswers++;
+        response.disabled = true;
+        fb.innerHTML = `Sample answer: <b>${q.sampleAnswer || "Answers may vary. Use details from the passage."}</b>`;
+        fb.className = "feedback good";
+        return;
+      }
+
+      const picked = document.querySelector(`input[name="q${qi}"]:checked`);
       // Highlight choices
       block.querySelectorAll("label").forEach(lab => {
         const v = +lab.querySelector("input").value;
@@ -845,9 +1125,10 @@ function readPassage(passage, reviewOnly = false) {
       if (!picked) recordMissed(topicId, { id: qId, label: q.q, title: passage.title });
     });
 
-    const total = questions.length;
-    const pct = Math.round((correct/total)*100);
+    const total = questions.filter(q => q.choices).length;
+    const pct = total ? Math.round((correct/total)*100) : 0;
     writeProgress(topicId, pct);
+    const reward = recordGameCompletion(topicId, pct, correct, total || questions.length);
 
     // Show summary at top, scroll to it
     const summary = document.createElement("div");
@@ -856,6 +1137,8 @@ function readPassage(passage, reviewOnly = false) {
     summary.innerHTML = `
       <h2>🎉 Score: ${correct} / ${total} (${pct}%)</h2>
       ${unanswered ? `<p style="color:var(--bad)">${unanswered} question(s) left blank.</p>` : ""}
+      ${shortAnswers ? `<p>${shortAnswers} short answer question(s) showed sample answers${blankShortAnswers ? `; ${blankShortAnswers} were blank` : ""}.</p>` : ""}
+      ${gameRewardHTML(reward)}
       <button onclick="readPassage(window.__currentPassage, window.__currentPassageReviewOnly)">🔁 Try again</button>
       <button class="ghost" onclick="readingTopic()">← Back to passages</button>
       <button class="ghost" onclick="renderHome()">🏠 Home</button>
@@ -971,8 +1254,10 @@ $("reset-btn").onclick = () => {
   if (confirm("Reset all progress?")) {
     localStorage.removeItem(STORE_KEY);
     localStorage.removeItem(MISSED_KEY);
+    localStorage.removeItem(GAME_KEY);
     for (const k in progress) delete progress[k];
     for (const k in missed) delete missed[k];
+    for (const k in game) delete game[k];
     renderHome();
   }
 };
