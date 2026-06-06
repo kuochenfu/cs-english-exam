@@ -5,6 +5,13 @@ Source photos:
 - `raw/202606/hw01_260604.JPG`
 - `raw/202606/hw02_260604.JPG`
 - `raw/202606/hw03_260604.JPG`
+- `raw/202606/260605_hw1.JPG`
+- `raw/202606/260605_hw2.JPG`
+- `raw/202606/grammar01.JPG`
+- `raw/202606/grammar02.JPG`
+- `raw/202606/grammar03.JPG`
+- `raw/202606/grammar04.JPG`
+- `raw/202606/grammar05.JPG`
 
 ## Exam Schedule
 
@@ -49,6 +56,70 @@ Source photos:
 - Added generated listening dialogues for comprehension practice.
 - Added generated reading comprehension passages at a similar level to the homework sample.
 - Added reading short-answer support: short answers show a sample answer after submission, while multiple choice and True/False questions are auto-scored.
+- Added June 5 HW2 vocabulary, phonics/syllable, suffix, and infinitive/gerund practice items.
+- Added My Next Grammar Lesson 20-21 workbook reference practice from grammar01-05.
+
+## Homework Added
+
+### June 5 HW2 — Vocabulary, Phonics, Grammar Review
+
+Converted into app practice:
+- Vocabulary definition matching:
+  - clamp
+  - gratitude
+  - forbidden
+  - disposable
+  - adventurous
+  - resourceful
+- Vocabulary sentence completion:
+  - commendable
+  - thrifty
+  - edible
+  - attitude
+  - hydrated
+  - reckless
+  - unique
+- Phonics:
+  - capture
+  - ticket
+  - clothing
+  - event
+  - support
+  - divide
+- Suffixes:
+  - appointment
+  - clumsiness
+  - endless
+  - graceful
+- Grammar:
+  - infinitive or gerund after enjoys, finished, would like, want, expect, dislike, hope, and need.
+
+Notes:
+- The visible student answer for "Mr. Wahl enjoys ___ tennis" says "to play", but the correct grammar target is "playing" because "enjoys" takes a gerund.
+- The lower part of HW2 is partly cropped in the photos, so only the clearly visible questions were added.
+
+## Grammar References Added
+
+### My Next Grammar Lesson 20 — Infinitives as Objects
+
+Converted from `grammar01.JPG`, `grammar02.JPG`, and `grammar03.JPG` into app practice:
+- Identify infinitives in sentences.
+- Decide whether the object is a noun or an infinitive.
+- Choose infinitive objects after verbs such as need, learn, expect, want, and hope.
+- Match sentence openings to meaningful infinitive phrases.
+- Rewrite want / wants sentences with would like.
+- Answer What would ... like? questions with I'd like, they'd like, she'd like, and he'd like.
+
+### My Next Grammar Lesson 21 — Gerunds as Objects
+
+Converted from `grammar04.JPG` and `grammar05.JPG` into app practice:
+- Identify gerunds in sentences.
+- Decide whether the object is a noun or a gerund.
+- Choose gerund objects after enjoy, keep, dislike, finish, and quit.
+- Practice go + gerund activity phrases, such as go camping, go skiing, go shopping, and go fishing.
+
+Notes:
+- Only the clearly visible questions from the lower part of `grammar05.JPG` were added.
 
 ## Reading Practice Design
 

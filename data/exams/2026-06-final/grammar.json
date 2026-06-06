@@ -1,6 +1,38 @@
 {
   "title": "Grammar — Infinitives and Gerunds as Objects (My Next Grammar, Lessons 20-21)",
   "intro": "An infinitive is to + verb, such as to read. A gerund is a verb ending in -ing used as a noun, such as reading.",
+  "explanation": {
+    "title": "Infinitives and Gerunds Quick Guide",
+    "intro": "這次 Grammar 主要考「動詞後面的受詞」要用 to + verb 還是 V-ing。",
+    "cards": [
+      {
+        "term": "Infinitive",
+        "formula": "to + verb",
+        "meaning": "像名詞一樣放在動詞後面，表示想做、需要做、希望做的事。",
+        "examples": ["I want to eat.", "John needs to study.", "Mia hopes to be a doctor."],
+        "verbs": ["want", "need", "hope", "expect", "learn", "would like"]
+      },
+      {
+        "term": "Gerund",
+        "formula": "verb + -ing",
+        "meaning": "V-ing 當名詞用，也可以放在某些動詞後面當受詞。",
+        "examples": ["I enjoy reading comics.", "They finished studying.", "Ted dislikes dancing."],
+        "verbs": ["enjoy", "dislike", "finish", "keep", "quit"]
+      },
+      {
+        "term": "Go + Gerund",
+        "formula": "go + V-ing",
+        "meaning": "用來說活動或休閒行程。",
+        "examples": ["go camping", "go skiing", "go shopping", "go fishing"],
+        "verbs": ["go"]
+      }
+    ],
+    "tips": [
+      "看到 would like，後面通常接 noun 或 to + verb: I would like apple juice. / I would like to help.",
+      "看到 enjoy、dislike、finish、keep、quit，後面通常接 V-ing.",
+      "考題問 object type 時，先找動詞後面的答案：computers 是 noun，to sleep 是 infinitive，smoking 是 gerund."
+    ]
+  },
   "items": [
     {
       "id": "inf-01",
@@ -164,6 +196,86 @@
         { "id": "l21-02", "q": "Choose the best answer: We finished ____ the poster.", "choices": ["to make", "making", "made", "makes"], "answer": 1, "use": "gerund" },
         { "id": "l21-03", "q": "Which word is the gerund? The chef loves cooking with fresh food.", "choices": ["chef", "loves", "cooking", "fresh"], "answer": 2, "use": "identify gerund" },
         { "id": "l21-04", "q": "Which sentence is correct?", "choices": ["She avoided wasting food.", "She wanted wasting food.", "She promised wasting food.", "She decided wasting food."], "answer": 0, "use": "gerund" }
+      ]
+    },
+    {
+      "id": "hw2-infinitive-gerund",
+      "title": "Final Review HW2 — Infinitive or Gerund",
+      "description": "From the June 5 homework: choose to + verb or V-ing based on the sentence.",
+      "items": [
+        { "id": "hw2-verb-01", "q": "Mr. Wahl enjoys ____ tennis on the weekends. (play)", "choices": ["playing", "to play", "played", "plays"], "answer": 0, "use": "gerund after enjoys" },
+        { "id": "hw2-verb-02", "q": "Mr. Wesson finished ____ his book last weekend. (read)", "choices": ["to read", "reading", "read", "reads"], "answer": 1, "use": "gerund after finished" },
+        { "id": "hw2-verb-03", "q": "Mr. Melrose would like ____ lots of photos tomorrow. (take)", "choices": ["taking", "takes", "to take", "took"], "answer": 2, "use": "infinitive after would like" },
+        { "id": "hw2-verb-04", "q": "All the students want ____ to their teachers in class. (listen)", "choices": ["listening", "listens", "to listen", "listened"], "answer": 2, "use": "infinitive after want" },
+        { "id": "hw2-verb-05", "q": "Their teachers expect ____ a long time for silence in class. (wait)", "choices": ["waiting", "to wait", "waited", "waits"], "answer": 1, "use": "infinitive after expect" },
+        { "id": "hw2-verb-06", "q": "I dislike ____ books without any pictures. (read)", "choices": ["to read", "reads", "reading", "read"], "answer": 2, "use": "gerund after dislike" },
+        { "id": "hw2-verb-07", "q": "They hope ____ their favorite song on the radio. (hear)", "choices": ["hearing", "heard", "hears", "to hear"], "answer": 3, "use": "infinitive after hope" },
+        { "id": "hw2-verb-08", "q": "You need ____ your homework diligently to stay out of trouble. (do)", "choices": ["doing", "to do", "does", "did"], "answer": 1, "use": "infinitive after need" }
+      ]
+    },
+    {
+      "id": "grammar-ref-l20-infinitives",
+      "title": "Grammar Reference — Lesson 20 Infinitives",
+      "description": "From grammar01-03: identify infinitives, choose infinitive objects, and practice would like.",
+      "items": [
+        { "id": "gr20-id-01", "q": "Circle the infinitive: I'm bored. Do you want to go outside?", "choices": ["to go", "want", "outside", "bored"], "answer": 0, "use": "identify infinitive" },
+        { "id": "gr20-id-02", "q": "Circle the infinitive: I'm hungry. I want to eat something.", "choices": ["to eat", "want", "something", "hungry"], "answer": 0, "use": "identify infinitive" },
+        { "id": "gr20-id-03", "q": "Circle the infinitive: Sam is tired. He doesn't want to do his homework.", "choices": ["to do", "want", "homework", "tired"], "answer": 0, "use": "identify infinitive" },
+        { "id": "gr20-obj-01", "q": "What kind of object is underlined? They want computers.", "choices": ["noun object", "infinitive object", "gerund object", "no object"], "answer": 0, "use": "noun or infinitive" },
+        { "id": "gr20-obj-02", "q": "What kind of object is underlined? Mary wants to sleep.", "choices": ["noun object", "infinitive object", "gerund object", "no object"], "answer": 1, "use": "noun or infinitive" },
+        { "id": "gr20-obj-03", "q": "What kind of object is underlined? John needs to study.", "choices": ["noun object", "infinitive object", "gerund object", "no object"], "answer": 1, "use": "noun or infinitive" },
+        { "id": "gr20-obj-04", "q": "What kind of object is underlined? Does Ken need eggs?", "choices": ["noun object", "infinitive object", "gerund object", "no object"], "answer": 0, "use": "noun or infinitive" },
+        { "id": "gr20-fill-01", "q": "Do you need ____ to a bookstore?", "choices": ["to go", "to swim", "to drink", "to be"], "answer": 0, "use": "choose infinitive" },
+        { "id": "gr20-fill-02", "q": "When did you learn ____ in the sea?", "choices": ["to start", "to swim", "to eat", "to be"], "answer": 1, "use": "choose infinitive" },
+        { "id": "gr20-fill-03", "q": "They expect ____ the test at nine o'clock.", "choices": ["to drink", "to go", "to start", "to eat"], "answer": 2, "use": "choose infinitive" },
+        { "id": "gr20-fill-04", "q": "Tom wants ____ ice cream.", "choices": ["to eat", "to start", "to swim", "to go"], "answer": 0, "use": "choose infinitive" },
+        { "id": "gr20-fill-05", "q": "They don't want ____ warm milk.", "choices": ["to be", "to drink", "to start", "to swim"], "answer": 1, "use": "choose infinitive" },
+        { "id": "gr20-fill-06", "q": "Mia hopes ____ a doctor in the future.", "choices": ["to go", "to eat", "to be", "to drink"], "answer": 2, "use": "choose infinitive" },
+        { "id": "gr20-match-01", "q": "Match the sentence: I'm thirsty. I want ____", "choices": ["to drink water.", "to go to bed.", "to drive.", "to ride it."], "answer": 0, "use": "infinitive meaning" },
+        { "id": "gr20-match-02", "q": "Match the sentence: It's ten o'clock. I need ____", "choices": ["to live there.", "to go to bed.", "to get an A.", "to take an umbrella."], "answer": 1, "use": "infinitive meaning" },
+        { "id": "gr20-match-03", "q": "Match the sentence: The test was easy. I expect ____", "choices": ["to drive.", "to get an A.", "to play outside.", "to drink water."], "answer": 1, "use": "infinitive meaning" },
+        { "id": "gr20-match-04", "q": "Match the sentence: My brother is 18. He's learning ____", "choices": ["to drive.", "to ride it.", "to live there.", "to go to bed."], "answer": 0, "use": "infinitive meaning" },
+        { "id": "gr20-match-05", "q": "Match the sentence: I like England. I hope ____", "choices": ["to take an umbrella.", "to get an A.", "to live there.", "to play outside."], "answer": 2, "use": "infinitive meaning" },
+        { "id": "gr20-match-06", "q": "Match the sentence: It's a new bike. I want ____", "choices": ["to ride it.", "to drink water.", "to drive.", "to live there."], "answer": 0, "use": "infinitive meaning" },
+        { "id": "gr20-match-07", "q": "Match the sentence: It's raining now. You need ____", "choices": ["to play outside.", "to take an umbrella.", "to get an A.", "to ride it."], "answer": 1, "use": "infinitive meaning" },
+        { "id": "gr20-match-08", "q": "Match the sentence: It's sunny today. I want ____", "choices": ["to go to bed.", "to live there.", "to play outside.", "to take an umbrella."], "answer": 2, "use": "infinitive meaning" },
+        { "id": "gr20-wl-01", "q": "Rewrite with would like: We want to go on a picnic.", "choices": ["We would like to go on a picnic.", "We would like go on a picnic.", "We like would to go on a picnic.", "We would like going on a picnic."], "answer": 0, "use": "would like" },
+        { "id": "gr20-wl-02", "q": "Rewrite with would like: Suzy wants apple juice.", "choices": ["Suzy would like to apple juice.", "Suzy would like apple juice.", "Suzy would likes apple juice.", "Suzy like would apple juice."], "answer": 1, "use": "would like" },
+        { "id": "gr20-wl-03", "q": "Rewrite with would like: They want to drink milk.", "choices": ["They would like drinking milk.", "They would like to drink milk.", "They would likes to drink milk.", "They would to like drink milk."], "answer": 1, "use": "would like" },
+        { "id": "gr20-wl-04", "q": "Rewrite with would like: I want to help you.", "choices": ["I would like help you.", "I would like helping you.", "I would like to help you.", "I would likes to help you."], "answer": 2, "use": "would like" },
+        { "id": "gr20-wl-05", "q": "Rewrite with would like: Mary wants to get a cat.", "choices": ["Mary would like to get a cat.", "Mary would like getting a cat.", "Mary would likes to get a cat.", "Mary would like get a cat."], "answer": 0, "use": "would like" },
+        { "id": "gr20-wl-06", "q": "Rewrite with would like: Do you want some water?", "choices": ["Do you would like some water?", "Would you like some water?", "Would you like to some water?", "You would like some water?"], "answer": 1, "use": "would like question" },
+        { "id": "gr20-answer-01", "q": "A: What would you like? B: ____ a sandwich, please.", "choices": ["I'd like", "They'd like", "She'd like", "He'd like"], "answer": 0, "use": "would like answer" },
+        { "id": "gr20-answer-02", "q": "A: What would they like? B: ____ spaghetti and salad.", "choices": ["I'd like", "They'd like", "She'd like", "He'd like"], "answer": 1, "use": "would like answer" },
+        { "id": "gr20-answer-03", "q": "A: What would she like? B: ____ pizza and soda.", "choices": ["I'd like", "They'd like", "She'd like", "He'd like"], "answer": 2, "use": "would like answer" },
+        { "id": "gr20-answer-04", "q": "A: What would you like? B: ____ a banana smoothie.", "choices": ["I'd like", "They'd like", "She'd like", "He'd like"], "answer": 0, "use": "would like answer" },
+        { "id": "gr20-answer-05", "q": "A: What would he like? B: ____ chocolate ice cream.", "choices": ["I'd like", "They'd like", "She'd like", "He'd like"], "answer": 3, "use": "would like answer" }
+      ]
+    },
+    {
+      "id": "grammar-ref-l21-gerunds",
+      "title": "Grammar Reference — Lesson 21 Gerunds",
+      "description": "From grammar04-05: identify gerunds, choose gerund objects, and practice go + gerund.",
+      "items": [
+        { "id": "gr21-id-01", "q": "Circle the gerund: Do you enjoy reading comics?", "choices": ["reading", "enjoy", "comics", "do"], "answer": 0, "use": "identify gerund" },
+        { "id": "gr21-id-02", "q": "Circle the gerund: We enjoyed learning about our history.", "choices": ["enjoyed", "learning", "history", "about"], "answer": 1, "use": "identify gerund" },
+        { "id": "gr21-id-03", "q": "Circle the gerund: My mom enjoys walking in the park.", "choices": ["mom", "enjoys", "walking", "park"], "answer": 2, "use": "identify gerund" },
+        { "id": "gr21-obj-01", "q": "What kind of object is underlined? Ann enjoys movies.", "choices": ["noun object", "gerund object", "infinitive object", "no object"], "answer": 0, "use": "noun or gerund" },
+        { "id": "gr21-obj-02", "q": "What kind of object is underlined? Mr. Johnson quit smoking.", "choices": ["noun object", "gerund object", "infinitive object", "no object"], "answer": 1, "use": "noun or gerund" },
+        { "id": "gr21-obj-03", "q": "What kind of object is underlined? Ted dislikes dancing.", "choices": ["noun object", "gerund object", "infinitive object", "no object"], "answer": 1, "use": "noun or gerund" },
+        { "id": "gr21-obj-04", "q": "What kind of object is underlined? Did you finish your homework?", "choices": ["noun object", "gerund object", "infinitive object", "no object"], "answer": 0, "use": "noun or gerund" },
+        { "id": "gr21-fill-01", "q": "My dad enjoys ____ sports on TV.", "choices": ["watching", "reading", "playing", "staying"], "answer": 0, "use": "choose gerund" },
+        { "id": "gr21-fill-02", "q": "I can keep ____ comics for hours.", "choices": ["working", "reading", "washing", "eating"], "answer": 1, "use": "choose gerund" },
+        { "id": "gr21-fill-03", "q": "My dog dislikes ____ inside. He likes being outside.", "choices": ["eating", "playing", "staying", "washing"], "answer": 2, "use": "choose gerund" },
+        { "id": "gr21-fill-04", "q": "They finished ____ for the test at midnight.", "choices": ["studying", "watching", "playing", "staying"], "answer": 0, "use": "choose gerund" },
+        { "id": "gr21-fill-05", "q": "Let's quit ____ this game. It's not fun.", "choices": ["eating", "playing", "reading", "washing"], "answer": 1, "use": "choose gerund" },
+        { "id": "gr21-fill-06", "q": "My sister and I dislike ____ tomatoes.", "choices": ["watching", "studying", "washing", "staying"], "answer": 2, "use": "choose gerund" },
+        { "id": "gr21-fill-07", "q": "Do you enjoy ____ in the garden?", "choices": ["working", "eating", "reading", "playing"], "answer": 0, "use": "choose gerund" },
+        { "id": "gr21-fill-08", "q": "Did you finish ____ the dishes?", "choices": ["staying", "watching", "washing", "playing"], "answer": 2, "use": "choose gerund" },
+        { "id": "gr21-go-01", "q": "Choose the go + gerund phrase: This is our tent. We will go ____ this weekend.", "choices": ["camping", "skiing", "shopping", "fishing"], "answer": 0, "use": "go + gerund" },
+        { "id": "gr21-go-02", "q": "Choose the go + gerund phrase: Do you go ____ in the winter? Can you ski?", "choices": ["shopping", "skiing", "fishing", "camping"], "answer": 1, "use": "go + gerund" },
+        { "id": "gr21-go-03", "q": "Choose the go + gerund phrase: Let's go ____. I need new shoes.", "choices": ["fishing", "camping", "shopping", "skiing"], "answer": 2, "use": "go + gerund" },
+        { "id": "gr21-go-04", "q": "Choose the go + gerund phrase: Can we go ____ at the lake?", "choices": ["fishing", "shopping", "skiing", "camping"], "answer": 0, "use": "go + gerund" }
       ]
     }
   ]

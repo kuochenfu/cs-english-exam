@@ -9,12 +9,17 @@ Research notes:
 
 ## App Reading Practice
 
-The app includes five original passages:
+The app includes ten original passages:
 - `Why Traditional Tales Travel`
 - `Mara and the Storm Cloud`
 - `The Clever Weaver`
 - `Fox and Turtle Trade Tricks`
 - `The Ten Lamps of the Mountain`
+- `The Drum That Would Not Boast`
+- `How Coyote Counted the Stars`
+- `The Bridge of Borrowed Stones`
+- `Anansi and the Empty Jar`
+- `The Moon Rabbit's Message`
 
 The passages are designed to mirror the module's genre mix and skill focus without reproducing the source texts.
 

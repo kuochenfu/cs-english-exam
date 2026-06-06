@@ -1,3 +1,18 @@
 {
-  "words": []
+  "words": [
+    { "week": 1, "word": "clamp", "pos": "v", "definition": "to hold tightly", "example": "Use a clip to clamp the papers together." },
+    { "week": 1, "word": "gratitude", "pos": "n", "definition": "a thankful feeling", "example": "I showed gratitude by writing a thank-you note." },
+    { "week": 1, "word": "forbidden", "pos": "adj", "definition": "against the rules; not allowed", "example": "Running in the hallway is forbidden at school." },
+    { "week": 1, "word": "disposable", "pos": "adj", "definition": "made to be thrown away after using it", "example": "A disposable cup should be used only once." },
+    { "week": 1, "word": "adventurous", "pos": "adj", "definition": "willing to try new or exciting things", "example": "The adventurous student wanted to try a new sport." },
+    { "week": 1, "word": "resourceful", "pos": "adj", "definition": "able to use what you have to do or make something", "example": "The resourceful team fixed the poster with tape and string." },
+
+    { "week": 2, "word": "commendable", "pos": "adj", "definition": "worthy of praise; deserving approval", "example": "Helping the new student find her classroom was a commendable act of kindness." },
+    { "week": 2, "word": "thrifty", "pos": "adj", "definition": "careful about spending money or using resources", "example": "She is very thrifty and saves her money instead of spending it quickly." },
+    { "week": 2, "word": "edible", "pos": "adj", "definition": "safe to eat", "example": "These mushrooms are edible, so it is safe to cook and eat them." },
+    { "week": 2, "word": "attitude", "pos": "n", "definition": "a way of thinking, feeling, or acting", "example": "His cheerful attitude made everyone in class smile." },
+    { "week": 2, "word": "hydrated", "pos": "adj", "definition": "having enough water in the body", "example": "Drink plenty of water to stay hydrated during gym class." },
+    { "week": 2, "word": "reckless", "pos": "adj", "definition": "careless about danger or consequences", "example": "It was reckless to ride your bike down the stairs." },
+    { "week": 2, "word": "unique", "pos": "adj", "definition": "one of a kind; different from others", "example": "There was a unique coffee car driving in the street." }
+  ]
 }

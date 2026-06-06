@@ -33,6 +33,28 @@
       ]
     },
     {
+      "id": "hw2_syllable_words",
+      "title": "Final Review HW2 — Syllable Pattern Words",
+      "words": [
+        { "word": "capture", "sentence": "The camera can capture a clear picture." },
+        { "word": "ticket", "sentence": "Please keep your ticket until the show ends." },
+        { "word": "clothing", "sentence": "Warm clothing is useful on a cold day." },
+        { "word": "event", "sentence": "The school event begins after lunch." },
+        { "word": "support", "sentence": "Good friends support each other." },
+        { "word": "divide", "sentence": "We can divide the word into two syllables." }
+      ]
+    },
+    {
+      "id": "hw2_suffix_words",
+      "title": "Final Review HW2 — Suffix Words",
+      "words": [
+        { "word": "appointment", "sentence": "I have a dentist appointment on Monday." },
+        { "word": "clumsiness", "sentence": "His clumsiness made him drop the pencils." },
+        { "word": "endless", "sentence": "The hallway looked endless in the picture." },
+        { "word": "graceful", "sentence": "The tiger made a graceful jump." }
+      ]
+    },
+    {
       "id": "m8_vccv_vcv_sort",
       "title": "Phonics — Sort VCCV and VCV Words",
       "sortGame": true,
@@ -48,6 +70,27 @@
       "groups": {
         "Digraph": ["chapter", "children", "publish", "shelter", "kitchen"],
         "Blend": ["blanket", "plastic", "subtract", "complex"]
+      }
+    },
+    {
+      "id": "hw2_syllable_pattern_sort",
+      "title": "Final Review HW2 — Sort Syllable Patterns",
+      "sortGame": true,
+      "groups": {
+        "VCCV": ["capture", "ticket", "support"],
+        "VCV": ["event", "divide"],
+        "VCCCV": ["clothing"]
+      }
+    },
+    {
+      "id": "hw2_suffix_sort",
+      "title": "Final Review HW2 — Sort Suffixes",
+      "sortGame": true,
+      "groups": {
+        "-ment": ["appointment"],
+        "-ness": ["clumsiness"],
+        "-less": ["endless"],
+        "-ful": ["graceful"]
       }
     }
   ]

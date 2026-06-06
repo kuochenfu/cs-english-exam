@@ -128,6 +128,97 @@ button.ghost:hover { background: var(--border); color: var(--text); }
   margin-top: 12px;
 }
 
+.grammar-guide {
+  border: 2px solid #c9e6ff;
+  border-radius: 14px;
+  background: #fbfdff;
+  padding: 16px;
+  margin: 16px 0 20px;
+}
+
+.grammar-guide-head h3 {
+  margin: 0 0 6px;
+  color: #24577a;
+}
+
+.grammar-guide-head p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.grammar-guide-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.grammar-note {
+  background: white;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.grammar-term {
+  font-weight: bold;
+  color: var(--primary-dark);
+}
+
+.grammar-formula {
+  display: inline-block;
+  background: #eef8ff;
+  border: 1px solid #c9e6ff;
+  border-radius: 999px;
+  color: #24577a;
+  font-weight: bold;
+  margin: 8px 0;
+  padding: 5px 9px;
+}
+
+.grammar-note p {
+  color: var(--muted);
+  margin: 0 0 10px;
+}
+
+.grammar-note ul,
+.grammar-tips ul {
+  margin: 8px 0 0;
+  padding-left: 20px;
+}
+
+.grammar-note li,
+.grammar-tips li {
+  margin: 4px 0;
+}
+
+.grammar-verbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.grammar-verbs span {
+  background: #fff7d6;
+  border: 1px solid #ead77d;
+  border-radius: 999px;
+  color: #6b5710;
+  font-size: 0.85rem;
+  font-weight: bold;
+  padding: 4px 8px;
+}
+
+.grammar-tips {
+  border-top: 2px solid var(--border);
+  margin-top: 14px;
+  padding-top: 12px;
+}
+
+.grammar-tips strong {
+  color: var(--primary-dark);
+}
+
 .panel {
   background: var(--card);
   border: 2px solid var(--border);

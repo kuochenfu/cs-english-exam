@@ -447,6 +447,351 @@
       ],
       "image": "assets/passages/ten-lamps-mountain.png",
       "imageAlt": "A poster showing guardians carrying lamps on a mountain path."
+    },
+    {
+      "id": "drum_that_would_not_boast",
+      "title": "The Drum That Would Not Boast",
+      "skills": [
+        "characters",
+        "adages_proverbs",
+        "theme"
+      ],
+      "body": "In a riverside village, every family owned a drum. Some drums were painted red, some were wrapped in bright cloth, and some were carved with shining birds. But the smallest drum, Kito, was plain brown wood.\n\nBefore the harvest dance, the painted drums bragged. \"My sound will make everyone cheer,\" said Red Drum. \"My feathers will sparkle in the firelight,\" said Bird Drum. Kito said nothing. He listened to the children practicing their steps and noticed that their feet often lost the beat.\n\nOn the night of the dance, a sudden rainstorm soaked the bright cloth and bent the paper feathers. The decorated drums sounded dull and uneven. Kito's plain wooden sides stayed strong. He gave a steady boom, boom, boom until the dancers found the rhythm again.\n\nAfterward, Red Drum asked, \"Why did you not tell us you were the strongest?\" Kito answered, \"Empty barrels make the most noise, but a useful drum keeps the beat.\"",
+      "questions": [
+        {
+          "q": "What character trait best describes Kito?",
+          "choices": [
+            "boastful",
+            "humble and dependable",
+            "jealous",
+            "careless"
+          ],
+          "answer": 1,
+          "skill": "characters"
+        },
+        {
+          "q": "What problem happens on the night of the dance?",
+          "choices": [
+            "The children forget the dance forever.",
+            "A rainstorm makes the decorated drums sound dull and uneven.",
+            "Kito refuses to play.",
+            "The village runs out of food."
+          ],
+          "answer": 1,
+          "skill": "literary_elements"
+        },
+        {
+          "q": "What does the proverb \"Empty barrels make the most noise\" mean in this story?",
+          "choices": [
+            "The loudest bragging does not prove real value.",
+            "Barrels are better than drums.",
+            "Rain makes wood louder.",
+            "Only decorated things are useful."
+          ],
+          "answer": 0,
+          "skill": "adages_proverbs"
+        },
+        {
+          "q": "Which detail shows that Kito pays attention to others?",
+          "choices": [
+            "He is made of plain brown wood.",
+            "He listens to the children and notices they lose the beat.",
+            "He stands beside Red Drum.",
+            "He talks after the dance."
+          ],
+          "answer": 1,
+          "skill": "characters"
+        },
+        {
+          "q": "What is the theme of this story?",
+          "choices": [
+            "Being useful matters more than showing off.",
+            "Rain ruins every celebration.",
+            "Small drums should stay quiet.",
+            "Painted drums are always weak."
+          ],
+          "answer": 0,
+          "skill": "theme"
+        }
+      ],
+      "image": "assets/passages/drum-that-would-not-boast.png",
+      "imageAlt": "A poster showing Kito the plain drum helping children dance after rain."
+    },
+    {
+      "id": "coyote_counted_stars",
+      "title": "How Coyote Counted the Stars",
+      "skills": [
+        "figurative_language",
+        "literary_elements",
+        "theme"
+      ],
+      "body": "Coyote was sure he was the cleverest creature under the wide night sky. One evening he told the rabbits, \"I will count every star before sunrise. Then you must call me Master of the Sky.\"\n\nHe began proudly. \"One, two, three...\" The stars glittered like spilled salt across black cloth. Soon Coyote's eyes watered, but he kept counting. A sleepy owl said, \"Rest first. The sky is larger than your pride.\" Coyote only laughed.\n\nNear midnight, a cloud slid over the moon. Coyote lost his place. He stamped his paws and started again. By morning, he had counted the same bright star twelve times and missed hundreds more.\n\nThe rabbits did not laugh at him. They brought him cool water and said, \"No one owns the sky.\" Coyote looked up at the fading stars and finally nodded. From then on, he counted what he could: tracks in the dust, berries in a bowl, and friends who gave kind advice.",
+      "questions": [
+        {
+          "q": "Which sentence contains a simile?",
+          "choices": [
+            "Coyote was sure he was the cleverest creature.",
+            "The stars glittered like spilled salt across black cloth.",
+            "Coyote only laughed.",
+            "The rabbits did not laugh at him."
+          ],
+          "answer": 1,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "What does Owl mean by \"The sky is larger than your pride\"?",
+          "choices": [
+            "The sky is easy to carry.",
+            "Coyote's plan is too big, and he should be less proud.",
+            "Coyote owns the clouds.",
+            "Owl wants to count the stars first."
+          ],
+          "answer": 1,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "What causes Coyote to lose his place while counting?",
+          "choices": [
+            "A cloud slides over the moon.",
+            "The rabbits hide the stars.",
+            "Owl blows out the moon.",
+            "Sunrise comes immediately."
+          ],
+          "answer": 0,
+          "skill": "literary_elements"
+        },
+        {
+          "q": "How does Coyote change by the end of the story?",
+          "choices": [
+            "He becomes even more boastful.",
+            "He learns to be more humble and to value advice.",
+            "He refuses to count anything again.",
+            "He becomes angry with the rabbits."
+          ],
+          "answer": 1,
+          "skill": "characters"
+        },
+        {
+          "q": "What is a theme of this story?",
+          "choices": [
+            "Pride can make people ignore wise advice.",
+            "The night sky has no stars.",
+            "Counting is never useful.",
+            "Friends should laugh at mistakes."
+          ],
+          "answer": 0,
+          "skill": "theme"
+        }
+      ],
+      "image": "assets/passages/coyote-counted-stars.png",
+      "imageAlt": "A poster showing Coyote trying to count stars while rabbits and an owl watch."
+    },
+    {
+      "id": "bridge_of_borrowed_stones",
+      "title": "The Bridge of Borrowed Stones",
+      "skills": [
+        "central_idea",
+        "text_features",
+        "adages_proverbs"
+      ],
+      "body": "Many villages tell stories about bridges because a bridge can stand for trust. In one mountain tale, two villages lived on opposite sides of a fast river. Each village had good stonecutters, but neither side had enough stone to build a bridge alone.\n\nAt first, the villages argued. \"Our stones are stronger,\" said one side. \"Our workers are faster,\" said the other. Then an old teacher drew a simple plan in the dirt.\n\n[Diagram: Stones from both villages meet in the center of the river.]\n\nThe teacher explained that each village could build half the bridge, but the stones would need to lock together in the middle. If one side worked carelessly, the whole bridge would fall. Slowly, the villagers began to share tools, measure carefully, and listen to one another.\n\nWhen the bridge was finished, children crossed it first, laughing over the roaring water. The old teacher smiled and said, \"Many hands make light work, but trusting hands make strong work.\"",
+      "questions": [
+        {
+          "q": "What is the central idea of this passage?",
+          "choices": [
+            "Bridge stories can show how trust and teamwork help people solve problems.",
+            "Mountain rivers are always quiet.",
+            "Only one village can build a strong bridge.",
+            "Children should never cross bridges."
+          ],
+          "answer": 0,
+          "skill": "central_idea"
+        },
+        {
+          "q": "What does the diagram help readers understand?",
+          "choices": [
+            "How the stones from both villages meet in the middle",
+            "What the old teacher ate for lunch",
+            "Why the river is fast",
+            "Which child crosses first"
+          ],
+          "answer": 0,
+          "skill": "text_features"
+        },
+        {
+          "q": "Why must both villages work carefully?",
+          "choices": [
+            "If one side works carelessly, the whole bridge could fall.",
+            "The teacher will leave the mountain.",
+            "The children want to swim instead.",
+            "The river will stop moving."
+          ],
+          "answer": 0,
+          "skill": "central_idea"
+        },
+        {
+          "q": "What does \"Many hands make light work\" mean?",
+          "choices": [
+            "A difficult job becomes easier when people help.",
+            "Hands can shine in the dark.",
+            "Work should only be done at night.",
+            "Bridges do not need stones."
+          ],
+          "answer": 0,
+          "skill": "adages_proverbs"
+        },
+        {
+          "q": "Which detail best supports the idea that the villages learn to cooperate?",
+          "choices": [
+            "They begin to share tools, measure carefully, and listen to one another.",
+            "They live on opposite sides of a river.",
+            "The teacher draws in the dirt.",
+            "The children laugh over the water."
+          ],
+          "answer": 0,
+          "skill": "central_idea"
+        }
+      ],
+      "image": "assets/passages/bridge-borrowed-stones.png",
+      "imageAlt": "A poster showing two villages working together to build a stone bridge."
+    },
+    {
+      "id": "anansi_empty_jar",
+      "title": "Anansi and the Empty Jar",
+      "skills": [
+        "characters",
+        "theme",
+        "literary_elements"
+      ],
+      "body": "Anansi the spider wanted everyone to think he was generous. He carried a large clay jar to the market and called, \"Free honey for all my friends!\" The jar looked heavy, and the crowd cheered.\n\nBut Anansi had filled the jar with nothing but air. \"Come back after sunset,\" he said. \"The honey tastes sweeter then.\" He hoped the market would close before anyone asked for a spoonful.\n\nA young girl named Ama watched the jar carefully. When Anansi set it down, it made no thump. When the wind blew, the jar rolled away like a dry leaf. Ama picked it up with one hand and asked, \"Why is your heavy jar so light?\"\n\nAnansi's smile slipped. The crowd grew quiet. At last he admitted the truth. Ama said, \"A gift that is only words fills no bowl.\" The next week, Anansi returned with a smaller jar. This time it held real honey, and he poured a little for everyone.",
+      "questions": [
+        {
+          "q": "What does Anansi want at the beginning of the story?",
+          "choices": [
+            "He wants people to think he is generous.",
+            "He wants to buy a new jar.",
+            "He wants Ama to teach him to cook.",
+            "He wants the market to stay open all night."
+          ],
+          "answer": 0,
+          "skill": "characters"
+        },
+        {
+          "q": "Which detail helps Ama discover the truth?",
+          "choices": [
+            "The jar rolls away like a dry leaf.",
+            "The crowd cheers loudly.",
+            "The market has many friends.",
+            "The honey tastes sweeter at sunset."
+          ],
+          "answer": 0,
+          "skill": "characters"
+        },
+        {
+          "q": "What does \"A gift that is only words fills no bowl\" mean?",
+          "choices": [
+            "Kind promises are not enough without real action.",
+            "Bowls should never be filled with honey.",
+            "Words are heavier than jars.",
+            "Gifts should always be hidden."
+          ],
+          "answer": 0,
+          "skill": "adages_proverbs"
+        },
+        {
+          "q": "What is the solution to the story's problem?",
+          "choices": [
+            "Anansi runs away from the market.",
+            "Ama hides the jar.",
+            "Anansi returns with real honey and shares it.",
+            "The crowd forgets about the honey."
+          ],
+          "answer": 2,
+          "skill": "literary_elements"
+        },
+        {
+          "q": "What is a theme of this story?",
+          "choices": [
+            "Actions should match kind words.",
+            "Empty jars are always valuable.",
+            "Markets should close before sunset.",
+            "Spiders cannot carry clay jars."
+          ],
+          "answer": 0,
+          "skill": "theme"
+        }
+      ],
+      "image": "assets/passages/anansi-empty-jar.png",
+      "imageAlt": "A poster showing Anansi holding an empty clay jar at a village market."
+    },
+    {
+      "id": "moon_rabbits_message",
+      "title": "The Moon Rabbit's Message",
+      "skills": [
+        "theme",
+        "figurative_language",
+        "text_features"
+      ],
+      "body": "In one old tale, Rabbit lived on the moon and watched the world through a silver window. Each night, she saw people hurry through their work. They chopped wood, carried water, and counted coins, but many forgot to look at one another with kindness.\n\nRabbit wanted to send a message. She gathered moon dust, soft as flour, and shaped it into a glowing path across the sky. \"Follow this light,\" she whispered, \"and remember someone who needs you.\"\n\n[Caption: Some traditional tales use animals to teach human lessons.]\n\nDown on Earth, a boy named Jun saw the path while carrying firewood. He remembered his neighbor, who was too old to gather wood alone. Jun left half his bundle by her door. Soon the neighbor shared soup with a hungry traveler, and the traveler helped mend a broken gate.\n\nRabbit smiled from her silver window. Her path faded by morning, but the kindness kept traveling from house to house.",
+      "questions": [
+        {
+          "q": "What does Rabbit want people to remember?",
+          "choices": [
+            "To look at one another with kindness",
+            "To count more coins",
+            "To hurry through every job",
+            "To live on the moon"
+          ],
+          "answer": 0,
+          "skill": "theme"
+        },
+        {
+          "q": "Which phrase is a simile?",
+          "choices": [
+            "watched the world",
+            "moon dust, soft as flour",
+            "the kindness kept traveling",
+            "a broken gate"
+          ],
+          "answer": 1,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "What does the caption help readers understand?",
+          "choices": [
+            "Why an animal character can teach a lesson",
+            "How to build a gate",
+            "The exact size of the moon",
+            "Why Jun carries coins"
+          ],
+          "answer": 0,
+          "skill": "text_features"
+        },
+        {
+          "q": "How does Jun help his neighbor?",
+          "choices": [
+            "He gives her half his bundle of firewood.",
+            "He teaches her to count coins.",
+            "He carries her to the moon.",
+            "He asks her to mend a gate."
+          ],
+          "answer": 0,
+          "skill": "literary_elements"
+        },
+        {
+          "q": "What is the best summary of the story?",
+          "choices": [
+            "Rabbit makes a moon path that reminds Jun to help his neighbor, and that kindness spreads to others.",
+            "Jun carries firewood and forgets where he lives.",
+            "A traveler eats soup and breaks a gate.",
+            "Rabbit counts coins through a silver window."
+          ],
+          "answer": 0,
+          "skill": "summary"
+        }
+      ],
+      "image": "assets/passages/moon-rabbits-message.png",
+      "imageAlt": "A poster showing Moon Rabbit sending a glowing path of kindness to a village."
     }
   ]
 }

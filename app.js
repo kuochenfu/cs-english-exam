@@ -15,6 +15,13 @@ const game = JSON.parse(localStorage.getItem(GAME_KEY) || "{}");
 const saveProgress = () => localStorage.setItem(STORE_KEY, JSON.stringify(progress));
 const saveMissed = () => localStorage.setItem(MISSED_KEY, JSON.stringify(missed));
 const saveGame = () => localStorage.setItem(GAME_KEY, JSON.stringify(game));
+const esc = (value = "") => String(value).replace(/[&<>"']/g, ch => ({
+  "&": "&amp;",
+  "<": "&lt;",
+  ">": "&gt;",
+  "\"": "&quot;",
+  "'": "&#39;"
+}[ch]));
 
 // ---------- Game layer ----------
 const TOPIC_META = {
@@ -890,6 +897,7 @@ function sortGame(list, reviewOnly = false) {
 // ---------- Grammar ----------
 function grammarTopic() {
   const mainItems = data.grammar.items || [];
+  const explanation = data.grammar.explanation;
   const practiceSets = [
     ...(mainItems.length ? [{
       id: "main",
@@ -907,6 +915,31 @@ function grammarTopic() {
     answer: it.answer
   });
 
+  const grammarGuide = explanation ? `
+    <section class="grammar-guide" aria-label="Grammar guide">
+      <div class="grammar-guide-head">
+        <h3>${esc(explanation.title || "Quick Guide")}</h3>
+        ${explanation.intro ? `<p>${esc(explanation.intro)}</p>` : ""}
+      </div>
+      ${explanation.cards?.length ? `<div class="grammar-guide-grid">
+        ${explanation.cards.map(card => `
+          <article class="grammar-note">
+            <div class="grammar-term">${esc(card.term)}</div>
+            <div class="grammar-formula">${esc(card.formula)}</div>
+            ${card.meaning ? `<p>${esc(card.meaning)}</p>` : ""}
+            ${card.examples?.length ? `<ul>
+              ${card.examples.map(example => `<li>${esc(example)}</li>`).join("")}
+            </ul>` : ""}
+            ${card.verbs?.length ? `<div class="grammar-verbs">${card.verbs.map(verb => `<span>${esc(verb)}</span>`).join("")}</div>` : ""}
+          </article>
+        `).join("")}
+      </div>` : ""}
+      ${explanation.tips?.length ? `<div class="grammar-tips">
+        <strong>Test Tips</strong>
+        <ul>${explanation.tips.map(tip => `<li>${esc(tip)}</li>`).join("")}</ul>
+      </div>` : ""}
+    </section>` : "";
+
   const start = (set, quizItems = set.items) => {
     const topicId = `grammar:${set.id}`;
     runQuiz(topicId, set.title, quizItems, makeQuestion, {
@@ -919,6 +952,7 @@ function grammarTopic() {
   app.innerHTML = `
     <div class="panel">
       <h2>✏️ Grammar</h2>
+      ${grammarGuide}
       <p>Choose a practice set:</p>
       <div class="practice-list">
         ${practiceSets.map((set, idx) => {
