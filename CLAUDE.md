@@ -11,11 +11,13 @@ python3 -m http.server
 ```
 Then open http://localhost:8000. A static server is required because the app loads JSON via `fetch()`, which browsers block on `file://`.
 
+Deploy: GitHub Pages auto-builds on push to `main` (`.github/workflows/deploy.yml`); no build step.
+
 ## Architecture
 
 **Single-page vanilla JS app.** `index.html` is a shell; `app.js` renders everything into `#app` by replacing `innerHTML`. There is no framework, no router library, no bundler. The app first loads `data/exams.json`, lets the user pick a test, then loads the selected test's files from `data/exams/<exam-id>/`. The five top-level "topics" are functions registered in the `routes` object near the bottom of `app.js`:
 
-- `vocabularyTopic` — 3 quiz modes built from the selected exam's `vocabulary.json`
+- `vocabularyTopic` — 5 quiz modes built from the selected exam's `vocabulary.json`. Word entries support optional `synonyms`, `antonyms`, and `examples[]` (extra example sentences). The Synonyms/Antonyms modes auto-appear only for words that have those fields; Fill-in-the-Blank rotates through `example` + `examples[]`.
 - `spellingTopic` — dictation (TTS) for word lists, drag-to-bin sort game for phonics groups (`spelling.json`, list entries with `sortGame: true` go to `sortGame()`, others to `dictation()`)
 - `grammarTopic` — modal-verb MCQ (`grammar.json`)
 - `readingTopic` — anchor-chart viewer + per-passage quizzes from `reading.json`. Reading quizzes are **special**: they render passage + all questions on one scrollable page with a single submit (`readPassage`), unlike other topics which use the one-question-at-a-time `runQuiz` engine.
@@ -43,3 +45,6 @@ The TTS uses the browser's `speechSynthesis`, which uses OS voices. macOS defaul
 - All UI is rendered by replacing `app.innerHTML` and re-binding handlers. Avoid sprinkling DOM mutations elsewhere.
 - Inline `onclick="..."` handlers reference functions on `window` (e.g. `window.__currentPassage`, `window.__replayDialogue`) when a closure can't be captured another way. This is intentional given the no-framework constraint.
 - Progress, selected test, and voice preference are the only persisted state, all in `localStorage`.
+- **Cloze gotcha:** Fill-in-the-Blank blanks the word with regex `\b<word>\w*`, so every `example`/`examples[]` sentence MUST contain the word as a stem prefix. `-ing` forms of silent-e verbs (thrive→thriving, erode→eroding) DON'T match and silently break the blank — use base/`-s`/`-ed` forms instead.
+- A reading question's `skill` only needs to exist in the top-level `skills` map; it need not appear in the passage's own `skills[]` tag list.
+- After editing data JSON, validate: JSON parses, every `skill` exists in `skills`, each MCQ `answer` index is in range, `type:"short"` questions have a `sampleAnswer`, and cloze sentences match the word regex. Run `node --check app.js` after JS edits.

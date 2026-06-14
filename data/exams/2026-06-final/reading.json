@@ -405,6 +405,375 @@
           "skill": "ideas_support"
         }
       ]
+    },
+    {
+      "id": "sleep_power",
+      "title": "Why Your Body Loves Sleep",
+      "skills": [
+        "authors_purpose",
+        "central_idea",
+        "ideas_support",
+        "figurative_language",
+        "text_features",
+        "intended_audience"
+      ],
+      "body": "Have you ever wondered why you spend almost a third of your life with your eyes closed? Sleep may look like doing nothing, but inside your body it is one of the busiest times of the entire day.\n\n1 While you sleep, your brain works like a librarian after closing time. During the day, you collect thousands of new facts, sounds, and feelings. At night, your brain sorts through that enormous pile, files away what matters, and quietly clears out what does not. Scientists believe this is one reason students who sleep well often remember their lessons more easily than students who stay up late.\n\n2 Your body repairs itself at night, too. Tiny tears in your muscles heal, your bones grow stronger, and your immune system builds defenders to fight off germs. This is why a person who is getting sick is so often told to rest. Sleep is not a reward you earn after a hard day; it is part of the hard work itself.\n\n[Chart: Recommended sleep each night — Ages 6 to 12: 9 to 12 hours. Ages 13 to 18: 8 to 10 hours.]\n\n3 So what happens when we skip it? A tired brain is like a phone with a dying battery. It still switches on, but it runs slowly, drops things, and grows cranky. Researchers have found that students who do not get enough sleep struggle more to pay attention, solve problems, and control their feelings. Missing sleep does not just make you yawn. It changes how well your whole brain can work the next day.\n\n4 The good news is that better sleep is a habit almost anyone can build. Going to bed at the same time each night trains your body to feel sleepy on schedule. Dimming bright screens an hour before bed helps as well, because the blue light from phones and tablets can trick your brain into thinking it is still daytime. A cool, dark, quiet room sends one clear message to your body: it is finally time to rest.\n\n5 Sleep is free, it needs no special equipment, and it is one of the most powerful tools you have for staying healthy. So the next time someone tells you to go to bed, remember that you are not wasting a single minute. You are giving your brain and body the night shift they need to keep you strong, sharp, and ready for tomorrow.",
+      "questions": [
+        {
+          "q": "The passage says that sleep is a time when the body does almost nothing.",
+          "choices": ["True", "False"],
+          "answer": 1,
+          "skill": "ideas_support"
+        },
+        {
+          "q": "Which sentence from the passage is an example of figurative language?",
+          "choices": [
+            "\"A tired brain is like a phone with a dying battery.\"",
+            "\"Going to bed at the same time each night trains your body.\"",
+            "\"Sleep is free, it needs no special equipment.\"",
+            "\"Your body repairs itself at night, too.\""
+          ],
+          "answer": 0,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "What is the central idea of this passage?",
+          "choices": [
+            "Sleep is important work that keeps your brain and body healthy.",
+            "Phones and tablets are the best way to fall asleep.",
+            "Only sick people need to sleep at night.",
+            "Sleeping wastes about a third of your life."
+          ],
+          "answer": 0,
+          "skill": "central_idea"
+        },
+        {
+          "q": "What is the author's main purpose in writing this passage?",
+          "choices": [
+            "To inform readers about why sleep matters and persuade them to sleep well",
+            "To entertain readers with a funny story about a librarian",
+            "To explain how to build a phone battery",
+            "To describe one student's single night of sleep"
+          ],
+          "answer": 0,
+          "skill": "authors_purpose"
+        },
+        {
+          "q": "What does the chart help the reader understand?",
+          "choices": [
+            "How many hours of sleep different age groups need",
+            "The price of a new mattress",
+            "How a phone battery is made",
+            "The names of the body's muscles"
+          ],
+          "answer": 0,
+          "skill": "text_features"
+        },
+        {
+          "q": "Which detail supports the idea that sleep helps the body stay healthy?",
+          "choices": [
+            "At night, muscles heal, bones grow, and the immune system builds defenders.",
+            "Sleep needs no special equipment.",
+            "Blue light can trick the brain into thinking it is daytime.",
+            "You spend almost a third of your life asleep."
+          ],
+          "answer": 0,
+          "skill": "ideas_support"
+        },
+        {
+          "q": "Who is the most likely intended audience for this passage?",
+          "choices": [
+            "Students and young readers learning healthy habits",
+            "Doctors performing surgery",
+            "Pilots flying airplanes at night",
+            "Factory workers building phones"
+          ],
+          "answer": 0,
+          "skill": "intended_audience"
+        },
+        {
+          "q": "Describe one habit from the passage that can help a person sleep better, and explain why it works.",
+          "type": "short",
+          "sampleAnswer": "One habit is dimming bright screens an hour before bed. It works because the blue light from phones and tablets can trick the brain into thinking it is still daytime, which makes it harder to feel sleepy.",
+          "skill": "ideas_support"
+        }
+      ]
+    },
+    {
+      "id": "food_miles",
+      "title": "The Long Journey of a Strawberry",
+      "skills": [
+        "central_idea",
+        "ideas_support",
+        "text_features",
+        "figurative_language",
+        "authors_purpose"
+      ],
+      "body": "Pick up a fresh strawberry in the middle of winter and you may be holding a world traveler. The fruit on your plate has sometimes journeyed farther in a single week than many people travel in a whole year.\n\n1 The distance food travels from a farm to your fork is called food miles. A strawberry grown far away might ride on a truck, then a giant ship, then another truck before it finally reaches your store. Every mile burns fuel, and burning fuel releases gases that can slowly warm the planet. A short trip from a nearby farm uses far less fuel than a long voyage across an ocean.\n\n2 This is one reason many families try to eat food that is local and in season. Local food is usually picked when it is ripe, instead of being picked early so it can survive a long trip. Food that is in season is often cheaper as well, because farmers are not fighting the weather to grow it.\n\n[Chart: Average distance food travels — Local farm to table: under 100 miles. Out-of-season imported fruit: often more than 1,500 miles.]\n\n3 Eating, though, is only half of the story. About one third of all the food grown in the world is never eaten at all. It spoils inside trucks, sits forgotten at the back of refrigerators, or gets scraped straight into the trash. When that wasted food rots in a landfill, it releases a gas called methane that traps heat far more powerfully than the exhaust from a car.\n\n4 Many schools have discovered a clever answer hiding right in their lunchrooms: the compost bin. Instead of tossing apple cores and banana peels into the garbage, students drop them into a bin where worms and tiny microbes break them down. Months later, those scraps become dark, rich soil that the school garden uses to grow even more food. The cycle closes like a door clicking quietly shut, with almost nothing wasted.\n\n5 No single child can fix the planet's food problem alone. But choosing a local apple, finishing a packed lunch, or tossing a peel into a compost bin are all small choices that add up. When millions of people make the very same small choice on the same day, the result is anything but small.",
+      "questions": [
+        {
+          "q": "What is the central idea of this passage?",
+          "choices": [
+            "The choices we make about where food comes from and how much we waste can help the planet.",
+            "Strawberries are the only fruit that travels long distances.",
+            "Compost bins are dangerous and should be avoided.",
+            "Food miles do not affect the environment at all."
+          ],
+          "answer": 0,
+          "skill": "central_idea"
+        },
+        {
+          "q": "What are food miles?",
+          "choices": [
+            "The distance food travels from a farm to your fork",
+            "The number of calories in a piece of fruit",
+            "The price of food at the store",
+            "The amount of food a person eats in a year"
+          ],
+          "answer": 0,
+          "skill": "ideas_support"
+        },
+        {
+          "q": "What does the chart help the reader compare?",
+          "choices": [
+            "How far local food travels compared with imported food",
+            "The cost of trucks and ships",
+            "The number of students in a school",
+            "How long a strawberry stays ripe"
+          ],
+          "answer": 0,
+          "skill": "text_features"
+        },
+        {
+          "q": "Which detail supports the idea that wasted food harms the environment?",
+          "choices": [
+            "Rotting food in a landfill releases methane that traps heat.",
+            "Local food is usually picked when it is ripe.",
+            "Worms and microbes live in a compost bin.",
+            "A strawberry can ride on a truck and a ship."
+          ],
+          "answer": 0,
+          "skill": "ideas_support"
+        },
+        {
+          "q": "\"The cycle closes like a door clicking quietly shut\" is an example of which kind of language?",
+          "choices": [
+            "A simile that compares the compost cycle to a closing door",
+            "A fact that gives the exact number of compost bins",
+            "A heading that names a new section",
+            "A direction that tells the reader what to do"
+          ],
+          "answer": 0,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "The passage states that all of the food grown in the world is eaten.",
+          "choices": ["True", "False"],
+          "answer": 1,
+          "skill": "ideas_support"
+        },
+        {
+          "q": "What is the author's main purpose in this passage?",
+          "choices": [
+            "To inform readers about food waste and persuade them to make greener choices",
+            "To entertain readers with a tall tale about a giant strawberry",
+            "To explain how to drive a delivery truck",
+            "To describe the history of one school cafeteria"
+          ],
+          "answer": 0,
+          "skill": "authors_purpose"
+        },
+        {
+          "q": "Explain one way a student could help reduce food waste, using an idea from the passage.",
+          "type": "short",
+          "sampleAnswer": "A student could put apple cores and banana peels into a compost bin instead of the trash, so the scraps turn into rich soil for a garden instead of rotting in a landfill and releasing methane.",
+          "skill": "ideas_support"
+        }
+      ]
+    },
+    {
+      "id": "kitchen_science",
+      "title": "The Science Hidden in Your Kitchen",
+      "skills": [
+        "central_idea",
+        "text_features",
+        "ideas_support",
+        "figurative_language",
+        "authors_purpose"
+      ],
+      "body": "A kitchen may be the most interesting science lab you will ever visit. Every single time someone cooks a meal, chemistry, heat, and even a little bit of math quietly go to work.\n\n1 Think about what happens to bread inside a toaster. Cold, pale bread goes in, and warm, golden toast comes out. Heat causes the sugars and proteins in the bread to change and turn brown. Scientists call this the browning reaction, and it is the same process that gives a grilled cheese its crisp edges and a cookie its golden top. Cooking, in other words, is not simply heating food. It is changing it.\n\n2 Cooking can also make food safer and easier for our bodies to use. Heat softens tough vegetables so we can pull more nutrients from them, and it kills germs that might otherwise make us sick. This is one reason humans have cooked their food for thousands of years, long before anyone understood the science hidden behind it.\n\n[Sidebar: A nutrition label lists the serving size, calories, and the amounts of fat, sugar, protein, and vitamins in a food. Comparing two labels can quickly show which choice gives your body more of what it needs.]\n\n3 Smart cooks are also smart readers. The nutrition label on a package is like a report card for food. It tells you how much sugar, salt, fat, and protein a single serving holds. Two boxes of cereal may look almost identical on the front, and yet one may contain twice the sugar of the other. A reader who checks the label can choose the breakfast that gives steady energy instead of a quick rush followed by a crash.\n\n4 You do not need fancy tools to cook well. A sharp knife, a hot pan, and a little patience can turn plain ingredients into a real meal. Measuring carefully matters, too. Baking especially is a kind of edible math, where one small mistake with the flour or the salt can change the entire result.\n\n5 So the next time you stand in a kitchen, look closely. The bubbling pot, the browning toast, and the slowly rising bread are not magic. They are science you can actually taste, and with a few good habits, they are science you can use to take better care of yourself.",
+      "questions": [
+        {
+          "q": "What is the central idea of this passage?",
+          "choices": [
+            "Cooking is full of science, and understanding it can help you eat better.",
+            "Only scientists in a lab are allowed to cook food.",
+            "Toast is the only food that changes when it is heated.",
+            "Fancy tools are the most important part of cooking."
+          ],
+          "answer": 0,
+          "skill": "central_idea"
+        },
+        {
+          "q": "What information does the sidebar give the reader?",
+          "choices": [
+            "What a nutrition label lists and why comparing labels is useful",
+            "The exact price of a box of cereal",
+            "The name of the scientist who invented toast",
+            "A recipe for baking bread at home"
+          ],
+          "answer": 0,
+          "skill": "text_features"
+        },
+        {
+          "q": "\"The nutrition label on a package is like a report card for food\" is an example of which kind of language?",
+          "choices": [
+            "A simile comparing a label to a report card",
+            "A heading that begins a new section",
+            "A measurement of how much sugar is in cereal",
+            "A direction telling the reader to cook"
+          ],
+          "answer": 0,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "Which detail supports the idea that cooking can make food safer?",
+          "choices": [
+            "Heat kills germs that might otherwise make us sick.",
+            "Baking is a kind of edible math.",
+            "A nutrition label lists the serving size.",
+            "Cold, pale bread goes into a toaster."
+          ],
+          "answer": 0,
+          "skill": "ideas_support"
+        },
+        {
+          "q": "According to the passage, what causes bread to turn golden brown in a toaster?",
+          "choices": [
+            "Heat changes the sugars and proteins in the bread.",
+            "The bread soaks up extra water.",
+            "The toaster adds brown coloring to the bread.",
+            "The bread freezes and then thaws."
+          ],
+          "answer": 0,
+          "skill": "ideas_support"
+        },
+        {
+          "q": "Two cereals that look almost the same on the front of the box always contain the same amount of sugar.",
+          "choices": ["True", "False"],
+          "answer": 1,
+          "skill": "ideas_support"
+        },
+        {
+          "q": "What is the author's main purpose in this passage?",
+          "choices": [
+            "To inform readers that everyday cooking is full of useful science",
+            "To persuade readers to stop eating breakfast",
+            "To entertain readers with a made-up story about a magic toaster",
+            "To explain the rules of a board game"
+          ],
+          "answer": 0,
+          "skill": "authors_purpose"
+        },
+        {
+          "q": "Explain why reading a nutrition label can help someone make a healthier choice.",
+          "type": "short",
+          "sampleAnswer": "A nutrition label tells you how much sugar, salt, fat, and protein is in a serving. By comparing labels, a person can pick the food with less sugar or more protein, which gives steadier energy instead of a quick rush and a crash.",
+          "skill": "ideas_support"
+        }
+      ]
+    },
+    {
+      "id": "edible_insects",
+      "title": "Could Insects Be the Food of the Future?",
+      "skills": [
+        "central_idea",
+        "authors_purpose",
+        "intended_audience",
+        "ideas_support",
+        "text_features"
+      ],
+      "body": "Imagine a snack that is packed with protein, costs very little to raise, and barely harms the planet. Now imagine that this snack is a cricket. To billions of people around the world, eating insects is nothing strange at all.\n\n1 Eating insects even has its own scientific name: entomophagy. In many countries, fried grasshoppers, roasted ants, and toasted crickets are sold as ordinary food, the same way popcorn or pretzels are sold in other places. Some scientists believe that as the world's population keeps growing, insects could become an important food for everyone.\n\n2 Why are researchers so interested in bugs? The answer is mostly about resources. Raising cattle for beef uses enormous amounts of land, water, and grain. Crickets, by comparison, need very little of any of these. To produce the same amount of protein, crickets use only a tiny fraction of the water that cows do, and they take up far less space.\n\n[Chart: Water needed to make one pound of protein — Beef: about 1,800 gallons. Crickets: about 1 gallon.]\n\n3 Insects are also surprisingly nutritious. Many are rich in protein, healthy fats, iron, and vitamins. Gram for gram, some insects carry nearly as much protein as meat. Because they can be raised in stacked trays indoors, insect farms can grow food in small spaces, even in crowded cities where there is no room for wide fields of cattle.\n\n4 Still, there is one large hurdle, and it is not science. It is feeling. Many people who did not grow up eating insects find the whole idea unpleasant. To get around this, some companies grind insects into a fine powder and bake it into chips, pasta, and energy bars. Hidden inside familiar foods, the protein arrives without the crunch of legs or wings. A bug you cannot see, it turns out, is a bug many people are finally willing to try.\n\n5 No one is saying you must replace every meal with beetles. But the next time you hear someone shriek at the sight of a bug, remember this: that tiny creature might hold a clue to feeding a hungry, crowded planet. The food of the future may already be living in the grass beneath your feet.",
+      "questions": [
+        {
+          "q": "What is the central idea of this passage?",
+          "choices": [
+            "Insects could become an important food because they are nutritious and easy on the planet.",
+            "Crickets are the only insect that people can safely eat.",
+            "Beef is the best food for a crowded planet.",
+            "Eating insects is something no one in the world does."
+          ],
+          "answer": 0,
+          "skill": "central_idea"
+        },
+        {
+          "q": "The word entomophagy means the study of how insects fly.",
+          "choices": ["True", "False"],
+          "answer": 1,
+          "skill": "ideas_support"
+        },
+        {
+          "q": "What does the chart help the reader understand?",
+          "choices": [
+            "How much less water crickets need than beef to make the same protein",
+            "How many people eat insects each year",
+            "The price of a cricket energy bar",
+            "How fast a cricket can jump"
+          ],
+          "answer": 0,
+          "skill": "text_features"
+        },
+        {
+          "q": "Which detail supports the idea that crickets are easier on the planet than cattle?",
+          "choices": [
+            "Crickets use only a tiny fraction of the water that cows do.",
+            "Some people find the idea of eating insects unpleasant.",
+            "Entomophagy has its own scientific name.",
+            "Companies grind insects into a fine powder."
+          ],
+          "answer": 0,
+          "skill": "ideas_support"
+        },
+        {
+          "q": "According to the passage, what is the biggest hurdle to getting more people to eat insects?",
+          "choices": [
+            "Many people simply feel that the idea is unpleasant.",
+            "Insects do not contain any protein.",
+            "Insects need more water than cattle.",
+            "It is impossible to raise insects on a farm."
+          ],
+          "answer": 0,
+          "skill": "ideas_support"
+        },
+        {
+          "q": "What is the author's main purpose in this passage?",
+          "choices": [
+            "To inform readers about edible insects and persuade them to keep an open mind",
+            "To frighten readers away from all insects",
+            "To explain how to build a cattle farm",
+            "To tell a fictional story about a talking cricket"
+          ],
+          "answer": 0,
+          "skill": "authors_purpose"
+        },
+        {
+          "q": "Who is the most likely intended audience for this passage?",
+          "choices": [
+            "Curious readers interested in food and the environment",
+            "Only professional chefs in fancy restaurants",
+            "Only farmers who raise cattle",
+            "Only scientists who have already eaten insects"
+          ],
+          "answer": 0,
+          "skill": "intended_audience"
+        },
+        {
+          "q": "Explain one reason crickets might be a better protein source for the planet than cattle.",
+          "type": "short",
+          "sampleAnswer": "Crickets need far less water and land than cattle to make the same amount of protein. For example, beef takes about 1,800 gallons of water per pound of protein, while crickets take only about 1 gallon, and crickets can be raised in stacked trays in small spaces.",
+          "skill": "ideas_support"
+        }
+      ]
     }
   ]
 }

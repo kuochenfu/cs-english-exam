@@ -628,6 +628,11 @@ function vocabularyTopic() {
   const missedDef = missedCount("vocab:definition");
   const missedWord = missedCount("vocab:word");
   const missedBlank = missedCount("vocab:blank");
+  const missedSyn = missedCount("vocab:synonym");
+  const missedAnt = missedCount("vocab:antonym");
+
+  const synWords = words.filter(w => w.synonyms && w.synonyms.length);
+  const antWords = words.filter(w => w.antonyms && w.antonyms.length);
 
   const reviewWords = (topicId) => words.filter(w => missedItems(topicId).some(m => m.id === w.word));
   const startDefinition = (items = words) => runQuiz("vocab:definition", "Word → Definition", items, (w) => {
@@ -641,10 +646,36 @@ function vocabularyTopic() {
     return { prompt: `Which word means: <i>"${w.definition}"</i>?`, choices, answer: choices.indexOf(w.word) };
   }, { itemId: w => w.word, itemLabel: w => w.word, afterFinish: vocabularyTopic });
   const startBlank = (items = words) => runQuiz("vocab:blank", "Fill in the Blank", items, (w) => {
-    const blanked = w.example.replace(new RegExp(`\\b${w.word}\\w*`, "i"), "____");
+    const re = new RegExp(`\\b${w.word}\\w*`, "i");
+    const sentences = [w.example, ...(w.examples || [])].filter(s => s && re.test(s));
+    const sentence = (sentences.length ? sentences : [w.example])[Math.floor(Math.random() * (sentences.length || 1))];
+    const blanked = sentence.replace(re, "____");
     const wrongs = shuffle(words.filter(x => x.word !== w.word)).slice(0,3);
     const choices = shuffle([w, ...wrongs]).map(x => x.word);
     return { prompt: blanked, choices, answer: choices.indexOf(w.word) };
+  }, { itemId: w => w.word, itemLabel: w => w.word, afterFinish: vocabularyTopic });
+  // Pick a random member of an array.
+  const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
+  const startSynonym = (items = synWords) => runQuiz("vocab:synonym", "Synonyms", items, (w) => {
+    const answer = pick(w.synonyms);
+    const avoid = new Set([w.word.toLowerCase(), ...w.synonyms.map(s => s.toLowerCase())]);
+    // Distractors are other words' antonyms (strong "opposite direction" traps) plus other vocab words.
+    const pool = [];
+    words.forEach(x => { if (x.word !== w.word) { pool.push(x.word, ...(x.antonyms || [])); } });
+    const distractors = shuffle([...new Set(pool)].filter(p => !avoid.has(p.toLowerCase()))).slice(0,3);
+    const choices = shuffle([answer, ...distractors]);
+    return { prompt: `Which word means almost the <b>SAME</b> as <b>${w.word}</b> (${w.pos})?`, choices, answer: choices.indexOf(answer) };
+  }, { itemId: w => w.word, itemLabel: w => w.word, afterFinish: vocabularyTopic });
+  const startAntonym = (items = antWords) => runQuiz("vocab:antonym", "Antonyms (Opposites)", items, (w) => {
+    const answer = pick(w.antonyms);
+    const avoid = new Set([w.word.toLowerCase(), ...w.antonyms.map(s => s.toLowerCase())]);
+    // Include one of the word's own synonyms as a tempting "same meaning" trap when available.
+    const trap = (w.synonyms || []).filter(s => !avoid.has(s.toLowerCase()));
+    const pool = [];
+    words.forEach(x => { if (x.word !== w.word) { pool.push(x.word, ...(x.synonyms || [])); } });
+    let distractors = shuffle([...new Set([...trap, ...pool])].filter(p => !avoid.has(p.toLowerCase()))).slice(0,3);
+    const choices = shuffle([answer, ...distractors]);
+    return { prompt: `Which word means the <b>OPPOSITE</b> of <b>${w.word}</b> (${w.pos})?`, choices, answer: choices.indexOf(answer) };
   }, { itemId: w => w.word, itemLabel: w => w.word, afterFinish: vocabularyTopic });
 
   app.innerHTML = `
@@ -653,18 +684,26 @@ function vocabularyTopic() {
       <p>Pick a practice mode:</p>
       <button id="m1">Word → Definition</button>
       <button id="m2">Definition → Word</button>
-      <button id="m3">Fill in the Blank</button>
+      <button id="m3">Fill in the Blank (in context)</button>
+      ${synWords.length ? `<button id="m4">Synonyms (same meaning)</button>` : ""}
+      ${antWords.length ? `<button id="m5">Antonyms (opposites)</button>` : ""}
       ${missedDef ? `<button class="ghost" id="r1">Review Word → Definition (${missedDef})</button>` : ""}
       ${missedWord ? `<button class="ghost" id="r2">Review Definition → Word (${missedWord})</button>` : ""}
       ${missedBlank ? `<button class="ghost" id="r3">Review Fill in the Blank (${missedBlank})</button>` : ""}
+      ${missedSyn ? `<button class="ghost" id="r4">Review Synonyms (${missedSyn})</button>` : ""}
+      ${missedAnt ? `<button class="ghost" id="r5">Review Antonyms (${missedAnt})</button>` : ""}
       <button class="ghost" onclick="renderHome()">🏠 Home</button>
     </div>`;
   $("m1").onclick = () => startDefinition();
   $("m2").onclick = () => startWord();
   $("m3").onclick = () => startBlank();
+  if ($("m4")) $("m4").onclick = () => startSynonym();
+  if ($("m5")) $("m5").onclick = () => startAntonym();
   if ($("r1")) $("r1").onclick = () => startDefinition(reviewWords("vocab:definition"));
   if ($("r2")) $("r2").onclick = () => startWord(reviewWords("vocab:word"));
   if ($("r3")) $("r3").onclick = () => startBlank(reviewWords("vocab:blank"));
+  if ($("r4")) $("r4").onclick = () => startSynonym(reviewWords("vocab:synonym"));
+  if ($("r5")) $("r5").onclick = () => startAntonym(reviewWords("vocab:antonym"));
 }
 
 // ---------- Spelling / Phonics ----------
