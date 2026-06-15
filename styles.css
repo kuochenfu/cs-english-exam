@@ -489,6 +489,82 @@ button.boss-card:hover {
   white-space: pre-wrap;
 }
 
+.passage-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  align-items: start;
+  margin: 12px 0 18px;
+}
+
+.passage-choice {
+  display: grid;
+  gap: 8px;
+}
+
+button.passage-card-button {
+  width: 100%;
+  min-height: 238px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: white;
+  color: var(--text);
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  align-self: start;
+  text-align: left;
+}
+
+button.passage-card-button:hover {
+  background: #fffaf0;
+  border-color: var(--primary);
+}
+
+.passage-card-button img,
+.passage-card-fallback {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+  background: #fffaf0;
+}
+
+.passage-card-button img {
+  object-fit: cover;
+}
+
+.passage-card-fallback {
+  display: grid;
+  place-items: center;
+  font-size: 3rem;
+}
+
+.passage-card-copy {
+  display: grid;
+  align-content: center;
+  gap: 4px;
+  min-height: 74px;
+  padding: 12px 14px;
+}
+
+.passage-card-title {
+  font-size: 1rem;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.passage-card-meta {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+button.passage-review-button {
+  width: 100%;
+  margin: 0;
+}
+
 .passage-image {
   display: block;
   width: 100%;

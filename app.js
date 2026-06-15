@@ -1031,12 +1031,23 @@ function readingTopic() {
       <p>Choose what to do:</p>
       ${charts.length ? `<button id="charts">📋 Anchor Charts (review skills)</button>` : ""}
       ${passages.length ? `<h3>Then practice with a passage:</h3>
+      <div class="passage-card-grid">
       ${passages.map((p,i) => {
         const topicId = `reading:${p.id || p.title}`;
         const miss = missedCount(topicId);
         const prog = readProgress(topicId);
-        return `<button data-p="${i}">${p.title}${prog ? ` · Best ${prog.best}%` : ""}</button>${miss ? `<button class="ghost" data-review-p="${i}">Review missed (${miss})</button>` : ""}`;
-      }).join("")}` : ""}
+        return `<div class="passage-choice">
+          <button class="passage-card-button" data-p="${i}">
+            ${p.image ? `<img src="${p.image}" alt="${esc(p.imageAlt || p.title)}">` : `<span class="passage-card-fallback">📖</span>`}
+            <span class="passage-card-copy">
+              <span class="passage-card-title">${esc(p.title)}</span>
+              ${prog ? `<span class="passage-card-meta">Best ${prog.best}%</span>` : ""}
+            </span>
+          </button>
+          ${miss ? `<button class="ghost passage-review-button" data-review-p="${i}">Review missed (${miss})</button>` : ""}
+        </div>`;
+      }).join("")}
+      </div>` : ""}
       <br><button class="ghost" onclick="renderHome()">🏠 Home</button>
     </div>`;
   if ($("charts")) $("charts").onclick = showAnchorCharts;

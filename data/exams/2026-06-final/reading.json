@@ -12,6 +12,8 @@
   "anchorCharts": [
     {
       "name": "Author's Purpose",
+      "image": "assets/2026-06-final/anchor-charts/authors-purpose.jpg",
+      "imageAlt": "A classroom illustration showing a book with symbols for different author purposes.",
       "body": "Authors write to persuade, inform, entertain, or explain. Look for clues: facts often inform, directions explain, strong opinions persuade, and story events entertain.",
       "ex": [
         "A tall tale about an amazing firefighter is mostly written to entertain.",
@@ -21,6 +23,8 @@
     },
     {
       "name": "Intended Audience",
+      "image": "assets/2026-06-final/anchor-charts/intended-audience.jpg",
+      "imageAlt": "A classroom illustration showing an author sharing a book with different reader groups.",
       "body": "The intended audience is who the author is writing for. Clues include the title, word choice, pictures, examples, and what the author asks readers to do.",
       "ex": [
         "A school lunch poster with simple labels may be for students and families.",
@@ -30,6 +34,8 @@
     },
     {
       "name": "Ideas and Support",
+      "image": "assets/2026-06-final/anchor-charts/ideas-support.jpg",
+      "imageAlt": "A classroom illustration showing a main idea supported by detail cards.",
       "body": "An idea is what the author wants readers to understand. Supporting details are facts, examples, reasons, or story events that prove or explain the idea.",
       "ex": [
         "Idea: A balanced lunch gives students energy. Support: Whole grains, protein, fruits, vegetables, and water help the body work.",
@@ -38,6 +44,8 @@
     },
     {
       "name": "Figurative Language",
+      "image": "assets/2026-06-final/anchor-charts/figurative-language.jpg",
+      "imageAlt": "A classroom illustration showing imaginative symbols coming out of an open notebook.",
       "body": "Figurative language makes writing vivid. A simile compares two things using like or as. A metaphor says one thing is another. Hyperbole is a huge exaggeration.",
       "ex": [
         "\"His shovel was as big as a train car\" is a simile.",
@@ -47,6 +55,8 @@
     },
     {
       "name": "Central Idea",
+      "image": "assets/2026-06-final/anchor-charts/central-idea.jpg",
+      "imageAlt": "A classroom illustration showing one large central star connected to smaller detail cards.",
       "body": "The central idea is the most important point of a nonfiction text or section. It is bigger than one detail and should be a complete sentence.",
       "ex": [
         "Topic: insect hotels. Central idea: Insect hotels can give helpful insects a safe place to rest and lay eggs.",
@@ -55,6 +65,8 @@
     },
     {
       "name": "Text and Graphic Features",
+      "image": "assets/2026-06-final/anchor-charts/text-features.jpg",
+      "imageAlt": "A classroom illustration showing students using charts, diagrams, captions, and page features.",
       "body": "Headings, captions, labels, charts, diagrams, sidebars, and bold words help readers find and understand information.",
       "ex": [
         "A chart can compare two choices quickly.",
@@ -67,6 +79,8 @@
     {
       "id": "giant_soup_pot",
       "title": "Penny Pepper and the Giant Soup Pot",
+      "image": "assets/2026-06-final/passages/giant-soup-pot.jpg",
+      "imageAlt": "A cheerful cook stirring a giant soup pot for a snowy town.",
       "skills": [
         "authors_purpose",
         "figurative_language",
@@ -159,6 +173,8 @@
     {
       "id": "lunch_tray_team",
       "title": "The Lunch Tray Team",
+      "image": "assets/2026-06-final/passages/lunch-tray-team.jpg",
+      "imageAlt": "Students building a colorful balanced lunch tray together.",
       "skills": [
         "central_idea",
         "ideas_support",
@@ -244,6 +260,8 @@
     {
       "id": "bug_hotel_helpers",
       "title": "Bug Hotel Helpers",
+      "image": "assets/2026-06-final/passages/bug-hotel-helpers.jpg",
+      "imageAlt": "Children observing a wooden bug hotel in a sunny school garden.",
       "skills": [
         "central_idea",
         "text_features",
@@ -324,6 +342,8 @@
     {
       "id": "rocks_tell_stories",
       "title": "Rocks Tell Stories",
+      "image": "assets/2026-06-final/passages/rocks-tell-stories.jpg",
+      "imageAlt": "A child and geologist examining rocks and fossils with a magnifying glass.",
       "skills": [
         "central_idea",
         "figurative_language",
@@ -409,6 +429,8 @@
     {
       "id": "sleep_power",
       "title": "Why Your Body Loves Sleep",
+      "image": "assets/2026-06-final/passages/sleep-power.jpg",
+      "imageAlt": "A sleeping child surrounded by gentle symbols for memory, health, and energy.",
       "skills": [
         "authors_purpose",
         "central_idea",
@@ -502,6 +524,8 @@
     {
       "id": "food_miles",
       "title": "The Long Journey of a Strawberry",
+      "image": "assets/2026-06-final/passages/food-miles.jpg",
+      "imageAlt": "A strawberry traveling from a farm through trucks and ships toward a table.",
       "skills": [
         "central_idea",
         "ideas_support",
@@ -594,6 +618,8 @@
     {
       "id": "kitchen_science",
       "title": "The Science Hidden in Your Kitchen",
+      "image": "assets/2026-06-final/passages/kitchen-science.jpg",
+      "imageAlt": "A curious child watching toast, a bubbling pot, and kitchen science tools.",
       "skills": [
         "central_idea",
         "text_features",
@@ -686,6 +712,8 @@
     {
       "id": "edible_insects",
       "title": "Could Insects Be the Food of the Future?",
+      "image": "assets/2026-06-final/passages/edible-insects.jpg",
+      "imageAlt": "Students learning about crickets as a future food in a bright classroom.",
       "skills": [
         "central_idea",
         "authors_purpose",
