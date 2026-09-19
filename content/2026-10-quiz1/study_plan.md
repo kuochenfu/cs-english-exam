@@ -47,7 +47,7 @@ App exam id: `2026-10-quiz1`
 | --- | --- | --- |
 | Vocabulary | Done | 30 words, definitions aligned to the teacher's homework wording, homework cloze sentences added as examples |
 | Spelling / Phonics | Done | 3 dictation lists, 5 sort games, 2 homework-format MCQ sets (find the short vowel word; which letters make the long vowel) |
-| Grammar | Done | Quick guide + 16 mixed items + 4 practice sets (HW be verbs 8, HW present simple 6, Lesson 4 be 20, Lesson 5 present simple 22) |
+| Grammar | Done (raised to Grade 5 high standard 2026-09-19) | Quick guide (7 cards incl. Tricky Subjects) + 18 mixed items + 5 sets: HW be verbs 8, HW present simple 6, Lesson 4 be 26, Lesson 5 present simple 28, Challenge negatives/questions/tags 18 |
 | Reading | Done | 5 text anchor charts, 5 homework passages (Bell, Super-Recycler, Perseverance, Benny and Larry, Captain Morgan), POV practice with 8 excerpts |
 | Listening | Done (generated) | 4 review dialogues on Module 1 topics; the real quiz dialogue is only played in class |
 
@@ -61,6 +61,20 @@ Homework transcription: `content/2026-10-quiz1/homework.md`.
 - Grammar: be verbs (present/past, negatives, questions, there is/are) and present simple (verb + s/es/ies, do/does, negatives, short answers), including the exact homework sentences.
 - Reading: the five homework passages transcribed with their original questions plus added questions so every skill in the notice appears (Author's Purpose questions were added to Bell, Perseverance, and Captain Morgan because no homework covers that skill). Point of View practice packages the six homework excerpts plus two new ones. Anchor charts are text-only.
 - Listening: four generated dialogues using Module 1 vocabulary.
+
+## Grammar Difficulty Benchmark (2026-09-19)
+
+The notice's "My Next Grammar Lesson 4-5" is Book 2 of the e-future series (grades 4-6): Lesson 4 Present and Past: Be, Lesson 5 Present Simple. Grade 5 subject-verb agreement tests found online go beyond plain "She ____ sick" items, so the practice sets were rewritten to include:
+
+- hidden subjects: one of / each of / everyone / nobody / neither of, subject + prepositional phrase, subject + who-clause, along with, either…or
+- singular -s nouns (mathematics, news, the United States) and plural-only nouns (scissors, trousers), collective nouns (family, team)
+- there is / are agreeing with the nearest noun, compound there-subjects
+- past vs present in one sentence, tag questions, negative questions, short answers
+- spelling: -es (teaches, goes), consonant + y → -ies (studies, tries), vowel + y → -s (plays, enjoys)
+- be vs do questions (Is your brother good at…? / Does your brother like…?)
+- error spotting ("Which sentence is correct / has a mistake?") and rewriting statements as negatives, questions, wh- questions, and tags
+
+Benchmarks used: a Grade 5 SVA quiz with items like "Mathematics (is, are)…", "The jury (has, have)…", "My friends who are in the band (wants, want)…", "Everyone (needs, need)…"; K5 Learning / Wayground descriptions of grade 5 SVA scope (collective nouns, indefinite pronouns, compound subjects, subject separated from verb); Cambridge A2 Flyers grammar list (be, there is/are, present simple, question forms).
 
 ## Missing Reference Material (log)
 

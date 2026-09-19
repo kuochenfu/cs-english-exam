@@ -1,6 +1,6 @@
 {
   "title": "Grammar — Present and Past: Be; Present Simple (My Next Grammar, Lessons 4-5)",
-  "intro": "Lesson 4: am / is / are and was / were. Lesson 5: present simple verbs and subject-verb agreement (SVA). Practice items are built from the M1W1 HW2 and M1W2 HW2 homework formats.",
+  "intro": "Lesson 4: am / is / are and was / were. Lesson 5: present simple verbs and subject-verb agreement (SVA). Includes hidden-subject, error-spotting, and rewrite items at the Grade 5 high-standard level, plus the exact homework sentences.",
   "explanation": {
     "title": "Be Verbs and Present Simple Quick Guide",
     "intro": "這次 Grammar 考兩件事：be 動詞的現在式和過去式，以及一般現在式動詞要不要加 -s / 用 do 還是 does。",
@@ -101,208 +101,253 @@
           "don't",
           "doesn't"
         ]
+      },
+      {
+        "term": "Tricky Subjects",
+        "formula": "one of / each of / everyone → singular · nouns + phrase → look at the head noun · there is/are → nearest noun",
+        "meaning": "高標題常把主詞藏起來：one of my cousins、each of the gadgets、everyone 都是單數；the boxes on the shelf 看 boxes（複數）；there is / are 跟後面最近的名詞一致；mathematics、news 是單數，scissors、trousers 是複數。",
+        "examples": [
+          "One of my cousins is a pilot.",
+          "The boxes on the top shelf are heavy.",
+          "Everyone in the class needs a partner.",
+          "There is a pencil and two erasers in my bag.",
+          "Mathematics is my favorite subject."
+        ],
+        "verbs": [
+          "one of",
+          "each of",
+          "everyone",
+          "nobody",
+          "there is / are"
+        ]
       }
     ],
     "tips": [
-      "先找主詞：一個人或東西（he / she / it / Sherry / the cat）→ is / was / verb-s / does。",
-      "兩個以上或 you（Jimmy and Alexia / they / most people）→ are / were / 原形動詞 / do。",
-      "there is / there are 看後面的名詞：There is a book. / There are many reasons.",
-      "看到 does not 或 do not，後面動詞一定是原形：She does not drink（不是 drinks）。",
-      "時間線索：now / every day / always → 現在；yesterday / last night / this morning / ago → 過去 was / were。"
+      "先找「真正的主詞」：把 of the …、on the …、who … 這種片語蓋住再看。One of my friends (is)、The boxes on the shelf (are)。",
+      "everyone / everybody / nobody / each / one of → 單數：is / was / verb-s / does。",
+      "there is / are、there was / were 看後面最近的名詞：There is a book and two pens. / There are two pens and a book.",
+      "看到 does not、do not、Does、Do，後面動詞一定回到原形：She doesn't like（不是 likes）。",
+      "be 動詞不用 do：Is your brother good at soccer?（狀態）vs. Does your brother like soccer?（動作）。",
+      "時間線索：now / every day / always / on Mondays → 現在；yesterday / last night / this morning / ago / when I was… → 過去 was / were。",
+      "字尾規則：sh / ch / s / x / o → -es（washes, goes）；子音 + y → -ies（studies, cries）；母音 + y → -s（plays, enjoys）。"
     ]
   },
   "items": [
     {
       "id": "mix-01",
-      "q": "Where ____ you from?",
+      "q": "One of my cousins ____ a pilot in the air force.",
       "choices": [
-        "are",
-        "do",
+        "be",
         "is",
-        "am"
+        "were",
+        "are"
       ],
-      "answer": 0,
-      "use": "be present"
+      "answer": 1,
+      "use": "one of → singular"
     },
     {
       "id": "mix-02",
-      "q": "She ____ not like carrots.",
+      "q": "The boxes on the top shelf ____ too heavy for me.",
       "choices": [
         "are",
+        "be",
         "is",
-        "does",
-        "do"
+        "was"
       ],
-      "answer": 2,
-      "use": "present simple negative"
+      "answer": 0,
+      "use": "subject + phrase"
     },
     {
       "id": "mix-03",
-      "q": "____ he a teacher?",
+      "q": "Everyone in the class ____ a partner for the project.",
       "choices": [
-        "Does",
-        "Is",
-        "Are",
-        "Do"
+        "are needing",
+        "need",
+        "is need",
+        "needs"
       ],
-      "answer": 1,
-      "use": "be question"
+      "answer": 3,
+      "use": "everyone → singular"
     },
     {
       "id": "mix-04",
-      "q": "____ he teach math?",
+      "q": "____ your brother good at soccer?",
       "choices": [
-        "Do",
+        "Is",
         "Are",
         "Does",
-        "Is"
+        "Do"
       ],
-      "answer": 2,
-      "use": "present simple question"
+      "answer": 0,
+      "use": "be vs do"
     },
     {
       "id": "mix-05",
-      "q": "They ____ at the park yesterday.",
+      "q": "____ your brother like soccer?",
       "choices": [
-        "did",
-        "were",
-        "was",
-        "are"
-      ],
-      "answer": 1,
-      "use": "be past"
-    },
-    {
-      "id": "mix-06",
-      "q": "They ____ to the park every Sunday.",
-      "choices": [
-        "were",
-        "goes",
-        "go",
-        "are"
-      ],
-      "answer": 2,
-      "use": "present simple"
-    },
-    {
-      "id": "mix-07",
-      "q": "My grandmother ____ tea every morning.",
-      "choices": [
-        "drink",
-        "drinks",
-        "is drink",
-        "drinking"
-      ],
-      "answer": 1,
-      "use": "present simple"
-    },
-    {
-      "id": "mix-08",
-      "q": "I ____ very tired last night.",
-      "choices": [
-        "did",
-        "am",
-        "was",
-        "were"
-      ],
-      "answer": 2,
-      "use": "be past"
-    },
-    {
-      "id": "mix-09",
-      "q": "The students ____ not spell well because they don't work carefully.",
-      "choices": [
-        "do",
-        "is",
-        "does",
-        "are"
-      ],
-      "answer": 0,
-      "use": "present simple negative"
-    },
-    {
-      "id": "mix-10",
-      "q": "There ____ two cookies left on the plate.",
-      "choices": [
-        "does",
-        "am",
-        "are",
-        "is"
-      ],
-      "answer": 2,
-      "use": "there are"
-    },
-    {
-      "id": "mix-11",
-      "q": "____ you ready for the quiz?",
-      "choices": [
-        "Does",
-        "Is",
         "Are",
+        "Is",
+        "Does",
         "Do"
       ],
       "answer": 2,
-      "use": "be question"
+      "use": "be vs do"
     },
     {
-      "id": "mix-12",
-      "q": "Ben ____ the bus every day because he wakes up late.",
-      "choices": [
-        "miss",
-        "missing",
-        "is miss",
-        "misses"
-      ],
-      "answer": 3,
-      "use": "present simple -es"
-    },
-    {
-      "id": "mix-13",
-      "q": "The weather ____ cold this morning, but it is warm now.",
+      "id": "mix-06",
+      "q": "There ____ a pencil and two erasers in my bag.",
       "choices": [
         "is",
-        "does",
+        "were",
+        "have",
+        "are"
+      ],
+      "answer": 0,
+      "use": "there + nearest noun"
+    },
+    {
+      "id": "mix-07",
+      "q": "The twins ____ at school yesterday because they were sick.",
+      "choices": [
+        "wasn't",
+        "don't",
+        "aren't",
+        "weren't"
+      ],
+      "answer": 3,
+      "use": "be past negative"
+    },
+    {
+      "id": "mix-08",
+      "q": "Mathematics ____ my favorite subject, but the tests ____ hard.",
+      "choices": [
+        "are / is",
+        "is / is",
+        "are / are",
+        "is / are"
+      ],
+      "answer": 3,
+      "use": "-s nouns"
+    },
+    {
+      "id": "mix-09",
+      "q": "How often ____ he ____ the piano?",
+      "choices": [
+        "do / practice",
+        "does / practice",
+        "is / practice",
+        "does / practices"
+      ],
+      "answer": 1,
+      "use": "question + base verb"
+    },
+    {
+      "id": "mix-10",
+      "q": "Where ____ you an hour ago? Nobody could find you.",
+      "choices": [
+        "are",
         "was",
+        "did",
         "were"
       ],
-      "answer": 2,
+      "answer": 3,
       "use": "be past"
     },
     {
-      "id": "mix-14",
-      "q": "\"Does she play the piano?\" \"Yes, she ____.\"",
+      "id": "mix-11",
+      "q": "Which sentence is correct?",
       "choices": [
-        "do",
-        "does",
-        "is",
-        "plays"
+        "She doesn't like carrots.",
+        "She doesn't likes carrots.",
+        "She don't like carrots.",
+        "She not like carrots."
+      ],
+      "answer": 0,
+      "use": "error spotting"
+    },
+    {
+      "id": "mix-12",
+      "q": "Which sentence is correct?",
+      "choices": [
+        "Each of the gadgets were broken.",
+        "Each of the gadgets was broken.",
+        "Each of the gadgets are broken.",
+        "Each of the gadget were broken."
       ],
       "answer": 1,
-      "use": "short answer"
+      "use": "error spotting"
+    },
+    {
+      "id": "mix-13",
+      "q": "My friends who are in the band ____ me to play the drums.",
+      "choices": [
+        "want",
+        "wants",
+        "is wanting",
+        "are want"
+      ],
+      "answer": 0,
+      "use": "subject + who clause"
+    },
+    {
+      "id": "mix-14",
+      "q": "\"____ the students in the auditorium?\" \"Yes, they ____.\"",
+      "choices": [
+        "Were / was",
+        "Was / were",
+        "Were / were",
+        "Did / were"
+      ],
+      "answer": 2,
+      "use": "question + short answer"
     },
     {
       "id": "mix-15",
-      "q": "\"Was the test hard?\" \"No, it ____.\"",
+      "q": "The news about the field trip ____ good, so everybody ____ happy.",
       "choices": [
-        "weren't",
-        "wasn't",
-        "didn't",
-        "isn't"
+        "are / is",
+        "is / are",
+        "is / is",
+        "are / are"
       ],
-      "answer": 1,
-      "use": "short answer"
+      "answer": 2,
+      "use": "news → singular"
     },
     {
       "id": "mix-16",
-      "q": "My parents ____ not at home right now.",
+      "q": "Neither of the answers ____ correct, and the teacher ____ not happy about it.",
       "choices": [
-        "do",
-        "were",
-        "are",
-        "is"
+        "is / are",
+        "is / is",
+        "are / are",
+        "are / is"
+      ],
+      "answer": 1,
+      "use": "neither of → singular"
+    },
+    {
+      "id": "mix-17",
+      "q": "Change to a question: \"They were late for the concert.\"",
+      "choices": [
+        "They were late for the concert, were?",
+        "Did they were late for the concert?",
+        "Were they late for the concert?",
+        "Was they late for the concert?"
       ],
       "answer": 2,
-      "use": "be negative"
+      "use": "transformation"
+    },
+    {
+      "id": "mix-18",
+      "q": "Change to negative: \"My sister reads comics every night.\"",
+      "choices": [
+        "My sister do not read comics every night.",
+        "My sister not reads comics every night.",
+        "My sister does not reads comics every night.",
+        "My sister does not read comics every night."
+      ],
+      "answer": 3,
+      "use": "transformation"
     }
   ],
   "practiceSets": [
@@ -315,12 +360,12 @@
           "id": "hw-be-01",
           "q": "Why ____ you talking? You must have some stories for us.",
           "choices": [
-            "wasn't",
-            "don't",
             "isn't",
-            "aren't"
+            "don't",
+            "aren't",
+            "wasn't"
           ],
-          "answer": 3,
+          "answer": 2,
           "use": "be negative question"
         },
         {
@@ -329,8 +374,8 @@
           "choices": [
             "am",
             "are",
-            "was",
-            "is"
+            "is",
+            "was"
           ],
           "answer": 1,
           "use": "be present"
@@ -339,70 +384,70 @@
           "id": "hw-be-03",
           "q": "Where ____ you when I called last night?",
           "choices": [
+            "were",
             "is",
             "was",
-            "were",
             "are"
           ],
-          "answer": 2,
+          "answer": 0,
           "use": "be past"
         },
         {
           "id": "hw-be-04",
           "q": "The weather ____ sunny now, but it will rain later.",
           "choices": [
+            "are",
             "was",
             "is",
-            "are",
             "were"
           ],
-          "answer": 1,
+          "answer": 2,
           "use": "be present"
         },
         {
           "id": "hw-be-05",
           "q": "The cat ____ hungry this morning.",
           "choices": [
+            "is",
             "was",
-            "are",
             "were",
-            "is"
+            "are"
           ],
-          "answer": 0,
+          "answer": 1,
           "use": "be past"
         },
         {
           "id": "hw-be-06",
           "q": "He ____ my best friend now.",
           "choices": [
-            "was",
             "is",
             "are",
-            "am"
+            "am",
+            "was"
           ],
-          "answer": 1,
+          "answer": 0,
           "use": "be present"
         },
         {
           "id": "hw-be-07",
           "q": "I don't think any of the answers on the test ____ correct.",
           "choices": [
-            "am",
             "is",
             "was",
-            "are"
+            "are",
+            "am"
           ],
-          "answer": 3,
+          "answer": 2,
           "use": "be present plural"
         },
         {
           "id": "hw-be-08",
           "q": "There ____ many reasons why you should brush your teeth after a meal.",
           "choices": [
-            "was",
             "is",
+            "am",
             "are",
-            "am"
+            "was"
           ],
           "answer": 2,
           "use": "there are"
@@ -418,9 +463,9 @@
           "id": "hw-ps-01",
           "q": "Sherry ____ carefully and always pays attention in class.",
           "choices": [
-            "listen",
-            "listens",
             "listening",
+            "listens",
+            "listen",
             "is listen"
           ],
           "answer": 1,
@@ -430,21 +475,21 @@
           "id": "hw-ps-02",
           "q": "Most people from England ____ Japanese.",
           "choices": [
-            "do not speaks",
-            "not speak",
+            "do not speak",
             "does not speak",
-            "do not speak"
+            "not speak",
+            "do not speaks"
           ],
-          "answer": 3,
+          "answer": 0,
           "use": "do not + verb"
         },
         {
           "id": "hw-ps-03",
           "q": "Jimmy and Alexia ____ the rules of the game, so they are explaining them to the other players.",
           "choices": [
+            "understands",
             "understanding",
             "is understand",
-            "understands",
             "understand"
           ],
           "answer": 3,
@@ -454,9 +499,9 @@
           "id": "hw-ps-04",
           "q": "My sister ____ coffee because she is too young.",
           "choices": [
+            "does not drinks",
             "do not drink",
             "not drinks",
-            "does not drinks",
             "does not drink"
           ],
           "answer": 3,
@@ -467,9 +512,9 @@
           "q": "Many students in the class ____ well, because they don't work carefully enough.",
           "choices": [
             "do not spell",
-            "does not spell",
             "not spell",
-            "do not spells"
+            "do not spells",
+            "does not spell"
           ],
           "answer": 0,
           "use": "do not + verb"
@@ -479,11 +524,11 @@
           "q": "I firmly ____ that you can achieve your goals if you practice every day.",
           "choices": [
             "am believe",
+            "believes",
             "believe",
-            "believing",
-            "believes"
+            "believing"
           ],
-          "answer": 1,
+          "answer": 2,
           "use": "I + verb"
         }
       ]
@@ -491,518 +536,885 @@
     {
       "id": "l4-be-present-past",
       "title": "Lesson 4 — Present and Past: Be",
-      "description": "am / is / are / was / were, negatives, questions, and there is / there are.",
+      "description": "am / is / are / was / were with hidden subjects, negatives, questions, tags, there is / are, and error spotting.",
       "items": [
         {
           "id": "l4-01",
-          "q": "I ____ ten years old.",
+          "q": "One of my cousins ____ a pilot.",
           "choices": [
-            "be",
-            "am",
             "is",
-            "are"
+            "are",
+            "were",
+            "am"
           ],
-          "answer": 1,
-          "use": "I am"
+          "answer": 0,
+          "use": "one of → singular"
         },
         {
           "id": "l4-02",
-          "q": "My brother ____ at school now.",
+          "q": "The boxes on the top shelf ____ too heavy for me.",
           "choices": [
-            "am",
             "are",
             "is",
-            "were"
+            "was",
+            "am"
           ],
-          "answer": 2,
-          "use": "he is"
+          "answer": 0,
+          "use": "head noun boxes"
         },
         {
           "id": "l4-03",
-          "q": "We ____ very tired after the race.",
+          "q": "Everyone in my family ____ at the concert last night.",
           "choices": [
-            "is",
-            "are",
+            "were",
             "was",
-            "am"
+            "is",
+            "are"
           ],
           "answer": 1,
-          "use": "we are"
+          "use": "everyone + past"
         },
         {
           "id": "l4-04",
-          "q": "The books ____ on the desk yesterday.",
+          "q": "The teacher, along with her students, ____ in the auditorium now.",
           "choices": [
+            "is",
             "was",
             "were",
-            "is",
             "are"
           ],
-          "answer": 1,
-          "use": "plural past"
+          "answer": 0,
+          "use": "along with → main subject"
         },
         {
           "id": "l4-05",
-          "q": "She ____ sick last week, but she is fine now.",
+          "q": "Each of the gadgets ____ broken when we opened the box.",
           "choices": [
-            "are",
             "is",
             "were",
-            "was"
+            "was",
+            "are"
           ],
-          "answer": 3,
-          "use": "she was"
+          "answer": 2,
+          "use": "each of + past"
         },
         {
           "id": "l4-06",
-          "q": "____ you ready for the quiz?",
+          "q": "Mathematics ____ my favorite subject.",
           "choices": [
-            "Was",
-            "Am",
-            "Is",
-            "Are"
+            "were",
+            "is",
+            "am",
+            "are"
           ],
-          "answer": 3,
-          "use": "question"
+          "answer": 1,
+          "use": "-s noun singular"
         },
         {
           "id": "l4-07",
-          "q": "It ____ cold this morning, so I wore a jacket.",
+          "q": "The scissors ____ on the desk a minute ago, but now they ____ gone.",
           "choices": [
-            "were",
-            "was",
-            "are",
-            "am"
+            "was / is",
+            "was / are",
+            "were / is",
+            "were / are"
           ],
-          "answer": 1,
-          "use": "it was"
+          "answer": 3,
+          "use": "scissors plural"
         },
         {
           "id": "l4-08",
-          "q": "There ____ three cookies left in the jar.",
+          "q": "The news ____ good: the field trip ____ not canceled.",
           "choices": [
-            "is",
-            "am",
-            "are",
-            "was"
+            "are / are",
+            "is / is",
+            "is / are",
+            "are / is"
           ],
-          "answer": 2,
-          "use": "there are"
+          "answer": 1,
+          "use": "news singular"
         },
         {
           "id": "l4-09",
-          "q": "There ____ a big storm last night.",
+          "q": "There ____ a pencil and two erasers in my bag.",
           "choices": [
-            "is",
-            "was",
             "were",
-            "are"
+            "are",
+            "is",
+            "am"
           ],
-          "answer": 1,
-          "use": "there was"
+          "answer": 2,
+          "use": "there + nearest noun"
         },
         {
           "id": "l4-10",
-          "q": "My parents ____ not at home right now.",
+          "q": "There ____ two erasers and a pencil in my bag.",
           "choices": [
-            "is",
             "am",
             "are",
-            "was"
+            "was",
+            "is"
           ],
-          "answer": 2,
-          "use": "negative"
+          "answer": 1,
+          "use": "there + nearest noun"
         },
         {
           "id": "l4-11",
-          "q": "Where ____ you last Saturday?",
+          "q": "There ____ so many people at the park yesterday that we couldn't find a bench.",
           "choices": [
             "are",
-            "is",
+            "were",
             "was",
-            "were"
+            "is"
           ],
-          "answer": 3,
-          "use": "you were"
+          "answer": 1,
+          "use": "there were"
         },
         {
           "id": "l4-12",
-          "q": "Those answers ____ not correct.",
+          "q": "Yesterday it ____ rainy, but today it ____ sunny.",
           "choices": [
-            "are",
-            "is",
-            "am",
-            "was"
+            "was / is",
+            "was / are",
+            "is / was",
+            "were / is"
           ],
           "answer": 0,
-          "use": "plural present"
+          "use": "past vs present"
         },
         {
           "id": "l4-13",
-          "q": "He ____ my best friend when we were in Grade 1.",
+          "q": "The twins ____ at school yesterday, ____ they?",
           "choices": [
-            "are",
-            "were",
-            "was",
-            "is"
+            "wasn't / was",
+            "weren't / were",
+            "aren't / are",
+            "weren't / weren't"
           ],
-          "answer": 2,
-          "use": "he was"
+          "answer": 1,
+          "use": "tag question"
         },
         {
           "id": "l4-14",
-          "q": "The cat ____ hungry. (negative, present)",
-          "choices": [
-            "weren't",
-            "aren't",
-            "wasn't",
-            "isn't"
-          ],
-          "answer": 3,
-          "use": "isn't"
-        },
-        {
-          "id": "l4-15",
-          "q": "Why ____ they late yesterday?",
-          "choices": [
-            "were",
-            "is",
-            "was",
-            "are"
-          ],
-          "answer": 0,
-          "use": "they were"
-        },
-        {
-          "id": "l4-16",
-          "q": "I ____ in the library an hour ago.",
-          "choices": [
-            "was",
-            "is",
-            "were",
-            "am"
-          ],
-          "answer": 0,
-          "use": "I was"
-        },
-        {
-          "id": "l4-17",
-          "q": "The children ____ happy at the party last night.",
+          "q": "How old ____ you when you learned to ride a bike?",
           "choices": [
             "are",
-            "was",
-            "is",
-            "were"
-          ],
-          "answer": 3,
-          "use": "plural past"
-        },
-        {
-          "id": "l4-18",
-          "q": "____ it your birthday today?",
-          "choices": [
-            "Were",
-            "Is",
-            "Are",
-            "Was"
-          ],
-          "answer": 1,
-          "use": "question"
-        },
-        {
-          "id": "l4-19",
-          "q": "\"Were you at the game?\" \"No, we ____.\"",
-          "choices": [
-            "isn't",
-            "wasn't",
-            "aren't",
-            "weren't"
-          ],
-          "answer": 3,
-          "use": "short answer"
-        },
-        {
-          "id": "l4-20",
-          "q": "My best friend and I ____ in the same class this year.",
-          "choices": [
-            "am",
-            "are",
+            "were",
             "was",
             "is"
           ],
           "answer": 1,
-          "use": "compound subject"
+          "use": "wh- question past"
+        },
+        {
+          "id": "l4-15",
+          "q": "\"____ the movie boring?\" \"No, it ____. It was great.\"",
+          "choices": [
+            "Was / wasn't",
+            "Were / weren't",
+            "Is / wasn't",
+            "Was / isn't"
+          ],
+          "answer": 0,
+          "use": "short answer past"
+        },
+        {
+          "id": "l4-16",
+          "q": "\"____ the students in the auditorium?\" \"Yes, they ____.\"",
+          "choices": [
+            "Were / were",
+            "Are / were",
+            "Was / were",
+            "Were / was"
+          ],
+          "answer": 0,
+          "use": "short answer"
+        },
+        {
+          "id": "l4-17",
+          "q": "Why ____ you talking? You must have some stories for us.",
+          "choices": [
+            "isn't",
+            "aren't",
+            "weren't",
+            "don't"
+          ],
+          "answer": 1,
+          "use": "negative question"
+        },
+        {
+          "id": "l4-18",
+          "q": "I don't think any of the answers on the test ____ correct.",
+          "choices": [
+            "was",
+            "is",
+            "am",
+            "are"
+          ],
+          "answer": 3,
+          "use": "any of + plural"
+        },
+        {
+          "id": "l4-19",
+          "q": "My family ____ from Taichung, but my cousins ____ from Tainan.",
+          "choices": [
+            "are / is",
+            "is / are",
+            "are / are",
+            "is / is"
+          ],
+          "answer": 1,
+          "use": "family singular"
+        },
+        {
+          "id": "l4-20",
+          "q": "Which sentence is correct?",
+          "choices": [
+            "The United States is a big country.",
+            "The United State are a big country.",
+            "The United States are a big country.",
+            "The United States were a big country."
+          ],
+          "answer": 0,
+          "use": "error spotting"
+        },
+        {
+          "id": "l4-21",
+          "q": "Which sentence is correct?",
+          "choices": [
+            "Where were you last night ago?",
+            "Where were you last night?",
+            "Where was you last night?",
+            "Where did you were last night?"
+          ],
+          "answer": 1,
+          "use": "error spotting"
+        },
+        {
+          "id": "l4-22",
+          "q": "Which sentence has a mistake?",
+          "choices": [
+            "The children are very tired now.",
+            "The children were very tired after the race.",
+            "The children was very tired after the race.",
+            "The child was very tired after the race."
+          ],
+          "answer": 2,
+          "use": "error spotting"
+        },
+        {
+          "id": "l4-23",
+          "q": "Which sentence has a mistake?",
+          "choices": [
+            "There is many reasons to brush your teeth.",
+            "There were many reasons to brush your teeth.",
+            "There is one reason to brush your teeth.",
+            "There are many reasons to brush your teeth."
+          ],
+          "answer": 0,
+          "use": "error spotting"
+        },
+        {
+          "id": "l4-24",
+          "q": "Change to a question: \"The concert was in the auditorium.\"",
+          "choices": [
+            "Was the concert in the auditorium?",
+            "The concert was in the auditorium, wasn't?",
+            "Did the concert was in the auditorium?",
+            "Were the concert in the auditorium?"
+          ],
+          "answer": 0,
+          "use": "transformation"
+        },
+        {
+          "id": "l4-25",
+          "q": "Change to negative: \"My parents were at home.\"",
+          "choices": [
+            "My parents weren't at home.",
+            "My parents aren't at home.",
+            "My parents didn't at home.",
+            "My parents wasn't at home."
+          ],
+          "answer": 0,
+          "use": "transformation"
+        },
+        {
+          "id": "l4-26",
+          "q": "Neither my brother nor I ____ ready for the quiz yesterday.",
+          "choices": [
+            "is",
+            "are",
+            "were",
+            "was"
+          ],
+          "answer": 3,
+          "use": "neither…nor → nearest subject"
         }
       ]
     },
     {
       "id": "l5-present-simple",
       "title": "Lesson 5 — Present Simple",
-      "description": "Verb + s / es / ies, do / does, negatives, and questions.",
+      "description": "Verb + s / es / ies with hidden subjects, do / does, negatives, wh- questions, be vs do, and error spotting.",
       "items": [
         {
           "id": "l5-01",
-          "q": "The bus ____ at seven every morning.",
+          "q": "One of my friends ____ in Kaohsiung.",
           "choices": [
-            "left",
-            "leave",
-            "leaves",
-            "leaving"
-          ],
-          "answer": 2,
-          "use": "verb + s"
-        },
-        {
-          "id": "l5-02",
-          "q": "Mia ____ her homework every day.",
-          "choices": [
-            "done",
-            "do",
-            "does",
-            "doing"
-          ],
-          "answer": 2,
-          "use": "does"
-        },
-        {
-          "id": "l5-03",
-          "q": "____ your dad work on Saturdays?",
-          "choices": [
-            "Are",
-            "Is",
-            "Do",
-            "Does"
-          ],
-          "answer": 3,
-          "use": "question"
-        },
-        {
-          "id": "l5-04",
-          "q": "____ they like pizza?",
-          "choices": [
-            "Are",
-            "Is",
-            "Do",
-            "Does"
-          ],
-          "answer": 2,
-          "use": "question"
-        },
-        {
-          "id": "l5-05",
-          "q": "The baby ____ a lot at night.",
-          "choices": [
-            "crys",
-            "cries",
-            "cry",
-            "crying"
-          ],
-          "answer": 1,
-          "use": "y → ies"
-        },
-        {
-          "id": "l5-06",
-          "q": "Tom ____ the dishes after dinner.",
-          "choices": [
-            "washs",
-            "washes",
-            "washing",
-            "wash"
-          ],
-          "answer": 1,
-          "use": "sh → es"
-        },
-        {
-          "id": "l5-07",
-          "q": "Cats ____ milk.",
-          "choices": [
-            "likes",
-            "liking",
-            "liked",
-            "like"
-          ],
-          "answer": 3,
-          "use": "plural subject"
-        },
-        {
-          "id": "l5-08",
-          "q": "My mom ____ to work by MRT.",
-          "choices": [
-            "gos",
-            "go",
-            "goes",
-            "going"
-          ],
-          "answer": 2,
-          "use": "o → es"
-        },
-        {
-          "id": "l5-09",
-          "q": "He ____ TV on school nights.",
-          "choices": [
-            "don't watch",
-            "doesn't watch",
-            "not watch",
-            "doesn't watches"
-          ],
-          "answer": 1,
-          "use": "doesn't + verb"
-        },
-        {
-          "id": "l5-10",
-          "q": "We ____ English on Mondays and Wednesdays.",
-          "choices": [
-            "having",
-            "had",
-            "have",
-            "has"
-          ],
-          "answer": 2,
-          "use": "we have"
-        },
-        {
-          "id": "l5-11",
-          "q": "She ____ a big brown dog.",
-          "choices": [
-            "haves",
-            "having",
-            "has",
-            "have"
-          ],
-          "answer": 2,
-          "use": "she has"
-        },
-        {
-          "id": "l5-12",
-          "q": "Water ____ at 100 degrees.",
-          "choices": [
-            "boils",
-            "boiled",
-            "boil",
-            "boiling"
-          ],
-          "answer": 0,
-          "use": "fact"
-        },
-        {
-          "id": "l5-13",
-          "q": "I ____ believe you.",
-          "choices": [
-            "doesn't",
-            "don't",
-            "isn't",
-            "am not"
-          ],
-          "answer": 1,
-          "use": "don't"
-        },
-        {
-          "id": "l5-14",
-          "q": "\"Does she play the piano?\" \"Yes, she ____.\"",
-          "choices": [
-            "do",
-            "does",
-            "is",
-            "plays"
-          ],
-          "answer": 1,
-          "use": "short answer"
-        },
-        {
-          "id": "l5-15",
-          "q": "Ben ____ the bus every day.",
-          "choices": [
-            "misses",
-            "miss",
-            "missing",
-            "missed"
-          ],
-          "answer": 0,
-          "use": "s → es"
-        },
-        {
-          "id": "l5-16",
-          "q": "My friends ____ soccer after school.",
-          "choices": [
-            "is play",
-            "play",
-            "plays",
-            "playing"
-          ],
-          "answer": 1,
-          "use": "plural subject"
-        },
-        {
-          "id": "l5-17",
-          "q": "The teacher ____ our homework every Friday.",
-          "choices": [
-            "is check",
-            "checking",
-            "checks",
-            "check"
-          ],
-          "answer": 2,
-          "use": "verb + s"
-        },
-        {
-          "id": "l5-18",
-          "q": "____ your sister study English?",
-          "choices": [
-            "Do",
-            "Does",
-            "Are",
-            "Is"
-          ],
-          "answer": 1,
-          "use": "question"
-        },
-        {
-          "id": "l5-19",
-          "q": "Kevin ____ his teeth twice a day.",
-          "choices": [
-            "brush",
-            "brushes",
-            "brushing",
-            "brushs"
-          ],
-          "answer": 1,
-          "use": "sh → es"
-        },
-        {
-          "id": "l5-20",
-          "q": "My grandparents ____ in Tainan.",
-          "choices": [
-            "live",
             "is live",
+            "live",
             "living",
             "lives"
           ],
+          "answer": 3,
+          "use": "one of → singular"
+        },
+        {
+          "id": "l5-02",
+          "q": "The boy with the red gloves ____ the piano every day.",
+          "choices": [
+            "practicing",
+            "is practice",
+            "practices",
+            "practice"
+          ],
+          "answer": 2,
+          "use": "subject + phrase"
+        },
+        {
+          "id": "l5-03",
+          "q": "Each of the students ____ a locker.",
+          "choices": [
+            "haves",
+            "has",
+            "have",
+            "is have"
+          ],
+          "answer": 1,
+          "use": "each of → has"
+        },
+        {
+          "id": "l5-04",
+          "q": "Everybody in my class ____ the rules of the game.",
+          "choices": [
+            "knows",
+            "know",
+            "is know",
+            "are knowing"
+          ],
           "answer": 0,
-          "use": "plural subject"
+          "use": "everybody → singular"
+        },
+        {
+          "id": "l5-05",
+          "q": "Nobody ____ to be late for the field trip.",
+          "choices": [
+            "wants",
+            "are wanting",
+            "want",
+            "is want"
+          ],
+          "answer": 0,
+          "use": "nobody → singular"
+        },
+        {
+          "id": "l5-06",
+          "q": "My friends who are in the band ____ me to join.",
+          "choices": [
+            "wants",
+            "want",
+            "are want",
+            "is wanting"
+          ],
+          "answer": 1,
+          "use": "subject + who clause"
+        },
+        {
+          "id": "l5-07",
+          "q": "Either my mom or my dad ____ me up after school.",
+          "choices": [
+            "picks",
+            "are picking",
+            "pick",
+            "picking"
+          ],
+          "answer": 0,
+          "use": "either…or → nearest subject"
+        },
+        {
+          "id": "l5-08",
+          "q": "The people in my town ____ up early to go to the market.",
+          "choices": [
+            "get",
+            "gets",
+            "getting",
+            "is getting"
+          ],
+          "answer": 0,
+          "use": "people plural"
+        },
+        {
+          "id": "l5-09",
+          "q": "My family ____ dinner together every night.",
+          "choices": [
+            "eating",
+            "eat",
+            "are eat",
+            "eats"
+          ],
+          "answer": 3,
+          "use": "family singular"
+        },
+        {
+          "id": "l5-10",
+          "q": "Ben ____ to school by bus, but his sisters ____ their bikes.",
+          "choices": [
+            "go / ride",
+            "goes / rides",
+            "go / rides",
+            "goes / ride"
+          ],
+          "answer": 3,
+          "use": "pair"
+        },
+        {
+          "id": "l5-11",
+          "q": "She ____ English at a high school and ____ to work by MRT.",
+          "choices": [
+            "teaches / goes",
+            "teachs / gos",
+            "teaches / go",
+            "teach / goes"
+          ],
+          "answer": 0,
+          "use": "-es spelling"
+        },
+        {
+          "id": "l5-12",
+          "q": "My cousin ____ math every evening and ____ hard on every test.",
+          "choices": [
+            "studies / tries",
+            "studies / trys",
+            "studys / trys",
+            "study / tries"
+          ],
+          "answer": 0,
+          "use": "y → ies"
+        },
+        {
+          "id": "l5-13",
+          "q": "Tom ____ video games on weekends and ____ playing with his friends.",
+          "choices": [
+            "plaies / enjoies",
+            "play / enjoys",
+            "plays / enjoys",
+            "plays / enjoies"
+          ],
+          "answer": 2,
+          "use": "vowel + y → s"
+        },
+        {
+          "id": "l5-14",
+          "q": "What time ____ the store ____ on Sundays?",
+          "choices": [
+            "is / open",
+            "do / open",
+            "does / opens",
+            "does / open"
+          ],
+          "answer": 3,
+          "use": "wh- question"
+        },
+        {
+          "id": "l5-15",
+          "q": "Where ____ your cousins ____?",
+          "choices": [
+            "are / live",
+            "does / live",
+            "do / lives",
+            "do / live"
+          ],
+          "answer": 3,
+          "use": "wh- question plural"
+        },
+        {
+          "id": "l5-16",
+          "q": "How often ____ he ____ the piano?",
+          "choices": [
+            "do / practice",
+            "does / practice",
+            "is / practice",
+            "does / practices"
+          ],
+          "answer": 1,
+          "use": "wh- question"
+        },
+        {
+          "id": "l5-17",
+          "q": "____ your brother good at soccer?",
+          "choices": [
+            "Is",
+            "Does",
+            "Do",
+            "Are"
+          ],
+          "answer": 0,
+          "use": "be vs do"
+        },
+        {
+          "id": "l5-18",
+          "q": "____ your brother like soccer?",
+          "choices": [
+            "Is",
+            "Are",
+            "Does",
+            "Do"
+          ],
+          "answer": 2,
+          "use": "be vs do"
+        },
+        {
+          "id": "l5-19",
+          "q": "Water ____ at 100 degrees, but it ____ not boil quickly on a cold day.",
+          "choices": [
+            "boil / does",
+            "boil / do",
+            "boils / do",
+            "boils / does"
+          ],
+          "answer": 3,
+          "use": "fact + negative"
+        },
+        {
+          "id": "l5-20",
+          "q": "Most people from England ____ Japanese.",
+          "choices": [
+            "does not speak",
+            "do not speak",
+            "do not speaks",
+            "not speak"
+          ],
+          "answer": 1,
+          "use": "most people → plural"
         },
         {
           "id": "l5-21",
-          "q": "\"Do you like math?\" \"No, I ____.\"",
+          "q": "\"Does she play the piano?\" \"Yes, she ____, and she ____ the violin too.\"",
           "choices": [
-            "not",
-            "doesn't",
-            "am not",
-            "don't"
+            "does / plays",
+            "does / play",
+            "is / plays",
+            "do / plays"
           ],
-          "answer": 3,
-          "use": "short answer"
+          "answer": 0,
+          "use": "short answer + verb-s"
         },
         {
           "id": "l5-22",
-          "q": "The store ____ at nine o'clock on Sundays. (negative)",
+          "q": "Which sentence is correct?",
           "choices": [
-            "does not opens",
-            "do not open",
-            "does not open",
-            "not opens"
+            "He doesn't watch TV on school nights.",
+            "He doesn't watches TV on school nights.",
+            "He don't watch TV on school nights.",
+            "He not watch TV on school nights."
+          ],
+          "answer": 0,
+          "use": "error spotting"
+        },
+        {
+          "id": "l5-23",
+          "q": "Which sentence is correct?",
+          "choices": [
+            "One of the answer are wrong.",
+            "One of the answers were wrong every day.",
+            "One of the answers are wrong.",
+            "One of the answers is wrong."
+          ],
+          "answer": 3,
+          "use": "error spotting"
+        },
+        {
+          "id": "l5-24",
+          "q": "Which sentence has a mistake?",
+          "choices": [
+            "My dog does not like the ball.",
+            "My dogs likes to play with the ball.",
+            "My dog likes to play with the ball.",
+            "My dogs like to play with the ball."
+          ],
+          "answer": 1,
+          "use": "error spotting"
+        },
+        {
+          "id": "l5-25",
+          "q": "Which sentence has a mistake?",
+          "choices": [
+            "Does your sister drinks coffee?",
+            "Your sister does not drink coffee.",
+            "Does your sister drink coffee?",
+            "Do your sisters drink coffee?"
+          ],
+          "answer": 0,
+          "use": "error spotting"
+        },
+        {
+          "id": "l5-26",
+          "q": "Change to negative: \"Sherry listens carefully in class.\"",
+          "choices": [
+            "Sherry not listen carefully in class.",
+            "Sherry do not listen carefully in class.",
+            "Sherry does not listen carefully in class.",
+            "Sherry does not listens carefully in class."
           ],
           "answer": 2,
-          "use": "does not + verb"
+          "use": "transformation"
+        },
+        {
+          "id": "l5-27",
+          "q": "Change to a question: \"Jimmy and Alexia understand the rules.\"",
+          "choices": [
+            "Do Jimmy and Alexia understands the rules?",
+            "Does Jimmy and Alexia understand the rules?",
+            "Do Jimmy and Alexia understand the rules?",
+            "Are Jimmy and Alexia understand the rules?"
+          ],
+          "answer": 2,
+          "use": "transformation"
+        },
+        {
+          "id": "l5-28",
+          "q": "The homework ____ easy, but it ____ a long time.",
+          "choices": [
+            "are / take",
+            "is / take",
+            "are / takes",
+            "is / takes"
+          ],
+          "answer": 3,
+          "use": "be + verb-s"
+        }
+      ]
+    },
+    {
+      "id": "transform-neg-question",
+      "title": "Challenge — Negatives and Questions",
+      "description": "Change statements into negatives, questions, and short answers, the way the workbook asks you to rewrite sentences.",
+      "items": [
+        {
+          "id": "tr-01",
+          "q": "Negative: \"The weather is sunny now.\"",
+          "choices": [
+            "The weather not is sunny now.",
+            "The weather doesn't sunny now.",
+            "The weather isn't sunny now.",
+            "The weather wasn't sunny now."
+          ],
+          "answer": 2,
+          "use": "be negative"
+        },
+        {
+          "id": "tr-02",
+          "q": "Question: \"Those girls are mean to the new student.\"",
+          "choices": [
+            "Those girls are mean to the new student, are?",
+            "Do those girls mean to the new student?",
+            "Is those girls mean to the new student?",
+            "Are those girls mean to the new student?"
+          ],
+          "answer": 3,
+          "use": "be question"
+        },
+        {
+          "id": "tr-03",
+          "q": "Negative: \"The cat was hungry this morning.\"",
+          "choices": [
+            "The cat wasn't hungry this morning.",
+            "The cat weren't hungry this morning.",
+            "The cat isn't hungry this morning.",
+            "The cat didn't hungry this morning."
+          ],
+          "answer": 0,
+          "use": "be past negative"
+        },
+        {
+          "id": "tr-04",
+          "q": "Question: \"You were at the library last night.\"",
+          "choices": [
+            "Were you at the library last night?",
+            "Did you were at the library last night?",
+            "Was you at the library last night?",
+            "Are you at the library last night?"
+          ],
+          "answer": 0,
+          "use": "be past question"
+        },
+        {
+          "id": "tr-05",
+          "q": "Negative: \"My sister drinks coffee.\"",
+          "choices": [
+            "My sister doesn't drinks coffee.",
+            "My sister isn't drink coffee.",
+            "My sister don't drink coffee.",
+            "My sister doesn't drink coffee."
+          ],
+          "answer": 3,
+          "use": "does not + base"
+        },
+        {
+          "id": "tr-06",
+          "q": "Question: \"Sherry listens carefully in class.\"",
+          "choices": [
+            "Does Sherry listen carefully in class?",
+            "Does Sherry listens carefully in class?",
+            "Do Sherry listen carefully in class?",
+            "Is Sherry listen carefully in class?"
+          ],
+          "answer": 0,
+          "use": "does + base"
+        },
+        {
+          "id": "tr-07",
+          "q": "Negative: \"Jimmy and Alexia understand the rules.\"",
+          "choices": [
+            "Jimmy and Alexia doesn't understand the rules.",
+            "Jimmy and Alexia don't understand the rules.",
+            "Jimmy and Alexia don't understands the rules.",
+            "Jimmy and Alexia aren't understand the rules."
+          ],
+          "answer": 1,
+          "use": "do not + base"
+        },
+        {
+          "id": "tr-08",
+          "q": "Question: \"The store opens at nine.\"",
+          "choices": [
+            "Is the store open at nine?",
+            "Does the store opens at nine?",
+            "Does the store open at nine?",
+            "Do the store open at nine?"
+          ],
+          "answer": 2,
+          "use": "does + base"
+        },
+        {
+          "id": "tr-09",
+          "q": "Short answer: \"Is your brother a teacher?\"",
+          "choices": [
+            "No, he wasn't.",
+            "No, he not.",
+            "No, he isn't.",
+            "No, he doesn't."
+          ],
+          "answer": 2,
+          "use": "short answer be"
+        },
+        {
+          "id": "tr-10",
+          "q": "Short answer: \"Does your brother teach math?\"",
+          "choices": [
+            "Yes, he does.",
+            "Yes, he teaches.",
+            "Yes, he is.",
+            "Yes, he do."
+          ],
+          "answer": 0,
+          "use": "short answer do"
+        },
+        {
+          "id": "tr-11",
+          "q": "Short answer: \"Were the answers on the test correct?\"",
+          "choices": [
+            "No, they aren't correct yesterday.",
+            "No, they didn't.",
+            "No, they wasn't.",
+            "No, they weren't."
+          ],
+          "answer": 3,
+          "use": "short answer past"
+        },
+        {
+          "id": "tr-12",
+          "q": "Short answer: \"Do most people in England speak Japanese?\"",
+          "choices": [
+            "No, they doesn't.",
+            "No, they aren't.",
+            "No, they don't.",
+            "No, they not."
+          ],
+          "answer": 2,
+          "use": "short answer plural"
+        },
+        {
+          "id": "tr-13",
+          "q": "Wh- question for the answer \"She lives in Taipei.\"",
+          "choices": [
+            "Where do she live?",
+            "Where does she live?",
+            "Where does she lives?",
+            "Where is she live?"
+          ],
+          "answer": 1,
+          "use": "wh- question"
+        },
+        {
+          "id": "tr-14",
+          "q": "Wh- question for the answer \"They were at the park.\"",
+          "choices": [
+            "Where were they?",
+            "Where did they were?",
+            "Where was they?",
+            "Where are they?"
+          ],
+          "answer": 0,
+          "use": "wh- question past"
+        },
+        {
+          "id": "tr-15",
+          "q": "Wh- question for the answer \"The bus leaves at seven.\"",
+          "choices": [
+            "What time does the bus leave?",
+            "What time do the bus leave?",
+            "What time is the bus leave?",
+            "What time does the bus leaves?"
+          ],
+          "answer": 0,
+          "use": "wh- question"
+        },
+        {
+          "id": "tr-16",
+          "q": "Tag: \"Your parents aren't at home, ____?\"",
+          "choices": [
+            "aren't they",
+            "is they",
+            "do they",
+            "are they"
+          ],
+          "answer": 3,
+          "use": "tag question"
+        },
+        {
+          "id": "tr-17",
+          "q": "Tag: \"The test was hard, ____?\"",
+          "choices": [
+            "didn't it",
+            "isn't it",
+            "was it",
+            "wasn't it"
+          ],
+          "answer": 3,
+          "use": "tag question"
+        },
+        {
+          "id": "tr-18",
+          "q": "Tag: \"Ben misses the bus every day, ____?\"",
+          "choices": [
+            "does he",
+            "don't he",
+            "isn't he",
+            "doesn't he"
+          ],
+          "answer": 3,
+          "use": "tag question"
         }
       ]
     }
