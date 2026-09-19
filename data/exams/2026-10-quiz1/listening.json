@@ -1,6 +1,6 @@
 {
   "title": "Listening Comprehension",
-  "intro": "Listen to a dialogue, then answer multiple choice questions. These are generated review dialogues on Module 1 topics, because the quiz dialogue is only played in class.",
+  "intro": "Listen to a dialogue, then answer multiple choice questions. Listen for details (numbers, times, names), but also for reasons, feelings, and what the speakers will do next. These are generated review dialogues on Module 1 topics, because the quiz dialogue is only played in class.",
   "dialogues": [
     {
       "id": "the_flop_and_the_patent",
@@ -8,79 +8,119 @@
       "lines": [
         {
           "speaker": "Ava",
-          "text": "Leo, why does your robot keep making that popping noise?"
+          "text": "Leo, why does your robot keep making that popping noise? It sounds like an old car."
         },
         {
           "speaker": "Leo",
-          "text": "The motor sputters every time I turn it on. My first design was a complete flop."
+          "text": "The motor sputters every time I turn it on. I have tried three batteries, and it still stops after ten seconds."
         },
         {
           "speaker": "Ava",
-          "text": "Don't give up. Thomas Edison tested thousands of ideas before his incandescent bulb worked."
+          "text": "So the battery is not the problem. Did you check the wires?"
         },
         {
           "speaker": "Leo",
-          "text": "That's true. I will build a new prototype with a bigger battery this weekend."
+          "text": "Not yet. Honestly, I was ready to give up. My first design was a complete flop, and this one is not much better."
         },
         {
           "speaker": "Ava",
-          "text": "If it works, you should apply for a patent so nobody can copy your gadget."
+          "text": "Don't say that. Thomas Edison tested thousands of materials before his incandescent bulb worked. He called every failure a lesson."
         },
         {
           "speaker": "Leo",
-          "text": "Good idea. First I need it to run for more than ten seconds!"
+          "text": "That is easy to say when you are Edison."
+        },
+        {
+          "speaker": "Ava",
+          "text": "He was not Edison when he started, either. Look, the science fair is on the twentieth. That gives you eleven days."
+        },
+        {
+          "speaker": "Leo",
+          "text": "Okay. This weekend I will take the whole thing apart, check every wire, and build a new prototype with a bigger battery."
+        },
+        {
+          "speaker": "Ava",
+          "text": "And if it works, you should apply for a patent so nobody can copy your gadget."
+        },
+        {
+          "speaker": "Leo",
+          "text": "A patent? Ava, first I need it to run for more than ten seconds!"
+        },
+        {
+          "speaker": "Ava",
+          "text": "Fine. Ten seconds first, patent later. I will bring my dad's toolbox on Saturday."
         }
       ],
       "questions": [
         {
           "q": "What problem does Leo's robot have?",
           "choices": [
-            "The motor sputters and makes popping noises.",
-            "It has no wheels.",
-            "It is painted the wrong color.",
-            "It is too heavy to carry."
+            "It is too heavy to carry.",
+            "It cannot be turned on at all.",
+            "The wheels fall off.",
+            "The motor sputters and stops after ten seconds."
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Why does Ava say the battery is probably NOT the problem?",
+          "choices": [
+            "Because Edison never used batteries",
+            "Because the robot has no battery",
+            "Because Leo already tried three batteries",
+            "Because the battery is new"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "How does Leo feel at the beginning of the conversation?",
+          "choices": [
+            "Proud of his robot",
+            "Discouraged and ready to give up",
+            "Excited about the science fair",
+            "Angry at Ava"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Why does Ava talk about Thomas Edison?",
+          "choices": [
+            "To show that failures are part of inventing and Leo should keep going",
+            "To explain how a light bulb works",
+            "To tell Leo to build a light bulb instead",
+            "To prove that Leo's robot is a flop"
           ],
           "answer": 0
         },
         {
-          "q": "What does Leo call his first design?",
+          "q": "When is the science fair?",
           "choices": [
-            "A prestigious success",
-            "A locomotive",
-            "A complete flop",
-            "A cylinder"
+            "In ten seconds",
+            "This Saturday",
+            "Next month",
+            "On the twentieth, eleven days away"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "What does Leo mean when he says, \"That is easy to say when you are Edison\"?",
+          "choices": [
+            "He wants to be called Edison.",
+            "He thinks Edison was a bad inventor.",
+            "He thinks it was easier for a famous inventor than for him.",
+            "He does not know who Edison was."
           ],
           "answer": 2
         },
         {
-          "q": "Why does Ava mention Thomas Edison?",
+          "q": "What will happen on Saturday?",
           "choices": [
-            "To tell Leo about a train",
-            "To encourage Leo not to give up",
-            "To ask Leo for a light bulb",
-            "To say robots are a bad idea"
+            "Leo will apply for a patent.",
+            "Ava will buy a new robot.",
+            "The science fair will begin.",
+            "Ava will bring her dad's toolbox and they will rebuild the robot."
           ],
-          "answer": 1
-        },
-        {
-          "q": "What will Leo do this weekend?",
-          "choices": [
-            "Visit an auditorium",
-            "Apply for a patent",
-            "Build a new prototype with a bigger battery",
-            "Sell his robot at the market"
-          ],
-          "answer": 2
-        },
-        {
-          "q": "Why does Ava think Leo should get a patent?",
-          "choices": [
-            "So he can win a prize",
-            "So nobody can copy his gadget",
-            "So the robot runs longer",
-            "So the motor stops sputtering"
-          ],
-          "answer": 1
+          "answer": 3
         }
       ]
     },
@@ -90,79 +130,123 @@
       "lines": [
         {
           "speaker": "Mr. Chen",
-          "text": "Molly, I heard you want to start a recycling club at school."
+          "text": "Molly, I heard you want to start a recycling club. Tell me about it."
         },
         {
           "speaker": "Molly",
-          "text": "Yes! My objective is to cut the trash in our cafeteria in half by December."
+          "text": "Yes! Last week I counted the trash in the cafeteria. We fill six big bags every lunch, and about half of it is paper and plastic bottles."
         },
         {
           "speaker": "Mr. Chen",
-          "text": "That is a big goal. How will you begin?"
+          "text": "Six bags a day? That is a lot more than I expected."
         },
         {
           "speaker": "Molly",
-          "text": "First, I will put labeled bins next to every trash can. Then I will give a short talk in the auditorium to explain what goes where."
+          "text": "That is why my objective is to cut the cafeteria trash in half by December."
         },
         {
           "speaker": "Mr. Chen",
-          "text": "You are evidently very passionate about this. I can help you order the bins."
+          "text": "That is a big goal for one semester. How will you begin?"
         },
         {
           "speaker": "Molly",
-          "text": "Thank you! Every small contribution makes a difference."
+          "text": "First, I will put a labeled bin next to every trash can, one for paper and one for bottles. Then I will give a short talk in the auditorium so everyone knows what goes where."
+        },
+        {
+          "speaker": "Mr. Chen",
+          "text": "Some students will not listen to a talk. What about them?"
+        },
+        {
+          "speaker": "Molly",
+          "text": "I thought about that. The class that recycles the most each month wins ten extra minutes of recess."
+        },
+        {
+          "speaker": "Mr. Chen",
+          "text": "Now that will get their attention. You are evidently very passionate about this."
+        },
+        {
+          "speaker": "Molly",
+          "text": "My cousin's town started recycling forty percent more after one girl began a club. If she can do it, so can we."
+        },
+        {
+          "speaker": "Mr. Chen",
+          "text": "All right. I can order the bins, but you need to write the talk yourself. Bring me a draft by Friday."
+        },
+        {
+          "speaker": "Molly",
+          "text": "Deal. Every small contribution makes a difference."
         }
       ],
       "questions": [
         {
-          "q": "What does Molly want to start?",
+          "q": "How much trash does the cafeteria make every lunch?",
           "choices": [
-            "A YouTube channel",
-            "A science fair",
-            "A recycling club",
-            "A running team"
+            "Two big bags",
+            "Forty bags",
+            "Six big bags",
+            "Ten bags"
           ],
           "answer": 2
         },
         {
           "q": "What is Molly's objective?",
           "choices": [
-            "To move the cafeteria",
             "To cut the cafeteria trash in half by December",
-            "To buy a new trash can",
+            "To close the cafeteria",
+            "To buy new trash cans",
             "To give a speech every day"
-          ],
-          "answer": 1
-        },
-        {
-          "q": "What will Molly do first?",
-          "choices": [
-            "Give a talk in the auditorium",
-            "Write to the city council",
-            "Put labeled bins next to every trash can",
-            "Order new tables"
-          ],
-          "answer": 2
-        },
-        {
-          "q": "Where will Molly give her short talk?",
-          "choices": [
-            "In the auditorium",
-            "On the bus",
-            "In the cafeteria",
-            "In the park"
           ],
           "answer": 0
         },
         {
-          "q": "How will Mr. Chen help?",
+          "q": "Why is Mr. Chen surprised?",
           "choices": [
-            "He will cancel the club.",
-            "He will help order the bins.",
-            "He will give the talk for her.",
-            "He will collect the cans himself."
+            "The bins are too expensive.",
+            "The auditorium is closed.",
+            "Molly is too young to start a club.",
+            "The cafeteria makes more trash than he expected."
           ],
-          "answer": 1
+          "answer": 3
+        },
+        {
+          "q": "What is Molly's plan for students who will not listen to her talk?",
+          "choices": [
+            "She will take away their lunch.",
+            "She will ask their parents.",
+            "She will give the talk twice.",
+            "The class that recycles the most wins extra recess."
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Why does Molly mention her cousin's town?",
+          "choices": [
+            "To explain where she was born",
+            "To complain about her cousin",
+            "To show that one person's club really can make a big difference",
+            "To ask Mr. Chen for a trip"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "What does Mr. Chen agree to do?",
+          "choices": [
+            "Count the trash every day",
+            "Write the talk",
+            "Give the extra recess himself",
+            "Order the bins"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "What must Molly do by Friday?",
+          "choices": [
+            "Bring Mr. Chen a draft of her talk",
+            "Win the recess prize",
+            "Put out all the bins",
+            "Cut the trash in half"
+          ],
+          "answer": 0
         }
       ]
     },
@@ -176,75 +260,123 @@
         },
         {
           "speaker": "Sam",
-          "text": "Only with my cousin. He can maneuver his chair around anyone."
+          "text": "Only in my cousin's driveway. He plays for a club team, and he can maneuver his chair around anyone."
         },
         {
           "speaker": "Coach Rivera",
-          "text": "Speed and quick acceleration matter, but passing matters more. Let's see you pass to Jordan."
+          "text": "Good. Then you know the two-push rule. Push twice, then you must dribble, pass, or shoot."
         },
         {
           "speaker": "Sam",
-          "text": "Okay. Should I push forward while I pass?"
+          "text": "I know it, but I forget it when I get excited. My cousin says I travel more than a school bus."
         },
         {
           "speaker": "Coach Rivera",
-          "text": "Yes. Keep your eyes up, not on the wheels. Nice! You have good control."
+          "text": "We will fix that. A lot of new players think speed and acceleration matter most. They do not. Passing matters more."
+        },
+        {
+          "speaker": "Sam",
+          "text": "Really? I thought you would want the fastest players."
+        },
+        {
+          "speaker": "Coach Rivera",
+          "text": "A fast player who loses the ball helps the other team. Let's see you pass to Jordan while you are moving."
+        },
+        {
+          "speaker": "Sam",
+          "text": "Okay. Should I push forward while I pass, or stop first?"
+        },
+        {
+          "speaker": "Coach Rivera",
+          "text": "Keep moving. And keep your eyes up, not on your wheels. Nice! That was a clean pass."
         },
         {
           "speaker": "Sam",
           "text": "Thanks. My impulse was to look down, but I remembered what you said."
+        },
+        {
+          "speaker": "Coach Rivera",
+          "text": "That is exactly the habit I am looking for. Practice is Tuesdays and Thursdays at four. Can you make both?"
+        },
+        {
+          "speaker": "Sam",
+          "text": "Tuesdays are fine. On Thursdays I have piano until four thirty, but I can come right after."
+        },
+        {
+          "speaker": "Coach Rivera",
+          "text": "Thirty minutes late is better than not at all. See you Tuesday."
         }
       ],
       "questions": [
         {
-          "q": "Where does this conversation take place?",
+          "q": "Where has Sam played wheelchair basketball before?",
           "choices": [
-            "At a recycling center",
-            "At wheelchair basketball tryouts",
-            "At a train station",
-            "In a science lab"
-          ],
-          "answer": 1
-        },
-        {
-          "q": "Who has Sam played with before?",
-          "choices": [
-            "His cousin",
-            "Jordan",
-            "Coach Rivera",
-            "His teacher"
-          ],
-          "answer": 0
-        },
-        {
-          "q": "According to the coach, what matters most?",
-          "choices": [
-            "Acceleration",
-            "Speed",
-            "A new chair",
-            "Passing"
-          ],
-          "answer": 3
-        },
-        {
-          "q": "What does the coach tell Sam to do with his eyes?",
-          "choices": [
-            "Look at the wheels",
-            "Close them while passing",
-            "Keep them up, not on the wheels",
-            "Watch the coach"
+            "At the Paralympics",
+            "In a gym class",
+            "In his cousin's driveway",
+            "On a school team"
           ],
           "answer": 2
         },
         {
-          "q": "What was Sam's impulse?",
+          "q": "What is the two-push rule?",
           "choices": [
-            "To look down",
-            "To leave the gym",
-            "To pass to the coach",
-            "To stop pushing"
+            "A player may only push twice in a game.",
+            "After two pushes, a player must dribble, pass, or shoot.",
+            "Two players must push the ball together.",
+            "A player must pass after every push."
           ],
-          "answer": 0
+          "answer": 1
+        },
+        {
+          "q": "What does Sam mean when he says he \"travels more than a school bus\"?",
+          "choices": [
+            "He rides the bus to practice.",
+            "He often breaks the two-push rule.",
+            "He is faster than a bus.",
+            "He lives far away."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "According to the coach, what matters most?",
+          "choices": [
+            "Speed",
+            "A new chair",
+            "Passing",
+            "Acceleration"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Why does the coach say a fast player who loses the ball helps the other team?",
+          "choices": [
+            "Because fast players get tired",
+            "Because the coach does not like speed",
+            "Because the other team likes fast players",
+            "Because losing the ball gives the other team a chance to score"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Why is the coach pleased with Sam at the end?",
+          "choices": [
+            "Sam was the fastest player.",
+            "Sam brought his cousin.",
+            "Sam scored a basket.",
+            "Sam remembered to keep his eyes up instead of following his impulse."
+          ],
+          "answer": 3
+        },
+        {
+          "q": "What will Sam do on Thursdays?",
+          "choices": [
+            "Come at four o'clock",
+            "Skip practice",
+            "Come to practice about thirty minutes late, after piano",
+            "Play piano at the gym"
+          ],
+          "answer": 2
         }
       ]
     },
@@ -254,79 +386,269 @@
       "lines": [
         {
           "speaker": "Grace",
-          "text": "Did you finish reading about William and the windmill?"
+          "text": "Did you finish the chapter about William and the windmill?"
         },
         {
           "speaker": "Noah",
-          "text": "Yes. His village was impoverished, and there was no rain, so the crops died."
+          "text": "I did. I could not stop reading. His village was impoverished, and then the rain stopped, so the crops died."
         },
         {
           "speaker": "Grace",
-          "text": "He found a picture of a windmill in a library book and built one from junk parts, like an old bicycle."
+          "text": "And his family could not pay for school anymore. That was the part that got me. He was only fourteen."
         },
         {
           "speaker": "Noah",
-          "text": "People said he was eccentric, but the windmill made electricity for his house."
+          "text": "Right, so he went to the library instead. He found a picture of a windmill in a science book, and he could barely read the English."
         },
         {
           "speaker": "Grace",
-          "text": "Later he built a bigger one that pumped water to irrigate the fields."
+          "text": "But he understood the picture. That is what I think the author wants us to notice. He learned from the diagram, not the words."
         },
         {
           "speaker": "Noah",
-          "text": "That is why the story is called Winds of Hope. One idea changed the whole village."
+          "text": "He built the first one out of junk: an old bicycle, a fan blade, and pipes from the scrap yard. People in the village said he was crazy. Even his mother was worried."
+        },
+        {
+          "speaker": "Grace",
+          "text": "They called him eccentric, but the windmill made enough electricity to light his house. Then what happened?"
+        },
+        {
+          "speaker": "Noah",
+          "text": "Later he built a bigger one that pumped water to irrigate the fields, so the village could grow food even without rain."
+        },
+        {
+          "speaker": "Grace",
+          "text": "So the same people who laughed at him ended up drinking his water."
+        },
+        {
+          "speaker": "Noah",
+          "text": "Exactly. That is why I think the story is called Winds of Hope. The wind did not change. What changed was that one boy refused to give up."
+        },
+        {
+          "speaker": "Grace",
+          "text": "Let's use that as our central idea for the poster. Can you draw the windmill?"
+        },
+        {
+          "speaker": "Noah",
+          "text": "If you write the sentences. Meet in the library at lunch?"
         }
       ],
       "questions": [
         {
-          "q": "What problem did William's village have?",
+          "q": "What two problems did William's village have?",
           "choices": [
-            "The train stopped coming.",
-            "The school was closed.",
-            "It had too much water.",
-            "It was impoverished and there was no rain, so crops died."
+            "It had too much rain and too many schools.",
+            "The trains stopped and the school burned down.",
+            "The library closed and the roads flooded.",
+            "It was impoverished, and the rain stopped so the crops died."
           ],
           "answer": 3
         },
         {
-          "q": "Where did William find the idea for the windmill?",
+          "q": "Why did William go to the library instead of school?",
           "choices": [
-            "On television",
-            "In a dream",
-            "From his teacher",
-            "In a library book"
+            "The teacher sent him there.",
+            "His family could no longer pay for school.",
+            "He was too old for school.",
+            "The school was too far away."
           ],
-          "answer": 3
+          "answer": 1
         },
         {
-          "q": "What did William use to build the windmill?",
+          "q": "According to Grace, what does the author want readers to notice?",
           "choices": [
-            "Junk parts, like an old bicycle",
-            "New parts from a store",
-            "Wood from the forest",
-            "A locomotive engine"
+            "The library had many science books.",
+            "William was a fast reader.",
+            "William learned from the diagram even though he could barely read the words.",
+            "William liked pictures more than words."
           ],
-          "answer": 0
+          "answer": 2
         },
         {
-          "q": "What did the first windmill do?",
+          "q": "How did the villagers feel about William at first?",
           "choices": [
-            "Made electricity for his house",
-            "Played music",
-            "Cooled the village",
-            "Pumped water to the fields"
+            "They gave him money for parts.",
+            "They thought he was crazy and called him eccentric.",
+            "They asked him to build them windmills.",
+            "They did not notice him."
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "q": "What did the bigger windmill do?",
           "choices": [
-            "Powered a car",
-            "Charged phones",
             "Pumped water to irrigate the fields",
-            "Lit the school"
+            "Lit the school",
+            "Powered a car",
+            "Charged phones"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does Grace mean when she says the people \"ended up drinking his water\"?",
+          "choices": [
+            "William sold bottled water.",
+            "The same people who laughed at him later benefited from his invention.",
+            "The windmill made the water taste better.",
+            "The villagers were thirsty."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "According to Noah, why is the story called Winds of Hope?",
+          "choices": [
+            "The village was named Hope.",
+            "The book is about the weather.",
+            "The wind was the same, but one boy who refused to give up changed everything.",
+            "The wind became stronger."
           ],
           "answer": 2
+        },
+        {
+          "q": "What will Grace and Noah do next?",
+          "choices": [
+            "Build a windmill",
+            "Visit William's village",
+            "Read the next chapter aloud",
+            "Meet in the library at lunch to make a poster"
+          ],
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "the_inspector_visit",
+      "title": "The Inspector's Visit",
+      "lines": [
+        {
+          "speaker": "Ms. Park",
+          "text": "Class, a safety inspector is coming on Thursday morning. She will check the science lab and the auditorium."
+        },
+        {
+          "speaker": "Diego",
+          "text": "Are we in trouble? Is that why she is coming?"
+        },
+        {
+          "speaker": "Ms. Park",
+          "text": "Not at all. Inspectors visit every school in the district once a year. Their job is to find problems before anyone gets hurt."
+        },
+        {
+          "speaker": "Diego",
+          "text": "So what does she look for?"
+        },
+        {
+          "speaker": "Ms. Park",
+          "text": "Things like blocked exits, broken plugs, chemicals stored in the wrong cabinet. Last year she found a fire extinguisher that was ten years old."
+        },
+        {
+          "speaker": "Diego",
+          "text": "Ten years! Did it still work?"
+        },
+        {
+          "speaker": "Ms. Park",
+          "text": "Nobody wanted to find out. The school replaced it the same week. That is exactly why her visit is useful."
+        },
+        {
+          "speaker": "Diego",
+          "text": "Can we help get ready?"
+        },
+        {
+          "speaker": "Ms. Park",
+          "text": "Yes. Today I need two volunteers to take the boxes away from the back door of the lab. Tomorrow I need someone to check that every plug cover in the room is on."
+        },
+        {
+          "speaker": "Diego",
+          "text": "I can do the boxes today, but tomorrow I have a dentist appointment in the afternoon."
+        },
+        {
+          "speaker": "Ms. Park",
+          "text": "Then do the plugs in the morning before class starts. And Diego, please do not move the chemicals. That part is for adults only."
+        },
+        {
+          "speaker": "Diego",
+          "text": "Got it. Boxes today, plugs tomorrow morning, no chemicals."
+        }
+      ],
+      "questions": [
+        {
+          "q": "When is the inspector coming?",
+          "choices": [
+            "Today after class",
+            "Tomorrow afternoon",
+            "Thursday morning",
+            "Next week"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Why does Diego ask, \"Are we in trouble?\"",
+          "choices": [
+            "He forgot his homework.",
+            "He does not like Ms. Park.",
+            "He thinks the inspector is coming because the class did something wrong.",
+            "He broke a plug."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "According to Ms. Park, what is an inspector's job?",
+          "choices": [
+            "To punish students",
+            "To give grades to teachers",
+            "To find problems before anyone gets hurt",
+            "To sell fire extinguishers"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "What did the inspector find last year?",
+          "choices": [
+            "A broken window",
+            "Chemicals in the hallway",
+            "A blocked exit",
+            "A fire extinguisher that was ten years old"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "What does Ms. Park mean when she says, \"Nobody wanted to find out\"?",
+          "choices": [
+            "The inspector did not tell anyone.",
+            "It was safer to replace the extinguisher than to test whether it still worked.",
+            "The students were not curious.",
+            "The extinguisher was hidden."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "What will Diego do today?",
+          "choices": [
+            "Go to the dentist",
+            "Check the plug covers",
+            "Move the chemicals",
+            "Move the boxes away from the lab's back door"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Why will Diego check the plugs in the morning instead of the afternoon?",
+          "choices": [
+            "The lab is closed in the afternoon.",
+            "The inspector comes in the afternoon.",
+            "He has a dentist appointment in the afternoon.",
+            "Ms. Park will be away."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Which job is for adults only?",
+          "choices": [
+            "Moving the chemicals",
+            "Opening the back door",
+            "Checking the plug covers",
+            "Moving the boxes"
+          ],
+          "answer": 0
         }
       ]
     }

@@ -49,7 +49,7 @@ App exam id: `2026-10-quiz1`
 | Spelling / Phonics | Done | 3 dictation lists, 5 sort games, 2 homework-format MCQ sets (find the short vowel word; which letters make the long vowel) |
 | Grammar | Done (raised to Grade 5 high standard 2026-09-19) | Quick guide (7 cards incl. Tricky Subjects) + 18 mixed items + 5 sets: HW be verbs 8, HW present simple 6, Lesson 4 be 26, Lesson 5 present simple 28, Challenge negatives/questions/tags 18 |
 | Reading | Done (raised 2026-09-19) | 5 text anchor charts, 5 homework passages with added text-evidence / vocabulary-in-context / compare questions, POV practice, and 3 longer generated passages (opinion text, informational text on wheelchair sports, third-person-limited story) |
-| Listening | Done (generated) | 4 review dialogues on Module 1 topics; the real quiz dialogue is only played in class |
+| Listening | Done (raised 2026-09-19) | 5 generated dialogues of 11-13 lines with 7-8 questions each: details (numbers, days, times), reasons, feelings, meaning of a spoken phrase, and what happens next |
 
 Homework transcription: `content/2026-10-quiz1/homework.md`.
 
@@ -89,6 +89,10 @@ Vocabulary
 - Grade 5 vocabulary assessments test context clues, word forms / parts of speech, synonyms and antonyms, and multiple meanings. The app covered definitions, cloze, synonyms, and antonyms, but distractors were random list words, so a noun blank could be solved by eliminating verbs. Distractors now share the target word's part of speech.
 - Added a Word Forms mode for the homework skill "Some words may need to be changed": the sentence is blanked and the choices are forms of the same word (chug / chugs / chugged / chugging; cylinder / cylinders). Forms are generated in `app.js` (`wordForms`) for verbs and nouns; a word can override with `forms: [...]`. Only words that appear in two or more forms across their sentences are used, so 17 extra inflected sentences were added.
 - Definitions stay in the teacher's wording because the matching section of the quiz is likely to reuse it.
+
+## Listening Difficulty Benchmark (2026-09-19)
+
+The first version had 6-line dialogues with five literal questions, all answerable from a single line. Grade 5 listening tests (Cambridge A2 Flyers listening, school dialogue quizzes) ask for details across several turns plus inference: why a speaker says something, how they feel, what a phrase means in context, and what the speakers will do next. Dialogues were rewritten to 11-13 lines with a small conflict or decision, and each now has 7-8 questions mixing detail (numbers, days, times), reason, feeling, spoken-phrase meaning ("travel more than a school bus", "ended up drinking his water"), and next-step questions. A fifth dialogue (a safety inspector's visit) uses the Week 2 vocabulary.
 
 ## Missing Reference Material (log)
 
