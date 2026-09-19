@@ -1,0 +1,278 @@
+{
+  "generator": "Built-in image_gen",
+  "assets": [
+    {
+      "kind": "passages",
+      "id": "alexander_graham_bell",
+      "alt": "Alexander Graham Bell tests an early telephone in his workshop.",
+      "prompt": "Use case: illustration-story. Create one landscape 3:2 educational storybook illustration for Grade 5 reading passage Alexander Graham Bell. Show Bell as a bearded 19th-century inventor in his workshop testing an early wooden telephone with a separate receiver, copper wires and simple tools. Warm colorful hand-painted gouache, clear shapes, engaging for age 10, historically plausible. No text, letters, captions, logos or watermark. Single scene.",
+      "path": "assets/2026-10-quiz1/passages/alexander_graham_bell.jpg"
+    },
+    {
+      "kind": "passages",
+      "id": "super_recycler",
+      "alt": "Molly and classmates sort bottles and cans into recycling bins.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Landscape 3:2, one coherent story scene. Molly, a ten-year-old girl, organizing aluminum cans and plastic bottles into separate recycling bins at her school, encouraging classmates to join. No written bin labels.",
+      "path": "assets/2026-10-quiz1/passages/super_recycler.jpg"
+    },
+    {
+      "kind": "passages",
+      "id": "power_of_perseverance",
+      "alt": "A student keeps improving a science project until its bulb lights.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Landscape 3:2, one coherent story scene. A student at a desk persistently rebuilding a small science project after several failed attempts, discarded attempts nearby, now lighting a small bulb and looking determined and hopeful. Focus on trying again.",
+      "path": "assets/2026-10-quiz1/passages/power_of_perseverance.jpg"
+    },
+    {
+      "kind": "passages",
+      "id": "benny_and_larry",
+      "alt": "Benny the bunny and Larry the lizard splash beside a pond with an empty fishing bucket.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Landscape 3:2, one coherent story scene. Benny a nimble friendly bunny and Larry a relaxed green lizard beside a meadow pond, their fishing bucket contains only water, splashing ripples and fish swimming away; carrots near the path, playful humorous friendship.",
+      "path": "assets/2026-10-quiz1/passages/benny_and_larry.jpg"
+    },
+    {
+      "kind": "passages",
+      "id": "captain_morgan",
+      "alt": "A calm captain helps his crew collect rainwater aboard a sailing ship.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Landscape 3:2, one coherent story scene. A kind fictional ship captain at the helm of a wooden sailing ship calmly helping a young sailor set up barrels to collect rainwater after one water barrel tipped over on deck. Ocean adventure, reassuring mood.",
+      "path": "assets/2026-10-quiz1/passages/captain_morgan.jpg"
+    },
+    {
+      "kind": "passages",
+      "id": "pov_practice",
+      "alt": "An open storybook shows a classroom scene observed from outside the story.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Landscape 3:2, one coherent story scene. A visual metaphor for story narration: an open storybook with a small classroom scene rising from its pages, a child and teacher in the scene, an observer holding a magnifying glass outside the book. No diagrams explaining answers, no words or thought-bubble labels.",
+      "path": "assets/2026-10-quiz1/passages/pov_practice.jpg"
+    },
+    {
+      "kind": "passages",
+      "id": "fund_young_inventors",
+      "alt": "Students build a locomotive-shaped toy from simple supplies at school.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Landscape 3:2, one coherent story scene. Fifth-grade students at a school invention table building a cardboard locomotive-shaped counting toy using a small motor, battery and recycled materials, an encouraging teacher providing supplies, school science fair atmosphere.",
+      "path": "assets/2026-10-quiz1/passages/fund_young_inventors.jpg"
+    },
+    {
+      "kind": "passages",
+      "id": "rolling_into_the_game",
+      "alt": "Athletes pass and defend during a wheelchair basketball game.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Landscape 3:2, one coherent story scene. An exciting wheelchair basketball game in an indoor gym, athletic players in proper sports wheelchairs with outward cambered wheels and small anti-tip wheels, one passing the ball while another defends, basketball hoop visible. Respectful dynamic sports depiction.",
+      "path": "assets/2026-10-quiz1/passages/rolling_into_the_game.jpg"
+    },
+    {
+      "kind": "passages",
+      "id": "the_flying_bathtub",
+      "alt": "Mara watches Uncle Rafael test his bathtub with bicycle wheels, a bedsheet sail and a propeller.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Landscape 3:2, one coherent story scene. Uncle Rafael in a fishing hat sitting in a fantastical old iron bathtub fitted with two bicycle wheels, a bedsheet sail and a broken-fan propeller, briefly lifting its front wheels on a grassy hill above a harbor. Ten-year-old Mara watches hopefully nearby with a wrench. Whimsical fictional contraption.",
+      "path": "assets/2026-10-quiz1/passages/the_flying_bathtub.jpg"
+    },
+    {
+      "kind": "vocabulary",
+      "id": "chug",
+      "alt": "A steam train moves slowly uphill with steady puffs of steam.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Square small vocabulary memory illustration. Simple uncluttered pale cream background, large central subject, generous margins, readable at 180 pixels. Depict this meaning visually: An old steam train slowly climbing a hill, several evenly spaced puffs from its chimney and small steady motion marks emphasizing slow rhythmic movement.",
+      "path": "assets/2026-10-quiz1/vocabulary/chug.jpg"
+    },
+    {
+      "kind": "vocabulary",
+      "id": "cylinder",
+      "alt": "A cylinder and a can with circular ends and straight sides.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Square small vocabulary memory illustration. Simple uncluttered pale cream background, large central subject, generous margins, readable at 180 pixels. Depict this meaning visually: A simple solid geometric cylinder beside an unlabeled soup can, round top and bottom clearly visible, straight parallel sides. Three-quarter view.",
+      "path": "assets/2026-10-quiz1/vocabulary/cylinder.jpg"
+    },
+    {
+      "kind": "vocabulary",
+      "id": "flop",
+      "alt": "A toy robot invention falls apart during a failed test.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Square small vocabulary memory illustration. Simple uncluttered pale cream background, large central subject, generous margins, readable at 180 pixels. Depict this meaning visually: A child's failed toy robot invention collapsed in loose parts on a workbench, its inventor looking disappointed at the unsuccessful test, safe and gentle.",
+      "path": "assets/2026-10-quiz1/vocabulary/flop.jpg"
+    },
+    {
+      "kind": "vocabulary",
+      "id": "gadget",
+      "alt": "A small electronic device with buttons and a miniature fan.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Square small vocabulary memory illustration. Simple uncluttered pale cream background, large central subject, generous margins, readable at 180 pixels. Depict this meaning visually: A small clever handheld electronic device with simple buttons, a tiny screen and a miniature fan attachment, clearly a compact useful machine.",
+      "path": "assets/2026-10-quiz1/vocabulary/gadget.jpg"
+    },
+    {
+      "kind": "vocabulary",
+      "id": "incandescent",
+      "alt": "A clear light bulb glows from its hot wire filament.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Square small vocabulary memory illustration. Simple uncluttered pale cream background, large central subject, generous margins, readable at 180 pixels. Depict this meaning visually: Close-up of a traditional clear glass light bulb, a clearly visible glowing coiled wire filament inside producing warm light.",
+      "path": "assets/2026-10-quiz1/vocabulary/incandescent.jpg"
+    },
+    {
+      "kind": "vocabulary",
+      "id": "locomotive",
+      "alt": "A train engine pulls connected cars along the tracks.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Square small vocabulary memory illustration. Simple uncluttered pale cream background, large central subject, generous margins, readable at 180 pixels. Depict this meaning visually: A powerful steam locomotive at the front pulling several connected train cars along tracks, engine large and prominent.",
+      "path": "assets/2026-10-quiz1/vocabulary/locomotive.jpg"
+    },
+    {
+      "kind": "vocabulary",
+      "id": "patent",
+      "alt": "An inventor holds a sealed document protecting an invention.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Square small vocabulary memory illustration. Simple uncluttered pale cream background, large central subject, generous margins, readable at 180 pixels. Depict this meaning visually: An inventor holding an official certificate with a seal and a small drawing of their invention, a protective shield motif around the certificate and invention. No actual writing.",
+      "path": "assets/2026-10-quiz1/vocabulary/patent.jpg"
+    },
+    {
+      "kind": "vocabulary",
+      "id": "sputter",
+      "alt": "An old motor gives uneven puffs as it struggles to run.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Square small vocabulary memory illustration. Simple uncluttered pale cream background, large central subject, generous margins, readable at 180 pixels. Depict this meaning visually: A small old motor running unevenly, irregular separated exhaust puffs of different sizes and jagged stop-start motion marks, mechanic looking concerned. No explosions or fire.",
+      "path": "assets/2026-10-quiz1/vocabulary/sputter.jpg"
+    },
+    {
+      "kind": "vocabulary",
+      "id": "phonograph",
+      "alt": "An antique phonograph plays a record through a brass horn.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Square small vocabulary memory illustration. Simple uncluttered pale cream background, large central subject, generous margins, readable at 180 pixels. Depict this meaning visually: An antique phonograph with a large brass horn, wooden base, black spinning record, and a few musical note symbols.",
+      "path": "assets/2026-10-quiz1/vocabulary/phonograph.jpg"
+    },
+    {
+      "kind": "vocabulary",
+      "id": "auditorium",
+      "alt": "Rows of seats face a stage in a large school hall.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Square small vocabulary memory illustration. Simple uncluttered pale cream background, large central subject, generous margins, readable at 180 pixels. Depict this meaning visually: Interior of a spacious school auditorium with many rows of seats facing a lit stage, small audience watching a performance.",
+      "path": "assets/2026-10-quiz1/vocabulary/auditorium.jpg"
+    },
+    {
+      "kind": "vocabulary",
+      "id": "elite",
+      "alt": "Medal-winning athletes stand together on a podium.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Square small vocabulary memory illustration. Simple uncluttered pale cream background, large central subject, generous margins, readable at 180 pixels. Depict this meaning visually: A small team of highly skilled runners with medals and matching sports uniforms standing together on a winners podium after competition.",
+      "path": "assets/2026-10-quiz1/vocabulary/elite.jpg"
+    },
+    {
+      "kind": "vocabulary",
+      "id": "inspector",
+      "alt": "An inspector checks a stair railing with a clipboard.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Square small vocabulary memory illustration. Simple uncluttered pale cream background, large central subject, generous margins, readable at 180 pixels. Depict this meaning visually: A safety inspector carefully examining a stair railing with a magnifying glass and a clipboard with simple check marks, focused expression.",
+      "path": "assets/2026-10-quiz1/vocabulary/inspector.jpg"
+    },
+    {
+      "kind": "vocabulary",
+      "id": "objective",
+      "alt": "A child aims to reach a flag at the end of a path.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Square small vocabulary memory illustration. Simple uncluttered pale cream background, large central subject, generous margins, readable at 180 pixels. Depict this meaning visually: A child planning to reach a clear goal, a path of stepping stones leading to a target flag on a small hill, child points toward the flag.",
+      "path": "assets/2026-10-quiz1/vocabulary/objective.jpg"
+    },
+    {
+      "kind": "vocabulary",
+      "id": "photograph",
+      "alt": "A child uses a camera to take a picture of a bird.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Square small vocabulary memory illustration. Simple uncluttered pale cream background, large central subject, generous margins, readable at 180 pixels. Depict this meaning visually: A child using a camera to take a picture of a bird, a small photographic print beside the scene shows the same bird.",
+      "path": "assets/2026-10-quiz1/vocabulary/photograph.jpg"
+    },
+    {
+      "kind": "vocabulary",
+      "id": "prestigious",
+      "alt": "People admire an important gold award in a display case.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Square small vocabulary memory illustration. Simple uncluttered pale cream background, large central subject, generous margins, readable at 180 pixels. Depict this meaning visually: A beautiful high-quality gold award in a glass display case, spotlit on a pedestal with elegant laurel decoration, people admiring it respectfully.",
+      "path": "assets/2026-10-quiz1/vocabulary/prestigious.jpg"
+    },
+    {
+      "kind": "vocabulary",
+      "id": "specialize",
+      "alt": "A mechanic works on bicycles in a bicycle repair shop.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Square small vocabulary memory illustration. Simple uncluttered pale cream background, large central subject, generous margins, readable at 180 pixels. Depict this meaning visually: A bicycle mechanic focused exclusively on expertly repairing bicycles, several different bicycles and bicycle-specific tools around the tidy workshop.",
+      "path": "assets/2026-10-quiz1/vocabulary/specialize.jpg"
+    },
+    {
+      "kind": "vocabulary",
+      "id": "traditional",
+      "alt": "A family passes dumpling-making skills from one generation to the next.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Square small vocabulary memory illustration. Simple uncluttered pale cream background, large central subject, generous margins, readable at 180 pixels. Depict this meaning visually: A grandparent teaching a child to make dumplings by hand at a family table, three generations sharing a familiar family custom warmly.",
+      "path": "assets/2026-10-quiz1/vocabulary/traditional.jpg"
+    },
+    {
+      "kind": "vocabulary",
+      "id": "impoverished",
+      "alt": "A family has very little money and few basic supplies.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Square small vocabulary memory illustration. Simple uncluttered pale cream background, large central subject, generous margins, readable at 180 pixels. Depict this meaning visually: Respectful empathetic scene of a family at a very modest kitchen table with an almost empty coin purse and a small bowl of food, basic worn furnishings, people shown with dignity. No stereotypes or caricature.",
+      "path": "assets/2026-10-quiz1/vocabulary/impoverished.jpg"
+    },
+    {
+      "kind": "vocabulary",
+      "id": "irrigate",
+      "alt": "Water travels through channels to help crops grow in dry soil.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Square small vocabulary memory illustration. Simple uncluttered pale cream background, large central subject, generous margins, readable at 180 pixels. Depict this meaning visually: Water flowing from a pipe into neat channels between rows of crops, dry soil ahead turning moist as the water reaches it, farmer tending flow.",
+      "path": "assets/2026-10-quiz1/vocabulary/irrigate.jpg"
+    },
+    {
+      "kind": "vocabulary",
+      "id": "maneuver",
+      "alt": "An athlete carefully steers a wheelchair between training cones.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Square small vocabulary memory illustration. Simple uncluttered pale cream background, large central subject, generous margins, readable at 180 pixels. Depict this meaning visually: A wheelchair basketball athlete skillfully steering in a curving path between training cones, dotted curved arrow showing careful navigation.",
+      "path": "assets/2026-10-quiz1/vocabulary/maneuver.jpg"
+    },
+    {
+      "kind": "vocabulary",
+      "id": "acceleration",
+      "alt": "A car travels farther between each successive position as it speeds up.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Square small vocabulary memory illustration. Simple uncluttered pale cream background, large central subject, generous margins, readable at 180 pixels. Depict this meaning visually: A toy race car speeding up along a track, three successive positions of the same car from left to right with increasing gaps and increasing motion streaks. Clear depiction of getting faster.",
+      "path": "assets/2026-10-quiz1/vocabulary/acceleration.jpg"
+    },
+    {
+      "kind": "vocabulary",
+      "id": "circumstance",
+      "alt": "Sudden rain changes a family's outdoor picnic plans.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Square small vocabulary memory illustration. Simple uncluttered pale cream background, large central subject, generous margins, readable at 180 pixels. Depict this meaning visually: An outdoor picnic affected by sudden rain: family holding an umbrella over picnic basket, rain cloud above and wet blanket below, clear cause and effect situation.",
+      "path": "assets/2026-10-quiz1/vocabulary/circumstance.jpg"
+    },
+    {
+      "kind": "vocabulary",
+      "id": "conceive",
+      "alt": "A child imagines a new robot before drawing a plan.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Square small vocabulary memory illustration. Simple uncluttered pale cream background, large central subject, generous margins, readable at 180 pixels. Depict this meaning visually: A child thinking with an excited expression, a thought bubble contains an imagined helpful robot design, blank sketch paper and pencil on desk.",
+      "path": "assets/2026-10-quiz1/vocabulary/conceive.jpg"
+    },
+    {
+      "kind": "vocabulary",
+      "id": "contribution",
+      "alt": "Each child adds a piece to a shared bridge-building project.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Square small vocabulary memory illustration. Simple uncluttered pale cream background, large central subject, generous margins, readable at 180 pixels. Depict this meaning visually: Children each adding one useful piece to a shared model bridge, focus on one child handing over a final building block to help the group.",
+      "path": "assets/2026-10-quiz1/vocabulary/contribution.jpg"
+    },
+    {
+      "kind": "vocabulary",
+      "id": "distinguished",
+      "alt": "Colleagues honor a scientist for important achievements.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Square small vocabulary memory illustration. Simple uncluttered pale cream background, large central subject, generous margins, readable at 180 pixels. Depict this meaning visually: An accomplished elderly scientist receiving a medal while colleagues applaud respectfully, a microscope and discovery models in background.",
+      "path": "assets/2026-10-quiz1/vocabulary/distinguished.jpg"
+    },
+    {
+      "kind": "vocabulary",
+      "id": "evidently",
+      "alt": "Cookie crumbs on a dog's muzzle reveal who emptied the cookie jar.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Square small vocabulary memory illustration. Simple uncluttered pale cream background, large central subject, generous margins, readable at 180 pixels. Depict this meaning visually: A dog next to an overturned empty cookie jar with cookie crumbs on its muzzle and paw prints leading to the jar, a child noticing the obvious evidence.",
+      "path": "assets/2026-10-quiz1/vocabulary/evidently.jpg"
+    },
+    {
+      "kind": "vocabulary",
+      "id": "impulse",
+      "alt": "A child suddenly feels a strong urge to grab a colorful kite.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Square small vocabulary memory illustration. Simple uncluttered pale cream background, large central subject, generous margins, readable at 180 pixels. Depict this meaning visually: A child suddenly reaching excitedly toward a bright kite on a market stall, a small spark-like gesture by the face conveys a sudden desire, no money exchange or text.",
+      "path": "assets/2026-10-quiz1/vocabulary/impulse.jpg"
+    },
+    {
+      "kind": "vocabulary",
+      "id": "passionate",
+      "alt": "A child paints with great excitement and love for art.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Square small vocabulary memory illustration. Simple uncluttered pale cream background, large central subject, generous margins, readable at 180 pixels. Depict this meaning visually: A child joyfully absorbed in painting, eyes bright, colorful brushes and several completed paintings nearby, deep enthusiasm for the activity.",
+      "path": "assets/2026-10-quiz1/vocabulary/passionate.jpg"
+    },
+    {
+      "kind": "vocabulary",
+      "id": "prototype",
+      "alt": "A rough cardboard car model is tested before making the final version.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Square small vocabulary memory illustration. Simple uncluttered pale cream background, large central subject, generous margins, readable at 180 pixels. Depict this meaning visually: A rough first cardboard model of a toy car on a workbench being carefully tested beside a simple sketch of a polished future version, pencil and ruler nearby.",
+      "path": "assets/2026-10-quiz1/vocabulary/prototype.jpg"
+    },
+    {
+      "kind": "vocabulary",
+      "id": "eccentric",
+      "alt": "An unusual inventor wears a fishing hat in an empty bathtub.",
+      "prompt": "Use case: illustration-story. Asset type: Grade 5 English learning image. Style: warm colorful hand-painted gouache children's educational illustration, clear shapes and expressive friendly characters suitable for age 10. No text, letters, word labels, captions, logos or watermark. Square small vocabulary memory illustration. Simple uncluttered pale cream background, large central subject, generous margins, readable at 180 pixels. Depict this meaning visually: A cheerful unusual inventor wearing a fishing hat while sitting fully clothed in an empty clawfoot bathtub, mismatched colorful socks, delightfully odd behavior without ridicule.",
+      "path": "assets/2026-10-quiz1/vocabulary/eccentric.jpg"
+    }
+  ]
+}

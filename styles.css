@@ -581,6 +581,19 @@ button.passage-review-button {
   margin: 0;
 }
 
+.vocab-image {
+  display: block;
+  width: 192px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+  margin: 12px auto 16px;
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  background: #fffaf0;
+}
+
 .passage-image {
   display: block;
   width: 100%;

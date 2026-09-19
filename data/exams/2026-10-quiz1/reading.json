@@ -144,7 +144,9 @@
           "sampleAnswer": "The internet has changed the world because it lets people communicate and share information quickly across long distances.",
           "skill": "ideas_support"
         }
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/passages/alexander_graham_bell.jpg",
+      "imageAlt": "Alexander Graham Bell tests an early telephone in his workshop."
     },
     {
       "id": "super_recycler",
@@ -242,7 +244,9 @@
           "sampleAnswer": "Molly's actions inspired other people and made a big difference in how much her community recycles.",
           "skill": "central_idea"
         }
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/passages/super_recycler.jpg",
+      "imageAlt": "Molly and classmates sort bottles and cans into recycling bins."
     },
     {
       "id": "power_of_perseverance",
@@ -351,7 +355,9 @@
           "sampleAnswer": "He meant that each mistake taught him something, so his failures were really steps toward success and he refused to give up.",
           "skill": "figurative_language"
         }
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/passages/power_of_perseverance.jpg",
+      "imageAlt": "A student keeps improving a science project until its bulb lights."
     },
     {
       "id": "benny_and_larry",
@@ -461,7 +467,9 @@
           "sampleAnswer": "Cause: Benny's nimble hops were too fast for Larry's wobbly waddle. Effect: Larry went tumbling head over tail, causing the carrots to fly in all directions.",
           "skill": "text_structure"
         }
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/passages/benny_and_larry.jpg",
+      "imageAlt": "Benny the bunny and Larry the lizard splash beside a pond with an empty fishing bucket."
     },
     {
       "id": "captain_morgan",
@@ -559,7 +567,9 @@
           "sampleAnswer": "He is a kind and understanding person. Instead of getting angry when the sailor spilled the water, he calmly said, \"Mistakes happen to the best of us,\" and found a solution.",
           "skill": "character"
         }
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/passages/captain_morgan.jpg",
+      "imageAlt": "A calm captain helps his crew collect rainwater aboard a sailing ship."
     },
     {
       "id": "pov_practice",
@@ -660,7 +670,9 @@
           "answer": 0,
           "skill": "point_of_view"
         }
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/passages/pov_practice.jpg",
+      "imageAlt": "An open storybook shows a classroom scene observed from outside the story."
     },
     {
       "id": "fund_young_inventors",
@@ -769,7 +781,9 @@
           "sampleAnswer": "Reason 1: funding teaches lasting skills; evidence: the Maple Hill survey of 120 students. Reason 2: small amounts of money make a big difference; evidence: Riverside's $15 budgets and the counting toy. (Also: it sends a message; evidence: science fair attendance doubled.)",
           "skill": "ideas_support"
         }
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/passages/fund_young_inventors.jpg",
+      "imageAlt": "Students build a locomotive-shaped toy from simple supplies at school."
     },
     {
       "id": "rolling_into_the_game",
@@ -878,7 +892,9 @@
           "sampleAnswer": "A sports wheelchair is light and strong, its wheels tilt outward (camber) so it turns fast without tipping, and it has a small back wheel that stops it from flipping backward.",
           "skill": "evidence"
         }
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/passages/rolling_into_the_game.jpg",
+      "imageAlt": "Athletes pass and defend during a wheelchair basketball game."
     },
     {
       "id": "the_flying_bathtub",
@@ -999,7 +1015,9 @@
           "sampleAnswer": "He mentions the first bicycle because people laughed at it too, and it still changed the world. He wants Mara to understand that being laughed at does not mean an idea is bad, which is why he has already sketched a second propeller.",
           "skill": "ideas_support"
         }
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/passages/the_flying_bathtub.jpg",
+      "imageAlt": "Mara watches Uncle Rafael test his bathtub with bicycle wheels, a bedsheet sail and a propeller."
     }
   ]
 }

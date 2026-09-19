@@ -21,7 +21,9 @@
         "glide",
         "zoom",
         "speed"
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/vocabulary/chug.jpg",
+      "imageAlt": "A steam train moves slowly uphill with steady puffs of steam."
     },
     {
       "week": 1,
@@ -39,7 +41,9 @@
         "tube",
         "roll",
         "drum"
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/vocabulary/cylinder.jpg",
+      "imageAlt": "A cylinder and a can with circular ends and straight sides."
     },
     {
       "week": 1,
@@ -62,7 +66,9 @@
         "success",
         "hit",
         "triumph"
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/vocabulary/flop.jpg",
+      "imageAlt": "A toy robot invention falls apart during a failed test."
     },
     {
       "week": 1,
@@ -80,7 +86,9 @@
         "device",
         "tool",
         "contraption"
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/vocabulary/gadget.jpg",
+      "imageAlt": "A small electronic device with buttons and a miniature fan."
     },
     {
       "week": 1,
@@ -102,7 +110,9 @@
         "dim",
         "dark",
         "dull"
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/vocabulary/incandescent.jpg",
+      "imageAlt": "A clear light bulb glows from its hot wire filament."
     },
     {
       "week": 1,
@@ -119,7 +129,9 @@
       "synonyms": [
         "engine",
         "train engine"
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/vocabulary/locomotive.jpg",
+      "imageAlt": "A train engine pulls connected cars along the tracks."
     },
     {
       "week": 1,
@@ -137,7 +149,9 @@
         "license",
         "legal right",
         "copyright"
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/vocabulary/patent.jpg",
+      "imageAlt": "An inventor holds a sealed document protecting an invention."
     },
     {
       "week": 1,
@@ -160,7 +174,9 @@
         "hum",
         "purr",
         "run smoothly"
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/vocabulary/sputter.jpg",
+      "imageAlt": "An old motor gives uneven puffs as it struggles to run."
     },
     {
       "week": 1,
@@ -177,7 +193,9 @@
       "synonyms": [
         "record player",
         "gramophone"
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/vocabulary/phonograph.jpg",
+      "imageAlt": "An antique phonograph plays a record through a brass horn."
     },
     {
       "week": 2,
@@ -194,7 +212,9 @@
         "hall",
         "theater",
         "assembly hall"
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/vocabulary/auditorium.jpg",
+      "imageAlt": "Rows of seats face a stage in a large school hall."
     },
     {
       "week": 2,
@@ -216,7 +236,9 @@
         "ordinary",
         "average",
         "common"
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/vocabulary/elite.jpg",
+      "imageAlt": "Medal-winning athletes stand together on a podium."
     },
     {
       "week": 2,
@@ -234,7 +256,9 @@
         "examiner",
         "checker",
         "investigator"
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/vocabulary/inspector.jpg",
+      "imageAlt": "An inspector checks a stair railing with a clipboard."
     },
     {
       "week": 2,
@@ -253,7 +277,9 @@
         "aim",
         "target",
         "purpose"
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/vocabulary/objective.jpg",
+      "imageAlt": "A child aims to reach a flag at the end of a path."
     },
     {
       "week": 2,
@@ -271,7 +297,9 @@
         "shoot",
         "take a picture of",
         "picture"
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/vocabulary/photograph.jpg",
+      "imageAlt": "A child uses a camera to take a picture of a bird."
     },
     {
       "week": 2,
@@ -294,7 +322,9 @@
         "unknown",
         "unimportant",
         "minor"
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/vocabulary/prestigious.jpg",
+      "imageAlt": "People admire an important gold award in a display case."
     },
     {
       "week": 2,
@@ -315,7 +345,9 @@
       "antonyms": [
         "generalize",
         "spread out"
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/vocabulary/specialize.jpg",
+      "imageAlt": "A mechanic works on bicycles in a bicycle repair shop."
     },
     {
       "week": 2,
@@ -338,7 +370,9 @@
         "modern",
         "new",
         "unusual"
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/vocabulary/traditional.jpg",
+      "imageAlt": "A family passes dumpling-making skills from one generation to the next."
     },
     {
       "week": 2,
@@ -360,7 +394,9 @@
         "wealthy",
         "rich",
         "well-off"
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/vocabulary/impoverished.jpg",
+      "imageAlt": "A family has very little money and few basic supplies."
     },
     {
       "week": 2,
@@ -382,7 +418,9 @@
       "antonyms": [
         "dry out",
         "drain"
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/vocabulary/irrigate.jpg",
+      "imageAlt": "Water travels through channels to help crops grow in dry soil."
     },
     {
       "week": 2,
@@ -404,7 +442,9 @@
       "antonyms": [
         "stay still",
         "leave"
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/vocabulary/maneuver.jpg",
+      "imageAlt": "An athlete carefully steers a wheelchair between training cones."
     },
     {
       "week": 3,
@@ -425,7 +465,9 @@
       "antonyms": [
         "slowing down",
         "deceleration"
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/vocabulary/acceleration.jpg",
+      "imageAlt": "A car travels farther between each successive position as it speeds up."
     },
     {
       "week": 3,
@@ -443,7 +485,9 @@
         "situation",
         "condition",
         "factor"
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/vocabulary/circumstance.jpg",
+      "imageAlt": "Sudden rain changes a family's outdoor picnic plans."
     },
     {
       "week": 3,
@@ -466,7 +510,9 @@
       "antonyms": [
         "forget",
         "ignore"
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/vocabulary/conceive.jpg",
+      "imageAlt": "A child imagines a new robot before drawing a plan."
     },
     {
       "week": 3,
@@ -485,7 +531,9 @@
         "donation",
         "help",
         "input"
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/vocabulary/contribution.jpg",
+      "imageAlt": "Each child adds a piece to a shared bridge-building project."
     },
     {
       "week": 3,
@@ -508,7 +556,9 @@
         "unknown",
         "ordinary",
         "common"
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/vocabulary/distinguished.jpg",
+      "imageAlt": "Colleagues honor a scientist for important achievements."
     },
     {
       "week": 3,
@@ -530,7 +580,9 @@
       "antonyms": [
         "doubtfully",
         "secretly"
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/vocabulary/evidently.jpg",
+      "imageAlt": "Cookie crumbs on a dog's muzzle reveal who emptied the cookie jar."
     },
     {
       "week": 3,
@@ -552,7 +604,9 @@
       "antonyms": [
         "plan",
         "careful thought"
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/vocabulary/impulse.jpg",
+      "imageAlt": "A child suddenly feels a strong urge to grab a colorful kite."
     },
     {
       "week": 3,
@@ -575,7 +629,9 @@
         "indifferent",
         "uninterested",
         "cold"
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/vocabulary/passionate.jpg",
+      "imageAlt": "A child paints with great excitement and love for art."
     },
     {
       "week": 3,
@@ -594,7 +650,9 @@
         "test version",
         "sample",
         "first design"
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/vocabulary/prototype.jpg",
+      "imageAlt": "A rough cardboard car model is tested before making the final version."
     },
     {
       "week": 3,
@@ -617,7 +675,9 @@
         "normal",
         "ordinary",
         "typical"
-      ]
+      ],
+      "image": "assets/2026-10-quiz1/vocabulary/eccentric.jpg",
+      "imageAlt": "An unusual inventor wears a fishing hat in an empty bathtub."
     }
   ]
 }

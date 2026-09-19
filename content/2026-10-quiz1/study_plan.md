@@ -7,6 +7,21 @@ Source photos:
 
 App exam id: `2026-10-quiz1`
 
+## Learning Illustrations
+
+All nine app reading passages have an original story illustration, displayed in
+the passage picker and above the reading text. All 30 vocabulary words have a
+meaning-based illustration shared by Word → Definition and Definition → Word,
+including their missed-word review sessions. Images contain no answer labels.
+
+Illustrations use the existing meanings and reading content; they are learning
+aids, not transcriptions of the source photos. Reading assets are in
+`assets/2026-10-quiz1/passages/`; vocabulary assets are in
+`assets/2026-10-quiz1/vocabulary/`. The corresponding runtime JSON entries use
+`image` and `imageAlt`. See [illustrations.json](illustrations.json) for every
+asset's scene description, exact generation prompt, and project path. Generated
+using built-in image_gen, then resized and compressed to JPEG for web delivery.
+
 ## Exam Schedule
 
 - October 1, 2026 (Thursday): Quiz 1

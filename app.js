@@ -703,15 +703,18 @@ function vocabularyTopic() {
     const pool = same.length >= n ? same : others;
     return shuffle(pool).slice(0, n);
   };
+  const wordIllustration = (w) => w.image
+    ? `<img class="vocab-image" src="${esc(w.image)}" alt="${esc(w.imageAlt || 'Vocabulary illustration')}" width="192" height="192" decoding="async">`
+    : "";
   const startDefinition = (items = words) => runQuiz("vocab:definition", "Word → Definition", items, (w) => {
     const wrongs = wrongsFor(w);
     const choices = shuffle([w, ...wrongs]).map(x => x.definition);
-    return { prompt: `What does <b>${w.word}</b> (${w.pos}) mean?`, choices, answer: choices.indexOf(w.definition) };
+    return { prompt: `What does <b>${w.word}</b> (${w.pos}) mean?`, choices, answer: choices.indexOf(w.definition), extra: wordIllustration(w) };
   }, { itemId: w => w.word, itemLabel: w => w.word, afterFinish: vocabularyTopic });
   const startWord = (items = words) => runQuiz("vocab:word", "Definition → Word", items, (w) => {
     const wrongs = wrongsFor(w);
     const choices = shuffle([w, ...wrongs]).map(x => x.word);
-    return { prompt: `Which word means: <i>"${w.definition}"</i>?`, choices, answer: choices.indexOf(w.word) };
+    return { prompt: `Which word means: <i>"${w.definition}"</i>?`, choices, answer: choices.indexOf(w.word), extra: wordIllustration(w) };
   }, { itemId: w => w.word, itemLabel: w => w.word, afterFinish: vocabularyTopic });
   const startBlank = (items = words) => runQuiz("vocab:blank", "Fill in the Blank", items, (w) => {
     const re = new RegExp(`\\b${w.word}\\w*`, "i");
