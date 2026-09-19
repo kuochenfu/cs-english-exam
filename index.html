@@ -3,23 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Grade 4 English Review</title>
+  <title>English Review</title>
   <link rel="icon" href="data:," />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=202609-quiz1-entry" />
 </head>
 <body>
   <header>
-    <h1>📚 Grade 4 English Review</h1>
-    <p class="subtitle">Choose a test set, then practice by topic</p>
+    <h1 id="site-title">📚 English Review</h1>
+    <p class="subtitle" id="exam-bar">Loading tests…</p>
   </header>
 
   <main id="app"></main>
 
   <footer>
+    <button id="tests-btn" class="ghost">📋 Tests</button>
     <button id="home-btn" class="ghost">🏠 Home</button>
     <button id="reset-btn" class="ghost">Reset Progress</button>
   </footer>
 
-  <script src="app.js?v=202605-passage-posters"></script>
+  <!-- Bump APP_VERSION whenever app.js or any data/*.json changes, so GitHub Pages' 10-minute cache is bypassed. -->
+  <script>window.APP_VERSION = "202609-quiz1-entry";</script>
+  <script src="app.js?v=202609-quiz1-entry"></script>
 </body>
 </html>

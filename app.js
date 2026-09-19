@@ -1,4 +1,4 @@
-// Grade 4 English Review — quiz engine
+// English Review — quiz engine
 // Run via local server: `python3 -m http.server` then open http://localhost:8000
 
 const $ = (id) => document.getElementById(id);
@@ -9,6 +9,9 @@ const MISSED_KEY = "cs-english-exam-missed";
 const GAME_KEY = "cs-english-exam-game";
 const VOICE_KEY = "cs-english-exam-voice";
 const EXAM_KEY = "cs-english-exam-current-exam";
+const SEEN_KEY = "cs-english-exam-seen-exams";
+// Set in index.html; appended to every data fetch so GitHub Pages' cache never serves stale JSON.
+const APP_VERSION = window.APP_VERSION || "";
 const progress = JSON.parse(localStorage.getItem(STORE_KEY) || "{}");
 const missed = JSON.parse(localStorage.getItem(MISSED_KEY) || "{}");
 const game = JSON.parse(localStorage.getItem(GAME_KEY) || "{}");
@@ -232,9 +235,48 @@ function bindVoicePicker() {
   $("voice-test").onclick = () => speak("Hi! Listen to this sentence and type the spelling word.");
 }
 
-const examIndex = { defaultExamId: null, exams: [] };
+const examIndex = { currentExamId: null, defaultExamId: null, exams: [] };
 const data = {};
 let currentExam = null;
+
+async function fetchJSON(path) {
+  const r = await fetch(`${path}?v=${encodeURIComponent(APP_VERSION)}`);
+  if (!r.ok) throw new Error(`${path}: HTTP ${r.status}`);
+  return r.json();
+}
+
+function seenExamIds() {
+  try { return JSON.parse(localStorage.getItem(SEEN_KEY) || "[]"); } catch { return []; }
+}
+
+function markExamsSeen(ids) {
+  const seen = new Set(seenExamIds());
+  ids.forEach(id => seen.add(id));
+  localStorage.setItem(SEEN_KEY, JSON.stringify([...seen]));
+}
+
+// Newest test first; falls back to reverse file order when a test has no date.
+function sortedExams() {
+  return examIndex.exams
+    .map((exam, idx) => ({ exam, idx }))
+    .sort((a, b) => (b.exam.date || "").localeCompare(a.exam.date || "") || b.idx - a.idx)
+    .map(x => x.exam);
+}
+
+// Keeps the header in sync with whichever screen is showing.
+function syncHeader() {
+  const title = $("site-title");
+  const bar = $("exam-bar");
+  if (!title || !bar) return;
+  if (currentExam) {
+    title.textContent = `📚 Grade ${currentExam.grade || ""} English Review`.replace("Grade  ", "");
+    bar.innerHTML = `Practicing: <b>${esc(currentExam.title)}</b> · ${esc(currentExam.subtitle)} <button class="link" id="exam-bar-change">Change</button>`;
+    $("exam-bar-change").onclick = renderExamPicker;
+  } else {
+    title.textContent = "📚 English Review";
+    bar.textContent = "Choose a test, then practice by topic";
+  }
+}
 
 function progressKey(topicId) {
   return currentExam ? `${currentExam.id}:${topicId}` : topicId;
@@ -316,23 +358,25 @@ function missedCountForPrefix(topicId) {
 async function loadAll() {
   const files = ["vocabulary", "spelling", "grammar", "reading", "listening"];
   try {
-    const examRes = await fetch("data/exams.json");
-    const index = await examRes.json();
+    const index = await fetchJSON("data/exams.json");
+    examIndex.currentExamId = index.currentExamId || null;
     examIndex.defaultExamId = index.defaultExamId;
     examIndex.exams = index.exams;
 
     const savedExamId = localStorage.getItem(EXAM_KEY);
     const savedExam = examIndex.exams.find(e => e.id === savedExamId && e.available);
-    if (!savedExam) {
-      currentExam = null;
-      renderExamPicker();
+    const featured = examIndex.exams.find(e => e.id === examIndex.currentExamId && e.available);
+    // Show the picker when there is no saved test, or when a newer featured test
+    // has been published that this device has never seen.
+    const newFeatured = featured && savedExam?.id !== featured.id && !seenExamIds().includes(featured.id);
+    if (!savedExam || newFeatured) {
+      currentExam = null; // renderHome() falls through to the picker
       return;
     }
 
     currentExam = savedExam;
     for (const f of files) {
-      const r = await fetch(`data/exams/${currentExam.id}/${f}.json`);
-      data[f] = await r.json();
+      data[f] = await fetchJSON(`data/exams/${currentExam.id}/${f}.json`);
     }
     localStorage.setItem(EXAM_KEY, currentExam.id);
   } catch (e) {
@@ -351,24 +395,39 @@ async function selectExam(examId) {
   if (!exam || !exam.available) return;
   currentExam = exam;
   localStorage.setItem(EXAM_KEY, currentExam.id);
+  markExamsSeen([exam.id]);
   await loadAll();
   renderHome();
 }
 
 function renderExamPicker() {
+  const seen = new Set(seenExamIds());
+  // "New" is only for the featured test, and only for devices that have used the app before.
+  const returningVisitor = seen.size > 0 || !!localStorage.getItem(EXAM_KEY);
+  const exams = sortedExams();
   app.innerHTML = `
     <div class="panel">
       <h2>Choose a test to practice</h2>
       <div class="cards">
-        ${examIndex.exams.map(exam => `
-          <div class="card ${exam.available ? "" : "disabled"}" data-exam="${exam.id}">
+        ${exams.map(exam => {
+          const isLatest = exam.id === examIndex.currentExamId;
+          const isNew = isLatest && returningVisitor && exam.available && !seen.has(exam.id);
+          const isCurrent = exam.id === currentExam?.id;
+          return `
+          <div class="card exam-card ${exam.available ? "" : "disabled"} ${isLatest ? "featured" : ""}" data-exam="${exam.id}">
+            ${isNew ? `<span class="pill new">New</span>` : isLatest ? `<span class="pill latest">Latest</span>` : ""}
             <div class="icon">${exam.available ? "📘" : "🗂️"}</div>
-            <h2>${exam.title}</h2>
-            <div>${exam.subtitle}</div>
-            <div class="progress">${exam.status}</div>
-          </div>`).join("")}
+            <h2>${esc(exam.title)}</h2>
+            <div>${esc(exam.subtitle)}</div>
+            ${exam.date ? `<div class="exam-date">Test date: ${esc(exam.date)}</div>` : ""}
+            <div class="progress">${esc(exam.status)}${isCurrent ? " · currently selected" : ""}</div>
+          </div>`;
+        }).join("")}
       </div>
     </div>`;
+  // Once the picker has been shown, nothing on it is "new" any more.
+  markExamsSeen(exams.filter(e => e.available).map(e => e.id));
+  syncHeader();
   document.querySelectorAll(".card[data-exam]").forEach(c => {
     const exam = examIndex.exams.find(e => e.id === c.dataset.exam);
     if (exam?.available) c.onclick = () => selectExam(exam.id);
@@ -377,6 +436,7 @@ function renderExamPicker() {
 
 // ---------- Home ----------
 function moduleWeeksLabel() {
+  if (currentExam?.module && currentExam?.weeks) return `Module ${currentExam.module} W${currentExam.weeks}`;
   const match = currentExam?.subtitle.match(/Module\s+(\d+).*Weeks?\s+([0-9-]+)/i);
   return match ? `Module ${match[1]} W${match[2]}` : currentExam?.subtitle || "Current test";
 }
@@ -451,8 +511,8 @@ function renderHome() {
     <div class="panel">
       <div class="quest-header">
         <div>
-          <h2>Final Exam Quest Map</h2>
-          <p class="exam-label">${currentExam.title} · ${currentExam.subtitle}</p>
+          <h2>${esc(currentExam.title)} Quest Map</h2>
+          <p class="exam-label">${esc(currentExam.subtitle)} <button class="link" id="change-exam">Change test</button></p>
         </div>
         <div class="stars-box">
           <span>⭐</span>
@@ -464,7 +524,6 @@ function renderHome() {
       ${missedTotal ? `<button id="boss-review" class="boss-button">💥 Boss Review · ${missedTotal} missed</button>` : `<div class="boss-clear">💥 Boss defeated: no missed questions waiting.</div>`}
       ${badgesHTML()}
       <h3>Quest Map</h3>
-      <p class="exam-label">${currentExam.title} · ${currentExam.subtitle}</p>
       <div class="cards quest-map">
         ${topics.map(t => {
           const p = readTopicProgress(t.id);
@@ -480,8 +539,8 @@ function renderHome() {
           </div>`;
         }).join("")}
       </div>
-      <button class="ghost" id="change-exam">Change test</button>
     </div>`;
+  syncHeader();
   document.querySelectorAll(".card").forEach(c => {
     c.onclick = () => routes[c.dataset.topic]();
   });
@@ -1334,6 +1393,7 @@ const routes = {
 };
 
 $("home-btn").onclick = renderHome;
+$("tests-btn").onclick = renderExamPicker;
 $("reset-btn").onclick = () => {
   if (confirm("Reset all progress?")) {
     localStorage.removeItem(STORE_KEY);

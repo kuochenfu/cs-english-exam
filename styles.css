@@ -662,3 +662,33 @@ details summary { cursor: pointer; font-weight: bold; padding: 8px 0; }
     max-width: 320px;
   }
 }
+
+/* ---------- Entry: header exam bar + test picker ---------- */
+button.link {
+  background: none;
+  color: var(--primary-dark);
+  border: none;
+  padding: 0 4px;
+  margin: 0;
+  font-weight: bold;
+  text-decoration: underline;
+  border-radius: 6px;
+}
+button.link:hover { background: var(--border); }
+#exam-bar b { color: var(--text); }
+
+.exam-card { position: relative; }
+.exam-card.featured { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(255, 139, 61, 0.2); }
+.exam-card .exam-date { color: var(--muted); font-size: 0.9rem; margin-top: 4px; }
+.pill {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 3px 10px;
+  border-radius: 999px;
+  letter-spacing: 0.02em;
+}
+.pill.new { background: #ffe08a; color: #6b4b00; }
+.pill.latest { background: #d9f0ff; color: #24577a; }
