@@ -1369,8 +1369,8 @@ function showAnchorCharts() {
       ${data.reading.anchorChartsIntro ? `<p>${esc(data.reading.anchorChartsIntro)}</p>` : ""}
       ${charts.map((c, i) => `<details class="anchor-chart" ${i === 0 ? "open" : ""}>
         <summary>${esc(c.name)}${c.group ? `<span class="tag">${esc(c.group)}</span>` : ""}</summary>
-        <div class="anchor-chart-content ${c.image ? "has-image" : ""}">
-          ${c.image ? `<img class="anchor-chart-image" src="${esc(c.image)}" alt="${esc(c.imageAlt || c.name)}">` : ""}
+        <div class="anchor-chart-content ${c.image ? (c.imageLayout === "poster" ? "has-poster" : "has-image") : ""}">
+          ${c.image ? `<figure class="anchor-chart-figure"><a href="${esc(c.image)}" target="_blank" rel="noopener" aria-label="Open ${esc(c.name)} chart full size"><img class="anchor-chart-image" src="${esc(c.image)}" alt="${esc(c.imageAlt || c.name)}" loading="lazy" decoding="async" ${c.imageLayout === "poster" ? 'width="1024" height="1536"' : ""}></a><figcaption><a href="${esc(c.image)}" target="_blank" rel="noopener">Open chart full size ↗</a></figcaption></figure>` : ""}
           <div>
             <div class="anchor-description">${c.body}</div>
             ${c.guide ? `<dl class="anchor-guide">${c.guide.map(row => `<div><dt>${esc(row.label)}</dt><dd>${esc(row.text)}</dd></div>`).join("")}</dl>` : ""}

@@ -144,3 +144,17 @@ test('reset is scoped to this test and cancellation changes nothing', () => {
   assert.equal(h.run("progress['other:vocab:word'].best"),80);
   assert.equal(h.run('game.other.stars'),12);
 });
+
+test('every Grade 5 anchor chart has a local poster and full-size image link', () => {
+  const h = harness();
+  h.run('showAnchorCharts()');
+  const html = h.element('app').innerHTML;
+  const charts = fixture.reading.anchorCharts;
+  assert.equal(charts.length, 11);
+  for (const chart of charts) {
+    assert.ok(chart.image && fs.existsSync(chart.image), chart.name);
+    assert.match(fs.readFileSync(chart.image).subarray(1, 4).toString(), /PNG/);
+    assert.ok(html.includes(`href="${chart.image}"`), chart.name + ' full-size link');
+    assert.ok(html.includes(`src="${chart.image}"`), chart.name + ' poster');
+  }
+});

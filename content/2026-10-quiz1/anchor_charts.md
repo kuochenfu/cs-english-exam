@@ -5,6 +5,8 @@ The first five charts match the study notice; the remaining six support the app�
 
 ## Author's Purpose — Quiz 1 focus
 
+![Illustrated Author's Purpose chart](../../assets/2026-10-quiz1/anchor-charts/authors_purpose.png)
+
 The author’s purpose is the main reason for writing. Read the whole text and ask what the author wants you to think, learn, feel, or do.
 
 ### At a glance
@@ -34,6 +36,8 @@ The author’s purpose is the main reason for writing. Read the whole text and a
 **Answer:** To persuade. “Should” states an opinion; learning about insects and growing food are reasons to agree.
 
 ## Text Structure — Quiz 1 focus
+
+![Illustrated Text Structure chart](../../assets/2026-10-quiz1/anchor-charts/text_structure.png)
 
 Text structure is the way an author organizes information. A paragraph and the whole text may use different structures.
 
@@ -66,6 +70,8 @@ Text structure is the way an author organizes information. A paragraph and the w
 
 ## Figurative Language — Quiz 1 focus
 
+![Illustrated Figurative Language chart](../../assets/2026-10-quiz1/anchor-charts/figurative_language.png)
+
 Figurative language helps readers picture an idea or feel an emotion. Explain both the type of expression and what it means in context.
 
 ### At a glance
@@ -97,6 +103,8 @@ Figurative language helps readers picture an idea or feel an emotion. Explain bo
 
 ## Central Idea — Quiz 1 focus
 
+![Illustrated Central Idea chart](../../assets/2026-10-quiz1/anchor-charts/central_idea.png)
+
 The central idea is the most important point the author makes about a topic. Supporting details explain or develop that point.
 
 ### At a glance
@@ -125,6 +133,8 @@ The central idea is the most important point the author makes about a topic. Sup
 **Answer:** Bees help plants reproduce by moving pollen. The details about seeds and crops both support that idea.
 
 ## Point of View — Quiz 1 focus
+
+![Illustrated Point of View chart](../../assets/2026-10-quiz1/anchor-charts/point_of_view.png)
 
 Point of view identifies who tells a story and whose thoughts the narrator reveals. The narrator and the author are not necessarily the same person.
 
@@ -156,6 +166,8 @@ Point of view identifies who tells a story and whose thoughts the narrator revea
 
 ## Theme — Supporting skill
 
+![Illustrated Theme chart](../../assets/2026-10-quiz1/anchor-charts/theme.png)
+
 A theme is a message about life that a story develops. Readers infer it from the characters, their choices, and the outcome.
 
 ### At a glance
@@ -184,6 +196,8 @@ A girl loses a race, keeps training, and improves her time at the next meet. Whi
 **Answer:** “Steady effort helps us improve” is a full message supported by her training and better time. “Racing” is only a topic.
 
 ## Character — Supporting skill
+
+![Illustrated Character chart](../../assets/2026-10-quiz1/anchor-charts/character.png)
 
 Use a character’s actions, words, thoughts, and choices to infer traits and explain change.
 
@@ -215,6 +229,8 @@ Use a character’s actions, words, thoughts, and choices to infer traits and ex
 
 ## Ideas and Support — Supporting skill
 
+![Illustrated Ideas and Support chart](../../assets/2026-10-quiz1/anchor-charts/ideas_support.png)
+
 A writer develops an idea with reasons, facts, examples, or explanations. In an opinion text, distinguish the claim from its support.
 
 ### At a glance
@@ -245,6 +261,8 @@ Claim: “Our library needs more opening hours.” Which supports it: “I like 
 
 ## Text Evidence — Supporting skill
 
+![Illustrated Text Evidence chart](../../assets/2026-10-quiz1/anchor-charts/evidence.png)
+
 Text evidence is a specific detail from the passage that supports an answer. You can quote exactly or paraphrase accurately.
 
 ### At a glance
@@ -273,6 +291,8 @@ Question: Is Noor helpful? Text: “Noor put down her game and carried the heavy
 **Answer:** Noor is helpful because she stops playing to carry her neighbor’s heavy bags. Giving up her own activity to assist someone supports the trait.
 
 ## Vocabulary in Context — Supporting skill
+
+![Illustrated Vocabulary in Context chart](../../assets/2026-10-quiz1/anchor-charts/vocab_context.png)
 
 Use nearby words, sentences, and events to infer the meaning of an unfamiliar word. Then test that meaning in the sentence.
 
@@ -304,6 +324,8 @@ Use nearby words, sentences, and events to infer the meaning of an unfamiliar wo
 
 ## Compare and Contrast — Supporting skill
 
+![Illustrated Compare and Contrast chart](../../assets/2026-10-quiz1/anchor-charts/compare.png)
+
 Comparing identifies similarities; contrasting identifies differences. Use the same feature to compare characters, events, ideas, or two texts.
 
 ### At a glance
@@ -331,3 +353,5 @@ Comparing identifies similarities; contrasting identifies differences. Use the s
 “Lina practiced alone every morning. Kai practiced with a team each evening.” Give one similarity and one difference.
 
 **Answer:** Both practice regularly. Lina practices alone in the morning, whereas Kai practices with a team in the evening.
+
+Poster artwork generated with the built-in image_gen tool. Exact prompts: `anchor_chart_images.json`.

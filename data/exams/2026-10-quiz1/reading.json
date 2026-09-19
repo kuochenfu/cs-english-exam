@@ -49,7 +49,10 @@
       "check": {
         "question": "“Our school should plant a garden. Students could study insects, and the cafeteria could use the vegetables.” What is the main purpose?",
         "answer": "To persuade. “Should” states an opinion; learning about insects and growing food are reasons to agree."
-      }
+      },
+      "image": "assets/2026-10-quiz1/anchor-charts/authors_purpose.png",
+      "imageAlt": "Author's Purpose illustrated anchor chart. The study guide below explains the concepts and examples.",
+      "imageLayout": "poster"
     },
     {
       "skill": "text_structure",
@@ -91,7 +94,10 @@
       "check": {
         "question": "“The bridge washed away. To get students across the stream, the town built a temporary footbridge.” Which structure fits best?",
         "answer": "Problem and solution: the lost bridge creates a crossing problem, and the temporary bridge addresses it."
-      }
+      },
+      "image": "assets/2026-10-quiz1/anchor-charts/text_structure.png",
+      "imageAlt": "Text Structure illustrated anchor chart. The study guide below explains the concepts and examples.",
+      "imageLayout": "poster"
     },
     {
       "skill": "figurative_language",
@@ -133,7 +139,10 @@
       "check": {
         "question": "“The old stairs complained under my feet.” What technique is used, and what does it mean?",
         "answer": "Personification. Stairs cannot complain like a person; the expression helps us imagine their creaking sound."
-      }
+      },
+      "image": "assets/2026-10-quiz1/anchor-charts/figurative_language.png",
+      "imageAlt": "Figurative Language illustrated anchor chart. The study guide below explains the concepts and examples.",
+      "imageLayout": "poster"
     },
     {
       "skill": "central_idea",
@@ -167,7 +176,10 @@
       "check": {
         "question": "“Bees carry pollen between flowers. This helps many plants make seeds. Farmers depend on bees to pollinate many crops.” State the central idea.",
         "answer": "Bees help plants reproduce by moving pollen. The details about seeds and crops both support that idea."
-      }
+      },
+      "image": "assets/2026-10-quiz1/anchor-charts/central_idea.png",
+      "imageAlt": "Central Idea illustrated anchor chart. The study guide below explains the concepts and examples.",
+      "imageLayout": "poster"
     },
     {
       "skill": "point_of_view",
@@ -205,7 +217,10 @@
       "check": {
         "question": "“Leo smiled. ‘I can do it,’ he said. Inside, he worried that his hands would shake.” What point of view does this excerpt show?",
         "answer": "Third-person limited. The narrator uses Leo/he outside dialogue and reveals only Leo’s private worry."
-      }
+      },
+      "image": "assets/2026-10-quiz1/anchor-charts/point_of_view.png",
+      "imageAlt": "Point of View illustrated anchor chart. The study guide below explains the concepts and examples.",
+      "imageLayout": "poster"
     },
     {
       "skill": "theme",
@@ -239,7 +254,10 @@
       "check": {
         "question": "A girl loses a race, keeps training, and improves her time at the next meet. Which is a stronger theme: “racing” or “Steady effort helps us improve”? Why?",
         "answer": "“Steady effort helps us improve” is a full message supported by her training and better time. “Racing” is only a topic."
-      }
+      },
+      "image": "assets/2026-10-quiz1/anchor-charts/theme.png",
+      "imageAlt": "Theme illustrated anchor chart. The study guide below explains the concepts and examples.",
+      "imageLayout": "poster"
     },
     {
       "skill": "character",
@@ -277,7 +295,10 @@
       "check": {
         "question": "“Even after three towers fell, Ana rebuilt her model and tested a wider base.” Name a trait and give evidence.",
         "answer": "Ana is persistent. She keeps rebuilding after three failures and tries a new base instead of giving up."
-      }
+      },
+      "image": "assets/2026-10-quiz1/anchor-charts/character.png",
+      "imageAlt": "Character illustrated anchor chart. The study guide below explains the concepts and examples.",
+      "imageLayout": "poster"
     },
     {
       "skill": "ideas_support",
@@ -315,7 +336,10 @@
       "check": {
         "question": "Claim: “Our library needs more opening hours.” Which supports it: “I like the wall color” or “Many students arrive after it has closed”? Explain.",
         "answer": "The second detail supports longer hours because it shows that students cannot currently use the library when they arrive."
-      }
+      },
+      "image": "assets/2026-10-quiz1/anchor-charts/ideas_support.png",
+      "imageAlt": "Ideas and Support illustrated anchor chart. The study guide below explains the concepts and examples.",
+      "imageLayout": "poster"
     },
     {
       "skill": "evidence",
@@ -349,7 +373,10 @@
       "check": {
         "question": "Question: Is Noor helpful? Text: “Noor put down her game and carried the heavy bags for her neighbor.” Write an answer with evidence.",
         "answer": "Noor is helpful because she stops playing to carry her neighbor’s heavy bags. Giving up her own activity to assist someone supports the trait."
-      }
+      },
+      "image": "assets/2026-10-quiz1/anchor-charts/evidence.png",
+      "imageAlt": "Text Evidence illustrated anchor chart. The study guide below explains the concepts and examples.",
+      "imageLayout": "poster"
     },
     {
       "skill": "vocab_context",
@@ -387,7 +414,10 @@
       "check": {
         "question": "“Water was scarce; the hikers had only one small bottle left for the whole group.” What does scarce mean, and what is the clue?",
         "answer": "Scarce means in short supply. One small bottle for the whole group shows that there is very little water available."
-      }
+      },
+      "image": "assets/2026-10-quiz1/anchor-charts/vocab_context.png",
+      "imageAlt": "Vocabulary in Context illustrated anchor chart. The study guide below explains the concepts and examples.",
+      "imageLayout": "poster"
     },
     {
       "skill": "compare",
@@ -425,7 +455,10 @@
       "check": {
         "question": "“Lina practiced alone every morning. Kai practiced with a team each evening.” Give one similarity and one difference.",
         "answer": "Both practice regularly. Lina practices alone in the morning, whereas Kai practices with a team in the evening."
-      }
+      },
+      "image": "assets/2026-10-quiz1/anchor-charts/compare.png",
+      "imageAlt": "Compare and Contrast illustrated anchor chart. The study guide below explains the concepts and examples.",
+      "imageLayout": "poster"
     }
   ],
   "passages": [

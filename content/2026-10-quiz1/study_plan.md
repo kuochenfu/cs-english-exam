@@ -63,7 +63,7 @@ using built-in image_gen, then resized and compressed to JPEG for web delivery.
 | Vocabulary | Done (raised 2026-09-19) | 30 words, teacher definitions, homework cloze sentences, 6 modes: definition, word, cloze, synonyms, antonyms, Word Forms (change the word); distractors share the part of speech |
 | Spelling / Phonics | Done | 3 dictation lists, 5 sort games, 2 homework-format MCQ sets (find the short vowel word; which letters make the long vowel) |
 | Grammar | Done (raised to Grade 5 high standard 2026-09-19) | Quick guide (7 cards incl. Tricky Subjects) + 18 mixed items + 5 sets: HW be verbs 8, HW present simple 6, Lesson 4 be 26, Lesson 5 present simple 28, Challenge negatives/questions/tags 18 |
-| Reading | Done (raised 2026-09-19) | 11 complete anchor charts (5 quiz focus + 6 supporting skills; updated 2026-09-20), 5 homework passages with added text-evidence / vocabulary-in-context / compare questions, POV practice, and 3 longer generated passages (opinion text, informational text on wheelchair sports, third-person-limited story) |
+| Reading | Done (raised 2026-09-19) | 11 illustrated anchor charts with full-size posters (5 quiz focus + 6 supporting skills; updated 2026-09-20), 5 homework passages with added text-evidence / vocabulary-in-context / compare questions, POV practice, and 3 longer generated passages (opinion text, informational text on wheelchair sports, third-person-limited story) |
 | Listening | Done (raised 2026-09-19) | 5 generated dialogues of 11-13 lines with 7-8 questions each: details (numbers, days, times), reasons, feelings, meaning of a spoken phrase, and what happens next |
 
 Homework transcription: `content/2026-10-quiz1/homework.md`.

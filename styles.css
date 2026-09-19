@@ -773,3 +773,11 @@ button.link:hover { background: var(--border); }
 .anchor-check { padding: 16px; border-radius: 12px; background: #edf7f0; }
 .anchor-check h3 { margin-top: 0; }
 .anchor-check details { border-top: 1px solid #c9dfcf; padding-top: 8px; }
+
+.anchor-chart-figure { margin: 0; min-width: 0; }
+.anchor-chart-figure a { color: var(--primary-dark); }
+.anchor-chart-figure figcaption { margin-top: 8px; text-align: center; }
+.anchor-chart-figure img { display: block; height: auto; }
+.anchor-chart-content.has-poster { grid-template-columns: minmax(0, 1fr); }
+.has-poster .anchor-chart-figure { width: 100%; max-width: 680px; margin: 0 auto; }
+.has-poster .anchor-chart-image { max-width: none; }
