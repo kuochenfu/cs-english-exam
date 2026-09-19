@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>English Review</title>
   <link rel="icon" href="data:," />
-  <link rel="stylesheet" href="styles.css?v=202609-listening-hard" />
+  <link rel="stylesheet" href="styles.css?v=202609-navigation-images" />
 </head>
 <body>
   <header>
@@ -13,16 +13,17 @@
     <p class="subtitle" id="exam-bar">Loading tests…</p>
   </header>
 
-  <main id="app"></main>
-
-  <footer>
+  <nav id="navigation" class="site-nav" aria-label="Main navigation">
+    <button id="back-btn" class="ghost" disabled>← Back</button>
+    <button id="home-btn" class="ghost" disabled>🏠 Home</button>
     <button id="tests-btn" class="ghost">📋 Tests</button>
-    <button id="home-btn" class="ghost">🏠 Home</button>
-    <button id="reset-btn" class="ghost">Reset Progress</button>
-  </footer>
+    <button id="progress-btn" class="ghost" disabled>⭐ Progress</button>
+  </nav>
+  <p id="screen-path" class="screen-path" aria-label="Current location"></p>
+  <main id="app" tabindex="-1"></main>
 
-  <!-- Bump APP_VERSION whenever app.js or any data/*.json changes, so GitHub Pages' 10-minute cache is bypassed. -->
-  <script>window.APP_VERSION = "202609-listening-hard";</script>
-  <script src="app.js?v=202609-listening-hard"></script>
+  <!-- Deployment replaces this version with the Git commit for JS, CSS and JSON. -->
+  <script>window.APP_VERSION = "202609-navigation-images";</script>
+  <script src="app.js?v=202609-navigation-images"></script>
 </body>
 </html>

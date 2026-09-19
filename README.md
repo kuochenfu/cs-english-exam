@@ -55,3 +55,25 @@ CLAUDE.md   # notes for working in this repo with Claude Code
 - **Vocab / spelling / grammar / listening**: edit the matching file under `data/exams/<exam-id>/`. Schemas are obvious from existing entries.
 - **Reading passage**: add an object to `data/exams/<exam-id>/reading.json` `passages[]`. Each question has a `skill` field that must match a key in the top-level `skills` map.
 - **Phonics sort game**: add a list to `data/exams/<exam-id>/spelling.json` with `sortGame: true` and a `groups` map of `groupName → [words]`.
+
+## Navigation and releases
+
+Every screen shares the same top navigation: **Back** returns to its parent,
+**Home** opens the current test, **Tests** changes tests, and **Progress** shows
+scores and the current test’s reset control. Browser Back/Forward also restores
+screens; returning to a practice screen starts a fresh round. Leaving a screen
+cancels delayed question changes and speech.
+
+Grade 5 Fall Quiz 1 includes illustrations for all 30 vocabulary words in both
+word/definition modes and all 9 reading passages. JSON requests revalidate cached
+data. GitHub Pages deployment stamps CSS, JavaScript, and JSON request versions
+with the commit SHA so new releases cannot reuse an older release’s assets.
+
+Run the dependency-free regression checks with Node.js 20 or newer:
+
+```bash
+node --test tests/navigation.test.cjs
+```
+
+GitHub Pages runs these checks before deploying. The site itself still needs only
+a static server; there is no local build step.

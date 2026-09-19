@@ -22,6 +22,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Check navigation and illustration regressions
+        run: node --test tests/navigation.test.cjs
+      - name: Version browser assets for this deployment
+        env:
+          RELEASE_VERSION: ${{ github.sha }}
+        run: |
+          python3 - <<'PY'
+          import os, re
+          from pathlib import Path
+          page = Path('index.html')
+          html = page.read_text()
+          version = os.environ['RELEASE_VERSION']
+          html = re.sub(r'(styles\.css|app\.js)\?v=[^"\s]+', lambda m: m.group(1) + '?v=' + version, html)
+          html = re.sub(r'window\.APP_VERSION = "[^"]+"', 'window.APP_VERSION = "' + version + '"', html)
+          page.write_text(html)
+          PY
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

@@ -240,9 +240,119 @@ const data = {};
 let currentExam = null;
 
 async function fetchJSON(path) {
-  const r = await fetch(`${path}?v=${encodeURIComponent(APP_VERSION)}`);
+  const r = await fetch(`${path}?v=${encodeURIComponent(APP_VERSION)}`, { cache: "no-cache" });
   if (!r.ok) throw new Error(`${path}: HTTP ${r.status}`);
   return r.json();
+}
+
+// ---------- Screen lifecycle and navigation ----------
+// Every screen declares its parent. Question changes do not create history
+// entries; leaving a screen cancels its delayed work and its speech.
+let currentScreen = null;
+let screenEpoch = 0;
+const screenTimers = new Set();
+const screenHistory = new Map();
+let nextScreenId = 0;
+let restoringHistory = false;
+
+const testScreen = () => ({ title: "Tests", render: renderExamPicker });
+const homeTrail = () => [testScreen(), { title: "Home", render: renderHome }];
+function topicTrail(topic) {
+  const labels = { vocab: "Vocabulary", spell: "Phonics & Spelling", grammar: "Grammar", reading: "Reading", listen: "Listening" };
+  return [...homeTrail(), { title: labels[topic], render: routes[topic] }];
+}
+function spellingTrail(list) {
+  return [...topicTrail("spell"), { title: list.title, render: () => spellingListMenu(list) }];
+}
+
+function enterScreen(title, render, parents = []) {
+  screenEpoch++;
+  loadRequest++; // Any navigation supersedes unfinished test loading.
+  screenTimers.forEach(clearTimeout);
+  screenTimers.clear();
+  if ("speechSynthesis" in window) speechSynthesis.cancel();
+  window.scrollTo({ top: 0, behavior: "instant" });
+  const previous = currentScreen;
+  currentScreen = { title, render, parents, examId: currentExam?.id || null };
+  const loading = title === "Loading test…";
+  if (!loading) {
+    const sameScreen = previous?.examId === currentScreen.examId &&
+      previous?.title === title && previous?.parents.map(p => p.title).join("/") === parents.map(p => p.title).join("/");
+    const id = ++nextScreenId;
+    screenHistory.set(id, currentScreen);
+    const method = !previous || restoringHistory || sameScreen ? "replaceState" : "pushState";
+    history[method]({ reviewScreen: id }, "");
+    restoringHistory = false;
+  }
+  const parent = parents.at(-1);
+  $("back-btn").disabled = !parent;
+  $("back-btn").title = parent ? `Back to ${parent.title}` : "You are at the test list";
+  $("home-btn").disabled = !currentExam || title === "Home" || loading;
+  $("tests-btn").disabled = title === "Tests";
+  $("progress-btn").disabled = !currentExam || title === "Tests" || title === "Progress" || loading;
+  $("home-btn").setAttribute("aria-current", title === "Home" ? "page" : "false");
+  $("tests-btn").setAttribute("aria-current", title === "Tests" ? "page" : "false");
+  $("progress-btn").setAttribute("aria-current", title === "Progress" ? "page" : "false");
+  $("screen-path").textContent = [...parents.map(p => p.title), title].join(" / ");
+  document.title = `${title} · English Review`;
+  syncHeader();
+}
+
+function renderContent(html, resetPosition = true) {
+  app.innerHTML = html;
+  if (!resetPosition) return;
+  window.scrollTo({ top: 0, behavior: "instant" });
+  app.focus({ preventScroll: true });
+}
+
+function scheduleScreen(callback, delay) {
+  const epoch = screenEpoch;
+  const timer = setTimeout(() => {
+    screenTimers.delete(timer);
+    if (epoch === screenEpoch) callback();
+  }, delay);
+  screenTimers.add(timer);
+  return timer;
+}
+
+function restoreScreen(event) {
+  const screen = screenHistory.get(event.state?.reviewScreen);
+  restoringHistory = true;
+  if (!screen) return renderExamPicker();
+  if (screen.title !== "Tests" && screen.examId && screen.examId !== currentExam?.id) {
+    return selectExam(screen.examId, screen.render);
+  }
+  screen.render();
+}
+
+function progressScreen() {
+  if (!currentExam) return renderExamPicker();
+  enterScreen("Progress", progressScreen, homeTrail());
+  renderContent(`<div class="panel">
+    <h2>⭐ Your Progress</h2>
+    <p>${esc(currentExam.title)}</p>
+    <div class="progress-overview">${topicCards(moduleWeeksLabel()).map(topic => `
+      <div><strong>${topic.icon} ${topic.title}</strong><span>${esc(readTopicProgress(topic.id)?.text || "Not tried yet")}</span></div>
+    `).join("")}</div>
+    ${badgesHTML()}
+    <details class="reset-section"><summary>Reset progress…</summary>
+      <p>Clear scores, missed questions, stars and badges for <b>${esc(currentExam.title)}</b> on this device.</p>
+      <p>Other tests and your voice preference will stay the same.</p>
+      <button id="reset-btn" class="ghost danger">Reset this test</button>
+    </details>
+  </div>`);
+  $("reset-btn").onclick = () => {
+    if (!confirm(`Reset progress for ${currentExam.title}? This cannot be undone.`)) return;
+    const prefix = `${currentExam.id}:`;
+    for (const collection of [progress, missed]) {
+      for (const key of Object.keys(collection)) {
+        if (key.startsWith(prefix) || (currentExam.id === examIndex.defaultExamId && !key.includes(":"))) delete collection[key];
+      }
+    }
+    delete game[currentExam.id];
+    saveProgress(); saveMissed(); saveGame();
+    progressScreen();
+  };
 }
 
 function seenExamIds() {
@@ -268,10 +378,9 @@ function syncHeader() {
   const title = $("site-title");
   const bar = $("exam-bar");
   if (!title || !bar) return;
-  if (currentExam) {
+  if (currentExam && currentScreen?.title !== "Tests") {
     title.textContent = `📚 Grade ${currentExam.grade || ""} English Review`.replace("Grade  ", "");
-    bar.innerHTML = `Practicing: <b>${esc(currentExam.title)}</b> · ${esc(currentExam.subtitle)} <button class="link" id="exam-bar-change">Change</button>`;
-    $("exam-bar-change").onclick = renderExamPicker;
+    bar.innerHTML = `<b>${esc(currentExam.title)}</b> · ${esc(currentExam.subtitle)}`;
   } else {
     title.textContent = "📚 English Review";
     bar.textContent = "Choose a test, then practice by topic";
@@ -355,57 +464,64 @@ function missedCountForPrefix(topicId) {
     .reduce((sum, [,items]) => sum + items.length, 0);
 }
 
-async function loadAll() {
-  const files = ["vocabulary", "spelling", "grammar", "reading", "listening"];
+const DATA_FILES = ["vocabulary", "spelling", "grammar", "reading", "listening"];
+let loadRequest = 0;
+
+async function loadExam(examId) {
+  const request = ++loadRequest;
+  const exam = examIndex.exams.find(e => e.id === examId && e.available);
+  if (!exam) return false;
   try {
-    const index = await fetchJSON("data/exams.json");
-    examIndex.currentExamId = index.currentExamId || null;
-    examIndex.defaultExamId = index.defaultExamId;
-    examIndex.exams = index.exams;
-
-    const savedExamId = localStorage.getItem(EXAM_KEY);
-    const savedExam = examIndex.exams.find(e => e.id === savedExamId && e.available);
-    const featured = examIndex.exams.find(e => e.id === examIndex.currentExamId && e.available);
-    // Show the picker when there is no saved test, or when a newer featured test
-    // has been published that this device has never seen.
-    const newFeatured = featured && savedExam?.id !== featured.id && !seenExamIds().includes(featured.id);
-    if (!savedExam || newFeatured) {
-      currentExam = null; // renderHome() falls through to the picker
-      return;
-    }
-
-    currentExam = savedExam;
-    for (const f of files) {
-      data[f] = await fetchJSON(`data/exams/${currentExam.id}/${f}.json`);
-    }
-    localStorage.setItem(EXAM_KEY, currentExam.id);
-  } catch (e) {
-    app.innerHTML = `<div class="panel"><h2>⚠️ Couldn't load data</h2>
-      <p>This app loads JSON files, which browsers block when opened directly.</p>
-      <p><b>To run it:</b></p>
-      <pre>cd ${"$"}(project folder)
-python3 -m http.server</pre>
-      <p>Then open <a href="http://localhost:8000">http://localhost:8000</a>.</p></div>`;
-    throw e;
+    const values = await Promise.all(DATA_FILES.map(f => fetchJSON(`data/exams/${exam.id}/${f}.json`)));
+    if (request !== loadRequest) return false;
+    // Commit the entire test together; never render a mixture of two tests.
+    DATA_FILES.forEach((f, i) => { data[f] = values[i]; });
+    currentExam = exam;
+    localStorage.setItem(EXAM_KEY, exam.id);
+    markExamsSeen([exam.id]);
+    return true;
+  } catch (error) {
+    if (request === loadRequest) showLoadError(error, () => selectExam(examId));
+    return false;
   }
 }
 
-async function selectExam(examId) {
-  const exam = examIndex.exams.find(e => e.id === examId);
-  if (!exam || !exam.available) return;
-  currentExam = exam;
-  localStorage.setItem(EXAM_KEY, currentExam.id);
-  markExamsSeen([exam.id]);
-  await loadAll();
-  renderHome();
+function showLoadError(error, retry) {
+  enterScreen("Unable to load", retry, [testScreen()]);
+  renderContent(`<div class="panel"><h2>Couldn't load this test</h2>
+    <p>Please check your connection and try again.</p>
+    <p class="exam-label">${esc(error.message)}</p>
+    <button id="retry-load">Try again</button></div>`);
+  $("retry-load").onclick = retry;
+}
+
+async function loadAll() {
+  try {
+    const index = await fetchJSON("data/exams.json");
+    Object.assign(examIndex, index);
+    const saved = examIndex.exams.find(e => e.id === localStorage.getItem(EXAM_KEY) && e.available);
+    const featured = examIndex.exams.find(e => e.id === examIndex.currentExamId && e.available);
+    const newFeatured = featured && saved?.id !== featured.id && !seenExamIds().includes(featured.id);
+    if (saved && !newFeatured) await selectExam(saved.id);
+    else renderExamPicker();
+  } catch (error) {
+    showLoadError(error, loadAll);
+  }
+}
+
+async function selectExam(examId, destination = renderHome) {
+  enterScreen("Loading test…", () => selectExam(examId), [testScreen()]);
+  renderContent('<div class="panel" role="status"><h2>Loading your test…</h2></div>');
+  if (await loadExam(examId)) destination();
 }
 
 function renderExamPicker() {
+  enterScreen("Tests", renderExamPicker);
   const seen = new Set(seenExamIds());
   // "New" is only for the featured test, and only for devices that have used the app before.
   const returningVisitor = seen.size > 0 || !!localStorage.getItem(EXAM_KEY);
   const exams = sortedExams();
-  app.innerHTML = `
+  renderContent(`
     <div class="panel">
       <h2>Choose a test to practice</h2>
       <div class="cards">
@@ -414,17 +530,17 @@ function renderExamPicker() {
           const isNew = isLatest && returningVisitor && exam.available && !seen.has(exam.id);
           const isCurrent = exam.id === currentExam?.id;
           return `
-          <div class="card exam-card ${exam.available ? "" : "disabled"} ${isLatest ? "featured" : ""}" data-exam="${exam.id}">
+          <button type="button" ${exam.available ? "" : "disabled"} class="card exam-card ${exam.available ? "" : "disabled"} ${isLatest ? "featured" : ""}" data-exam="${exam.id}">
             ${isNew ? `<span class="pill new">New</span>` : isLatest ? `<span class="pill latest">Latest</span>` : ""}
             <div class="icon">${exam.available ? "📘" : "🗂️"}</div>
             <h2>${esc(exam.title)}</h2>
             <div>${esc(exam.subtitle)}</div>
             ${exam.date ? `<div class="exam-date">Test date: ${esc(exam.date)}</div>` : ""}
             <div class="progress">${esc(exam.status)}${isCurrent ? " · currently selected" : ""}</div>
-          </div>`;
+          </button>`;
         }).join("")}
       </div>
-    </div>`;
+    </div>`);
   // Once the picker has been shown, nothing on it is "new" any more.
   markExamsSeen(exams.filter(e => e.available).map(e => e.id));
   syncHeader();
@@ -502,17 +618,18 @@ function badgesHTML() {
 
 function renderHome() {
   if (!currentExam) return renderExamPicker();
+  enterScreen("Home", renderHome, [testScreen()]);
   const moduleLabel = moduleWeeksLabel();
   const topics = topicCards(moduleLabel);
   const examGame = ensureExamGame();
   const today = ensureTodayGame();
   const missedTotal = totalMissedForCurrentExam();
-  app.innerHTML = `
+  renderContent(`
     <div class="panel">
       <div class="quest-header">
         <div>
           <h2>${esc(currentExam.title)} Quest Map</h2>
-          <p class="exam-label">${esc(currentExam.subtitle)} <button class="link" id="change-exam">Change test</button></p>
+          <p class="exam-label">Choose a topic to start practicing.</p>
         </div>
         <div class="stars-box">
           <span>⭐</span>
@@ -530,16 +647,16 @@ function renderHome() {
           const miss = missedCountForPrefix(t.id);
           const pStr = p ? p.text : "Not tried yet";
           const doneToday = !!today.topics[t.id];
-          return `<div class="card quest-card ${doneToday ? "done-today" : ""}" data-topic="${t.id}">
+          return `<button type="button" class="card quest-card ${doneToday ? "done-today" : ""}" data-topic="${t.id}">
             <div class="icon">${t.icon}</div>
             <div class="quest-place">${t.place}</div>
             <h2>${t.title}</h2>
             <div>${t.desc}</div>
             <div class="progress">${doneToday ? "Today complete · " : ""}${pStr}${miss ? ` · ${miss} to review` : ""}</div>
-          </div>`;
+          </button>`;
         }).join("")}
       </div>
-    </div>`;
+    </div>`);
   syncHeader();
   document.querySelectorAll(".card").forEach(c => {
     c.onclick = () => routes[c.dataset.topic]();
@@ -548,10 +665,10 @@ function renderHome() {
     b.onclick = () => routes[b.dataset.missionTopic]();
   });
   if ($("boss-review")) $("boss-review").onclick = bossReview;
-  $("change-exam").onclick = renderExamPicker;
 }
 
 function bossReview() {
+  enterScreen("Boss Review", bossReview, homeTrail());
   const topics = topicCards(moduleWeeksLabel())
     .map(t => ({ ...t, missed: missedCountForPrefix(t.id) }))
     .filter(t => t.missed);
@@ -559,17 +676,16 @@ function bossReview() {
   if (!topics.length) {
     const badges = unlockBadges("reading:boss-clear", 100);
     saveGame();
-    app.innerHTML = `
+    renderContent(`
       <div class="panel boss-panel">
         <h2>💥 Boss Defeated</h2>
         <p>No missed questions are waiting right now.</p>
         ${gameRewardHTML({ starsEarned: 0, badges })}
-        <button onclick="renderHome()">Back to Quest Map</button>
-      </div>`;
+      </div>`);
     return;
   }
 
-  app.innerHTML = `
+  renderContent(`
     <div class="panel boss-panel">
       <h2>💥 Boss Review</h2>
       <p>Clear missed questions to defeat each boss.</p>
@@ -579,8 +695,7 @@ function bossReview() {
           <span><b>${t.title}</b> <small>${t.missed} missed question${t.missed === 1 ? "" : "s"}</small></span>
         </button>`).join("")}
       </div>
-      <button class="ghost" onclick="renderHome()">🏠 Quest Map</button>
-    </div>`;
+    </div>`);
   document.querySelectorAll("button[data-boss-topic]").forEach(b => {
     b.onclick = () => routes[b.dataset.bossTopic]();
   });
@@ -588,14 +703,15 @@ function bossReview() {
 
 // ---------- Generic Quiz Runner ----------
 function runQuiz(topicId, title, items, getQ, options = {}) {
+  const parents = options.parents || topicTrail(topicCategory(topicId));
+  enterScreen(title, () => runQuiz(topicId, title, items, getQ, options), parents);
   // items: array; getQ(item) -> {prompt, choices, answer, extra?}
   if (!items.length) {
-    app.innerHTML = `
+    renderContent(`
       <div class="panel">
         <h2>${title}</h2>
         <p>No review items are available right now.</p>
-        <button class="ghost" onclick="renderHome()">🏠 Home</button>
-      </div>`;
+      </div>`);
     return;
   }
   let i = 0, correct = 0;
@@ -603,14 +719,13 @@ function runQuiz(topicId, title, items, getQ, options = {}) {
   const order = shuffle([...items.keys()]);
   const itemId = options.itemId || ((item) => item.id || item.word || item.q);
   const itemLabel = options.itemLabel || ((item) => item.word || item.q || "Question");
-  const afterFinish = options.afterFinish || renderHome;
 
   function step() {
     if (i >= order.length) return finish();
     const item = items[order[i]];
     const { prompt, choices, answer, extra } = getQ(item);
     const choiceOrder = shuffle([...choices.keys()]);
-    app.innerHTML = `
+    renderContent(`
       <div class="panel">
         <div class="progress-bar"><div style="width:${(i/order.length)*100}%"></div></div>
         <h2>${title}</h2>
@@ -620,7 +735,7 @@ function runQuiz(topicId, title, items, getQ, options = {}) {
           ${choiceOrder.map(idx => `<button data-idx="${idx}">${choices[idx]}</button>`).join("")}
         </div>
         <div class="feedback" id="fb"></div>
-      </div>`;
+      </div>`);
     document.querySelectorAll(".choices button").forEach(b => {
       b.onclick = () => {
         const picked = +b.dataset.idx;
@@ -642,7 +757,7 @@ function runQuiz(topicId, title, items, getQ, options = {}) {
                recordMissed(topicId, { id, label: itemLabel(item), title });
                fb.innerHTML = `❌ The answer is <b>${choices[answer]}</b>.`;
                fb.className = "feedback bad"; }
-        setTimeout(() => { i++; step(); }, isCorrect ? 700 : 1600);
+        scheduleScreen(() => { i++; step(); }, isCorrect ? 700 : 1600);
       };
     });
     if (options.afterRender) options.afterRender(item);
@@ -653,17 +768,16 @@ function runQuiz(topicId, title, items, getQ, options = {}) {
     const pct = Math.round((correct/order.length)*100);
     writeProgress(topicId, pct);
     const reward = recordGameCompletion(topicId, pct, correct, order.length);
-    app.innerHTML = `
+    renderContent(`
       <div class="panel">
         <h2>🎉 Done!</h2>
         <p>Score: <b>${correct} / ${order.length}</b> (${pct}%)</p>
         ${gameRewardHTML(reward)}
         ${missed.length ? `<details open><summary>Review ${missed.length} missed:</summary>
           <ul>${missed.map(m => `<li>${getQ(m.item).prompt.replace(/<[^>]+>/g,'')} → <b>${m.answer}</b> (you said: ${m.picked})</li>`).join("")}</ul></details>` : "<p>Perfect score! 🌟</p>"}
-        <button id="finish-next">Done</button>
-        <button class="ghost" onclick="renderHome()">🏠 Home</button>
-      </div>`;
-    $("finish-next").onclick = afterFinish;
+        <button id="finish-next">🔁 Practice again</button>
+      </div>`);
+    $("finish-next").onclick = () => runQuiz(topicId, title, items, getQ, options);
   }
 
   step();
@@ -672,16 +786,16 @@ function runQuiz(topicId, title, items, getQ, options = {}) {
 function shuffle(a) { for (let i=a.length-1;i>0;i--) { const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
 
 function emptyTopic(title) {
-  app.innerHTML = `
+  renderContent(`
     <div class="panel">
       <h2>${title}</h2>
       <p>This section does not have practice items yet.</p>
-      <button class="ghost" onclick="renderHome()">🏠 Home</button>
-    </div>`;
+    </div>`);
 }
 
 // ---------- Vocabulary ----------
 function vocabularyTopic() {
+  enterScreen("Vocabulary", vocabularyTopic, homeTrail());
   const words = data.vocabulary.words;
   if (!words.length) return emptyTopic("Vocabulary");
   const missedDef = missedCount("vocab:definition");
@@ -710,12 +824,12 @@ function vocabularyTopic() {
     const wrongs = wrongsFor(w);
     const choices = shuffle([w, ...wrongs]).map(x => x.definition);
     return { prompt: `What does <b>${w.word}</b> (${w.pos}) mean?`, choices, answer: choices.indexOf(w.definition), extra: wordIllustration(w) };
-  }, { itemId: w => w.word, itemLabel: w => w.word, afterFinish: vocabularyTopic });
+  }, { itemId: w => w.word, itemLabel: w => w.word });
   const startWord = (items = words) => runQuiz("vocab:word", "Definition → Word", items, (w) => {
     const wrongs = wrongsFor(w);
     const choices = shuffle([w, ...wrongs]).map(x => x.word);
     return { prompt: `Which word means: <i>"${w.definition}"</i>?`, choices, answer: choices.indexOf(w.word), extra: wordIllustration(w) };
-  }, { itemId: w => w.word, itemLabel: w => w.word, afterFinish: vocabularyTopic });
+  }, { itemId: w => w.word, itemLabel: w => w.word });
   const startBlank = (items = words) => runQuiz("vocab:blank", "Fill in the Blank", items, (w) => {
     const re = new RegExp(`\\b${w.word}\\w*`, "i");
     const sentences = [w.example, ...(w.examples || [])].filter(s => s && re.test(s));
@@ -724,7 +838,7 @@ function vocabularyTopic() {
     const wrongs = wrongsFor(w);
     const choices = shuffle([w, ...wrongs]).map(x => x.word);
     return { prompt: blanked, choices, answer: choices.indexOf(w.word) };
-  }, { itemId: w => w.word, itemLabel: w => w.word, afterFinish: vocabularyTopic });
+  }, { itemId: w => w.word, itemLabel: w => w.word });
 
   // ---- Word Forms: "Some words may need to be changed" (homework Part B skill) ----
   // Builds inflected forms for verbs and nouns; a word can override with `forms: [...]`.
@@ -766,7 +880,7 @@ function vocabularyTopic() {
       choices,
       answer: choices.indexOf(used)
     };
-  }, { itemId: w => w.word, itemLabel: w => w.word, afterFinish: vocabularyTopic });
+  }, { itemId: w => w.word, itemLabel: w => w.word });
   // Pick a random member of an array.
   const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
   const startSynonym = (items = synWords) => runQuiz("vocab:synonym", "Synonyms", items, (w) => {
@@ -778,7 +892,7 @@ function vocabularyTopic() {
     const distractors = shuffle([...new Set(pool)].filter(p => !avoid.has(p.toLowerCase()))).slice(0,3);
     const choices = shuffle([answer, ...distractors]);
     return { prompt: `Which word means almost the <b>SAME</b> as <b>${w.word}</b> (${w.pos})?`, choices, answer: choices.indexOf(answer) };
-  }, { itemId: w => w.word, itemLabel: w => w.word, afterFinish: vocabularyTopic });
+  }, { itemId: w => w.word, itemLabel: w => w.word });
   const startAntonym = (items = antWords) => runQuiz("vocab:antonym", "Antonyms (Opposites)", items, (w) => {
     const answer = pick(w.antonyms);
     const avoid = new Set([w.word.toLowerCase(), ...w.antonyms.map(s => s.toLowerCase())]);
@@ -789,9 +903,9 @@ function vocabularyTopic() {
     let distractors = shuffle([...new Set([...trap, ...pool])].filter(p => !avoid.has(p.toLowerCase()))).slice(0,3);
     const choices = shuffle([answer, ...distractors]);
     return { prompt: `Which word means the <b>OPPOSITE</b> of <b>${w.word}</b> (${w.pos})?`, choices, answer: choices.indexOf(answer) };
-  }, { itemId: w => w.word, itemLabel: w => w.word, afterFinish: vocabularyTopic });
+  }, { itemId: w => w.word, itemLabel: w => w.word });
 
-  app.innerHTML = `
+  renderContent(`
     <div class="panel">
       <h2>📖 Vocabulary</h2>
       <p>Pick a practice mode:</p>
@@ -807,8 +921,7 @@ function vocabularyTopic() {
       ${missedSyn ? `<button class="ghost" id="r4">Review Synonyms (${missedSyn})</button>` : ""}
       ${missedAnt ? `<button class="ghost" id="r5">Review Antonyms (${missedAnt})</button>` : ""}
       ${missedForm ? `<button class="ghost" id="r6">Review Word Forms (${missedForm})</button>` : ""}
-      <button class="ghost" onclick="renderHome()">🏠 Home</button>
-    </div>`;
+    </div>`);
   $("m1").onclick = () => startDefinition();
   $("m2").onclick = () => startWord();
   $("m3").onclick = () => startBlank();
@@ -825,9 +938,10 @@ function vocabularyTopic() {
 
 // ---------- Spelling / Phonics ----------
 function spellingTopic() {
+  enterScreen("Phonics & Spelling", spellingTopic, homeTrail());
   const lists = data.spelling.lists;
   if (!lists.length) return emptyTopic("Phonics & Spelling");
-  app.innerHTML = `
+  renderContent(`
     <div class="panel">
       <h2>🔤 Phonics & Spelling</h2>
       <p>Pick a list:</p>
@@ -837,8 +951,7 @@ function spellingTopic() {
         const miss = missedCountForPrefix(topicId);
         return `<button data-i="${idx}">${l.title}${p ? ` · ${p.text}` : ""}</button>${miss ? `<button class="ghost" data-review-i="${idx}">Review missed (${miss})</button>` : ""}`;
       }).join("")}
-      <button class="ghost" onclick="renderHome()">🏠 Home</button>
-    </div>`;
+    </div>`);
   document.querySelectorAll(".panel button[data-i]").forEach(b => {
     b.onclick = () => {
       const list = lists[+b.dataset.i];
@@ -871,11 +984,11 @@ function phonicsQuiz(list, reviewOnly = false) {
   }), {
     itemId: it => it.q,
     itemLabel: it => it.q.replace(/<[^>]+>/g, ""),
-    afterFinish: spellingTopic
   });
 }
 
 function spellingListMenu(list) {
+  enterScreen(list.title, () => spellingListMenu(list), topicTrail("spell"));
   window.__currentSpellingList = list;
   const baseId = `spell:${list.id || list.title}`;
   const chooseId = `${baseId}:choose`;
@@ -885,7 +998,7 @@ function spellingListMenu(list) {
   const chooseMissed = missedCount(chooseId);
   const typeMissed = missedCount(typeId);
 
-  app.innerHTML = `
+  renderContent(`
     <div class="panel">
       <h2>${list.title}</h2>
       <p>Start with listening practice, then try the full spelling test.</p>
@@ -893,9 +1006,7 @@ function spellingListMenu(list) {
       ${chooseMissed ? `<button class="ghost" id="spell-choose-review">Review Listen & Choose (${chooseMissed})</button>` : ""}
       <button id="spell-type">Type Spelling${typeProgress ? ` · Best ${typeProgress.best}%` : ""}</button>
       ${typeMissed ? `<button class="ghost" id="spell-type-review">Review Type Spelling (${typeMissed})</button>` : ""}
-      <button class="ghost" onclick="spellingTopic()">← More lists</button>
-      <button class="ghost" onclick="renderHome()">🏠 Home</button>
-    </div>`;
+    </div>`);
   $("spell-choose").onclick = () => spellingChoiceQuiz(list);
   $("spell-type").onclick = () => dictation(list);
   if ($("spell-choose-review")) $("spell-choose-review").onclick = () => spellingChoiceQuiz(list, true);
@@ -921,13 +1032,14 @@ function spellingChoiceQuiz(list, reviewOnly = false) {
   }, {
     itemId: item => item.word,
     itemLabel: item => item.word,
-    afterFinish: () => spellingListMenu(list),
+    parents: spellingTrail(list),
     afterRender: bindVoicePicker,
     onStep: item => speak(item.sentence)
   });
 }
 
 function dictation(list, reviewOnly = false) {
+  enterScreen("Type Spelling", () => dictation(list, reviewOnly), spellingTrail(list));
   window.__currentSpellingList = list;
   let i = 0, correct = 0;
   const topicId = `spell:${list.id || list.title}:type`;
@@ -939,7 +1051,7 @@ function dictation(list, reviewOnly = false) {
   function step() {
     if (i >= order.length) return finish();
     const item = words[order[i]];
-    app.innerHTML = `
+    renderContent(`
       <div class="panel">
         <div class="progress-bar"><div style="width:${(i/order.length)*100}%"></div></div>
         <h2>${list.title}</h2>
@@ -952,13 +1064,16 @@ function dictation(list, reviewOnly = false) {
           <button type="submit">Check</button>
         </form>
         <div class="feedback" id="fb"></div>
-      </div>`;
+      </div>`);
     bindVoicePicker();
     $("play").onclick = () => speak(item.sentence);
     speak(item.sentence);
     $("f").onsubmit = (e) => {
       e.preventDefault();
+      if ($("ans").disabled) return;
       const guess = $("ans").value.trim().toLowerCase();
+      $("ans").disabled = true;
+      $("f").querySelector("button").disabled = true;
       const fb = $("fb");
       if (guess === item.word.toLowerCase()) {
         correct++;
@@ -971,7 +1086,7 @@ function dictation(list, reviewOnly = false) {
         fb.innerHTML = `❌ Correct spelling: <b>${item.word}</b><br><i>${item.sentence}</i>`;
         fb.className = "feedback bad";
       }
-      setTimeout(() => { i++; step(); }, guess === item.word.toLowerCase() ? 1200 : 2400);
+      scheduleScreen(() => { i++; step(); }, guess === item.word.toLowerCase() ? 1200 : 2400);
     };
   }
 
@@ -979,18 +1094,17 @@ function dictation(list, reviewOnly = false) {
     const pct = Math.round((correct/order.length)*100);
     writeProgress(topicId, pct);
     const reward = recordGameCompletion(topicId, pct, correct, order.length);
-    app.innerHTML = `
+    renderContent(`
       <div class="panel">
         <h2>🎉 Done!</h2>
         <p>Score: <b>${correct} / ${order.length}</b> (${pct}%)</p>
         ${gameRewardHTML(reward)}
         ${missed.length ? `<details open><summary>Review ${missed.length} missed:</summary>
           <ul>${missed.map(m => `<li><b>${m.word}</b> — you wrote "${m.guess}"</li>`).join("")}</ul></details>` : "<p>Perfect! 🌟</p>"}
-        <button id="more-spelling-modes">More modes</button>
+        <button id="retry-dictation">🔁 Practice again</button>
         ${missedCount(topicId) ? `<button class="ghost" id="review-dictation">Review this list (${missedCount(topicId)})</button>` : ""}
-        <button class="ghost" onclick="renderHome()">🏠 Home</button>
-      </div>`;
-    $("more-spelling-modes").onclick = () => spellingListMenu(list);
+      </div>`);
+    $("retry-dictation").onclick = () => dictation(list, reviewOnly);
     if ($("review-dictation")) $("review-dictation").onclick = () => dictation(list, true);
   }
 
@@ -998,6 +1112,7 @@ function dictation(list, reviewOnly = false) {
 }
 
 function sortGame(list, reviewOnly = false) {
+  enterScreen(list.title, () => sortGame(list, reviewOnly), topicTrail("spell"));
   // Build flat word→correctGroup map
   const topicId = `spell:${list.id || list.title}`;
   const reviewIds = new Set(missedItems(topicId).map(m => m.id));
@@ -1027,7 +1142,7 @@ function sortGame(list, reviewOnly = false) {
       finalRecorded = true;
     }
 
-    app.innerHTML = `
+    renderContent(`
       <div class="panel">
         <h2>${list.title}</h2>
         <p>Click a word, then click the bin where it belongs.</p>
@@ -1044,8 +1159,8 @@ function sortGame(list, reviewOnly = false) {
               }).join("")}
             </div>
           </div>`).join("")}
-        ${remaining.length === 0 ? `${gameRewardHTML(finalReward)}<button onclick="renderHome()">🏠 Home</button>` : ""}
-      </div>`;
+        ${remaining.length === 0 ? `${gameRewardHTML(finalReward)}` : ""}
+      </div>`, false);
     let selected = null;
     document.querySelectorAll(".sort-word[data-w]").forEach(el => {
       el.onclick = () => {
@@ -1074,6 +1189,7 @@ function sortGame(list, reviewOnly = false) {
 
 // ---------- Grammar ----------
 function grammarTopic() {
+  enterScreen("Grammar", grammarTopic, homeTrail());
   const mainItems = data.grammar.items || [];
   const explanation = data.grammar.explanation;
   const practiceSets = [
@@ -1127,11 +1243,10 @@ function grammarTopic() {
     runQuiz(topicId, set.title, quizItems, makeQuestion, {
       itemId: it => it.id || it.q,
       itemLabel: it => it.q,
-      afterFinish: grammarTopic
     });
   };
 
-  app.innerHTML = `
+  renderContent(`
     <div class="panel">
       <h2>✏️ Grammar</h2>
       ${grammarGuide}
@@ -1148,8 +1263,7 @@ function grammarTopic() {
           </div>`;
         }).join("")}
       </div>
-      <button class="ghost" onclick="renderHome()">🏠 Home</button>
-    </div>`;
+    </div>`);
   document.querySelectorAll("button[data-grammar-set]").forEach(b => {
     b.onclick = () => start(practiceSets[+b.dataset.grammarSet]);
   });
@@ -1165,10 +1279,11 @@ function grammarTopic() {
 
 // ---------- Reading ----------
 function readingTopic() {
+  enterScreen("Reading", readingTopic, homeTrail());
   const passages = data.reading.passages || [];
   const charts = data.reading.anchorCharts || [];
   if (!passages.length && !charts.length) return emptyTopic("Reading Comprehension");
-  app.innerHTML = `
+  renderContent(`
     <div class="panel">
       <h2>📚 Reading Comprehension</h2>
       <p>Choose what to do:</p>
@@ -1191,8 +1306,7 @@ function readingTopic() {
         </div>`;
       }).join("")}
       </div>` : ""}
-      <br><button class="ghost" onclick="renderHome()">🏠 Home</button>
-    </div>`;
+    </div>`);
   if ($("charts")) $("charts").onclick = showAnchorCharts;
   document.querySelectorAll("button[data-p]").forEach(b => {
     b.onclick = () => readPassage(data.reading.passages[+b.dataset.p]);
@@ -1203,6 +1317,7 @@ function readingTopic() {
 }
 
 function showAnchorCharts() {
+  enterScreen("Anchor Charts", showAnchorCharts, topicTrail("reading"));
   const defaultCharts = [
     { name: "Ideas and Support",
       body: "<b>Main idea</b> = what a paragraph is mostly about. <b>Support</b> = the details, facts, or examples that prove it.<br><br>Ask: What is this paragraph telling me? Which sentences give proof?",
@@ -1248,16 +1363,15 @@ function showAnchorCharts() {
       ] },
   ];
   const charts = data.reading.anchorCharts || defaultCharts;
-  app.innerHTML = `
+  renderContent(`
     <div class="panel">
       <h2>📋 Anchor Charts</h2>
       ${charts.map(c => `<details><summary>${c.name}</summary><div class="anchor-chart-content">${c.image ? `<img class="anchor-chart-image" src="${c.image}" alt="${c.imageAlt || c.name}">` : ""}<div>${c.body}<div class="anchor-chart-examples"><b>Examples:</b><ol>${(c.ex || []).map(x => `<li>${x}</li>`).join("")}</ol></div></div></div></details>`).join("")}
-      <br><button onclick="readingTopic()">← Back</button>
-      <button class="ghost" onclick="renderHome()">🏠 Home</button>
-    </div>`;
+    </div>`);
 }
 
 function readPassage(passage, reviewOnly = false) {
+  enterScreen(passage.title, () => readPassage(passage, reviewOnly), topicTrail("reading"));
   const topicId = `reading:${passage.id || passage.title}`;
   const reviewIds = new Set(missedItems(topicId).map(m => m.id));
   const questions = reviewOnly ? passage.questions.filter(q => reviewIds.has(q.q)) : passage.questions;
@@ -1267,7 +1381,7 @@ function readPassage(passage, reviewOnly = false) {
   // Pre-shuffle choice order per question so answer letters aren't always in the same spot.
   const qOrders = questions.map(q => q.choices ? shuffle([...q.choices.keys()]) : []);
 
-  app.innerHTML = `
+  renderContent(`
     <div class="panel">
       <h2>${passage.title}</h2>
       <div>${passage.skills.map(s => `<span class="tag">${data.reading.skills[s] || s}</span>`).join("")}</div>
@@ -1295,8 +1409,7 @@ function readPassage(passage, reviewOnly = false) {
         </div>
       `).join("")}
       <button id="submit-all">✅ Submit all answers</button>
-      <button class="ghost" onclick="readingTopic()">← Back</button>
-    </div>`;
+    </div>`);
 
   bindVoicePicker();
   $("play-passage").onclick = () => {
@@ -1360,6 +1473,7 @@ function readPassage(passage, reviewOnly = false) {
     // Show summary at top, scroll to it
     const summary = document.createElement("div");
     summary.className = "panel";
+    summary.id = "reading-summary";
     summary.style.marginTop = "0";
     summary.innerHTML = `
       <h2>🎉 Score: ${correct} / ${total} (${pct}%)</h2>
@@ -1367,8 +1481,6 @@ function readPassage(passage, reviewOnly = false) {
       ${shortAnswers ? `<p>${shortAnswers} short answer question(s) showed sample answers${blankShortAnswers ? `; ${blankShortAnswers} were blank` : ""}.</p>` : ""}
       ${gameRewardHTML(reward)}
       <button onclick="readPassage(window.__currentPassage, window.__currentPassageReviewOnly)">🔁 Try again</button>
-      <button class="ghost" onclick="readingTopic()">← Back to passages</button>
-      <button class="ghost" onclick="renderHome()">🏠 Home</button>
     `;
     app.insertBefore(summary, app.firstChild);
     summary.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -1379,8 +1491,9 @@ function readPassage(passage, reviewOnly = false) {
 
 // ---------- Listening ----------
 function listeningTopic() {
+  enterScreen("Listening", listeningTopic, homeTrail());
   if (!data.listening.dialogues.length) return emptyTopic("Listening Comprehension");
-  app.innerHTML = `
+  renderContent(`
     <div class="panel">
       <h2>👂 Listening Comprehension</h2>
       <p>Pick a dialogue. You'll hear a short conversation, then answer the questions. You can replay it any time.</p>
@@ -1390,8 +1503,7 @@ function listeningTopic() {
         const prog = readProgress(topicId);
         return `<button data-d="${i}">${d.title}${prog ? ` · Best ${prog.best}%` : ""}</button>${miss ? `<button class="ghost" data-review-d="${i}">Review missed (${miss})</button>` : ""}`;
       }).join("")}
-      <br><button class="ghost" onclick="renderHome()">🏠 Home</button>
-    </div>`;
+    </div>`);
   document.querySelectorAll("button[data-d]").forEach(b => {
     b.onclick = () => playDialogue(data.listening.dialogues[+b.dataset.d]);
   });
@@ -1408,6 +1520,7 @@ function pickTwoVoices() {
 }
 
 function playDialogue(dialogue, reviewOnly = false) {
+  enterScreen(dialogue.title, () => playDialogue(dialogue, reviewOnly), topicTrail("listen"));
   const topicId = `listen:${dialogue.id || dialogue.title}`;
   const reviewIds = new Set(missedItems(topicId).map(m => m.id));
   const questions = reviewOnly ? dialogue.questions.filter(q => reviewIds.has(q.q)) : dialogue.questions;
@@ -1434,7 +1547,7 @@ function playDialogue(dialogue, reviewOnly = false) {
     });
   }
 
-  app.innerHTML = `
+  renderContent(`
     <div class="panel">
       <h2>${dialogue.title}</h2>
       ${voicePicker()}
@@ -1446,7 +1559,7 @@ function playDialogue(dialogue, reviewOnly = false) {
       </div>
       ${reviewOnly ? `<p class="review-note">Reviewing missed questions only.</p>` : ""}
       <br><button id="quiz">I'm ready — start questions →</button>
-    </div>`;
+    </div>`);
   bindVoicePicker();
   $("play").onclick = playAll;
   $("stop").onclick = () => speechSynthesis.cancel();
@@ -1461,10 +1574,10 @@ function playDialogue(dialogue, reviewOnly = false) {
       choices: q.choices,
       answer: q.answer,
       extra: `<button onclick="window.__replayDialogue()" class="ghost" style="margin-bottom:8px">🔊 Replay dialogue</button>`
-    }), { itemId: q => q.q, itemLabel: q => q.q, afterFinish: listeningTopic });
+    }), { itemId: q => q.q, itemLabel: q => q.q, parents: [...topicTrail("listen"), { title: dialogue.title, render: () => playDialogue(dialogue, reviewOnly) }] });
   };
   // Auto-play once on entry
-  setTimeout(playAll, 300);
+  scheduleScreen(playAll, 300);
 }
 
 // ---------- Routes ----------
@@ -1478,16 +1591,7 @@ const routes = {
 
 $("home-btn").onclick = renderHome;
 $("tests-btn").onclick = renderExamPicker;
-$("reset-btn").onclick = () => {
-  if (confirm("Reset all progress?")) {
-    localStorage.removeItem(STORE_KEY);
-    localStorage.removeItem(MISSED_KEY);
-    localStorage.removeItem(GAME_KEY);
-    for (const k in progress) delete progress[k];
-    for (const k in missed) delete missed[k];
-    for (const k in game) delete game[k];
-    renderHome();
-  }
-};
-
-loadAll().then(renderHome);
+$("back-btn").onclick = () => currentScreen?.parents.at(-1)?.render();
+$("progress-btn").onclick = progressScreen;
+window.addEventListener("popstate", restoreScreen);
+loadAll();
