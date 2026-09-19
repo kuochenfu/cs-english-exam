@@ -694,13 +694,22 @@ function vocabularyTopic() {
   const antWords = words.filter(w => w.antonyms && w.antonyms.length);
 
   const reviewWords = (topicId) => words.filter(w => missedItems(topicId).some(m => m.id === w.word));
+  // Distractors share the word's part of speech when enough exist, so the student
+  // cannot eliminate choices by grammar alone (e.g. a noun blank with verb options).
+  const posKey = (w) => String(w.pos || "").split(/[\s/]+/)[0].toLowerCase();
+  const wrongsFor = (w, n = 3) => {
+    const others = words.filter(x => x.word !== w.word);
+    const same = others.filter(x => posKey(x) === posKey(w));
+    const pool = same.length >= n ? same : others;
+    return shuffle(pool).slice(0, n);
+  };
   const startDefinition = (items = words) => runQuiz("vocab:definition", "Word → Definition", items, (w) => {
-    const wrongs = shuffle(words.filter(x => x.word !== w.word)).slice(0,3);
+    const wrongs = wrongsFor(w);
     const choices = shuffle([w, ...wrongs]).map(x => x.definition);
     return { prompt: `What does <b>${w.word}</b> (${w.pos}) mean?`, choices, answer: choices.indexOf(w.definition) };
   }, { itemId: w => w.word, itemLabel: w => w.word, afterFinish: vocabularyTopic });
   const startWord = (items = words) => runQuiz("vocab:word", "Definition → Word", items, (w) => {
-    const wrongs = shuffle(words.filter(x => x.word !== w.word)).slice(0,3);
+    const wrongs = wrongsFor(w);
     const choices = shuffle([w, ...wrongs]).map(x => x.word);
     return { prompt: `Which word means: <i>"${w.definition}"</i>?`, choices, answer: choices.indexOf(w.word) };
   }, { itemId: w => w.word, itemLabel: w => w.word, afterFinish: vocabularyTopic });
@@ -709,9 +718,51 @@ function vocabularyTopic() {
     const sentences = [w.example, ...(w.examples || [])].filter(s => s && re.test(s));
     const sentence = (sentences.length ? sentences : [w.example])[Math.floor(Math.random() * (sentences.length || 1))];
     const blanked = sentence.replace(re, "____");
-    const wrongs = shuffle(words.filter(x => x.word !== w.word)).slice(0,3);
+    const wrongs = wrongsFor(w);
     const choices = shuffle([w, ...wrongs]).map(x => x.word);
     return { prompt: blanked, choices, answer: choices.indexOf(w.word) };
+  }, { itemId: w => w.word, itemLabel: w => w.word, afterFinish: vocabularyTopic });
+
+  // ---- Word Forms: "Some words may need to be changed" (homework Part B skill) ----
+  // Builds inflected forms for verbs and nouns; a word can override with `forms: [...]`.
+  const wordForms = (w) => {
+    if (w.forms?.length) return [...new Set([w.word, ...w.forms])];
+    const base = w.word.toLowerCase();
+    const pos = posKey(w);
+    const cvc = /[^aeiou][aeiou][^aeiouwxy]$/.test(base) && base.length <= 4;
+    const sForm = /(s|sh|ch|x|o)$/.test(base) ? base + "es" : /[^aeiou]y$/.test(base) ? base.slice(0, -1) + "ies" : base + "s";
+    if (pos === "v") {
+      const ed = /e$/.test(base) ? base + "d" : /[^aeiou]y$/.test(base) ? base.slice(0, -1) + "ied" : cvc ? base + base.slice(-1) + "ed" : base + "ed";
+      const ing = /[^e]e$/.test(base) ? base.slice(0, -1) + "ing" : cvc ? base + base.slice(-1) + "ing" : base + "ing";
+      return [base, sForm, ed, ing];
+    }
+    if (pos === "n") return [base, sForm];
+    return [base];
+  };
+  const formItems = words.map(w => {
+    const forms = wordForms(w);
+    if (forms.length < 2) return null;
+    const re = new RegExp(`\\b(${w.word}\\w*)`, "i");
+    const sentences = [w.example, ...(w.examples || [])].filter(s => {
+      const m = s && s.match(re);
+      return m && forms.includes(m[1].toLowerCase());
+    });
+    // Only words that actually appear in two or more different forms make a fair question.
+    const usedForms = new Set(sentences.map(s => s.match(re)[1].toLowerCase()));
+    return usedForms.size >= 2 ? { ...w, forms, formSentences: sentences } : null;
+  }).filter(Boolean);
+  const missedForm = missedCount("vocab:form");
+  const startForm = (items = formItems) => runQuiz("vocab:form", "Word Forms (change the word)", items, (w) => {
+    const re = new RegExp(`\\b(${w.word}\\w*)`, "i");
+    const sentence = pick(w.formSentences);
+    const used = sentence.match(re)[1].toLowerCase();
+    const blanked = sentence.replace(re, "____");
+    const choices = shuffle([used, ...w.forms.filter(f => f !== used)]);
+    return {
+      prompt: `${blanked}<br><small class="exam-label">Use the correct form of <b>${w.word}</b> (${w.pos}).</small>`,
+      choices,
+      answer: choices.indexOf(used)
+    };
   }, { itemId: w => w.word, itemLabel: w => w.word, afterFinish: vocabularyTopic });
   // Pick a random member of an array.
   const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
@@ -746,11 +797,13 @@ function vocabularyTopic() {
       <button id="m3">Fill in the Blank (in context)</button>
       ${synWords.length ? `<button id="m4">Synonyms (same meaning)</button>` : ""}
       ${antWords.length ? `<button id="m5">Antonyms (opposites)</button>` : ""}
+      ${formItems.length ? `<button id="m6">Word Forms (change the word)</button>` : ""}
       ${missedDef ? `<button class="ghost" id="r1">Review Word → Definition (${missedDef})</button>` : ""}
       ${missedWord ? `<button class="ghost" id="r2">Review Definition → Word (${missedWord})</button>` : ""}
       ${missedBlank ? `<button class="ghost" id="r3">Review Fill in the Blank (${missedBlank})</button>` : ""}
       ${missedSyn ? `<button class="ghost" id="r4">Review Synonyms (${missedSyn})</button>` : ""}
       ${missedAnt ? `<button class="ghost" id="r5">Review Antonyms (${missedAnt})</button>` : ""}
+      ${missedForm ? `<button class="ghost" id="r6">Review Word Forms (${missedForm})</button>` : ""}
       <button class="ghost" onclick="renderHome()">🏠 Home</button>
     </div>`;
   $("m1").onclick = () => startDefinition();
@@ -763,6 +816,8 @@ function vocabularyTopic() {
   if ($("r3")) $("r3").onclick = () => startBlank(reviewWords("vocab:blank"));
   if ($("r4")) $("r4").onclick = () => startSynonym(reviewWords("vocab:synonym"));
   if ($("r5")) $("r5").onclick = () => startAntonym(reviewWords("vocab:antonym"));
+  if ($("m6")) $("m6").onclick = () => startForm();
+  if ($("r6")) $("r6").onclick = () => startForm(formItems.filter(w => missedItems("vocab:form").some(m => m.id === w.word)));
 }
 
 // ---------- Spelling / Phonics ----------

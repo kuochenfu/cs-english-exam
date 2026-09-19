@@ -45,10 +45,10 @@ App exam id: `2026-10-quiz1`
 
 | Topic | Status | Notes |
 | --- | --- | --- |
-| Vocabulary | Done | 30 words, definitions aligned to the teacher's homework wording, homework cloze sentences added as examples |
+| Vocabulary | Done (raised 2026-09-19) | 30 words, teacher definitions, homework cloze sentences, 6 modes: definition, word, cloze, synonyms, antonyms, Word Forms (change the word); distractors share the part of speech |
 | Spelling / Phonics | Done | 3 dictation lists, 5 sort games, 2 homework-format MCQ sets (find the short vowel word; which letters make the long vowel) |
 | Grammar | Done (raised to Grade 5 high standard 2026-09-19) | Quick guide (7 cards incl. Tricky Subjects) + 18 mixed items + 5 sets: HW be verbs 8, HW present simple 6, Lesson 4 be 26, Lesson 5 present simple 28, Challenge negatives/questions/tags 18 |
-| Reading | Done | 5 text anchor charts, 5 homework passages (Bell, Super-Recycler, Perseverance, Benny and Larry, Captain Morgan), POV practice with 8 excerpts |
+| Reading | Done (raised 2026-09-19) | 5 text anchor charts, 5 homework passages with added text-evidence / vocabulary-in-context / compare questions, POV practice, and 3 longer generated passages (opinion text, informational text on wheelchair sports, third-person-limited story) |
 | Listening | Done (generated) | 4 review dialogues on Module 1 topics; the real quiz dialogue is only played in class |
 
 Homework transcription: `content/2026-10-quiz1/homework.md`.
@@ -75,6 +75,20 @@ The notice's "My Next Grammar Lesson 4-5" is Book 2 of the e-future series (grad
 - error spotting ("Which sentence is correct / has a mistake?") and rewriting statements as negatives, questions, wh- questions, and tags
 
 Benchmarks used: a Grade 5 SVA quiz with items like "Mathematics (is, are)…", "The jury (has, have)…", "My friends who are in the band (wants, want)…", "Everyone (needs, need)…"; K5 Learning / Wayground descriptions of grade 5 SVA scope (collective nouns, indefinite pronouns, compound subjects, subject separated from verb); Cambridge A2 Flyers grammar list (be, there is/are, present simple, question forms).
+
+## Reading and Vocabulary Difficulty Benchmark (2026-09-19)
+
+Checked against CCSS Grade 5 reading standards (RI.5.1 quote accurately as evidence, RI.5.2 two or more main ideas, RI.5.8 how an author uses reasons and evidence, RL.5.3 compare characters, RL.5.4 figurative language, RL.5.6 how point of view influences the telling) and the HMH Into Reading Module 1 selection assessments (character analysis, cause and effect, text type, comparisons, inference, multiple choice + short answer). Findings and changes:
+
+Reading
+- The homework passages are short (150-350 words) and their questions were mostly literal or single-skill. Added to each: "Which sentence from the passage best supports…" text-evidence questions, vocabulary-in-context questions (conscious, household name, frenzy, treacherous, context-clue types), a compare-characters question, and a reasons/evidence question.
+- Module 1 includes an opinion text (Government Must Fund Inventors), an informational text (Wheelchair Sports), and literary texts, but the homework only covered informational/narrative. Added three ~450-550 word passages in those genres: "Schools Should Fund Young Inventors" (author's opinion, reasons, evidence, counterarguments), "Rolling into the Game" (wheelchair sports history and rules, definition clues, sequence structure), and "The Flying Bathtub" (third-person limited, simile, idiom, character change, theme). Each has 9-10 questions including a short answer that requires citing details.
+- New skill tags: Text Evidence, Vocabulary in Context, Compare and Contrast.
+
+Vocabulary
+- Grade 5 vocabulary assessments test context clues, word forms / parts of speech, synonyms and antonyms, and multiple meanings. The app covered definitions, cloze, synonyms, and antonyms, but distractors were random list words, so a noun blank could be solved by eliminating verbs. Distractors now share the target word's part of speech.
+- Added a Word Forms mode for the homework skill "Some words may need to be changed": the sentence is blanked and the choices are forms of the same word (chug / chugs / chugged / chugging; cylinder / cylinders). Forms are generated in `app.js` (`wordForms`) for verbs and nouns; a word can override with `forms: [...]`. Only words that appear in two or more forms across their sentences are used, so 17 extra inflected sentences were added.
+- Definitions stay in the teacher's wording because the matching section of the quiz is likely to reuse it.
 
 ## Missing Reference Material (log)
 

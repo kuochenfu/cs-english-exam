@@ -1,36 +1,623 @@
 {
   "words": [
-    { "week": 1, "word": "chug", "pos": "v", "definition": "to move slowly while making a puffing or thumping sound, like an engine", "example": "The old train began to chug up the hill.", "examples": ["He listened as the train chugged through the countryside.", "We heard the boat chug across the lake before we could see it.", "The tractor chugged along the muddy field all morning."], "synonyms": ["puff", "rumble", "churn"], "antonyms": ["glide", "zoom", "speed"] },
-    { "week": 1, "word": "cylinder", "pos": "n", "definition": "something with circular ends and straight sides", "example": "A soup can is shaped like a cylinder.", "examples": ["Two objects in my home that are cylinders are water bottles and candles.", "The inventor rolled the paper into a cylinder to make a tube.", "Each cylinder in the engine moves up and down very fast."], "synonyms": ["tube", "roll", "drum"] },
-    { "week": 1, "word": "flop", "pos": "n", "definition": "a huge failure", "example": "The first version of the machine was a flop.", "examples": ["One of his ideas turned out to be a complete flop, and nobody wanted to buy it.", "Everyone said the movie would be a hit, but it turned out to be a flop.", "His science project was a flop because the battery died."], "synonyms": ["failure", "disaster", "dud"], "antonyms": ["success", "hit", "triumph"] },
-    { "week": 1, "word": "gadget", "pos": "n", "definition": "a small electronic device or machine", "example": "She invented a gadget that peels apples in ten seconds.", "examples": ["The most useful gadget in my pencil bag is a mechanical pencil because I can write and draw quickly.", "One gadget I can't live without is a smartwatch because I rely on it for communication.", "My uncle loves every new kitchen gadget he sees in the store."], "synonyms": ["device", "tool", "contraption"] },
-    { "week": 1, "word": "incandescent", "pos": "adj", "definition": "producing light from a glowing wire inside a bulb", "example": "The incandescent bulb glowed warmly in the dark room.", "examples": ["One evening, he worked under an incandescent light bulb that filled his workshop with a warm glow.", "I used to have an incandescent light bulb at home, but it became too hot, so we replaced it with LED bulbs.", "Edison worked for years to make an incandescent light that would last."], "synonyms": ["glowing", "bright", "radiant"], "antonyms": ["dim", "dark", "dull"] },
-    { "week": 1, "word": "locomotive", "pos": "n", "definition": "a train engine that pulls train cars", "example": "The locomotive pulled twenty cars across the bridge.", "examples": ["He watched the powerful locomotive pull the train cars down the tracks.", "Steam poured from the locomotive as it left the station.", "The museum has a locomotive that is over one hundred years old."], "synonyms": ["engine", "train engine"] },
-    { "week": 1, "word": "patent", "pos": "n", "definition": "a document to protect an invention", "example": "The inventor received a patent for her new machine.", "examples": ["After months of hard work, he finished his new machine and applied for a patent so that no one could copy his invention.", "Without a patent, anyone could copy the design and sell it.", "Thomas Edison held more than one thousand patents in his lifetime."], "synonyms": ["license", "legal right", "copyright"] },
-    { "week": 1, "word": "sputter", "pos": "v", "definition": "to work unevenly with popping noises", "example": "The old engine began to sputter and then stopped.", "examples": ["The candle sputtered in the wind before it went out.", "The car sputtered twice, then finally started.", "The broken radio sputtered and crackled all afternoon."], "synonyms": ["cough", "splutter", "pop"], "antonyms": ["hum", "purr", "run smoothly"] },
-    { "week": 1, "word": "phonograph", "pos": "n", "definition": "an early machine that played recorded sound from a spinning disk or cylinder", "example": "Grandpa still plays old records on his phonograph.", "examples": ["As he worked, he listened to music on an old phonograph that had belonged to his grandfather.", "Edison's phonograph was the first machine that could record and play back a voice.", "The phonograph had a large horn that made the music louder."], "synonyms": ["record player", "gramophone"] },
-
-    { "week": 2, "word": "auditorium", "pos": "n", "definition": "a large room where people gather to watch events", "example": "The whole school met in the auditorium for the concert.", "examples": ["Chingshin Academy has an auditorium where the students perform shows.", "The auditorium was so full that some parents had to stand in the back.", "Our play will be performed in the new auditorium next Friday."], "synonyms": ["hall", "theater", "assembly hall"] },
-    { "week": 2, "word": "elite", "pos": "adj / n", "definition": "the best or most skilled members in a group", "example": "Only elite athletes are chosen for the national team.", "examples": ["The elite Navy SEAL teams spend years training to prepare for challenging military missions.", "An elite group of scientists gathered in the laboratory to conduct a very difficult experiment.", "She joined an elite group of pilots who fly the newest jets."], "synonyms": ["top", "best", "first-class"], "antonyms": ["ordinary", "average", "common"] },
-    { "week": 2, "word": "inspector", "pos": "n", "definition": "someone who checks something carefully for problems", "example": "The inspector checked every wire before the lights were turned on.", "examples": ["An inspector would visit a school to make sure the building is safe and the rules are followed.", "A food inspector visits the restaurant twice a year.", "The building inspector said the new stairs were safe to use."], "synonyms": ["examiner", "checker", "investigator"] },
-    { "week": 2, "word": "objective", "pos": "n", "definition": "a goal", "example": "Our objective is to finish the robot before the science fair.", "examples": ["My objective for this semester is to improve my English grade.", "The main objective of the project was to bring clean water to the village.", "She wrote her objective at the top of the page: read one book a week."], "synonyms": ["goal", "aim", "target", "purpose"] },
-    { "week": 2, "word": "photograph", "pos": "v / n", "definition": "to take a picture with a camera; a picture taken with a camera", "example": "Dad likes to photograph birds in the park.", "examples": ["I photographed all the different animals I saw with my new camera.", "When she was on holiday, she photographed all the beautiful places she saw.", "The reporter photographed the windmill from every side."], "synonyms": ["snap", "shoot", "take a picture of", "picture"] },
-    { "week": 2, "word": "prestigious", "pos": "adj", "definition": "well-known and respected because of high quality or success", "example": "He won a prestigious award for his invention.", "examples": ["She got the most prestigious award in the competition because she was the best performer in all the events.", "The award is very prestigious because only the best jump rope team can win it.", "She was invited to study at a prestigious university."], "synonyms": ["respected", "honored", "famous", "important"], "antonyms": ["unknown", "unimportant", "minor"] },
-    { "week": 2, "word": "specialize", "pos": "v", "definition": "to focus on one particular subject, skill, or type of work", "example": "The doctor decided to specialize in heart surgery.", "examples": ["The research center is known for helping scientists who specialize in studying rare animals.", "Doctors might choose to specialize in one type of medicine so they can become experts at helping certain patients.", "This shop specializes in repairing old bicycles."], "synonyms": ["focus on", "concentrate on", "be an expert in"], "antonyms": ["generalize", "spread out"] },
-    { "week": 2, "word": "traditional", "pos": "adj", "definition": "when something is done a certain way for a long time", "example": "The villagers wore traditional clothes for the festival.", "examples": ["Traditional windmills were made of wood and cloth.", "My grandmother cooks a traditional meal every New Year.", "The school still holds its traditional sports day every October."], "synonyms": ["customary", "usual", "old-fashioned", "classic"], "antonyms": ["modern", "new", "unusual"] },
-    { "week": 2, "word": "impoverished", "pos": "adj", "definition": "very poor", "example": "The impoverished family could not afford to buy a lamp.", "examples": ["Many impoverished villages have no electricity at all.", "The drought left the farmers impoverished and hungry.", "William built a windmill to help his impoverished village pump water."], "synonyms": ["poor", "needy", "penniless"], "antonyms": ["wealthy", "rich", "well-off"] },
-    { "week": 2, "word": "irrigate", "pos": "v", "definition": "to bring water to dry land through pipes, ditches, or channels so crops can grow", "example": "The farmers dug ditches to irrigate their fields.", "examples": ["A windmill pumped water to irrigate the corn.", "The new pipes irrigated the whole garden in an hour.", "Without rain, the village needed a way to irrigate its crops."], "synonyms": ["water", "flood", "supply water to"], "antonyms": ["dry out", "drain"] },
-    { "week": 2, "word": "maneuver", "pos": "v", "definition": "to move something skillfully or carefully into a position", "example": "The pilot had to maneuver the plane around the storm.", "examples": ["She maneuvered the wheelchair through the narrow doorway.", "The captain maneuvered the ship into the small harbor.", "The players maneuvered their chairs quickly to block the shot."], "synonyms": ["steer", "guide", "navigate"], "antonyms": ["stay still", "leave"] },
-
-    { "week": 3, "word": "acceleration", "pos": "n", "definition": "the act of speeding up", "example": "The race car's acceleration pushed the driver back into his seat.", "examples": ["After the science experiment, they discussed the acceleration of the moving car.", "It is convenient to have strong acceleration in a car because it can speed up quickly.", "Gravity causes the acceleration of a falling apple."], "synonyms": ["speeding up", "quickening", "increase in speed"], "antonyms": ["slowing down", "deceleration"] },
-    { "week": 3, "word": "circumstance", "pos": "n", "definition": "a condition or situation that affects what happens", "example": "Bad weather was one circumstance that delayed the flight.", "examples": ["Due to unexpected circumstances, we had to cancel our outdoor activity.", "Under no circumstance should you touch the hot wire.", "The inventor succeeded despite every difficult circumstance."], "synonyms": ["situation", "condition", "factor"] },
-    { "week": 3, "word": "conceive", "pos": "v", "definition": "to form an idea or plan in your mind", "example": "It is hard to conceive of a world without electricity.", "examples": ["Abigail conceived an idea for a robot that would do her homework for her.", "People conceive new ideas for solving problems by thinking the problem over and over.", "Who first conceived the idea of a wheelchair race?"], "synonyms": ["imagine", "think up", "invent", "picture"], "antonyms": ["forget", "ignore"] },
-    { "week": 3, "word": "contribution", "pos": "n", "definition": "something you give or do to help make something happen", "example": "Her biggest contribution to the team was her patience.", "examples": ["Each one of the team members made a huge contribution to the project by sharing ideas.", "My contribution to the party would be a big box of cookies.", "The scientist's contribution changed how we study the stars."], "synonyms": ["gift", "donation", "help", "input"] },
-    { "week": 3, "word": "distinguished", "pos": "adj", "definition": "respected and admired because of great achievements", "example": "A distinguished scientist spoke to our class.", "examples": ["A distinguished professor might dress very professionally in a suit and tie.", "The distinguished inventor received a medal from the president.", "She had a long and distinguished career as a doctor."], "synonyms": ["famous", "respected", "honored", "celebrated"], "antonyms": ["unknown", "ordinary", "common"] },
-    { "week": 3, "word": "evidently", "pos": "adv", "definition": "clearly or obviously, based on what can be seen or known", "example": "The bridge was evidently too weak to hold the truck.", "examples": ["The students were evidently upset about the end-of-year party being canceled.", "The other scientists are evidently scared because the mad scientist blew up the lab.", "The dog had evidently found the cookies, because the jar was empty."], "synonyms": ["clearly", "obviously", "apparently", "plainly"], "antonyms": ["doubtfully", "secretly"] },
-    { "week": 3, "word": "impulse", "pos": "n", "definition": "a sudden strong desire to do something", "example": "On an impulse, he bought a kite at the market.", "examples": ["An impulse I need to control in class is the feeling of standing up and walking around when I am bored.", "She felt a sudden impulse to jump into the cold lake.", "Try not to act on every impulse when you are angry."], "synonyms": ["urge", "whim", "sudden desire"], "antonyms": ["plan", "careful thought"] },
-    { "week": 3, "word": "passionate", "pos": "adj", "definition": "having a strong feeling of excitement or love for something", "example": "She is passionate about protecting sea turtles.", "examples": ["The teacher was so passionate about history that she dressed up as different characters from the past.", "The mad scientist is so passionate about science that he blows up the lab.", "He gave a passionate speech about clean energy."], "synonyms": ["enthusiastic", "eager", "devoted", "intense"], "antonyms": ["indifferent", "uninterested", "cold"] },
-    { "week": 3, "word": "prototype", "pos": "n", "definition": "the first model of something, made to test an idea before it is made in large numbers", "example": "The team built a prototype of the robot out of cardboard.", "examples": ["The first prototype crashed, so they made a stronger one.", "Engineers test a prototype many times before selling the real product.", "Captain Arsenio's prototype of a flying machine never left the ground."], "synonyms": ["model", "test version", "sample", "first design"] },
-    { "week": 3, "word": "eccentric", "pos": "adj", "definition": "unusual or odd in behavior or appearance", "example": "The eccentric inventor wore a hat covered with springs.", "examples": ["Our eccentric neighbor paints his fence a new color every week.", "People laughed at Captain Arsenio's eccentric flying machines.", "The eccentric scientist kept a pet snake in his desk drawer."], "synonyms": ["odd", "strange", "quirky", "unusual"], "antonyms": ["normal", "ordinary", "typical"] }
+    {
+      "week": 1,
+      "word": "chug",
+      "pos": "v",
+      "definition": "to move slowly while making a puffing or thumping sound, like an engine",
+      "example": "The old train began to chug up the hill.",
+      "examples": [
+        "He listened as the train chugged through the countryside.",
+        "We heard the boat chug across the lake before we could see it.",
+        "The tractor chugged along the muddy field all morning.",
+        "Every morning the old bus chugs up our street at seven o'clock."
+      ],
+      "synonyms": [
+        "puff",
+        "rumble",
+        "churn"
+      ],
+      "antonyms": [
+        "glide",
+        "zoom",
+        "speed"
+      ]
+    },
+    {
+      "week": 1,
+      "word": "cylinder",
+      "pos": "n",
+      "definition": "something with circular ends and straight sides",
+      "example": "A soup can is shaped like a cylinder.",
+      "examples": [
+        "Two objects in my home that are cylinders are water bottles and candles.",
+        "The inventor rolled the paper into a cylinder to make a tube.",
+        "Each cylinder in the engine moves up and down very fast.",
+        "The engine has four cylinders that move up and down."
+      ],
+      "synonyms": [
+        "tube",
+        "roll",
+        "drum"
+      ]
+    },
+    {
+      "week": 1,
+      "word": "flop",
+      "pos": "n",
+      "definition": "a huge failure",
+      "example": "The first version of the machine was a flop.",
+      "examples": [
+        "One of his ideas turned out to be a complete flop, and nobody wanted to buy it.",
+        "Everyone said the movie would be a hit, but it turned out to be a flop.",
+        "His science project was a flop because the battery died.",
+        "Even famous inventors have had a few flops before their big success."
+      ],
+      "synonyms": [
+        "failure",
+        "disaster",
+        "dud"
+      ],
+      "antonyms": [
+        "success",
+        "hit",
+        "triumph"
+      ]
+    },
+    {
+      "week": 1,
+      "word": "gadget",
+      "pos": "n",
+      "definition": "a small electronic device or machine",
+      "example": "She invented a gadget that peels apples in ten seconds.",
+      "examples": [
+        "The most useful gadget in my pencil bag is a mechanical pencil because I can write and draw quickly.",
+        "One gadget I can't live without is a smartwatch because I rely on it for communication.",
+        "My uncle loves every new kitchen gadget he sees in the store.",
+        "The store sells hundreds of gadgets, but most of them break in a week."
+      ],
+      "synonyms": [
+        "device",
+        "tool",
+        "contraption"
+      ]
+    },
+    {
+      "week": 1,
+      "word": "incandescent",
+      "pos": "adj",
+      "definition": "producing light from a glowing wire inside a bulb",
+      "example": "The incandescent bulb glowed warmly in the dark room.",
+      "examples": [
+        "One evening, he worked under an incandescent light bulb that filled his workshop with a warm glow.",
+        "I used to have an incandescent light bulb at home, but it became too hot, so we replaced it with LED bulbs.",
+        "Edison worked for years to make an incandescent light that would last."
+      ],
+      "synonyms": [
+        "glowing",
+        "bright",
+        "radiant"
+      ],
+      "antonyms": [
+        "dim",
+        "dark",
+        "dull"
+      ]
+    },
+    {
+      "week": 1,
+      "word": "locomotive",
+      "pos": "n",
+      "definition": "a train engine that pulls train cars",
+      "example": "The locomotive pulled twenty cars across the bridge.",
+      "examples": [
+        "He watched the powerful locomotive pull the train cars down the tracks.",
+        "Steam poured from the locomotive as it left the station.",
+        "The museum has a locomotive that is over one hundred years old.",
+        "Two locomotives were needed to pull the heavy train over the mountain."
+      ],
+      "synonyms": [
+        "engine",
+        "train engine"
+      ]
+    },
+    {
+      "week": 1,
+      "word": "patent",
+      "pos": "n",
+      "definition": "a document to protect an invention",
+      "example": "The inventor received a patent for her new machine.",
+      "examples": [
+        "After months of hard work, he finished his new machine and applied for a patent so that no one could copy his invention.",
+        "Without a patent, anyone could copy the design and sell it.",
+        "Thomas Edison held more than one thousand patents in his lifetime.",
+        "The two inventors argued about who owned the patents for the machine."
+      ],
+      "synonyms": [
+        "license",
+        "legal right",
+        "copyright"
+      ]
+    },
+    {
+      "week": 1,
+      "word": "sputter",
+      "pos": "v",
+      "definition": "to work unevenly with popping noises",
+      "example": "The old engine began to sputter and then stopped.",
+      "examples": [
+        "The candle sputtered in the wind before it went out.",
+        "The car sputtered twice, then finally started.",
+        "The broken radio sputtered and crackled all afternoon.",
+        "When the engine sputters like that, it usually means the fuel is low."
+      ],
+      "synonyms": [
+        "cough",
+        "splutter",
+        "pop"
+      ],
+      "antonyms": [
+        "hum",
+        "purr",
+        "run smoothly"
+      ]
+    },
+    {
+      "week": 1,
+      "word": "phonograph",
+      "pos": "n",
+      "definition": "an early machine that played recorded sound from a spinning disk or cylinder",
+      "example": "Grandpa still plays old records on his phonograph.",
+      "examples": [
+        "As he worked, he listened to music on an old phonograph that had belonged to his grandfather.",
+        "Edison's phonograph was the first machine that could record and play back a voice.",
+        "The phonograph had a large horn that made the music louder.",
+        "Old phonographs are now collected by people who love antique machines."
+      ],
+      "synonyms": [
+        "record player",
+        "gramophone"
+      ]
+    },
+    {
+      "week": 2,
+      "word": "auditorium",
+      "pos": "n",
+      "definition": "a large room where people gather to watch events",
+      "example": "The whole school met in the auditorium for the concert.",
+      "examples": [
+        "Chingshin Academy has an auditorium where the students perform shows.",
+        "The auditorium was so full that some parents had to stand in the back.",
+        "Our play will be performed in the new auditorium next Friday."
+      ],
+      "synonyms": [
+        "hall",
+        "theater",
+        "assembly hall"
+      ]
+    },
+    {
+      "week": 2,
+      "word": "elite",
+      "pos": "adj / n",
+      "definition": "the best or most skilled members in a group",
+      "example": "Only elite athletes are chosen for the national team.",
+      "examples": [
+        "The elite Navy SEAL teams spend years training to prepare for challenging military missions.",
+        "An elite group of scientists gathered in the laboratory to conduct a very difficult experiment.",
+        "She joined an elite group of pilots who fly the newest jets."
+      ],
+      "synonyms": [
+        "top",
+        "best",
+        "first-class"
+      ],
+      "antonyms": [
+        "ordinary",
+        "average",
+        "common"
+      ]
+    },
+    {
+      "week": 2,
+      "word": "inspector",
+      "pos": "n",
+      "definition": "someone who checks something carefully for problems",
+      "example": "The inspector checked every wire before the lights were turned on.",
+      "examples": [
+        "An inspector would visit a school to make sure the building is safe and the rules are followed.",
+        "A food inspector visits the restaurant twice a year.",
+        "The building inspector said the new stairs were safe to use.",
+        "The inspectors walked through every classroom with their clipboards."
+      ],
+      "synonyms": [
+        "examiner",
+        "checker",
+        "investigator"
+      ]
+    },
+    {
+      "week": 2,
+      "word": "objective",
+      "pos": "n",
+      "definition": "a goal",
+      "example": "Our objective is to finish the robot before the science fair.",
+      "examples": [
+        "My objective for this semester is to improve my English grade.",
+        "The main objective of the project was to bring clean water to the village.",
+        "She wrote her objective at the top of the page: read one book a week.",
+        "Our team wrote down three objectives for the science fair."
+      ],
+      "synonyms": [
+        "goal",
+        "aim",
+        "target",
+        "purpose"
+      ]
+    },
+    {
+      "week": 2,
+      "word": "photograph",
+      "pos": "v / n",
+      "definition": "to take a picture with a camera; a picture taken with a camera",
+      "example": "Dad likes to photograph birds in the park.",
+      "examples": [
+        "I photographed all the different animals I saw with my new camera.",
+        "When she was on holiday, she photographed all the beautiful places she saw.",
+        "The reporter photographed the windmill from every side."
+      ],
+      "synonyms": [
+        "snap",
+        "shoot",
+        "take a picture of",
+        "picture"
+      ]
+    },
+    {
+      "week": 2,
+      "word": "prestigious",
+      "pos": "adj",
+      "definition": "well-known and respected because of high quality or success",
+      "example": "He won a prestigious award for his invention.",
+      "examples": [
+        "She got the most prestigious award in the competition because she was the best performer in all the events.",
+        "The award is very prestigious because only the best jump rope team can win it.",
+        "She was invited to study at a prestigious university."
+      ],
+      "synonyms": [
+        "respected",
+        "honored",
+        "famous",
+        "important"
+      ],
+      "antonyms": [
+        "unknown",
+        "unimportant",
+        "minor"
+      ]
+    },
+    {
+      "week": 2,
+      "word": "specialize",
+      "pos": "v",
+      "definition": "to focus on one particular subject, skill, or type of work",
+      "example": "The doctor decided to specialize in heart surgery.",
+      "examples": [
+        "The research center is known for helping scientists who specialize in studying rare animals.",
+        "Doctors might choose to specialize in one type of medicine so they can become experts at helping certain patients.",
+        "This shop specializes in repairing old bicycles."
+      ],
+      "synonyms": [
+        "focus on",
+        "concentrate on",
+        "be an expert in"
+      ],
+      "antonyms": [
+        "generalize",
+        "spread out"
+      ]
+    },
+    {
+      "week": 2,
+      "word": "traditional",
+      "pos": "adj",
+      "definition": "when something is done a certain way for a long time",
+      "example": "The villagers wore traditional clothes for the festival.",
+      "examples": [
+        "Traditional windmills were made of wood and cloth.",
+        "My grandmother cooks a traditional meal every New Year.",
+        "The school still holds its traditional sports day every October."
+      ],
+      "synonyms": [
+        "customary",
+        "usual",
+        "old-fashioned",
+        "classic"
+      ],
+      "antonyms": [
+        "modern",
+        "new",
+        "unusual"
+      ]
+    },
+    {
+      "week": 2,
+      "word": "impoverished",
+      "pos": "adj",
+      "definition": "very poor",
+      "example": "The impoverished family could not afford to buy a lamp.",
+      "examples": [
+        "Many impoverished villages have no electricity at all.",
+        "The drought left the farmers impoverished and hungry.",
+        "William built a windmill to help his impoverished village pump water."
+      ],
+      "synonyms": [
+        "poor",
+        "needy",
+        "penniless"
+      ],
+      "antonyms": [
+        "wealthy",
+        "rich",
+        "well-off"
+      ]
+    },
+    {
+      "week": 2,
+      "word": "irrigate",
+      "pos": "v",
+      "definition": "to bring water to dry land through pipes, ditches, or channels so crops can grow",
+      "example": "The farmers dug ditches to irrigate their fields.",
+      "examples": [
+        "A windmill pumped water to irrigate the corn.",
+        "The new pipes irrigated the whole garden in an hour.",
+        "Without rain, the village needed a way to irrigate its crops.",
+        "The farmer irrigates his fields twice a week during the dry season."
+      ],
+      "synonyms": [
+        "water",
+        "flood",
+        "supply water to"
+      ],
+      "antonyms": [
+        "dry out",
+        "drain"
+      ]
+    },
+    {
+      "week": 2,
+      "word": "maneuver",
+      "pos": "v",
+      "definition": "to move something skillfully or carefully into a position",
+      "example": "The pilot had to maneuver the plane around the storm.",
+      "examples": [
+        "She maneuvered the wheelchair through the narrow doorway.",
+        "The captain maneuvered the ship into the small harbor.",
+        "The players maneuvered their chairs quickly to block the shot.",
+        "The captain maneuvers the ship carefully between the rocks."
+      ],
+      "synonyms": [
+        "steer",
+        "guide",
+        "navigate"
+      ],
+      "antonyms": [
+        "stay still",
+        "leave"
+      ]
+    },
+    {
+      "week": 3,
+      "word": "acceleration",
+      "pos": "n",
+      "definition": "the act of speeding up",
+      "example": "The race car's acceleration pushed the driver back into his seat.",
+      "examples": [
+        "After the science experiment, they discussed the acceleration of the moving car.",
+        "It is convenient to have strong acceleration in a car because it can speed up quickly.",
+        "Gravity causes the acceleration of a falling apple."
+      ],
+      "synonyms": [
+        "speeding up",
+        "quickening",
+        "increase in speed"
+      ],
+      "antonyms": [
+        "slowing down",
+        "deceleration"
+      ]
+    },
+    {
+      "week": 3,
+      "word": "circumstance",
+      "pos": "n",
+      "definition": "a condition or situation that affects what happens",
+      "example": "Bad weather was one circumstance that delayed the flight.",
+      "examples": [
+        "Due to unexpected circumstances, we had to cancel our outdoor activity.",
+        "Under no circumstance should you touch the hot wire.",
+        "The inventor succeeded despite every difficult circumstance.",
+        "Under normal circumstances, the bus arrives at seven."
+      ],
+      "synonyms": [
+        "situation",
+        "condition",
+        "factor"
+      ]
+    },
+    {
+      "week": 3,
+      "word": "conceive",
+      "pos": "v",
+      "definition": "to form an idea or plan in your mind",
+      "example": "It is hard to conceive of a world without electricity.",
+      "examples": [
+        "Abigail conceived an idea for a robot that would do her homework for her.",
+        "People conceive new ideas for solving problems by thinking the problem over and over.",
+        "Who first conceived the idea of a wheelchair race?",
+        "An inventor conceives dozens of ideas before one of them works."
+      ],
+      "synonyms": [
+        "imagine",
+        "think up",
+        "invent",
+        "picture"
+      ],
+      "antonyms": [
+        "forget",
+        "ignore"
+      ]
+    },
+    {
+      "week": 3,
+      "word": "contribution",
+      "pos": "n",
+      "definition": "something you give or do to help make something happen",
+      "example": "Her biggest contribution to the team was her patience.",
+      "examples": [
+        "Each one of the team members made a huge contribution to the project by sharing ideas.",
+        "My contribution to the party would be a big box of cookies.",
+        "The scientist's contribution changed how we study the stars.",
+        "The museum thanked everyone for their contributions to the new exhibit."
+      ],
+      "synonyms": [
+        "gift",
+        "donation",
+        "help",
+        "input"
+      ]
+    },
+    {
+      "week": 3,
+      "word": "distinguished",
+      "pos": "adj",
+      "definition": "respected and admired because of great achievements",
+      "example": "A distinguished scientist spoke to our class.",
+      "examples": [
+        "A distinguished professor might dress very professionally in a suit and tie.",
+        "The distinguished inventor received a medal from the president.",
+        "She had a long and distinguished career as a doctor."
+      ],
+      "synonyms": [
+        "famous",
+        "respected",
+        "honored",
+        "celebrated"
+      ],
+      "antonyms": [
+        "unknown",
+        "ordinary",
+        "common"
+      ]
+    },
+    {
+      "week": 3,
+      "word": "evidently",
+      "pos": "adv",
+      "definition": "clearly or obviously, based on what can be seen or known",
+      "example": "The bridge was evidently too weak to hold the truck.",
+      "examples": [
+        "The students were evidently upset about the end-of-year party being canceled.",
+        "The other scientists are evidently scared because the mad scientist blew up the lab.",
+        "The dog had evidently found the cookies, because the jar was empty."
+      ],
+      "synonyms": [
+        "clearly",
+        "obviously",
+        "apparently",
+        "plainly"
+      ],
+      "antonyms": [
+        "doubtfully",
+        "secretly"
+      ]
+    },
+    {
+      "week": 3,
+      "word": "impulse",
+      "pos": "n",
+      "definition": "a sudden strong desire to do something",
+      "example": "On an impulse, he bought a kite at the market.",
+      "examples": [
+        "An impulse I need to control in class is the feeling of standing up and walking around when I am bored.",
+        "She felt a sudden impulse to jump into the cold lake.",
+        "Try not to act on every impulse when you are angry.",
+        "Smart shoppers do not follow every impulse when they see a sale."
+      ],
+      "synonyms": [
+        "urge",
+        "whim",
+        "sudden desire"
+      ],
+      "antonyms": [
+        "plan",
+        "careful thought"
+      ]
+    },
+    {
+      "week": 3,
+      "word": "passionate",
+      "pos": "adj",
+      "definition": "having a strong feeling of excitement or love for something",
+      "example": "She is passionate about protecting sea turtles.",
+      "examples": [
+        "The teacher was so passionate about history that she dressed up as different characters from the past.",
+        "The mad scientist is so passionate about science that he blows up the lab.",
+        "He gave a passionate speech about clean energy."
+      ],
+      "synonyms": [
+        "enthusiastic",
+        "eager",
+        "devoted",
+        "intense"
+      ],
+      "antonyms": [
+        "indifferent",
+        "uninterested",
+        "cold"
+      ]
+    },
+    {
+      "week": 3,
+      "word": "prototype",
+      "pos": "n",
+      "definition": "the first model of something, made to test an idea before it is made in large numbers",
+      "example": "The team built a prototype of the robot out of cardboard.",
+      "examples": [
+        "The first prototype crashed, so they made a stronger one.",
+        "Engineers test a prototype many times before selling the real product.",
+        "Captain Arsenio's prototype of a flying machine never left the ground.",
+        "The engineers built three prototypes before choosing the final design."
+      ],
+      "synonyms": [
+        "model",
+        "test version",
+        "sample",
+        "first design"
+      ]
+    },
+    {
+      "week": 3,
+      "word": "eccentric",
+      "pos": "adj",
+      "definition": "unusual or odd in behavior or appearance",
+      "example": "The eccentric inventor wore a hat covered with springs.",
+      "examples": [
+        "Our eccentric neighbor paints his fence a new color every week.",
+        "People laughed at Captain Arsenio's eccentric flying machines.",
+        "The eccentric scientist kept a pet snake in his desk drawer."
+      ],
+      "synonyms": [
+        "odd",
+        "strange",
+        "quirky",
+        "unusual"
+      ],
+      "antonyms": [
+        "normal",
+        "ordinary",
+        "typical"
+      ]
+    }
   ]
 }
