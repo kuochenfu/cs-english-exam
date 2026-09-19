@@ -1366,7 +1366,21 @@ function showAnchorCharts() {
   renderContent(`
     <div class="panel">
       <h2>📋 Anchor Charts</h2>
-      ${charts.map(c => `<details><summary>${c.name}</summary><div class="anchor-chart-content">${c.image ? `<img class="anchor-chart-image" src="${c.image}" alt="${c.imageAlt || c.name}">` : ""}<div>${c.body}<div class="anchor-chart-examples"><b>Examples:</b><ol>${(c.ex || []).map(x => `<li>${x}</li>`).join("")}</ol></div></div></div></details>`).join("")}
+      ${data.reading.anchorChartsIntro ? `<p>${esc(data.reading.anchorChartsIntro)}</p>` : ""}
+      ${charts.map((c, i) => `<details class="anchor-chart" ${i === 0 ? "open" : ""}>
+        <summary>${esc(c.name)}${c.group ? `<span class="tag">${esc(c.group)}</span>` : ""}</summary>
+        <div class="anchor-chart-content ${c.image ? "has-image" : ""}">
+          ${c.image ? `<img class="anchor-chart-image" src="${esc(c.image)}" alt="${esc(c.imageAlt || c.name)}">` : ""}
+          <div>
+            <div class="anchor-description">${c.body}</div>
+            ${c.guide ? `<dl class="anchor-guide">${c.guide.map(row => `<div><dt>${esc(row.label)}</dt><dd>${esc(row.text)}</dd></div>`).join("")}</dl>` : ""}
+            ${c.steps ? `<h3>How to use it</h3><ol>${c.steps.map(step => `<li>${esc(step)}</li>`).join("")}</ol>` : ""}
+            ${c.tip ? `<p class="anchor-tip"><b>Watch out:</b> ${esc(c.tip)}</p>` : ""}
+            <div class="anchor-chart-examples"><h3>Worked examples</h3><ol>${(c.ex || []).map(x => `<li>${x}</li>`).join("")}</ol></div>
+            ${c.check ? `<section class="anchor-check" aria-label="${esc(c.name)} quick check"><h3>Try it yourself</h3><p>${esc(c.check.question)}</p><details><summary>Show answer and explanation</summary><p>${esc(c.check.answer)}</p></details></section>` : ""}
+          </div>
+        </div>
+      </details>`).join("")}
     </div>`);
 }
 

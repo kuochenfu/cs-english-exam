@@ -63,7 +63,7 @@ using built-in image_gen, then resized and compressed to JPEG for web delivery.
 | Vocabulary | Done (raised 2026-09-19) | 30 words, teacher definitions, homework cloze sentences, 6 modes: definition, word, cloze, synonyms, antonyms, Word Forms (change the word); distractors share the part of speech |
 | Spelling / Phonics | Done | 3 dictation lists, 5 sort games, 2 homework-format MCQ sets (find the short vowel word; which letters make the long vowel) |
 | Grammar | Done (raised to Grade 5 high standard 2026-09-19) | Quick guide (7 cards incl. Tricky Subjects) + 18 mixed items + 5 sets: HW be verbs 8, HW present simple 6, Lesson 4 be 26, Lesson 5 present simple 28, Challenge negatives/questions/tags 18 |
-| Reading | Done (raised 2026-09-19) | 5 text anchor charts, 5 homework passages with added text-evidence / vocabulary-in-context / compare questions, POV practice, and 3 longer generated passages (opinion text, informational text on wheelchair sports, third-person-limited story) |
+| Reading | Done (raised 2026-09-19) | 11 complete anchor charts (5 quiz focus + 6 supporting skills; updated 2026-09-20), 5 homework passages with added text-evidence / vocabulary-in-context / compare questions, POV practice, and 3 longer generated passages (opinion text, informational text on wheelchair sports, third-person-limited story) |
 | Listening | Done (raised 2026-09-19) | 5 generated dialogues of 11-13 lines with 7-8 questions each: details (numbers, days, times), reasons, feelings, meaning of a spoken phrase, and what happens next |
 
 Homework transcription: `content/2026-10-quiz1/homework.md`.
@@ -74,7 +74,7 @@ Homework transcription: `content/2026-10-quiz1/homework.md`.
 - Vocabulary: 24 of 30 definitions now use the teacher's wording from HW1 sheets; 18 homework cloze sentences added to `examples[]`; elite tagged adj / n and photograph v / n as accepted by the teacher.
 - Spelling: dictation lists with sentences, phonics sort games, and two MCQ sets copying the homework formats (`quiz: true` lists, rendered by `phonicsQuiz()` in `app.js`).
 - Grammar: be verbs (present/past, negatives, questions, there is/are) and present simple (verb + s/es/ies, do/does, negatives, short answers), including the exact homework sentences.
-- Reading: the five homework passages transcribed with their original questions plus added questions so every skill in the notice appears (Author's Purpose questions were added to Bell, Perseverance, and Captain Morgan because no homework covers that skill). Point of View practice packages the six homework excerpts plus two new ones. Anchor charts are text-only.
+- Reading: the five homework passages transcribed with their original questions plus added questions so every skill in the notice appears (Author's Purpose questions were added to Bell, Perseverance, and Captain Morgan because no homework covers that skill). Point of View practice packages the six homework excerpts plus two new ones. Anchor charts now include comparison guides, reading strategies, worked examples, and revealable quick checks; see `anchor_charts.md`.
 - Listening: four generated dialogues using Module 1 vocabulary.
 
 ## Grammar Difficulty Benchmark (2026-09-19)
@@ -113,7 +113,7 @@ The first version had 6-line dialogues with five literal questions, all answerab
 
 Recorded 2026-09-19. None of these block practice; add them if they become available.
 
-1. **Anchor Charts from the HW folder** — Author's Purpose, Text Structure, Figurative Language, Central Idea, Point of View. Only a small Point of View chart appears on HW page 07. The app currently uses text-only charts written from general knowledge. *Highest value: Author's Purpose has no homework coverage at all.*
+1. **Anchor Charts from the HW folder** — Author's Purpose, Text Structure, Figurative Language, Central Idea, Point of View. Only a small Point of View chart appears on HW page 07. The app now has 11 original supplementary guides (see `anchor_charts.md`), with examples and quick checks. The original teacher charts are still unavailable. *Highest value: Author's Purpose has no homework coverage at all.*
 2. **Into Reading passages** — Government Must Fund Inventors, The Inventor's Secret, Winds of Hope, Wheelchair Sports, Captain Arsenio. The quiz may ask about these texts directly; the homework passages only practice the skills. *Second highest value.*
 3. **Know-It, Show-It workbook** pages 4 & 7 (short vowels), 11 & 14 (long a and e), 19 & 24 (long i and o). The phonics MCQ sets copy the homework format instead.
 4. **My Next Grammar Lesson 4-5 pages** — not required; practice was generated from the homework format and standard rules.

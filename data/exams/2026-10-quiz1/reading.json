@@ -14,49 +14,418 @@
   },
   "anchorCharts": [
     {
+      "skill": "authors_purpose",
       "name": "Author's Purpose",
-      "body": "Authors write for a reason. Remember P.I.E.: to Persuade, to Inform, or to Entertain. Some texts also Explain how to do something. Ask: Why did the author write this? Look at the clues: facts and dates usually inform, characters and events usually entertain, and opinions with strong words usually persuade.",
+      "group": "Quiz 1 focus",
+      "body": "The author’s purpose is the main reason for writing. Read the whole text and ask what the author wants you to think, learn, feel, or do.",
+      "guide": [
+        {
+          "label": "Persuade",
+          "text": "Convince you to agree or act. Look for an opinion supported by reasons and evidence."
+        },
+        {
+          "label": "Inform",
+          "text": "Teach facts about a topic. Look for explanations, facts, and examples."
+        },
+        {
+          "label": "Entertain",
+          "text": "Engage you with a story, poem, or amusing events. A story can also teach a lesson."
+        },
+        {
+          "label": "Explain",
+          "text": "Show how or why something happens. This is often a type of informing."
+        }
+      ],
+      "steps": [
+        "State what the text mostly does.",
+        "Find two details that support that purpose.",
+        "Choose the main purpose, even if the text does more than one thing."
+      ],
+      "tip": "A fact can support a persuasive text. A funny sentence does not make the whole text entertainment.",
       "ex": [
-        "A passage full of facts about Alexander Graham Bell's inventions is written to inform.",
-        "A funny story about a bunny and a lizard going fishing is written to entertain.",
-        "\"Don't be discouraged by setbacks\" and \"remember the power of perseverance\" are written to persuade or encourage."
-      ]
+        "Schools Should Fund Young Inventors tries to persuade: the author states that schools should fund inventors, then gives reasons and examples.",
+        "Alexander Graham Bell mainly informs by describing his life and inventions. Benny and Larry mainly entertains through a humorous fishing story."
+      ],
+      "check": {
+        "question": "“Our school should plant a garden. Students could study insects, and the cafeteria could use the vegetables.” What is the main purpose?",
+        "answer": "To persuade. “Should” states an opinion; learning about insects and growing food are reasons to agree."
+      }
     },
     {
+      "skill": "text_structure",
       "name": "Text Structure",
-      "body": "Text structure is how the author organizes ideas. Five common structures: Description (tells about a topic with details), Sequence (events in order: first, next, then, finally), Cause and Effect (why something happened and what happened because of it: because, so, as a result, causing), Compare and Contrast (alike and different: both, however, unlike), and Problem and Solution (a problem and how it is fixed).",
+      "group": "Quiz 1 focus",
+      "body": "Text structure is the way an author organizes information. A paragraph and the whole text may use different structures.",
+      "guide": [
+        {
+          "label": "Description · topic → details",
+          "text": "Tells what something is like. Clues: for example, such as, includes."
+        },
+        {
+          "label": "Sequence · first → next → last",
+          "text": "Puts events or steps in order. Clues: before, next, later, finally, dates."
+        },
+        {
+          "label": "Cause and effect · why → result",
+          "text": "Explains why something happens and what happens because of it. Clues: because, so, as a result."
+        },
+        {
+          "label": "Compare and contrast · alike ↔ different",
+          "text": "Compares two subjects on the same feature. Clues: both, unlike, however, whereas."
+        },
+        {
+          "label": "Problem and solution · difficulty → response",
+          "text": "Presents a difficulty and an attempt to solve it. Clues: problem, to solve, a solution."
+        }
+      ],
+      "steps": [
+        "Identify the ideas being connected.",
+        "Explain their relationship in your own words.",
+        "Use clue words to confirm the structure."
+      ],
+      "tip": "“Then” is a clue, not proof. Decide how the ideas relate, rather than choosing from one word.",
       "ex": [
-        "\"Benny's hops were too fast for Larry\" (cause) → \"Larry went tumbling head over tail\" (effect).",
-        "Molly started at 6, then convinced her school, then spoke to the city council: sequence.",
-        "The crew lost fresh water (problem), so the captain collected rainwater (solution)."
-      ]
+        "Captain Morgan: losing fresh water is the problem; collecting rainwater is the solution.",
+        "The Flying Bathtub: wind fills the sail as the tub speeds downhill (cause), and the front wheels lift (effect)."
+      ],
+      "check": {
+        "question": "“The bridge washed away. To get students across the stream, the town built a temporary footbridge.” Which structure fits best?",
+        "answer": "Problem and solution: the lost bridge creates a crossing problem, and the temporary bridge addresses it."
+      }
     },
     {
+      "skill": "figurative_language",
       "name": "Figurative Language",
-      "body": "Figurative language says something in a creative way that is not literally true. Simile compares with like or as. Metaphor says one thing is another. Personification gives human actions to non-human things. Idiom is a phrase whose meaning is different from the words (head over heels, a piece of cake). Hyperbole is a big exaggeration.",
+      "group": "Quiz 1 focus",
+      "body": "Figurative language helps readers picture an idea or feel an emotion. Explain both the type of expression and what it means in context.",
+      "guide": [
+        {
+          "label": "Simile",
+          "text": "Compares unlike things using like or as: “Her idea shone like a star.” It suggests brilliance."
+        },
+        {
+          "label": "Metaphor",
+          "text": "Describes one thing as another: “The classroom was a zoo.” It suggests noise and disorder."
+        },
+        {
+          "label": "Personification",
+          "text": "Gives human qualities or actions to something nonhuman: “The wind whispered.” It suggests a soft sound."
+        },
+        {
+          "label": "Hyperbole",
+          "text": "Exaggerates for effect: “I waited a million years.” It means the wait felt very long."
+        },
+        {
+          "label": "Idiom",
+          "text": "A familiar phrase with a meaning beyond its individual words: “a piece of cake” means easy."
+        }
+      ],
+      "steps": [
+        "Find the unusual expression.",
+        "Ask what it means in this scene.",
+        "Explain how it helps you imagine the action or understand a feeling."
+      ],
+      "tip": "“I like science” is not a simile. “Like” must make a comparison, and literal comparisons are not always figurative.",
       "ex": [
-        "\"Larry went tumbling head over tail\" is an idiom that means Larry fell upside down.",
-        "\"The air was rich with the scent of salt and adventure\": you cannot really smell adventure, so it is figurative.",
-        "\"Her laugh was as loud as a school bell\" is a simile."
-      ]
+        "“He danced around the barn like a puppet with tangled strings” is a simile in The Flying Bathtub. It makes Rafael’s excited movements seem awkward and wild.",
+        "“Mara’s stomach did a small flip” expresses nervousness; her stomach does not literally turn over."
+      ],
+      "check": {
+        "question": "“The old stairs complained under my feet.” What technique is used, and what does it mean?",
+        "answer": "Personification. Stairs cannot complain like a person; the expression helps us imagine their creaking sound."
+      }
     },
     {
+      "skill": "central_idea",
       "name": "Central Idea",
-      "body": "The central idea is the most important point the author makes about the topic. Supporting details are the facts, examples, and reasons that prove it. To find it, ask: What is this mostly about? What do most of the details point to? A good central idea is not too narrow (one detail) and not too broad (the whole topic). The theme is different: it is the life lesson in a story.",
+      "group": "Quiz 1 focus",
+      "body": "The central idea is the most important point the author makes about a topic. Supporting details explain or develop that point.",
+      "guide": [
+        {
+          "label": "Topic · a few words",
+          "text": "What the text is about: “school invention projects.”"
+        },
+        {
+          "label": "Central idea · a complete sentence",
+          "text": "What the author says about it: “Schools should fund student inventions because the projects benefit students.”"
+        },
+        {
+          "label": "Supporting details · proof and explanation",
+          "text": "Reasons and examples: planning and testing develop skills; small budgets can make projects possible."
+        }
+      ],
+      "steps": [
+        "Name the topic.",
+        "Look for an idea that connects details across the text.",
+        "Write a full sentence and check that several important details support it."
+      ],
+      "tip": "A central idea must fit the whole section being asked about. One interesting fact is usually too narrow.",
       "ex": [
-        "Central idea: Alexander Graham Bell was an inventor of many useful things. Detail: He created an early metal detector.",
-        "Central idea of the Molly passage: Molly's actions inspired others and made a big difference.",
-        "Theme of Benny and Larry: Having fun with friends matters more than success."
-      ]
+        "In Schools Should Fund Young Inventors, the central claim is that schools should fund student inventions. The reasons about skills, costs, and valuing ideas support it.",
+        "For a paragraph about building, testing, and improving a prototype, “Inventors improve ideas through repeated testing” covers more than “One model broke.”"
+      ],
+      "check": {
+        "question": "“Bees carry pollen between flowers. This helps many plants make seeds. Farmers depend on bees to pollinate many crops.” State the central idea.",
+        "answer": "Bees help plants reproduce by moving pollen. The details about seeds and crops both support that idea."
+      }
     },
     {
+      "skill": "point_of_view",
       "name": "Point of View",
-      "body": "Who is telling the story? First-person: the narrator is a character and uses I, me, we, us. Third-person: the narrator is outside the story and uses he, she, they. Third-person limited: the narrator knows and shares the thoughts of only one character. Third-person omniscient: the narrator knows everything and shares the thoughts of all characters, even things the characters do not know.",
+      "group": "Quiz 1 focus",
+      "body": "Point of view identifies who tells a story and whose thoughts the narrator reveals. The narrator and the author are not necessarily the same person.",
+      "guide": [
+        {
+          "label": "First person · inside the story",
+          "text": "A character narrates using I, me, my, we, or our. We learn what that narrator experiences and thinks."
+        },
+        {
+          "label": "Third-person limited · one mind",
+          "text": "An outside narrator uses names, he, she, or they and reveals one character’s thoughts or feelings."
+        },
+        {
+          "label": "Third-person omniscient · more than one mind",
+          "text": "An outside narrator can reveal multiple characters’ thoughts and information beyond any one character’s knowledge."
+        },
+        {
+          "label": "Third-person objective · actions only",
+          "text": "An outside narrator reports observable actions and dialogue without directly revealing inner thoughts."
+        }
+      ],
+      "steps": [
+        "Read the narration outside quotation marks.",
+        "Decide whether the narrator is a character.",
+        "For third person, track whose inner thoughts are actually revealed."
+      ],
+      "tip": "“I” inside dialogue does not make the narration first person. Seeing several characters does not make a narrator omniscient.",
       "ex": [
-        "\"The dew on the grass made my running shoes damp. It didn't bother me.\" → first-person.",
-        "\"Jeremiah squinted from the sun. He was thinking about the game.\" (only Jeremiah's thoughts) → third-person limited.",
-        "\"Sarah didn't know that her teacher was also worried.\" (both characters' thoughts) → third-person omniscient."
-      ]
+        "The Flying Bathtub uses third-person limited narration centered on Mara. We learn her worries and feelings; Rafael explains his thinking through dialogue.",
+        "“I hid my drawing” is first person. “Mia feared losing; Ben secretly hoped she would win” reveals two minds and is omniscient."
+      ],
+      "check": {
+        "question": "“Leo smiled. ‘I can do it,’ he said. Inside, he worried that his hands would shake.” What point of view does this excerpt show?",
+        "answer": "Third-person limited. The narrator uses Leo/he outside dialogue and reveals only Leo’s private worry."
+      }
+    },
+    {
+      "skill": "theme",
+      "name": "Theme",
+      "group": "Supporting skill",
+      "body": "A theme is a message about life that a story develops. Readers infer it from the characters, their choices, and the outcome.",
+      "guide": [
+        {
+          "label": "Topic",
+          "text": "A broad subject such as friendship, courage, or persistence."
+        },
+        {
+          "label": "Theme",
+          "text": "A full message: “Friends can enjoy time together even when their plans fail.”"
+        },
+        {
+          "label": "Evidence",
+          "text": "Actions and outcomes that support the message, rather than just a matching word."
+        }
+      ],
+      "steps": [
+        "Identify the character’s challenge.",
+        "Notice the response, change, and outcome.",
+        "Write a message that applies beyond these characters, then support it with details."
+      ],
+      "tip": "A theme is not a plot summary. More than one theme can fit if the story supports it.",
+      "ex": [
+        "Benny and Larry supports the theme that enjoying friendship can matter more than achieving a goal: their fishing trip goes wrong, but they still have fun.",
+        "The Flying Bathtub supports persistence despite ridicule: Rafael celebrates a brief flight and begins planning improvements."
+      ],
+      "check": {
+        "question": "A girl loses a race, keeps training, and improves her time at the next meet. Which is a stronger theme: “racing” or “Steady effort helps us improve”? Why?",
+        "answer": "“Steady effort helps us improve” is a full message supported by her training and better time. “Racing” is only a topic."
+      }
+    },
+    {
+      "skill": "character",
+      "name": "Character",
+      "group": "Supporting skill",
+      "body": "Use a character’s actions, words, thoughts, and choices to infer traits and explain change.",
+      "guide": [
+        {
+          "label": "Trait · usual quality",
+          "text": "Persistent, generous, or cautious describes a pattern of behavior."
+        },
+        {
+          "label": "Feeling · current emotion",
+          "text": "Worried, relieved, or excited describes an emotion at a particular moment."
+        },
+        {
+          "label": "Motivation · reason for acting",
+          "text": "What a character wants, needs, fears, or values."
+        },
+        {
+          "label": "Change · beginning → ending",
+          "text": "How an experience changes a character’s feelings, actions, or understanding."
+        }
+      ],
+      "steps": [
+        "Choose a trait, feeling, or motivation that answers the question.",
+        "Find an action, thought, or line of dialogue as evidence.",
+        "Explain how that evidence supports your inference."
+      ],
+      "tip": "A character can feel afraid and still act bravely. Do not confuse a temporary feeling with a lasting trait.",
+      "ex": [
+        "Rafael is persistent: after a short flight and a splash, he starts sketching an additional propeller.",
+        "Mara worries about people laughing at Rafael, yet she picks up a wrench to help. Her action suggests loyalty to family."
+      ],
+      "check": {
+        "question": "“Even after three towers fell, Ana rebuilt her model and tested a wider base.” Name a trait and give evidence.",
+        "answer": "Ana is persistent. She keeps rebuilding after three failures and tries a new base instead of giving up."
+      }
+    },
+    {
+      "skill": "ideas_support",
+      "name": "Ideas and Support",
+      "group": "Supporting skill",
+      "body": "A writer develops an idea with reasons, facts, examples, or explanations. In an opinion text, distinguish the claim from its support.",
+      "guide": [
+        {
+          "label": "Claim · what I want you to accept",
+          "text": "“Schools should support young inventors.”"
+        },
+        {
+          "label": "Reason · why it makes sense",
+          "text": "“Invention projects teach problem-solving.”"
+        },
+        {
+          "label": "Evidence · specific support",
+          "text": "A described project, observation, example, or relevant study can support the reason."
+        },
+        {
+          "label": "Explanation · the connection",
+          "text": "Tell how that evidence makes the reason or claim stronger."
+        }
+      ],
+      "steps": [
+        "Identify the author’s idea or claim.",
+        "Separate the reasons from the specific evidence.",
+        "Check whether each detail actually supports that idea."
+      ],
+      "tip": "A strong-sounding opinion is not evidence. Specific details must be relevant; numbers alone do not prove a claim.",
+      "ex": [
+        "The student-inventor passage argues that small amounts of money can help. Its example of a $15 project budget supports that reason within the practice text.",
+        "The same passage addresses an opposing view about other school expenses, then suggests bake sales and local support. This is a counterargument and response."
+      ],
+      "check": {
+        "question": "Claim: “Our library needs more opening hours.” Which supports it: “I like the wall color” or “Many students arrive after it has closed”? Explain.",
+        "answer": "The second detail supports longer hours because it shows that students cannot currently use the library when they arrive."
+      }
+    },
+    {
+      "skill": "evidence",
+      "name": "Text Evidence",
+      "group": "Supporting skill",
+      "body": "Text evidence is a specific detail from the passage that supports an answer. You can quote exactly or paraphrase accurately.",
+      "guide": [
+        {
+          "label": "Answer",
+          "text": "Make a clear statement that answers the question."
+        },
+        {
+          "label": "Evidence",
+          "text": "Choose a relevant action, fact, or quotation. Name the paragraph when helpful."
+        },
+        {
+          "label": "Explain",
+          "text": "Show how the detail supports your answer: “This shows … because …”."
+        }
+      ],
+      "steps": [
+        "Underline the important words in the question.",
+        "Return to the passage and choose the strongest matching detail.",
+        "Connect the evidence to your answer in your own words."
+      ],
+      "tip": "Copying a long paragraph is not enough. Avoid adding facts the passage never states or changing words inside quotation marks.",
+      "ex": [
+        "Answer: Rafael does not give up. Evidence: he has already sketched a second propeller at the end of The Flying Bathtub. Explanation: he is planning another attempt after the crash.",
+        "To show Mara’s worry, use her thoughts or physical reaction. A description of the harbor would not support that answer."
+      ],
+      "check": {
+        "question": "Question: Is Noor helpful? Text: “Noor put down her game and carried the heavy bags for her neighbor.” Write an answer with evidence.",
+        "answer": "Noor is helpful because she stops playing to carry her neighbor’s heavy bags. Giving up her own activity to assist someone supports the trait."
+      }
+    },
+    {
+      "skill": "vocab_context",
+      "name": "Vocabulary in Context",
+      "group": "Supporting skill",
+      "body": "Use nearby words, sentences, and events to infer the meaning of an unfamiliar word. Then test that meaning in the sentence.",
+      "guide": [
+        {
+          "label": "Definition or restatement",
+          "text": "“The device was portable, or easy to carry.” The explanation gives the meaning."
+        },
+        {
+          "label": "Example",
+          "text": "“She packed provisions: bread, fruit, and drinking water.” The examples suggest supplies."
+        },
+        {
+          "label": "Contrast",
+          "text": "“Unlike the noisy hall, the room was tranquil.” The contrast suggests calm or quiet."
+        },
+        {
+          "label": "Situation",
+          "text": "A character shivers, wraps up, and moves near a heater. These actions can help explain a word describing the cold."
+        }
+      ],
+      "steps": [
+        "Read before and after the unfamiliar word.",
+        "Find a clue and suggest a meaning that fits the context.",
+        "Substitute your meaning and reread; check word parts if useful."
+      ],
+      "tip": "Choose the meaning used in this passage. A word may have several dictionary meanings.",
+      "ex": [
+        "In The Flying Bathtub, Rafael wears a fishing hat in the bathtub and a bathing cap to fish. These unusual habits help explain eccentric as unconventional or unusual.",
+        "“The fragile model broke when it fell.” Breaking helps suggest that fragile means easily damaged."
+      ],
+      "check": {
+        "question": "“Water was scarce; the hikers had only one small bottle left for the whole group.” What does scarce mean, and what is the clue?",
+        "answer": "Scarce means in short supply. One small bottle for the whole group shows that there is very little water available."
+      }
+    },
+    {
+      "skill": "compare",
+      "name": "Compare and Contrast",
+      "group": "Supporting skill",
+      "body": "Comparing identifies similarities; contrasting identifies differences. Use the same feature to compare characters, events, ideas, or two texts.",
+      "guide": [
+        {
+          "label": "Choose a feature",
+          "text": "Compare purposes, challenges, responses, outcomes, or a shared topic."
+        },
+        {
+          "label": "Find similarities",
+          "text": "Use both, similarly, or alike. Support the similarity with details about both subjects."
+        },
+        {
+          "label": "Find differences",
+          "text": "Use unlike, however, or whereas. Explain how the subjects differ on the same feature."
+        },
+        {
+          "label": "Draw a conclusion",
+          "text": "Explain what the comparison helps you understand."
+        }
+      ],
+      "steps": [
+        "Name the two subjects and the feature you will compare.",
+        "Gather one relevant detail for each subject.",
+        "Write a similarity or difference that uses both details."
+      ],
+      "tip": "Do not compare one character’s age with another’s personality. Keep the comparison on the same feature.",
+      "ex": [
+        "Practice example: both Ana and Ben build models. Ana tests after each change, whereas Ben tests only the finished model. The shared feature is their testing method.",
+        "Two texts about inventors may have different purposes: one gives facts about an inventor, while another argues that inventors deserve funding."
+      ],
+      "check": {
+        "question": "“Lina practiced alone every morning. Kai practiced with a team each evening.” Give one similarity and one difference.",
+        "answer": "Both practice regularly. Lina practices alone in the morning, whereas Kai practices with a team in the evening."
+      }
     }
   ],
   "passages": [
@@ -1019,5 +1388,6 @@
       "image": "assets/2026-10-quiz1/passages/the_flying_bathtub.jpg",
       "imageAlt": "Mara watches Uncle Rafael test his bathtub with bicycle wheels, a bedsheet sail and a propeller."
     }
-  ]
+  ],
+  "anchorChartsIntro": "Start with the five Quiz 1 focus skills, then review the six supporting skills used in the passage questions. These original study guides supplement your classroom materials."
 }

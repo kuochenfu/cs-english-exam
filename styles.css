@@ -688,7 +688,7 @@ details summary { cursor: pointer; font-weight: bold; padding: 8px 0; }
 
 .anchor-chart-content {
   display: grid;
-  grid-template-columns: minmax(220px, 320px) 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 20px;
   align-items: start;
   padding: 8px 0 18px;
@@ -755,3 +755,21 @@ button.link:hover { background: var(--border); }
 .pill.latest { background: #d9f0ff; color: #24577a; }
 
 #reading-summary { scroll-margin-top: 90px; }
+
+/* Anchor charts keep text full-width; illustrated charts use two columns. */
+@media (min-width: 641px) {
+  .anchor-chart-content.has-image { grid-template-columns: minmax(220px, 320px) minmax(0, 1fr); }
+}
+.anchor-chart { border-bottom: 2px solid var(--border); padding: 8px 0; }
+.anchor-chart > summary { color: var(--primary-dark); font-size: 1.15em; }
+.anchor-chart > summary .tag { margin-left: 10px; font-size: .7em; vertical-align: middle; }
+.anchor-chart h3 { margin: 20px 0 8px; }
+.anchor-chart li { margin-bottom: 10px; }
+.anchor-guide { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 12px; }
+.anchor-guide > div { padding: 16px; border: 2px solid var(--border); border-radius: 12px; background: #fffaf0; }
+.anchor-guide dt { font-weight: bold; color: var(--primary-dark); margin-bottom: 8px; }
+.anchor-guide dd { margin: 0; }
+.anchor-tip { padding: 14px; border-left: 4px solid var(--primary); background: #fffaf0; }
+.anchor-check { padding: 16px; border-radius: 12px; background: #edf7f0; }
+.anchor-check h3 { margin-top: 0; }
+.anchor-check details { border-top: 1px solid #c9dfcf; padding-top: 8px; }
