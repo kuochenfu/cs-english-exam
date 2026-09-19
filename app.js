@@ -784,14 +784,36 @@ function spellingTopic() {
   document.querySelectorAll(".panel button[data-i]").forEach(b => {
     b.onclick = () => {
       const list = lists[+b.dataset.i];
-      if (list.sortGame) sortGame(list); else spellingListMenu(list);
+      if (list.sortGame) sortGame(list);
+      else if (list.quiz) phonicsQuiz(list);
+      else spellingListMenu(list);
     };
   });
   document.querySelectorAll(".panel button[data-review-i]").forEach(b => {
     b.onclick = () => {
       const list = lists[+b.dataset.reviewI];
-      if (list.sortGame) sortGame(list, true); else spellingListMenu(list);
+      if (list.sortGame) sortGame(list, true);
+      else if (list.quiz) phonicsQuiz(list, true);
+      else spellingListMenu(list);
     };
+  });
+}
+
+// A spelling.json list with `quiz: true` is a plain MCQ set (e.g. "which word has the
+// short e sound?"). Items are {q, choices, answer}; q may contain simple HTML.
+function phonicsQuiz(list, reviewOnly = false) {
+  const topicId = `spell:${list.id || list.title}`;
+  const reviewIds = new Set(missedItems(topicId).map(m => m.id));
+  const items = reviewOnly ? list.items.filter(it => reviewIds.has(it.q)) : list.items;
+  runQuiz(topicId, list.title, items, (it) => ({
+    prompt: it.q,
+    choices: it.choices,
+    answer: it.answer,
+    extra: list.intro ? `<p class="exam-label">${esc(list.intro)}</p>` : ""
+  }), {
+    itemId: it => it.q,
+    itemLabel: it => it.q.replace(/<[^>]+>/g, ""),
+    afterFinish: spellingTopic
   });
 }
 

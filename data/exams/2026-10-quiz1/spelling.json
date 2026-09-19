@@ -4,54 +4,162 @@
       "id": "m1_w1_short_vowels",
       "title": "Module 1 Week 1 — Short Vowels (Dictation)",
       "words": [
-        { "word": "blister", "sentence": "The new shoes gave me a blister on my heel." },
-        { "word": "breath", "sentence": "Take a deep breath before you dive." },
-        { "word": "crush", "sentence": "Be careful not to crush the eggs in the bag." },
-        { "word": "energy", "sentence": "The puppy has so much energy in the morning." },
-        { "word": "feather", "sentence": "A white feather floated down from the nest." },
-        { "word": "gravity", "sentence": "Gravity pulls the ball back to the ground." },
-        { "word": "grasp", "sentence": "Grasp the rope with both hands." },
-        { "word": "numb", "sentence": "My fingers were numb after playing in the snow." },
-        { "word": "promise", "sentence": "I promise to finish my homework before dinner." },
-        { "word": "shovel", "sentence": "Use the shovel to dig a hole for the tree." },
-        { "word": "solid", "sentence": "The ice on the pond is solid enough to skate on." },
-        { "word": "weather", "sentence": "The weather was sunny and warm all weekend." }
+        {
+          "word": "blister",
+          "sentence": "The new shoes gave me a blister on my heel."
+        },
+        {
+          "word": "breath",
+          "sentence": "Take a deep breath before you dive."
+        },
+        {
+          "word": "crush",
+          "sentence": "Be careful not to crush the eggs in the bag."
+        },
+        {
+          "word": "energy",
+          "sentence": "The puppy has so much energy in the morning."
+        },
+        {
+          "word": "feather",
+          "sentence": "A white feather floated down from the nest."
+        },
+        {
+          "word": "gravity",
+          "sentence": "Gravity pulls the ball back to the ground."
+        },
+        {
+          "word": "grasp",
+          "sentence": "Grasp the rope with both hands."
+        },
+        {
+          "word": "numb",
+          "sentence": "My fingers were numb after playing in the snow."
+        },
+        {
+          "word": "promise",
+          "sentence": "I promise to finish my homework before dinner."
+        },
+        {
+          "word": "shovel",
+          "sentence": "Use the shovel to dig a hole for the tree."
+        },
+        {
+          "word": "solid",
+          "sentence": "The ice on the pond is solid enough to skate on."
+        },
+        {
+          "word": "weather",
+          "sentence": "The weather was sunny and warm all weekend."
+        }
       ]
     },
     {
       "id": "m1_w2_long_a_e",
       "title": "Module 1 Week 2 — Long a and Long e (Dictation)",
       "words": [
-        { "word": "ashamed", "sentence": "He felt ashamed after he forgot his friend's birthday." },
-        { "word": "awake", "sentence": "The baby stayed awake all night." },
-        { "word": "beneath", "sentence": "The cat hid beneath the bed." },
-        { "word": "brain", "sentence": "Your brain controls every part of your body." },
-        { "word": "disease", "sentence": "Washing your hands can stop the spread of disease." },
-        { "word": "display", "sentence": "The museum will display the old locomotive." },
-        { "word": "feast", "sentence": "We cooked a huge feast for the holiday." },
-        { "word": "niece", "sentence": "My niece is learning to ride a bike." },
-        { "word": "praise", "sentence": "The teacher gave praise for the neat project." },
-        { "word": "release", "sentence": "They will release the bird when its wing heals." },
-        { "word": "remain", "sentence": "Please remain in your seat until the bus stops." },
-        { "word": "thief", "sentence": "The thief was caught by the security camera." }
+        {
+          "word": "ashamed",
+          "sentence": "He felt ashamed after he forgot his friend's birthday."
+        },
+        {
+          "word": "awake",
+          "sentence": "The baby stayed awake all night."
+        },
+        {
+          "word": "beneath",
+          "sentence": "The cat hid beneath the bed."
+        },
+        {
+          "word": "brain",
+          "sentence": "Your brain controls every part of your body."
+        },
+        {
+          "word": "disease",
+          "sentence": "Washing your hands can stop the spread of disease."
+        },
+        {
+          "word": "display",
+          "sentence": "The museum will display the old locomotive."
+        },
+        {
+          "word": "feast",
+          "sentence": "We cooked a huge feast for the holiday."
+        },
+        {
+          "word": "niece",
+          "sentence": "My niece is learning to ride a bike."
+        },
+        {
+          "word": "praise",
+          "sentence": "The teacher gave praise for the neat project."
+        },
+        {
+          "word": "release",
+          "sentence": "They will release the bird when its wing heals."
+        },
+        {
+          "word": "remain",
+          "sentence": "Please remain in your seat until the bus stops."
+        },
+        {
+          "word": "thief",
+          "sentence": "The thief was caught by the security camera."
+        }
       ]
     },
     {
       "id": "m1_w3_long_i_o",
       "title": "Module 1 Week 3 — Long i and Long o (Dictation)",
       "words": [
-        { "word": "brighten", "sentence": "Flowers brighten the whole room." },
-        { "word": "compose", "sentence": "She likes to compose songs on the piano." },
-        { "word": "control", "sentence": "The pilot kept control of the plane in the wind." },
-        { "word": "dough", "sentence": "Roll the dough flat before you add the cheese." },
-        { "word": "excite", "sentence": "Loud noises excite the puppy." },
-        { "word": "height", "sentence": "The nurse measured my height and weight." },
-        { "word": "mighty", "sentence": "A mighty wind knocked down the old tree." },
-        { "word": "odor", "sentence": "A strange odor came from the garbage can." },
-        { "word": "reply", "sentence": "Please reply to the invitation by Friday." },
-        { "word": "sign", "sentence": "The sign said the park closes at six." },
-        { "word": "silent", "sentence": "The library was silent during the test." },
-        { "word": "thrown", "sentence": "The ball was thrown over the fence." }
+        {
+          "word": "brighten",
+          "sentence": "Flowers brighten the whole room."
+        },
+        {
+          "word": "compose",
+          "sentence": "She likes to compose songs on the piano."
+        },
+        {
+          "word": "control",
+          "sentence": "The pilot kept control of the plane in the wind."
+        },
+        {
+          "word": "dough",
+          "sentence": "Roll the dough flat before you add the cheese."
+        },
+        {
+          "word": "excite",
+          "sentence": "Loud noises excite the puppy."
+        },
+        {
+          "word": "height",
+          "sentence": "The nurse measured my height and weight."
+        },
+        {
+          "word": "mighty",
+          "sentence": "A mighty wind knocked down the old tree."
+        },
+        {
+          "word": "odor",
+          "sentence": "A strange odor came from the garbage can."
+        },
+        {
+          "word": "reply",
+          "sentence": "Please reply to the invitation by Friday."
+        },
+        {
+          "word": "sign",
+          "sentence": "The sign said the park closes at six."
+        },
+        {
+          "word": "silent",
+          "sentence": "The library was silent during the test."
+        },
+        {
+          "word": "thrown",
+          "sentence": "The ball was thrown over the fence."
+        }
       ]
     },
     {
@@ -59,11 +167,28 @@
       "title": "Phonics — Sort Short Vowel Sounds (Week 1)",
       "sortGame": true,
       "groups": {
-        "Short a": ["grasp", "gravity"],
-        "Short e": ["breath", "energy", "feather", "weather"],
-        "Short i": ["blister", "promise"],
-        "Short o": ["solid"],
-        "Short u": ["crush", "numb", "shovel"]
+        "Short a": [
+          "grasp",
+          "gravity"
+        ],
+        "Short e": [
+          "breath",
+          "energy",
+          "feather",
+          "weather"
+        ],
+        "Short i": [
+          "blister",
+          "promise"
+        ],
+        "Short o": [
+          "solid"
+        ],
+        "Short u": [
+          "crush",
+          "numb",
+          "shovel"
+        ]
       }
     },
     {
@@ -71,8 +196,22 @@
       "title": "Phonics — Long a or Long e? (Week 2)",
       "sortGame": true,
       "groups": {
-        "Long a": ["ashamed", "awake", "brain", "display", "praise", "remain"],
-        "Long e": ["beneath", "disease", "feast", "niece", "release", "thief"]
+        "Long a": [
+          "ashamed",
+          "awake",
+          "brain",
+          "display",
+          "praise",
+          "remain"
+        ],
+        "Long e": [
+          "beneath",
+          "disease",
+          "feast",
+          "niece",
+          "release",
+          "thief"
+        ]
       }
     },
     {
@@ -80,11 +219,28 @@
       "title": "Phonics — Long a and e Spelling Patterns (Week 2)",
       "sortGame": true,
       "groups": {
-        "a_e": ["ashamed", "awake"],
-        "ai": ["brain", "praise", "remain"],
-        "ay": ["display"],
-        "ea": ["beneath", "disease", "feast", "release"],
-        "ie": ["niece", "thief"]
+        "a_e": [
+          "ashamed",
+          "awake"
+        ],
+        "ai": [
+          "brain",
+          "praise",
+          "remain"
+        ],
+        "ay": [
+          "display"
+        ],
+        "ea": [
+          "beneath",
+          "disease",
+          "feast",
+          "release"
+        ],
+        "ie": [
+          "niece",
+          "thief"
+        ]
       }
     },
     {
@@ -92,8 +248,22 @@
       "title": "Phonics — Long i or Long o? (Week 3)",
       "sortGame": true,
       "groups": {
-        "Long i": ["brighten", "excite", "height", "mighty", "reply", "sign", "silent"],
-        "Long o": ["compose", "control", "dough", "odor", "thrown"]
+        "Long i": [
+          "brighten",
+          "excite",
+          "height",
+          "mighty",
+          "reply",
+          "sign",
+          "silent"
+        ],
+        "Long o": [
+          "compose",
+          "control",
+          "dough",
+          "odor",
+          "thrown"
+        ]
       }
     },
     {
@@ -101,13 +271,417 @@
       "title": "Phonics — Long i and o Spelling Patterns (Week 3)",
       "sortGame": true,
       "groups": {
-        "igh / eigh": ["brighten", "mighty", "height"],
-        "i_e": ["excite"],
-        "i or y": ["sign", "silent", "reply"],
-        "o_e": ["compose"],
-        "o": ["control", "odor"],
-        "ough / ow": ["dough", "thrown"]
+        "igh / eigh": [
+          "brighten",
+          "mighty",
+          "height"
+        ],
+        "i_e": [
+          "excite"
+        ],
+        "i or y": [
+          "sign",
+          "silent",
+          "reply"
+        ],
+        "o_e": [
+          "compose"
+        ],
+        "o": [
+          "control",
+          "odor"
+        ],
+        "ough / ow": [
+          "dough",
+          "thrown"
+        ]
       }
+    },
+    {
+      "id": "hw_find_short_vowel",
+      "title": "Phonics — Find the Short Vowel Word (HW format)",
+      "quiz": true,
+      "intro": "Read the sentence. Which word has the short vowel sound you are asked for?",
+      "items": [
+        {
+          "q": "Which word has the short a (ă) sound? <i>We will eat salad for dinner tonight.</i>",
+          "choices": [
+            "will",
+            "tonight",
+            "salad",
+            "eat"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Which word has the short e (ĕ) sound? <i>Would you like butter for your bread?</i>",
+          "choices": [
+            "would",
+            "like",
+            "butter",
+            "bread"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Which word has the short a (ă) sound? <i>The aliens asked for noodles when they arrived.</i>",
+          "choices": [
+            "aliens",
+            "asked",
+            "arrived",
+            "noodles"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Which word has the short e (ĕ) sound? <i>Listening to loud music may make you deaf.</i>",
+          "choices": [
+            "may",
+            "deaf",
+            "loud",
+            "make"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Which word has the short e (ĕ) sound? <i>Take a deep breath before you dive.</i>",
+          "choices": [
+            "breath",
+            "take",
+            "dive",
+            "deep"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which word has the short u (ŭ) sound? <i>My fingers were numb after the snow.</i>",
+          "choices": [
+            "numb",
+            "snow",
+            "after",
+            "were"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which word has the short i (ĭ) sound? <i>The new shoes gave me a blister.</i>",
+          "choices": [
+            "gave",
+            "blister",
+            "shoes",
+            "new"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Which word has the short o (ŏ) sound? <i>The ice on the pond is solid.</i>",
+          "choices": [
+            "solid",
+            "the",
+            "pond",
+            "ice"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which word has the short e (ĕ) sound? <i>A white feather floated down.</i>",
+          "choices": [
+            "floated",
+            "white",
+            "feather",
+            "down"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Which word has the short a (ă) sound? <i>Grasp the rope with both hands.</i>",
+          "choices": [
+            "the",
+            "both",
+            "grasp",
+            "rope"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Which word has the short u (ŭ) sound? <i>Use the shovel to dig a hole.</i>",
+          "choices": [
+            "hole",
+            "shovel",
+            "use",
+            "dig"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Which word has the short e (ĕ) sound? <i>The weather was sunny all weekend.</i>",
+          "choices": [
+            "sunny",
+            "all",
+            "was",
+            "weather"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Which sound does the ea in <b>breath</b> make?",
+          "choices": [
+            "short e (ĕ)",
+            "long e (ē)",
+            "short a (ă)",
+            "long a (ā)"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which sound does the ea in <b>feast</b> make?",
+          "choices": [
+            "long a (ā)",
+            "short a (ă)",
+            "long e (ē)",
+            "short e (ĕ)"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Which word does NOT have a short vowel sound in its first syllable?",
+          "choices": [
+            "promise",
+            "silent",
+            "energy",
+            "gravity"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "hw_long_vowel_letters",
+      "title": "Phonics — Which Letters Make the Long Vowel? (HW format)",
+      "quiz": true,
+      "intro": "For each word, choose the letters that make its long vowel sound, or name the sound.",
+      "items": [
+        {
+          "q": "<b>shine</b> — which letters make the long i sound?",
+          "choices": [
+            "i_e",
+            "ie",
+            "y",
+            "igh"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "<b>dry</b> — which letters make the long i sound?",
+          "choices": [
+            "igh",
+            "ie",
+            "y",
+            "i_e"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "<b>drove</b> — which letters make the long o sound?",
+          "choices": [
+            "ow",
+            "oa",
+            "o_e",
+            "o"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "<b>notion</b> — which letter makes the long o sound?",
+          "choices": [
+            "ough",
+            "o",
+            "ow",
+            "o_e"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "<b>fried</b> — which letters make the long i sound?",
+          "choices": [
+            "ie",
+            "igh",
+            "i_e",
+            "y"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "<b>borrow</b> — which letters make the long o sound?",
+          "choices": [
+            "o_e",
+            "o",
+            "or",
+            "ow"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "<b>brighten</b> — which letters make the long i sound?",
+          "choices": [
+            "y",
+            "ie",
+            "igh",
+            "i_e"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "<b>height</b> — which letters make the long i sound?",
+          "choices": [
+            "e",
+            "ei",
+            "igh",
+            "eigh"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "<b>reply</b> — which letter makes the long i sound?",
+          "choices": [
+            "y",
+            "ie",
+            "i_e",
+            "e"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "<b>compose</b> — which letters make the long o sound?",
+          "choices": [
+            "o_e",
+            "oa",
+            "ow",
+            "o"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "<b>dough</b> — which letters make the long o sound?",
+          "choices": [
+            "ow",
+            "o",
+            "o_e",
+            "ough"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "<b>thrown</b> — which letters make the long o sound?",
+          "choices": [
+            "ow",
+            "ough",
+            "o_e",
+            "o"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "<b>train</b> — which letters make the long a sound?",
+          "choices": [
+            "ai",
+            "a_e",
+            "ei",
+            "ay"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "<b>display</b> — which letters make the long a sound?",
+          "choices": [
+            "a_e",
+            "ay",
+            "ea",
+            "ai"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "<b>awake</b> — which letters make the long a sound?",
+          "choices": [
+            "aw",
+            "ai",
+            "a_e",
+            "ay"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "<b>niece</b> — which letters make the long e sound?",
+          "choices": [
+            "ea",
+            "ie",
+            "e_e",
+            "ee"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "<b>release</b> — which letters make the long e sound?",
+          "choices": [
+            "ea",
+            "ee",
+            "ie",
+            "e_e"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which word has a long a sound but NO letter a in it?",
+          "choices": [
+            "grey",
+            "display",
+            "awake",
+            "brain"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which word has a long e sound spelled ey?",
+          "choices": [
+            "feast",
+            "key",
+            "meet",
+            "thief"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Which word has the long o sound?",
+          "choices": [
+            "odor",
+            "shovel",
+            "promise",
+            "solid"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which word has the long i sound?",
+          "choices": [
+            "silly",
+            "dinner",
+            "sign",
+            "blister"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "<b>sign</b> — the long i sound is spelled with which letter?",
+          "choices": [
+            "i_e",
+            "igh",
+            "i",
+            "y"
+          ],
+          "answer": 2
+        }
+      ]
     }
   ]
 }

@@ -4,8 +4,143 @@
     "text_structure": "Text Structure",
     "figurative_language": "Figurative Language",
     "central_idea": "Central Idea",
-    "point_of_view": "Point of View"
+    "point_of_view": "Point of View",
+    "theme": "Theme",
+    "character": "Character",
+    "ideas_support": "Ideas and Support"
   },
-  "anchorCharts": [],
-  "passages": []
+  "anchorCharts": [
+    {
+      "name": "Author's Purpose",
+      "body": "Authors write for a reason. Remember P.I.E.: to Persuade, to Inform, or to Entertain. Some texts also Explain how to do something. Ask: Why did the author write this? Look at the clues: facts and dates usually inform, characters and events usually entertain, and opinions with strong words usually persuade.",
+      "ex": [
+        "A passage full of facts about Alexander Graham Bell's inventions is written to inform.",
+        "A funny story about a bunny and a lizard going fishing is written to entertain.",
+        "\"Don't be discouraged by setbacks\" and \"remember the power of perseverance\" are written to persuade or encourage."
+      ]
+    },
+    {
+      "name": "Text Structure",
+      "body": "Text structure is how the author organizes ideas. Five common structures: Description (tells about a topic with details), Sequence (events in order: first, next, then, finally), Cause and Effect (why something happened and what happened because of it: because, so, as a result, causing), Compare and Contrast (alike and different: both, however, unlike), and Problem and Solution (a problem and how it is fixed).",
+      "ex": [
+        "\"Benny's hops were too fast for Larry\" (cause) → \"Larry went tumbling head over tail\" (effect).",
+        "Molly started at 6, then convinced her school, then spoke to the city council: sequence.",
+        "The crew lost fresh water (problem), so the captain collected rainwater (solution)."
+      ]
+    },
+    {
+      "name": "Figurative Language",
+      "body": "Figurative language says something in a creative way that is not literally true. Simile compares with like or as. Metaphor says one thing is another. Personification gives human actions to non-human things. Idiom is a phrase whose meaning is different from the words (head over heels, a piece of cake). Hyperbole is a big exaggeration.",
+      "ex": [
+        "\"Larry went tumbling head over tail\" is an idiom that means Larry fell upside down.",
+        "\"The air was rich with the scent of salt and adventure\": you cannot really smell adventure, so it is figurative.",
+        "\"Her laugh was as loud as a school bell\" is a simile."
+      ]
+    },
+    {
+      "name": "Central Idea",
+      "body": "The central idea is the most important point the author makes about the topic. Supporting details are the facts, examples, and reasons that prove it. To find it, ask: What is this mostly about? What do most of the details point to? A good central idea is not too narrow (one detail) and not too broad (the whole topic). The theme is different: it is the life lesson in a story.",
+      "ex": [
+        "Central idea: Alexander Graham Bell was an inventor of many useful things. Detail: He created an early metal detector.",
+        "Central idea of the Molly passage: Molly's actions inspired others and made a big difference.",
+        "Theme of Benny and Larry: Having fun with friends matters more than success."
+      ]
+    },
+    {
+      "name": "Point of View",
+      "body": "Who is telling the story? First-person: the narrator is a character and uses I, me, we, us. Third-person: the narrator is outside the story and uses he, she, they. Third-person limited: the narrator knows and shares the thoughts of only one character. Third-person omniscient: the narrator knows everything and shares the thoughts of all characters, even things the characters do not know.",
+      "ex": [
+        "\"The dew on the grass made my running shoes damp. It didn't bother me.\" → first-person.",
+        "\"Jeremiah squinted from the sun. He was thinking about the game.\" (only Jeremiah's thoughts) → third-person limited.",
+        "\"Sarah didn't know that her teacher was also worried.\" (both characters' thoughts) → third-person omniscient."
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "alexander_graham_bell",
+      "title": "Alexander Graham Bell",
+      "skills": ["central_idea", "ideas_support", "authors_purpose"],
+      "body": "From M1W1 HW3, Part A.\n\nAlexander Graham Bell is most famous for inventing the telephone, but he also did much more in science and technology. He created one of the earliest versions of a metal detector, and he also had a great idea about heating homes with solar panels. The reason he became interested in making telephones was because his mother and wife were deaf (unable to hear), and he was also a teacher for deaf people. The invention of the telephone was one of the most important inventions for people then and now.",
+      "questions": [
+        { "q": "What is the central idea of the passage?", "choices": ["Alexander Graham Bell's wife and mother were deaf.", "Alexander Graham Bell was an inventor of many useful things.", "Alexander Graham Bell had a great idea about solar panels.", "Alexander Graham Bell was a teacher for deaf people."], "answer": 1, "skill": "central_idea" },
+        { "q": "Which detail best supports the central idea that Bell invented many useful things?", "choices": ["His mother and wife were deaf.", "He created one of the earliest versions of a metal detector.", "He was a teacher.", "People use telephones now."], "answer": 1, "skill": "ideas_support" },
+        { "q": "Why did Bell become interested in making telephones?", "choices": ["He wanted to become rich and famous.", "His mother and wife were deaf, and he taught deaf people.", "He needed a way to find metal.", "His house was too cold in winter."], "answer": 1, "skill": "ideas_support" },
+        { "q": "The author's purpose in this passage is mostly to ____.", "choices": ["entertain readers with a funny story", "persuade readers to buy a telephone", "inform readers about Bell's inventions and life", "explain how to build a metal detector"], "answer": 2, "skill": "authors_purpose" },
+        { "q": "Name one invention that has changed the world. Explain why.", "type": "short", "sampleAnswer": "The internet has changed the world because it lets people communicate and share information quickly across long distances.", "skill": "ideas_support" }
+      ]
+    },
+    {
+      "id": "super_recycler",
+      "title": "The Super-Recycler",
+      "skills": ["central_idea", "ideas_support", "text_structure", "point_of_view"],
+      "body": "From M1W1 HW3, Part B.\n\n1 We all know that recycling is important for the environment. But for Molly, a 10-year-old girl, recycling is more than just a good habit—it's a mission. Molly started recycling when she was only 6 years old. She began by collecting aluminum cans and plastic bottles from her neighborhood.\n\n2 Molly didn't just stop at her neighborhood. She convinced her school to start a recycling program, and even gave presentations at city council meetings. She explained how recycling could help the environment and also save money. She used her own pocket money to buy recycling bins for her school.\n\n3 She set up recycling centers in her local park and at community events. Molly even created a YouTube channel where she teaches people how to recycle effectively. Her efforts have resulted in her town recycling 40% more waste than before.\n\n4 One day, a documentary team decided to make a film about her. The film, called \"The Super-Recycler\", won several awards and helped to spread Molly's message even further. Thanks to Molly, more people are now conscious of the importance of recycling.\n\n5 Molly says, \"It's not just about saving the planet for future generations. It's about making the world a better place right now.\"",
+      "questions": [
+        { "q": "Which of these best shows how Molly's work had a real impact, or big change, on her community?", "choices": ["She started recycling when she was 6 years old.", "She made a YouTube channel about recycling.", "Her town now recycles 40% more waste than before.", "A documentary was made about her story."], "answer": 2, "skill": "ideas_support" },
+        { "q": "Which statement would fit best as the missing central idea of Paragraph 3?", "choices": ["Molly was only 10 years old when she started her mission.", "Molly's school was resistant to starting a recycling program.", "Molly took her mission beyond her school and neighborhood.", "Molly's family was very supportive of her recycling efforts."], "answer": 2, "skill": "central_idea" },
+        { "q": "How does the author organize paragraphs 1 to 4?", "choices": ["In the order the events happened, from age 6 until now", "By comparing Molly with other recyclers", "By listing problems with no solutions", "By describing what a recycling bin looks like"], "answer": 0, "skill": "text_structure" },
+        { "q": "This passage is told from which point of view?", "choices": ["First-person, by Molly", "Third-person, by a narrator outside the story", "First-person, by the documentary team", "Second-person, talking to you"], "answer": 1, "skill": "point_of_view" },
+        { "q": "What is the central idea of the entire passage about Molly?", "type": "short", "sampleAnswer": "Molly's actions inspired other people and made a big difference in how much her community recycles.", "skill": "central_idea" }
+      ]
+    },
+    {
+      "id": "power_of_perseverance",
+      "title": "The Power of Perseverance",
+      "skills": ["central_idea", "ideas_support", "authors_purpose", "text_structure"],
+      "body": "From M1W2 HW3, Part B.\n\nPerseverance is a quality that can change your life. It means not giving up when faced with challenges and obstacles, and it's a crucial skill to develop as you grow older.\n\nConsider the story of Abraham Lincoln. He faced numerous failures and setbacks throughout his life. He lost multiple elections and even went bankrupt, but he didn't give up. He continued to work hard, learn from his mistakes, and, eventually, became one of the greatest presidents in American history.\n\nAnother example is the story of J.K. Rowling, the author of the Harry Potter series. She received rejection letters from numerous publishers before one finally accepted her manuscript. Today, her books have sold millions of copies worldwide, and she's a household name.\n\nInventor Thomas Edison once said, \"I have not failed. I've just found 10,000 ways that won't work.\" His determination led to the invention of the light bulb, which revolutionized the world.\n\nPerseverance isn't just about achieving big dreams; it's also about tackling everyday challenges. Whether it's a tough math problem, a difficult friendship, or a new skill you're trying to master, remember that you can overcome anything with determination and hard work.\n\nSo, as you journey through life, keep in mind the power of perseverance. Don't be discouraged by setbacks, and remember that some of the world's greatest achievements were made possible by those who refused to give up.",
+      "questions": [
+        { "q": "What is the central idea of the passage?", "choices": ["the significance of famous inventors in history", "the challenges of becoming a successful author", "the power of perseverance in overcoming obstacles", "the importance of learning from mistakes"], "answer": 2, "skill": "central_idea" },
+        { "q": "Which famous inventor's quote is mentioned in the passage as an example of perseverance?", "choices": ["Abraham Lincoln", "J.K. Rowling", "Thomas Edison", "George Washington"], "answer": 2, "skill": "ideas_support" },
+        { "q": "Which of the following is the opposite of perseverance?", "choices": ["determination", "giving up", "hard work", "patience"], "answer": 1, "skill": "ideas_support" },
+        { "q": "Why does the author include the stories of Lincoln, Rowling, and Edison?", "choices": ["To give examples that support the central idea", "To compare which person was the smartest", "To explain how to write a book", "To show that famous people never fail"], "answer": 0, "skill": "text_structure" },
+        { "q": "The author's purpose in the last two paragraphs is mostly to ____.", "choices": ["inform readers about the history of the light bulb", "persuade readers to keep trying and not give up", "entertain readers with a funny story", "describe what a math problem looks like"], "answer": 1, "skill": "authors_purpose" },
+        { "q": "What did Thomas Edison mean when he said, \"I have not failed. I've just found 10,000 ways that won't work\"?", "type": "short", "sampleAnswer": "He meant that each mistake taught him something, so his failures were really steps toward success and he refused to give up.", "skill": "figurative_language" }
+      ]
+    },
+    {
+      "id": "benny_and_larry",
+      "title": "Benny and Larry",
+      "skills": ["figurative_language", "theme", "text_structure", "point_of_view"],
+      "body": "From M1W3 HW3, Part A.\n\nOne sunny morning, Benny was hopping through the meadow when he spotted his friend Larry sunbathing on a rock. Benny, being the curious bunny that he was, hopped over to say hello. Larry, a lizard with a cool and laid-back personality, welcomed Benny's company. Since neither Benny nor Larry had plans for the day, the two decided to spend some time together.\n\nFirst, Benny invited Larry to hop along with him through the carrot patch. Benny's nimble hops turned out to be too fast for Larry's wobbly waddle. Larry went tumbling head over tail, causing the carrots to fly in all directions. Oops!\n\nAfter that, Benny and Larry decided to go fishing. Benny thought that if he hopped around the pond, he could create ripples that would attract the fish. Larry, not wanting to be left out, joined in by flicking his tail into the water. The combination of Benny's hops and Larry's tail flicks created such chaos that the fish swam away in a frenzy. Benny and Larry ended up with a bucket of water, but no fish!\n\nIn the end, it was clear that Benny the bunny and Larry the lizard didn't always have the best ideas, but they always managed to have a fun time. And that, my friends, is what made them the most beloved and entertaining duo in the entire village.",
+      "questions": [
+        { "q": "What does the phrase \"head over tail\" mean in the story?", "choices": ["Larry was very happy.", "Larry fell upside down.", "Benny jumped very high.", "Larry was chasing Benny."], "answer": 1, "skill": "figurative_language" },
+        { "q": "What is the theme, or main subject or topic, of this passage?", "choices": ["Friends always win.", "Having fun is more important than success.", "Find friends that have different interests.", "Exercise is important for your health."], "answer": 1, "skill": "theme" },
+        { "q": "What caused the fish to swim away in a frenzy?", "choices": ["Larry fell into the pond.", "Benny's hops and Larry's tail flicks created chaos in the water.", "The carrots flew into the pond.", "A bucket fell into the water."], "answer": 1, "skill": "text_structure" },
+        { "q": "Which words signal cause and effect in \"Larry went tumbling head over tail, causing the carrots to fly in all directions\"?", "choices": ["causing", "tumbling", "in all directions", "head over tail"], "answer": 0, "skill": "text_structure" },
+        { "q": "The narrator tells what Benny thought AND what Larry wanted. This story is told in ____.", "choices": ["first-person", "third-person limited", "third-person omniscient", "second-person"], "answer": 2, "skill": "point_of_view" },
+        { "q": "Give one example of cause-and-effect in the passage.", "type": "short", "sampleAnswer": "Cause: Benny's nimble hops were too fast for Larry's wobbly waddle. Effect: Larry went tumbling head over tail, causing the carrots to fly in all directions.", "skill": "text_structure" }
+      ]
+    },
+    {
+      "id": "captain_morgan",
+      "title": "Captain Morgan",
+      "skills": ["character", "figurative_language", "text_structure", "authors_purpose"],
+      "body": "From M1W3 HW3, Part B.\n\nCaptain Morgan stood at the helm of his ship, The Sea Whisperer, as it glided through the choppy waters. With a sparkle in his eye and a determined smile, he took a deep breath; the air was rich with the scent of salt and adventure. The crew admired Captain Morgan, not just for his skill in navigating treacherous waters but for the kind of person he was.\n\nOne day, a young sailor accidentally knocked over a barrel of fresh water. Everyone knew how important fresh water was on a long journey. But instead of getting angry, Captain Morgan calmly said, \"Mistakes happen to the best of us. Let's find a way to collect rainwater to make up for the loss.\"\n\nThe crew was relieved and immediately got to work, inspired by their captain's character.",
+      "questions": [
+        { "q": "What word best describes Captain Morgan based on the passage?", "choices": ["impatient", "understanding", "eccentric", "indifferent"], "answer": 1, "skill": "character" },
+        { "q": "\"With a sparkle in his eye\" tells the reader that Captain Morgan was ____.", "choices": ["excited and happy", "crying", "wearing glasses", "afraid of the sea"], "answer": 0, "skill": "figurative_language" },
+        { "q": "\"The air was rich with the scent of salt and adventure.\" Why is this figurative language?", "choices": ["Because the sea does not smell like salt", "Because you cannot really smell adventure; it describes a feeling", "Because the captain could not breathe", "Because the ship was not moving"], "answer": 1, "skill": "figurative_language" },
+        { "q": "What was the effect of Captain Morgan staying calm after the water was spilled?", "choices": ["The crew felt relieved and got to work.", "The young sailor left the ship.", "The ship ran out of water.", "The crew became angry."], "answer": 0, "skill": "text_structure" },
+        { "q": "The author wrote this story mostly to ____.", "choices": ["inform readers about how ships collect rainwater", "persuade readers to become sailors", "entertain readers with a story that shows what a kind leader is like", "explain how to steer a ship"], "answer": 2, "skill": "authors_purpose" },
+        { "q": "Use examples from the passage to describe the character of Captain Morgan. What kind of person is he?", "type": "short", "sampleAnswer": "He is a kind and understanding person. Instead of getting angry when the sailor spilled the water, he calmly said, \"Mistakes happen to the best of us,\" and found a solution.", "skill": "character" }
+      ]
+    },
+    {
+      "id": "pov_practice",
+      "title": "Point of View Practice",
+      "skills": ["point_of_view"],
+      "body": "From M1W2 HW3, Part A. Read each excerpt and decide who is telling the story.\n\n<b>First-person:</b> the narrator is in the story and uses I, me, we, us.\n<b>Third-person limited:</b> the narrator is outside the story (he, she, they) and shares the thoughts of only ONE character.\n<b>Third-person omniscient:</b> the narrator knows everything and shares the thoughts of ALL characters, even things the characters do not know.\n\n<b>Excerpt 1.</b> Red looked across the prairie. He didn't see anything concerning. He wondered why Texas Joe had hollered like that. Texas Joe turned to him. The ghost that Texas Joe had just seen was gone. Texas Joe swatted at the air. Now he felt crazy.\n\n<b>Excerpt 2.</b> The dew on the grass made my running shoes damp. It didn't bother me. The sound of my feet hitting the street formed a rhythm, a steady pattern of light thumps. I timed my breathing with the rhythm. These sounds filled my head.\n\n<b>Excerpt 3.</b> Jeremiah squinted from the sun. He was thinking about the game. They could have won. He could have won the game for them. All he needed to do was catch the ball, but he didn't.\n\n<b>Excerpt 4.</b> I couldn't believe what I was seeing. The recycling bin was overflowing, and nobody seemed to care. I knew I had to do something about this problem in my school.\n\n<b>Excerpt 5.</b> Tom picked up the plastic bottle from the ground. He wondered if one person could really make a difference in saving the environment. The other students watched him curiously.\n\n<b>Excerpt 6.</b> Sarah walked into the classroom feeling nervous. She didn't know that her teacher, Mrs. Johnson, was also worried about the upcoming presentation. Both of them were thinking about how the other students would react.\n\n<b>Excerpt 7.</b> Lily stared at the broken gadget on her desk. She was sure she could fix it before her brother came home. She did not want him to find out.\n\n<b>Excerpt 8.</b> We pushed the wheelchair up the ramp together. My arms were tired, but I was not going to stop now. This was our race.",
+      "questions": [
+        { "q": "Excerpt 1 (Red and Texas Joe): the narrator shares what Red wonders AND how Texas Joe feels. Point of view?", "choices": ["First-person", "Third-person limited", "Third-person omniscient"], "answer": 2, "skill": "point_of_view" },
+        { "q": "Excerpt 2 (running shoes): point of view?", "choices": ["First-person", "Third-person limited", "Third-person omniscient"], "answer": 0, "skill": "point_of_view" },
+        { "q": "Excerpt 3 (Jeremiah and the game): point of view?", "choices": ["First-person", "Third-person limited", "Third-person omniscient"], "answer": 1, "skill": "point_of_view" },
+        { "q": "Excerpt 4 (the overflowing recycling bin): point of view?", "choices": ["First-person", "Third-person limited", "Third-person omniscient"], "answer": 0, "skill": "point_of_view" },
+        { "q": "Excerpt 5 (Tom and the plastic bottle): the narrator shares Tom's thoughts AND tells what the other students did. Point of view?", "choices": ["First-person", "Third-person limited", "Third-person omniscient"], "answer": 2, "skill": "point_of_view" },
+        { "q": "Excerpt 6 (Sarah and Mrs. Johnson): point of view?", "choices": ["First-person", "Third-person limited", "Third-person omniscient"], "answer": 2, "skill": "point_of_view" },
+        { "q": "Excerpt 7 (Lily and the gadget): point of view?", "choices": ["First-person", "Third-person limited", "Third-person omniscient"], "answer": 1, "skill": "point_of_view" },
+        { "q": "Excerpt 8 (the wheelchair race): point of view?", "choices": ["First-person", "Third-person limited", "Third-person omniscient"], "answer": 0, "skill": "point_of_view" },
+        { "q": "Which pronouns are the biggest clue that a story is told in first-person?", "choices": ["I, me, we, us", "he, she, they", "you, your", "it, its"], "answer": 0, "skill": "point_of_view" }
+      ]
+    }
+  ]
 }

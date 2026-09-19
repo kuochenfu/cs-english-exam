@@ -1,5 +1,334 @@
 {
   "title": "Listening Comprehension",
-  "intro": "Listen to a dialogue, then answer multiple choice questions. Practice dialogues for Quiz 1 will be added later.",
-  "dialogues": []
+  "intro": "Listen to a dialogue, then answer multiple choice questions. These are generated review dialogues on Module 1 topics, because the quiz dialogue is only played in class.",
+  "dialogues": [
+    {
+      "id": "the_flop_and_the_patent",
+      "title": "The Flop and the Patent",
+      "lines": [
+        {
+          "speaker": "Ava",
+          "text": "Leo, why does your robot keep making that popping noise?"
+        },
+        {
+          "speaker": "Leo",
+          "text": "The motor sputters every time I turn it on. My first design was a complete flop."
+        },
+        {
+          "speaker": "Ava",
+          "text": "Don't give up. Thomas Edison tested thousands of ideas before his incandescent bulb worked."
+        },
+        {
+          "speaker": "Leo",
+          "text": "That's true. I will build a new prototype with a bigger battery this weekend."
+        },
+        {
+          "speaker": "Ava",
+          "text": "If it works, you should apply for a patent so nobody can copy your gadget."
+        },
+        {
+          "speaker": "Leo",
+          "text": "Good idea. First I need it to run for more than ten seconds!"
+        }
+      ],
+      "questions": [
+        {
+          "q": "What problem does Leo's robot have?",
+          "choices": [
+            "The motor sputters and makes popping noises.",
+            "It has no wheels.",
+            "It is painted the wrong color.",
+            "It is too heavy to carry."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does Leo call his first design?",
+          "choices": [
+            "A prestigious success",
+            "A locomotive",
+            "A complete flop",
+            "A cylinder"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Why does Ava mention Thomas Edison?",
+          "choices": [
+            "To tell Leo about a train",
+            "To encourage Leo not to give up",
+            "To ask Leo for a light bulb",
+            "To say robots are a bad idea"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "What will Leo do this weekend?",
+          "choices": [
+            "Visit an auditorium",
+            "Apply for a patent",
+            "Build a new prototype with a bigger battery",
+            "Sell his robot at the market"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Why does Ava think Leo should get a patent?",
+          "choices": [
+            "So he can win a prize",
+            "So nobody can copy his gadget",
+            "So the robot runs longer",
+            "So the motor stops sputtering"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "recycling_mission",
+      "title": "Molly's Recycling Club",
+      "lines": [
+        {
+          "speaker": "Mr. Chen",
+          "text": "Molly, I heard you want to start a recycling club at school."
+        },
+        {
+          "speaker": "Molly",
+          "text": "Yes! My objective is to cut the trash in our cafeteria in half by December."
+        },
+        {
+          "speaker": "Mr. Chen",
+          "text": "That is a big goal. How will you begin?"
+        },
+        {
+          "speaker": "Molly",
+          "text": "First, I will put labeled bins next to every trash can. Then I will give a short talk in the auditorium to explain what goes where."
+        },
+        {
+          "speaker": "Mr. Chen",
+          "text": "You are evidently very passionate about this. I can help you order the bins."
+        },
+        {
+          "speaker": "Molly",
+          "text": "Thank you! Every small contribution makes a difference."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What does Molly want to start?",
+          "choices": [
+            "A YouTube channel",
+            "A science fair",
+            "A recycling club",
+            "A running team"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "What is Molly's objective?",
+          "choices": [
+            "To move the cafeteria",
+            "To cut the cafeteria trash in half by December",
+            "To buy a new trash can",
+            "To give a speech every day"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "What will Molly do first?",
+          "choices": [
+            "Give a talk in the auditorium",
+            "Write to the city council",
+            "Put labeled bins next to every trash can",
+            "Order new tables"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Where will Molly give her short talk?",
+          "choices": [
+            "In the auditorium",
+            "On the bus",
+            "In the cafeteria",
+            "In the park"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How will Mr. Chen help?",
+          "choices": [
+            "He will cancel the club.",
+            "He will help order the bins.",
+            "He will give the talk for her.",
+            "He will collect the cans himself."
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "wheelchair_basketball",
+      "title": "Wheelchair Basketball Tryouts",
+      "lines": [
+        {
+          "speaker": "Coach Rivera",
+          "text": "Welcome to tryouts, Sam. Have you played wheelchair basketball before?"
+        },
+        {
+          "speaker": "Sam",
+          "text": "Only with my cousin. He can maneuver his chair around anyone."
+        },
+        {
+          "speaker": "Coach Rivera",
+          "text": "Speed and quick acceleration matter, but passing matters more. Let's see you pass to Jordan."
+        },
+        {
+          "speaker": "Sam",
+          "text": "Okay. Should I push forward while I pass?"
+        },
+        {
+          "speaker": "Coach Rivera",
+          "text": "Yes. Keep your eyes up, not on the wheels. Nice! You have good control."
+        },
+        {
+          "speaker": "Sam",
+          "text": "Thanks. My impulse was to look down, but I remembered what you said."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Where does this conversation take place?",
+          "choices": [
+            "At a recycling center",
+            "At wheelchair basketball tryouts",
+            "At a train station",
+            "In a science lab"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Who has Sam played with before?",
+          "choices": [
+            "His cousin",
+            "Jordan",
+            "Coach Rivera",
+            "His teacher"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "According to the coach, what matters most?",
+          "choices": [
+            "Acceleration",
+            "Speed",
+            "A new chair",
+            "Passing"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "What does the coach tell Sam to do with his eyes?",
+          "choices": [
+            "Look at the wheels",
+            "Close them while passing",
+            "Keep them up, not on the wheels",
+            "Watch the coach"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "What was Sam's impulse?",
+          "choices": [
+            "To look down",
+            "To leave the gym",
+            "To pass to the coach",
+            "To stop pushing"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "windmill_of_hope",
+      "title": "The Windmill of Hope",
+      "lines": [
+        {
+          "speaker": "Grace",
+          "text": "Did you finish reading about William and the windmill?"
+        },
+        {
+          "speaker": "Noah",
+          "text": "Yes. His village was impoverished, and there was no rain, so the crops died."
+        },
+        {
+          "speaker": "Grace",
+          "text": "He found a picture of a windmill in a library book and built one from junk parts, like an old bicycle."
+        },
+        {
+          "speaker": "Noah",
+          "text": "People said he was eccentric, but the windmill made electricity for his house."
+        },
+        {
+          "speaker": "Grace",
+          "text": "Later he built a bigger one that pumped water to irrigate the fields."
+        },
+        {
+          "speaker": "Noah",
+          "text": "That is why the story is called Winds of Hope. One idea changed the whole village."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What problem did William's village have?",
+          "choices": [
+            "The train stopped coming.",
+            "The school was closed.",
+            "It had too much water.",
+            "It was impoverished and there was no rain, so crops died."
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Where did William find the idea for the windmill?",
+          "choices": [
+            "On television",
+            "In a dream",
+            "From his teacher",
+            "In a library book"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "What did William use to build the windmill?",
+          "choices": [
+            "Junk parts, like an old bicycle",
+            "New parts from a store",
+            "Wood from the forest",
+            "A locomotive engine"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What did the first windmill do?",
+          "choices": [
+            "Made electricity for his house",
+            "Played music",
+            "Cooled the village",
+            "Pumped water to the fields"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What did the bigger windmill do?",
+          "choices": [
+            "Powered a car",
+            "Charged phones",
+            "Pumped water to irrigate the fields",
+            "Lit the school"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
 }

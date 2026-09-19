@@ -18,7 +18,7 @@ Deploy: GitHub Pages auto-builds on push to `main` (`.github/workflows/deploy.ym
 **Single-page vanilla JS app.** `index.html` is a shell; `app.js` renders everything into `#app` by replacing `innerHTML`. There is no framework, no router library, no bundler. The app first loads `data/exams.json`, lets the user pick a test, then loads the selected test's files from `data/exams/<exam-id>/`. The five top-level "topics" are functions registered in the `routes` object near the bottom of `app.js`:
 
 - `vocabularyTopic` — 5 quiz modes built from the selected exam's `vocabulary.json`. Word entries support optional `synonyms`, `antonyms`, and `examples[]` (extra example sentences). The Synonyms/Antonyms modes auto-appear only for words that have those fields; Fill-in-the-Blank rotates through `example` + `examples[]`.
-- `spellingTopic` — dictation (TTS) for word lists, drag-to-bin sort game for phonics groups (`spelling.json`, list entries with `sortGame: true` go to `sortGame()`, others to `dictation()`)
+- `spellingTopic` — dictation (TTS) for word lists, drag-to-bin sort game for phonics groups, and plain MCQ sets (`spelling.json`: list entries with `sortGame: true` go to `sortGame()`, `quiz: true` with `items[{q, choices, answer}]` go to `phonicsQuiz()`, others to `spellingListMenu()` / `dictation()`)
 - `grammarTopic` — modal-verb MCQ (`grammar.json`)
 - `readingTopic` — anchor-chart viewer + per-passage quizzes from `reading.json`. Reading quizzes are **special**: they render passage + all questions on one scrollable page with a single submit (`readPassage`), unlike other topics which use the one-question-at-a-time `runQuiz` engine.
 - `listeningTopic` — TTS-played dialogues with a "Replay" button on every question (`listening.json`). Uses two different voices for the two speakers when available (`pickTwoVoices`).
@@ -40,6 +40,7 @@ Deploy: GitHub Pages auto-builds on push to `main` (`.github/workflows/deploy.ym
 - New vocab/spelling/grammar/listening items: edit the matching `data/exams/<exam-id>/*.json` file. The schemas are obvious from the existing entries.
 - New reading passage: add an object to `data/exams/<exam-id>/reading.json` `passages[]`. Each question has a `skill` field that must match a key in the top-level `skills` map; the tag renders automatically.
 - New phonics sort game: add a list to `data/exams/<exam-id>/spelling.json` with `sortGame: true` and a `groups` map of `groupName → [words]`. `sortGame()` picks it up automatically.
+- New phonics MCQ set (e.g. "which word has the short e sound?"): add a list with `quiz: true`, optional `intro`, and `items[{q, choices, answer}]`; `q` may contain simple HTML. Keep `q` text unique within the list because it doubles as the missed-item id.
 
 ## Voice quality
 The TTS uses the browser's `speechSynthesis`, which uses OS voices. macOS default voices sound poor. To upgrade: System Settings → Accessibility → Spoken Content → System Voice → Manage Voices → English → download Premium voices (Ava, Zoe, Evan, etc.), then fully restart the browser. The voice picker auto-ranks Premium voices first.
