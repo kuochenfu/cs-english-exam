@@ -146,57 +146,73 @@ button.ghost:hover { background: var(--border); color: var(--text); }
   color: var(--muted);
 }
 
-.grammar-guide-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  gap: 12px;
+.grammar-guide-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   margin-top: 14px;
 }
 
+/* One horizontal banner per rule: key (term + formula + chips) on the left, explanation on the right. */
 .grammar-note {
+  display: grid;
+  grid-template-columns: minmax(200px, 240px) 1fr;
+  gap: 0;
   background: white;
   border: 2px solid var(--border);
   border-radius: 12px;
-  padding: 14px;
+  overflow: hidden;
+}
+
+.grammar-note-key {
+  background: #eef8ff;
+  border-right: 2px solid #c9e6ff;
+  padding: 12px 14px;
+}
+
+.grammar-note-body {
+  padding: 12px 16px;
 }
 
 .grammar-term {
   font-weight: bold;
   color: var(--primary-dark);
+  margin-bottom: 6px;
 }
 
 .grammar-formula {
-  display: inline-block;
-  background: #eef8ff;
-  border: 1px solid #c9e6ff;
-  border-radius: 999px;
   color: #24577a;
   font-weight: bold;
-  margin: 8px 0;
-  padding: 5px 9px;
+  line-height: 1.45;
 }
 
 .grammar-note p {
   color: var(--muted);
-  margin: 0 0 10px;
+  margin: 0 0 6px;
 }
 
 .grammar-note ul,
 .grammar-tips ul {
-  margin: 8px 0 0;
+  margin: 0;
   padding-left: 20px;
+}
+
+.grammar-note ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  column-gap: 16px;
 }
 
 .grammar-note li,
 .grammar-tips li {
-  margin: 4px 0;
+  margin: 2px 0;
 }
 
 .grammar-verbs {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
-  margin-top: 12px;
+  gap: 5px;
+  margin-top: 10px;
 }
 
 .grammar-verbs span {
@@ -204,9 +220,9 @@ button.ghost:hover { background: var(--border); color: var(--text); }
   border: 1px solid #ead77d;
   border-radius: 999px;
   color: #6b5710;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: bold;
-  padding: 4px 8px;
+  padding: 2px 8px;
 }
 
 .grammar-tips {
@@ -654,6 +670,10 @@ details summary { cursor: pointer; font-weight: bold; padding: 8px 0; }
 }
 
 @media (max-width: 640px) {
+  .grammar-note { grid-template-columns: 1fr; }
+  .grammar-note-key { border-right: none; border-bottom: 2px solid #c9e6ff; }
+  .grammar-note ul { grid-template-columns: 1fr; }
+
   .anchor-chart-content {
     grid-template-columns: 1fr;
   }

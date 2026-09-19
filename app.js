@@ -1041,16 +1041,20 @@ function grammarTopic() {
         <h3>${esc(explanation.title || "Quick Guide")}</h3>
         ${explanation.intro ? `<p>${esc(explanation.intro)}</p>` : ""}
       </div>
-      ${explanation.cards?.length ? `<div class="grammar-guide-grid">
+      ${explanation.cards?.length ? `<div class="grammar-guide-list">
         ${explanation.cards.map(card => `
           <article class="grammar-note">
-            <div class="grammar-term">${esc(card.term)}</div>
-            <div class="grammar-formula">${esc(card.formula)}</div>
-            ${card.meaning ? `<p>${esc(card.meaning)}</p>` : ""}
-            ${card.examples?.length ? `<ul>
-              ${card.examples.map(example => `<li>${esc(example)}</li>`).join("")}
-            </ul>` : ""}
-            ${card.verbs?.length ? `<div class="grammar-verbs">${card.verbs.map(verb => `<span>${esc(verb)}</span>`).join("")}</div>` : ""}
+            <div class="grammar-note-key">
+              <div class="grammar-term">${esc(card.term)}</div>
+              <div class="grammar-formula">${esc(card.formula).split(" · ").join("<br>")}</div>
+              ${card.verbs?.length ? `<div class="grammar-verbs">${card.verbs.map(verb => `<span>${esc(verb)}</span>`).join("")}</div>` : ""}
+            </div>
+            <div class="grammar-note-body">
+              ${card.meaning ? `<p>${esc(card.meaning)}</p>` : ""}
+              ${card.examples?.length ? `<ul>
+                ${card.examples.map(example => `<li>${esc(example)}</li>`).join("")}
+              </ul>` : ""}
+            </div>
           </article>
         `).join("")}
       </div>` : ""}
