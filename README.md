@@ -77,3 +77,14 @@ node --test tests/navigation.test.cjs
 
 GitHub Pages runs these checks before deploying. The site itself still needs only
 a static server; there is no local build step.
+
+## Cat & Fox badges
+
+All seven achievements share a cat-and-fox mascot duo. Home, Progress, and
+completion rewards use the same illustrated badge cards. Locked cards show muted
+previews and explicit requirements; earned cards show full color and an Unlocked
+label. Existing badge IDs, unlock rules, and saved progress are preserved.
+
+Web thumbnails are in `assets/badges/`; full-resolution originals are in
+`assets/badges/originals/`. Built-in image generation prompts are recorded in
+`content/badge_images.json`.

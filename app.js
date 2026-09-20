@@ -36,13 +36,13 @@ const TOPIC_META = {
 };
 
 const BADGES = [
-  { id: "first_quest", icon: "⭐", name: "First Quest", desc: "Complete any practice round." },
-  { id: "daily_hero", icon: "🏁", name: "Daily Hero", desc: "Finish today's missions." },
-  { id: "reading_detective", icon: "🔎", name: "Reading Detective", desc: "Complete 3 reading passages." },
-  { id: "grammar_wizard", icon: "🧙", name: "Grammar Wizard", desc: "Score 90%+ in grammar." },
-  { id: "spelling_champ", icon: "🏆", name: "Spelling Champ", desc: "Get a perfect spelling or phonics score." },
-  { id: "listening_star", icon: "🎧", name: "Listening Star", desc: "Complete 2 listening dialogues." },
-  { id: "boss_defeated", icon: "💥", name: "Boss Defeated", desc: "Clear all missed questions." },
+  { id: "first_quest", image: "assets/badges/first_quest.jpg", icon: "⭐", name: "First Quest", desc: "Complete any practice round." },
+  { id: "daily_hero", image: "assets/badges/daily_hero.jpg", icon: "🏁", name: "Daily Hero", desc: "Finish today's missions." },
+  { id: "reading_detective", image: "assets/badges/reading_detective.jpg", icon: "🔎", name: "Reading Detective", desc: "Complete 3 reading passages." },
+  { id: "grammar_wizard", image: "assets/badges/grammar_wizard.jpg", icon: "🧙", name: "Grammar Wizard", desc: "Score 90%+ in grammar." },
+  { id: "spelling_champ", image: "assets/badges/spelling_champ.jpg", icon: "🏆", name: "Spelling Champ", desc: "Get a perfect spelling or phonics score." },
+  { id: "listening_star", image: "assets/badges/listening_star.jpg", icon: "🎧", name: "Listening Star", desc: "Complete 2 listening dialogues." },
+  { id: "boss_defeated", image: "assets/badges/boss_defeated.jpg", icon: "💥", name: "Boss Defeated", desc: "Clear all missed questions." },
 ];
 
 function todayString() {
@@ -172,7 +172,7 @@ function gameRewardHTML(result) {
   if (!result) return "";
   return `<div class="reward-box">
     <div><b>+${result.starsEarned} stars</b> added to your quest map.</div>
-    ${result.badges.length ? `<div class="badge-unlocks">${result.badges.map(b => `<span class="badge earned" title="${b.desc}">${b.icon} ${b.name}</span>`).join("")}</div>` : ""}
+    ${result.badges.length ? `<h3>🎉 New badges unlocked!</h3><div class="badge-unlocks">${result.badges.map(b => badgeHTML(b, true, true)).join("")}</div>` : ""}
   </div>`;
 }
 
@@ -601,17 +601,23 @@ function dailyMissionsHTML() {
   </div>`;
 }
 
+function badgeHTML(badge, earned, isNew = false) {
+  return `<div class="badge ${earned ? "earned" : "locked"}${isNew ? " newly-earned" : ""}">
+    <img class="badge-image" src="${esc(badge.image)}" alt="" width="112" height="112" loading="lazy" decoding="async">
+    <strong class="badge-name">${esc(badge.name)}</strong>
+    <span class="badge-status">${earned ? (isNew ? "★ Just unlocked!" : "✓ Unlocked") : "🔒 Locked"}</span>
+    <span class="badge-description">${esc(badge.desc)}</span>
+  </div>`;
+}
+
 function badgesHTML() {
   const examGame = ensureExamGame();
+  const count = BADGES.filter(b => examGame.badges[b.id]).length;
   return `<div class="badges-panel">
-    <h3>Badges</h3>
+    <h3>🐱🦊 Cat &amp; Fox Badge Collection</h3>
+    <p class="badge-collection-progress">${count} / ${BADGES.length} unlocked · Complete quests with your cat and fox companions!</p>
     <div class="badges">
-      ${BADGES.map(b => {
-        const earned = !!examGame.badges[b.id];
-        return `<span class="badge ${earned ? "earned" : "locked"}" title="${b.desc}">
-          ${earned ? b.icon : "◇"} ${b.name}
-        </span>`;
-      }).join("")}
+      ${BADGES.map(b => badgeHTML(b, !!examGame.badges[b.id])).join("")}
     </div>
   </div>`;
 }
@@ -639,7 +645,6 @@ function renderHome() {
       </div>
       ${dailyMissionsHTML()}
       ${missedTotal ? `<button id="boss-review" class="boss-button">💥 Boss Review · ${missedTotal} missed</button>` : `<div class="boss-clear">💥 Boss defeated: no missed questions waiting.</div>`}
-      ${badgesHTML()}
       <h3>Quest Map</h3>
       <div class="cards quest-map">
         ${topics.map(t => {
@@ -656,6 +661,7 @@ function renderHome() {
           </button>`;
         }).join("")}
       </div>
+      ${badgesHTML()}
     </div>`);
   syncHeader();
   document.querySelectorAll(".card").forEach(c => {

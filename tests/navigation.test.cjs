@@ -158,3 +158,28 @@ test('every Grade 5 anchor chart has a local poster and full-size image link', (
     assert.ok(html.includes(`src="${chart.image}"`), chart.name + ' poster');
   }
 });
+
+test('cat and fox badges render saved unlocks and award each badge only once', () => {
+  const h = harness();
+  h.run('renderHome()');
+  let html = h.element('app').innerHTML;
+  assert.equal((html.match(/class="badge locked"/g) || []).length, 7);
+  const badges = h.run('BADGES');
+  for (const badge of badges) {
+    assert.ok(fs.existsSync(badge.image), badge.name);
+    assert.ok(html.includes(badge.image));
+  }
+  const reward = h.run("recordGameCompletion('vocab:word', 100, 1, 1)");
+  assert.equal(reward.badges.length, 1);
+  assert.equal(reward.badges[0].id, 'first_quest');
+  h.context.rewardFixture = reward;
+  assert.match(h.run('gameRewardHTML(rewardFixture)'), /first_quest.jpg/);
+  assert.match(h.run('gameRewardHTML(rewardFixture)'), /Just unlocked!/);
+  assert.equal(h.run("recordGameCompletion('vocab:word', 100, 1, 1).badges.length"), 0);
+  const savedBefore = h.saved.get('cs-english-exam-game');
+  h.run('progressScreen()');
+  html = h.element('app').innerHTML;
+  assert.equal((html.match(/class="badge earned"/g) || []).length, 1);
+  assert.match(html, /1 \/ 7 unlocked/);
+  assert.equal(h.saved.get('cs-english-exam-game'), savedBefore);
+});

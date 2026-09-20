@@ -384,40 +384,36 @@ button.mission.complete {
   font-weight: bold;
 }
 
-.badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 10px;
+.badges, .badge-unlocks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
 }
-
 .badge {
-  display: inline-flex;
-  align-items: center;
-  min-height: 34px;
-  border-radius: 999px;
-  padding: 5px 11px;
-  font-size: 0.85rem;
-  font-weight: bold;
-  border: 2px solid var(--border);
-}
-
-.badge.earned {
-  background: #fff5cf;
-  border-color: #f3cc58;
-  color: #704f00;
-}
-
-.badge.locked {
-  background: #f4f1eb;
-  color: var(--muted);
-}
-
-.badge-unlocks {
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 8px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 7px;
+  border-radius: 18px;
+  padding: 14px 10px;
+  border: 2px solid var(--border);
+  min-width: 0;
+}
+.badge-image { width: 112px; height: 112px; max-width: 100%; object-fit: contain; border-radius: 50%; }
+.badge-name { font-size: 1rem; }
+.badge-status { font-size: .75rem; font-weight: bold; border-radius: 20px; padding: 3px 9px; background: #fff; }
+.badge-description { font-size: .8rem; line-height: 1.4; color: var(--text); font-weight: normal; }
+.badge.earned { background: #fff5cf; border-color: #e9bb3f; color: #704f00; box-shadow: 0 3px 10px #c7982420; }
+.badge.locked { background: #f4f1eb; color: #655f56; border-style: dashed; }
+.badge.locked .badge-image { filter: grayscale(.85); opacity: .62; }
+.badge-collection-progress { font-size: .9rem; color: var(--muted); }
+.badge-unlocks { grid-template-columns: repeat(auto-fit, minmax(145px, 210px)); }
+@media (max-width: 480px) {
+  .badges, .badge-unlocks { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .badge { padding: 12px 7px; }
+  .badge-image { width: 96px; height: 96px; }
 }
 
 .quest-map {

@@ -1,0 +1,47 @@
+{
+  "generator": "Built-in image_gen",
+  "badges": [
+    {
+      "id": "first_quest",
+      "name": "First Quest",
+      "prompt": "Create ONE finished collectible achievement badge icon for a Grade 5 English learning game. Square image 1024x1024. Consistent mascot duo: a friendly cream-colored tabby cat with teal scarf and a cheerful orange fox with white muzzle and navy neckerchief. Both are equally visible in every badge, cute expressive chibi storybook characters with polished dimensional digital illustration, crisp silhouette and bold simple shapes readable at 96px. A circular enamel medallion with substantial gold rim, subtle embossed details, centered and fully inside frame with 8% padding, plain warm ivory background outside circle. No text, no letters, no numbers, no watermark. Child-friendly confident joyful mood. \nBadge theme: First Quest. Scene: The cat and fox are beginner adventurers stepping together onto a tiny path, holding a glowing golden star and a rolled treasure map. Emerald meadow medallion interior, small backpack, celebrate their first completed adventure.",
+      "image": "assets/badges/first_quest.jpg"
+    },
+    {
+      "id": "daily_hero",
+      "name": "Daily Hero",
+      "prompt": "Create ONE finished collectible achievement badge icon for a Grade 5 English learning game. Square image 1024x1024. Consistent mascot duo: a friendly cream-colored tabby cat with teal scarf and a cheerful orange fox with white muzzle and navy neckerchief. Both are equally visible in every badge, cute expressive chibi storybook characters with polished dimensional digital illustration, crisp silhouette and bold simple shapes readable at 96px. A circular enamel medallion with substantial gold rim, subtle embossed details, centered and fully inside frame with 8% padding, plain warm ivory background outside circle. No text, no letters, no numbers, no watermark. Child-friendly confident joyful mood. \nBadge theme: Daily Hero. Scene: The cat and fox wear superhero capes, hold up a golden sunrise emblem together above three completed checkmarks on a small quest board. Coral and sunrise amber medallion interior. Celebrates finishing all daily missions.",
+      "image": "assets/badges/daily_hero.jpg"
+    },
+    {
+      "id": "reading_detective",
+      "name": "Reading Detective",
+      "prompt": "Create ONE finished collectible achievement badge icon for a Grade 5 English learning game. Square image 1024x1024. Consistent mascot duo: a friendly cream-colored tabby cat with teal scarf and a cheerful orange fox with white muzzle and navy neckerchief. Both are equally visible in every badge, cute expressive chibi storybook characters with polished dimensional digital illustration, crisp silhouette and bold simple shapes readable at 96px. A circular enamel medallion with substantial gold rim, subtle embossed details, centered and fully inside frame with 8% padding, plain warm ivory background outside circle. No text, no letters, no numbers, no watermark. Child-friendly confident joyful mood. \nBadge theme: Reading Detective. Scene: The cat wears a detective cap and holds a magnifying glass above an open book; the fox points to a glowing clue on the book. Deep turquoise medallion interior with three tiny book silhouettes. Reading comprehension detective achievement.",
+      "image": "assets/badges/reading_detective.jpg"
+    },
+    {
+      "id": "grammar_wizard",
+      "name": "Grammar Wizard",
+      "prompt": "Create ONE finished collectible achievement badge icon for a Grade 5 English learning game. Square image 1024x1024. Consistent mascot duo: a friendly cream-colored tabby cat with teal scarf and a cheerful orange fox with white muzzle and navy neckerchief. Both are equally visible in every badge, cute expressive chibi storybook characters with polished dimensional digital illustration, crisp silhouette and bold simple shapes readable at 96px. A circular enamel medallion with substantial gold rim, subtle embossed details, centered and fully inside frame with 8% padding, plain warm ivory background outside circle. No text, no letters, no numbers, no watermark. Child-friendly confident joyful mood. \nBadge theme: Grammar Wizard. Scene: The cat and fox are wizard apprentices in complementary purple and teal pointed hats, one waves a star-tipped wand and the other holds an open spellbook with only simple symbolic marks, no writing. Violet medallion interior with magical golden sparkles. Grammar mastery.",
+      "image": "assets/badges/grammar_wizard.jpg"
+    },
+    {
+      "id": "spelling_champ",
+      "name": "Spelling Champ",
+      "prompt": "Create ONE finished collectible achievement badge icon for a Grade 5 English learning game. Square image 1024x1024. Consistent mascot duo: a friendly cream-colored tabby cat with teal scarf and a cheerful orange fox with white muzzle and navy neckerchief. Both are equally visible in every badge, cute expressive chibi storybook characters with polished dimensional digital illustration, crisp silhouette and bold simple shapes readable at 96px. A circular enamel medallion with substantial gold rim, subtle embossed details, centered and fully inside frame with 8% padding, plain warm ivory background outside circle. No text, no letters, no numbers, no watermark. Child-friendly confident joyful mood. \nBadge theme: Spelling Champ. Scene: The cat and fox hold a large golden trophy together, with a pencil and small blank word tiles at the base, no letters. Royal blue medallion interior, laurel wreath and a perfect-score star, champion podium.",
+      "image": "assets/badges/spelling_champ.jpg"
+    },
+    {
+      "id": "listening_star",
+      "name": "Listening Star",
+      "prompt": "Create ONE finished collectible achievement badge icon for a Grade 5 English learning game. Square image 1024x1024. Consistent mascot duo: a friendly cream-colored tabby cat with teal scarf and a cheerful orange fox with white muzzle and navy neckerchief. Both are equally visible in every badge, cute expressive chibi storybook characters with polished dimensional digital illustration, crisp silhouette and bold simple shapes readable at 96px. A circular enamel medallion with substantial gold rim, subtle embossed details, centered and fully inside frame with 8% padding, plain warm ivory background outside circle. No text, no letters, no numbers, no watermark. Child-friendly confident joyful mood. \nBadge theme: Listening Star. Scene: The cat and fox wear comfortable over-ear headphones and listen with delighted attentive expressions, a large golden star between them and simple sound waves around them. Sky blue medallion interior, musical listening theme, no written notation.",
+      "image": "assets/badges/listening_star.jpg"
+    },
+    {
+      "id": "boss_defeated",
+      "name": "Boss Defeated",
+      "prompt": "Create ONE finished collectible achievement badge icon for a Grade 5 English learning game. Square image 1024x1024. Consistent mascot duo: a friendly cream-colored tabby cat with teal scarf and a cheerful orange fox with white muzzle and navy neckerchief. Both are equally visible in every badge, cute expressive chibi storybook characters with polished dimensional digital illustration, crisp silhouette and bold simple shapes readable at 96px. A circular enamel medallion with substantial gold rim, subtle embossed details, centered and fully inside frame with 8% padding, plain warm ivory background outside circle. No text, no letters, no numbers, no watermark. Child-friendly confident joyful mood. \nBadge theme: Boss Defeated. Scene: The cat and fox wear friendly fantasy explorer armor, triumphantly lift a golden shield with a checkmark after clearing a friendly shadow-puff obstacle; tiny smiling purple puff creature at their feet, no violence, no weapons. Ruby and plum medallion interior with victory sparkles. Teamwork and overcoming challenges.",
+      "image": "assets/badges/boss_defeated.jpg"
+    }
+  ]
+}
