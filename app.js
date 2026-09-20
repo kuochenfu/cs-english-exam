@@ -38,11 +38,11 @@ const TOPIC_META = {
 const BADGES = [
   { id: "first_quest", image: "assets/badges/first_quest.jpg", icon: "⭐", name: "First Quest", desc: "Complete any practice round." },
   { id: "daily_hero", image: "assets/badges/daily_hero.jpg", icon: "🏁", name: "Daily Hero", desc: "Finish today's missions." },
-  { id: "reading_detective", image: "assets/badges/reading_detective.jpg", icon: "🔎", name: "Reading Detective", desc: "Complete 3 reading passages." },
+  { id: "reading_detective", image: "assets/badges/reading_detective.jpg", icon: "🔎", name: "Reading Detective", desc: "Complete 3 different reading passages." },
   { id: "grammar_wizard", image: "assets/badges/grammar_wizard.jpg", icon: "🧙", name: "Grammar Wizard", desc: "Score 90%+ in grammar." },
   { id: "spelling_champ", image: "assets/badges/spelling_champ.jpg", icon: "🏆", name: "Spelling Champ", desc: "Get a perfect spelling or phonics score." },
-  { id: "listening_star", image: "assets/badges/listening_star.jpg", icon: "🎧", name: "Listening Star", desc: "Complete 2 listening dialogues." },
-  { id: "boss_defeated", image: "assets/badges/boss_defeated.jpg", icon: "💥", name: "Boss Defeated", desc: "Clear all missed questions." },
+  { id: "listening_star", image: "assets/badges/listening_star.jpg", icon: "🎧", name: "Listening Star", desc: "Complete 2 different listening dialogues." },
+  { id: "boss_defeated", image: "assets/badges/boss_defeated.jpg", icon: "💥", name: "Boss Defeated", desc: "Answer every saved missed question correctly." },
 ];
 
 function todayString() {
@@ -65,6 +65,7 @@ function ensureExamGame() {
       hadMissed: false
     };
   }
+  game[id].completedActivities ||= { reading: {}, listen: {} };
   return game[id];
 }
 
@@ -99,14 +100,22 @@ function topicIsAvailable(topicId) {
   return false;
 }
 
+function topicHasPractice(topicId) {
+  if (topicId === "reading") return !!data.reading?.passages?.some(p => p.questions?.length);
+  if (topicId === "listen") return !!data.listening?.dialogues?.some(d => d.questions?.length);
+  if (topicId === "grammar") return !!(data.grammar?.items?.length || data.grammar?.practiceSets?.some(s => s.items?.length));
+  if (topicId === "spell") return !!data.spelling?.lists?.some(l => l.words?.length || l.items?.length || Object.values(l.groups || {}).some(g => g.length));
+  return topicIsAvailable(topicId);
+}
+
 function dailyMissions() {
   return [
     { id: "reading", topic: "reading", text: "Complete one reading passage" },
     { id: "spell", topic: "spell", text: "Practice phonics or spelling" },
-    { id: "grammar", topic: "grammar", text: "Win one grammar round" },
+    { id: "grammar", topic: "grammar", text: "Complete one grammar round" },
     { id: "listen", topic: "listen", text: "Finish one listening dialogue" },
     { id: "vocab", topic: "vocab", text: "Practice vocabulary" },
-  ].filter(m => topicIsAvailable(m.topic)).slice(0, 3);
+  ].filter(m => topicHasPractice(m.topic)).slice(0, 3);
 }
 
 function dailyMissionCount() {
@@ -132,10 +141,10 @@ function unlockBadges(topicId, pct) {
   const canEarn = {
     first_quest: Object.values(examGame.totals).reduce((sum, n) => sum + n, 0) >= 1,
     daily_hero: total > 0 && done >= total,
-    reading_detective: examGame.totals.reading >= 3,
+    reading_detective: Object.keys(examGame.completedActivities.reading).length >= 3,
     grammar_wizard: category === "grammar" && pct >= 90,
     spelling_champ: category === "spell" && pct === 100,
-    listening_star: examGame.totals.listen >= 2,
+    listening_star: Object.keys(examGame.completedActivities.listen).length >= 2,
     boss_defeated: examGame.hadMissed && totalMissedForCurrentExam() === 0,
   };
 
@@ -148,14 +157,17 @@ function unlockBadges(topicId, pct) {
   return earned;
 }
 
-function recordGameCompletion(topicId, pct, correct, total) {
+function recordGameCompletion(topicId, pct, correct, total, { reviewOnly = false } = {}) {
+  if (!(total > 0) || !Number.isFinite(pct)) return { starsEarned: 0, badges: [], correct, total };
   const examGame = ensureExamGame();
   const today = ensureTodayGame();
   const category = topicCategory(topicId);
-  const firstTopicToday = !today.topics[category];
+  const fullActivity = !reviewOnly || !["reading", "listen"].includes(category);
+  const firstTopicToday = fullActivity && !today.topics[category];
   const starsEarned = Math.max(3, pct === 100 ? 10 : pct >= 80 ? 8 : pct >= 60 ? 6 : 4) + (firstTopicToday ? 2 : 0);
 
-  today.topics[category] = true;
+  if (fullActivity) today.topics[category] = true;
+  if (fullActivity && ["reading", "listen"].includes(category)) examGame.completedActivities[category][topicId] = true;
   today.completions++;
   today.stars += starsEarned;
   examGame.stars += starsEarned;
@@ -259,8 +271,15 @@ const testScreen = () => ({ title: "Tests", render: renderExamPicker });
 const homeTrail = () => [testScreen(), { title: "Home", render: renderHome }];
 function topicTrail(topic) {
   const labels = { vocab: "Vocabulary", spell: "Phonics & Spelling", grammar: "Grammar", reading: "Reading", listen: "Listening" };
+  const chain = [...(currentScreen?.parents || []), currentScreen].filter(Boolean);
+  const index = chain.findIndex(screen => screen.title === labels[topic]);
+  if (index >= 0) return chain.slice(0, index + 1);
   return [...homeTrail(), { title: labels[topic], render: routes[topic] }];
 }
+function topicParents(context) {
+  return context?.fromBoss ? [...homeTrail(), { title: "Boss Review", render: bossReview }] : homeTrail();
+}
+
 function spellingTrail(list) {
   return [...topicTrail("spell"), { title: list.title, render: () => spellingListMenu(list) }];
 }
@@ -584,6 +603,7 @@ function dailyMissionsHTML() {
     <div class="mission-head">
       <div>
         <h3>Today's Missions</h3>
+        <p class="mission-help">Finish each round to complete a mission. Reading and listening require the full activity. Missions reset each day; earned badges stay.</p>
         <p>${done}/${total} complete</p>
       </div>
       <div class="mission-ring" aria-label="${done} of ${total} daily missions complete">${done}/${total}</div>
@@ -612,12 +632,15 @@ function badgeHTML(badge, earned, isNew = false) {
 
 function badgesHTML() {
   const examGame = ensureExamGame();
+  // A correct final answer may be followed by navigation before the round ends.
+  const recovered = unlockBadges("status", NaN);
+  if (recovered.length) saveGame();
   const count = BADGES.filter(b => examGame.badges[b.id]).length;
   return `<div class="badges-panel">
     <h3>🐱🦊 Cat &amp; Fox Badge Collection</h3>
     <p class="badge-collection-progress">${count} / ${BADGES.length} unlocked · Complete quests with your cat and fox companions!</p>
     <div class="badges">
-      ${BADGES.map(b => badgeHTML(b, !!examGame.badges[b.id])).join("")}
+      ${BADGES.map(b => badgeHTML(b, !!examGame.badges[b.id], recovered.some(earned => earned.id === b.id))).join("")}
     </div>
   </div>`;
 }
@@ -626,7 +649,7 @@ function renderHome() {
   if (!currentExam) return renderExamPicker();
   enterScreen("Home", renderHome, [testScreen()]);
   const moduleLabel = moduleWeeksLabel();
-  const topics = topicCards(moduleLabel);
+  const topics = topicCards(moduleLabel).filter(t => topicIsAvailable(t.id));
   const examGame = ensureExamGame();
   const today = ensureTodayGame();
   const missedTotal = totalMissedForCurrentExam();
@@ -644,7 +667,7 @@ function renderHome() {
         </div>
       </div>
       ${dailyMissionsHTML()}
-      ${missedTotal ? `<button id="boss-review" class="boss-button">💥 Boss Review · ${missedTotal} missed</button>` : `<div class="boss-clear">💥 Boss defeated: no missed questions waiting.</div>`}
+      ${missedTotal ? `<button id="boss-review" class="boss-button">💥 Boss Review · ${missedTotal} missed</button>` : `<div class="boss-clear">${examGame.badges.boss_defeated ? "💥 Boss defeated: no missed questions waiting." : "No missed questions waiting. Wrong answers will appear in Boss Review."}</div>`}
       <h3>Quest Map</h3>
       <div class="cards quest-map">
         ${topics.map(t => {
@@ -694,7 +717,7 @@ function bossReview() {
   renderContent(`
     <div class="panel boss-panel">
       <h2>💥 Boss Review</h2>
-      <p>Clear missed questions to defeat each boss.</p>
+      <p>Choose a topic below, then select <b>Review missed</b> to practice its saved mistakes. Answer all saved mistakes correctly to unlock Boss Defeated.</p>
       <div class="boss-list">
         ${topics.map(t => `<button data-boss-topic="${t.id}" class="boss-card">
           <span class="boss-icon">${t.icon}</span>
@@ -703,7 +726,7 @@ function bossReview() {
       </div>
     </div>`);
   document.querySelectorAll("button[data-boss-topic]").forEach(b => {
-    b.onclick = () => routes[b.dataset.bossTopic]();
+    b.onclick = () => routes[b.dataset.bossTopic]({ fromBoss: true });
   });
 }
 
@@ -773,7 +796,7 @@ function runQuiz(topicId, title, items, getQ, options = {}) {
   function finish() {
     const pct = Math.round((correct/order.length)*100);
     writeProgress(topicId, pct);
-    const reward = recordGameCompletion(topicId, pct, correct, order.length);
+    const reward = recordGameCompletion(topicId, pct, correct, order.length, { reviewOnly: !!options.reviewOnly });
     renderContent(`
       <div class="panel">
         <h2>🎉 Done!</h2>
@@ -800,8 +823,8 @@ function emptyTopic(title) {
 }
 
 // ---------- Vocabulary ----------
-function vocabularyTopic() {
-  enterScreen("Vocabulary", vocabularyTopic, homeTrail());
+function vocabularyTopic(context = {}) {
+  enterScreen("Vocabulary", () => vocabularyTopic(context), topicParents(context));
   const words = data.vocabulary.words;
   if (!words.length) return emptyTopic("Vocabulary");
   const missedDef = missedCount("vocab:definition");
@@ -943,8 +966,8 @@ function vocabularyTopic() {
 }
 
 // ---------- Spelling / Phonics ----------
-function spellingTopic() {
-  enterScreen("Phonics & Spelling", spellingTopic, homeTrail());
+function spellingTopic(context = {}) {
+  enterScreen("Phonics & Spelling", () => spellingTopic(context), topicParents(context));
   const lists = data.spelling.lists;
   if (!lists.length) return emptyTopic("Phonics & Spelling");
   renderContent(`
@@ -1050,7 +1073,7 @@ function dictation(list, reviewOnly = false) {
   let i = 0, correct = 0;
   const topicId = `spell:${list.id || list.title}:type`;
   const words = reviewOnly ? list.words.filter(w => missedItems(topicId).some(m => m.id === w.word)) : list.words;
-  if (!words.length) return spellingTopic();
+  if (!words.length) return spellingListMenu(list);
   const order = shuffle([...words.keys()]);
   const missed = [];
 
@@ -1194,8 +1217,8 @@ function sortGame(list, reviewOnly = false) {
 }
 
 // ---------- Grammar ----------
-function grammarTopic() {
-  enterScreen("Grammar", grammarTopic, homeTrail());
+function grammarTopic(context = {}) {
+  enterScreen("Grammar", () => grammarTopic(context), topicParents(context));
   const mainItems = data.grammar.items || [];
   const explanation = data.grammar.explanation;
   const practiceSets = [
@@ -1284,8 +1307,8 @@ function grammarTopic() {
 }
 
 // ---------- Reading ----------
-function readingTopic() {
-  enterScreen("Reading", readingTopic, homeTrail());
+function readingTopic(context = {}) {
+  enterScreen("Reading", () => readingTopic(context), topicParents(context));
   const passages = data.reading.passages || [];
   const charts = data.reading.anchorCharts || [];
   if (!passages.length && !charts.length) return emptyTopic("Reading Comprehension");
@@ -1428,6 +1451,7 @@ function readPassage(passage, reviewOnly = false) {
           <div class="feedback" id="fb${qi}"></div>
         </div>
       `).join("")}
+      <p id="reading-validation" role="alert"></p>
       <button id="submit-all">✅ Submit all answers</button>
     </div>`);
 
@@ -1439,6 +1463,17 @@ function readPassage(passage, reviewOnly = false) {
   $("stop-passage").onclick = () => speechSynthesis.cancel();
 
   $("submit-all").onclick = () => {
+    if ($("submit-all").disabled) return;
+    const missing = questions.map((q, i) => {
+      const answered = q.choices ? document.querySelector(`input[name="q${i}"]:checked`) : document.querySelector(`textarea[name="q${i}"]`)?.value.trim();
+      return answered ? null : i + 1;
+    }).filter(n => n !== null);
+    if (missing.length) {
+      $("reading-validation").textContent = `Please answer question(s) ${missing.join(", ")} before submitting.`;
+      $("reading-validation").scrollIntoView({ behavior: "smooth", block: "center" });
+      return;
+    }
+    $("reading-validation").textContent = "";
     let correct = 0;
     const missed = [];
     let unanswered = 0;
@@ -1488,7 +1523,7 @@ function readPassage(passage, reviewOnly = false) {
     const total = questions.filter(q => q.choices).length;
     const pct = total ? Math.round((correct/total)*100) : 0;
     writeProgress(topicId, pct);
-    const reward = recordGameCompletion(topicId, pct, correct, total || questions.length);
+    const reward = recordGameCompletion(topicId, pct, correct, total || questions.length, { reviewOnly });
 
     // Show summary at top, scroll to it
     const summary = document.createElement("div");
@@ -1510,8 +1545,8 @@ function readPassage(passage, reviewOnly = false) {
 }
 
 // ---------- Listening ----------
-function listeningTopic() {
-  enterScreen("Listening", listeningTopic, homeTrail());
+function listeningTopic(context = {}) {
+  enterScreen("Listening", () => listeningTopic(context), topicParents(context));
   if (!data.listening.dialogues.length) return emptyTopic("Listening Comprehension");
   renderContent(`
     <div class="panel">
@@ -1594,7 +1629,7 @@ function playDialogue(dialogue, reviewOnly = false) {
       choices: q.choices,
       answer: q.answer,
       extra: `<button onclick="window.__replayDialogue()" class="ghost" style="margin-bottom:8px">🔊 Replay dialogue</button>`
-    }), { itemId: q => q.q, itemLabel: q => q.q, parents: [...topicTrail("listen"), { title: dialogue.title, render: () => playDialogue(dialogue, reviewOnly) }] });
+    }), { itemId: q => q.q, itemLabel: q => q.q, reviewOnly, parents: [...topicTrail("listen"), { title: dialogue.title, render: () => playDialogue(dialogue, reviewOnly) }] });
   };
   // Auto-play once on entry
   scheduleScreen(playAll, 300);

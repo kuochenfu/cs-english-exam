@@ -9,13 +9,18 @@ const fixture = Object.fromEntries(['vocabulary', 'spelling', 'grammar', 'readin
 
 function harness() {
   const elements = new Map(), timers = new Map(), saved = new Map(), historyEntries = [];
-  let timerId = 0, choices = [], cancelCount = 0;
+  let timerId = 0, choices = [], renderedButtons = [], cancelCount = 0;
   function element(id) {
     if (elements.has(id)) return elements.get(id);
-    const e = { id, dataset: {}, style: {}, disabled: false, value: '', textContent: '', classList: { add() {}, remove() {} }, setAttribute(k, v) { this[k] = v; }, focus() {}, querySelector() { return element('form-submit'); } };
+    const e = { id, dataset: {}, style: {}, disabled: false, value: '', textContent: '', classList: { add() {}, remove() {} }, setAttribute(k, v) { this[k] = v; }, focus() {}, scrollIntoView() {}, querySelector() { return element('form-submit'); } };
     let html = '';
     Object.defineProperty(e, 'innerHTML', { get: () => html, set(value) {
       html = value;
+      if (id === 'app') renderedButtons = [...value.matchAll(/<button\b([^>]*)>/g)].map(m => {
+        const attrs = m[1]; const dataset = {};
+        for (const a of attrs.matchAll(/data-([a-z-]+)="([^"]*)"/g)) dataset[a[1].replace(/-([a-z])/g, (_,c)=>c.toUpperCase())] = a[2];
+        return {dataset, disabled:false, attrs};
+      });
       if (id === 'app') choices = [...value.matchAll(/<button data-idx="(\d+)"/g)].map(m => ({ dataset: { idx: m[1] }, disabled: false, classList: { add() {} } }));
     }});
     elements.set(id, e); return e;
@@ -23,13 +28,19 @@ function harness() {
   const window = { APP_VERSION: 'test', scrollTo() {}, addEventListener() {} };
   const history = { state: null, pushState(state) { this.state = state; historyEntries.push(state); }, replaceState(state) { this.state = state; historyEntries[historyEntries.length ? historyEntries.length - 1 : 0] = state; } };
   const speechSynthesis = { cancel() { cancelCount++; }, speak() {}, getVoices() { return []; } };
-  const context = vm.createContext({ window, history, speechSynthesis, SpeechSynthesisUtterance: function() {}, document: { getElementById: element, querySelectorAll: s => s === '.choices button' ? choices : [], title: '' }, localStorage: { getItem: k => saved.get(k) || null, setItem: (k,v) => saved.set(k,v), removeItem: k => saved.delete(k) }, setTimeout(fn) { timers.set(++timerId, fn); return timerId; }, clearTimeout: id => timers.delete(id), confirm: () => false, fetch: async () => { throw Error('Unexpected fetch'); }, console });
+  const context = vm.createContext({ window, history, speechSynthesis, SpeechSynthesisUtterance: function() {}, document: { getElementById: element, querySelectorAll: s => {
+    if (s === '.choices button') return choices;
+    const attr = s.match(/\[data-([a-z-]+)\]/)?.[1]?.replace(/-([a-z])/g, (_,c)=>c.toUpperCase());
+    if (attr) return renderedButtons.filter(b => attr in b.dataset);
+    if (s === '.card') return renderedButtons.filter(b => /class="[^"]*\bcard\b/.test(b.attrs));
+    return [];
+  }, title: '' }, localStorage: { getItem: k => saved.get(k) || null, setItem: (k,v) => saved.set(k,v), removeItem: k => saved.delete(k) }, setTimeout(fn) { timers.set(++timerId, fn); return timerId; }, clearTimeout: id => timers.delete(id), confirm: () => false, fetch: async () => { throw Error('Unexpected fetch'); }, console });
   // Only omit startup networking. All renderers and click handlers are unchanged.
   vm.runInContext(source.replace(/loadAll\(\)\.then\(renderHome\);\s*$/, '').replace(/loadAll\(\);\s*$/, ''), context);
   const run = code => vm.runInContext(code, context);
   context.fixture = fixture;
   run(`currentExam = { id: '2026-10-quiz1', title: 'Grade 5 Quiz 1', subtitle: 'Module 1', grade: 5 }; Object.assign(data, fixture); examIndex.exams = [currentExam, {id:'other', title:'Other test', subtitle:'Module 2', available:true}]; currentExam.available = true;`);
-  return { run, context, element, timers, saved, historyEntries, choices: () => choices, cancelCount: () => cancelCount, flush() { const pending = [...timers.values()]; timers.clear(); pending.forEach(fn => fn()); } };
+  return { run, context, element, timers, saved, historyEntries, choices: () => choices, buttons: () => renderedButtons, cancelCount: () => cancelCount, flush() { const pending = [...timers.values()]; timers.clear(); pending.forEach(fn => fn()); } };
 }
 
 test('leaving a just-answered quiz cannot render the next question over Home', () => {
@@ -182,4 +193,111 @@ test('cat and fox badges render saved unlocks and award each badge only once', (
   assert.equal((html.match(/class="badge earned"/g) || []).length, 1);
   assert.match(html, /1 \/ 7 unlocked/);
   assert.equal(h.saved.get('cs-english-exam-game'), savedBefore);
+});
+
+test('reading/listening badges require different complete activities, not replayed or review-only rounds', () => {
+  const h = harness();
+  for (let i = 0; i < 3; i++) h.run("recordGameCompletion('reading:one', 100, 2, 2)");
+  assert.equal(h.run('!!ensureExamGame().badges.reading_detective'), false);
+  h.run("recordGameCompletion('reading:two', 100, 1, 1, {reviewOnly:true})");
+  assert.equal(h.run('!!ensureExamGame().badges.reading_detective'), false);
+  h.run("recordGameCompletion('reading:two', 100, 2, 2); recordGameCompletion('reading:three', 100, 2, 2)");
+  assert.equal(h.run('!!ensureExamGame().badges.reading_detective'), true);
+  h.run("recordGameCompletion('listen:one', 100, 2, 2); recordGameCompletion('listen:one', 100, 2, 2)");
+  assert.equal(h.run('!!ensureExamGame().badges.listening_star'), false);
+  h.run("recordGameCompletion('listen:two', 100, 2, 2)");
+  assert.equal(h.run('!!ensureExamGame().badges.listening_star'), true);
+});
+
+test('a charts-only reading topic cannot create an impossible daily passage mission', () => {
+  const h = harness(); h.run('data.reading = {passages:[], anchorCharts:[{name:"Guide"}]}');
+  assert.equal(h.run('dailyMissions().some(m => m.topic === "reading")'), false);
+});
+
+test('empty activity completion gives no stars, missions, or badges', () => {
+  const h = harness(); h.run("recordGameCompletion('spell:empty', NaN, 0, 0)");
+  assert.equal(h.run('ensureExamGame().stars'), 0);
+  assert.equal(h.run('dailyMissionCount().done'), 0);
+});
+
+test('clearing the last missed item then returning Home grants Boss Defeated without another round', () => {
+  const h = harness();
+  h.run("recordMissed('vocab:word', {id:'one',label:'one'}); clearMissed('vocab:word','one'); renderHome()");
+  assert.equal(h.run('!!ensureExamGame().badges.boss_defeated'), true);
+});
+
+test('blank reading submission stays editable and cannot complete a mission or award stars', () => {
+  const h = harness();
+  h.run(`readPassage({id:'demo',title:'Demo',skills:[],body:'Read this.',questions:[{q:'Which?',skill:'evidence',choices:['Yes','No'],answer:0}]})`);
+  h.context.document.querySelector = selector => selector.startsWith('.qa-block') ? {querySelectorAll:()=>[]} : null;
+  h.context.document.createElement = () => ({style:{}, scrollIntoView(){}});
+  h.element('app').insertBefore = () => {};
+  h.element('submit-all').onclick();
+  assert.equal(h.run('ensureExamGame().stars'), 0);
+  assert.equal(h.element('submit-all').disabled, false);
+});
+
+test('Quest Map, daily mission, and Boss topic buttons lead to their actual screens and Back returns Home', () => {
+  const h = harness();
+  for (const topic of ['vocab','spell','grammar','reading','listen']) {
+    h.run('renderHome()');
+    h.buttons().find(b => b.dataset.topic === topic).onclick();
+    assert.equal(h.run('currentScreen.parents.at(-1).title'), 'Home');
+    h.element('back-btn').onclick();
+    assert.equal(h.run('currentScreen.title'), 'Home');
+  }
+  h.run('renderHome()');
+  const missions = h.run('dailyMissions().map(m => m.topic)');
+  for (const topic of missions) {
+    h.run('renderHome()');
+    h.buttons().find(b => b.dataset.missionTopic === topic).onclick();
+    assert.equal(h.run('currentScreen.parents.at(-1).title'), 'Home');
+  }
+  h.run("recordMissed('vocab:definition',{id:fixture.vocabulary.words[0].word,label:'word'}); bossReview()");
+  h.buttons().find(b => b.dataset.bossTopic === 'vocab').onclick();
+  h.element('r1').onclick();
+  assert.equal(h.choices().length, 4);
+  h.element('back-btn').onclick();
+  assert.equal(h.run('currentScreen.title'), 'Vocabulary');
+  h.element('back-btn').onclick();
+  assert.equal(h.run('currentScreen.title'), 'Boss Review');
+});
+
+test('daily completion survives navigation, resets on a new date, and keeps earned badges', () => {
+  const h = harness();
+  h.run(`todayString = () => '2026-09-20';
+    recordGameCompletion('reading:one', 0, 0, 1);
+    recordGameCompletion('spell:one', 50, 1, 2);
+    recordGameCompletion('grammar:one', 50, 1, 2); renderHome()`);
+  assert.equal(h.run('dailyMissionCount().done'), 3);
+  assert.equal(h.run('!!ensureExamGame().badges.daily_hero'), true);
+  h.run("todayString = () => '2026-09-21'; renderHome()");
+  assert.equal(h.run('dailyMissionCount().done'), 0);
+  assert.equal(h.run('!!ensureExamGame().badges.daily_hero'), true);
+});
+
+test('grammar and spelling badges respect thresholds; review-only passages do not finish daily missions', () => {
+  const h = harness();
+  h.run("recordGameCompletion('grammar:test',89,89,100); recordGameCompletion('spell:test',99,99,100)");
+  assert.equal(h.run('!!ensureExamGame().badges.grammar_wizard'), false);
+  assert.equal(h.run('!!ensureExamGame().badges.spelling_champ'), false);
+  h.run("recordGameCompletion('grammar:test',90,90,100); recordGameCompletion('spell:test',100,100,100)");
+  assert.equal(h.run('!!ensureExamGame().badges.grammar_wizard'), true);
+  assert.equal(h.run('!!ensureExamGame().badges.spelling_champ'), true);
+  h.run("recordGameCompletion('reading:one',100,1,1,{reviewOnly:true})");
+  assert.equal(h.run('!!ensureTodayGame().topics.reading'), false);
+});
+
+test('Boss badge needs previous mistakes and every remaining mistake cleared; saved badges stay exam scoped', () => {
+  const h = harness();
+  h.run('renderHome()');
+  assert.equal(h.run('!!ensureExamGame().badges.boss_defeated'), false);
+  h.run("recordMissed('vocab:word',{id:'a'}); recordMissed('grammar:main',{id:'b'}); clearMissed('vocab:word','a'); progressScreen()");
+  assert.equal(h.run('!!ensureExamGame().badges.boss_defeated'), false);
+  h.run("clearMissed('grammar:main','b'); progressScreen()");
+  assert.equal(h.run('!!ensureExamGame().badges.boss_defeated'), true);
+  h.run("currentExam = examIndex.exams[1]; renderHome()");
+  assert.equal(h.run('Object.keys(ensureExamGame().badges).length'), 0);
+  h.run("currentExam = examIndex.exams[0]; renderHome()");
+  assert.equal(h.run('!!ensureExamGame().badges.boss_defeated'), true);
 });
