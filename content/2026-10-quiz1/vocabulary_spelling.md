@@ -113,3 +113,7 @@ Long i / long o (Week 3):
 
 Week 4-5 (9/21 - 10/4): Module 1 Week 4, Review Module 1 Weeks 1-3.
 Weeks 6-8 are Module 2 Weeks 1-3 (see `raw/202609/IMG_5994.JPG`).
+
+## Practice supplement
+
+See [Recall practice](recall_practice.md) for the 2026-09-28 authored contexts, spelling hints, and reviewed runtime-data corrections. The school word lists above are unchanged.

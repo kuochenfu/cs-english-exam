@@ -6,53 +6,66 @@
       "words": [
         {
           "word": "blister",
-          "sentence": "The new shoes gave me a blister on my heel."
+          "sentence": "The new shoes gave me a blister on my heel.",
+          "pattern": "Listen for short i in blis-ter."
         },
         {
           "word": "breath",
-          "sentence": "Take a deep breath before you dive."
+          "sentence": "Take a deep breath before you dive.",
+          "pattern": "ea spells short e here; compare long e in feast."
         },
         {
           "word": "crush",
-          "sentence": "Be careful not to crush the eggs in the bag."
+          "sentence": "Be careful not to crush the eggs in the bag.",
+          "pattern": "u spells the short u sound."
         },
         {
           "word": "energy",
-          "sentence": "The puppy has so much energy in the morning."
+          "sentence": "The puppy has so much energy in the morning.",
+          "pattern": "Listen for short e at the start: en-er-gy."
         },
         {
           "word": "feather",
-          "sentence": "A white feather floated down from the nest."
+          "sentence": "A white feather floated down from the nest.",
+          "pattern": "ea spells short e here."
         },
         {
           "word": "gravity",
-          "sentence": "Gravity pulls the ball back to the ground."
+          "sentence": "Gravity pulls the ball back to the ground.",
+          "pattern": "Listen for short a at the start: grav-i-ty."
         },
         {
           "word": "grasp",
-          "sentence": "Grasp the rope with both hands."
+          "sentence": "Grasp the rope with both hands.",
+          "pattern": "In the US voice, a has a short a sound."
         },
         {
           "word": "numb",
-          "sentence": "My fingers were numb after playing in the snow."
+          "sentence": "My fingers were numb after playing in the snow.",
+          "pattern": "The final b is silent, but keep it in the spelling."
         },
         {
           "word": "promise",
-          "sentence": "I promise to finish my homework before dinner."
+          "sentence": "I promise to finish my homework before dinner.",
+          "pattern": "Practise the whole word: p-r-o-m-i-s-e."
         },
         {
           "word": "shovel",
-          "sentence": "Use the shovel to dig a hole for the tree."
+          "sentence": "Use the shovel to dig a hole for the tree.",
+          "pattern": "The o has the short u sound in shov-el."
         },
         {
           "word": "solid",
-          "sentence": "The ice on the pond is solid enough to skate on."
+          "sentence": "The ice on the pond is solid enough to skate on.",
+          "pattern": "Listen for short o at the start: sol-id."
         },
         {
           "word": "weather",
-          "sentence": "The weather was sunny and warm all weekend."
+          "sentence": "The weather was sunny and warm all weekend.",
+          "pattern": "ea spells short e; remember the final -er."
         }
-      ]
+      ],
+      "week": 1
     },
     {
       "id": "m1_w2_long_a_e",
@@ -60,53 +73,66 @@
       "words": [
         {
           "word": "ashamed",
-          "sentence": "He felt ashamed after he forgot his friend's birthday."
+          "sentence": "He felt ashamed after he forgot his friend's birthday.",
+          "pattern": "a_e spells long a in shamed."
         },
         {
           "word": "awake",
-          "sentence": "The baby stayed awake all night."
+          "sentence": "The baby stayed awake all night.",
+          "pattern": "a_e spells long a in wake."
         },
         {
           "word": "beneath",
-          "sentence": "The cat hid beneath the bed."
+          "sentence": "The cat hid beneath the bed.",
+          "pattern": "ea spells long e in neath."
         },
         {
           "word": "brain",
-          "sentence": "Your brain controls every part of your body."
+          "sentence": "Your brain controls every part of your body.",
+          "pattern": "ai spells long a."
         },
         {
           "word": "disease",
-          "sentence": "Washing your hands can stop the spread of disease."
+          "sentence": "Washing your hands can stop the spread of disease.",
+          "pattern": "The second part has long e spelled ea: dis-ease."
         },
         {
           "word": "display",
-          "sentence": "The museum will display the old locomotive."
+          "sentence": "The museum will display the old locomotive.",
+          "pattern": "ay spells long a at the end."
         },
         {
           "word": "feast",
-          "sentence": "We cooked a huge feast for the holiday."
+          "sentence": "We cooked a huge feast for the holiday.",
+          "pattern": "ea spells long e here; compare short e in breath."
         },
         {
           "word": "niece",
-          "sentence": "My niece is learning to ride a bike."
+          "sentence": "My niece is learning to ride a bike.",
+          "pattern": "Put i before e: n-ie-ce."
         },
         {
           "word": "praise",
-          "sentence": "The teacher gave praise for the neat project."
+          "sentence": "The teacher gave praise for the neat project.",
+          "pattern": "ai spells long a; keep the final e."
         },
         {
           "word": "release",
-          "sentence": "They will release the bird when its wing heals."
+          "sentence": "They will release the bird when its wing heals.",
+          "pattern": "ea spells long e; keep the final e."
         },
         {
           "word": "remain",
-          "sentence": "Please remain in your seat until the bus stops."
+          "sentence": "Please remain in your seat until the bus stops.",
+          "pattern": "ai spells long a in main."
         },
         {
           "word": "thief",
-          "sentence": "The thief was caught by the security camera."
+          "sentence": "The thief was caught by the security camera.",
+          "pattern": "Put i before e: th-ie-f."
         }
-      ]
+      ],
+      "week": 2
     },
     {
       "id": "m1_w3_long_i_o",
@@ -114,53 +140,66 @@
       "words": [
         {
           "word": "brighten",
-          "sentence": "Flowers brighten the whole room."
+          "sentence": "Flowers brighten the whole room.",
+          "pattern": "igh spells long i: br-igh-ten."
         },
         {
           "word": "compose",
-          "sentence": "She likes to compose songs on the piano."
+          "sentence": "She likes to compose songs on the piano.",
+          "pattern": "o_e spells long o in pose."
         },
         {
           "word": "control",
-          "sentence": "The pilot kept control of the plane in the wind."
+          "sentence": "The pilot kept control of the plane in the wind.",
+          "pattern": "The second o spells long o."
         },
         {
           "word": "dough",
-          "sentence": "Roll the dough flat before you add the cheese."
+          "sentence": "Roll the dough flat before you add the cheese.",
+          "pattern": "ough spells long o in this word."
         },
         {
           "word": "excite",
-          "sentence": "Loud noises excite the puppy."
+          "sentence": "Loud noises excite the puppy.",
+          "pattern": "i_e spells long i in cite."
         },
         {
           "word": "height",
-          "sentence": "The nurse measured my height and weight."
+          "sentence": "The nurse measured my height and weight.",
+          "pattern": "eigh spells long i in this word; do not use the sound in eight."
         },
         {
           "word": "mighty",
-          "sentence": "A mighty wind knocked down the old tree."
+          "sentence": "A mighty wind knocked down the old tree.",
+          "pattern": "igh spells long i: m-igh-ty."
         },
         {
           "word": "odor",
-          "sentence": "A strange odor came from the garbage can."
+          "sentence": "A strange odor came from the garbage can.",
+          "pattern": "The first o spells long o."
         },
         {
           "word": "reply",
-          "sentence": "Please reply to the invitation by Friday."
+          "sentence": "Please reply to the invitation by Friday.",
+          "pattern": "Final y spells long i."
         },
         {
           "word": "sign",
-          "sentence": "The sign said the park closes at six."
+          "sentence": "The sign said the park closes at six.",
+          "pattern": "The g is silent; keep it between i and n."
         },
         {
           "word": "silent",
-          "sentence": "The library was silent during the test."
+          "sentence": "The library was silent during the test.",
+          "pattern": "The first i spells long i."
         },
         {
           "word": "thrown",
-          "sentence": "The ball was thrown over the fence."
+          "sentence": "The ball was thrown over the fence.",
+          "pattern": "ow spells long o; keep the final n."
         }
-      ]
+      ],
+      "week": 3
     },
     {
       "id": "m1_w1_short_vowel_sort",
@@ -178,18 +217,20 @@
           "weather"
         ],
         "Short i": [
-          "blister",
-          "promise"
+          "blister"
         ],
         "Short o": [
-          "solid"
+          "solid",
+          "promise"
         ],
         "Short u": [
           "crush",
           "numb",
           "shovel"
         ]
-      }
+      },
+      "week": 1,
+      "intro": "Sort by the vowel sound in the first syllable. Use the US English pronunciation."
     },
     {
       "id": "m1_w2_long_a_e_sort",
@@ -212,7 +253,8 @@
           "release",
           "thief"
         ]
-      }
+      },
+      "week": 2
     },
     {
       "id": "m1_w2_long_a_e_pattern_sort",
@@ -241,7 +283,8 @@
           "niece",
           "thief"
         ]
-      }
+      },
+      "week": 2
     },
     {
       "id": "m1_w3_long_i_o_sort",
@@ -264,7 +307,8 @@
           "odor",
           "thrown"
         ]
-      }
+      },
+      "week": 3
     },
     {
       "id": "m1_w3_long_i_o_pattern_sort",
@@ -295,7 +339,8 @@
           "dough",
           "thrown"
         ]
-      }
+      },
+      "week": 3
     },
     {
       "id": "hw_find_short_vowel",
@@ -378,8 +423,8 @@
           "choices": [
             "solid",
             "the",
-            "pond",
-            "ice"
+            "ice",
+            "is"
           ],
           "answer": 0
         },
@@ -453,7 +498,8 @@
           ],
           "answer": 1
         }
-      ]
+      ],
+      "week": 1
     },
     {
       "id": "hw_long_vowel_letters",
@@ -469,7 +515,8 @@
             "y",
             "igh"
           ],
-          "answer": 0
+          "answer": 0,
+          "week": 3
         },
         {
           "q": "<b>dry</b> — which letters make the long i sound?",
@@ -479,7 +526,8 @@
             "y",
             "i_e"
           ],
-          "answer": 2
+          "answer": 2,
+          "week": 3
         },
         {
           "q": "<b>drove</b> — which letters make the long o sound?",
@@ -489,7 +537,8 @@
             "o_e",
             "o"
           ],
-          "answer": 2
+          "answer": 2,
+          "week": 3
         },
         {
           "q": "<b>notion</b> — which letter makes the long o sound?",
@@ -499,7 +548,8 @@
             "ow",
             "o_e"
           ],
-          "answer": 1
+          "answer": 1,
+          "week": 3
         },
         {
           "q": "<b>fried</b> — which letters make the long i sound?",
@@ -509,7 +559,8 @@
             "i_e",
             "y"
           ],
-          "answer": 0
+          "answer": 0,
+          "week": 3
         },
         {
           "q": "<b>borrow</b> — which letters make the long o sound?",
@@ -519,7 +570,8 @@
             "or",
             "ow"
           ],
-          "answer": 3
+          "answer": 3,
+          "week": 3
         },
         {
           "q": "<b>brighten</b> — which letters make the long i sound?",
@@ -529,7 +581,8 @@
             "igh",
             "i_e"
           ],
-          "answer": 2
+          "answer": 2,
+          "week": 3
         },
         {
           "q": "<b>height</b> — which letters make the long i sound?",
@@ -539,7 +592,8 @@
             "igh",
             "eigh"
           ],
-          "answer": 3
+          "answer": 3,
+          "week": 3
         },
         {
           "q": "<b>reply</b> — which letter makes the long i sound?",
@@ -549,7 +603,8 @@
             "i_e",
             "e"
           ],
-          "answer": 0
+          "answer": 0,
+          "week": 3
         },
         {
           "q": "<b>compose</b> — which letters make the long o sound?",
@@ -559,7 +614,8 @@
             "ow",
             "o"
           ],
-          "answer": 0
+          "answer": 0,
+          "week": 3
         },
         {
           "q": "<b>dough</b> — which letters make the long o sound?",
@@ -569,7 +625,8 @@
             "o_e",
             "ough"
           ],
-          "answer": 3
+          "answer": 3,
+          "week": 3
         },
         {
           "q": "<b>thrown</b> — which letters make the long o sound?",
@@ -579,7 +636,8 @@
             "o_e",
             "o"
           ],
-          "answer": 0
+          "answer": 0,
+          "week": 3
         },
         {
           "q": "<b>train</b> — which letters make the long a sound?",
@@ -589,7 +647,8 @@
             "ei",
             "ay"
           ],
-          "answer": 0
+          "answer": 0,
+          "week": 2
         },
         {
           "q": "<b>display</b> — which letters make the long a sound?",
@@ -599,7 +658,8 @@
             "ea",
             "ai"
           ],
-          "answer": 1
+          "answer": 1,
+          "week": 2
         },
         {
           "q": "<b>awake</b> — which letters make the long a sound?",
@@ -609,7 +669,8 @@
             "a_e",
             "ay"
           ],
-          "answer": 2
+          "answer": 2,
+          "week": 2
         },
         {
           "q": "<b>niece</b> — which letters make the long e sound?",
@@ -619,7 +680,8 @@
             "e_e",
             "ee"
           ],
-          "answer": 1
+          "answer": 1,
+          "week": 2
         },
         {
           "q": "<b>release</b> — which letters make the long e sound?",
@@ -629,7 +691,8 @@
             "ie",
             "e_e"
           ],
-          "answer": 0
+          "answer": 0,
+          "week": 2
         },
         {
           "q": "Which word has a long a sound but NO letter a in it?",
@@ -639,7 +702,8 @@
             "awake",
             "brain"
           ],
-          "answer": 0
+          "answer": 0,
+          "week": 2
         },
         {
           "q": "Which word has a long e sound spelled ey?",
@@ -649,7 +713,8 @@
             "meet",
             "thief"
           ],
-          "answer": 1
+          "answer": 1,
+          "week": 2
         },
         {
           "q": "Which word has the long o sound?",
@@ -659,7 +724,8 @@
             "promise",
             "solid"
           ],
-          "answer": 0
+          "answer": 0,
+          "week": 3
         },
         {
           "q": "Which word has the long i sound?",
@@ -669,7 +735,8 @@
             "sign",
             "blister"
           ],
-          "answer": 2
+          "answer": 2,
+          "week": 3
         },
         {
           "q": "<b>sign</b> — the long i sound is spelled with which letter?",
@@ -679,8 +746,13 @@
             "i",
             "y"
           ],
-          "answer": 2
+          "answer": 2,
+          "week": 3
         }
+      ],
+      "weeks": [
+        2,
+        3
       ]
     }
   ]

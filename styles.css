@@ -777,3 +777,25 @@ button.link:hover { background: var(--border); }
 .anchor-chart-content.has-poster { grid-template-columns: minmax(0, 1fr); }
 .has-poster .anchor-chart-figure { width: 100%; max-width: 680px; margin: 0 auto; }
 .has-poster .anchor-chart-image { max-width: none; }
+
+/* Quiz 1 recall practice; all layout remains responsive on small screens. */
+.q1-week { display:flex; align-items:center; gap:.6rem; margin:1rem 0; font-weight:700; }
+.q1-week select { font:inherit; padding:.5rem .8rem; border:2px solid var(--border); border-radius:10px; background:var(--card, white); color:var(--text); }
+.q1-modes { border-bottom:1px solid var(--border); padding-bottom:1rem; margin-bottom:1.5rem; }
+.q1-mode-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:.6rem; }
+.q1-mode-grid button { margin:0; width:100%; }
+.q1-note { font-size:.9rem; color:var(--muted); }
+.q1-cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem; }
+.q1-card { padding:1rem; border:1px solid var(--border); border-radius:16px; overflow-wrap:anywhere; }
+.q1-card img { display:block; object-fit:cover; border-radius:12px; }
+.q1-card h3 { margin:.6rem 0; }
+.q1-session label { display:block; margin:.8rem 0; font-weight:600; }
+.q1-session input { box-sizing:border-box; max-width:100%; }
+.q1-session #q1-feedback { margin:1rem 0; overflow-wrap:anywhere; }
+.q1-session #q1-feedback small { display:block; margin-top:.6rem; }
+.q1-letters { display:block; line-height:2.3; font-family:ui-monospace,monospace; }
+.q1-letters mark { background:#fff0b3; color:#473600; padding:3px; border-radius:3px; }
+.q1-letters del { background:#ffe0e0; color:#7b1c1c; padding:3px; }
+.q1-results { padding:.8rem 1rem; background:var(--bg); border-radius:12px; }
+.q1-bank { display:flex; flex-wrap:wrap; gap:.5rem; }
+.q1-bank span { border:1px solid var(--border); border-radius:8px; padding:.4rem .7rem; }

@@ -88,3 +88,9 @@ label. Existing badge IDs, unlock rules, and saved progress are preserved.
 Web thumbnails are in `assets/badges/`; full-resolution originals are in
 `assets/badges/originals/`. Built-in image generation prompts are recorded in
 `content/badge_images.json`.
+
+## Quiz 1: spelling and vocabulary recall
+
+Grade 5 Fall Quiz 1 now has Week 1–3 filters and Learn / Practice / Mini test paths. Vocabulary adds 60 authored context questions with exact word-form answers. Spelling adds word–sentence–word audio, slower replay, letter-level feedback, hide-and-retype correction, and a delayed recheck for each missed first attempt. Mini tests show answers at the end.
+
+First independent answers, hints, corrections, and rechecks are reported separately; hints and corrections cannot inflate scores or trigger a perfect-score badge. Existing multiple-choice practice, stored progress, and badges remain available. See [the practice supplement](content/2026-10-quiz1/recall_practice.md) for content provenance and the scoring rules.

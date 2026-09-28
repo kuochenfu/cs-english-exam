@@ -301,3 +301,164 @@ test('Boss badge needs previous mistakes and every remaining mistake cleared; sa
   h.run("currentExam = examIndex.exams[0]; renderHome()");
   assert.equal(h.run('!!ensureExamGame().badges.boss_defeated'), true);
 });
+
+// Quiz 1 recall regression coverage: exercise real handlers, not a copy of the engine.
+function startRecall(h, options = {}) {
+  h.context.recallOptions = {
+    items: [{id:'thief',label:'thief',answer:'thief',sentence:'The thief ran away.',hint:'Use ie.',explanation:'Put i before e.'}],
+    mode:'practice',kind:'spell',missKey:'spell:q1-recall',topicId:'spell:q1-practice:week0',title:'Spelling',...options
+  };
+  h.run(`quiz1Recall({...recallOptions, parents:[{title:'Spelling',render:spellingTopic}]})`);
+}
+function answerRecall(h, value) {
+  h.element('q1-answer').value=value;
+  h.element('q1-form').onsubmit({preventDefault(){}});
+}
+
+test('all Quiz 1 words have authored recall material and exact cloze answers', () => {
+  assert.equal(fixture.vocabulary.words.length,30);
+  for (const w of fixture.vocabulary.words) {
+    assert.equal(w.contexts.length,2,w.word);
+    for (const q of w.contexts) {
+      assert.equal((q.prompt.match(/____/g)||[]).length,1,w.word);
+      assert.equal(q.choices.filter(c=>c===q.answer).length,1,w.word);
+      assert.equal(new Set(q.choices).size,4,w.word);
+      assert.ok(q.explanation && q.answer);
+    }
+  }
+  const lists=fixture.spelling.lists.filter(l=>l.words);
+  assert.equal(lists.flatMap(l=>l.words).length,36);
+  assert.deepEqual(lists.map(l=>l.week),[1,2,3]);
+  for(const l of lists) for(const w of l.words) assert.ok(w.pattern,w.word);
+});
+
+test('cloze and word forms use the actual past-tense answer instead of a stem', () => {
+  const h=harness();
+  h.context.wordFixture={...fixture.vocabulary.words.find(w=>w.word==='photograph'), contexts:[{prompt:'Yesterday, she ____ the birds.',answer:'photographed',choices:['photographed','irrigated','specialized','conceived'],explanation:'Yesterday needs past tense.'}]};
+  h.run('data.vocabulary={words:[wordFixture]}; vocabularyTopic()');
+  h.element('m3').onclick();
+  assert.match(h.element('app').innerHTML,/photographed/);
+  // Index 0 is the exact curated answer regardless of randomized display order.
+  h.choices().find(b=>b.dataset.idx==='0').onclick();
+  assert.match(h.element('fb').innerHTML,/Yesterday needs past tense/);
+  assert.equal(h.timers.size,0);
+  h.run('vocabularyTopic()');h.element('m6').onclick();
+  assert.match(h.element('app').innerHTML,/photographed/);
+});
+
+test('week filtering covers vocabulary, spelling lists, and mixed-week phonics questions', () => {
+  const h=harness();
+  for(const [week,count] of [[1,9],[2,11],[3,10]]) {
+    assert.equal(h.run(`quiz1Words(${week}).length`),count);
+    assert.equal(h.run(`quiz1Lists(${week}).flatMap(l=>l.words||[]).length`),12);
+    assert.equal(h.run(`quiz1Lists(${week}).filter(l=>l.weeks).flatMap(l=>l.items).every(q=>q.week===${week})`),true);
+  }
+  h.run('vocabularyTopic()');h.element('q1-week').value='2';h.element('q1-week').onchange();
+  h.element('q1-learn').onclick();
+  assert.match(h.element('app').innerHTML,/auditorium/);
+  assert.doesNotMatch(h.element('app').innerHTML,/>chug</);
+  h.element('back-btn').onclick();
+  assert.match(h.element('app').innerHTML,/value="2" selected/);
+});
+
+test('letter alignment distinguishes omitted, extra, replaced and unsafe input', () => {
+  const h=harness();
+  assert.match(h.run("quiz1LetterFeedback('thif','thief')"),/\+e/);
+  assert.match(h.run("quiz1LetterFeedback('thieff','thief')"),/<del>f<\/del>/);
+  assert.match(h.run("quiz1LetterFeedback('thxef','thief')"),/x → i/);
+  assert.doesNotMatch(h.run("quiz1LetterFeedback('<img>','thief')"),/<img>/);
+});
+
+test('incorrect spelling waits for correction and a delayed recheck; first score never inflates', () => {
+  const h=harness();h.run('shuffle = a => a');
+  const items=['thief','brain','sign','dough'].map(w=>({id:w,label:w,answer:w,sentence:`Say ${w}.`,hint:'Hint',explanation:'Pattern'}));
+  startRecall(h,{items});
+  answerRecall(h,'theif');
+  assert.equal(h.timers.size,0);
+  assert.match(h.element('q1-feedback').innerHTML,/thief/);
+  h.element('q1-hide').onclick();
+  assert.doesNotMatch(h.element('q1-feedback').textContent,/thief/);
+  answerRecall(h,'thief');
+  assert.equal(h.run("missedCount('spell:q1-recall')"),1,'copying a correction does not clear a mistake');
+  h.element('q1-next').onclick();
+  for(const w of ['brain','sign','dough']) {answerRecall(h,w);h.element('q1-next').onclick();}
+  assert.match(h.element('app').innerHTML,/Recheck/);
+  answerRecall(h,'thief');h.element('q1-next').onclick();
+  assert.match(h.element('app').innerHTML,/Independent first answers: 3 \/ 4 \(75%\)/);
+  assert.match(h.element('app').innerHTML,/Corrections completed: 1/);
+  assert.match(h.element('app').innerHTML,/Independent rechecks: 1 \/ 1/);
+  assert.equal(h.run("readProgress('spell:q1-practice:week0').best"),75);
+  assert.equal(h.run("missedCount('spell:q1-recall')"),0);
+});
+
+test('hinted correct answers and their rechecks cannot award a perfect spelling badge', () => {
+  const h=harness();startRecall(h);
+  h.element('q1-hint').onclick();answerRecall(h,'thief');h.element('q1-next').onclick();
+  answerRecall(h,'thief');h.element('q1-next').onclick();
+  assert.match(h.element('app').innerHTML,/Independent first answers: 0 \/ 1 \(0%\)/);
+  assert.match(h.element('app').innerHTML,/Words with hints: 1/);
+  assert.equal(h.run('!!ensureExamGame().badges.spelling_champ'),false);
+});
+
+test('mini tests have no hints, no immediate answer reveal, and show results only at the end', () => {
+  const h=harness();startRecall(h,{mode:'test',topicId:'spell:q1-test:week0'});
+  assert.doesNotMatch(h.element('app').innerHTML,/id="q1-hint"/);
+  answerRecall(h,'wrong');
+  assert.equal(h.element('q1-feedback').textContent,'Answer saved. Results appear at the end.');
+  assert.doesNotMatch(h.element('q1-actions').innerHTML,/Hide answer/);
+  h.element('q1-next').onclick();
+  assert.match(h.element('app').innerHTML,/wrong → thief/);
+  assert.equal(h.run("missedCount('spell:q1-recall')"),1);
+});
+
+test('empty and repeated submissions do not score; repeated Next cannot duplicate rewards', () => {
+  const h=harness();startRecall(h,{mode:'test'});
+  answerRecall(h,'   ');assert.equal(h.element('q1-answer').disabled,false);
+  answerRecall(h,'thief');answerRecall(h,'thief');
+  const next=h.element('q1-next').onclick;next();
+  const stars=h.run('ensureExamGame().stars');next();
+  assert.equal(h.run('ensureExamGame().stars'),stars);
+  assert.match(h.element('app').innerHTML,/Independent first answers: 1 \/ 1/);
+});
+
+test('new practice preserves legacy scores, earned badges and another exam; review is reachable', () => {
+  const h=harness();
+  h.run(`progress['2026-10-quiz1:spell:m1_w1_short_vowels:type']={best:90}; progress['other:vocab:word']={best:80}; ensureExamGame().badges.first_quest='2026-09-20';`);
+  startRecall(h,{mode:'test'});answerRecall(h,'wrong');h.element('q1-next').onclick();
+  assert.equal(h.run("progress['2026-10-quiz1:spell:m1_w1_short_vowels:type'].best"),90);
+  assert.equal(h.run("progress['other:vocab:word'].best"),80);
+  assert.equal(h.run('ensureExamGame().badges.first_quest'),'2026-09-20');
+  h.run('spellingTopic({week:2})');assert.match(h.element('app').innerHTML,/Review missed \(1\)/);
+  h.element('q1-review').onclick();assert.match(h.element('app').innerHTML,/Spelling · Practice/);
+  h.run("currentExam.id='2026-04-midterm'; vocabularyTopic()");assert.doesNotMatch(h.element('app').innerHTML,/q1-week|q1-practice/);
+});
+
+test('leaving new recall stops speech and has no timer that can reopen the question', () => {
+  const h=harness();h.context.window.speechSynthesis=h.context.speechSynthesis;
+  startRecall(h);answerRecall(h,'wrong');
+  const before=h.cancelCount();h.run('renderHome()');const home=h.element('app').innerHTML;
+  h.flush();assert.equal(h.element('app').innerHTML,home);assert.ok(h.cancelCount()>before);
+});
+
+test('week-specific MCQ scores do not overwrite all-week scores or orphan missed items', () => {
+  const h=harness();
+  h.run(`progress['2026-10-quiz1:vocab:blank']={best:60}; data.vocabulary={words:[fixture.vocabulary.words[0]]}; vocabularyTopic({week:1});`);
+  h.element('m3').onclick();
+  h.choices().find(b=>b.dataset.idx==='0').onclick();h.element('quiz-next').onclick();
+  assert.equal(h.run("readProgress('vocab:blank').best"),60);
+  assert.equal(h.run("readProgress('vocab:blank:week1').best"),100);
+  h.run("recordMissed('vocab:blank',{id:'chug',label:'chug'}); vocabularyTopic()");
+  assert.match(h.element('app').innerHTML,/Review Fill in the Blank \(1\)/);
+  h.element('r3').onclick();
+  assert.match(h.element('app').innerHTML,/Fill in the Blank/);
+});
+
+test('learning cards award nothing and scope reset removes recall data only for this exam', () => {
+  const h=harness();h.run(`quiz1Learn('vocab',1,homeTrail())`);
+  assert.equal(h.run('ensureExamGame().stars'),0);
+  h.run(`progress['2026-10-quiz1:vocab:q1-practice:week1']={best:50}; missed['2026-10-quiz1:vocab:q1-context']=[{id:'chug'}]; progress['other:vocab:q1-practice:week1']={best:80}; progressScreen();`);
+  h.context.confirm=()=>true;h.element('reset-btn').onclick();
+  assert.equal(h.run("progress['2026-10-quiz1:vocab:q1-practice:week1']"),undefined);
+  assert.equal(h.run("missed['2026-10-quiz1:vocab:q1-context']"),undefined);
+  assert.equal(h.run("progress['other:vocab:q1-practice:week1'].best"),80);
+});

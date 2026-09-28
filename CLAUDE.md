@@ -53,3 +53,11 @@ The TTS uses the browser's `speechSynthesis`, which uses OS voices. macOS defaul
 - **Cloze gotcha:** Fill-in-the-Blank blanks the word with regex `\b<word>\w*`, so every `example`/`examples[]` sentence MUST contain the word as a stem prefix. `-ing` forms of silent-e verbs (thrive→thriving, erode→eroding) DON'T match and silently break the blank — use base/`-s`/`-ed` forms instead.
 - A reading question's `skill` only needs to exist in the top-level `skills` map; it need not appear in the passage's own `skills[]` tag list.
 - After editing data JSON, validate: JSON parses, every `skill` exists in `skills`, each MCQ `answer` index is in range, `type:"short"` questions have a `sampleAnswer`, and cloze sentences match the word regex. Run `node --check app.js` after JS edits, and bump `APP_VERSION` in `index.html` after any JS, CSS, or data change.
+
+## Quiz 1 recall extension (2026-09-28)
+
+`quiz1Enabled()` gates the new menus to `2026-10-quiz1`. `quiz1Recall()` handles independent first attempts, hint use, manual correction, one delayed recheck, and an answer-hidden mini test. Never merge correction success into first-answer scoring. Keep all user-entered text escaped. `quiz1Learn()` awards no progress.
+
+Vocabulary `contexts[]` entries contain `prompt` with exactly one `____`, exact `answer`, four curated `choices`, and `explanation`. These are the source of truth for Quiz 1 cloze/word-form and typed recall practice; the legacy stem-regex behavior still serves older exams. Spelling lists have `week`, or `weeks` with per-item `week` for the mixed phonics set; spelling words have `pattern`. Keep the authored supplement in `content/2026-10-quiz1/recall_practice.md` in sync.
+
+Run `node --check app.js` and `node --test tests/navigation.test.cjs` after changes. The dependency-free test suite exercises actual event handlers, including correction queues, hint scoring, navigation, persistence, and authored-data validation.

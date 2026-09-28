@@ -216,11 +216,11 @@ if ("speechSynthesis" in window) {
   speechSynthesis.onvoiceschanged = loadVoices;
 }
 
-function speak(text) {
+function speak(text, rate = 0.9) {
   if (!("speechSynthesis" in window)) return;
   const u = new SpeechSynthesisUtterance(text);
   if (selectedVoice) u.voice = selectedVoice;
-  u.rate = 0.9;
+  u.rate = rate;
   u.pitch = 1.0;
   u.lang = selectedVoice?.lang || "en-US";
   speechSynthesis.cancel();
@@ -752,7 +752,7 @@ function runQuiz(topicId, title, items, getQ, options = {}) {
   function step() {
     if (i >= order.length) return finish();
     const item = items[order[i]];
-    const { prompt, choices, answer, extra } = getQ(item);
+    const { prompt, choices, answer, extra, explanation } = getQ(item);
     const choiceOrder = shuffle([...choices.keys()]);
     renderContent(`
       <div class="panel">
@@ -786,7 +786,13 @@ function runQuiz(topicId, title, items, getQ, options = {}) {
                recordMissed(topicId, { id, label: itemLabel(item), title });
                fb.innerHTML = `❌ The answer is <b>${choices[answer]}</b>.`;
                fb.className = "feedback bad"; }
+        if (explanation) {
+          fb.innerHTML += `<p>${esc(explanation)}</p><button id="quiz-next">Next</button>`;
+          let moved=false;
+          $("quiz-next").onclick=()=>{if(moved)return;moved=true;i++;step();};
+        } else {
         scheduleScreen(() => { i++; step(); }, isCorrect ? 700 : 1600);
+        }
       };
     });
     if (options.afterRender) options.afterRender(item);
@@ -795,7 +801,7 @@ function runQuiz(topicId, title, items, getQ, options = {}) {
 
   function finish() {
     const pct = Math.round((correct/order.length)*100);
-    writeProgress(topicId, pct);
+    writeProgress(options.progressId || topicId, pct);
     const reward = recordGameCompletion(topicId, pct, correct, order.length, { reviewOnly: !!options.reviewOnly });
     renderContent(`
       <div class="panel">
@@ -822,16 +828,161 @@ function emptyTopic(title) {
     </div>`);
 }
 
+// ---------- Quiz 1: learn, recall, correct, and check ----------
+// All new UI is exam-scoped. Existing progress/missed/game stores stay unchanged.
+function quiz1Enabled() { return currentExam?.id === '2026-10-quiz1'; }
+function quiz1WeekHTML(week = 0) {
+  return `<label class="q1-week">Week <select id="q1-week">${[0,1,2,3].map(n => `<option value="${n}" ${n === week ? 'selected' : ''}>${n ? `Week ${n}` : 'All weeks'}</option>`).join('')}</select></label>`;
+}
+function quiz1Words(week = 0) { return data.vocabulary.words.filter(w => !week || w.week === week); }
+function quiz1Lists(week = 0) {
+  return data.spelling.lists.filter(l => !week || l.week === week || l.weeks?.includes(week))
+    .map(l => week && l.items && l.weeks ? { ...l, practiceWeek: week, items: l.items.filter(q => q.week === week) } : l);
+}
+function quiz1ModeHTML(kind, week = 0) {
+  const missKey = kind === 'vocab' ? 'vocab:q1-context' : 'spell:q1-recall';
+  const candidates = kind === 'vocab' ? quiz1Words(week).map(w => w.word) : quiz1Lists(week).flatMap(l => (l.words || []).map(w => w.word));
+  const due = missedItems(missKey).filter(m => candidates.includes(m.id)).length;
+  return `<section class="q1-modes" aria-label="Learning path">
+    <p>Learn the words, practise with help, then check what you remember.</p>
+    <div class="q1-mode-grid"><button id="q1-learn">📚 Learn</button><button id="q1-practice">✍️ Practice</button><button id="q1-test">🎯 Mini test · up to 10 words</button></div>
+    ${due ? `<button id="q1-review" class="ghost">Review missed (${due})</button>` : ''}
+    <p class="q1-note">Only independent first answers count toward your score. Hints and corrections are shown separately.</p>
+  </section>`;
+}
+function bindQuiz1Modes(kind, context = {}) {
+  const week = context.week || 0;
+  const parent = () => kind === 'vocab' ? vocabularyTopic(context) : spellingTopic(context);
+  const parents = [...topicParents(context), {title: kind === 'vocab' ? 'Vocabulary' : 'Phonics & Spelling', render: parent}];
+  $('q1-week').onchange = () => (kind === 'vocab' ? vocabularyTopic : spellingTopic)({...context, week: Number($('q1-week').value)});
+  $('q1-learn').onclick = () => quiz1Learn(kind, week, parents);
+  const launch = (mode, reviewOnly = false) => {
+    const missKey = kind === 'vocab' ? 'vocab:q1-context' : 'spell:q1-recall';
+    const ids = new Set(missedItems(missKey).map(m => m.id));
+    let items = kind === 'vocab'
+      ? quiz1Words(week).filter(w => w.contexts?.length).map(w => {
+          const q = w.contexts[Math.floor(Math.random() * w.contexts.length)];
+          return {id:w.word, answer:q.answer, prompt:q.prompt, explanation:q.explanation, hint:`${w.definition} · Starts with “${q.answer[0]}”.`, label:w.word, bank:q.choices};
+        })
+      : quiz1Lists(week).flatMap(l => (l.words || []).map(w => ({id:w.word, answer:w.word, sentence:w.sentence, explanation:w.pattern, hint:w.pattern, label:w.word})));
+    if (reviewOnly) items = items.filter(w => ids.has(w.id));
+    if (mode === 'test') items = shuffle([...items]).slice(0,10);
+    quiz1Recall({items, mode, kind, missKey, title: kind === 'vocab' ? 'Vocabulary in context' : 'Spelling', topicId:`${kind}:q1-${mode}:week${week}${reviewOnly ? ':review' : ''}`, parents});
+  };
+  $('q1-practice').onclick = () => launch('practice');
+  $('q1-test').onclick = () => launch('test');
+  if ($('q1-review')) $('q1-review').onclick = () => launch('practice', true);
+}
+function quiz1Learn(kind, week, parents) {
+  enterScreen('Learn', () => quiz1Learn(kind, week, parents), parents);
+  const words = kind === 'vocab' ? quiz1Words(week) : quiz1Lists(week).flatMap(l => l.words || []);
+  renderContent(`<div class="panel"><h2>📚 Learn · ${week ? `Week ${week}` : 'All weeks'}</h2><p>Look, listen, then return to Practice. Learning cards do not change scores.</p>${voicePicker()}<div class="q1-cards">${words.map((w,i) => `<article class="q1-card">${kind === 'vocab' && w.image ? `<img src="${esc(w.image)}" alt="${esc(w.imageAlt || '')}" width="120" height="120" loading="lazy">` : ''}<h3>${esc(w.word)}</h3><p>${esc(w.definition || w.pattern)}</p><p><i>${esc(w.example || w.sentence)}</i></p><button class="ghost" data-q1-audio="${i}" aria-label="Listen to ${esc(w.word)}">🔊 Listen</button></article>`).join('')}</div></div>`);
+  bindVoicePicker();
+  document.querySelectorAll('[data-q1-audio]').forEach(b => b.onclick = () => {
+    const w=words[+b.dataset.q1Audio]; speak(`${w.word}. ${w.example || w.sentence} ${w.word}.`);
+  });
+}
+// A small edit-distance alignment. Mark extra, missing and replaced letters explicitly,
+// not by color alone; a dropped letter must not make every following letter look wrong.
+function quiz1LetterFeedback(guess, answer) {
+  const a=[...guess], b=[...answer];
+  const d=Array.from({length:a.length+1},(_,i)=>Array.from({length:b.length+1},(_,j)=>i===0?j:j===0?i:0));
+  for(let i=1;i<=a.length;i++) for(let j=1;j<=b.length;j++) d[i][j]=Math.min(d[i-1][j]+1,d[i][j-1]+1,d[i-1][j-1]+(a[i-1]===b[j-1]?0:1));
+  let i=a.length,j=b.length,parts=[];
+  while(i||j) {
+    if(i&&j&&a[i-1]===b[j-1]) {parts.push(esc(b[j-1]));i--;j--;}
+    else if(i&&j&&d[i][j]===d[i-1][j-1]+1) {parts.push(`<mark>${esc(a[i-1])} → ${esc(b[j-1])}</mark>`);i--;j--;}
+    else if(j&&d[i][j]===d[i][j-1]+1) {parts.push(`<mark>+${esc(b[j-1])}</mark>`);j--;}
+    else {parts.push(`<del>${esc(a[i-1])}</del>`);i--;}
+  }
+  return `<span class="q1-letters">${parts.reverse().join(' ')}</span><small>+ add a missing letter · → replace · crossed out = remove</small>`;
+}
+function quiz1Recall(config) {
+  const {items, mode, kind, title, topicId, missKey, parents}=config;
+  enterScreen(`${title} · ${mode === 'test' ? 'Mini test' : 'Practice'}`, () => quiz1Recall(config), parents);
+  if(!items.length) {renderContent('<div class="panel"><h2>Nothing to review</h2><p>Choose another week or start a new practice.</p></div>');return;}
+  const queue=shuffle([...items]).map(item=>({item,retest:false}));
+  const initialTotal=items.length;
+  let index=0, independent=0, hinted=0, corrected=0, retestCorrect=0, retestTotal=0, finished=false;
+  const firstMisses=[];
+  function finish() {
+    if(finished)return; finished=true;
+    const pct=Math.round(100*independent/initialTotal);
+    writeProgress(topicId,pct);
+    const reward=recordGameCompletion(topicId,pct,independent,initialTotal);
+    renderContent(`<div class="panel"><h2>Round complete</h2><div class="q1-results"><p><b>Independent first answers: ${independent} / ${initialTotal} (${pct}%)</b></p><p>Words with hints: ${hinted}</p><p>Corrections completed: ${corrected}</p><p>Independent rechecks: ${retestCorrect} / ${retestTotal}</p></div><p>Corrections and hints do not raise your first-answer score.</p>${gameRewardHTML(reward)}${firstMisses.length ? `<h3>Words that needed support</h3><ul>${firstMisses.map(x=>`<li><b>${esc(x.item.label)}</b>: ${esc(x.guess || '(blank)')} → ${esc(x.item.answer)}${x.hinted?' (hint used)':''}<br>${esc(x.item.explanation || '')}</li>`).join('')}</ul>`:''}<button id="q1-again">Practice again</button><button id="q1-done" class="ghost">Back to topic</button></div>`);
+    $('q1-again').onclick=()=>quiz1Recall({...config,mode:'practice',topicId:topicId.replace(':q1-test:',':q1-practice:').replace(/(:retry)?$/,':retry')});
+    $('q1-done').onclick=()=>parents[parents.length-1].render();
+  }
+  function step() {
+    if(index>=queue.length)return finish();
+    const {item,retest}=queue[index];
+    let usedHint=false, submitted=false, correction=false, advanced=false;
+    const firstSeen=queue.slice(0,index).filter(q=>!q.retest).length;
+    renderContent(`<div class="panel q1-session"><h2>${esc(title)} · ${mode==='test'?'Mini test':'Practice'}</h2><p>${retest?'🔁 Recheck — no hint this time':`First answers: ${firstSeen} / ${initialTotal}`}</p>${kind==='spell'?`${voicePicker()}<p>Listen: word → sentence → word. Type the spelling word.</p><button id="q1-play" class="ghost">🔊 Replay</button><button id="q1-slow" class="ghost">🐢 Slower</button><p class="q1-note">Sound unavailable? Check your device volume and an English voice before answering.</p>`:`<p class="question">${esc(item.prompt)}</p>`}<form id="q1-form"><label for="q1-answer">${kind==='spell'?'Spelling word':'Use a Quiz 1 vocabulary word in the correct form'}</label><input id="q1-answer" type="text" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" maxlength="64" required><button type="submit">${mode==='test'?'Save answer':'Check'}</button></form>${mode==='practice'&&!retest?'<button id="q1-hint" class="ghost">Show a hint (not an independent answer)</button>':''}<div id="q1-hint-text"></div><div id="q1-feedback" aria-live="polite"></div><div id="q1-actions"></div></div>`);
+    $('q1-answer').focus();
+    const play=(rate=.9)=>speak(`${item.answer}. ${item.sentence} ${item.answer}.`,rate);
+    if(kind==='spell') {bindVoicePicker();$('q1-play').onclick=()=>play();$('q1-slow').onclick=()=>play(.65);play();}
+    if(mode==='practice'&&!retest) $('q1-hint').onclick=()=>{if(submitted||correction)return;usedHint=true;$('q1-hint-text').innerHTML=`<p>${esc(item.hint)}</p>${item.bank ? `<div class="q1-bank" aria-label="Word bank">${shuffle([...item.bank]).map(w=>`<span>${esc(w)}</span>`).join('')}</div>` : ''}`;};
+    const next=()=>{if(advanced)return;advanced=true;index++;step();};
+    const nextButton=()=>{$('q1-actions').innerHTML='<button id="q1-next">Next</button>';$('q1-next').onclick=()=>{ $('q1-next').disabled=true;next(); };};
+    const feedback=guess=>`<p>Your answer: <b>${esc(guess)}</b></p><p>Correct answer: <b>${esc(item.answer)}</b></p>${quiz1LetterFeedback(guess,item.answer)}<p>${esc(item.explanation || '')}</p>`;
+    function hideAndRetry() {
+      correction=true; submitted=false;
+      $('q1-feedback').textContent='Answer hidden. Type it again from memory.';
+      $('q1-hint-text').textContent=''; $('q1-actions').innerHTML='';
+      $('q1-answer').value=''; $('q1-answer').disabled=false;
+      $('q1-form').querySelector('button').disabled=false;
+      if(mode==='practice'&&!retest) $('q1-hint').disabled=true;
+      $('q1-answer').focus();
+    }
+    function retryButton() {
+      $('q1-actions').innerHTML='<button id="q1-hide">Hide answer and try again</button>';
+      $('q1-hide').onclick=hideAndRetry;
+    }
+    $('q1-form').onsubmit=e=>{
+      e.preventDefault();if(submitted)return;
+      const guess=$('q1-answer').value.trim().toLowerCase();
+      if(!guess)return;
+      submitted=true;$('q1-answer').disabled=true;$('q1-form').querySelector('button').disabled=true;
+      if(mode==='practice'&&!retest) $('q1-hint').disabled=true;
+      const correct=guess===item.answer.toLowerCase();
+      if(correction) {
+        if(correct){corrected++;$('q1-feedback').textContent='✓ Correction completed. Your first-answer score stays the same.';nextButton();}
+        else{$('q1-feedback').innerHTML=feedback(guess);retryButton();}
+        return;
+      }
+      if(retest) {retestTotal++;if(correct)retestCorrect++;}
+      else {if(correct&&!usedHint)independent++;if(usedHint)hinted++;}
+      if(correct&&!usedHint) clearMissed(missKey,item.id);
+      else {
+        recordMissed(missKey,{id:item.id,label:item.label,title});
+        if(!retest) {
+          firstMisses.push({item,guess,hinted:usedHint});
+          if(mode==='practice') queue.splice(Math.min(index+4,queue.length),0,{item,retest:true});
+        }
+      }
+      if(mode==='test') {$('q1-feedback').textContent='Answer saved. Results appear at the end.';nextButton();return;}
+      if(correct) {$('q1-feedback').textContent=usedHint?'✓ Correct with a hint. We will check it again.':'✓ Correct without a hint!';nextButton();}
+      else {$('q1-feedback').innerHTML=feedback(guess);retryButton();}
+    };
+  }
+  step();
+}
+
 // ---------- Vocabulary ----------
 function vocabularyTopic(context = {}) {
   enterScreen("Vocabulary", () => vocabularyTopic(context), topicParents(context));
-  const words = data.vocabulary.words;
+  const words = quiz1Enabled() ? quiz1Words(context.week || 0) : data.vocabulary.words;
   if (!words.length) return emptyTopic("Vocabulary");
-  const missedDef = missedCount("vocab:definition");
-  const missedWord = missedCount("vocab:word");
-  const missedBlank = missedCount("vocab:blank");
-  const missedSyn = missedCount("vocab:synonym");
-  const missedAnt = missedCount("vocab:antonym");
+  const vocabKey = name => `vocab:${name}`;
+  const reviewCount = name => missedItems(vocabKey(name)).filter(m => words.some(w => w.word === m.id)).length;
+  const vocabOptions = name => ({progressId: `${vocabKey(name)}${quiz1Enabled() && context.week ? ':week'+context.week : ''}`, parents:[...topicParents(context), {title:'Vocabulary',render:()=>vocabularyTopic(context)}], itemId:w=>w.word, itemLabel:w=>w.word});
+  const missedDef = reviewCount("definition");
+  const missedWord = reviewCount("word");
+  const missedBlank = reviewCount("blank");
+  const missedSyn = reviewCount("synonym");
+  const missedAnt = reviewCount("antonym");
 
   const synWords = words.filter(w => w.synonyms && w.synonyms.length);
   const antWords = words.filter(w => w.antonyms && w.antonyms.length);
@@ -849,17 +1000,21 @@ function vocabularyTopic(context = {}) {
   const wordIllustration = (w) => w.image
     ? `<img class="vocab-image" src="${esc(w.image)}" alt="${esc(w.imageAlt || 'Vocabulary illustration')}" width="192" height="192" decoding="async">`
     : "";
-  const startDefinition = (items = words) => runQuiz("vocab:definition", "Word → Definition", items, (w) => {
+  const startDefinition = (items = words) => runQuiz(vocabKey("definition"), "Word → Definition", items, (w) => {
     const wrongs = wrongsFor(w);
     const choices = shuffle([w, ...wrongs]).map(x => x.definition);
     return { prompt: `What does <b>${w.word}</b> (${w.pos}) mean?`, choices, answer: choices.indexOf(w.definition), extra: wordIllustration(w) };
-  }, { itemId: w => w.word, itemLabel: w => w.word });
-  const startWord = (items = words) => runQuiz("vocab:word", "Definition → Word", items, (w) => {
+  }, vocabOptions("definition"));
+  const startWord = (items = words) => runQuiz(vocabKey("word"), "Definition → Word", items, (w) => {
     const wrongs = wrongsFor(w);
     const choices = shuffle([w, ...wrongs]).map(x => x.word);
     return { prompt: `Which word means: <i>"${w.definition}"</i>?`, choices, answer: choices.indexOf(w.word), extra: wordIllustration(w) };
-  }, { itemId: w => w.word, itemLabel: w => w.word });
-  const startBlank = (items = words) => runQuiz("vocab:blank", "Fill in the Blank", items, (w) => {
+  }, vocabOptions("word"));
+  const startBlank = (items = words) => runQuiz(vocabKey("blank"), "Fill in the Blank", items, (w) => {
+    if (quiz1Enabled() && w.contexts?.length) {
+      const q = w.contexts[Math.floor(Math.random() * w.contexts.length)];
+      return {prompt:esc(q.prompt), choices:q.choices, answer:q.choices.indexOf(q.answer), explanation:q.explanation};
+    }
     const re = new RegExp(`\\b${w.word}\\w*`, "i");
     const sentences = [w.example, ...(w.examples || [])].filter(s => s && re.test(s));
     const sentence = (sentences.length ? sentences : [w.example])[Math.floor(Math.random() * (sentences.length || 1))];
@@ -867,7 +1022,7 @@ function vocabularyTopic(context = {}) {
     const wrongs = wrongsFor(w);
     const choices = shuffle([w, ...wrongs]).map(x => x.word);
     return { prompt: blanked, choices, answer: choices.indexOf(w.word) };
-  }, { itemId: w => w.word, itemLabel: w => w.word });
+  }, vocabOptions("blank"));
 
   // ---- Word Forms: "Some words may need to be changed" (homework Part B skill) ----
   // Builds inflected forms for verbs and nouns; a word can override with `forms: [...]`.
@@ -886,6 +1041,10 @@ function vocabularyTopic(context = {}) {
     return [base];
   };
   const formItems = words.map(w => {
+    if (quiz1Enabled() && w.contexts?.length) {
+      const forms = [...new Set([w.word, ...w.contexts.map(q => q.answer)])];
+      return forms.length > 1 ? {...w, forms} : null;
+    }
     const forms = wordForms(w);
     if (forms.length < 2) return null;
     const re = new RegExp(`\\b(${w.word}\\w*)`, "i");
@@ -897,8 +1056,12 @@ function vocabularyTopic(context = {}) {
     const usedForms = new Set(sentences.map(s => s.match(re)[1].toLowerCase()));
     return usedForms.size >= 2 ? { ...w, forms, formSentences: sentences } : null;
   }).filter(Boolean);
-  const missedForm = missedCount("vocab:form");
-  const startForm = (items = formItems) => runQuiz("vocab:form", "Word Forms (change the word)", items, (w) => {
+  const missedForm = reviewCount("form");
+  const startForm = (items = formItems) => runQuiz(vocabKey("form"), "Word Forms (change the word)", items, (w) => {
+    if (quiz1Enabled() && w.contexts?.length) {
+      const q=w.contexts[Math.floor(Math.random()*w.contexts.length)];
+      return {prompt:`${esc(q.prompt)}<br><small>Use the correct form of <b>${esc(w.word)}</b>.</small>`,choices:w.forms,answer:w.forms.indexOf(q.answer),explanation:q.explanation};
+    }
     const re = new RegExp(`\\b(${w.word}\\w*)`, "i");
     const sentence = pick(w.formSentences);
     const used = sentence.match(re)[1].toLowerCase();
@@ -909,10 +1072,10 @@ function vocabularyTopic(context = {}) {
       choices,
       answer: choices.indexOf(used)
     };
-  }, { itemId: w => w.word, itemLabel: w => w.word });
+  }, vocabOptions("form"));
   // Pick a random member of an array.
   const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
-  const startSynonym = (items = synWords) => runQuiz("vocab:synonym", "Synonyms", items, (w) => {
+  const startSynonym = (items = synWords) => runQuiz(vocabKey("synonym"), "Synonyms", items, (w) => {
     const answer = pick(w.synonyms);
     const avoid = new Set([w.word.toLowerCase(), ...w.synonyms.map(s => s.toLowerCase())]);
     // Distractors are other words' antonyms (strong "opposite direction" traps) plus other vocab words.
@@ -921,8 +1084,8 @@ function vocabularyTopic(context = {}) {
     const distractors = shuffle([...new Set(pool)].filter(p => !avoid.has(p.toLowerCase()))).slice(0,3);
     const choices = shuffle([answer, ...distractors]);
     return { prompt: `Which word means almost the <b>SAME</b> as <b>${w.word}</b> (${w.pos})?`, choices, answer: choices.indexOf(answer) };
-  }, { itemId: w => w.word, itemLabel: w => w.word });
-  const startAntonym = (items = antWords) => runQuiz("vocab:antonym", "Antonyms (Opposites)", items, (w) => {
+  }, vocabOptions("synonym"));
+  const startAntonym = (items = antWords) => runQuiz(vocabKey("antonym"), "Antonyms (Opposites)", items, (w) => {
     const answer = pick(w.antonyms);
     const avoid = new Set([w.word.toLowerCase(), ...w.antonyms.map(s => s.toLowerCase())]);
     // Include one of the word's own synonyms as a tempting "same meaning" trap when available.
@@ -932,11 +1095,12 @@ function vocabularyTopic(context = {}) {
     let distractors = shuffle([...new Set([...trap, ...pool])].filter(p => !avoid.has(p.toLowerCase()))).slice(0,3);
     const choices = shuffle([answer, ...distractors]);
     return { prompt: `Which word means the <b>OPPOSITE</b> of <b>${w.word}</b> (${w.pos})?`, choices, answer: choices.indexOf(answer) };
-  }, { itemId: w => w.word, itemLabel: w => w.word });
+  }, vocabOptions("antonym"));
 
   renderContent(`
     <div class="panel">
       <h2>📖 Vocabulary</h2>
+      ${quiz1Enabled() ? quiz1WeekHTML(context.week || 0) + quiz1ModeHTML("vocab", context.week || 0) + "<h3>Choose an answer</h3>" : ""}
       <p>Pick a practice mode:</p>
       <button id="m1">Word → Definition</button>
       <button id="m2">Definition → Word</button>
@@ -951,28 +1115,30 @@ function vocabularyTopic(context = {}) {
       ${missedAnt ? `<button class="ghost" id="r5">Review Antonyms (${missedAnt})</button>` : ""}
       ${missedForm ? `<button class="ghost" id="r6">Review Word Forms (${missedForm})</button>` : ""}
     </div>`);
+  if (quiz1Enabled()) bindQuiz1Modes("vocab", context);
   $("m1").onclick = () => startDefinition();
   $("m2").onclick = () => startWord();
   $("m3").onclick = () => startBlank();
   if ($("m4")) $("m4").onclick = () => startSynonym();
   if ($("m5")) $("m5").onclick = () => startAntonym();
-  if ($("r1")) $("r1").onclick = () => startDefinition(reviewWords("vocab:definition"));
-  if ($("r2")) $("r2").onclick = () => startWord(reviewWords("vocab:word"));
-  if ($("r3")) $("r3").onclick = () => startBlank(reviewWords("vocab:blank"));
-  if ($("r4")) $("r4").onclick = () => startSynonym(reviewWords("vocab:synonym"));
-  if ($("r5")) $("r5").onclick = () => startAntonym(reviewWords("vocab:antonym"));
+  if ($("r1")) $("r1").onclick = () => startDefinition(reviewWords(vocabKey("definition")));
+  if ($("r2")) $("r2").onclick = () => startWord(reviewWords(vocabKey("word")));
+  if ($("r3")) $("r3").onclick = () => startBlank(reviewWords(vocabKey("blank")));
+  if ($("r4")) $("r4").onclick = () => startSynonym(reviewWords(vocabKey("synonym")));
+  if ($("r5")) $("r5").onclick = () => startAntonym(reviewWords(vocabKey("antonym")));
   if ($("m6")) $("m6").onclick = () => startForm();
-  if ($("r6")) $("r6").onclick = () => startForm(formItems.filter(w => missedItems("vocab:form").some(m => m.id === w.word)));
+  if ($("r6")) $("r6").onclick = () => startForm(formItems.filter(w => missedItems(vocabKey("form")).some(m => m.id === w.word)));
 }
 
 // ---------- Spelling / Phonics ----------
 function spellingTopic(context = {}) {
   enterScreen("Phonics & Spelling", () => spellingTopic(context), topicParents(context));
-  const lists = data.spelling.lists;
+  const lists = quiz1Enabled() ? quiz1Lists(context.week || 0) : data.spelling.lists;
   if (!lists.length) return emptyTopic("Phonics & Spelling");
   renderContent(`
     <div class="panel">
       <h2>🔤 Phonics & Spelling</h2>
+      ${quiz1Enabled() ? quiz1WeekHTML(context.week || 0) + quiz1ModeHTML("spell", context.week || 0) + "<h3>Lists & sound patterns</h3>" : ""}
       <p>Pick a list:</p>
       ${lists.map((l,idx) => {
         const topicId = `spell:${l.id || idx}`;
@@ -981,6 +1147,7 @@ function spellingTopic(context = {}) {
         return `<button data-i="${idx}">${l.title}${p ? ` · ${p.text}` : ""}</button>${miss ? `<button class="ghost" data-review-i="${idx}">Review missed (${miss})</button>` : ""}`;
       }).join("")}
     </div>`);
+  if (quiz1Enabled()) bindQuiz1Modes("spell", context);
   document.querySelectorAll(".panel button[data-i]").forEach(b => {
     b.onclick = () => {
       const list = lists[+b.dataset.i];
@@ -1011,6 +1178,7 @@ function phonicsQuiz(list, reviewOnly = false) {
     answer: it.answer,
     extra: list.intro ? `<p class="exam-label">${esc(list.intro)}</p>` : ""
   }), {
+    progressId: list.practiceWeek ? `${topicId}:week${list.practiceWeek}` : topicId,
     itemId: it => it.q,
     itemLabel: it => it.q.replace(/<[^>]+>/g, ""),
   });
@@ -1024,6 +1192,7 @@ function spellingListMenu(list) {
   const typeId = `${baseId}:type`;
   const chooseProgress = readProgress(chooseId);
   const typeProgress = readProgress(typeId);
+  const independentProgress = quiz1Enabled() ? readProgress(`${typeId}:independent`) : null;
   const chooseMissed = missedCount(chooseId);
   const typeMissed = missedCount(typeId);
 
@@ -1033,6 +1202,7 @@ function spellingListMenu(list) {
       <p>Start with listening practice, then try the full spelling test.</p>
       <button id="spell-choose">Listen & Choose${chooseProgress ? ` · Best ${chooseProgress.best}%` : ""}</button>
       ${chooseMissed ? `<button class="ghost" id="spell-choose-review">Review Listen & Choose (${chooseMissed})</button>` : ""}
+      ${independentProgress ? `<p>Independent first answers · Best ${independentProgress.best}%</p>` : ""}
       <button id="spell-type">Type Spelling${typeProgress ? ` · Best ${typeProgress.best}%` : ""}</button>
       ${typeMissed ? `<button class="ghost" id="spell-type-review">Review Type Spelling (${typeMissed})</button>` : ""}
     </div>`);
@@ -1068,6 +1238,12 @@ function spellingChoiceQuiz(list, reviewOnly = false) {
 }
 
 function dictation(list, reviewOnly = false) {
+  if (quiz1Enabled() && list.week && list.words?.every(w => w.pattern)) {
+    const missKey=`spell:${list.id}:type`;
+    const ids=new Set(missedItems(missKey).map(m=>m.id));
+    const items=list.words.filter(w=>!reviewOnly||ids.has(w.word)).map(w=>({id:w.word,answer:w.word,sentence:w.sentence,explanation:w.pattern,hint:w.pattern,label:w.word}));
+    return quiz1Recall({items,kind:'spell',mode:'practice',missKey,topicId:`${missKey}:independent${reviewOnly?':review':''}`,title:list.title,parents:spellingTrail(list)});
+  }
   enterScreen("Type Spelling", () => dictation(list, reviewOnly), spellingTrail(list));
   window.__currentSpellingList = list;
   let i = 0, correct = 0;
@@ -1175,6 +1351,7 @@ function sortGame(list, reviewOnly = false) {
       <div class="panel">
         <h2>${list.title}</h2>
         <p>Click a word, then click the bin where it belongs.</p>
+        ${list.intro ? `<p>${esc(list.intro)}</p>` : ""}
         <div class="sort-row" id="bank">
           ${remaining.map(w => `<button class="sort-word" data-w="${w}">${w}</button>`).join("") || "<i>(All sorted!)</i>"}
         </div>
@@ -1596,7 +1773,7 @@ function playDialogue(dialogue, reviewOnly = false) {
     dialogue.lines.forEach((line) => {
       const u = new SpeechSynthesisUtterance(`${line.speaker}: ${line.text}`);
       u.voice = voiceFor(line.speaker) || selectedVoice;
-      u.rate = 0.9;
+      u.rate = rate;
       u.lang = u.voice?.lang || "en-US";
       speechSynthesis.speak(u);
     });
