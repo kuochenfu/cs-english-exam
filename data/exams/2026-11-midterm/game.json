@@ -1,0 +1,126 @@
+{
+  "_comment": "Missions and badges for this test only. Rules are evaluated by evaluateBadgeRule() in app.js; keys match topic ids exactly or as a prefix followed by ':' (a key ending in ':' matches any id with that prefix). Scores only count full rounds, never review-missed rounds.",
+  "missionHelp": "Four missions a day, matched to the midterm schedule: reading, spelling (the test is dictation), Lessons 6-8 grammar, and a bonus that switches between vocabulary and listening each day. Missions reset every day; badges stay.",
+  "missions": [
+    {
+      "id": "read",
+      "topic": "reading",
+      "text": "Read one passage and answer every question",
+      "match": ["reading:"]
+    },
+    {
+      "id": "spell",
+      "topic": "spell",
+      "text": "Type a dictation list or finish a phonics game",
+      "match": [
+        "spell:m2_w1_oo_yoo:type", "spell:m2_w2_ou_aw_oi:type", "spell:m2_w3_r_controlled:type",
+        "spell:m2_w1_oo_yoo_sort", "spell:m2_w1_oo_yoo_pattern_sort", "spell:m2_w2_ou_aw_oi_sort",
+        "spell:m2_w2_ou_oi_pattern_sort", "spell:m2_w2_aw_pattern_sort", "spell:m2_w3_r_controlled_sort",
+        "spell:m2_w3_r_pattern_sort", "spell:m2_find_vowel_sound", "spell:m2_vowel_letters_same_sound",
+        "spell:m2_spelled_correctly"
+      ]
+    },
+    {
+      "id": "grammar",
+      "topic": "grammar",
+      "text": "Score 70% or more on a Lessons 6-8 grammar set",
+      "match": [
+        "grammar:mng-l6-book", "grammar:mng-l7-book", "grammar:mng-l8-book",
+        "grammar:l6-present-continuous", "grammar:l7-past-regular", "grammar:l8-past-irregular",
+        "grammar:tense-mix"
+      ],
+      "minPct": 70
+    },
+    {
+      "id": "bonus",
+      "rotate": [
+        { "id": "bonus-vocab", "topic": "vocab", "text": "Bonus: finish one vocabulary round", "match": ["vocab:"] },
+        { "id": "bonus-listen", "topic": "listen", "text": "Bonus: finish one listening dialogue", "match": ["listen:"] }
+      ]
+    }
+  ],
+  "badgeIntro": "Ten Module 2 badges for the Fall Midterm. Earn them with your cat and fox companions!",
+  "badges": [
+    {
+      "id": "sky_launch",
+      "name": "Sky Launch",
+      "desc": "Complete your first practice round.",
+      "image": "assets/badges/2026-11-midterm/sky_launch.svg",
+      "rule": { "type": "rounds", "count": 1 }
+    },
+    {
+      "id": "garden_key",
+      "name": "Garden Key",
+      "desc": "Finish all of today's missions.",
+      "image": "assets/badges/2026-11-midterm/garden_key.svg",
+      "rule": { "type": "todayMissions" }
+    },
+    {
+      "id": "spring_bloom",
+      "name": "Spring in Bloom",
+      "desc": "Finish all of the daily missions on 3 different days.",
+      "image": "assets/badges/2026-11-midterm/spring_bloom.svg",
+      "rule": { "type": "missionDays", "count": 3 }
+    },
+    {
+      "id": "word_collector",
+      "name": "Word Collector",
+      "desc": "Score 90% or more in 3 different vocabulary modes.",
+      "image": "assets/badges/2026-11-midterm/word_collector.svg",
+      "rule": { "type": "scores", "keys": ["vocab:"], "min": 90, "count": 3 }
+    },
+    {
+      "id": "sound_sorter",
+      "name": "Sound Sorter",
+      "desc": "Get 100% on a phonics sort game or phonics quiz.",
+      "image": "assets/badges/2026-11-midterm/sound_sorter.svg",
+      "rule": { "type": "scores", "min": 100, "count": 1, "keys": [
+        "spell:m2_w1_oo_yoo_sort", "spell:m2_w1_oo_yoo_pattern_sort", "spell:m2_w2_ou_aw_oi_sort",
+        "spell:m2_w2_ou_oi_pattern_sort", "spell:m2_w2_aw_pattern_sort", "spell:m2_w3_r_controlled_sort",
+        "spell:m2_w3_r_pattern_sort", "spell:m2_find_vowel_sound", "spell:m2_vowel_letters_same_sound",
+        "spell:m2_spelled_correctly"
+      ] }
+    },
+    {
+      "id": "dictation_ace",
+      "name": "Dictation Ace",
+      "desc": "Type every word right on a whole dictation list (100%).",
+      "image": "assets/badges/2026-11-midterm/dictation_ace.svg",
+      "rule": { "type": "scores", "min": 100, "count": 1, "keys": [
+        "spell:m2_w1_oo_yoo:type", "spell:m2_w2_ou_aw_oi:type", "spell:m2_w3_r_controlled:type"
+      ] }
+    },
+    {
+      "id": "time_traveler",
+      "name": "Time Traveler",
+      "desc": "Score 90% or more on a Lesson 6, a Lesson 7, and a Lesson 8 grammar set.",
+      "image": "assets/badges/2026-11-midterm/time_traveler.svg",
+      "rule": { "type": "groups", "min": 90, "groups": [
+        ["grammar:mng-l6-book", "grammar:l6-present-continuous"],
+        ["grammar:mng-l7-book", "grammar:l7-past-regular"],
+        ["grammar:mng-l8-book", "grammar:l8-past-irregular"]
+      ] }
+    },
+    {
+      "id": "story_navigator",
+      "name": "Story Navigator",
+      "desc": "Complete every reading passage.",
+      "image": "assets/badges/2026-11-midterm/story_navigator.svg",
+      "rule": { "type": "activities", "category": "reading", "count": "all" }
+    },
+    {
+      "id": "watchful_listener",
+      "name": "Watchful Listener",
+      "desc": "Complete every listening dialogue.",
+      "image": "assets/badges/2026-11-midterm/watchful_listener.svg",
+      "rule": { "type": "activities", "category": "listen", "count": "all" }
+    },
+    {
+      "id": "storm_tamer",
+      "name": "Storm Tamer",
+      "desc": "Clear Boss Review: answer every saved missed question correctly.",
+      "image": "assets/badges/2026-11-midterm/storm_tamer.svg",
+      "rule": { "type": "bossClear" }
+    }
+  ]
+}

@@ -473,3 +473,127 @@ test('learning cards award nothing and scope reset removes recall data only for 
   assert.equal(h.run("missed['2026-10-quiz1:vocab:q1-context']"),undefined);
   assert.equal(h.run("progress['other:vocab:q1-practice:week1'].best"),80);
 });
+
+// ---------- Grade 5 Fall Midterm: game.json missions and badges ----------
+const midterm = Object.fromEntries(['vocabulary', 'spelling', 'grammar', 'reading', 'listening', 'game'].map(k => [k, JSON.parse(fs.readFileSync(`data/exams/2026-11-midterm/${k}.json`))]));
+
+function midtermHarness(day = '2026-11-02') {
+  const h = harness();
+  h.context.midterm = midterm;
+  h.run(`currentExam = { id: '2026-11-midterm', title: 'Grade 5 2026 Fall Midterm', subtitle: 'Module 2', grade: 5, available: true, game: true }; Object.assign(data, midterm);`);
+  h.setDay = d => h.run(`todayString = () => '${d}'`);
+  h.setDay(day);
+  h.done = (id, pct = 100, opts = '{}') => h.run(`recordGameCompletion('${id}', ${pct}, 1, 1, ${opts})`);
+  h.badge = id => h.run(`!!ensureExamGame().badges['${id}']`);
+  h.mission = id => h.run(`!!ensureTodayGame().missions['${id}']`);
+  return h;
+}
+
+test('midterm uses its own 4 missions and 10 badges; other tests keep the default 7', () => {
+  const h = midtermHarness();
+  h.run('renderHome()');
+  const html = h.element('app').innerHTML;
+  assert.equal((html.match(/class="badge locked"/g) || []).length, 10);
+  assert.match(html, /0 \/ 10 unlocked/);
+  assert.equal((html.match(/data-mission-topic=/g) || []).length, 4);
+  for (const b of midterm.game.badges) {
+    assert.ok(fs.existsSync(b.image), b.id + ' image');
+    assert.ok(html.includes(b.image), b.id + ' rendered');
+  }
+  const q = harness();
+  q.run('renderHome()');
+  assert.equal((q.element('app').innerHTML.match(/class="badge locked"/g) || []).length, 7);
+});
+
+test('the midterm bonus mission alternates between vocabulary and listening by day', () => {
+  const h = midtermHarness('2026-11-02');
+  const a = h.run('dailyMissions()[3].topic');
+  h.setDay('2026-11-03');
+  const b = h.run('dailyMissions()[3].topic');
+  assert.deepEqual([a, b].sort(), ['listen', 'vocab']);
+});
+
+test('midterm missions only count matching full rounds', () => {
+  const h = midtermHarness();
+  h.done('reading:storm_over_the_kestrel', 50, '{reviewOnly:true}');
+  assert.equal(h.mission('read'), false, 'review-only reading');
+  h.done('reading:storm_over_the_kestrel', 50);
+  assert.equal(h.mission('read'), true);
+  h.done('spell:m2_w1_oo_yoo:choose');
+  assert.equal(h.mission('spell'), false, 'listen-and-choose is not the dictation format');
+  h.done('spell:m2_w1_oo_yoo:type', 40);
+  assert.equal(h.mission('spell'), true);
+  h.done('grammar:l4-be-review', 100);
+  assert.equal(h.mission('grammar'), false, 'Lesson 4 review is not Lessons 6-8');
+  h.done('grammar:mng-l7-book', 60);
+  assert.equal(h.mission('grammar'), false, 'below 70%');
+  h.done('grammar:mng-l7-book', 80);
+  assert.equal(h.mission('grammar'), true);
+  const bonus = h.run('dailyMissions()[3]');
+  assert.equal(h.badge('garden_key'), false);
+  const reward = h.done(bonus.topic === 'vocab' ? 'vocab:definition' : 'listen:the_forgotten_line', 30);
+  assert.equal(h.mission(bonus.id), true);
+  assert.equal(h.run('JSON.stringify(dailyMissionCount())'), '{"done":4,"total":4}');
+  assert.ok(reward.badges.some(b => b.id === 'garden_key'));
+});
+
+test('each midterm badge unlocks exactly at its rule and only once', () => {
+  const h = midtermHarness();
+  // Sky Launch: first full round of anything.
+  assert.equal(h.done('vocab:definition', 50).badges.map(b => b.id).join(), 'sky_launch');
+  assert.equal(h.done('vocab:definition', 50).badges.length, 0);
+  // Word Collector: 3 different vocabulary modes at 90%+, review rounds excluded.
+  h.done('vocab:definition', 95); h.done('vocab:word', 90); h.done('vocab:blank', 100, '{reviewOnly:true}');
+  assert.equal(h.badge('word_collector'), false);
+  h.done('vocab:blank', 92);
+  assert.equal(h.badge('word_collector'), true);
+  // Sound Sorter: 100% on a sort game or phonics quiz.
+  h.done('spell:m2_w2_ou_aw_oi_sort', 90);
+  assert.equal(h.badge('sound_sorter'), false);
+  h.done('spell:m2_find_vowel_sound', 100);
+  assert.equal(h.badge('sound_sorter'), true);
+  // Dictation Ace: 100% typed dictation, not listen-and-choose.
+  h.done('spell:m2_w3_r_controlled:choose', 100);
+  assert.equal(h.badge('dictation_ace'), false);
+  h.done('spell:m2_w3_r_controlled:type', 100);
+  assert.equal(h.badge('dictation_ace'), true);
+  // Time Traveler: 90%+ on a Lesson 6, 7 and 8 set.
+  h.done('grammar:l6-present-continuous', 90); h.done('grammar:mng-l7-book', 95); h.done('grammar:l8-past-irregular', 85);
+  assert.equal(h.badge('time_traveler'), false);
+  h.done('grammar:mng-l8-book', 100);
+  assert.equal(h.badge('time_traveler'), true);
+  // Story Navigator and Watchful Listener: every passage / dialogue.
+  const passages = midterm.reading.passages.map(p => p.id);
+  passages.slice(0, -1).forEach(id => h.done('reading:' + id, 60));
+  h.done('reading:' + passages.at(-1), 60, '{reviewOnly:true}');
+  assert.equal(h.badge('story_navigator'), false);
+  h.done('reading:' + passages.at(-1), 60);
+  assert.equal(h.badge('story_navigator'), true);
+  const dialogues = midterm.listening.dialogues.map(d => d.id);
+  dialogues.slice(0, -1).forEach(id => h.done('listen:' + id, 60));
+  assert.equal(h.badge('watchful_listener'), false);
+  h.done('listen:' + dialogues.at(-1), 60);
+  assert.equal(h.badge('watchful_listener'), true);
+  // Storm Tamer: had a missed question, then cleared every one.
+  assert.equal(h.badge('storm_tamer'), false);
+  h.run("recordMissed('grammar:tense-mix', {id:'tm-01', label:'tm-01', title:'Tense Mix'})");
+  assert.equal(h.run("unlockBadges('status', NaN).length"), 0);
+  h.run("clearMissed('grammar:tense-mix', 'tm-01')");
+  assert.equal(h.run("unlockBadges('status', NaN).map(b => b.id).join()"), 'storm_tamer');
+});
+
+test('Spring in Bloom needs all missions finished on 3 different days', () => {
+  const h = midtermHarness();
+  const finishDay = () => {
+    h.done('reading:three_poems', 70); h.done('spell:m2_w2_aw_pattern_sort', 70); h.done('grammar:tense-mix', 75);
+    h.done(h.run('dailyMissions()[3].topic') === 'vocab' ? 'vocab:word' : 'listen:the_airship_exhibit', 70);
+  };
+  for (const [i, day] of ['2026-11-01', '2026-11-02', '2026-11-03'].entries()) {
+    h.setDay(day);
+    assert.equal(h.badge('spring_bloom'), false, 'before day ' + (i + 1));
+    finishDay();
+    assert.equal(h.badge('garden_key'), true);
+  }
+  assert.equal(h.badge('spring_bloom'), true);
+  assert.equal(h.run('Object.keys(ensureExamGame().missionDays).length'), 3);
+});

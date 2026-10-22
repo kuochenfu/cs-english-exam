@@ -1,5 +1,5 @@
 {
-  "_comment": "currentExamId = the test to feature and open first. defaultExamId is legacy: it only maps pre-namespace progress keys to the April midterm.",
+  "_comment": "currentExamId = the test to feature and open first. defaultExamId is legacy: it only maps pre-namespace progress keys to the April midterm. An exam with \"game\": true loads data/exams/<id>/game.json for its own missions and badges.",
   "currentExamId": "2026-11-midterm",
   "defaultExamId": "2026-04-midterm",
   "exams": [
@@ -56,7 +56,8 @@
       "module": 2,
       "weeks": "1-3",
       "status": "Practice ready (generated; waiting on Module 2 homework)",
-      "available": true
+      "available": true,
+      "game": true
     }
   ]
 }

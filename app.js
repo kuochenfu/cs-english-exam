@@ -66,6 +66,8 @@ function ensureExamGame() {
     };
   }
   game[id].completedActivities ||= { reading: {}, listen: {} };
+  game[id].scores ||= {};
+  game[id].missionDays ||= {};
   return game[id];
 }
 
@@ -79,6 +81,7 @@ function ensureTodayGame() {
       stars: 0
     };
   }
+  examGame.dates[today].missions ||= {};
   return examGame.dates[today];
 }
 
@@ -108,7 +111,27 @@ function topicHasPractice(topicId) {
   return topicIsAvailable(topicId);
 }
 
+// A test's game.json may define its own missions and badges; other tests use the defaults.
+function activeBadges() {
+  return data.game?.badges?.length ? data.game.badges : BADGES;
+}
+
+// A key matches its exact topic id or that id's sub-activities; a key ending in ":" is a prefix.
+function topicMatches(topicId, keys = []) {
+  return keys.some(key => key.endsWith(":") ? topicId.startsWith(key) : topicId === key || topicId.startsWith(`${key}:`));
+}
+
+function dayNumber() {
+  const [y, m, d] = todayString().split("-").map(Number);
+  return Math.floor(Date.UTC(y, m - 1, d) / 86400000);
+}
+
 function dailyMissions() {
+  if (data.game?.missions?.length) {
+    return data.game.missions
+      .map(m => m.rotate?.length ? m.rotate[dayNumber() % m.rotate.length] : m)
+      .filter(m => topicHasPractice(m.topic));
+  }
   return [
     { id: "reading", topic: "reading", text: "Complete one reading passage" },
     { id: "spell", topic: "spell", text: "Practice phonics or spelling" },
@@ -118,11 +141,45 @@ function dailyMissions() {
   ].filter(m => topicHasPractice(m.topic)).slice(0, 3);
 }
 
+function missionDone(mission, today = ensureTodayGame()) {
+  return data.game?.missions?.length ? !!today.missions[mission.id] : !!today.topics[mission.topic];
+}
+
 function dailyMissionCount() {
   const today = ensureTodayGame();
   const missions = dailyMissions();
-  const done = missions.filter(m => today.topics[m.topic]).length;
+  const done = missions.filter(m => missionDone(m, today)).length;
   return { done, total: missions.length };
+}
+
+function evaluateBadgeRule(rule, examGame) {
+  const best = key => Object.entries(examGame.scores).filter(([id]) => topicMatches(id, [key])).map(([, pct]) => pct);
+  switch (rule?.type) {
+    case "rounds":
+      return Object.values(examGame.totals).reduce((sum, n) => sum + n, 0) >= (rule.count || 1);
+    case "todayMissions": {
+      const { done, total } = dailyMissionCount();
+      return total > 0 && done >= total;
+    }
+    case "missionDays":
+      return Object.keys(examGame.missionDays).length >= (rule.count || 1);
+    case "scores":
+      return Object.entries(examGame.scores).filter(([id, pct]) => topicMatches(id, rule.keys) && pct >= rule.min).length >= (rule.count || 1);
+    case "groups":
+      return rule.groups.every(keys => keys.some(key => best(key).some(pct => pct >= rule.min)));
+    case "activities": {
+      const done = Object.keys(examGame.completedActivities[rule.category] || {}).length;
+      const all = rule.category === "reading"
+        ? (data.reading?.passages || []).filter(p => p.questions?.length).length
+        : (data.listening?.dialogues || []).filter(d => d.questions?.length).length;
+      const needed = rule.count === "all" ? all : rule.count;
+      return needed > 0 && done >= needed;
+    }
+    case "bossClear":
+      return examGame.hadMissed && totalMissedForCurrentExam() === 0;
+    default:
+      return false;
+  }
 }
 
 function totalMissedForCurrentExam() {
@@ -138,6 +195,15 @@ function unlockBadges(topicId, pct) {
   const category = topicCategory(topicId);
   const { done, total } = dailyMissionCount();
   const earned = [];
+  if (data.game?.badges?.length) {
+    data.game.badges.forEach(b => {
+      if (!examGame.badges[b.id] && evaluateBadgeRule(b.rule, examGame)) {
+        examGame.badges[b.id] = todayString();
+        earned.push(b);
+      }
+    });
+    return earned;
+  }
   const canEarn = {
     first_quest: Object.values(examGame.totals).reduce((sum, n) => sum + n, 0) >= 1,
     daily_hero: total > 0 && done >= total,
@@ -168,6 +234,15 @@ function recordGameCompletion(topicId, pct, correct, total, { reviewOnly = false
 
   if (fullActivity) today.topics[category] = true;
   if (fullActivity && ["reading", "listen"].includes(category)) examGame.completedActivities[category][topicId] = true;
+  // Review-missed rounds are easier subsets, so only full rounds set scores and missions.
+  if (!reviewOnly) {
+    examGame.scores[topicId] = Math.max(examGame.scores[topicId] || 0, pct);
+    dailyMissions().forEach(m => {
+      if (m.match && topicMatches(topicId, m.match) && pct >= (m.minPct || 0)) today.missions[m.id] = true;
+    });
+  }
+  const missionCount = dailyMissionCount();
+  if (missionCount.total > 0 && missionCount.done >= missionCount.total) examGame.missionDays[todayString()] = true;
   today.completions++;
   today.stars += starsEarned;
   examGame.stars += starsEarned;
@@ -492,9 +567,11 @@ async function loadExam(examId) {
   if (!exam) return false;
   try {
     const values = await Promise.all(DATA_FILES.map(f => fetchJSON(`data/exams/${exam.id}/${f}.json`)));
+    const gameConfig = exam.game ? await fetchJSON(`data/exams/${exam.id}/game.json`) : null;
     if (request !== loadRequest) return false;
     // Commit the entire test together; never render a mixture of two tests.
     DATA_FILES.forEach((f, i) => { data[f] = values[i]; });
+    data.game = gameConfig;
     currentExam = exam;
     localStorage.setItem(EXAM_KEY, exam.id);
     markExamsSeen([exam.id]);
@@ -603,7 +680,7 @@ function dailyMissionsHTML() {
     <div class="mission-head">
       <div>
         <h3>Today's Missions</h3>
-        <p class="mission-help">Finish each round to complete a mission. Reading and listening require the full activity. Missions reset each day; earned badges stay.</p>
+        <p class="mission-help">${esc(data.game?.missionHelp || "Finish each round to complete a mission. Reading and listening require the full activity. Missions reset each day; earned badges stay.")}</p>
         <p>${done}/${total} complete</p>
       </div>
       <div class="mission-ring" aria-label="${done} of ${total} daily missions complete">${done}/${total}</div>
@@ -611,7 +688,7 @@ function dailyMissionsHTML() {
     <div class="mission-list">
       ${missions.map(m => {
         const meta = TOPIC_META[m.topic];
-        const complete = !!today.topics[m.topic];
+        const complete = missionDone(m, today);
         return `<button class="mission ${complete ? "complete" : ""}" data-mission-topic="${meta.id}">
           <span>${complete ? "✓" : meta.icon}</span>
           <span>${m.text}</span>
@@ -635,12 +712,13 @@ function badgesHTML() {
   // A correct final answer may be followed by navigation before the round ends.
   const recovered = unlockBadges("status", NaN);
   if (recovered.length) saveGame();
-  const count = BADGES.filter(b => examGame.badges[b.id]).length;
+  const badges = activeBadges();
+  const count = badges.filter(b => examGame.badges[b.id]).length;
   return `<div class="badges-panel">
     <h3>🐱🦊 Cat &amp; Fox Badge Collection</h3>
-    <p class="badge-collection-progress">${count} / ${BADGES.length} unlocked · Complete quests with your cat and fox companions!</p>
+    <p class="badge-collection-progress">${count} / ${badges.length} unlocked · ${esc(data.game?.badgeIntro || "Complete quests with your cat and fox companions!")}</p>
     <div class="badges">
-      ${BADGES.map(b => badgeHTML(b, !!examGame.badges[b.id], recovered.some(earned => earned.id === b.id))).join("")}
+      ${badges.map(b => badgeHTML(b, !!examGame.badges[b.id], recovered.some(earned => earned.id === b.id))).join("")}
     </div>
   </div>`;
 }
@@ -667,7 +745,7 @@ function renderHome() {
         </div>
       </div>
       ${dailyMissionsHTML()}
-      ${missedTotal ? `<button id="boss-review" class="boss-button">💥 Boss Review · ${missedTotal} missed</button>` : `<div class="boss-clear">${examGame.badges.boss_defeated ? "💥 Boss defeated: no missed questions waiting." : "No missed questions waiting. Wrong answers will appear in Boss Review."}</div>`}
+      ${missedTotal ? `<button id="boss-review" class="boss-button">💥 Boss Review · ${missedTotal} missed</button>` : `<div class="boss-clear">${activeBadges().some(b => (b.rule?.type === "bossClear" || b.id === "boss_defeated") && examGame.badges[b.id]) ? "💥 Boss defeated: no missed questions waiting." : "No missed questions waiting. Wrong answers will appear in Boss Review."}</div>`}
       <h3>Quest Map</h3>
       <div class="cards quest-map">
         ${topics.map(t => {
@@ -1305,7 +1383,7 @@ function dictation(list, reviewOnly = false) {
   function finish() {
     const pct = Math.round((correct/order.length)*100);
     writeProgress(topicId, pct);
-    const reward = recordGameCompletion(topicId, pct, correct, order.length);
+    const reward = recordGameCompletion(topicId, pct, correct, order.length, { reviewOnly });
     renderContent(`
       <div class="panel">
         <h2>🎉 Done!</h2>
@@ -1350,7 +1428,7 @@ function sortGame(list, reviewOnly = false) {
       const right = Object.entries(placed).filter(([w,g]) => wordGroup[w] === g).length;
       const pct = Math.round((right/total)*100);
       writeProgress(topicId, pct);
-      finalReward = recordGameCompletion(topicId, pct, right, total);
+      finalReward = recordGameCompletion(topicId, pct, right, total, { reviewOnly });
       finalRecorded = true;
     }
 

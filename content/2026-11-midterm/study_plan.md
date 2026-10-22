@@ -47,6 +47,7 @@ All five topics are generated from the notice, the word list, and standard rules
 | Grammar | Generated + textbook | Lessons 4-5 review; Lessons 6-8 textbook exercises copied as MCQ sets (`mng-l6-book`, `mng-l7-book`, `mng-l8-book`: 21 / 28 / 24 items); quick-guide cards aligned to the textbook rule boxes (-ing / -ed spelling and exceptions, -ed pronunciation, time words, the 28-verb irregular table); plus generated L6-8 sets |
 | Reading | Generated | Original passages in the Module 2 genres (adventure, drama, informational, poetry). Anchor charts rebuilt 2026-10-22 from web research: 7 focus skills, each with a new poster, 5 worked examples, and a quick check (see `anchor_charts.md`) |
 | Listening | Generated | 5 original dialogues on Module 2 themes |
+| Missions & badges | Done 2026-10-22 | 4 daily missions and 10 Module 2 cat & fox badges (see `game.md`) |
 | Oral / Writing | Not in app | App has no oral or writing topic |
 
 ## Missing Reference Material (log)
