@@ -1,0 +1,1054 @@
+{
+  "lists": [
+    {
+      "id": "m2_w1_oo_yoo",
+      "title": "Module 2 Week 1 — /ōō/ and /yōō/ (Dictation)",
+      "words": [
+        {
+          "word": "accuse",
+          "sentence": "Please don't accuse me of eating the last cookie."
+        },
+        {
+          "word": "assume",
+          "sentence": "Don't assume the test will be easy just because the first one was."
+        },
+        {
+          "word": "avenue",
+          "sentence": "Our school is on a wide avenue lined with maple trees."
+        },
+        {
+          "word": "choose",
+          "sentence": "You may choose any book from the top shelf."
+        },
+        {
+          "word": "confuse",
+          "sentence": "Too many rules can confuse new players."
+        },
+        {
+          "word": "cruise",
+          "sentence": "We went on a cruise along the coast of Alaska."
+        },
+        {
+          "word": "glue",
+          "sentence": "Use glue to stick the photo onto your poster."
+        },
+        {
+          "word": "jewel",
+          "sentence": "The queen's crown had a bright red jewel in the center."
+        },
+        {
+          "word": "lose",
+          "sentence": "Try not to lose your library card."
+        },
+        {
+          "word": "route",
+          "sentence": "The bus driver took a shorter route to school today."
+        },
+        {
+          "word": "view",
+          "sentence": "The view from the top of the mountain was amazing."
+        },
+        {
+          "word": "youth",
+          "sentence": "In his youth, my grandpa lived on a rice farm."
+        }
+      ]
+    },
+    {
+      "id": "m2_w2_ou_aw_oi",
+      "title": "Module 2 Week 2 — /ou/, /ô/, and /oi/ (Dictation)",
+      "words": [
+        {
+          "word": "auction",
+          "sentence": "The old painting was sold to the highest bidder at an auction."
+        },
+        {
+          "word": "avoid",
+          "sentence": "Walk around the puddle to avoid getting your shoes wet."
+        },
+        {
+          "word": "awkward",
+          "sentence": "There was an awkward silence after his joke fell flat."
+        },
+        {
+          "word": "coward",
+          "sentence": "The lion in the story was called a coward because he was afraid of everything."
+        },
+        {
+          "word": "haunt",
+          "sentence": "Some people believe ghosts haunt the old house on the hill."
+        },
+        {
+          "word": "launch",
+          "sentence": "The space team will launch the rocket at dawn."
+        },
+        {
+          "word": "moist",
+          "sentence": "Keep the soil moist so the seeds can sprout."
+        },
+        {
+          "word": "naughty",
+          "sentence": "The naughty puppy chewed a hole in my sneaker."
+        },
+        {
+          "word": "pounce",
+          "sentence": "The cat crouched low, ready to pounce on the toy mouse."
+        },
+        {
+          "word": "poison",
+          "sentence": "Some wild mushrooms contain poison, so never eat them."
+        },
+        {
+          "word": "saucer",
+          "sentence": "She set the teacup on a matching saucer."
+        },
+        {
+          "word": "sprawl",
+          "sentence": "After the long hike, I like to sprawl on the grass and rest."
+        }
+      ]
+    },
+    {
+      "id": "m2_w3_r_controlled",
+      "title": "Module 2 Week 3 — /ôr/, /âr/, and /är/ (Dictation)",
+      "words": [
+        {
+          "word": "absorb",
+          "sentence": "A sponge can absorb a lot of water."
+        },
+        {
+          "word": "aware",
+          "sentence": "Are you aware that the science test is on Thursday?"
+        },
+        {
+          "word": "barely",
+          "sentence": "I could barely see the road through the thick fog."
+        },
+        {
+          "word": "beware",
+          "sentence": "The sign on the gate said, \"Beware of the dog.\""
+        },
+        {
+          "word": "dairy",
+          "sentence": "Milk, cheese, and yogurt are all dairy foods."
+        },
+        {
+          "word": "ordeal",
+          "sentence": "Getting lost in the woods overnight was a scary ordeal."
+        },
+        {
+          "word": "pardon",
+          "sentence": "Pardon me, may I squeeze past you?"
+        },
+        {
+          "word": "soar",
+          "sentence": "Eagles soar high above the mountains."
+        },
+        {
+          "word": "torch",
+          "sentence": "The explorer lit a torch to see inside the dark cave."
+        },
+        {
+          "word": "vary",
+          "sentence": "The prices of fruit vary from season to season."
+        },
+        {
+          "word": "warn",
+          "sentence": "The lifeguard will warn swimmers about the strong current."
+        }
+      ]
+    },
+    {
+      "id": "m2_w1_oo_yoo_sort",
+      "title": "Phonics — /ōō/ or /yōō/? (Week 1)",
+      "sortGame": true,
+      "groups": {
+        "/ōō/ as in moon": [
+          "assume",
+          "choose",
+          "cruise",
+          "glue",
+          "jewel",
+          "lose",
+          "route",
+          "youth",
+          "tooth"
+        ],
+        "/yōō/ as in cute": [
+          "accuse",
+          "confuse",
+          "view",
+          "cute",
+          "few",
+          "huge",
+          "music",
+          "rescue"
+        ]
+      }
+    },
+    {
+      "id": "m2_w1_oo_yoo_pattern_sort",
+      "title": "Phonics — /ōō/ and /yōō/ Spelling Patterns (Week 1)",
+      "sortGame": true,
+      "groups": {
+        "oo": [
+          "choose",
+          "tooth",
+          "scoop"
+        ],
+        "ue": [
+          "glue",
+          "avenue",
+          "rescue",
+          "value"
+        ],
+        "ew / iew": [
+          "jewel",
+          "few",
+          "view",
+          "review"
+        ],
+        "u_e": [
+          "accuse",
+          "assume",
+          "confuse",
+          "huge"
+        ],
+        "ou": [
+          "route",
+          "youth",
+          "soup",
+          "group"
+        ],
+        "ui": [
+          "cruise",
+          "fruit",
+          "suit"
+        ],
+        "o_e": [
+          "lose",
+          "move",
+          "prove"
+        ]
+      }
+    },
+    {
+      "id": "m2_w2_ou_aw_oi_sort",
+      "title": "Phonics — /ou/, /ô/, or /oi/? (Week 2)",
+      "sortGame": true,
+      "groups": {
+        "/ou/ as in cow": [
+          "coward",
+          "pounce",
+          "crowd",
+          "mouth",
+          "howl"
+        ],
+        "/ô/ as in saw": [
+          "auction",
+          "awkward",
+          "haunt",
+          "launch",
+          "naughty",
+          "saucer",
+          "sprawl",
+          "caught"
+        ],
+        "/oi/ as in boy": [
+          "avoid",
+          "moist",
+          "poison",
+          "loyal",
+          "choice"
+        ]
+      }
+    },
+    {
+      "id": "m2_w2_ou_oi_pattern_sort",
+      "title": "Phonics — /ou/ and /oi/ Spelling Patterns (Week 2)",
+      "sortGame": true,
+      "groups": {
+        "ou": [
+          "pounce",
+          "mouth",
+          "cloud",
+          "account"
+        ],
+        "ow": [
+          "coward",
+          "crowd",
+          "howl",
+          "towel"
+        ],
+        "oi": [
+          "avoid",
+          "moist",
+          "poison",
+          "choice"
+        ],
+        "oy": [
+          "loyal",
+          "enjoy",
+          "oyster",
+          "annoy"
+        ]
+      }
+    },
+    {
+      "id": "m2_w2_aw_pattern_sort",
+      "title": "Phonics — /ô/ Spelling Patterns (Week 2)",
+      "sortGame": true,
+      "groups": {
+        "au": [
+          "auction",
+          "haunt",
+          "launch",
+          "saucer"
+        ],
+        "aw": [
+          "awkward",
+          "sprawl",
+          "lawn",
+          "crawl"
+        ],
+        "augh": [
+          "naughty",
+          "caught",
+          "daughter"
+        ],
+        "a (before l)": [
+          "talk",
+          "walk",
+          "chalk",
+          "always"
+        ]
+      }
+    },
+    {
+      "id": "m2_w3_r_controlled_sort",
+      "title": "Phonics — /ôr/, /âr/, or /är/? (Week 3)",
+      "sortGame": true,
+      "groups": {
+        "/ôr/ as in more": [
+          "absorb",
+          "ordeal",
+          "soar",
+          "torch",
+          "warn",
+          "store"
+        ],
+        "/âr/ as in care": [
+          "aware",
+          "barely",
+          "beware",
+          "dairy",
+          "vary",
+          "chair"
+        ],
+        "/är/ as in car": [
+          "pardon",
+          "garden",
+          "alarm",
+          "sharp",
+          "carpet"
+        ]
+      }
+    },
+    {
+      "id": "m2_w3_r_pattern_sort",
+      "title": "Phonics — /ôr/ and /âr/ Spelling Patterns (Week 3)",
+      "sortGame": true,
+      "groups": {
+        "or": [
+          "absorb",
+          "ordeal",
+          "torch",
+          "storm"
+        ],
+        "ore / oar": [
+          "soar",
+          "store",
+          "roar",
+          "shore"
+        ],
+        "war (ar says /ôr/)": [
+          "warn",
+          "warm",
+          "reward",
+          "swarm"
+        ],
+        "are": [
+          "aware",
+          "barely",
+          "beware",
+          "compare"
+        ],
+        "air": [
+          "dairy",
+          "chair",
+          "repair",
+          "stairs"
+        ],
+        "ar (says /âr/)": [
+          "vary",
+          "parent",
+          "scarce"
+        ]
+      }
+    },
+    {
+      "id": "m2_find_vowel_sound",
+      "title": "Phonics — Find the Vowel Sound (HW format)",
+      "quiz": true,
+      "intro": "Read the sentence. Which word has the vowel sound you are asked for?",
+      "items": [
+        {
+          "q": "Which word has the /yōō/ sound, as in <i>cute</i>? <i>Please don't accuse Sam of breaking the vase.</i>",
+          "choices": [
+            "Sam",
+            "breaking",
+            "accuse",
+            "vase"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Which word has the /ōō/ sound, as in <i>moon</i>? <i>We will choose a team captain today.</i>",
+          "choices": [
+            "choose",
+            "will",
+            "captain",
+            "today"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which word has the /yōō/ sound? <i>The view from our hotel was lovely.</i>",
+          "choices": [
+            "from",
+            "hotel",
+            "lovely",
+            "view"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Which word has the /ōō/ sound? <i>In her youth, Grandma loved to dance.</i>",
+          "choices": [
+            "her",
+            "youth",
+            "Grandma",
+            "dance"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Which word has the /ōō/ sound? <i>The ship will cruise past the island at night.</i>",
+          "choices": [
+            "ship",
+            "cruise",
+            "island",
+            "night"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Which word has the /yōō/ sound? <i>The long math rules confuse my little brother.</i>",
+          "choices": [
+            "long",
+            "rules",
+            "brother",
+            "confuse"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Which word has the /ou/ sound, as in <i>cow</i>? <i>The cat waited to pounce on the ball.</i>",
+          "choices": [
+            "pounce",
+            "cat",
+            "waited",
+            "ball"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which word has the /ô/ sound, as in <i>saw</i>? <i>The naughty kitten knocked over my cup.</i>",
+          "choices": [
+            "kitten",
+            "knocked",
+            "naughty",
+            "over"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Which word has the /oi/ sound, as in <i>boy</i>? <i>Keep the sponge moist while you clean.</i>",
+          "choices": [
+            "keep",
+            "sponge",
+            "clean",
+            "moist"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Which word has the /ô/ sound? <i>They will launch the boat at noon.</i>",
+          "choices": [
+            "launch",
+            "will",
+            "boat",
+            "noon"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which word has the /ou/ sound? <i>Only a coward runs from a friend in trouble.</i>",
+          "choices": [
+            "only",
+            "friend",
+            "coward",
+            "trouble"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Which word has the /ô/ sound? <i>We bid on a bike at the school auction.</i>",
+          "choices": [
+            "bid",
+            "auction",
+            "bike",
+            "school"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Which word has the /oi/ sound? <i>Try to avoid the icy patch on the sidewalk.</i>",
+          "choices": [
+            "avoid",
+            "try",
+            "icy",
+            "patch"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which word has the /ôr/ sound, as in <i>more</i>? <i>Paper towels absorb spills quickly.</i>",
+          "choices": [
+            "paper",
+            "spills",
+            "absorb",
+            "quickly"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Which word has the /âr/ sound, as in <i>care</i>? <i>We were barely on time for the bus.</i>",
+          "choices": [
+            "were",
+            "time",
+            "bus",
+            "barely"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Which word has the /är/ sound, as in <i>car</i>? <i>Pardon me for being late.</i>",
+          "choices": [
+            "being",
+            "pardon",
+            "late",
+            "me"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Which word has the /ôr/ sound? <i>Did anyone warn you about the snowstorm?</i>",
+          "choices": [
+            "anyone",
+            "you",
+            "warn",
+            "about"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Which word has the /âr/ sound? <i>The farm sells fresh dairy products.</i>",
+          "choices": [
+            "dairy",
+            "farm",
+            "sells",
+            "fresh"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which word has the /ôr/ sound? <i>The hawks soar above the valley.</i>",
+          "choices": [
+            "hawks",
+            "soar",
+            "above",
+            "valley"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Which word has the /âr/ sound? <i>Our lunch menus vary each week.</i>",
+          "choices": [
+            "lunch",
+            "menus",
+            "week",
+            "vary"
+          ],
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "m2_vowel_letters_same_sound",
+      "title": "Phonics — Which Letters? Same Sound? (HW format)",
+      "quiz": true,
+      "intro": "Choose the letters that spell the vowel sound, or the word that has the same vowel sound.",
+      "items": [
+        {
+          "q": "<b>jewel</b> — which letters spell the /ōō/ sound?",
+          "choices": [
+            "ue",
+            "oo",
+            "ew",
+            "ui"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "<b>cruise</b> — which letters spell the /ōō/ sound?",
+          "choices": [
+            "ui",
+            "ue",
+            "oo",
+            "ou"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "<b>route</b> — which letters spell the /ōō/ sound?",
+          "choices": [
+            "oo",
+            "u_e",
+            "ew",
+            "ou"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "<b>view</b> — which letters spell the /yōō/ sound?",
+          "choices": [
+            "ue",
+            "iew",
+            "ew",
+            "u_e"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "<b>avenue</b> — which letters spell the vowel sound in the last syllable?",
+          "choices": [
+            "ew",
+            "ue",
+            "u_e",
+            "oo"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "<b>confuse</b> — which letters spell the /yōō/ sound?",
+          "choices": [
+            "ue",
+            "ew",
+            "ou",
+            "u_e"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "<b>poison</b> — which letters spell the /oi/ sound?",
+          "choices": [
+            "oi",
+            "oy",
+            "on",
+            "is"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "<b>coward</b> — which letters spell the /ou/ sound?",
+          "choices": [
+            "ou",
+            "aw",
+            "ow",
+            "ar"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "<b>naughty</b> — which letters spell the /ô/ sound?",
+          "choices": [
+            "au",
+            "aw",
+            "ough",
+            "augh"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "<b>sprawl</b> — which letters spell the /ô/ sound?",
+          "choices": [
+            "aw",
+            "au",
+            "ow",
+            "al"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "<b>saucer</b> — which letters spell the /ô/ sound?",
+          "choices": [
+            "aw",
+            "ou",
+            "au",
+            "ce"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "<b>soar</b> — which letters spell the /ôr/ sound?",
+          "choices": [
+            "ore",
+            "oar",
+            "or",
+            "ar"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "<b>dairy</b> — which letters spell the /âr/ sound?",
+          "choices": [
+            "air",
+            "are",
+            "ar",
+            "ary"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "<b>beware</b> — which letters spell the /âr/ sound?",
+          "choices": [
+            "air",
+            "ear",
+            "are",
+            "ar"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Which word has the same vowel sound as <b>glue</b>?",
+          "choices": [
+            "view",
+            "few",
+            "cute",
+            "youth"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Which word has the same vowel sound as <b>accuse</b>?",
+          "choices": [
+            "lose",
+            "few",
+            "route",
+            "choose"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Which word has the same vowel sound as <b>haunt</b>?",
+          "choices": [
+            "house",
+            "hunt",
+            "caught",
+            "how"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Which word has the same vowel sound as <b>pounce</b>?",
+          "choices": [
+            "crowd",
+            "crawl",
+            "pond",
+            "poison"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which word has the same vowel sound as <b>torch</b>?",
+          "choices": [
+            "farm",
+            "warn",
+            "word",
+            "care"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Which word has the same vowel sound as <b>aware</b>?",
+          "choices": [
+            "dark",
+            "door",
+            "fur",
+            "dairy"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Which word has the same vowel sound as <b>pardon</b>?",
+          "choices": [
+            "sharp",
+            "share",
+            "short",
+            "soar"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "m2_spelled_correctly",
+      "title": "Spelling — Which Word Is Spelled Correctly?",
+      "quiz": true,
+      "intro": "Read the clue. Choose the word that is spelled correctly.",
+      "items": [
+        {
+          "q": "Which word is spelled correctly?",
+          "choices": [
+            "jewl",
+            "juel",
+            "jewel",
+            "jewle"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Which word is spelled correctly? <i>(a wide city street)</i>",
+          "choices": [
+            "avenue",
+            "avenew",
+            "avenu",
+            "avanue"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which word is spelled correctly? <i>(to blame someone)</i>",
+          "choices": [
+            "acuse",
+            "accuze",
+            "akuse",
+            "accuse"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Which word is spelled correctly? <i>(the way you travel)</i>",
+          "choices": [
+            "rowt",
+            "route",
+            "rute",
+            "rowte"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Which word is spelled correctly? <i>(a trip on a ship)</i>",
+          "choices": [
+            "cruse",
+            "cruise",
+            "crewse",
+            "cruize"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Which word is spelled correctly? <i>(the time when you are young)</i>",
+          "choices": [
+            "yooth",
+            "youthe",
+            "yuth",
+            "youth"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Which word is spelled correctly? <i>(to suppose without proof)</i>",
+          "choices": [
+            "assume",
+            "asume",
+            "assoom",
+            "assum"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which word is spelled correctly? <i>(clumsy or uncomfortable)</i>",
+          "choices": [
+            "awkword",
+            "akward",
+            "awkward",
+            "aukward"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Which word is spelled correctly? <i>(a sale where people bid)</i>",
+          "choices": [
+            "awction",
+            "aucshun",
+            "auktion",
+            "auction"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Which word is spelled correctly? <i>(badly behaved)</i>",
+          "choices": [
+            "naughty",
+            "nawghty",
+            "naughtey",
+            "noughty"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which word is spelled correctly? <i>(a small dish for a cup)</i>",
+          "choices": [
+            "sawcer",
+            "saucor",
+            "saucer",
+            "sauser"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Which word is spelled correctly? <i>(slightly wet)</i>",
+          "choices": [
+            "moyst",
+            "moist",
+            "moste",
+            "moisst"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Which word is spelled correctly? <i>(to jump on suddenly)</i>",
+          "choices": [
+            "pounce",
+            "pownce",
+            "pounse",
+            "pownse"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which word is spelled correctly? <i>(to visit as a ghost)</i>",
+          "choices": [
+            "hawnt",
+            "hant",
+            "haunt",
+            "haunte"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Which word is spelled correctly? <i>(a person who is not brave)</i>",
+          "choices": [
+            "couard",
+            "cowerd",
+            "cowward",
+            "coward"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Which word is spelled correctly? <i>(to soak up)</i>",
+          "choices": [
+            "absorbe",
+            "absorb",
+            "abzorb",
+            "absourb"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Which word is spelled correctly? <i>(only just; hardly)</i>",
+          "choices": [
+            "bairly",
+            "barly",
+            "barely",
+            "bearly"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Which word is spelled correctly? <i>(milk, cheese, and yogurt foods)</i>",
+          "choices": [
+            "dairy",
+            "dairey",
+            "dary",
+            "dairie"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which word is spelled correctly? <i>(to fly high in the air)</i>",
+          "choices": [
+            "soer",
+            "soar",
+            "sorr",
+            "soare"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Which word is spelled correctly? <i>(a painful, difficult experience)</i>",
+          "choices": [
+            "ordeel",
+            "oredeal",
+            "ordeale",
+            "ordeal"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Which word is spelled correctly? <i>(to be different; to change)</i>",
+          "choices": [
+            "vary",
+            "vairy",
+            "varey",
+            "verry"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which word is spelled correctly? <i>(knowing about something)</i>",
+          "choices": [
+            "awair",
+            "awear",
+            "awhere",
+            "aware"
+          ],
+          "answer": 3
+        }
+      ]
+    }
+  ]
+}

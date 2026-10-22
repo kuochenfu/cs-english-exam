@@ -1,0 +1,2540 @@
+{
+  "title": "Grammar — Be, Present Simple & Continuous, Past Simple (My Next Grammar, Lessons 4-8)",
+  "intro": "Mixed review across Lessons 4-8: be verbs, present simple, present continuous, past simple regular and irregular verbs. Tense choice from time clues, hidden subjects, error spotting, and rewrites at the Grade 5 high-standard level.",
+  "explanation": {
+    "title": "Be, Present, and Past Tenses Quick Guide",
+    "intro": "期中考 Grammar 範圍是 My Next Grammar Book 2 第 4–8 課：be 動詞、現在簡單式、現在進行式、規則動詞過去式、不規則動詞過去式。第 4–5 課是 Quiz 1 複習，重點在第 6–8 課。看時間線索選時態，再看主詞決定單複數。",
+    "cards": [
+      {
+        "term": "L4 Be — Present & Past",
+        "formula": "I am / he, she, it is / you, we, they are · I, he, she, it was / you, we, they were",
+        "meaning": "be 動詞表示狀態。現在用 am / is / are，過去用 was / were。否定加 not（isn't, wasn't, weren't），問句把 be 移到主詞前面，不需要 do / did。",
+        "examples": [
+          "The garden was locked for ten years.",
+          "The portholes were too small to see out.",
+          "Were you scared during the storm? Yes, I was."
+        ],
+        "verbs": [
+          "am",
+          "is",
+          "are",
+          "was",
+          "were"
+        ]
+      },
+      {
+        "term": "L5 Present Simple",
+        "formula": "he / she / it + verb-s · I / you / we / they + verb · doesn't / don't + base · Does…? Do…?",
+        "meaning": "一般現在式說習慣、事實。第三人稱單數加 -s / -es / -ies。否定和問句用 do / does，後面動詞回到原形。",
+        "examples": [
+          "The poem ends with the same refrain.",
+          "The robin doesn't fly far from the garden.",
+          "Does the captain check the map every morning?"
+        ],
+        "verbs": [
+          "reaches",
+          "studies",
+          "plays",
+          "does",
+          "has"
+        ]
+      },
+      {
+        "term": "L6 Present Continuous — Form",
+        "formula": "am / is / are + verb-ing",
+        "meaning": "現在進行式說「現在正在做」的事。be 動詞要跟主詞一致，後面接 -ing。看到 now、right now、at the moment、Look!、Listen! 就用進行式。",
+        "examples": [
+          "Look! The airship is flying above the clouds.",
+          "The children are watering the roses right now.",
+          "Listen! Someone is singing in the garden."
+        ],
+        "verbs": [
+          "am flying",
+          "is singing",
+          "are watering"
+        ]
+      },
+      {
+        "term": "L6 -ing Spelling",
+        "formula": "make → making · run → running · lie → lying · visit → visiting · begin → beginning · travel → traveling (US)",
+        "meaning": "字尾不發音的 e 去 e 加 -ing；短母音＋單一子音（run, swim, sit）重複子音；ie 改 y 加 -ing（lie, die, tie）。兩個音節的字，重音在最後一節才重複（begin），重音在前面不重複（visit, open）。美式英文 travel → traveling。",
+        "examples": [
+          "Dickon is lying in the grass.",
+          "We are swimming in the lake.",
+          "Mary is visiting the garden again."
+        ],
+        "verbs": [
+          "making",
+          "running",
+          "lying",
+          "visiting",
+          "beginning",
+          "traveling"
+        ]
+      },
+      {
+        "term": "L6 Negatives, Questions & Stative Verbs",
+        "formula": "isn't / aren't + -ing · Is he…ing? Are they…ing? · Yes, he is. / No, they aren't. · know, like, want, believe, belong → no -ing",
+        "meaning": "進行式的否定和問句用 be 動詞，不用 do / does。狀態動詞（知道、喜歡、想要、相信、屬於）表示想法或擁有，不是動作，通常不用進行式。",
+        "examples": [
+          "Colin isn't walking alone. Is Mary helping him? Yes, she is.",
+          "I know the answer. (not: I am knowing)",
+          "This old key belongs to Mary."
+        ],
+        "verbs": [
+          "know",
+          "like",
+          "want",
+          "believe",
+          "belong"
+        ]
+      },
+      {
+        "term": "Simple vs Continuous",
+        "formula": "every day, usually, always, often, never → present simple · now, right now, at the moment, today, Look!, Listen! → present continuous",
+        "meaning": "一般現在式是習慣或事實；現在進行式是此刻正在發生。同一句可能兩個都有：前面說習慣，後面說今天的不同。",
+        "examples": [
+          "Kate usually walks to school, but today she is taking the bus.",
+          "Dickon feeds the birds every day. Look! He is feeding a robin now.",
+          "Water freezes at 0°C."
+        ],
+        "verbs": [
+          "usually walks",
+          "is taking now"
+        ]
+      },
+      {
+        "term": "L7 Past Simple — -ed Spelling",
+        "formula": "play → played · study → studied · stop → stopped · plan → planned · prefer → preferred · visit → visited · hope → hoped",
+        "meaning": "規則動詞過去式加 -ed。字尾 e 只加 -d；子音＋y 改 -ied；母音＋y 直接加 -ed；短母音＋單一子音重複子音（stop, plan, hop）。兩個音節重音在後才重複（prefer, admit），重音在前不重複（visit, open, listen）。seize 是規則動詞：seized。",
+        "examples": [
+          "The robin hopped along the wall. (hope → hoped 是「希望」)",
+          "Mary hesitated, then she opened the door.",
+          "The captain seized the rope just in time."
+        ],
+        "verbs": [
+          "played",
+          "studied",
+          "stopped",
+          "planned",
+          "preferred",
+          "visited",
+          "seized"
+        ]
+      },
+      {
+        "term": "L7 Did / Didn't + Base",
+        "formula": "didn't + base verb · Did + subject + base verb? · Yes, I did. / No, she didn't. · Wh- + did + subject + base?",
+        "meaning": "過去式的否定和問句用 did / didn't，所有主詞都一樣。用了 did，後面動詞一定回到原形，不能再加 -ed 或用不規則過去式。",
+        "examples": [
+          "We didn't visit the museum last weekend.",
+          "Did the airship land safely? Yes, it did.",
+          "Where did they bury the key ten years ago?"
+        ],
+        "verbs": [
+          "did",
+          "didn't",
+          "Did…?"
+        ]
+      },
+      {
+        "term": "Past Time Words & -ed Sounds",
+        "formula": "yesterday · last night / week / spring · two days ago · in 2019 · when I was young",
+        "meaning": "看到這些時間字就用過去式。-ed 有三種發音：t / d 結尾讀 /id/（wanted, needed）；p, k, s, sh, ch 後面讀 /t/（jumped, watched）；其他讀 /d/（played, opened）。",
+        "examples": [
+          "We moved to Taipei in 2019.",
+          "I finished my homework two hours ago.",
+          "wanted /id/ · watched /t/ · played /d/"
+        ],
+        "verbs": [
+          "yesterday",
+          "last…",
+          "…ago",
+          "in + year"
+        ]
+      },
+      {
+        "term": "L8 Irregular Verbs Table",
+        "formula": "go → went · see → saw · take → took · bring → brought · buy → bought · catch → caught · think → thought · teach → taught · fly → flew · begin → began · swim → swam · write → wrote · ride → rode · feel → felt · leave → left · hide → hid · shake → shook · grow → grew · throw → threw",
+        "meaning": "不規則動詞要背。小心長得像的：brought（帶來）/ bought（買）、thought（想）/ taught（教）。過去式 went / saw / wrote 單獨用；gone / seen / written 是過去分詞，前面要有 have / has，不能單獨當過去式。",
+        "examples": [
+          "I saw a shooting star last night. (not: I seen)",
+          "He went to the library an hour ago. (not: He gone)",
+          "The whole airship shook during the storm."
+        ],
+        "verbs": [
+          "went",
+          "saw",
+          "took",
+          "brought",
+          "bought",
+          "caught",
+          "thought",
+          "taught",
+          "flew",
+          "began",
+          "swam",
+          "wrote",
+          "rode",
+          "felt",
+          "left",
+          "hid",
+          "shook",
+          "grew",
+          "threw"
+        ]
+      },
+      {
+        "term": "Tricky Subjects",
+        "formula": "one of / each of / everyone / nobody → singular · subject + phrase → head noun · along with → first subject · news → singular · scissors → plural",
+        "meaning": "高標題常把主詞藏起來。把 of the …、in the …、along with … 蓋住，找真正的主詞再決定 is / are、was / were、verb-s。過去式一般動詞不分單複數，但 was / were 要分。",
+        "examples": [
+          "One of the passengers is looking through the porthole.",
+          "Each of the passengers was looking out the window.",
+          "The captain, along with his crew, is steering the airship."
+        ],
+        "verbs": [
+          "one of",
+          "each of",
+          "everyone",
+          "along with"
+        ]
+      },
+      {
+        "term": "Was / Were vs Did",
+        "formula": "Was / Were + adjective, noun, place, or -ing · Did + base verb",
+        "meaning": "後面是形容詞、名詞、地點或 -ing（狀態）用 was / were；後面是動作動詞原形用 did。不能同時用：Did you were…? 和 Were you go…? 都錯。",
+        "examples": [
+          "Were you at home last night? (place → were)",
+          "Did you see the airship last night? (action → did)",
+          "Was it cold yesterday? Yes, it was."
+        ],
+        "verbs": [
+          "was",
+          "were",
+          "did"
+        ]
+      }
+    ],
+    "tips": [
+      "先看時間線索：now / Look! / Listen! / at the moment → am / is / are + -ing；every day / usually / always → 一般現在式；yesterday / last… / ago / in 2019 → 過去式。",
+      "did、didn't、does、doesn't、do、don't 後面的動詞一律回到原形：didn't go（不是 didn't went）、Did you see（不是 Did you saw）。",
+      "went / saw 是過去式，gone / seen 不能單獨用：I saw it yesterday.（不是 I seen it）",
+      "know、like、want、believe、belong 是狀態動詞，不用 -ing：I want a drink.（不是 I am wanting）",
+      "-ing 拼字：make → making、run → running、lie → lying、visit → visiting、begin → beginning、travel → traveling（美式）。",
+      "-ed 拼字：stop → stopped、plan → planned、prefer → preferred、visit → visited、study → studied、play → played。seize 是規則動詞 → seized。",
+      "小心長得像的字：bought（buy）/ brought（bring）、thought（think）/ taught（teach）、hopped（hop）/ hoped（hope）。",
+      "找真正的主詞：one of / each of / everyone 是單數 → is / was / verb-s；把 of the … 和 along with … 蓋住再看。",
+      "改寫題先確認時態再套公式：過去式否定 didn't + 原形；進行式否定 isn't / aren't + -ing；be 動詞直接加 not。"
+    ]
+  },
+  "items": [
+    {
+      "id": "mix-01",
+      "q": "One of the passengers ____ through the porthole right now.",
+      "choices": [
+        "is looking",
+        "are looking",
+        "looks",
+        "look"
+      ],
+      "answer": 0,
+      "use": "one of + now"
+    },
+    {
+      "id": "mix-02",
+      "q": "Last spring the tendrils ____ all the way up the garden wall.",
+      "choices": [
+        "climbs",
+        "are climbing",
+        "climb",
+        "climbed"
+      ],
+      "answer": 3,
+      "use": "last spring → past"
+    },
+    {
+      "id": "mix-03",
+      "q": "Mary didn't ____ the old key until the robin showed her.",
+      "choices": [
+        "finding",
+        "found",
+        "find",
+        "finds"
+      ],
+      "answer": 2,
+      "use": "didn't + base"
+    },
+    {
+      "id": "mix-04",
+      "q": "Everyone in the hidden garden ____ quiet at the moment.",
+      "choices": [
+        "are",
+        "is",
+        "was",
+        "were"
+      ],
+      "answer": 1,
+      "use": "everyone + at the moment"
+    },
+    {
+      "id": "mix-05",
+      "q": "The airship ____ the city at dawn yesterday.",
+      "choices": [
+        "lefted",
+        "left",
+        "leaved",
+        "leaves"
+      ],
+      "answer": 1,
+      "use": "leave → left"
+    },
+    {
+      "id": "mix-06",
+      "q": "I ____ the answer to this riddle, so I can help you right now.",
+      "choices": [
+        "knows",
+        "knowing",
+        "know",
+        "am knowing"
+      ],
+      "answer": 2,
+      "use": "stative verb"
+    },
+    {
+      "id": "mix-07",
+      "q": "____ the portholes closed during the storm last night?",
+      "choices": [
+        "Were",
+        "Was",
+        "Are",
+        "Did"
+      ],
+      "answer": 0,
+      "use": "was / were vs did"
+    },
+    {
+      "id": "mix-08",
+      "q": "____ the captain see the storm coming last night?",
+      "choices": [
+        "Were",
+        "Does",
+        "Was",
+        "Did"
+      ],
+      "answer": 3,
+      "use": "was / were vs did"
+    },
+    {
+      "id": "mix-09",
+      "q": "My brother ____ the piano every day, but right now he ____ a poem.",
+      "choices": [
+        "practices / is writing",
+        "is practicing / writes",
+        "practice / is writing",
+        "practices / writes"
+      ],
+      "answer": 0,
+      "use": "habit vs now"
+    },
+    {
+      "id": "mix-10",
+      "q": "The class ____ a picnic last Friday, so we ____ our lunch boxes.",
+      "choices": [
+        "planed / brought",
+        "planned / bringed",
+        "planned / brought",
+        "plans / brought"
+      ],
+      "answer": 2,
+      "use": "-ed spelling + irregular"
+    },
+    {
+      "id": "mix-11",
+      "q": "Look! Dickon ____ in the grass with the fox cub.",
+      "choices": [
+        "is lieing",
+        "is lyeing",
+        "lies",
+        "is lying"
+      ],
+      "answer": 3,
+      "use": "lie → lying"
+    },
+    {
+      "id": "mix-12",
+      "q": "Which word is spelled correctly?",
+      "choices": [
+        "stoped",
+        "preferred",
+        "visitted",
+        "prefered"
+      ],
+      "answer": 1,
+      "use": "-ed doubling"
+    },
+    {
+      "id": "mix-13",
+      "q": "Which sentence is correct?",
+      "choices": [
+        "We didn't see the airship yesterday.",
+        "We not saw the airship yesterday.",
+        "We didn't seen the airship yesterday.",
+        "We didn't saw the airship yesterday."
+      ],
+      "answer": 0,
+      "use": "error spotting"
+    },
+    {
+      "id": "mix-14",
+      "q": "Which sentence has a mistake?",
+      "choices": [
+        "Where did you go last weekend?",
+        "Where were you last weekend?",
+        "Where did you went last weekend?",
+        "Where are you going now?"
+      ],
+      "answer": 2,
+      "use": "error spotting"
+    },
+    {
+      "id": "mix-15",
+      "q": "The news about the airship ____ exciting, so everyone ____ talking about it now.",
+      "choices": [
+        "are / is",
+        "is / are",
+        "are / are",
+        "is / is"
+      ],
+      "answer": 3,
+      "use": "news / everyone → singular"
+    },
+    {
+      "id": "mix-16",
+      "q": "My grandparents ____ in Tainan in 2019, but now they ____ in Taipei.",
+      "choices": [
+        "lived / lives",
+        "lived / live",
+        "were live / live",
+        "live / lived"
+      ],
+      "answer": 1,
+      "use": "in 2019 vs now"
+    },
+    {
+      "id": "mix-17",
+      "q": "Mary ____ for a moment, then she ____ the door.",
+      "choices": [
+        "hesitates / opening",
+        "hesitate / opened",
+        "hesitated / opened",
+        "hesitated / open"
+      ],
+      "answer": 2,
+      "use": "past regular"
+    },
+    {
+      "id": "mix-18",
+      "q": "Change to a question: \"Colin walked by himself.\"",
+      "choices": [
+        "Did Colin walked by himself?",
+        "Does Colin walked by himself?",
+        "Was Colin walk by himself?",
+        "Did Colin walk by himself?"
+      ],
+      "answer": 3,
+      "use": "question"
+    },
+    {
+      "id": "mix-19",
+      "q": "Change to negative: \"The children are singing the refrain.\"",
+      "choices": [
+        "The children isn't singing the refrain.",
+        "The children aren't singing the refrain.",
+        "The children aren't sing the refrain.",
+        "The children don't singing the refrain."
+      ],
+      "answer": 1,
+      "use": "negative"
+    },
+    {
+      "id": "mix-20",
+      "q": "The scissors ____ on my desk an hour ago, but now they ____ gone.",
+      "choices": [
+        "were / are",
+        "was / are",
+        "was / is",
+        "were / is"
+      ],
+      "answer": 0,
+      "use": "scissors → plural"
+    },
+    {
+      "id": "mix-21",
+      "q": "Each of the poets ____ a poem at the festival every year.",
+      "choices": [
+        "are reading",
+        "reading",
+        "reads",
+        "read"
+      ],
+      "answer": 2,
+      "use": "each of + habit"
+    },
+    {
+      "id": "mix-22",
+      "q": "Ms. Chen ____ us the refrain last week, so we can sing it now.",
+      "choices": [
+        "teaches",
+        "thought",
+        "teached",
+        "taught"
+      ],
+      "answer": 3,
+      "use": "teach → taught"
+    },
+    {
+      "id": "mix-23",
+      "q": "At the moment, the gardener ____ some roses because he ____ them for the party.",
+      "choices": [
+        "is cutting / wants",
+        "is cutting / is wanting",
+        "is cuting / wants",
+        "cuts / is wanting"
+      ],
+      "answer": 0,
+      "use": "continuous + stative"
+    },
+    {
+      "id": "mix-24",
+      "q": "\"Did they witness the landing?\" \"No, they ____.\"",
+      "choices": [
+        "weren't",
+        "didn't",
+        "wasn't",
+        "don't"
+      ],
+      "answer": 1,
+      "use": "short answer"
+    }
+  ],
+  "practiceSets": [
+    {
+      "id": "l4-be-review",
+      "title": "Lesson 4 Review — Present and Past: Be",
+      "description": "Quiz 1 review: am / is / are / was / were with hidden subjects, there is / are, tags, short answers, and error spotting.",
+      "items": [
+        {
+          "id": "l4r-01",
+          "q": "One of my cousins ____ a pilot.",
+          "choices": [
+            "am",
+            "is",
+            "were",
+            "are"
+          ],
+          "answer": 1,
+          "use": "one of → singular"
+        },
+        {
+          "id": "l4r-02",
+          "q": "The boxes on the top shelf ____ too heavy for me.",
+          "choices": [
+            "am",
+            "is",
+            "are",
+            "was"
+          ],
+          "answer": 2,
+          "use": "head noun boxes"
+        },
+        {
+          "id": "l4r-03",
+          "q": "Everyone in my family ____ at the concert last night.",
+          "choices": [
+            "are",
+            "is",
+            "were",
+            "was"
+          ],
+          "answer": 3,
+          "use": "everyone + past"
+        },
+        {
+          "id": "l4r-04",
+          "q": "Each of the gadgets ____ broken when we opened the box.",
+          "choices": [
+            "was",
+            "is",
+            "are",
+            "were"
+          ],
+          "answer": 0,
+          "use": "each of + past"
+        },
+        {
+          "id": "l4r-05",
+          "q": "There ____ a pencil and two erasers in my bag.",
+          "choices": [
+            "are",
+            "were",
+            "is",
+            "am"
+          ],
+          "answer": 2,
+          "use": "there + nearest noun"
+        },
+        {
+          "id": "l4r-06",
+          "q": "There ____ so many people at the park yesterday that we couldn't find a bench.",
+          "choices": [
+            "were",
+            "are",
+            "was",
+            "is"
+          ],
+          "answer": 0,
+          "use": "there were"
+        },
+        {
+          "id": "l4r-07",
+          "q": "The twins ____ at school yesterday, ____ they?",
+          "choices": [
+            "weren't / weren't",
+            "were / weren't",
+            "wasn't / was",
+            "aren't / are"
+          ],
+          "answer": 1,
+          "use": "tag question"
+        },
+        {
+          "id": "l4r-08",
+          "q": "How old ____ you when you learned to ride a bike?",
+          "choices": [
+            "are",
+            "is",
+            "was",
+            "were"
+          ],
+          "answer": 3,
+          "use": "wh- question past"
+        },
+        {
+          "id": "l4r-09",
+          "q": "\"____ the movie boring?\" \"No, it ____. It was great.\"",
+          "choices": [
+            "Is / wasn't",
+            "Were / weren't",
+            "Was / isn't",
+            "Was / wasn't"
+          ],
+          "answer": 3,
+          "use": "short answer past"
+        },
+        {
+          "id": "l4r-10",
+          "q": "Neither my brother nor I ____ ready for the quiz yesterday.",
+          "choices": [
+            "were",
+            "is",
+            "was",
+            "are"
+          ],
+          "answer": 2,
+          "use": "neither…nor → nearest subject"
+        },
+        {
+          "id": "l4r-11",
+          "q": "Which sentence has a mistake?",
+          "choices": [
+            "There is many reasons to brush your teeth.",
+            "There is one reason to brush your teeth.",
+            "There were many reasons to brush your teeth.",
+            "There are many reasons to brush your teeth."
+          ],
+          "answer": 0,
+          "use": "error spotting"
+        },
+        {
+          "id": "l4r-12",
+          "q": "The garden ____ locked for ten years before Mary found the key.",
+          "choices": [
+            "is",
+            "was",
+            "are",
+            "were"
+          ],
+          "answer": 1,
+          "use": "past state"
+        },
+        {
+          "id": "l4r-13",
+          "q": "The portholes on the old airship ____ so small that it was hard to see out.",
+          "choices": [
+            "are",
+            "were",
+            "was",
+            "is"
+          ],
+          "answer": 1,
+          "use": "plural + past"
+        },
+        {
+          "id": "l4r-14",
+          "q": "____ the passengers afraid during the storm last night?",
+          "choices": [
+            "Did",
+            "Are",
+            "Were",
+            "Was"
+          ],
+          "answer": 2,
+          "use": "be question past"
+        },
+        {
+          "id": "l4r-15",
+          "q": "Change to negative: \"Each of the poems was about spring.\"",
+          "choices": [
+            "Each of the poems weren't about spring.",
+            "Each of the poems didn't about spring.",
+            "Each of the poems wasn't be about spring.",
+            "Each of the poems wasn't about spring."
+          ],
+          "answer": 3,
+          "use": "transformation"
+        },
+        {
+          "id": "l4r-16",
+          "q": "\"Were you at the poetry reading yesterday?\" \"Yes, I ____.\"",
+          "choices": [
+            "was",
+            "am",
+            "were",
+            "did"
+          ],
+          "answer": 0,
+          "use": "short answer"
+        }
+      ]
+    },
+    {
+      "id": "l5-present-simple-review",
+      "title": "Lesson 5 Review — Present Simple",
+      "description": "Quiz 1 review: verb + s / es / ies, hidden subjects, do / does negatives and questions, be vs do.",
+      "items": [
+        {
+          "id": "l5r-01",
+          "q": "One of my friends ____ in Kaohsiung.",
+          "choices": [
+            "is live",
+            "lives",
+            "live",
+            "living"
+          ],
+          "answer": 1,
+          "use": "one of → singular"
+        },
+        {
+          "id": "l5r-02",
+          "q": "Each of the students ____ a locker.",
+          "choices": [
+            "has",
+            "is have",
+            "haves",
+            "have"
+          ],
+          "answer": 0,
+          "use": "each of → has"
+        },
+        {
+          "id": "l5r-03",
+          "q": "Nobody ____ to be late for the field trip.",
+          "choices": [
+            "are wanting",
+            "is want",
+            "want",
+            "wants"
+          ],
+          "answer": 3,
+          "use": "nobody → singular"
+        },
+        {
+          "id": "l5r-04",
+          "q": "My friends who are in the band ____ me to join.",
+          "choices": [
+            "wants",
+            "is wanting",
+            "want",
+            "are want"
+          ],
+          "answer": 2,
+          "use": "subject + who clause"
+        },
+        {
+          "id": "l5r-05",
+          "q": "Either my mom or my dad ____ me up after school.",
+          "choices": [
+            "pick",
+            "are picking",
+            "picking",
+            "picks"
+          ],
+          "answer": 3,
+          "use": "either…or → nearest subject"
+        },
+        {
+          "id": "l5r-06",
+          "q": "My cousin ____ math every evening and ____ hard on every test.",
+          "choices": [
+            "studys / trys",
+            "studies / trys",
+            "studies / tries",
+            "study / tries"
+          ],
+          "answer": 2,
+          "use": "y → ies"
+        },
+        {
+          "id": "l5r-07",
+          "q": "How often ____ he ____ the piano?",
+          "choices": [
+            "do / practice",
+            "does / practice",
+            "is / practice",
+            "does / practices"
+          ],
+          "answer": 1,
+          "use": "wh- question"
+        },
+        {
+          "id": "l5r-08",
+          "q": "____ your brother like soccer?",
+          "choices": [
+            "Does",
+            "Is",
+            "Are",
+            "Do"
+          ],
+          "answer": 0,
+          "use": "be vs do"
+        },
+        {
+          "id": "l5r-09",
+          "q": "Most people from England ____ Japanese.",
+          "choices": [
+            "not speak",
+            "do not speaks",
+            "does not speak",
+            "do not speak"
+          ],
+          "answer": 3,
+          "use": "most people → plural"
+        },
+        {
+          "id": "l5r-10",
+          "q": "Which sentence has a mistake?",
+          "choices": [
+            "Does your sister drink coffee?",
+            "Does your sister drinks coffee?",
+            "Your sister does not drink coffee.",
+            "Do your sisters drink coffee?"
+          ],
+          "answer": 1,
+          "use": "error spotting"
+        },
+        {
+          "id": "l5r-11",
+          "q": "Change to a question: \"Jimmy and Alexia understand the rules.\"",
+          "choices": [
+            "Do Jimmy and Alexia understand the rules?",
+            "Are Jimmy and Alexia understand the rules?",
+            "Do Jimmy and Alexia understands the rules?",
+            "Does Jimmy and Alexia understand the rules?"
+          ],
+          "answer": 0,
+          "use": "transformation"
+        },
+        {
+          "id": "l5r-12",
+          "q": "Each of the tendrils ____ toward the sun in spring.",
+          "choices": [
+            "reach",
+            "reachs",
+            "reaches",
+            "is reach"
+          ],
+          "answer": 2,
+          "use": "each of + -es"
+        },
+        {
+          "id": "l5r-13",
+          "q": "The poem ____ with the same refrain every time we read it.",
+          "choices": [
+            "end",
+            "is end",
+            "ending",
+            "ends"
+          ],
+          "answer": 3,
+          "use": "verb + s"
+        },
+        {
+          "id": "l5r-14",
+          "q": "Mary and Dickon ____ the garden a secret from everyone.",
+          "choices": [
+            "keeps",
+            "keeping",
+            "keep",
+            "is keep"
+          ],
+          "answer": 2,
+          "use": "plural subject"
+        },
+        {
+          "id": "l5r-15",
+          "q": "The captain of the airship never ____ before a storm.",
+          "choices": [
+            "hesitates",
+            "hesitate",
+            "is hesitate",
+            "hesitating"
+          ],
+          "answer": 0,
+          "use": "never + verb-s"
+        },
+        {
+          "id": "l5r-16",
+          "q": "Change to negative: \"The robin flies to the garden wall.\"",
+          "choices": [
+            "The robin don't fly to the garden wall.",
+            "The robin doesn't fly to the garden wall.",
+            "The robin doesn't flies to the garden wall.",
+            "The robin isn't fly to the garden wall."
+          ],
+          "answer": 1,
+          "use": "transformation"
+        }
+      ]
+    },
+    {
+      "id": "l6-present-continuous",
+      "title": "Lesson 6 — Present Continuous",
+      "description": "-ing spelling, am / is / are + -ing with hidden subjects, negatives, questions, short answers, stative verbs, and present simple vs continuous.",
+      "items": [
+        {
+          "id": "l6-01",
+          "q": "Which is the correct -ing form of \"make\"?",
+          "choices": [
+            "makeng",
+            "makking",
+            "making",
+            "makeing"
+          ],
+          "answer": 2,
+          "use": "drop silent e"
+        },
+        {
+          "id": "l6-02",
+          "q": "Which is the correct -ing form of \"run\"?",
+          "choices": [
+            "runing",
+            "running",
+            "runnning",
+            "runeing"
+          ],
+          "answer": 1,
+          "use": "double the consonant"
+        },
+        {
+          "id": "l6-03",
+          "q": "Which is the correct -ing form of \"lie\"?",
+          "choices": [
+            "lying",
+            "liing",
+            "lyeing",
+            "lieing"
+          ],
+          "answer": 0,
+          "use": "ie → y + ing"
+        },
+        {
+          "id": "l6-04",
+          "q": "Which is the correct -ing form of \"travel\" in American English?",
+          "choices": [
+            "travelng",
+            "traveleing",
+            "travling",
+            "traveling"
+          ],
+          "answer": 3,
+          "use": "US: travel → traveling"
+        },
+        {
+          "id": "l6-05",
+          "q": "Which is the correct -ing form of \"visit\"?",
+          "choices": [
+            "visiteing",
+            "visitng",
+            "visiting",
+            "visitting"
+          ],
+          "answer": 2,
+          "use": "stress on first syllable → no doubling"
+        },
+        {
+          "id": "l6-06",
+          "q": "Which is the correct -ing form of \"begin\"?",
+          "choices": [
+            "begining",
+            "begineing",
+            "beginnin",
+            "beginning"
+          ],
+          "answer": 3,
+          "use": "stress on last syllable → double"
+        },
+        {
+          "id": "l6-07",
+          "q": "Which -ing form is spelled correctly?",
+          "choices": [
+            "comeing",
+            "swimming",
+            "siting",
+            "writting"
+          ],
+          "answer": 1,
+          "use": "-ing spelling"
+        },
+        {
+          "id": "l6-08",
+          "q": "Which -ing form is spelled WRONG?",
+          "choices": [
+            "hopeing",
+            "dying",
+            "tying",
+            "lying"
+          ],
+          "answer": 0,
+          "use": "-ing spelling"
+        },
+        {
+          "id": "l6-09",
+          "q": "Look! The airship ____ above the clouds.",
+          "choices": [
+            "is flying",
+            "flies",
+            "are flying",
+            "fly"
+          ],
+          "answer": 0,
+          "use": "Look! → now"
+        },
+        {
+          "id": "l6-10",
+          "q": "Listen! Someone ____ a song about the secret garden.",
+          "choices": [
+            "are singing",
+            "sings",
+            "is singing",
+            "singing"
+          ],
+          "answer": 2,
+          "use": "Listen! → now"
+        },
+        {
+          "id": "l6-11",
+          "q": "Each of the girls ____ a poem at the moment.",
+          "choices": [
+            "are writing",
+            "were writing",
+            "writes",
+            "is writing"
+          ],
+          "answer": 3,
+          "use": "each of + at the moment"
+        },
+        {
+          "id": "l6-12",
+          "q": "Everyone in the class ____ quietly now because the test has started.",
+          "choices": [
+            "work",
+            "is working",
+            "are working",
+            "works"
+          ],
+          "answer": 1,
+          "use": "everyone → is"
+        },
+        {
+          "id": "l6-13",
+          "q": "The children in the hidden garden ____ the roses right now.",
+          "choices": [
+            "are watering",
+            "waters",
+            "water",
+            "is watering"
+          ],
+          "answer": 0,
+          "use": "plural + right now"
+        },
+        {
+          "id": "l6-14",
+          "q": "The captain, along with his crew, ____ the airship through the storm right now.",
+          "choices": [
+            "steering",
+            "are steering",
+            "is steering",
+            "steers"
+          ],
+          "answer": 2,
+          "use": "along with → main subject"
+        },
+        {
+          "id": "l6-15",
+          "q": "Mary ____ in the garden now. She is in her room.",
+          "choices": [
+            "doesn't working",
+            "isn't working",
+            "not working",
+            "aren't working"
+          ],
+          "answer": 1,
+          "use": "negative"
+        },
+        {
+          "id": "l6-16",
+          "q": "We ____ the movie right now; we are doing our homework.",
+          "choices": [
+            "not are watching",
+            "isn't watching",
+            "don't watching",
+            "aren't watching"
+          ],
+          "answer": 3,
+          "use": "negative"
+        },
+        {
+          "id": "l6-17",
+          "q": "____ the captain ____ the airship now?",
+          "choices": [
+            "Is / steering",
+            "Is / steers",
+            "Does / steering",
+            "Are / steering"
+          ],
+          "answer": 0,
+          "use": "question"
+        },
+        {
+          "id": "l6-18",
+          "q": "What ____ you ____ at the moment?",
+          "choices": [
+            "are / read",
+            "is / reading",
+            "do / reading",
+            "are / reading"
+          ],
+          "answer": 3,
+          "use": "wh- question"
+        },
+        {
+          "id": "l6-19",
+          "q": "\"Are the tendrils climbing up the wall?\" \"Yes, ____.\"",
+          "choices": [
+            "it is",
+            "they do",
+            "they are",
+            "they climbing"
+          ],
+          "answer": 2,
+          "use": "short answer"
+        },
+        {
+          "id": "l6-20",
+          "q": "\"Is Colin walking by himself now?\" \"No, he ____.\"",
+          "choices": [
+            "doesn't",
+            "isn't",
+            "aren't",
+            "not"
+          ],
+          "answer": 1,
+          "use": "short answer"
+        },
+        {
+          "id": "l6-21",
+          "q": "I ____ the answer to this riddle.",
+          "choices": [
+            "know",
+            "am knowing",
+            "knowing",
+            "are know"
+          ],
+          "answer": 0,
+          "use": "stative: know"
+        },
+        {
+          "id": "l6-22",
+          "q": "This old key ____ to Mary now.",
+          "choices": [
+            "is belonging",
+            "belongs",
+            "belong",
+            "are belonging"
+          ],
+          "answer": 1,
+          "use": "stative: belong"
+        },
+        {
+          "id": "l6-23",
+          "q": "Right now, Mary ____ that the garden is still alive.",
+          "choices": [
+            "believing",
+            "believe",
+            "is believing",
+            "believes"
+          ],
+          "answer": 3,
+          "use": "stative: believe"
+        },
+        {
+          "id": "l6-24",
+          "q": "My brother ____ a new bike, so he ____ his money these days.",
+          "choices": [
+            "want / is saving",
+            "wants / save",
+            "wants / is saving",
+            "is wanting / saves"
+          ],
+          "answer": 2,
+          "use": "stative + continuous"
+        },
+        {
+          "id": "l6-25",
+          "q": "Look! Dickon ____ a robin. He ____ birds very much.",
+          "choices": [
+            "feeds / is liking",
+            "feeds / likes",
+            "is feeding / likes",
+            "is feeding / is liking"
+          ],
+          "answer": 2,
+          "use": "action vs stative"
+        },
+        {
+          "id": "l6-26",
+          "q": "Kate usually ____ to school, but today she ____ the bus.",
+          "choices": [
+            "walks / takes",
+            "is walking / takes",
+            "walk / is taking",
+            "walks / is taking"
+          ],
+          "answer": 3,
+          "use": "usually vs today"
+        },
+        {
+          "id": "l6-27",
+          "q": "The sun ____ in the east every morning.",
+          "choices": [
+            "rises",
+            "rise",
+            "are rising",
+            "is rising"
+          ],
+          "answer": 0,
+          "use": "every morning → simple"
+        },
+        {
+          "id": "l6-28",
+          "q": "Which sentence is correct?",
+          "choices": [
+            "She writing a poem now.",
+            "She is writing a poem now.",
+            "She is writeing a poem now.",
+            "She are writing a poem now."
+          ],
+          "answer": 1,
+          "use": "error spotting"
+        },
+        {
+          "id": "l6-29",
+          "q": "Which sentence has a mistake?",
+          "choices": [
+            "I am wanting a glass of water.",
+            "I want a glass of water.",
+            "I am drinking a glass of water.",
+            "She is pouring a glass of water."
+          ],
+          "answer": 0,
+          "use": "error spotting"
+        }
+      ]
+    },
+    {
+      "id": "l7-past-regular",
+      "title": "Lesson 7 — Past Simple: Regular Verbs",
+      "description": "-ed spelling rules, did / didn't + base verb, questions, short answers, past time words, and -ed sounds.",
+      "items": [
+        {
+          "id": "l7-01",
+          "q": "What is the past form of \"stop\"?",
+          "choices": [
+            "stopped",
+            "stopeed",
+            "stopt",
+            "stoped"
+          ],
+          "answer": 0,
+          "use": "CVC → double"
+        },
+        {
+          "id": "l7-02",
+          "q": "What is the past form of \"study\"?",
+          "choices": [
+            "studed",
+            "studieed",
+            "studyed",
+            "studied"
+          ],
+          "answer": 3,
+          "use": "consonant + y → ied"
+        },
+        {
+          "id": "l7-03",
+          "q": "What is the past form of \"play\"?",
+          "choices": [
+            "plaed",
+            "playyed",
+            "played",
+            "plaied"
+          ],
+          "answer": 2,
+          "use": "vowel + y → ed"
+        },
+        {
+          "id": "l7-04",
+          "q": "What is the past form of \"plan\"?",
+          "choices": [
+            "planneed",
+            "planned",
+            "planed",
+            "plannd"
+          ],
+          "answer": 1,
+          "use": "CVC → double"
+        },
+        {
+          "id": "l7-05",
+          "q": "What is the past form of \"prefer\"?",
+          "choices": [
+            "preferrd",
+            "preferd",
+            "preferred",
+            "prefered"
+          ],
+          "answer": 2,
+          "use": "stress on last syllable → double"
+        },
+        {
+          "id": "l7-06",
+          "q": "What is the past form of \"visit\"?",
+          "choices": [
+            "visited",
+            "visitied",
+            "visitted",
+            "visitd"
+          ],
+          "answer": 0,
+          "use": "stress on first syllable → no doubling"
+        },
+        {
+          "id": "l7-07",
+          "q": "Which word is spelled correctly?",
+          "choices": [
+            "enjoied",
+            "carried",
+            "droped",
+            "hurryed"
+          ],
+          "answer": 1,
+          "use": "-ed spelling"
+        },
+        {
+          "id": "l7-08",
+          "q": "Which past form is spelled WRONG?",
+          "choices": [
+            "opened",
+            "hoped",
+            "listened",
+            "admited"
+          ],
+          "answer": 3,
+          "use": "-ed spelling"
+        },
+        {
+          "id": "l7-09",
+          "q": "Mary ____ to open the rusty door yesterday, but it was stuck.",
+          "choices": [
+            "attempts",
+            "attempted",
+            "is attempting",
+            "attempt"
+          ],
+          "answer": 1,
+          "use": "yesterday → past"
+        },
+        {
+          "id": "l7-10",
+          "q": "The robin ____ along the top of the old wall last spring.",
+          "choices": [
+            "hopped",
+            "hoped",
+            "hops",
+            "hopes"
+          ],
+          "answer": 0,
+          "use": "hop → hopped (not hoped)"
+        },
+        {
+          "id": "l7-11",
+          "q": "Mary ____ for a moment before she turned the key.",
+          "choices": [
+            "hesitates",
+            "hesitating",
+            "hesitated",
+            "hesitate"
+          ],
+          "answer": 2,
+          "use": "past sequence"
+        },
+        {
+          "id": "l7-12",
+          "q": "Yesterday the captain ____ the rope just in time.",
+          "choices": [
+            "seizing",
+            "seizes",
+            "sieze",
+            "seized"
+          ],
+          "answer": 3,
+          "use": "seize is regular"
+        },
+        {
+          "id": "l7-13",
+          "q": "Long ago, someone ____ a strange message on the garden wall.",
+          "choices": [
+            "scrawl",
+            "scrawls",
+            "scrawling",
+            "scrawled"
+          ],
+          "answer": 3,
+          "use": "long ago → past"
+        },
+        {
+          "id": "l7-14",
+          "q": "Many people ____ the airship's first flight in 1910.",
+          "choices": [
+            "witnessed",
+            "witnesses",
+            "witnessing",
+            "witness"
+          ],
+          "answer": 0,
+          "use": "in + year → past"
+        },
+        {
+          "id": "l7-15",
+          "q": "The warm spring sun ____ the sleeping garden last April.",
+          "choices": [
+            "awaken",
+            "awakened",
+            "awakening",
+            "awakens"
+          ],
+          "answer": 1,
+          "use": "last April → past"
+        },
+        {
+          "id": "l7-16",
+          "q": "Dickon gently ____ the excited fox cub when it tried to run away.",
+          "choices": [
+            "restrains",
+            "restrain",
+            "restrained",
+            "restraining"
+          ],
+          "answer": 2,
+          "use": "past + when clause"
+        },
+        {
+          "id": "l7-17",
+          "q": "We didn't ____ the museum last weekend.",
+          "choices": [
+            "visits",
+            "visiting",
+            "visited",
+            "visit"
+          ],
+          "answer": 3,
+          "use": "didn't + base"
+        },
+        {
+          "id": "l7-18",
+          "q": "____ you ____ your grandma last Sunday?",
+          "choices": [
+            "Did / call",
+            "Did / called",
+            "Do / called",
+            "Were / call"
+          ],
+          "answer": 0,
+          "use": "Did + base"
+        },
+        {
+          "id": "l7-19",
+          "q": "Where ____ they ____ the old key ten years ago?",
+          "choices": [
+            "did / buried",
+            "did / bury",
+            "do / buried",
+            "were / bury"
+          ],
+          "answer": 1,
+          "use": "wh- question past"
+        },
+        {
+          "id": "l7-20",
+          "q": "\"Did the airship land safely?\" \"Yes, it ____.\"",
+          "choices": [
+            "landed",
+            "was",
+            "did",
+            "does"
+          ],
+          "answer": 2,
+          "use": "short answer"
+        },
+        {
+          "id": "l7-21",
+          "q": "We moved to Taipei ____.",
+          "choices": [
+            "right now",
+            "next year",
+            "every day",
+            "in 2019"
+          ],
+          "answer": 3,
+          "use": "past time words"
+        },
+        {
+          "id": "l7-22",
+          "q": "I ____ my homework two hours ____.",
+          "choices": [
+            "finished / ago",
+            "finishing / ago",
+            "finish / ago",
+            "finished / last"
+          ],
+          "answer": 0,
+          "use": "ago"
+        },
+        {
+          "id": "l7-23",
+          "q": "Which time phrase does NOT go with the past simple?",
+          "choices": [
+            "last night",
+            "in 2020",
+            "right now",
+            "three days ago"
+          ],
+          "answer": 2,
+          "use": "past time words"
+        },
+        {
+          "id": "l7-24",
+          "q": "Last spring the tendrils ____ up the wall and ____ the gate.",
+          "choices": [
+            "climbed / cover",
+            "climbed / covered",
+            "climb / cover",
+            "climbs / covers"
+          ],
+          "answer": 1,
+          "use": "both verbs past"
+        },
+        {
+          "id": "l7-25",
+          "q": "Which sentence is correct?",
+          "choices": [
+            "We didn't watched the show last night.",
+            "We don't watched the show last night.",
+            "We not watched the show last night.",
+            "We didn't watch the show last night."
+          ],
+          "answer": 3,
+          "use": "error spotting"
+        },
+        {
+          "id": "l7-26",
+          "q": "Which sentence has a mistake?",
+          "choices": [
+            "Did you enjoyed the trip?",
+            "We didn't enjoy the trip.",
+            "Did you enjoy the trip?",
+            "You enjoyed the trip."
+          ],
+          "answer": 0,
+          "use": "error spotting"
+        },
+        {
+          "id": "l7-27",
+          "q": "In which word does -ed add an extra syllable (sounds like /id/)?",
+          "choices": [
+            "cleaned",
+            "jumped",
+            "wanted",
+            "played"
+          ],
+          "answer": 2,
+          "use": "-ed pronunciation"
+        },
+        {
+          "id": "l7-28",
+          "q": "In which word does -ed sound like /t/?",
+          "choices": [
+            "needed",
+            "watched",
+            "opened",
+            "played"
+          ],
+          "answer": 1,
+          "use": "-ed pronunciation"
+        }
+      ]
+    },
+    {
+      "id": "l8-past-irregular",
+      "title": "Lesson 8 — Past Tense: Irregular Verbs",
+      "description": "Common irregular verbs, went vs gone and saw vs seen, didn't + base form errors, and look-alikes like bought / brought.",
+      "items": [
+        {
+          "id": "l8-01",
+          "q": "What is the past form of \"go\"?",
+          "choices": [
+            "goed",
+            "gone",
+            "wented",
+            "went"
+          ],
+          "answer": 3,
+          "use": "go → went"
+        },
+        {
+          "id": "l8-02",
+          "q": "I ____ a shooting star last night.",
+          "choices": [
+            "saw",
+            "seed",
+            "see",
+            "seen"
+          ],
+          "answer": 0,
+          "use": "see → saw (not seen)"
+        },
+        {
+          "id": "l8-03",
+          "q": "Last summer we ____ to Japan for our vacation.",
+          "choices": [
+            "flied",
+            "flown",
+            "flew",
+            "flyed"
+          ],
+          "answer": 2,
+          "use": "fly → flew"
+        },
+        {
+          "id": "l8-04",
+          "q": "My uncle ____ me a kite from Japan last week.",
+          "choices": [
+            "brung",
+            "brought",
+            "brang",
+            "bringed"
+          ],
+          "answer": 1,
+          "use": "bring → brought"
+        },
+        {
+          "id": "l8-05",
+          "q": "Mom ____ some flower seeds at the market yesterday.",
+          "choices": [
+            "bought",
+            "buyed",
+            "boughten",
+            "buys"
+          ],
+          "answer": 0,
+          "use": "buy → bought"
+        },
+        {
+          "id": "l8-06",
+          "q": "The boy ____ a big fish last weekend.",
+          "choices": [
+            "cought",
+            "caught",
+            "catched",
+            "catches"
+          ],
+          "answer": 1,
+          "use": "catch → caught"
+        },
+        {
+          "id": "l8-07",
+          "q": "I ____ the test was easy, but it wasn't.",
+          "choices": [
+            "thank",
+            "taught",
+            "thought",
+            "thinked"
+          ],
+          "answer": 2,
+          "use": "think → thought"
+        },
+        {
+          "id": "l8-08",
+          "q": "Ms. Lin ____ us a new poem yesterday.",
+          "choices": [
+            "thought",
+            "teaches",
+            "teached",
+            "taught"
+          ],
+          "answer": 3,
+          "use": "teach → taught"
+        },
+        {
+          "id": "l8-09",
+          "q": "The storm ____ just after the airship left the dock.",
+          "choices": [
+            "begins",
+            "began",
+            "beginned",
+            "begun"
+          ],
+          "answer": 1,
+          "use": "begin → began"
+        },
+        {
+          "id": "l8-10",
+          "q": "We ____ in the lake yesterday afternoon.",
+          "choices": [
+            "swimmed",
+            "swum",
+            "swam",
+            "swim"
+          ],
+          "answer": 2,
+          "use": "swim → swam"
+        },
+        {
+          "id": "l8-11",
+          "q": "Mary ____ a letter to her uncle last night.",
+          "choices": [
+            "wrote",
+            "writes",
+            "written",
+            "writed"
+          ],
+          "answer": 0,
+          "use": "write → wrote"
+        },
+        {
+          "id": "l8-12",
+          "q": "Dickon ____ his pony to the garden yesterday.",
+          "choices": [
+            "rides",
+            "ridden",
+            "rided",
+            "rode"
+          ],
+          "answer": 3,
+          "use": "ride → rode"
+        },
+        {
+          "id": "l8-13",
+          "q": "Colin ____ much stronger after a week in the garden last spring.",
+          "choices": [
+            "feeled",
+            "felt",
+            "feels",
+            "fell"
+          ],
+          "answer": 1,
+          "use": "feel → felt"
+        },
+        {
+          "id": "l8-14",
+          "q": "The airship ____ the city at dawn yesterday.",
+          "choices": [
+            "leaves",
+            "leaved",
+            "lefted",
+            "left"
+          ],
+          "answer": 3,
+          "use": "leave → left"
+        },
+        {
+          "id": "l8-15",
+          "q": "Mary ____ the key under her pillow last night.",
+          "choices": [
+            "hid",
+            "hides",
+            "hided",
+            "hidden"
+          ],
+          "answer": 0,
+          "use": "hide → hid"
+        },
+        {
+          "id": "l8-16",
+          "q": "The whole airship ____ during the storm last night.",
+          "choices": [
+            "shakes",
+            "shaken",
+            "shook",
+            "shaked"
+          ],
+          "answer": 2,
+          "use": "shake → shook"
+        },
+        {
+          "id": "l8-17",
+          "q": "The roses ____ quickly last spring.",
+          "choices": [
+            "grew",
+            "grown",
+            "growed",
+            "grows"
+          ],
+          "answer": 0,
+          "use": "grow → grew"
+        },
+        {
+          "id": "l8-18",
+          "q": "He ____ the ball over the garden wall yesterday.",
+          "choices": [
+            "thrown",
+            "through",
+            "throwed",
+            "threw"
+          ],
+          "answer": 3,
+          "use": "throw → threw"
+        },
+        {
+          "id": "l8-19",
+          "q": "\"Where's Ben?\" \"He ____ to the library an hour ago.\"",
+          "choices": [
+            "gone",
+            "goed",
+            "went",
+            "going"
+          ],
+          "answer": 2,
+          "use": "went vs gone"
+        },
+        {
+          "id": "l8-20",
+          "q": "We didn't ____ to the park yesterday.",
+          "choices": [
+            "goes",
+            "go",
+            "went",
+            "gone"
+          ],
+          "answer": 1,
+          "use": "didn't + base"
+        },
+        {
+          "id": "l8-21",
+          "q": "Did you ____ the airship from your window last night?",
+          "choices": [
+            "seen",
+            "sees",
+            "saw",
+            "see"
+          ],
+          "answer": 3,
+          "use": "Did + base"
+        },
+        {
+          "id": "l8-22",
+          "q": "Which sentence is correct?",
+          "choices": [
+            "She didn't taken the bus.",
+            "She not took the bus.",
+            "She didn't take the bus.",
+            "She didn't took the bus."
+          ],
+          "answer": 2,
+          "use": "error spotting"
+        },
+        {
+          "id": "l8-23",
+          "q": "Which sentence has a mistake?",
+          "choices": [
+            "I seen the movie yesterday.",
+            "I didn't see the movie yesterday.",
+            "I saw the movie yesterday.",
+            "Did you see the movie yesterday?"
+          ],
+          "answer": 0,
+          "use": "saw vs seen"
+        },
+        {
+          "id": "l8-24",
+          "q": "Which sentence has a mistake?",
+          "choices": [
+            "Mary went into the garden.",
+            "Mary didn't went into the garden.",
+            "Did Mary go into the garden?",
+            "Mary didn't go into the garden."
+          ],
+          "answer": 1,
+          "use": "didn't + base"
+        },
+        {
+          "id": "l8-25",
+          "q": "Mary ____ the door and ____ into the garden.",
+          "choices": [
+            "open / stepped",
+            "opend / stepped",
+            "opened / steped",
+            "opened / stepped"
+          ],
+          "answer": 3,
+          "use": "regular -ed"
+        },
+        {
+          "id": "l8-26",
+          "q": "Last night I ____ a strange noise and ____ under my blanket.",
+          "choices": [
+            "heared / hid",
+            "heard / hid",
+            "heard / hided",
+            "hear / hide"
+          ],
+          "answer": 1,
+          "use": "hear → heard, hide → hid"
+        },
+        {
+          "id": "l8-27",
+          "q": "Which verb has a REGULAR past form?",
+          "choices": [
+            "teach",
+            "bring",
+            "seize",
+            "catch"
+          ],
+          "answer": 2,
+          "use": "seize → seized"
+        },
+        {
+          "id": "l8-28",
+          "q": "Which pair is NOT correct?",
+          "choices": [
+            "shake → shaked",
+            "fly → flew",
+            "seize → seized",
+            "throw → threw"
+          ],
+          "answer": 0,
+          "use": "irregular check"
+        },
+        {
+          "id": "l8-29",
+          "q": "The poet ____ a poem that never ended, and we ____ the refrain again and again.",
+          "choices": [
+            "written / sang",
+            "writed / singed",
+            "wrote / sung",
+            "wrote / sang"
+          ],
+          "answer": 3,
+          "use": "write → wrote, sing → sang"
+        },
+        {
+          "id": "l8-30",
+          "q": "Who ____ you how to ride a bike?",
+          "choices": [
+            "teached",
+            "taught",
+            "teach",
+            "thought"
+          ],
+          "answer": 1,
+          "use": "teach → taught"
+        },
+        {
+          "id": "l8-31",
+          "q": "We ____ our lunch to the garden and ____ under a big tree.",
+          "choices": [
+            "taked / sat",
+            "took / sitted",
+            "took / sat",
+            "take / sat"
+          ],
+          "answer": 2,
+          "use": "take → took, sit → sat"
+        },
+        {
+          "id": "l8-32",
+          "q": "\"Did you buy a new notebook?\" \"Yes, I ____ one yesterday.\"",
+          "choices": [
+            "bought",
+            "brought",
+            "did bought",
+            "buyed"
+          ],
+          "answer": 0,
+          "use": "buy vs bring"
+        }
+      ]
+    },
+    {
+      "id": "challenge-rewrite",
+      "title": "Challenge — Rewrite and Error Spotting",
+      "description": "Change sentences into negatives, yes/no questions, and wh- questions; find and fix the mistake; was / were vs did.",
+      "items": [
+        {
+          "id": "ch-01",
+          "q": "Change to negative: \"The airship flew over the mountains.\"",
+          "choices": [
+            "The airship didn't flew over the mountains.",
+            "The airship doesn't flew over the mountains.",
+            "The airship wasn't fly over the mountains.",
+            "The airship didn't fly over the mountains."
+          ],
+          "answer": 3,
+          "use": "negative past"
+        },
+        {
+          "id": "ch-02",
+          "q": "Change to a question: \"Mary found the key.\"",
+          "choices": [
+            "Was Mary find the key?",
+            "Did Mary find the key?",
+            "Does Mary found the key?",
+            "Did Mary found the key?"
+          ],
+          "answer": 1,
+          "use": "question past"
+        },
+        {
+          "id": "ch-03",
+          "q": "Ask about the place: \"They planted roses in the hidden garden.\"",
+          "choices": [
+            "Where did they plant roses?",
+            "Where did they planted roses?",
+            "Where they planted roses?",
+            "Where were they plant roses?"
+          ],
+          "answer": 0,
+          "use": "wh- question"
+        },
+        {
+          "id": "ch-04",
+          "q": "Change to negative: \"The children are playing in the garden.\"",
+          "choices": [
+            "The children don't playing in the garden.",
+            "The children aren't play in the garden.",
+            "The children aren't playing in the garden.",
+            "The children isn't playing in the garden."
+          ],
+          "answer": 2,
+          "use": "negative continuous"
+        },
+        {
+          "id": "ch-05",
+          "q": "Change to a question: \"Colin is walking on his own.\"",
+          "choices": [
+            "Is Colin walks on his own?",
+            "Is Colin walking on his own?",
+            "Does Colin walking on his own?",
+            "Are Colin walking on his own?"
+          ],
+          "answer": 1,
+          "use": "question continuous"
+        },
+        {
+          "id": "ch-06",
+          "q": "Ask about the thing: \"Ben is reading a poem.\"",
+          "choices": [
+            "What is Ben reading?",
+            "What Ben is reading?",
+            "What is Ben read?",
+            "What does Ben reading?"
+          ],
+          "answer": 0,
+          "use": "wh- question"
+        },
+        {
+          "id": "ch-07",
+          "q": "Ask about the number: \"Sam bought three books yesterday.\"",
+          "choices": [
+            "How many books did Sam bought yesterday?",
+            "How many books was Sam buy yesterday?",
+            "How many books did Sam buy yesterday?",
+            "How many books Sam bought yesterday?"
+          ],
+          "answer": 2,
+          "use": "wh- question"
+        },
+        {
+          "id": "ch-08",
+          "q": "Change to negative: \"Dickon talks to animals.\"",
+          "choices": [
+            "Dickon isn't talk to animals.",
+            "Dickon don't talk to animals.",
+            "Dickon doesn't talks to animals.",
+            "Dickon doesn't talk to animals."
+          ],
+          "answer": 3,
+          "use": "negative present"
+        },
+        {
+          "id": "ch-09",
+          "q": "Ask about the person: \"Somebody seized the map.\"",
+          "choices": [
+            "Who was seize the map?",
+            "Who did seized the map?",
+            "Who seized the map?",
+            "Who seize the map?"
+          ],
+          "answer": 2,
+          "use": "subject question"
+        },
+        {
+          "id": "ch-10",
+          "q": "Ask about the thing: \"The captain saw a strange light.\"",
+          "choices": [
+            "What the captain saw?",
+            "What did the captain see?",
+            "What was the captain see?",
+            "What did the captain saw?"
+          ],
+          "answer": 1,
+          "use": "wh- question"
+        },
+        {
+          "id": "ch-11",
+          "q": "Change to negative: \"The portholes were open.\"",
+          "choices": [
+            "The portholes didn't were open.",
+            "The portholes wasn't open.",
+            "The portholes not were open.",
+            "The portholes weren't open."
+          ],
+          "answer": 3,
+          "use": "negative be"
+        },
+        {
+          "id": "ch-12",
+          "q": "Rewrite with \"yesterday\": \"She writes a poem every day.\"",
+          "choices": [
+            "She wrote a poem yesterday.",
+            "She writed a poem yesterday.",
+            "She was write a poem yesterday.",
+            "She written a poem yesterday."
+          ],
+          "answer": 0,
+          "use": "rewrite tense"
+        },
+        {
+          "id": "ch-13",
+          "q": "Rewrite with \"right now\": \"I read a book.\"",
+          "choices": [
+            "I reading a book right now.",
+            "I am reading a book right now.",
+            "I am read a book right now.",
+            "I is reading a book right now."
+          ],
+          "answer": 1,
+          "use": "rewrite tense"
+        },
+        {
+          "id": "ch-14",
+          "q": "Which question is correct?",
+          "choices": [
+            "Were you scared during the storm?",
+            "Did you were scared during the storm?",
+            "Was you scared during the storm?",
+            "Did you scared during the storm?"
+          ],
+          "answer": 0,
+          "use": "was / were vs did"
+        },
+        {
+          "id": "ch-15",
+          "q": "Which sentence is correct?",
+          "choices": [
+            "Did Mary hesitate before she open the door?",
+            "Did Mary hesitated before she opened the door?",
+            "Does Mary hesitated before she opened the door?",
+            "Did Mary hesitate before she opened the door?"
+          ],
+          "answer": 3,
+          "use": "error spotting"
+        },
+        {
+          "id": "ch-16",
+          "q": "Which sentence has a mistake?",
+          "choices": [
+            "Did he go to the zoo yesterday?",
+            "Yesterday he went to the zoo.",
+            "Yesterday he goed to the zoo.",
+            "Yesterday he didn't go to the zoo."
+          ],
+          "answer": 2,
+          "use": "error spotting"
+        },
+        {
+          "id": "ch-17",
+          "q": "Which sentence has a mistake?",
+          "choices": [
+            "The robin is belonging to the garden.",
+            "The robin is singing in the garden.",
+            "The robin lives in the garden.",
+            "The robin belongs to the garden."
+          ],
+          "answer": 0,
+          "use": "stative verb"
+        },
+        {
+          "id": "ch-18",
+          "q": "Which sentence has a mistake?",
+          "choices": [
+            "Each of the passengers was looking out the porthole.",
+            "One of the passengers is looking out the porthole.",
+            "Each of the passengers were looking out the porthole.",
+            "All of the passengers were looking out the porthole."
+          ],
+          "answer": 2,
+          "use": "hidden subject"
+        },
+        {
+          "id": "ch-19",
+          "q": "Which sentence is correct?",
+          "choices": [
+            "Everyone were waiting when the airship landed.",
+            "Everyone waiting when the airship landed.",
+            "Everyone was waiting when the airship land.",
+            "Everyone was waiting when the airship landed."
+          ],
+          "answer": 3,
+          "use": "error spotting"
+        },
+        {
+          "id": "ch-20",
+          "q": "Fix the mistake: \"We was planting seeds when it begun to rain.\"",
+          "choices": [
+            "We was planting seeds when it began to rain.",
+            "We were planting seeds when it began to rain.",
+            "We were plant seeds when it began to rain.",
+            "We were planting seeds when it begun to rain."
+          ],
+          "answer": 1,
+          "use": "error correction"
+        },
+        {
+          "id": "ch-21",
+          "q": "Change to a question: \"Everyone in the class knows the refrain.\"",
+          "choices": [
+            "Is everyone in the class know the refrain?",
+            "Does everyone in the class know the refrain?",
+            "Do everyone in the class know the refrain?",
+            "Does everyone in the class knows the refrain?"
+          ],
+          "answer": 1,
+          "use": "question + everyone"
+        }
+      ]
+    },
+    {
+      "id": "tense-mix",
+      "title": "Tense Mix — Read the Time Clues",
+      "description": "Choose present simple, present continuous, or past simple from the time clue in each sentence.",
+      "items": [
+        {
+          "id": "tm-01",
+          "q": "Look! The airship ____ through the clouds.",
+          "choices": [
+            "glides",
+            "is gliding",
+            "glided",
+            "glide"
+          ],
+          "answer": 1,
+          "use": "Look! → present continuous"
+        },
+        {
+          "id": "tm-02",
+          "q": "The airship ____ through the clouds yesterday afternoon.",
+          "choices": [
+            "glided",
+            "glides",
+            "is gliding",
+            "glide"
+          ],
+          "answer": 0,
+          "use": "yesterday → past simple"
+        },
+        {
+          "id": "tm-03",
+          "q": "Right now, the passengers ____ in the dining room.",
+          "choices": [
+            "eat",
+            "is eating",
+            "are eating",
+            "ate"
+          ],
+          "answer": 2,
+          "use": "right now"
+        },
+        {
+          "id": "tm-04",
+          "q": "Three days ago, we ____ a play about a secret garden.",
+          "choices": [
+            "see",
+            "seen",
+            "are seeing",
+            "saw"
+          ],
+          "answer": 3,
+          "use": "ago → past"
+        },
+        {
+          "id": "tm-05",
+          "q": "Water ____ at 0°C.",
+          "choices": [
+            "freezes",
+            "freeze",
+            "is freezing",
+            "freezing"
+          ],
+          "answer": 0,
+          "use": "fact → present simple"
+        },
+        {
+          "id": "tm-06",
+          "q": "Listen! The children ____ the refrain of the poem.",
+          "choices": [
+            "chant",
+            "chants",
+            "are chanting",
+            "chanted"
+          ],
+          "answer": 2,
+          "use": "Listen! → now"
+        },
+        {
+          "id": "tm-07",
+          "q": "My grandpa ____ a pilot when he was young.",
+          "choices": [
+            "did",
+            "was",
+            "is",
+            "were"
+          ],
+          "answer": 1,
+          "use": "when he was young → past be"
+        },
+        {
+          "id": "tm-08",
+          "q": "____ you ____ the poem last week?",
+          "choices": [
+            "Are / writing",
+            "Did / wrote",
+            "Do / write",
+            "Did / write"
+          ],
+          "answer": 3,
+          "use": "last week → Did + base"
+        },
+        {
+          "id": "tm-09",
+          "q": "What ____ Mary ____ now? She is in the garden.",
+          "choices": [
+            "does / do",
+            "is / do",
+            "did / do",
+            "is / doing"
+          ],
+          "answer": 3,
+          "use": "now → continuous"
+        },
+        {
+          "id": "tm-10",
+          "q": "We usually ____ lunch at noon, but yesterday we ____ at one.",
+          "choices": [
+            "eat / eaten",
+            "eat / ate",
+            "are eating / eat",
+            "ate / eat"
+          ],
+          "answer": 1,
+          "use": "usually vs yesterday"
+        },
+        {
+          "id": "tm-11",
+          "q": "At the moment, Colin ____ to stand up by himself.",
+          "choices": [
+            "try",
+            "tries",
+            "is trying",
+            "tried"
+          ],
+          "answer": 2,
+          "use": "at the moment"
+        },
+        {
+          "id": "tm-12",
+          "q": "Last night the wind ____ so hard that the windows ____.",
+          "choices": [
+            "blew / shook",
+            "blew / shaked",
+            "blows / shakes",
+            "blowed / shaked"
+          ],
+          "answer": 0,
+          "use": "last night → irregular past"
+        },
+        {
+          "id": "tm-13",
+          "q": "Sam ____ the answer, so he raised his hand.",
+          "choices": [
+            "is knowing",
+            "knew",
+            "know",
+            "knows"
+          ],
+          "answer": 1,
+          "use": "stative + past"
+        },
+        {
+          "id": "tm-14",
+          "q": "Mr. Wang always ____ us a riddle before class.",
+          "choices": [
+            "gives",
+            "give",
+            "giving",
+            "is giving"
+          ],
+          "answer": 0,
+          "use": "always → present simple"
+        },
+        {
+          "id": "tm-15",
+          "q": "When ____ the Wright brothers ____ their first airplane? In 1903.",
+          "choices": [
+            "were / fly",
+            "do / fly",
+            "did / flew",
+            "did / fly"
+          ],
+          "answer": 3,
+          "use": "in 1903 → Did + base"
+        },
+        {
+          "id": "tm-16",
+          "q": "\"____ it cold yesterday?\" \"Yes, it ____.\"",
+          "choices": [
+            "Is / was",
+            "Was / did",
+            "Was / was",
+            "Did / did"
+          ],
+          "answer": 2,
+          "use": "was vs did"
+        },
+        {
+          "id": "tm-17",
+          "q": "Which sentence uses the correct tense?",
+          "choices": [
+            "We are going to the beach last weekend.",
+            "We went to the beach last weekend.",
+            "We goes to the beach last weekend.",
+            "We go to the beach last weekend."
+          ],
+          "answer": 1,
+          "use": "time clue"
+        },
+        {
+          "id": "tm-18",
+          "q": "Which sentence uses the WRONG tense?",
+          "choices": [
+            "Right now, she is writing a letter.",
+            "She wrote a letter yesterday.",
+            "She writes a letter every week.",
+            "Right now, she wrote a letter."
+          ],
+          "answer": 3,
+          "use": "time clue"
+        },
+        {
+          "id": "tm-19",
+          "q": "Everyone ____ quiet when the poet ____ to read.",
+          "choices": [
+            "was / begun",
+            "were / began",
+            "was / began",
+            "is / began"
+          ],
+          "answer": 2,
+          "use": "everyone + past"
+        },
+        {
+          "id": "tm-20",
+          "q": "In 2019, my family ____ in Tainan, but now we ____ in Taipei.",
+          "choices": [
+            "lived / live",
+            "were live / live",
+            "lived / lives",
+            "live / lived"
+          ],
+          "answer": 0,
+          "use": "in 2019 vs now"
+        },
+        {
+          "id": "tm-21",
+          "q": "____ your brother usually ____ the bus to school?",
+          "choices": [
+            "Did / took",
+            "Is / take",
+            "Does / take",
+            "Does / takes"
+          ],
+          "answer": 2,
+          "use": "usually → Does + base"
+        },
+        {
+          "id": "tm-22",
+          "q": "Kate ____ her grandma every Sunday, and today she ____ there again.",
+          "choices": [
+            "visits / is going",
+            "is visit / goes",
+            "visits / go",
+            "visit / is going"
+          ],
+          "answer": 0,
+          "use": "habit + today"
+        }
+      ]
+    }
+  ]
+}

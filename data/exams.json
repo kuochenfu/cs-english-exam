@@ -1,6 +1,6 @@
 {
   "_comment": "currentExamId = the test to feature and open first. defaultExamId is legacy: it only maps pre-namespace progress keys to the April midterm.",
-  "currentExamId": "2026-10-quiz1",
+  "currentExamId": "2026-11-midterm",
   "defaultExamId": "2026-04-midterm",
   "exams": [
     {
@@ -45,6 +45,17 @@
       "module": 1,
       "weeks": "1-3",
       "status": "Full practice ready (from Module 1 homework)",
+      "available": true
+    },
+    {
+      "id": "2026-11-midterm",
+      "title": "Grade 5 2026 Fall Midterm",
+      "subtitle": "HMH Into Reading · Module 2 · Weeks 1-3",
+      "grade": 5,
+      "date": "2026-11-05",
+      "module": 2,
+      "weeks": "1-3",
+      "status": "Practice ready (generated; waiting on Module 2 homework)",
       "available": true
     }
   ]

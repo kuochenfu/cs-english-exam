@@ -1,0 +1,567 @@
+{
+  "words": [
+    {
+      "week": 1,
+      "word": "contents",
+      "pos": "n",
+      "definition": "the things that are inside something, such as a box, bag, crate, or room",
+      "example": "Kate dumped the contents of her bag onto the cabin floor.",
+      "examples": [
+        "The customs officer checked the contents of every crate in the cargo hold.",
+        "Matt wondered about the contents of the locked trunk in the stateroom.",
+        "When the airship tilted, the contents of the galley shelves crashed to the floor.",
+        "Before you buy a snack, read the label to learn about its contents."
+      ],
+      "synonyms": [
+        "load",
+        "cargo",
+        "items"
+      ],
+      "forms": [
+        "contents"
+      ]
+    },
+    {
+      "week": 1,
+      "word": "deficiency",
+      "pos": "n",
+      "definition": "a lack of something that is needed; not having enough of it",
+      "example": "A deficiency of vitamin C can make sailors on long voyages very sick.",
+      "examples": [
+        "The doctor said his tiredness came from an iron deficiency.",
+        "A plant with a nitrogen deficiency often grows yellow, droopy leaves.",
+        "The inspector found a serious deficiency in the ship's safety equipment.",
+        "A deficiency of fuel forced the captain to land the airship early."
+      ],
+      "synonyms": [
+        "lack",
+        "shortage",
+        "shortfall"
+      ],
+      "antonyms": [
+        "abundance",
+        "plenty",
+        "surplus"
+      ]
+    },
+    {
+      "week": 1,
+      "word": "densely",
+      "pos": "adv",
+      "definition": "in a way that is thickly or tightly packed, with things crowded close together",
+      "example": "The island below the airship was densely covered with tall trees.",
+      "examples": [
+        "The city is densely populated, so the streets are crowded all day.",
+        "Ferns grew densely along the riverbank, hiding the path.",
+        "The clouds were packed so densely that the pilot could not see the ocean.",
+        "The jungle was so densely tangled that the explorers had to cut their way through."
+      ],
+      "synonyms": [
+        "thickly",
+        "tightly",
+        "closely"
+      ],
+      "antonyms": [
+        "sparsely",
+        "thinly",
+        "loosely"
+      ]
+    },
+    {
+      "week": 1,
+      "word": "favorable",
+      "pos": "adj",
+      "definition": "helpful or good for what you want to happen",
+      "example": "With favorable winds, the airship would reach Sydney in two days.",
+      "examples": [
+        "The captain waited for favorable weather before taking off.",
+        "Sunny skies and a light breeze made conditions favorable for a picnic.",
+        "The judges gave her science fair poster a favorable review.",
+        "A favorable report from the doctor meant he could rejoin the team."
+      ],
+      "synonyms": [
+        "helpful",
+        "positive",
+        "promising"
+      ],
+      "antonyms": [
+        "unfavorable",
+        "harmful",
+        "unhelpful"
+      ]
+    },
+    {
+      "week": 1,
+      "word": "panic",
+      "pos": "n",
+      "definition": "a sudden, strong fear that makes it hard to think clearly or act calmly",
+      "example": "When the alarm rang, panic spread through the passengers.",
+      "examples": [
+        "In a panic, Matt grabbed the railing and held on tight.",
+        "The crew tried to keep everyone calm and avoid panic during the storm.",
+        "She felt a rush of panic when she realized her ticket was gone.",
+        "There is no need for panic; just follow the fire drill steps."
+      ],
+      "synonyms": [
+        "terror",
+        "alarm",
+        "fright"
+      ],
+      "antonyms": [
+        "calm",
+        "composure",
+        "peace"
+      ],
+      "forms": [
+        "panic"
+      ]
+    },
+    {
+      "week": 1,
+      "word": "project",
+      "pos": "v",
+      "definition": "to stick out beyond an edge or surface (pronounced pruh-JEKT)",
+      "example": "A narrow ledge projects from the side of the cliff.",
+      "examples": [
+        "The airship's engine pods projected from its sides like fins.",
+        "Matt grabbed a metal pipe that projected from the hull.",
+        "The roof was built to project over the porch and keep off the rain.",
+        "A sharp rock projected out of the water near the shore."
+      ],
+      "synonyms": [
+        "stick out",
+        "jut",
+        "protrude"
+      ],
+      "antonyms": [
+        "recede",
+        "retract"
+      ]
+    },
+    {
+      "week": 1,
+      "word": "reasonable",
+      "pos": "adj",
+      "definition": "fair and sensible; based on good thinking",
+      "example": "The captain made a reasonable decision to turn back before the storm.",
+      "examples": [
+        "It is reasonable to wear a coat when the air is freezing.",
+        "Ten dollars is a reasonable price for a used bike helmet.",
+        "Her excuse sounded reasonable, so the teacher let her hand it in late.",
+        "Be reasonable and share the computer with your brother."
+      ],
+      "synonyms": [
+        "sensible",
+        "fair",
+        "logical"
+      ],
+      "antonyms": [
+        "unreasonable",
+        "foolish",
+        "absurd"
+      ]
+    },
+    {
+      "week": 1,
+      "word": "delirious",
+      "pos": "adj",
+      "definition": "confused and unable to think clearly, often because of a high fever or wild excitement",
+      "example": "The injured balloonist was delirious and kept talking about strange winged creatures.",
+      "examples": [
+        "With a high fever, my brother was delirious and didn't know where he was.",
+        "The sailor had gone three days without water and was delirious when they found him.",
+        "The fans were delirious with joy when their team won the championship.",
+        "Matt sat beside the delirious old man and listened to his mumbled words."
+      ],
+      "synonyms": [
+        "confused",
+        "feverish",
+        "frenzied"
+      ],
+      "antonyms": [
+        "lucid",
+        "clear-headed",
+        "rational"
+      ]
+    },
+    {
+      "week": 1,
+      "word": "porthole",
+      "pos": "n",
+      "definition": "a small, round window in the side of a ship or aircraft",
+      "example": "Matt looked through the porthole at the ocean far below.",
+      "examples": [
+        "Sunlight streamed through the cabin's porthole in the morning.",
+        "Each passenger cabin on the airship has two portholes.",
+        "Rain streaked across the portholes as the ship sailed through the storm.",
+        "She pressed her nose against the cold glass of the porthole."
+      ],
+      "synonyms": [
+        "window",
+        "port"
+      ]
+    },
+    {
+      "week": 2,
+      "word": "attempt",
+      "pos": "v",
+      "definition": "to try to do something, especially something difficult",
+      "example": "Mary will attempt to open the rusty garden door.",
+      "examples": [
+        "Colin attempted to stand up by himself for the first time.",
+        "Every day she attempts a harder puzzle than the day before.",
+        "Do not attempt to climb the wall without a ladder.",
+        "The robin attempted to pull a worm from the hard ground."
+      ],
+      "synonyms": [
+        "try",
+        "strive",
+        "endeavor"
+      ],
+      "antonyms": [
+        "quit",
+        "abandon",
+        "neglect"
+      ]
+    },
+    {
+      "week": 2,
+      "word": "awaken",
+      "pos": "v",
+      "definition": "to wake up, or to make someone or something wake up",
+      "example": "In spring, the garden begins to awaken after the long winter.",
+      "examples": [
+        "The robin's song awakened Mary early in the morning.",
+        "The smell of pancakes awakens me every Saturday.",
+        "Colin was afraid the noise would awaken the whole house.",
+        "Fresh air and sunshine slowly awakened Colin's interest in the world."
+      ],
+      "synonyms": [
+        "wake",
+        "rouse",
+        "stir"
+      ],
+      "antonyms": [
+        "sleep",
+        "doze",
+        "slumber"
+      ]
+    },
+    {
+      "week": 2,
+      "word": "contempt",
+      "pos": "n",
+      "definition": "a strong feeling that someone or something is worthless or does not deserve respect",
+      "example": "Mary looked at the spoiled boy with contempt.",
+      "examples": [
+        "The bully showed his contempt by laughing at the younger kids.",
+        "Colin treated the servants with contempt until he learned to be kind.",
+        "She shook her head in contempt at the rude remark.",
+        "His voice was full of contempt when he talked about the rival team."
+      ],
+      "synonyms": [
+        "scorn",
+        "disrespect",
+        "disdain"
+      ],
+      "antonyms": [
+        "respect",
+        "admiration",
+        "esteem"
+      ],
+      "forms": [
+        "contempt"
+      ]
+    },
+    {
+      "week": 2,
+      "word": "fastening",
+      "pos": "n",
+      "definition": "something used to hold a thing closed or in place, such as a lock, clasp, hook, or button",
+      "example": "The rusty fastening on the garden gate would not budge.",
+      "examples": [
+        "Mary felt along the ivy until her fingers found the fastening of the door.",
+        "The fastenings on my backpack broke, so my books fell out.",
+        "Check that all the fastenings on your life jacket are tight.",
+        "The old trunk had a brass fastening shaped like a bird."
+      ],
+      "synonyms": [
+        "clasp",
+        "latch",
+        "buckle"
+      ]
+    },
+    {
+      "week": 2,
+      "word": "mysterious",
+      "pos": "adj",
+      "definition": "strange and hard to understand or explain",
+      "example": "A mysterious key lay half-buried in the soil.",
+      "examples": [
+        "Late at night, Mary heard mysterious crying down the long hallway.",
+        "The locked garden seemed mysterious to everyone in the house.",
+        "A mysterious stranger left a note on our front door.",
+        "The scientist could not explain the mysterious lights in the sky."
+      ],
+      "synonyms": [
+        "puzzling",
+        "strange",
+        "secret"
+      ],
+      "antonyms": [
+        "obvious",
+        "clear",
+        "plain"
+      ]
+    },
+    {
+      "week": 2,
+      "word": "preside",
+      "pos": "v",
+      "definition": "to be in charge of a meeting, event, or place",
+      "example": "The principal will preside over the awards ceremony.",
+      "examples": [
+        "Mrs. Medlock presided over the servants of the great house.",
+        "A judge presides over the courtroom.",
+        "The mayor presided at the opening of the new park.",
+        "Our class captain presides over every student council meeting."
+      ],
+      "synonyms": [
+        "lead",
+        "chair",
+        "oversee"
+      ],
+      "antonyms": [
+        "follow",
+        "obey"
+      ]
+    },
+    {
+      "week": 2,
+      "word": "restrain",
+      "pos": "v",
+      "definition": "to hold back or keep someone or something under control",
+      "example": "Dickon had to restrain the excited fox cub.",
+      "examples": [
+        "Mary could hardly restrain her excitement when she found the key.",
+        "The nurse restrained Colin from jumping out of bed.",
+        "A strong seat belt restrains each passenger during a crash.",
+        "He bit his lip to restrain a laugh during the quiet assembly."
+      ],
+      "synonyms": [
+        "hold back",
+        "control",
+        "curb"
+      ],
+      "antonyms": [
+        "release",
+        "free",
+        "unleash"
+      ]
+    },
+    {
+      "week": 2,
+      "word": "witness",
+      "pos": "n",
+      "definition": "a person who sees something happen",
+      "example": "The robin was the only witness when Mary found the buried key.",
+      "examples": [
+        "Two witnesses saw the gardener lock the gate.",
+        "The police officer asked the witness to describe the car.",
+        "Ben Weatherstaff was a witness to Colin's first steps in the garden.",
+        "The judge listened carefully to each of the witnesses."
+      ],
+      "synonyms": [
+        "observer",
+        "onlooker",
+        "bystander"
+      ]
+    },
+    {
+      "week": 2,
+      "word": "matted",
+      "pos": "adj",
+      "definition": "tangled together in a thick, messy mass",
+      "example": "The stray dog's fur was matted with mud.",
+      "examples": [
+        "The old rose bushes were matted with dead leaves and vines.",
+        "After the storm, her wet hair was matted against her face.",
+        "The grass under the melted snow was flat and matted.",
+        "Dickon gently brushed the lamb's matted wool."
+      ],
+      "synonyms": [
+        "tangled",
+        "knotted",
+        "snarled"
+      ],
+      "antonyms": [
+        "smooth",
+        "combed",
+        "sleek"
+      ]
+    },
+    {
+      "week": 2,
+      "word": "tendril",
+      "pos": "n",
+      "definition": "a thin, curling stem that a climbing plant uses to wrap around and hold onto things",
+      "example": "Green tendrils of ivy curled around the garden wall.",
+      "examples": [
+        "A pea plant wraps its tendrils around the fence as it grows.",
+        "Mary gently pulled a tendril away from the hidden door.",
+        "The tendril of the grapevine coiled tightly around the stick.",
+        "Thin tendrils reached out from the vine toward the sunlight."
+      ],
+      "synonyms": [
+        "shoot",
+        "runner",
+        "vine"
+      ]
+    },
+    {
+      "week": 3,
+      "word": "hesitate",
+      "pos": "v",
+      "definition": "to pause before doing or saying something because you are unsure or nervous",
+      "example": "If you need help, don't hesitate to ask.",
+      "examples": [
+        "The poet hesitated before reading her poem aloud to the class.",
+        "Mia hesitates every time she has to dive off the high board.",
+        "He hesitated at the door, unsure whether to knock.",
+        "When the bell rang, no one hesitated to rush outside."
+      ],
+      "synonyms": [
+        "pause",
+        "waver",
+        "delay"
+      ],
+      "antonyms": [
+        "rush",
+        "proceed",
+        "plunge"
+      ]
+    },
+    {
+      "week": 3,
+      "word": "refrain",
+      "pos": "n",
+      "definition": "in a poem or song, a line or group of lines that is repeated, like a chorus",
+      "example": "Everyone joined in on the refrain of the song.",
+      "examples": [
+        "The poet repeats the same refrain at the end of every stanza.",
+        "A catchy refrain makes a song easy to remember.",
+        "Our class poem has two refrains that we read aloud together.",
+        "Each time the refrain came back, the audience clapped along."
+      ],
+      "synonyms": [
+        "chorus",
+        "repetition"
+      ]
+    },
+    {
+      "week": 3,
+      "word": "restless",
+      "pos": "adj",
+      "definition": "unable to stay still or relax, often because you are bored or worried",
+      "example": "The restless kids wiggled in their seats during the long assembly.",
+      "examples": [
+        "After a week of rainy days, the puppy was restless.",
+        "I spent a restless night worrying about the test.",
+        "The restless sea tossed the little boat up and down.",
+        "The crowd grew restless when the concert started late."
+      ],
+      "synonyms": [
+        "fidgety",
+        "uneasy",
+        "jittery"
+      ],
+      "antonyms": [
+        "calm",
+        "relaxed",
+        "still"
+      ]
+    },
+    {
+      "week": 3,
+      "word": "seize",
+      "pos": "v",
+      "definition": "to grab or take hold of something quickly and firmly",
+      "example": "Seize the rope before the boat drifts away!",
+      "examples": [
+        "The eagle seized a fish from the river.",
+        "She seizes every chance to read a new poem.",
+        "The guards seized the thief by the arm.",
+        "Don't wait for luck; seize the moment and try out for the team."
+      ],
+      "synonyms": [
+        "grab",
+        "grasp",
+        "snatch"
+      ],
+      "antonyms": [
+        "release",
+        "drop",
+        "loosen"
+      ]
+    },
+    {
+      "week": 3,
+      "word": "watchful",
+      "pos": "adj",
+      "definition": "paying close attention and carefully looking out for danger or problems",
+      "example": "The watchful lifeguard spotted the swimmer in trouble.",
+      "examples": [
+        "Under the watchful eye of her coach, Mia practiced her flips.",
+        "Stay watchful when you cross a busy street.",
+        "The watchful mother bird never left her chicks alone.",
+        "A watchful reader notices the small clues in a mystery."
+      ],
+      "synonyms": [
+        "alert",
+        "attentive",
+        "observant"
+      ],
+      "antonyms": [
+        "careless",
+        "inattentive",
+        "unaware"
+      ]
+    },
+    {
+      "week": 3,
+      "word": "scrawl",
+      "pos": "v",
+      "definition": "to write or draw something quickly and messily",
+      "example": "He scrawled a poem on a paper napkin.",
+      "examples": [
+        "Don't scrawl your answers; write neatly so the teacher can read them.",
+        "My little brother scrawls his name on every drawing.",
+        "She grabbed a pen to scrawl a quick note before the bus came.",
+        "The poet was scrawling new lines in her notebook as fast as she could think."
+      ],
+      "synonyms": [
+        "scribble",
+        "jot",
+        "doodle"
+      ]
+    },
+    {
+      "week": 3,
+      "word": "ditty",
+      "pos": "n",
+      "definition": "a short, simple song or poem, often light and cheerful",
+      "example": "Grandma hummed a little ditty while she baked bread.",
+      "examples": [
+        "The class made up a silly ditty about homework.",
+        "The ice-cream truck plays the same ditty every afternoon.",
+        "My sister made up a funny ditty to help me remember the planets.",
+        "He wrote a short ditty for his mom's birthday card."
+      ],
+      "synonyms": [
+        "jingle",
+        "tune",
+        "song"
+      ]
+    }
+  ]
+}

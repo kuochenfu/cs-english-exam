@@ -1,0 +1,507 @@
+{
+  "title": "Listening Comprehension",
+  "intro": "Listen to a dialogue, then answer multiple choice questions. Many answers are spread across several turns, so keep track of numbers, days, times, and places, and listen for reasons, feelings, what a phrase means, and what the speakers will do next. These are generated review dialogues on Module 2 topics (Airborn, The Secret Garden, The Miracle of Spring, The Poem That Will Not End), because the midterm dialogue is only played in class.",
+  "dialogues": [
+    {
+      "id": "the_forgotten_line",
+      "title": "The Forgotten Line",
+      "lines": [
+        { "speaker": "Mia", "text": "Owen, you froze again in scene three. You were supposed to say, \"The garden is awake!\" and you just stood there." },
+        { "speaker": "Owen", "text": "I know. When everyone is watching, I panic and the words disappear. Last night I remembered the line perfectly in my bedroom." },
+        { "speaker": "Mia", "text": "The stage directions say you hesitate at the gate for two seconds, then you seize the key and push the door open. Maybe you are hesitating too long." },
+        { "speaker": "Owen", "text": "Two seconds feels like forever up there. And the vines on the gate keep catching my sleeve. Today a tendril wrapped right around my button." },
+        { "speaker": "Mia", "text": "That is a costume problem, not an acting problem. I will ask Ms. Lopez to fix the fastening on your jacket so nothing catches." },
+        { "speaker": "Owen", "text": "Thanks. But what if I forget the line on Friday night, in front of a hundred parents?" },
+        { "speaker": "Mia", "text": "Then look at Lily. She is playing the robin, and she sits right beside the gate. She can whisper the first word to you." },
+        { "speaker": "Owen", "text": "Lily is so restless during long scenes. She is always fidgeting with her feathers. I don't think she would even notice." },
+        { "speaker": "Mia", "text": "Then let's make it easier. We are rehearsing again on Thursday at three thirty. Bring your script, and we will run scene three five times in a row." },
+        { "speaker": "Owen", "text": "Five times? I guess that is reasonable. Today I attempted it only once before I gave up." },
+        { "speaker": "Mia", "text": "Exactly. And remember, Colin is supposed to feel amazed, not scared. If you act amazed, the line will come out naturally." },
+        { "speaker": "Owen", "text": "Amazed, not scared. Okay. Tonight I will practice in front of my little brother. He is a tough audience." }
+      ],
+      "questions": [
+        {
+          "q": "Why does Owen freeze in scene three?",
+          "choices": [
+            "He never learned the line at home.",
+            "Lily whispered the wrong word to him.",
+            "He panics when everyone is watching him.",
+            "The gate is locked and he cannot open it."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "According to the stage directions, what should Owen do at the gate?",
+          "choices": [
+            "Hesitate for two seconds, then seize the key and push the door open",
+            "Seize the key right away and run into the garden",
+            "Wait for the robin to whisper the first word",
+            "Hesitate for five seconds, then say his line"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What problem does the tendril cause, and how will it be solved?",
+          "choices": [
+            "It blocks the gate, so Mia will cut the vine.",
+            "It covers the key, so Lily will hold the vine back.",
+            "It makes Owen trip, so he will wear different shoes.",
+            "It catches on Owen's button, so Ms. Lopez will fix the fastening on his jacket."
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Why doesn't Owen want to depend on Lily?",
+          "choices": [
+            "She does not know his line.",
+            "She is restless and might not notice he needs help.",
+            "She sits too far away from the gate.",
+            "She is not coming to the show on Friday."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "When will Owen perform the play in front of the parents?",
+          "choices": [
+            "Thursday at three thirty",
+            "Tonight, at home",
+            "Friday night",
+            "Next Thursday"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "What advice does Mia give Owen about acting the scene?",
+          "choices": [
+            "Act amazed instead of scared, and the line will come naturally.",
+            "Skip the line if he forgets it.",
+            "Hesitate longer so the audience feels nervous.",
+            "Read the line from his script on stage."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "When Owen calls his little brother \"a tough audience,\" what does he mean?",
+          "choices": [
+            "His brother is very strong.",
+            "His brother will be in the play too.",
+            "His brother loves every show he watches.",
+            "His brother is hard to impress."
+          ],
+          "answer": 3
+        },
+        {
+          "q": "What will Owen do tonight?",
+          "choices": [
+            "Run scene three five times with Mia",
+            "Practice his line in front of his little brother",
+            "Ask Ms. Lopez to fix his jacket",
+            "Write a new line for Colin"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "the_class_garden_schedule",
+      "title": "The Class Garden Schedule",
+      "lines": [
+        { "speaker": "Zoe", "text": "Ethan, Mr. Brooks wants our watering schedule by Monday. Have you looked at the seed packets yet?" },
+        { "speaker": "Ethan", "text": "I am reading them right now. The peas say to plant them densely, about two inches apart, and the carrots need full sun." },
+        { "speaker": "Zoe", "text": "The sunniest bed is the one by the fence. But last spring the tomatoes there turned yellow." },
+        { "speaker": "Ethan", "text": "Mr. Brooks said that was a deficiency in the soil. It was missing nutrients, so on Tuesday our class mixed in compost." },
+        { "speaker": "Zoe", "text": "Good. So, peas by the fence? Their tendrils can climb up the fence wires." },
+        { "speaker": "Ethan", "text": "Perfect. Then the carrots go in the middle bed. Now the hard part: who waters during spring break?" },
+        { "speaker": "Zoe", "text": "Not me. My family is flying to my grandma's house for the whole week. We are leaving on Saturday." },
+        { "speaker": "Ethan", "text": "I am staying home, but I can only come on Monday, Wednesday, and Friday. My soccer camp is on the other days." },
+        { "speaker": "Zoe", "text": "The packet says the seeds need water every day until they sprout. Three days a week is not enough unless the weather is favorable." },
+        { "speaker": "Ethan", "text": "The forecast says rain on Tuesday and Thursday. That covers two more days. But what about the weekend?" },
+        { "speaker": "Zoe", "text": "Ask Priya. She lives across the street from school, and she told me she wanted a project for the break." },
+        { "speaker": "Ethan", "text": "Great idea. I will text her tonight. Then we can write the schedule together and give it to Mr. Brooks on Monday." }
+      ],
+      "questions": [
+        {
+          "q": "Where will the peas be planted, and why?",
+          "choices": [
+            "In the middle bed, because they need full sun",
+            "By the fence, because their tendrils can climb the wires",
+            "Across the street, because Priya can water them",
+            "By the fence, because the tomatoes grew well there"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Why did the tomatoes turn yellow last spring?",
+          "choices": [
+            "They did not get enough rain.",
+            "They were planted too densely.",
+            "The soil had a deficiency and was missing nutrients.",
+            "The fence blocked the sunlight."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "What did the class do on Tuesday?",
+          "choices": [
+            "They mixed compost into the soil.",
+            "They planted the carrots.",
+            "They watered the seeds.",
+            "They gave the schedule to Mr. Brooks."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Why can't Zoe water the garden during spring break?",
+          "choices": [
+            "She has soccer camp every day.",
+            "She lives too far from school.",
+            "She has to write the schedule.",
+            "She is flying to her grandma's house for the whole week."
+          ],
+          "answer": 3
+        },
+        {
+          "q": "On which days can Ethan water the garden?",
+          "choices": [
+            "Tuesday and Thursday",
+            "Saturday and Sunday",
+            "Monday, Wednesday, and Friday",
+            "Every day of the week"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "How do the speakers expect the seeds to get water on Tuesday and Thursday?",
+          "choices": [
+            "Rain is in the forecast for those days.",
+            "Mr. Brooks will water them.",
+            "Zoe will come back early.",
+            "Ethan will skip soccer camp."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "In this conversation, \"favorable\" weather means weather that",
+          "choices": [
+            "is cold and windy",
+            "helps the plants, such as rain",
+            "is sunny every single day",
+            "stops the children from coming to school"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Why do Zoe and Ethan think Priya can water on the weekend?",
+          "choices": [
+            "She is in Mr. Brooks's class.",
+            "She has soccer camp with Ethan.",
+            "She planted the carrots.",
+            "She lives across the street from school and wants a project."
+          ],
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "the_airship_exhibit",
+      "title": "The Airship Exhibit",
+      "lines": [
+        { "speaker": "Nora", "text": "Dad, look! This is a real airship cabin. You can look through the porthole and see a painted sky that moves." },
+        { "speaker": "Dad", "text": "It is wonderful. But the museum closes at five, and we only have forty minutes left, so we need to choose carefully." },
+        { "speaker": "Nora", "text": "I want to see everything! The sign says a guide is presiding over a flight demonstration at four thirty in Hall B." },
+        { "speaker": "Dad", "text": "And you also wanted to see the mysterious logbook, right? The one the captain scrawled in during the storm." },
+        { "speaker": "Nora", "text": "Yes! A worker said the captain wrote it while the ship was shaking, so the words are messy. People still argue about what the last page says." },
+        { "speaker": "Dad", "text": "The logbook is upstairs in Hall D, and the line was long when we walked by. About twenty people were waiting." },
+        { "speaker": "Nora", "text": "If we wait in that line, we will miss the demonstration. I can't decide. I am hesitating like a character in a story." },
+        { "speaker": "Dad", "text": "Here is a reasonable plan. The demonstration only lasts fifteen minutes. We watch it first, then go upstairs. The line will probably be shorter by then." },
+        { "speaker": "Nora", "text": "But what if Hall D closes before we get there?" },
+        { "speaker": "Dad", "text": "Then we buy the book about the logbook in the gift shop. It has photos of every page, so you can try to read the scrawl at home." },
+        { "speaker": "Nora", "text": "Deal. I will bring my notebook to the demonstration and write down how the engines work. Mr. Diaz said we should witness something real for our report." },
+        { "speaker": "Dad", "text": "Good thinking. Let's go. Hall B is to the left, past the hot-air balloon." }
+      ],
+      "questions": [
+        {
+          "q": "About what time is it at the start of the conversation?",
+          "choices": [
+            "Four thirty",
+            "Four twenty",
+            "Four forty-five",
+            "Five o'clock"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Where is the mysterious logbook?",
+          "choices": [
+            "In the airship cabin",
+            "In Hall B, next to the demonstration",
+            "Upstairs in Hall D",
+            "In the gift shop, past the hot-air balloon"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Why is the captain's logbook hard to read?",
+          "choices": [
+            "He wrote it while the ship was shaking in a storm.",
+            "The pages were torn by the wind.",
+            "It is written in another language.",
+            "It is kept behind a dark porthole."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does Nora mean when she says, \"I am hesitating like a character in a story\"?",
+          "choices": [
+            "She wants to act in a play.",
+            "She is reading a story about an airship.",
+            "She is afraid of the airship cabin.",
+            "She cannot make up her mind about what to do."
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Why does Dad suggest watching the demonstration first?",
+          "choices": [
+            "Because Hall D is already closed",
+            "Because it is short and the logbook line will probably be shorter later",
+            "Because the logbook is not very interesting",
+            "Because the gift shop closes at four thirty"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "If they follow Dad's plan, at about what time will the demonstration end?",
+          "choices": [
+            "Four forty-five",
+            "Four thirty",
+            "Five o'clock",
+            "Five fifteen"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What will they do if Hall D closes before they get there?",
+          "choices": [
+            "Come back to the museum tomorrow",
+            "Ask the guide to read the last page",
+            "Look through the porthole again",
+            "Buy the book with photos of every logbook page"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Why will Nora bring her notebook to the demonstration?",
+          "choices": [
+            "To copy the words in the logbook",
+            "To draw the painted sky",
+            "To write down how the engines work for her report",
+            "To get the guide's autograph"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "the_poem_that_kept_growing",
+      "title": "The Poem That Kept Growing",
+      "lines": [
+        { "speaker": "Emma", "text": "Jack, did you finish your poem for the spring poetry contest? The deadline is Wednesday at noon." },
+        { "speaker": "Jack", "text": "I finished it last night! I was so happy I felt almost delirious. But my sister read it with contempt and called it a silly ditty." },
+        { "speaker": "Emma", "text": "Don't listen to her. What is it about?" },
+        { "speaker": "Jack", "text": "It is about a seed that awakens in spring. Every stanza ends with the same refrain: \"Wake up, little seed, the sun is here.\"" },
+        { "speaker": "Emma", "text": "I love that refrain. It sounds like a song. How long is the poem?" },
+        { "speaker": "Jack", "text": "Thirty-two lines. I kept adding stanzas: a worm, a robin, a rain cloud. It is like the poem that will not end." },
+        { "speaker": "Emma", "text": "Uh-oh. The rules say twenty lines or fewer. The judges will not even read a poem that is too long." },
+        { "speaker": "Jack", "text": "Twenty? Then I have to cut twelve lines. Which ones should go?" },
+        { "speaker": "Emma", "text": "Keep the refrain, because it is the best part. Maybe cut the worm and the rain cloud. The robin stanza is the funniest." },
+        { "speaker": "Jack", "text": "But the rain cloud stanza took me a whole hour to write. I really don't want to delete it." },
+        { "speaker": "Emma", "text": "Then save it in your notebook for another poem. A poem is like a garden. Sometimes you pull a few plants so the others can grow." },
+        { "speaker": "Jack", "text": "Okay, okay. I will cut the worm and the rain cloud tonight, read the new version to you tomorrow at lunch, and hand it in on Wednesday morning." }
+      ],
+      "questions": [
+        {
+          "q": "When is the deadline for the poetry contest?",
+          "choices": [
+            "Tomorrow at lunch",
+            "Wednesday at noon",
+            "Wednesday morning",
+            "Tonight"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "How did Jack's sister react to his poem?",
+          "choices": [
+            "She treated it with contempt and called it a silly ditty.",
+            "She was delirious with joy.",
+            "She helped him add a stanza about a robin.",
+            "She told him to enter the contest."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "When Jack says he felt \"almost delirious,\" he means he felt",
+          "choices": [
+            "sick and tired",
+            "angry at his sister",
+            "wildly excited",
+            "worried about the deadline"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "What is the refrain of Jack's poem?",
+          "choices": [
+            "\"The garden is awake!\"",
+            "\"Rain cloud, rain cloud, bring the spring.\"",
+            "\"Little robin, sing to me.\"",
+            "\"Wake up, little seed, the sun is here.\""
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Why does Jack have to make his poem shorter?",
+          "choices": [
+            "The judges will not read poems longer than twenty lines.",
+            "His sister said it was boring.",
+            "Emma does not like the refrain.",
+            "He has to read it aloud in one minute."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How many lines must Jack cut?",
+          "choices": [
+            "Twenty",
+            "Thirty-two",
+            "Two",
+            "Twelve"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "What does Emma mean when she says, \"A poem is like a garden\"?",
+          "choices": [
+            "Jack should write a poem about vegetables.",
+            "Removing some parts can help the best parts stand out.",
+            "Poems grow bigger every spring.",
+            "Jack should read his poem outside."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "What will Jack do tomorrow at lunch?",
+          "choices": [
+            "Hand in his poem to the judges",
+            "Write a new stanza about a worm",
+            "Read the shorter version of his poem to Emma",
+            "Show the rain cloud stanza to his sister"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "the_mystery_box_auction",
+      "title": "The Mystery Box Auction",
+      "lines": [
+        { "speaker": "Sophie", "text": "Max, why do you look so worried? And why are you carrying that big cardboard box?" },
+        { "speaker": "Max", "text": "I made a terrible mistake at the school auction. I only raised my hand to wave at you, and now I own box number nine." },
+        { "speaker": "Sophie", "text": "Box nine? That is the mystery box! Nobody knows its contents. How much did it cost?" },
+        { "speaker": "Max", "text": "Eighteen dollars. The man presiding over the auction pointed at me and shouted, \"Sold!\" before I could explain." },
+        { "speaker": "Sophie", "text": "Didn't you try to stop him?" },
+        { "speaker": "Max", "text": "I attempted to, but everyone was clapping so loudly. My mom was busy restraining my little sister, who was jumping up and down." },
+        { "speaker": "Sophie", "text": "Well, all the money goes to the school library, so it is not wasted. Let's open it. Something is rattling inside." },
+        { "speaker": "Max", "text": "Okay. There is a matted old teddy bear, a brass key, and a folded map." },
+        { "speaker": "Sophie", "text": "A key and a map? This is just like The Secret Garden! Maybe the key opens something hidden." },
+        { "speaker": "Max", "text": "The map shows our school field. There is an X next to the old oak tree, and someone scrawled \"Spring 1996\" at the bottom." },
+        { "speaker": "Sophie", "text": "That was thirty years ago! Maybe a class buried a time capsule. We should show Principal Lee before we dig anywhere." },
+        { "speaker": "Max", "text": "You are right. The groundskeeper is very watchful about that field, and we would be in big trouble. Principal Lee is at the bake sale table until three o'clock." },
+        { "speaker": "Sophie", "text": "It is two forty-five now. If we hurry, we can catch her. You bring the key, and I will carry the map." }
+      ],
+      "questions": [
+        {
+          "q": "How did Max end up buying box number nine?",
+          "choices": [
+            "He wanted the teddy bear inside it.",
+            "His little sister raised her hand for him.",
+            "He raised his hand to wave at Sophie, and the man thought he was bidding.",
+            "Sophie asked him to buy it for the library."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "How much did Max pay for the box?",
+          "choices": [
+            "Eighteen dollars",
+            "Nine dollars",
+            "Thirty dollars",
+            "Fifteen dollars"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Why couldn't Max stop the auction in time?",
+          "choices": [
+            "His mom told him to stay quiet.",
+            "Everyone was clapping loudly, and his mom was busy with his sister.",
+            "The man presiding over the auction had already left.",
+            "Sophie was waving at him."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Why does Sophie say the money is \"not wasted\"?",
+          "choices": [
+            "Because the box has a valuable key",
+            "Because Max can sell the teddy bear",
+            "Because the box was cheaper than the others",
+            "Because the money goes to the school library"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Which item was NOT in the box?",
+          "choices": [
+            "A matted teddy bear",
+            "A brass key",
+            "A shovel",
+            "A folded map"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Why does Sophie think a class may have buried a time capsule?",
+          "choices": [
+            "The map has an X by the oak tree and the words \"Spring 1996.\"",
+            "The groundskeeper told her about it.",
+            "Principal Lee mentioned it at the bake sale.",
+            "The teddy bear has a note sewn inside it."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Why don't Max and Sophie start digging right away?",
+          "choices": [
+            "They do not have a shovel.",
+            "The field is closed for spring break.",
+            "The map is too hard to read.",
+            "They might get in trouble, so they want to ask Principal Lee first."
+          ],
+          "answer": 3
+        },
+        {
+          "q": "How much time do they have to find Principal Lee at the bake sale?",
+          "choices": [
+            "Thirty minutes",
+            "About fifteen minutes",
+            "Forty-five minutes",
+            "One hour"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

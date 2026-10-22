@@ -1,0 +1,1036 @@
+{
+  "skills": {
+    "authors_purpose": "Author's Purpose",
+    "text_structure": "Text Structure",
+    "theme": "Theme",
+    "figurative_language": "Figurative Language",
+    "character": "Character",
+    "literary_elements": "Literary Elements",
+    "poetry": "Elements of Poetry",
+    "drama": "Elements of Drama",
+    "evidence": "Text Evidence",
+    "vocab_context": "Vocabulary in Context"
+  },
+  "anchorChartsIntro": "Start with the seven Midterm focus skills, then review the supporting skills used in the passage questions. These original study guides supplement your classroom materials.",
+  "anchorCharts": [
+    {
+      "skill": "authors_purpose",
+      "name": "Author's Purpose",
+      "group": "Midterm focus",
+      "body": "The author’s purpose is the main reason for writing. Read the whole text and ask what the author wants you to think, learn, feel, or do. Then look at smaller choices too: why did the author add this heading, comparison, or ending?",
+      "guide": [
+        {
+          "label": "Persuade",
+          "text": "Convince you to agree or act. Look for an opinion (should, must, best) supported by reasons and evidence."
+        },
+        {
+          "label": "Inform",
+          "text": "Teach facts about a topic. Look for explanations, facts, definitions, and examples."
+        },
+        {
+          "label": "Entertain",
+          "text": "Engage you with a story, play, or poem. A story can also teach a lesson."
+        },
+        {
+          "label": "Explain",
+          "text": "Show how or why something happens, often step by step. This is a type of informing."
+        }
+      ],
+      "steps": [
+        "State what the whole text mostly does.",
+        "Find two details that support that purpose.",
+        "For a part of the text (a heading, a comparison, the last paragraph), ask how it helps the author reach that purpose."
+      ],
+      "tip": "A fact can appear in a persuasive text, and a story can include facts. Choose the MAIN purpose, not the purpose of one sentence.",
+      "ex": [
+        "How a Seed Wakes Up mainly explains: it tells how and why a seed begins to grow, using facts, definitions, and steps.",
+        "The comparison “The cold works like a calendar” helps the author explain a hard idea (dormancy) by linking it to something readers already know."
+      ],
+      "check": {
+        "question": "“Every school should have a garden. Students learn science outdoors, and fresh vegetables improve lunches.” What is the main purpose?",
+        "answer": "To persuade. “Should” states an opinion, and learning science and better lunches are reasons to agree."
+      },
+      "image": "assets/2026-10-quiz1/anchor-charts/authors_purpose.png",
+      "imageAlt": "Author's Purpose illustrated anchor chart. The study guide below explains the concepts and examples.",
+      "imageLayout": "poster"
+    },
+    {
+      "skill": "text_structure",
+      "name": "Text Structure",
+      "group": "Midterm focus",
+      "body": "Text structure is the way an author organizes information. A paragraph and the whole text may use different structures, and headings often show how the parts fit together.",
+      "guide": [
+        {
+          "label": "Description · topic → details",
+          "text": "Tells what something is like. Clues: for example, such as, includes, is called."
+        },
+        {
+          "label": "Sequence · first → next → last",
+          "text": "Puts events or steps in order. Clues: first, next, then, once, after, finally, dates."
+        },
+        {
+          "label": "Cause and effect · why → result",
+          "text": "Explains why something happens and what happens because of it. Clues: because, so, therefore, as a result, if…then."
+        },
+        {
+          "label": "Compare and contrast · alike ↔ different",
+          "text": "Compares two subjects on the same feature. Clues: both, unlike, however, whereas."
+        },
+        {
+          "label": "Problem and solution · difficulty → response",
+          "text": "Presents a difficulty and an attempt to solve it. Clues: problem, prevent, to solve, a solution."
+        }
+      ],
+      "steps": [
+        "Identify the ideas being connected.",
+        "Explain their relationship in your own words.",
+        "Use clue words to confirm the structure."
+      ],
+      "tip": "“Then” is a clue, not proof. A paragraph with steps in order is sequence; a paragraph that tells WHY the steps happen is cause and effect.",
+      "ex": [
+        "How a Seed Wakes Up, paragraph 5: the root grows first, next the shoot, then the leaves, and finally the seedling makes food. This is sequence.",
+        "Paragraph 4: the seed coat absorbs water (cause), so the seed swells and splits open (effect)."
+      ],
+      "check": {
+        "question": "“Too many seeds were planted in one row, so the seedlings grew thin and weak.” Which structure fits best?",
+        "answer": "Cause and effect: crowded planting (cause) leads to thin, weak seedlings (effect). “So” is the clue."
+      },
+      "image": "assets/2026-10-quiz1/anchor-charts/text_structure.png",
+      "imageAlt": "Text Structure illustrated anchor chart. The study guide below explains the concepts and examples.",
+      "imageLayout": "poster"
+    },
+    {
+      "skill": "theme",
+      "name": "Theme",
+      "group": "Midterm focus",
+      "body": "A theme is a message about life that a story, play, or poem develops. Readers infer it from the characters, their choices, how they change, and the outcome.",
+      "guide": [
+        {
+          "label": "Topic",
+          "text": "A broad subject such as courage, friendship, or grief."
+        },
+        {
+          "label": "Theme",
+          "text": "A full-sentence message: “Caring for something living can help people heal.”"
+        },
+        {
+          "label": "Evidence",
+          "text": "Actions, changes, and outcomes that support the message, rather than just a matching word."
+        }
+      ],
+      "steps": [
+        "Identify the main character’s challenge.",
+        "Notice the response, change, and outcome.",
+        "Write a message that applies beyond these characters, then support it with details."
+      ],
+      "tip": "A theme is not a plot summary, and it is not one word. More than one theme can fit if the text supports it.",
+      "ex": [
+        "Storm over the Kestrel supports the theme that courage means acting even when you are afraid: Nell hesitates and grips the rail, then moves forward to protect the medicine.",
+        "The Garden Behind the Wall supports the theme that bringing something back to life can also bring people back to life: as the garden blooms, Rosa and Grandma Ines both change."
+      ],
+      "check": {
+        "question": "A boy is afraid to sing in the concert, practices every night, and sings his solo with a shaky but strong voice. Which is a stronger theme: “singing” or “Practice can help us face our fears”? Why?",
+        "answer": "“Practice can help us face our fears” is a full message supported by his nightly practice and his solo. “Singing” is only a topic."
+      },
+      "image": "assets/2026-10-quiz1/anchor-charts/theme.png",
+      "imageAlt": "Theme illustrated anchor chart. The study guide below explains the concepts and examples.",
+      "imageLayout": "poster"
+    },
+    {
+      "skill": "figurative_language",
+      "name": "Figurative Language",
+      "group": "Midterm focus",
+      "body": "Figurative language helps readers picture an idea or feel an emotion. Name the type of expression AND explain what it means in this scene.",
+      "guide": [
+        {
+          "label": "Simile",
+          "text": "Compares unlike things using like or as: “The airship hummed like a giant bee.”"
+        },
+        {
+          "label": "Metaphor",
+          "text": "Describes one thing as another without like or as: “The garden is a closed book.”"
+        },
+        {
+          "label": "Personification",
+          "text": "Gives human qualities to something nonhuman: “The sun leans close and whispers.”"
+        },
+        {
+          "label": "Hyperbole",
+          "text": "Exaggerates for effect: “I’ve hummed this song a thousand times today.”"
+        },
+        {
+          "label": "Idiom",
+          "text": "A familiar phrase with a meaning beyond its words: “It’s stuck in my head” means I can’t stop thinking of it."
+        }
+      ],
+      "steps": [
+        "Find the unusual expression.",
+        "Name the type and ask what two things are being compared or what human trait is given.",
+        "Explain how it helps you imagine the scene or understand a feeling or mood."
+      ],
+      "tip": "“Nell looked like her father” is a literal comparison, not a simile. A simile compares two UNLIKE things.",
+      "ex": [
+        "“Below her, the ocean waited like an open mouth” is a simile and personification. It makes the ocean feel hungry and dangerous, which builds suspense.",
+        "“You have dirt on your nose and sunshine in your face” uses a metaphor: Rosa is not glowing, but she looks bright and happy."
+      ],
+      "check": {
+        "question": "“The wind growled at the hull all night.” What technique is used, and what does it mean?",
+        "answer": "Personification. Wind cannot growl like an animal or person; the phrase suggests a low, angry, threatening sound."
+      },
+      "image": "assets/2026-10-quiz1/anchor-charts/figurative_language.png",
+      "imageAlt": "Figurative Language illustrated anchor chart. The study guide below explains the concepts and examples.",
+      "imageLayout": "poster"
+    },
+    {
+      "skill": "character",
+      "name": "Character",
+      "group": "Midterm focus",
+      "body": "Use a character’s actions, words, thoughts, and how others react to them to infer traits, motivations, and change. In a play, stage directions are a major clue.",
+      "guide": [
+        {
+          "label": "Trait · usual quality",
+          "text": "Brave, responsible, or bitter describes a pattern of behavior."
+        },
+        {
+          "label": "Feeling · current emotion",
+          "text": "Nervous, relieved, or curious describes an emotion at one moment."
+        },
+        {
+          "label": "Motivation · reason for acting",
+          "text": "What a character wants, needs, fears, or values."
+        },
+        {
+          "label": "Change · beginning → ending",
+          "text": "How events change a character’s feelings, actions, or understanding."
+        }
+      ],
+      "steps": [
+        "Choose a trait, feeling, or motivation that answers the question.",
+        "Find an action, thought, line of dialogue, or stage direction as evidence.",
+        "Explain how that evidence supports your inference."
+      ],
+      "tip": "A character can feel afraid and still act bravely. Do not confuse a temporary feeling with a lasting trait.",
+      "ex": [
+        "Nell is responsible: she reports the loose cover right away and thinks of the children who need the medicine.",
+        "Rosa changes from scornful (“This whole place is dead”) to hopeful and hardworking (she clears the garden and asks Grandma to help)."
+      ],
+      "check": {
+        "question": "“Even after the storm flattened his tomato plants, Eli staked each one up again and added a windbreak.” Name a trait and give evidence.",
+        "answer": "Eli is persistent. He repairs every plant after the damage and adds a windbreak to protect them next time."
+      },
+      "image": "assets/2026-10-quiz1/anchor-charts/character.png",
+      "imageAlt": "Character illustrated anchor chart. The study guide below explains the concepts and examples.",
+      "imageLayout": "poster"
+    },
+    {
+      "skill": "literary_elements",
+      "name": "Literary Elements",
+      "group": "Midterm focus",
+      "body": "Literary elements are the building blocks of a story: characters, setting, conflict, and plot. Knowing them helps you explain how one event leads to the next.",
+      "guide": [
+        {
+          "label": "Setting · where and when",
+          "text": "The time and place, including the weather and mood. A setting can create danger or change with the characters."
+        },
+        {
+          "label": "Conflict · the problem",
+          "text": "Character vs. character, character vs. nature, character vs. society, or character vs. self (an inner struggle)."
+        },
+        {
+          "label": "Rising action",
+          "text": "Events that build tension as the character tries to solve the problem."
+        },
+        {
+          "label": "Climax · turning point",
+          "text": "The moment of greatest tension, when the conflict is faced head-on."
+        },
+        {
+          "label": "Falling action and resolution",
+          "text": "What happens after the climax, and how the problem is finally settled."
+        }
+      ],
+      "steps": [
+        "Name the setting and the main conflict.",
+        "List the key events in order and mark the one with the most tension as the climax.",
+        "Explain how the resolution settles the conflict and what the character has learned."
+      ],
+      "tip": "The climax is not always the most exciting-sounding sentence; it is the turning point where the conflict is decided. The resolution comes after it.",
+      "ex": [
+        "Storm over the Kestrel: setting is an airship over a dark ocean during a storm. Conflict is character vs. nature (Nell vs. the storm), with an inner conflict about fear.",
+        "Climax: on her second attempt, Nell catches the cover and ties it down. Resolution: she returns safely, and the captain promises to teach her storm knots."
+      ],
+      "check": {
+        "question": "“Maya’s kite tangled in an oak tree. She tried a stick, then a ladder. At last she climbed onto the lowest branch and pulled it free. That evening she flew it in an open field.” Which sentence is the climax?",
+        "answer": "“At last she climbed onto the lowest branch and pulled it free.” That is the turning point where the problem is solved; flying it later is the resolution."
+      }
+    },
+    {
+      "skill": "poetry",
+      "name": "Elements of Poetry",
+      "group": "Midterm focus",
+      "body": "Poets use structure and sound to create meaning. Notice how the poem looks, how it sounds, and what it makes you see and feel.",
+      "guide": [
+        {
+          "label": "Line and stanza",
+          "text": "A line is one row of words. A stanza is a group of lines, like a paragraph in a poem."
+        },
+        {
+          "label": "Rhyme scheme",
+          "text": "The pattern of end rhymes, labeled with letters: AABB (couplets) or ABAB (every other line)."
+        },
+        {
+          "label": "Rhythm and meter",
+          "text": "The beat you hear when you read aloud. Meter is a regular pattern of stressed and unstressed syllables."
+        },
+        {
+          "label": "Repetition and refrain",
+          "text": "Repetition repeats a word or phrase. A refrain is a line or group of lines repeated after each stanza."
+        },
+        {
+          "label": "Sound devices",
+          "text": "Alliteration repeats beginning sounds (drip and drop). Onomatopoeia uses words that sound like what they mean (buzz, splash)."
+        },
+        {
+          "label": "Imagery and speaker",
+          "text": "Imagery appeals to the senses. The speaker is the voice talking in the poem, which may not be the poet."
+        },
+        {
+          "label": "Free verse",
+          "text": "A poem with no regular rhyme or meter. It still uses line breaks, imagery, and repetition."
+        }
+      ],
+      "steps": [
+        "Count the stanzas and label the rhyme scheme of one stanza.",
+        "Read aloud to hear the rhythm, repetition, and sound devices.",
+        "Ask who the speaker is and what message (theme) the details build."
+      ],
+      "tip": "Indented or italic repeated lines are usually a refrain, not a new stanza. The speaker is not automatically the poet.",
+      "ex": [
+        "The Ditty That Wouldn’t Quit uses AABB couplets and the italic refrain “Oh, tum-tiddle-tee…” after every stanza. The refrain itself acts like the song that will not stop.",
+        "Spring Rain uses ABAB rhyme (pane/rain, spill/windowsill), onomatopoeia (pitter, patter, splash), and alliteration (drip and drop)."
+      ],
+      "check": {
+        "question": "“The bees buzz by the busy bush, / The breeze goes swish, the grasses hush.” Name the rhyme pattern and two sound devices.",
+        "answer": "The two lines rhyme (bush/hush), making a couplet. “Bees buzz by the busy bush” is alliteration, and “buzz” and “swish” are onomatopoeia."
+      }
+    },
+    {
+      "skill": "drama",
+      "name": "Elements of Drama",
+      "group": "Supporting skill",
+      "body": "A drama, or play, is a story written to be performed. Readers learn almost everything through dialogue and stage directions instead of a narrator.",
+      "guide": [
+        {
+          "label": "Cast of characters",
+          "text": "The list at the beginning that names each character and often describes them."
+        },
+        {
+          "label": "Dialogue",
+          "text": "The words the characters speak. Each line begins with the speaker’s name, with no quotation marks."
+        },
+        {
+          "label": "Stage directions",
+          "text": "Italic words, usually in parentheses, that tell actors how to move or speak and describe the setting, sound, and lighting."
+        },
+        {
+          "label": "Scenes and acts",
+          "text": "Plays are divided into scenes (and sometimes acts). A new scene often means a change in time or place."
+        },
+        {
+          "label": "Setting description",
+          "text": "Stage directions at the start of a scene that describe the time, place, and set."
+        }
+      ],
+      "steps": [
+        "Read the cast list to learn who is who.",
+        "Read the stage directions carefully; they show feelings and actions the dialogue does not say.",
+        "Compare scenes to see how time, place, and characters change."
+      ],
+      "tip": "Stage directions are not spoken aloud. A character’s feelings may be shown only in a direction like (with contempt) or (eyes shining).",
+      "ex": [
+        "In The Garden Behind the Wall, (with contempt) tells the actor playing Rosa to say “This whole place is dead” scornfully.",
+        "Scene 1 is early spring with dead vines; Scene 2 is six weeks later with roses on the wall. The scene change shows time passing and the garden’s recovery."
+      ],
+      "check": {
+        "question": "“SAM: (slamming the door) Fine. I don’t care anyway.” What does the stage direction suggest that the words alone do not?",
+        "answer": "Slamming the door shows Sam is angry or upset, so “I don’t care” probably is not true. The direction reveals his real feelings."
+      }
+    },
+    {
+      "skill": "evidence",
+      "name": "Text Evidence",
+      "group": "Supporting skill",
+      "body": "Text evidence is a specific detail from the text that supports an answer. You can quote exactly or paraphrase accurately.",
+      "guide": [
+        {
+          "label": "Answer",
+          "text": "Make a clear statement that answers the question."
+        },
+        {
+          "label": "Evidence",
+          "text": "Choose a relevant action, fact, line, or stage direction. Name the paragraph, scene, or stanza when helpful."
+        },
+        {
+          "label": "Explain",
+          "text": "Show how the detail supports your answer: “This shows … because …”."
+        }
+      ],
+      "steps": [
+        "Underline the important words in the question.",
+        "Return to the text and choose the strongest matching detail.",
+        "Connect the evidence to your answer in your own words."
+      ],
+      "tip": "In “Which sentence best supports…” questions, several choices may be true. Pick the one that PROVES the idea in the question, not just one that is about the same topic.",
+      "ex": [
+        "Answer: Grandma Ines has changed. Evidence: “I have been sitting still for far too long. Bring me that packet of seeds.” Explanation: she was always in her chair, and now she joins the work.",
+        "To show that dormancy protects a seed, use “the next hard frost would kill the tender young plant,” not a sentence that only defines dormancy."
+      ],
+      "check": {
+        "question": "Question: Is Captain Osei calm? Text: “The captain did not panic. ‘Every hand I have is holding this ship steady,’ he said.” Write an answer with evidence.",
+        "answer": "Yes, Captain Osei is calm. The text says he “did not panic,” and he explains the situation clearly instead of shouting, even in a storm."
+      },
+      "image": "assets/2026-10-quiz1/anchor-charts/evidence.png",
+      "imageAlt": "Text Evidence illustrated anchor chart. The study guide below explains the concepts and examples.",
+      "imageLayout": "poster"
+    },
+    {
+      "skill": "vocab_context",
+      "name": "Vocabulary in Context",
+      "group": "Supporting skill",
+      "body": "Use nearby words, sentences, and events to infer the meaning of an unfamiliar word. Then test that meaning in the sentence.",
+      "guide": [
+        {
+          "label": "Definition or restatement",
+          "text": "“A seed begins to grow, or germinate…” The words after “or” give the meaning."
+        },
+        {
+          "label": "Example",
+          "text": "“A plant without enough nitrogen often develops pale yellow leaves.” The example explains deficiency as a lack."
+        },
+        {
+          "label": "Contrast",
+          "text": "“The vines are matted on top, but look underneath.” The contrast hints at a thick, tangled surface."
+        },
+        {
+          "label": "Situation",
+          "text": "Nell grips the rail at the first post before moving on. Her actions explain hesitated: paused because she was unsure or afraid."
+        }
+      ],
+      "steps": [
+        "Read before and after the unfamiliar word.",
+        "Find a clue and suggest a meaning that fits the context.",
+        "Substitute your meaning and reread; check word parts if useful."
+      ],
+      "tip": "Choose the meaning used in THIS text. “Project” can mean a school assignment or to throw a light or voice outward.",
+      "ex": [
+        "In How a Seed Wakes Up, seeds planted too densely “crowd one another.” The clue shows densely means packed closely together.",
+        "“A seed begins to grow… only when conditions are favorable” and then lists what it needs. Favorable means helpful or just right."
+      ],
+      "check": {
+        "question": "“The kitten was restless; it paced, pawed at the door, and would not settle on its blanket.” What does restless mean, and what is the clue?",
+        "answer": "Restless means unable to stay still or relax. Pacing, pawing, and refusing to settle all show it cannot rest."
+      },
+      "image": "assets/2026-10-quiz1/anchor-charts/vocab_context.png",
+      "imageAlt": "Vocabulary in Context illustrated anchor chart. The study guide below explains the concepts and examples.",
+      "imageLayout": "poster"
+    }
+  ],
+  "passages": [
+    {
+      "id": "storm_over_the_kestrel",
+      "title": "Storm over the Kestrel",
+      "skills": [
+        "literary_elements",
+        "character",
+        "figurative_language",
+        "theme"
+      ],
+      "body": "Original practice story written in the style of an adventure novel. Paragraphs are numbered.\n\n1 The airship <i>Kestrel</i> hummed over the dark ocean like a giant bee that had lost its way home. From the small round porthole beside her bunk, Nell Varga could see nothing below but black water and, now and then, the white scribble of a wave. She was twelve years old and the youngest crew member aboard, and her job was simple: polish the brass, carry messages, and stay out of the way.\n\n2 Tonight she was restless. The wind had been growling at the hull since supper, and the floor kept tilting beneath her feet. Something about the sky felt wrong, as if the clouds were holding their breath.\n\n3 A loud crack split the air. Nell pressed her face to the glass. Far back along the outer catwalk, a dark shape flapped and twisted in the wind. It was the canvas cover over the cargo hold, and one of its fastenings had snapped. If the cover tore away, rain would pour onto the contents of the hold: three hundred crates of medicine bound for the island hospital at Port Ivy.\n\n4 Nell ran to the bridge. Captain Osei stood at the wheel, his watchful eyes fixed on the storm ahead. \"The cargo cover is loose!\" she gasped.\n\n5 The captain did not panic. \"Every hand I have is holding this ship steady,\" he said. \"Mr. Lund will go as soon as he can be spared.\"\n\n6 \"There isn't time,\" Nell said. \"I'm small. I can clip onto the safety line.\"\n\n7 For a long moment, the captain studied her. Then he nodded once. \"Clip on, keep low, and come back the instant I call. That is an order.\"\n\n8 The catwalk was a narrow ribbon of metal stretched along the side of the ship. The wind seized Nell's jacket and tried to drag her into the sky. Her heart hammered. At the first post she hesitated, gripping the rail so tightly that her knuckles turned white. Below her, the ocean waited like an open mouth.\n\n9 She thought of the hospital at Port Ivy and of the children who would wake up tomorrow needing the medicine in those crates. She took one breath, then another, and inched forward.\n\n10 The loose cover cracked like a whip above her head. On her first attempt to grab its corner, the canvas jerked free and slapped her shoulder. On her second, she caught it and pulled with all her weight. Rain stung her face. Her arms burned. At last she looped the rope through the iron ring, tied the knot her father had taught her, and tugged it tight. The cover lay flat and still.\n\n11 When Nell stumbled back onto the bridge, soaked and shaking, the captain did not scold her. He handed her a towel and a cup of warm tea. \"Tomorrow,\" he said, \"you'll learn to tie the storm knots properly. A crew is only as strong as its smallest member.\"\n\n12 Through the porthole, the first gray light of morning was creeping over the clouds. Nell smiled. For the first time since she had come aboard, she felt that the <i>Kestrel</i> truly belonged to her, too.",
+      "questions": [
+        {
+          "q": "Which choice best describes the setting of the story?",
+          "choices": [
+            "A busy island hospital on a sunny morning",
+            "A ship's cargo hold during a calm night at sea",
+            "An airship flying over the ocean at night during a storm",
+            "A harbor where an airship is being repaired"
+          ],
+          "answer": 2,
+          "skill": "literary_elements"
+        },
+        {
+          "q": "What is the main conflict in the story?",
+          "choices": [
+            "Nell must secure the loose cargo cover before the storm ruins the medicine.",
+            "Nell and Captain Osei argue about who should steer the airship.",
+            "Mr. Lund refuses to help Nell polish the brass.",
+            "The hospital at Port Ivy does not want the medicine."
+          ],
+          "answer": 0,
+          "skill": "literary_elements"
+        },
+        {
+          "q": "Which event is the <b>climax</b> of the story?",
+          "choices": [
+            "Nell hears a loud crack and sees the cover flapping (paragraph 3).",
+            "The captain gives Nell permission to go onto the catwalk (paragraph 7).",
+            "The captain hands Nell a towel and a cup of tea (paragraph 11).",
+            "On her second attempt, Nell catches the canvas and ties it down (paragraph 10)."
+          ],
+          "answer": 3,
+          "skill": "literary_elements"
+        },
+        {
+          "q": "In paragraph 1, the author writes that the airship \"hummed over the dark ocean like a giant bee that had lost its way home.\" What does this simile suggest?",
+          "choices": [
+            "The airship is covered in yellow and black stripes.",
+            "The airship makes a steady buzzing sound and seems small and alone over the huge ocean.",
+            "The crew of the airship is lost and cannot find Port Ivy.",
+            "The airship moves quickly from flower to flower."
+          ],
+          "answer": 1,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "In paragraph 8, \"Below her, the ocean waited like an open mouth.\" How does this sentence affect the mood of the story?",
+          "choices": [
+            "It makes the scene feel peaceful and calm.",
+            "It shows that Nell is hungry after her long night.",
+            "It builds suspense by making the ocean seem hungry and dangerous.",
+            "It explains how deep the ocean is below the ship."
+          ],
+          "answer": 2,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "Read this sentence from paragraph 8: \"At the first post she <b>hesitated</b>, gripping the rail so tightly that her knuckles turned white.\" What does <b>hesitated</b> mean?",
+          "choices": [
+            "Paused because she felt unsure or afraid",
+            "Ran ahead without thinking",
+            "Shouted for help",
+            "Slipped and almost fell"
+          ],
+          "answer": 0,
+          "skill": "vocab_context"
+        },
+        {
+          "q": "Which sentence from the story best explains <b>why</b> Nell keeps moving forward on the catwalk?",
+          "choices": [
+            "\"The catwalk was a narrow ribbon of metal stretched along the side of the ship.\"",
+            "\"Her heart hammered.\"",
+            "\"Rain stung her face.\"",
+            "\"She thought of the hospital at Port Ivy and of the children who would wake up tomorrow needing the medicine in those crates.\""
+          ],
+          "answer": 3,
+          "skill": "evidence"
+        },
+        {
+          "q": "Which word best describes Captain Osei, based on paragraphs 4-7 and 11?",
+          "choices": [
+            "Careless, because he sends a child outside without any rules",
+            "Calm and fair, because he stays steady in the storm and trusts Nell with clear safety orders",
+            "Angry, because he scolds Nell when she returns",
+            "Nervous, because he cannot decide what to do"
+          ],
+          "answer": 1,
+          "skill": "character"
+        },
+        {
+          "q": "Which statement best expresses a theme of the story?",
+          "choices": [
+            "Airships are dangerous and should not fly in storms.",
+            "Children should always stay out of the way of adults.",
+            "Courage means acting to help others even when you are afraid.",
+            "Medicine is the most important cargo a ship can carry."
+          ],
+          "answer": 2,
+          "skill": "theme"
+        },
+        {
+          "q": "How does Nell change from the beginning of the story to the end? Use one detail from the beginning and one from the end.",
+          "type": "short",
+          "sampleAnswer": "At the beginning, Nell feels like an outsider whose job is to \"stay out of the way.\" By the end, after bravely tying down the cargo cover, the captain praises her and she feels that the Kestrel \"truly belonged to her, too.\" She changes from feeling unimportant to feeling like a real member of the crew.",
+          "skill": "character"
+        }
+      ]
+    },
+    {
+      "id": "garden_behind_the_wall",
+      "title": "The Garden Behind the Wall",
+      "skills": [
+        "drama",
+        "character",
+        "theme"
+      ],
+      "body": "Original practice play. Read the cast list and the stage directions (in italics and parentheses) carefully.\n\n<b>The Garden Behind the Wall</b>\n<i>A Play in Two Scenes</i>\n\n<b>CAST OF CHARACTERS</b>\nROSA, an eleven-year-old girl who has just moved in with her grandmother\nGRANDMA INES, Rosa's grandmother, who rarely leaves her chair by the window\nTHEO, a boy from next door who loves growing things\n\n<b>SCENE 1</b>\n<i>(Early spring. A yard behind an old stone house. Dead brown vines cover a high wall. A rusty gate hangs open. ROSA kicks at a pile of dry leaves.)</i>\n\nROSA: <i>(with contempt)</i> This whole place is dead. Even the weeds have given up.\n\nTHEO: <i>(peering over the wall)</i> It isn't dead. It's sleeping.\n\nROSA: <i>(startled, spinning around)</i> Who are you? Were you spying on me?\n\nTHEO: I'm Theo. I live next door. <i>(He climbs over the wall and kneels beside it. He pulls back a clump of tangled stems.)</i> See? The vines are matted on top, but look underneath.\n\nROSA: <i>(leaning closer, curious in spite of herself)</i> It's green. There's a tiny green tendril curling around the stem!\n\nTHEO: Your grandpa planted this garden. After he died, nobody touched it for three years.\n\nROSA: <i>(quietly)</i> Grandma never talks about him. She just sits by the window all day.\n\nTHEO: Maybe the garden could talk for her.\n\n<i>(ROSA hesitates. Then she picks up a rusty rake leaning against the gate and begins to pull away the dead leaves. Lights fade.)</i>\n\n<b>SCENE 2</b>\n<i>(Six weeks later. The same yard, now cleared. Rows of young plants line the beds. Pink roses climb the wall. Birds sing. ROSA and THEO are digging. GRANDMA INES appears in the doorway, leaning on a cane.)</i>\n\nGRANDMA INES: <i>(in a shaky voice)</i> What have you done?\n\nROSA: <i>(dropping her trowel, nervous)</i> I'm sorry, Grandma. I should have asked. We found Grandpa's notebook in the shed. He scrawled the name of every plant on the first page, so we knew what to look for.\n\n<i>(GRANDMA INES walks slowly down the steps. She touches a rose as if it were made of glass.)</i>\n\nGRANDMA INES: He planted these the year your mother was born. I thought they had died with him.\n\nTHEO: They only needed someone to wake them up.\n\nGRANDMA INES: <i>(turning to ROSA, her eyes shining)</i> When you came here, you were as gray as this yard. Now look at you. You have dirt on your nose and sunshine in your face.\n\nROSA: <i>(laughing and wiping her nose)</i> Will you help us, Grandma? You must know where everything belongs.\n\nGRANDMA INES: <i>(lowering herself onto the garden bench and reaching for a trowel)</i> I have been sitting still for far too long. Bring me that packet of seeds.\n\n<i>(The three work side by side as the lights slowly grow brighter. Curtain.)</i>",
+      "questions": [
+        {
+          "q": "What is the main purpose of the <b>Cast of Characters</b> at the beginning of the play?",
+          "choices": [
+            "To tell how the play will end",
+            "To describe the setting of Scene 2",
+            "To give the actors' lines in order",
+            "To introduce who the characters are before the action begins"
+          ],
+          "answer": 3,
+          "skill": "drama"
+        },
+        {
+          "q": "In Scene 1, Rosa says, <i>(with contempt)</i> \"This whole place is dead.\" What does <b>with contempt</b> tell the actor playing Rosa to do?",
+          "choices": [
+            "Say the line with scorn, as if the garden is worthless",
+            "Whisper the line kindly to Theo",
+            "Shout the line with joy",
+            "Say the line while crying"
+          ],
+          "answer": 0,
+          "skill": "vocab_context"
+        },
+        {
+          "q": "Read the stage direction: <i>(leaning closer, curious in spite of herself)</i>. What does it reveal about Rosa at this moment?",
+          "choices": [
+            "She is angry that Theo climbed over the wall.",
+            "She is starting to become interested in the garden, even though she did not want to be.",
+            "She is afraid the vines will hurt her.",
+            "She already knows everything about plants."
+          ],
+          "answer": 1,
+          "skill": "drama"
+        },
+        {
+          "q": "Theo says, \"The vines are <b>matted</b> on top, but look underneath.\" Which meaning of <b>matted</b> fits this line?",
+          "choices": [
+            "Brightly colored",
+            "Neatly trimmed",
+            "Thickly tangled together",
+            "Freshly planted"
+          ],
+          "answer": 2,
+          "skill": "vocab_context"
+        },
+        {
+          "q": "Why does the playwright divide the play into two scenes?",
+          "choices": [
+            "To introduce a new set of characters in Scene 2",
+            "To show that time has passed and the garden and characters have changed",
+            "To move the story to a different country",
+            "To give the audience a break before the climax"
+          ],
+          "answer": 1,
+          "skill": "drama"
+        },
+        {
+          "q": "Theo says, \"It isn't dead. It's sleeping.\" What does this line show about Theo?",
+          "choices": [
+            "He is hopeful and can see possibilities that others miss.",
+            "He is lazy and does not want to work in the garden.",
+            "He wants to trick Rosa.",
+            "He thinks the garden should be torn down."
+          ],
+          "answer": 0,
+          "skill": "character"
+        },
+        {
+          "q": "Grandma Ines tells Rosa, \"When you came here, you were as gray as this yard.\" What does this simile suggest about Rosa when she first arrived?",
+          "choices": [
+            "She was wearing gray clothes.",
+            "She was covered in dust from the yard.",
+            "She was unhappy and lifeless, like the neglected garden.",
+            "She was older than she looked."
+          ],
+          "answer": 2,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "Which line from Scene 2 best supports the idea that Grandma Ines has changed?",
+          "choices": [
+            "\"What have you done?\"",
+            "\"He planted these the year your mother was born.\"",
+            "\"I thought they had died with him.\"",
+            "\"I have been sitting still for far too long. Bring me that packet of seeds.\""
+          ],
+          "answer": 3,
+          "skill": "evidence"
+        },
+        {
+          "q": "Which statement best expresses a theme of the play?",
+          "choices": [
+            "Old houses should always be repaired.",
+            "Bringing something back to life can help people heal and grow closer.",
+            "Children should never touch things without asking.",
+            "Gardens need water and sunlight to grow."
+          ],
+          "answer": 1,
+          "skill": "theme"
+        },
+        {
+          "q": "How does Rosa change from Scene 1 to Scene 2? Use one stage direction and one line of dialogue in your answer.",
+          "type": "short",
+          "sampleAnswer": "In Scene 1, Rosa is bitter about her new home; the stage direction (with contempt) shows she says \"This whole place is dead\" scornfully. By Scene 2 she has worked hard to bring the garden back, and she happily asks, \"Will you help us, Grandma?\" (laughing and wiping her nose). She changes from scornful and unhappy to hopeful, caring, and connected to her grandmother.",
+          "skill": "character"
+        }
+      ]
+    },
+    {
+      "id": "how_a_seed_wakes_up",
+      "title": "How a Seed Wakes Up",
+      "skills": [
+        "authors_purpose",
+        "text_structure",
+        "vocab_context"
+      ],
+      "body": "An informational article. Paragraphs are numbered.\n\n<b>How a Seed Wakes Up</b>\n\n1 All winter long, a seed can lie in the cold ground looking as lifeless as a pebble. Yet inside its hard coat, a tiny plant is waiting. When the season changes, that plant will awaken and push its way toward the light. How does a seed know when it is time to grow? The answer lies in a series of signals from its surroundings.\n\n<b>Waiting for the Right Moment</b>\n2 A seed has three main parts. The seed coat is a tough outer layer that protects everything inside. The embryo is the baby plant. The endosperm, or stored food, gives the embryo energy until it can make its own. These contents allow a seed to survive for months, or even years, without growing at all. This resting state is called dormancy.\n\n3 Dormancy protects the seed. If a seed sprouted during a warm week in December, the next hard frost would kill the tender young plant. Therefore, many seeds will not grow until they have gone through a long stretch of cold. The cold works like a calendar, telling the seed that winter has truly passed.\n\n<b>The Signals of Spring</b>\n4 A seed begins to grow, or germinate, only when conditions are favorable. It needs three things: water, oxygen, and the right temperature. In spring, melting snow and rain soak the soil. Because the seed coat absorbs this water, the seed swells and its coat splits open. At the same time, warmer soil speeds up the chemical changes inside the seed.\n\n<b>From Seed to Seedling</b>\n5 Germination follows a predictable order. First, the root pushes downward. It anchors the plant and begins drawing water from the soil. Next, a shoot curls upward toward the surface. Once the shoot breaks through the soil, its first leaves unfold. Finally, the leaves begin to use sunlight to make food, a process called photosynthesis. The stored food is used up, and the seedling now feeds itself.\n\n<b>When Things Go Wrong</b>\n6 Not every seed succeeds. If seeds are planted too densely, the seedlings crowd one another and compete for water and light, so many grow weak and thin. A seedling may also suffer from a deficiency of nutrients. For example, a plant without enough nitrogen often develops pale yellow leaves. Gardeners prevent these problems by spacing seeds carefully and enriching the soil with compost.\n\n7 It is reasonable to think of spring as one sudden change, but for a seed, it is a careful chain of events. Each step depends on the one before it. The next time you notice green shoots poking through the soil, remember that each one waited, tested its world, and began at exactly the right moment.",
+      "questions": [
+        {
+          "q": "What is the author's main purpose for writing this article?",
+          "choices": [
+            "To persuade readers to plant a garden this spring",
+            "To entertain readers with a story about a seed",
+            "To compare winter and summer weather",
+            "To explain how and why seeds begin to grow in spring"
+          ],
+          "answer": 3,
+          "skill": "authors_purpose"
+        },
+        {
+          "q": "Which text structure does the author use in paragraph 5?",
+          "choices": [
+            "Sequence, because it tells the stages of germination in order",
+            "Compare and contrast, because it shows how roots and shoots are alike",
+            "Problem and solution, because it explains how gardeners fix weak plants",
+            "Description, because it lists the three parts of a seed"
+          ],
+          "answer": 0,
+          "skill": "text_structure"
+        },
+        {
+          "q": "According to paragraph 4, what happens <b>because</b> the seed coat absorbs water?",
+          "choices": [
+            "The soil becomes warmer.",
+            "The seed swells and its coat splits open.",
+            "The seed goes into dormancy.",
+            "The leaves begin photosynthesis."
+          ],
+          "answer": 1,
+          "skill": "text_structure"
+        },
+        {
+          "q": "Which sentence from the article best supports the idea that dormancy helps a seed survive?",
+          "choices": [
+            "\"The embryo is the baby plant.\"",
+            "\"This resting state is called dormancy.\"",
+            "\"If a seed sprouted during a warm week in December, the next hard frost would kill the tender young plant.\"",
+            "\"In spring, melting snow and rain soak the soil.\""
+          ],
+          "answer": 2,
+          "skill": "evidence"
+        },
+        {
+          "q": "Why does the author write that \"the cold works like a calendar\" in paragraph 3?",
+          "choices": [
+            "To help readers understand that a long cold period tells the seed when winter is over",
+            "To show that seeds can read dates",
+            "To persuade readers that winter is the best season",
+            "To describe what a calendar looks like"
+          ],
+          "answer": 0,
+          "skill": "authors_purpose"
+        },
+        {
+          "q": "In paragraph 4, a seed grows \"only when conditions are <b>favorable</b>.\" Which phrase from the paragraph best helps you understand <b>favorable</b>?",
+          "choices": [
+            "\"melting snow and rain soak the soil\"",
+            "\"its coat splits open\"",
+            "\"chemical changes inside the seed\"",
+            "\"It needs three things: water, oxygen, and the right temperature.\""
+          ],
+          "answer": 3,
+          "skill": "vocab_context"
+        },
+        {
+          "q": "In paragraph 6, seeds planted too <b>densely</b> \"crowd one another.\" What does <b>densely</b> mean?",
+          "choices": [
+            "Deep under the soil",
+            "Packed closely together",
+            "Very slowly",
+            "In bright sunlight"
+          ],
+          "answer": 1,
+          "skill": "vocab_context"
+        },
+        {
+          "q": "Read the sentences: \"A seedling may also suffer from a <b>deficiency</b> of nutrients. For example, a plant without enough nitrogen often develops pale yellow leaves.\" What does <b>deficiency</b> mean?",
+          "choices": [
+            "An extra supply",
+            "A strong smell",
+            "A lack or shortage",
+            "A bright color"
+          ],
+          "answer": 2,
+          "skill": "vocab_context"
+        },
+        {
+          "q": "How does the heading \"When Things Go Wrong\" help the reader?",
+          "choices": [
+            "It signals that paragraph 6 will describe problems seeds can face and how gardeners prevent them.",
+            "It tells the reader that the article is a story with a sad ending.",
+            "It shows that the author is about to list the parts of a seed.",
+            "It explains the meaning of germinate."
+          ],
+          "answer": 0,
+          "skill": "text_structure"
+        },
+        {
+          "q": "Explain what happens to a seed from the moment it absorbs water until the seedling can feed itself. Use at least three steps from the article, in order.",
+          "type": "short",
+          "sampleAnswer": "First, the seed coat absorbs water, so the seed swells and the coat splits open. Then the root pushes downward to anchor the plant and draw water. Next, a shoot curls upward and breaks through the soil, and its first leaves unfold. Finally, the leaves use sunlight to make food through photosynthesis, so the seedling feeds itself.",
+          "skill": "text_structure"
+        }
+      ]
+    },
+    {
+      "id": "three_poems",
+      "title": "Three Poems: Ditties, Gardens, and Rain",
+      "skills": [
+        "poetry",
+        "figurative_language",
+        "theme"
+      ],
+      "body": "Three original poems. Read each poem aloud to hear its rhythm and sounds. Lines in italics are a refrain.\n\n<b>Poem 1: The Ditty That Wouldn't Quit</b>\n\nOn Monday, Bartholomew learned a new ditty,\nA silly old tune about Pete and his kitty.\nHe hummed it at breakfast, he hummed it at nine,\nHe hummed it while waiting in the lunchroom line.\n      <i>Oh, tum-tiddle-tee and a tum-tiddle-toe,</i>\n      <i>Once it gets started, it won't let you go!</i>\n\nHis teacher said, \"Bart, could you hush for a while?\"\nHis sister just groaned with a sour little smile.\nThe dog howled along with a long, wobbly \"Woo!\"\nThe kettle went whistling. It sang the song, too!\n      <i>Oh, tum-tiddle-tee and a tum-tiddle-toe,</i>\n      <i>Once it gets started, it won't let you go!</i>\n\nHe tried to restrain it; he pressed his lips tight,\nBut it buzzed in his bones like a bee in the night.\nHe scrawled it on paper and buried it deep,\nBut it climbed out and sang to him all through his sleep.\n      <i>Oh, tum-tiddle-tee and a tum-tiddle-toe,</i>\n      <i>Once it gets started, it won't let you go!</i>\n\nSo now that you've read it, I'm sorry to say,\nYou'll be humming it, too, for the rest of the day.\n      <i>Oh, tum-tiddle-tee and a tum-tiddle-toe,</i>\n      <i>Once it gets started, it won't let you go!</i>\n\n<b>Poem 2: What the Garden Knows</b>\n\nUnder the frost,\nthe garden is a closed book\nno one has learned to read.\n\nThen April arrives,\nsoft-footed,\nknocking on the door of every seed.\n\nA tendril unrolls\nlike a question mark,\nasking the sky, <i>Is it time?</i>\n\nThe robins answer.\nThe rain answers.\nThe sun leans close and whispers, <i>Yes.</i>\n\n<b>Poem 3: Spring Rain</b>\n\nPitter, patter, on the pane,\nDrip and drop and splash and spill,\nHere's the music of the rain\nDancing down the windowsill.\n\nEvery puddle is a drum,\nEvery gutter hums along.\nCome and listen, children, come!\nSpring is singing her first song.",
+      "questions": [
+        {
+          "q": "In Poem 1, which lines are the <b>refrain</b>?",
+          "choices": [
+            "\"On Monday, Bartholomew learned a new ditty, / A silly old tune about Pete and his kitty.\"",
+            "\"He tried to restrain it; he pressed his lips tight\"",
+            "\"Oh, tum-tiddle-tee and a tum-tiddle-toe, / Once it gets started, it won't let you go!\"",
+            "\"So now that you've read it, I'm sorry to say\""
+          ],
+          "answer": 2,
+          "skill": "poetry"
+        },
+        {
+          "q": "What is the rhyme scheme of the first four lines of Poem 1 (ditty, kitty, nine, line)?",
+          "choices": [
+            "ABAB",
+            "AABB",
+            "ABCD",
+            "ABBA"
+          ],
+          "answer": 1,
+          "skill": "poetry"
+        },
+        {
+          "q": "What is the rhyme scheme of the first stanza of Poem 3 (pane, spill, rain, windowsill)?",
+          "choices": [
+            "ABAB",
+            "AABB",
+            "AAAA",
+            "ABCB"
+          ],
+          "answer": 0,
+          "skill": "poetry"
+        },
+        {
+          "q": "Read the line from Poem 1: \"But it buzzed in his bones like a bee in the night.\" Which poetic devices does this line use?",
+          "choices": [
+            "Metaphor and refrain",
+            "Personification only",
+            "Rhyme scheme and stanza",
+            "Simile, alliteration, and onomatopoeia"
+          ],
+          "answer": 3,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "In Poem 1, \"He tried to <b>restrain</b> it; he pressed his lips tight.\" What does <b>restrain</b> mean?",
+          "choices": [
+            "To sing loudly",
+            "To hold back or keep under control",
+            "To write down",
+            "To teach to someone else"
+          ],
+          "answer": 1,
+          "skill": "vocab_context"
+        },
+        {
+          "q": "How does the speaker in the final stanza of Poem 1 make the poem humorous?",
+          "choices": [
+            "The speaker tells the reader directly that the ditty will now be stuck in the reader's head, too.",
+            "The speaker explains how Bartholomew finally forgot the song.",
+            "The speaker describes what Pete's kitty looks like.",
+            "The speaker apologizes to Bartholomew's teacher."
+          ],
+          "answer": 0,
+          "skill": "poetry"
+        },
+        {
+          "q": "In Poem 2, \"the garden is a closed book / no one has learned to read.\" What does this metaphor suggest?",
+          "choices": [
+            "The garden is full of old books.",
+            "Nobody visits the garden in winter.",
+            "In winter, the life inside the garden is hidden and mysterious.",
+            "The garden is too difficult to take care of."
+          ],
+          "answer": 2,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "Why is Poem 2 an example of <b>free verse</b>, while Poem 3 is not?",
+          "choices": [
+            "Poem 2 has more stanzas than Poem 3.",
+            "Poem 2 uses figurative language, and Poem 3 does not.",
+            "Poem 2 is about a garden, and Poem 3 is about rain.",
+            "Poem 2 has no regular rhyme scheme or steady beat, while Poem 3 has both."
+          ],
+          "answer": 3,
+          "skill": "poetry"
+        },
+        {
+          "q": "Which line from Poem 3 contains the most <b>onomatopoeia</b>?",
+          "choices": [
+            "\"Pitter, patter, on the pane,\"",
+            "\"Every puddle is a drum,\"",
+            "\"Come and listen, children, come!\"",
+            "\"Spring is singing her first song.\""
+          ],
+          "answer": 0,
+          "skill": "poetry"
+        },
+        {
+          "q": "Which theme do Poem 2 and Poem 3 share?",
+          "choices": [
+            "Rain makes it hard for children to play outside.",
+            "Spring brings new life and joy to the world.",
+            "Gardens should be kept closed during winter.",
+            "Music is more important than nature."
+          ],
+          "answer": 1,
+          "skill": "theme"
+        },
+        {
+          "q": "Choose Poem 2 or Poem 3. Explain how the poet uses personification to describe spring. Quote at least one line from the poem.",
+          "type": "short",
+          "sampleAnswer": "In Poem 2, the poet writes that April arrives \"soft-footed, knocking on the door of every seed\" and that \"the sun leans close and whispers, Yes.\" Giving April and the sun human actions makes spring seem gentle and kind, like a friend waking the seeds up. (Poem 3: \"Spring is singing her first song\" and \"Every gutter hums along\" make spring sound joyful, like a person making music.)",
+          "skill": "poetry"
+        }
+      ]
+    },
+    {
+      "id": "purpose_structure_practice",
+      "title": "Author's Purpose and Text Structure Practice",
+      "skills": [
+        "authors_purpose",
+        "text_structure"
+      ],
+      "body": "Practice set. Read each short excerpt, then decide the author's purpose and how the text is organized.\n\n<b>Author's purpose:</b> persuade (convince), inform or explain (teach facts, show how or why), entertain (tell a story or poem).\n<b>Text structures:</b> description, sequence, cause and effect, compare and contrast, problem and solution.\n\n<b>Excerpt 1.</b> Every family should grow at least one plant on a windowsill. Caring for a plant teaches children patience and responsibility. Fresh herbs make meals taste better. Best of all, a pot of soil and a packet of seeds cost less than a movie ticket. Start your window garden this weekend!\n\n<b>Excerpt 2.</b> Pea plants climb by using tendrils, thin curling stems that wrap around anything they touch. A single tendril can coil around a string in less than an hour. Tendrils help the plant lift its leaves toward the sunlight without growing a thick, heavy stem.\n\n<b>Excerpt 3.</b> Gus the squirrel had a plan. Every night he crept into Mrs. Patel's flowerbed, dug up one tulip bulb, and buried it in the neighbor's yard. By April, the neighbor had a mysterious row of red tulips, and Mrs. Patel had a very bare garden and a very puzzled face.\n\n<b>Excerpt 4.</b> To grow a bean in a jar, first fold a wet paper towel and press it against the inside of a clear jar. Next, slide a bean between the towel and the glass. Then place the jar in a warm, sunny spot. After about five days, you will witness a root poking out. Finally, watch for the first green leaves.\n\n<b>Excerpt 5.</b> Hot-air balloons and airships both float because they are lighter than the air around them. However, a hot-air balloon can only drift wherever the wind blows it. An airship, unlike a balloon, has engines and a rudder, so a pilot can steer it in any direction.\n\n<b>Excerpt 6.</b> Hydrogen is the lightest gas, but it catches fire very easily. As a result, early airships that were filled with hydrogen were dangerous to fly. For this reason, modern airships are filled with helium, a gas that does not burn.\n\n<b>Excerpt 7.</b> Every recess, students ran straight through the school garden and trampled the young plants. The garden club decided to take action for their spring project. They built a low wooden fence, painted bright signs, and made a stone path around the beds. Within a week, the plants were growing safely again.\n\n<b>Excerpt 8.</b> In September 1783, two French brothers sent a hot-air balloon into the sky carrying a sheep, a duck, and a rooster. The animals landed safely about eight minutes later. Two months after that, in November, two men made the first free flight in one of the brothers' balloons and drifted over Paris for about twenty-five minutes.",
+      "questions": [
+        {
+          "q": "Excerpt 1 (window garden): What is the author's purpose?",
+          "choices": [
+            "To inform",
+            "To entertain",
+            "To persuade",
+            "To explain a process"
+          ],
+          "answer": 2,
+          "skill": "authors_purpose"
+        },
+        {
+          "q": "Excerpt 1: Which words are the strongest clues to the author's purpose?",
+          "choices": [
+            "\"should\" and \"Start your window garden this weekend!\"",
+            "\"a pot of soil\" and \"a packet of seeds\"",
+            "\"plant\" and \"windowsill\"",
+            "\"Fresh herbs\" and \"meals\""
+          ],
+          "answer": 0,
+          "skill": "authors_purpose"
+        },
+        {
+          "q": "Excerpt 2 (pea tendrils): Which text structure does the author use?",
+          "choices": [
+            "Problem and solution",
+            "Description",
+            "Sequence",
+            "Compare and contrast"
+          ],
+          "answer": 1,
+          "skill": "text_structure"
+        },
+        {
+          "q": "Excerpt 3 (Gus the squirrel): What is the author's main purpose?",
+          "choices": [
+            "To persuade readers to protect their gardens from squirrels",
+            "To inform readers about how tulips grow",
+            "To explain how to plant tulip bulbs",
+            "To entertain readers with a funny story"
+          ],
+          "answer": 3,
+          "skill": "authors_purpose"
+        },
+        {
+          "q": "Excerpt 4 (bean in a jar): Which text structure does the author use?",
+          "choices": [
+            "Sequence",
+            "Cause and effect",
+            "Compare and contrast",
+            "Problem and solution"
+          ],
+          "answer": 0,
+          "skill": "text_structure"
+        },
+        {
+          "q": "Excerpt 5 (balloons and airships): Which clue words best show the text structure?",
+          "choices": [
+            "first, next, finally",
+            "problem, solved",
+            "both, however, unlike",
+            "because, as a result"
+          ],
+          "answer": 2,
+          "skill": "text_structure"
+        },
+        {
+          "q": "Excerpt 6 (hydrogen and helium): Which text structure does the author use?",
+          "choices": [
+            "Description",
+            "Sequence",
+            "Compare and contrast",
+            "Cause and effect"
+          ],
+          "answer": 3,
+          "skill": "text_structure"
+        },
+        {
+          "q": "Excerpt 7 (school garden): Which text structure does the author use?",
+          "choices": [
+            "Problem and solution",
+            "Description",
+            "Sequence",
+            "Compare and contrast"
+          ],
+          "answer": 0,
+          "skill": "text_structure"
+        },
+        {
+          "q": "Excerpt 8 (balloon flights of 1783): What are the author's purpose and text structure?",
+          "choices": [
+            "To persuade; problem and solution",
+            "To inform; sequence (chronological order)",
+            "To entertain; compare and contrast",
+            "To inform; cause and effect"
+          ],
+          "answer": 1,
+          "skill": "authors_purpose"
+        },
+        {
+          "q": "Excerpts 4 and 7 both describe things people do with plants, but they are organized differently. Explain the structure of each and give one clue from each excerpt.",
+          "type": "short",
+          "sampleAnswer": "Excerpt 4 uses sequence: it gives steps in order with clue words like \"first,\" \"next,\" \"then,\" and \"finally.\" Excerpt 7 uses problem and solution: the problem is that students trampled the plants, and the solution is the fence, signs, and path the garden club built.",
+          "skill": "text_structure"
+        }
+      ]
+    }
+  ]
+}
