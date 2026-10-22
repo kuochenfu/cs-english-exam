@@ -1,16 +1,15 @@
 # Grade 5 Fall Midterm — Reading Anchor Charts
 
-Seven "Midterm focus" charts, one per Reading Comprehension Skill in the notice: Author's Purpose, Text Structure, Theme, Figurative Language, Character, Literary Elements, Elements of Poetry. Each has a poster image, a guide, how-to steps, a "watch out" tip, **five worked examples**, and a quick check. The runtime copy is `anchorCharts` in `data/exams/2026-11-midterm/reading.json`.
+Seven "Midterm focus" charts, one per Reading Comprehension Skill in the notice: Author's Purpose, Text Structure, Theme, Figurative Language, Character, Literary Elements, Elements of Poetry. Each has a poster image, a guide, how-to steps, a "watch out" tip, **five worked examples**, and a quick check. Three supporting charts cover Elements of Drama, Text Evidence, and Vocabulary in Context. All ten have their own illustrated posters. The runtime copy is `anchorCharts` in `data/exams/2026-11-midterm/reading.json`.
 
 The teacher's Module 2 anchor charts were not available. These are original study guides built from the research below. All example sentences are original. Examples that mention Mary, Colin, Dickon, Matt, or Kate are invented scenes, not quotes from the Into Reading texts.
 
 ## Posters
 
-- Images: `assets/2026-11-midterm/anchor-charts/<skill>.webp` (1536×2304, 2:3, shown at 1024×1536)
-- Sources: `content/2026-11-midterm/anchor-chart-posters/<skill>.html`. These are self-contained HTML files with emoji icons. A script in each file drops worked examples that would overflow the box, so posters show two or three.
-- To re-render a poster, run headless Chrome on its HTML file:
-  `"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --hide-scrollbars --force-device-scale-factor=1.5 --window-size=1024,1536 --virtual-time-budget=2000 --screenshot=<skill>.png file://$PWD/<skill>.html`, then `cwebp -q 86 -m 6 <skill>.png -o <skill>.webp`
-- If you change chart text in `reading.json`, update the poster HTML to match, and the other way round.
+- Active images: `assets/2026-11-midterm/anchor-charts/<skill>-illustrated.webp` (1024×1536, 2:3). These ten posters were generated with the built-in `image_gen` tool, using original English copy and meaningful storybook illustrations: purpose scenes, structure organizers, a theme story sequence, figurative-language scenes, S.T.E.A.L. clues, a plot mountain, an annotated poem, a drama script, an evidence chain, and context clues.
+- The exact poster copy, complete prompts, and export settings are in `content/2026-11-midterm/image-art/prompts.json`. Exports use WebP quality 90 so small text stays clear. The full runtime guides, worked examples, and quick checks remain below the posters.
+- The seven `<skill>.webp` images and HTML files in `content/2026-11-midterm/anchor-chart-posters/` are legacy sources for the earlier typography-only posters. They do not regenerate the current illustrated artwork. The supporting charts now use exam-specific images rather than Quiz 1 posters.
+- If chart concepts change, update both `reading.json` and the corresponding poster copy in the prompt manifest, then regenerate that poster and verify its wording and diagrams visually.
 
 ## Research (2026-10-22)
 

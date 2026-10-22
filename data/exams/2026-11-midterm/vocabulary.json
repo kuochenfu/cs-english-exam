@@ -19,7 +19,9 @@
       ],
       "forms": [
         "contents"
-      ]
+      ],
+      "image": "assets/2026-11-midterm/vocabulary/contents.webp",
+      "imageAlt": "A travel bag with its clothes, book, apple, and compass spilled out."
     },
     {
       "week": 1,
@@ -42,7 +44,9 @@
         "abundance",
         "plenty",
         "surplus"
-      ]
+      ],
+      "image": "assets/2026-11-midterm/vocabulary/deficiency.webp",
+      "imageAlt": "A nearly empty watering can has too little water for four thirsty plants."
     },
     {
       "week": 1,
@@ -65,7 +69,9 @@
         "sparsely",
         "thinly",
         "loosely"
-      ]
+      ],
+      "image": "assets/2026-11-midterm/vocabulary/densely.webp",
+      "imageAlt": "Trees grow tightly packed together across an island."
     },
     {
       "week": 1,
@@ -88,7 +94,9 @@
         "unfavorable",
         "harmful",
         "unhelpful"
-      ]
+      ],
+      "image": "assets/2026-11-midterm/vocabulary/favorable.webp",
+      "imageAlt": "Sunny skies and a gentle wind help an airship travel smoothly."
     },
     {
       "week": 1,
@@ -114,7 +122,9 @@
       ],
       "forms": [
         "panic"
-      ]
+      ],
+      "image": "assets/2026-11-midterm/vocabulary/panic.webp",
+      "imageAlt": "A frightened passenger reacts suddenly while a calm adult offers help."
     },
     {
       "week": 1,
@@ -136,7 +146,9 @@
       "antonyms": [
         "recede",
         "retract"
-      ]
+      ],
+      "image": "assets/2026-11-midterm/vocabulary/project.webp",
+      "imageAlt": "A narrow stone ledge sticks out beyond the face of a cliff."
     },
     {
       "week": 1,
@@ -159,7 +171,9 @@
         "unreasonable",
         "foolish",
         "absurd"
-      ]
+      ],
+      "image": "assets/2026-11-midterm/vocabulary/reasonable.webp",
+      "imageAlt": "Two children make a fair choice by sharing strawberries equally."
     },
     {
       "week": 1,
@@ -182,7 +196,9 @@
         "lucid",
         "clear-headed",
         "rational"
-      ]
+      ],
+      "image": "assets/2026-11-midterm/vocabulary/delirious.webp",
+      "imageAlt": "A feverish child looks confused while a caring adult stays nearby."
     },
     {
       "week": 1,
@@ -199,7 +215,9 @@
       "synonyms": [
         "window",
         "port"
-      ]
+      ],
+      "image": "assets/2026-11-midterm/vocabulary/porthole.webp",
+      "imageAlt": "A child looks at the ocean through a round brass ship window."
     },
     {
       "week": 2,
@@ -222,7 +240,9 @@
         "quit",
         "abandon",
         "neglect"
-      ]
+      ],
+      "image": "assets/2026-11-midterm/vocabulary/attempt.webp",
+      "imageAlt": "A child tries hard to push open a heavy garden gate."
     },
     {
       "week": 2,
@@ -245,7 +265,9 @@
         "sleep",
         "doze",
         "slumber"
-      ]
+      ],
+      "image": "assets/2026-11-midterm/vocabulary/awaken.webp",
+      "imageAlt": "A child wakes up and stretches as morning sunlight enters the room."
     },
     {
       "week": 2,
@@ -271,7 +293,9 @@
       ],
       "forms": [
         "contempt"
-      ]
+      ],
+      "image": "assets/2026-11-midterm/vocabulary/contempt.webp",
+      "imageAlt": "A child dismisses another child's handmade crown with a scornful expression."
     },
     {
       "week": 2,
@@ -289,7 +313,9 @@
         "clasp",
         "latch",
         "buckle"
-      ]
+      ],
+      "image": "assets/2026-11-midterm/vocabulary/fastening.webp",
+      "imageAlt": "A metal latch holds a wooden garden gate closed."
     },
     {
       "week": 2,
@@ -312,7 +338,9 @@
         "obvious",
         "clear",
         "plain"
-      ]
+      ],
+      "image": "assets/2026-11-midterm/vocabulary/mysterious.webp",
+      "imageAlt": "A child discovers a puzzling key partly hidden beneath ivy."
     },
     {
       "week": 2,
@@ -334,7 +362,9 @@
       "antonyms": [
         "follow",
         "obey"
-      ]
+      ],
+      "image": "assets/2026-11-midterm/vocabulary/preside.webp",
+      "imageAlt": "A student leads a small council meeting while classmates listen."
     },
     {
       "week": 2,
@@ -357,7 +387,9 @@
         "release",
         "free",
         "unleash"
-      ]
+      ],
+      "image": "assets/2026-11-midterm/vocabulary/restrain.webp",
+      "imageAlt": "A child holds a leash to keep an excited puppy safely back from the road."
     },
     {
       "week": 2,
@@ -375,7 +407,9 @@
         "observer",
         "onlooker",
         "bystander"
-      ]
+      ],
+      "image": "assets/2026-11-midterm/vocabulary/witness.webp",
+      "imageAlt": "A child watches another child accidentally knock over a flowerpot."
     },
     {
       "week": 2,
@@ -398,7 +432,9 @@
         "smooth",
         "combed",
         "sleek"
-      ]
+      ],
+      "image": "assets/2026-11-midterm/vocabulary/matted.webp",
+      "imageAlt": "A lamb's wool is tangled into thick messy clumps."
     },
     {
       "week": 2,
@@ -416,7 +452,9 @@
         "shoot",
         "runner",
         "vine"
-      ]
+      ],
+      "image": "assets/2026-11-midterm/vocabulary/tendril.webp",
+      "imageAlt": "A thin curling pea-plant stem wraps around a wooden support."
     },
     {
       "week": 3,
@@ -439,7 +477,9 @@
         "rush",
         "proceed",
         "plunge"
-      ]
+      ],
+      "image": "assets/2026-11-midterm/vocabulary/hesitate.webp",
+      "imageAlt": "A child pauses uncertainly before knocking on a classroom door."
     },
     {
       "week": 3,
@@ -456,7 +496,9 @@
       "synonyms": [
         "chorus",
         "repetition"
-      ]
+      ],
+      "image": "assets/2026-11-midterm/vocabulary/refrain.webp",
+      "imageAlt": "The same golden chorus returns after a different blue verse in a children's song."
     },
     {
       "week": 3,
@@ -479,7 +521,9 @@
         "calm",
         "relaxed",
         "still"
-      ]
+      ],
+      "image": "assets/2026-11-midterm/vocabulary/restless.webp",
+      "imageAlt": "A child keeps wiggling and tapping instead of sitting still."
     },
     {
       "week": 3,
@@ -502,7 +546,9 @@
         "release",
         "drop",
         "loosen"
-      ]
+      ],
+      "image": "assets/2026-11-midterm/vocabulary/seize.webp",
+      "imageAlt": "A hand quickly grabs a rope to keep a boat from drifting away."
     },
     {
       "week": 3,
@@ -525,7 +571,9 @@
         "careless",
         "inattentive",
         "unaware"
-      ]
+      ],
+      "image": "assets/2026-11-midterm/vocabulary/watchful.webp",
+      "imageAlt": "An alert lifeguard carefully watches children swimming in a pool."
     },
     {
       "week": 3,
@@ -543,7 +591,9 @@
         "scribble",
         "jot",
         "doodle"
-      ]
+      ],
+      "image": "assets/2026-11-midterm/vocabulary/scrawl.webp",
+      "imageAlt": "A hand writes hurried, messy pencil marks on a napkin."
     },
     {
       "week": 3,
@@ -561,7 +611,9 @@
         "jingle",
         "tune",
         "song"
-      ]
+      ],
+      "image": "assets/2026-11-midterm/vocabulary/ditty.webp",
+      "imageAlt": "Two children sing a short cheerful tune with a ukulele."
     }
   ]
 }

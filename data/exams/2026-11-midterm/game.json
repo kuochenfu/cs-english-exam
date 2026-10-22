@@ -45,35 +45,35 @@
       "id": "sky_launch",
       "name": "Sky Launch",
       "desc": "Complete your first practice round.",
-      "image": "assets/badges/2026-11-midterm/sky_launch.svg",
+      "image": "assets/badges/2026-11-midterm/sky_launch.webp",
       "rule": { "type": "rounds", "count": 1 }
     },
     {
       "id": "garden_key",
       "name": "Garden Key",
       "desc": "Finish all of today's missions.",
-      "image": "assets/badges/2026-11-midterm/garden_key.svg",
+      "image": "assets/badges/2026-11-midterm/garden_key.webp",
       "rule": { "type": "todayMissions" }
     },
     {
       "id": "spring_bloom",
       "name": "Spring in Bloom",
       "desc": "Finish all of the daily missions on 3 different days.",
-      "image": "assets/badges/2026-11-midterm/spring_bloom.svg",
+      "image": "assets/badges/2026-11-midterm/spring_bloom.webp",
       "rule": { "type": "missionDays", "count": 3 }
     },
     {
       "id": "word_collector",
       "name": "Word Collector",
       "desc": "Score 90% or more in 3 different vocabulary modes.",
-      "image": "assets/badges/2026-11-midterm/word_collector.svg",
+      "image": "assets/badges/2026-11-midterm/word_collector.webp",
       "rule": { "type": "scores", "keys": ["vocab:"], "min": 90, "count": 3 }
     },
     {
       "id": "sound_sorter",
       "name": "Sound Sorter",
       "desc": "Get 100% on a phonics sort game or phonics quiz.",
-      "image": "assets/badges/2026-11-midterm/sound_sorter.svg",
+      "image": "assets/badges/2026-11-midterm/sound_sorter.webp",
       "rule": { "type": "scores", "min": 100, "count": 1, "keys": [
         "spell:m2_w1_oo_yoo_sort", "spell:m2_w1_oo_yoo_pattern_sort", "spell:m2_w2_ou_aw_oi_sort",
         "spell:m2_w2_ou_oi_pattern_sort", "spell:m2_w2_aw_pattern_sort", "spell:m2_w3_r_controlled_sort",
@@ -85,7 +85,7 @@
       "id": "dictation_ace",
       "name": "Dictation Ace",
       "desc": "Type every word right on a whole dictation list (100%).",
-      "image": "assets/badges/2026-11-midterm/dictation_ace.svg",
+      "image": "assets/badges/2026-11-midterm/dictation_ace.webp",
       "rule": { "type": "scores", "min": 100, "count": 1, "keys": [
         "spell:m2_w1_oo_yoo:type", "spell:m2_w2_ou_aw_oi:type", "spell:m2_w3_r_controlled:type"
       ] }
@@ -94,7 +94,7 @@
       "id": "time_traveler",
       "name": "Time Traveler",
       "desc": "Score 90% or more on a Lesson 6, a Lesson 7, and a Lesson 8 grammar set.",
-      "image": "assets/badges/2026-11-midterm/time_traveler.svg",
+      "image": "assets/badges/2026-11-midterm/time_traveler.webp",
       "rule": { "type": "groups", "min": 90, "groups": [
         ["grammar:mng-l6-book", "grammar:l6-present-continuous"],
         ["grammar:mng-l7-book", "grammar:l7-past-regular"],
@@ -105,21 +105,21 @@
       "id": "story_navigator",
       "name": "Story Navigator",
       "desc": "Complete every reading passage.",
-      "image": "assets/badges/2026-11-midterm/story_navigator.svg",
+      "image": "assets/badges/2026-11-midterm/story_navigator.webp",
       "rule": { "type": "activities", "category": "reading", "count": "all" }
     },
     {
       "id": "watchful_listener",
       "name": "Watchful Listener",
       "desc": "Complete every listening dialogue.",
-      "image": "assets/badges/2026-11-midterm/watchful_listener.svg",
+      "image": "assets/badges/2026-11-midterm/watchful_listener.webp",
       "rule": { "type": "activities", "category": "listen", "count": "all" }
     },
     {
       "id": "storm_tamer",
       "name": "Storm Tamer",
       "desc": "Clear Boss Review: answer every saved missed question correctly.",
-      "image": "assets/badges/2026-11-midterm/storm_tamer.svg",
+      "image": "assets/badges/2026-11-midterm/storm_tamer.webp",
       "rule": { "type": "bossClear" }
     }
   ]

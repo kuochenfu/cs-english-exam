@@ -1,4 +1,5 @@
-# Builds the ten Fall Midterm cat & fox badge medallions as standalone SVGs.
+# Legacy SVG source: builds the original vector badges, not the active WebP art.
+# Current image_gen prompts and export settings are recorded in prompts.json.
 import os, sys
 OUT = sys.argv[1]
 os.makedirs(OUT, exist_ok=True)

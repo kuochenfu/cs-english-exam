@@ -28,6 +28,10 @@ Runtime config: `data/exams/2026-11-midterm/game.json`, enabled by `"game": true
 
 ## Art
 
-The badges are vector SVG medallions in `assets/badges/2026-11-midterm/`. Each has a gold rim, a colored enamel interior, a Module 2 emblem (airship, garden key, spring flower, book, sound bins, dictation sheet, clock, map, headphones, storm cloud), and the same mascot pair as the original badges: a cream tabby cat with a teal scarf and an orange fox with a navy neckerchief. Regenerate them with `python3 content/2026-11-midterm/badge-art/build_badges.py assets/badges/2026-11-midterm`. Locked badges are grayed by CSS.
+The ten active badges are 512 × 512 WebP illustrations in `assets/badges/2026-11-midterm/`, generated with the built-in `image_gen` tool to match the original badges' painterly storybook finish. Each has the same gold star-and-laurel circular rim and mascot pair: a cream tabby cat with a teal scarf and an orange fox with a navy neckerchief. The pair participates in each Module 2 scene: airship launch, garden key, three spring flowers, collecting books, sorting sounds, checked dictation, time travel, map navigation, attentive listening, and calming a storm.
+
+The complete prompt set, reference assets, and export settings are saved in `content/2026-11-midterm/badge-art/prompts.json`. The original `first_quest.jpg` and `listening_star.jpg` established the style; the new `sky_launch.webp` served as the shared collection reference for the other nine. Exports use WebP quality 86. Locked badges are still grayed by CSS; badge IDs, rules, and saved progress are unchanged.
+
+The SVG files and `build_badges.py` are retained as legacy vector sources only. That script regenerates the older SVG artwork, not the current AI illustrations.
 
 Tests: `tests/navigation.test.cjs`, in the "Grade 5 Fall Midterm" section.
