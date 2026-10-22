@@ -1,6 +1,6 @@
 # cs-english-exam
 
-A small, static web app to help a Grade 4 student prepare for English tests. It now supports multiple test sets, starting with the 2026 April HMH **Into Reading, Module 6 (Weeks 1–3)** midterm. No build step, no dependencies — just open it in a browser.
+A small, static web app to help a Grade 5 student prepare for English tests. It holds several test sets: the spring 2026 Grade 4 midterm (HMH **Into Reading, Module 6**), Grade 5 Fall Quiz 1, and the current **Grade 5 Fall Midterm (Module 2, Weeks 1–3, 2026-11-05)**. The topic table below describes the original April set; each test's own counts are in `content/<exam-id>/`. No build step, no dependencies — just open it in a browser.
 
 ## Topics
 
@@ -80,7 +80,7 @@ a static server; there is no local build step.
 
 ## Cat & Fox badges
 
-All seven achievements share a cat-and-fox mascot duo. Home, Progress, and
+The default seven achievements share a cat-and-fox mascot duo. Home, Progress, and
 completion rewards use the same illustrated badge cards. Locked cards show muted
 previews and explicit requirements; earned cards show full color and an Unlocked
 label. Existing badge IDs, unlock rules, and saved progress are preserved.
@@ -94,3 +94,9 @@ Web thumbnails are in `assets/badges/`; full-resolution originals are in
 Grade 5 Fall Quiz 1 now has Week 1–3 filters and Learn / Practice / Mini test paths. Vocabulary adds 60 authored context questions with exact word-form answers. Spelling adds word–sentence–word audio, slower replay, letter-level feedback, hide-and-retype correction, and a delayed recheck for each missed first attempt. Mini tests show answers at the end.
 
 First independent answers, hints, corrections, and rechecks are reported separately; hints and corrections cannot inflate scores or trigger a perfect-score badge. Existing multiple-choice practice, stored progress, and badges remain available. See [the practice supplement](content/2026-10-quiz1/recall_practice.md) for content provenance and the scoring rules.
+
+## Grade 5 Fall Midterm
+
+`2026-11-midterm` covers Module 2 Weeks 1–3 with 26 illustrated vocabulary words, 3 dictation lists with sort games and phonics quizzes, My Next Grammar Lessons 6–8 (textbook sets plus generated review), 5 reading passages with 10 illustrated anchor charts (7 focus skills with five worked examples each), and 5 listening dialogues.
+
+It is the first test with its own `game.json`: four daily missions (reading, dictation/phonics, Lessons 6–8 grammar at 70%+, and a bonus that alternates vocabulary and listening) and ten Module 2 cat & fox badges. Rules and art notes: [`content/2026-11-midterm/game.md`](content/2026-11-midterm/game.md). Study plan and missing materials: [`study_plan.md`](content/2026-11-midterm/study_plan.md). Build retro: [`retro.md`](content/2026-11-midterm/retro.md). Visual design tokens: [`DESIGN.md`](DESIGN.md).

@@ -3,7 +3,7 @@
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## What this is
-A static, single-page review web app to help a Grade 4 student prepare for recurring English tests. No build system, no dependencies, no tests. Open in a browser via a local static server.
+A static, single-page review web app to help a Grade 5 student (Grade 4 in spring 2026) prepare for recurring English tests. No build system and no dependencies; a Node test suite runs in CI before deploy. Open in a browser via a local static server.
 
 ## Run
 ```
@@ -11,7 +11,7 @@ python3 -m http.server
 ```
 Then open http://localhost:8000. A static server is required because the app loads JSON via `fetch()`, which browsers block on `file://`.
 
-Deploy: GitHub Pages auto-builds on push to `main` (`.github/workflows/deploy.yml`); no build step.
+Deploy: GitHub Pages auto-builds on push to `main` (`.github/workflows/deploy.yml`); no build step. A deploy can sit in "waiting" for several minutes in the Pages queue; that is not a failure.
 
 ## Architecture
 
@@ -48,6 +48,8 @@ Deploy: GitHub Pages auto-builds on push to `main` (`.github/workflows/deploy.ym
 The TTS uses the browser's `speechSynthesis`, which uses OS voices. macOS default voices sound poor. To upgrade: System Settings → Accessibility → Spoken Content → System Voice → Manage Voices → English → download Premium voices (Ava, Zoe, Evan, etc.), then fully restart the browser. The voice picker auto-ranks Premium voices first.
 
 ## Conventions
+- Before committing, read `git status` and the full diff: other agents (Codex via `AGENTS.md`) also edit this repo, so the tree can hold changes you did not make. Validate them like your own.
+- Generated art (badges, posters, vocabulary pictures) is WebP, with prompts saved beside the content (`content/<exam-id>/image-art/`, `badge-art/`). Keep long text in the app's guides, not on the image.
 - Don't introduce a build step, framework, or package manager. The "double-click and go" simplicity is a feature.
 - All UI is rendered by replacing `app.innerHTML` and re-binding handlers. Avoid sprinkling DOM mutations elsewhere.
 - Inline `onclick="..."` handlers reference functions on `window` (e.g. `window.__currentPassage`, `window.__replayDialogue`) when a closure can't be captured another way. This is intentional given the no-framework constraint.
