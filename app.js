@@ -229,12 +229,12 @@ function speak(text, rate = 0.9) {
 
 function voicePicker() {
   if (!voices.length) return "";
-  return `<div style="margin:8px 0">
-    <label style="font-size:0.9rem;color:var(--muted)">🎙️ Voice: </label>
-    <select id="voice-select" style="font:inherit;padding:6px 10px;border-radius:8px;border:2px solid var(--border)">
+  return `<div class="voice-picker">
+    <label for="voice-select">🎙️ Voice</label>
+    <select id="voice-select">
       ${voices.map(v => `<option value="${v.voiceURI}" ${v===selectedVoice?'selected':''}>${v.name} (${v.lang})</option>`).join("")}
     </select>
-    <button class="ghost" id="voice-test" style="padding:6px 12px">Test</button>
+    <button class="ghost small" id="voice-test">Test</button>
   </div>`;
 }
 function bindVoicePicker() {
@@ -756,14 +756,14 @@ function runQuiz(topicId, title, items, getQ, options = {}) {
     const choiceOrder = shuffle([...choices.keys()]);
     renderContent(`
       <div class="panel">
-        <div class="progress-bar"><div style="width:${(i/order.length)*100}%"></div></div>
+        <div class="progress-bar" role="progressbar" aria-label="Progress" aria-valuemin="0" aria-valuemax="${order.length}" aria-valuenow="${i}"><div style="transform:scaleX(${i/order.length})"></div></div>
         <h2>${title}</h2>
         ${extra || ""}
         <div class="question">${prompt}</div>
         <div class="choices">
           ${choiceOrder.map(idx => `<button data-idx="${idx}">${choices[idx]}</button>`).join("")}
         </div>
-        <div class="feedback" id="fb"></div>
+        <div class="feedback" id="fb" role="status" aria-live="polite"></div>
       </div>`);
     document.querySelectorAll(".choices button").forEach(b => {
       b.onclick = () => {
@@ -786,12 +786,14 @@ function runQuiz(topicId, title, items, getQ, options = {}) {
                recordMissed(topicId, { id, label: itemLabel(item), title });
                fb.innerHTML = `❌ The answer is <b>${choices[answer]}</b>.`;
                fb.className = "feedback bad"; }
-        if (explanation) {
-          fb.innerHTML += `<p>${esc(explanation)}</p><button id="quiz-next">Next</button>`;
+        // A wrong answer waits for the child to read the correct one; a right answer moves on by itself.
+        if (explanation || !isCorrect) {
+          fb.innerHTML += `${explanation ? `<p>${esc(explanation)}</p>` : ""}<button id="quiz-next">Next →</button>`;
           let moved=false;
           $("quiz-next").onclick=()=>{if(moved)return;moved=true;i++;step();};
+          $("quiz-next").focus();
         } else {
-        scheduleScreen(() => { i++; step(); }, isCorrect ? 700 : 1600);
+          scheduleScreen(() => { i++; step(); }, 700);
         }
       };
     });
@@ -1226,7 +1228,7 @@ function spellingChoiceQuiz(list, reviewOnly = false) {
       prompt: "Which word completes the sentence?",
       choices,
       answer: choices.indexOf(item.word),
-      extra: `${voicePicker()}<button onclick="window.__spellReplay()" class="ghost" style="margin-bottom:8px">🔊 Replay sentence</button>`
+      extra: `${voicePicker()}<button onclick="window.__spellReplay()" class="ghost replay">🔊 Replay sentence</button>`
     };
   }, {
     itemId: item => item.word,
@@ -1258,17 +1260,18 @@ function dictation(list, reviewOnly = false) {
     const item = words[order[i]];
     renderContent(`
       <div class="panel">
-        <div class="progress-bar"><div style="width:${(i/order.length)*100}%"></div></div>
+        <div class="progress-bar" role="progressbar" aria-label="Progress" aria-valuemin="0" aria-valuemax="${order.length}" aria-valuenow="${i}"><div style="transform:scaleX(${i/order.length})"></div></div>
         <h2>${list.title}</h2>
         ${voicePicker()}
         <p>Listen to the sentence and type the missing word.</p>
         <button id="play">🔊 Play sentence</button>
         <p><i>Sentence will say the whole thing — you type the spelling word only.</i></p>
         <form id="f">
-          <input type="text" id="ans" autocomplete="off" autofocus placeholder="type the word…" />
+          <label class="visually-hidden" for="ans">Spelling word</label>
+          <input type="text" id="ans" autocomplete="off" autocapitalize="none" spellcheck="false" autofocus placeholder="type the word…" />
           <button type="submit">Check</button>
         </form>
-        <div class="feedback" id="fb"></div>
+        <div class="feedback" id="fb" role="status" aria-live="polite"></div>
       </div>`);
     bindVoicePicker();
     $("play").onclick = () => speak(item.sentence);
@@ -1288,10 +1291,14 @@ function dictation(list, reviewOnly = false) {
       } else {
         missed.push({ word: item.word, guess, sentence: item.sentence });
         recordMissed(topicId, { id: item.word, label: item.word, title: list.title });
-        fb.innerHTML = `❌ Correct spelling: <b>${item.word}</b><br><i>${item.sentence}</i>`;
+        fb.innerHTML = `❌ Correct spelling: <b>${item.word}</b><br><i>${item.sentence}</i><br><button id="dict-next">Next →</button>`;
         fb.className = "feedback bad";
+        let moved = false;
+        $("dict-next").onclick = () => { if (moved) return; moved = true; i++; step(); };
+        $("dict-next").focus();
+        return;
       }
-      scheduleScreen(() => { i++; step(); }, guess === item.word.toLowerCase() ? 1200 : 2400);
+      scheduleScreen(() => { i++; step(); }, 1200);
     };
   }
 
@@ -1361,7 +1368,7 @@ function sortGame(list, reviewOnly = false) {
             <div class="sort-row">
               ${Object.entries(placed).filter(([,gg]) => gg === g).map(([w]) => {
                 const ok = wordGroup[w] === g;
-                return `<span class="sort-word placed" style="color:${ok ? 'var(--good)' : 'var(--bad)'}">${ok ? '✓' : '✗'} ${w}</span>`;
+                return `<span class="sort-word placed ${ok ? 'ok' : 'no'}">${ok ? '✓' : '✗'} ${w}</span>`;
               }).join("")}
             </div>
           </div>`).join("")}
@@ -1416,11 +1423,12 @@ function grammarTopic(context = {}) {
   });
 
   const grammarGuide = explanation ? `
-    <section class="grammar-guide" aria-label="Grammar guide">
-      <div class="grammar-guide-head">
-        <h3>${esc(explanation.title || "Quick Guide")}</h3>
-        ${explanation.intro ? `<p>${esc(explanation.intro)}</p>` : ""}
-      </div>
+    <details class="grammar-guide">
+      <summary class="grammar-guide-head">
+        <span class="grammar-guide-title">📘 ${esc(explanation.title || "Quick Guide")}</span>
+        <span class="grammar-guide-hint">Open the rules and examples</span>
+      </summary>
+      ${explanation.intro ? `<p class="grammar-guide-intro">${esc(explanation.intro)}</p>` : ""}
       ${explanation.cards?.length ? `<div class="grammar-guide-list">
         ${explanation.cards.map(card => `
           <article class="grammar-note">
@@ -1442,7 +1450,7 @@ function grammarTopic(context = {}) {
         <strong>Test Tips</strong>
         <ul>${explanation.tips.map(tip => `<li>${esc(tip)}</li>`).join("")}</ul>
       </div>` : ""}
-    </section>` : "";
+    </details>` : "";
 
   const start = (set, quizItems = set.items) => {
     const topicId = `grammar:${set.id}`;
@@ -1456,7 +1464,7 @@ function grammarTopic(context = {}) {
     <div class="panel">
       <h2>✏️ Grammar</h2>
       ${grammarGuide}
-      <p>Choose a practice set:</p>
+      <h3 class="section-label">Choose a practice set</h3>
       <div class="practice-list">
         ${practiceSets.map((set, idx) => {
           const topicId = `grammar:${set.id}`;
@@ -1502,7 +1510,7 @@ function readingTopic(context = {}) {
         const prog = readProgress(topicId);
         return `<div class="passage-choice">
           <button class="passage-card-button" data-p="${i}">
-            ${p.image ? `<img src="${p.image}" alt="${esc(p.imageAlt || p.title)}">` : `<span class="passage-card-fallback">📖</span>`}
+            ${p.image ? `<img src="${p.image}" alt="${esc(p.imageAlt || p.title)}" loading="lazy" decoding="async" width="640" height="360">` : `<span class="passage-card-fallback">📖</span>`}
             <span class="passage-card-copy">
               <span class="passage-card-title">${esc(p.title)}</span>
               ${prog ? `<span class="passage-card-meta">Best ${prog.best}%</span>` : ""}
@@ -1605,26 +1613,26 @@ function readPassage(passage, reviewOnly = false) {
     <div class="panel">
       <h2>${passage.title}</h2>
       <div>${passage.skills.map(s => `<span class="tag">${data.reading.skills[s] || s}</span>`).join("")}</div>
-      ${passage.image ? `<img class="passage-image" src="${passage.image}" alt="${passage.imageAlt || passage.title}">` : ""}
+      ${passage.image ? `<img class="passage-image" src="${passage.image}" alt="${passage.imageAlt || passage.title}" decoding="async">` : ""}
       <div class="passage">${passage.body}</div>
       ${voicePicker()}
-      <div style="margin:8px 0;display:flex;gap:8px;flex-wrap:wrap">
+      <div class="button-row">
         <button id="play-passage">🔊 Listen to Passage</button>
         <button id="stop-passage" class="ghost">⏹ Stop</button>
       </div>
       <h3>Questions</h3>
-      <p style="color:var(--muted)">Read the passage above (you can scroll back any time), pick one answer for each question, then click <b>Submit all answers</b> at the bottom.</p>
+      <p class="hint">Read the passage above (you can scroll back any time), pick one answer for each question, then click <b>Submit all answers</b> at the bottom.</p>
       ${reviewOnly ? `<p class="review-note">Reviewing missed questions only.</p>` : ""}
       ${questions.map((q, qi) => `
-        <div class="qa-block" data-qi="${qi}" style="margin:18px 0;padding:14px;border:2px solid var(--border);border-radius:14px">
+        <div class="qa-block" data-qi="${qi}">
           <div class="question"><b>${qi+1}.</b> ${q.q} <span class="tag">${data.reading.skills[q.skill] || q.skill}</span></div>
           ${q.choices ? `<div class="choices">
             ${qOrders[qi].map(idx => `
-              <label style="display:block;background:white;border:2px solid var(--border);padding:12px 16px;border-radius:12px;margin:6px 0;cursor:pointer">
-                <input type="radio" name="q${qi}" value="${idx}" style="margin-right:8px"> ${q.choices[idx]}
+              <label class="qa-choice">
+                <input type="radio" name="q${qi}" value="${idx}"> <span>${q.choices[idx]}</span>
               </label>`).join("")}
-          </div>` : `<textarea name="q${qi}" rows="3" style="width:100%;box-sizing:border-box;font:inherit;border:2px solid var(--border);border-radius:12px;padding:12px;margin-top:8px" placeholder="Write your answer here."></textarea>
-          <p style="color:var(--muted);font-size:0.9rem">This short answer will show a sample answer after you submit.</p>`}
+          </div>` : `<textarea class="qa-text" name="q${qi}" rows="3" aria-label="Your answer to question ${qi+1}" placeholder="Write your answer here."></textarea>
+          <p class="hint small">This short answer will show a sample answer after you submit.</p>`}
           <div class="feedback" id="fb${qi}"></div>
         </div>
       `).join("")}
@@ -1706,10 +1714,9 @@ function readPassage(passage, reviewOnly = false) {
     const summary = document.createElement("div");
     summary.className = "panel";
     summary.id = "reading-summary";
-    summary.style.marginTop = "0";
     summary.innerHTML = `
       <h2>🎉 Score: ${correct} / ${total} (${pct}%)</h2>
-      ${unanswered ? `<p style="color:var(--bad)">${unanswered} question(s) left blank.</p>` : ""}
+      ${unanswered ? `<p class="text-bad">${unanswered} question(s) left blank.</p>` : ""}
       ${shortAnswers ? `<p>${shortAnswers} short answer question(s) showed sample answers${blankShortAnswers ? `; ${blankShortAnswers} were blank` : ""}.</p>` : ""}
       ${gameRewardHTML(reward)}
       <button onclick="readPassage(window.__currentPassage, window.__currentPassageReviewOnly)">🔁 Try again</button>
@@ -1785,8 +1792,8 @@ function playDialogue(dialogue, reviewOnly = false) {
       ${voicePicker()}
       <button id="play">▶️ Play dialogue</button>
       <button id="stop" class="ghost">⏹ Stop</button>
-      <button id="show" class="ghost">📜 Show transcript</button>
-      <div id="transcript" style="display:none;margin-top:12px">
+      <button id="show" class="ghost" aria-expanded="false" aria-controls="transcript">📜 Show transcript</button>
+      <div id="transcript" class="transcript" hidden>
         ${dialogue.lines.map(l => `<p><b>${l.speaker}:</b> ${l.text}</p>`).join("")}
       </div>
       ${reviewOnly ? `<p class="review-note">Reviewing missed questions only.</p>` : ""}
@@ -1797,7 +1804,8 @@ function playDialogue(dialogue, reviewOnly = false) {
   $("stop").onclick = () => speechSynthesis.cancel();
   $("show").onclick = () => {
     const t = $("transcript");
-    t.style.display = t.style.display === "none" ? "block" : "none";
+    t.hidden = !t.hidden;
+    $("show").setAttribute("aria-expanded", String(!t.hidden));
   };
   window.__replayDialogue = playAll;
   $("quiz").onclick = () => {
@@ -1805,7 +1813,7 @@ function playDialogue(dialogue, reviewOnly = false) {
       prompt: q.q,
       choices: q.choices,
       answer: q.answer,
-      extra: `<button onclick="window.__replayDialogue()" class="ghost" style="margin-bottom:8px">🔊 Replay dialogue</button>`
+      extra: `<button onclick="window.__replayDialogue()" class="ghost replay">🔊 Replay dialogue</button>`
     }), { itemId: q => q.q, itemLabel: q => q.q, reviewOnly, parents: [...topicTrail("listen"), { title: dialogue.title, render: () => playDialogue(dialogue, reviewOnly) }] });
   };
   // Auto-play once on entry

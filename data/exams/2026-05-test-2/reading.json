@@ -12,7 +12,7 @@
   "anchorCharts": [
     {
       "name": "Characters",
-      "image": "assets/anchor-charts/characters.png",
+      "image": "assets/anchor-charts/characters.webp",
       "imageAlt": "A classroom anchor chart poster about characters.",
       "body": "Characters are the people, animals, or beings in a story. To understand a character, look at what the character says, does, thinks, wants, and learns.",
       "ex": [
@@ -25,7 +25,7 @@
     },
     {
       "name": "Adages and Proverbs",
-      "image": "assets/anchor-charts/adages-proverbs.png",
+      "image": "assets/anchor-charts/adages-proverbs.webp",
       "imageAlt": "A classroom anchor chart poster about adages and proverbs.",
       "body": "An adage or proverb is a short saying that gives advice or teaches a lesson. Ask what the saying means in the story, not just what the words literally say.",
       "ex": [
@@ -38,7 +38,7 @@
     },
     {
       "name": "Figurative Language",
-      "image": "assets/anchor-charts/figurative-language.png",
+      "image": "assets/anchor-charts/figurative-language.webp",
       "imageAlt": "A classroom anchor chart poster about figurative language.",
       "body": "Figurative language uses words in a creative way. Look for similes, metaphors, personification, hyperbole, idioms, and vivid descriptions.",
       "ex": [
@@ -51,7 +51,7 @@
     },
     {
       "name": "Central Idea",
-      "image": "assets/anchor-charts/central-idea.png",
+      "image": "assets/anchor-charts/central-idea.webp",
       "imageAlt": "A classroom anchor chart poster about central idea.",
       "body": "The central idea is the most important point of a nonfiction text or section. It is bigger than one detail and is usually a full sentence.",
       "ex": [
@@ -64,7 +64,7 @@
     },
     {
       "name": "Text and Graphic Features",
-      "image": "assets/anchor-charts/text-graphic-features.png",
+      "image": "assets/anchor-charts/text-graphic-features.webp",
       "imageAlt": "A classroom anchor chart poster about text and graphic features.",
       "body": "Text and graphic features include headings, captions, maps, diagrams, photos, charts, and sidebars. They help readers find or understand information.",
       "ex": [
@@ -77,7 +77,7 @@
     },
     {
       "name": "Literary Elements",
-      "image": "assets/anchor-charts/literary-elements.png",
+      "image": "assets/anchor-charts/literary-elements.webp",
       "imageAlt": "A classroom anchor chart poster about literary elements.",
       "body": "Literary elements are story parts such as setting, characters, plot, problem, solution, narrator, and point of view.",
       "ex": [
@@ -90,7 +90,7 @@
     },
     {
       "name": "Theme",
-      "image": "assets/anchor-charts/theme.png",
+      "image": "assets/anchor-charts/theme.webp",
       "imageAlt": "A classroom anchor chart poster about theme.",
       "body": "The theme is the lesson or message of a story. It is usually a full sentence about life, choices, or character.",
       "ex": [
@@ -169,7 +169,7 @@
           "skill": "adages_proverbs"
         }
       ],
-      "image": "assets/passages/traditional-tales-travel.png",
+      "image": "assets/passages/traditional-tales-travel.webp",
       "imageAlt": "A poster showing traditional tales traveling from mountains to sea."
     },
     {
@@ -238,7 +238,7 @@
           "skill": "theme"
         }
       ],
-      "image": "assets/passages/mara-storm-cloud.png",
+      "image": "assets/passages/mara-storm-cloud.webp",
       "imageAlt": "A poster showing Mara singing to calm a storm cloud."
     },
     {
@@ -307,7 +307,7 @@
           "skill": "summary"
         }
       ],
-      "image": "assets/passages/clever-weaver.png",
+      "image": "assets/passages/clever-weaver.webp",
       "imageAlt": "A poster showing Lina the weaver beside the village well."
     },
     {
@@ -376,7 +376,7 @@
           "skill": "characters"
         }
       ],
-      "image": "assets/passages/fox-turtle-tricks.png",
+      "image": "assets/passages/fox-turtle-tricks.webp",
       "imageAlt": "A poster showing Fox and Turtle racing around a pond."
     },
     {
@@ -445,7 +445,7 @@
           "skill": "characters"
         }
       ],
-      "image": "assets/passages/ten-lamps-mountain.png",
+      "image": "assets/passages/ten-lamps-mountain.webp",
       "imageAlt": "A poster showing guardians carrying lamps on a mountain path."
     },
     {
@@ -514,7 +514,7 @@
           "skill": "theme"
         }
       ],
-      "image": "assets/passages/drum-that-would-not-boast.png",
+      "image": "assets/passages/drum-that-would-not-boast.webp",
       "imageAlt": "A poster showing Kito the plain drum helping children dance after rain."
     },
     {
@@ -583,7 +583,7 @@
           "skill": "theme"
         }
       ],
-      "image": "assets/passages/coyote-counted-stars.png",
+      "image": "assets/passages/coyote-counted-stars.webp",
       "imageAlt": "A poster showing Coyote trying to count stars while rabbits and an owl watch."
     },
     {
@@ -652,7 +652,7 @@
           "skill": "central_idea"
         }
       ],
-      "image": "assets/passages/bridge-borrowed-stones.png",
+      "image": "assets/passages/bridge-borrowed-stones.webp",
       "imageAlt": "A poster showing two villages working together to build a stone bridge."
     },
     {
@@ -721,7 +721,7 @@
           "skill": "theme"
         }
       ],
-      "image": "assets/passages/anansi-empty-jar.png",
+      "image": "assets/passages/anansi-empty-jar.webp",
       "imageAlt": "A poster showing Anansi holding an empty clay jar at a village market."
     },
     {
@@ -790,7 +790,7 @@
           "skill": "summary"
         }
       ],
-      "image": "assets/passages/moon-rabbits-message.png",
+      "image": "assets/passages/moon-rabbits-message.webp",
       "imageAlt": "A poster showing Moon Rabbit sending a glowing path of kindness to a village."
     },
     {

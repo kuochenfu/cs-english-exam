@@ -55,7 +55,7 @@ test('leaving a just-answered quiz cannot render the next question over Home', (
 
 test('leaving dictation cancels auto-advance; a repeated submit is ignored', () => {
   const h = harness();
-  h.run(`dictation({id:'demo', title:'Demo', words:[{word:'cat',sentence:'A cat.'},{word:'dog',sentence:'A dog.'}]});`);
+  h.run(`dictation({id:'demo', title:'Demo', words:[{word:'cat',sentence:'A cat.'}]});`);
   h.element('ans').value = 'cat';
   h.element('f').onsubmit({ preventDefault() {} });
   h.element('f').onsubmit({ preventDefault() {} });
@@ -64,6 +64,16 @@ test('leaving dictation cancels auto-advance; a repeated submit is ignored', () 
   const picker = h.element('app').innerHTML;
   h.flush();
   assert.equal(h.element('app').innerHTML, picker);
+});
+
+test('a wrong dictation answer waits for Next instead of auto-advancing', () => {
+  const h = harness();
+  h.run(`dictation({id:'demo', title:'Demo', words:[{word:'cat',sentence:'A cat.'}]});`);
+  h.element('ans').value = 'kat';
+  h.element('f').onsubmit({ preventDefault() {} });
+  assert.equal(h.timers.size, 0);
+  assert.match(h.element('fb').innerHTML, /dict-next/);
+  assert.equal(typeof h.element('dict-next').onclick, 'function');
 });
 
 test('all 30 word pictures render in both definition modes; all 9 passages have pictures', () => {
@@ -164,7 +174,8 @@ test('every Grade 5 anchor chart has a local poster and full-size image link', (
   assert.equal(charts.length, 11);
   for (const chart of charts) {
     assert.ok(chart.image && fs.existsSync(chart.image), chart.name);
-    assert.match(fs.readFileSync(chart.image).subarray(1, 4).toString(), /PNG/);
+    const head = fs.readFileSync(chart.image).subarray(0, 12).toString('latin1');
+    assert.match(head, /^\x89PNG|^RIFF.{4}WEBP/s, chart.name + ' is a PNG or WebP image');
     assert.ok(html.includes(`href="${chart.image}"`), chart.name + ' full-size link');
     assert.ok(html.includes(`src="${chart.image}"`), chart.name + ' poster');
   }

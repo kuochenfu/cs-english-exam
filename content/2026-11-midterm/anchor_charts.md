@@ -6,10 +6,10 @@ The teacher's Module 2 anchor charts were not available. These are original stud
 
 ## Posters
 
-- PNGs: `assets/2026-11-midterm/anchor-charts/<skill>.png` (1536×2304, 2:3, shown at 1024×1536)
+- Images: `assets/2026-11-midterm/anchor-charts/<skill>.webp` (1536×2304, 2:3, shown at 1024×1536)
 - Sources: `content/2026-11-midterm/anchor-chart-posters/<skill>.html`. These are self-contained HTML files with emoji icons. A script in each file drops worked examples that would overflow the box, so posters show two or three.
 - To re-render a poster, run headless Chrome on its HTML file:
-  `"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --hide-scrollbars --force-device-scale-factor=1.5 --window-size=1024,1536 --virtual-time-budget=2000 --screenshot=<skill>.png file://$PWD/<skill>.html`
+  `"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --hide-scrollbars --force-device-scale-factor=1.5 --window-size=1024,1536 --virtual-time-budget=2000 --screenshot=<skill>.png file://$PWD/<skill>.html`, then `cwebp -q 86 -m 6 <skill>.png -o <skill>.webp`
 - If you change chart text in `reading.json`, update the poster HTML to match, and the other way round.
 
 ## Research (2026-10-22)
