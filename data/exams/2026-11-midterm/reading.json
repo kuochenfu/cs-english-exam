@@ -11,308 +11,370 @@
     "evidence": "Text Evidence",
     "vocab_context": "Vocabulary in Context"
   },
-  "anchorChartsIntro": "Start with the seven Midterm focus skills, then review the supporting skills used in the passage questions. These original study guides supplement your classroom materials.",
+  "anchorChartsIntro": "Start with the seven Midterm focus skills. Each chart has a poster, a how-to guide, five worked examples, and a quick check. The supporting charts after them cover drama, text evidence, and vocabulary in context. These are original study guides that supplement your classroom charts.",
   "anchorCharts": [
     {
       "skill": "authors_purpose",
       "name": "Author's Purpose",
       "group": "Midterm focus",
-      "body": "The author’s purpose is the main reason for writing. Read the whole text and ask what the author wants you to think, learn, feel, or do. Then look at smaller choices too: why did the author add this heading, comparison, or ending?",
+      "body": "The <b>author's purpose</b> is the main reason a text was written. Most texts <b>persuade</b>, <b>inform</b>, or <b>entertain</b> (P.I.E.); some also <b>explain</b> how or why, or <b>describe</b> so you can picture something. Look at the whole text, not one sentence, and ask: <i>What does the author want me to think, know, or feel?</i>",
       "guide": [
         {
-          "label": "Persuade",
-          "text": "Convince you to agree or act. Look for an opinion (should, must, best) supported by reasons and evidence."
+          "label": "Persuade · 說服",
+          "text": "Convince the reader to believe or do something. Clues: an opinion, reasons, evidence, words like should, must, best, never."
         },
         {
-          "label": "Inform",
-          "text": "Teach facts about a topic. Look for explanations, facts, definitions, and examples."
+          "label": "Inform · 告知",
+          "text": "Teach facts about a real topic. Clues: facts, numbers, dates, headings, diagrams, captions."
         },
         {
-          "label": "Entertain",
-          "text": "Engage you with a story, play, or poem. A story can also teach a lesson."
+          "label": "Entertain · 娛樂",
+          "text": "Tell a story or share something fun or exciting. Clues: characters, a problem, dialogue, humor, suspense. Stories, plays, and most poems."
         },
         {
-          "label": "Explain",
-          "text": "Show how or why something happens, often step by step. This is a type of informing."
+          "label": "Explain · 說明",
+          "text": "Show how something works or why it happens, often in steps or cause-and-effect order. A special kind of informing."
+        },
+        {
+          "label": "Describe · 描寫",
+          "text": "Help the reader picture a person, place, or thing with sensory details (see, hear, smell, touch, taste)."
         }
       ],
       "steps": [
-        "State what the whole text mostly does.",
-        "Find two details that support that purpose.",
-        "For a part of the text (a heading, a comparison, the last paragraph), ask how it helps the author reach that purpose."
+        "Preview: genre, title, headings, pictures. A play or poem is usually written to entertain; an article usually informs.",
+        "Read and collect clues: opinions and reasons, facts and numbers, or characters and events.",
+        "Name ONE main purpose and support it with two details from the text.",
+        "Ask what else the author does: an article can also persuade at the end; a story can also teach a lesson."
       ],
-      "tip": "A fact can appear in a persuasive text, and a story can include facts. Choose the MAIN purpose, not the purpose of one sentence.",
+      "tip": "A text can have more than one purpose. Choose the MAIN one. A persuasive text still uses facts, and a story with a few facts is still mainly written to entertain.",
       "ex": [
-        "How a Seed Wakes Up mainly explains: it tells how and why a seed begins to grow, using facts, definitions, and steps.",
-        "The comparison “The cold works like a calendar” helps the author explain a hard idea (dormancy) by linking it to something readers already know."
+        "<i>“Every class should plant a spring garden. Gardens teach science, give us fresh food, and make the school beautiful. Ask your principal today!”</i><br><b>Persuade.</b> An opinion (“should”), three reasons, and a call to action (“Ask your principal today!”).",
+        "<i>“A seed needs three things to germinate: water, air, and the right temperature. When water soaks through the seed coat, the tiny plant inside begins to grow.”</i><br><b>Inform / explain.</b> Facts about a real process, told in cause-and-effect order, with no opinion.",
+        "<i>“The airship dropped twenty feet in one second. Kate grabbed the rail and laughed. ‘Is that all you’ve got, storm?’”</i><br><b>Entertain.</b> A character, a dangerous problem, dialogue, and suspense.",
+        "<i>“The old garden was a tangle of gray branches, damp brown leaves, and vines that clung to the walls like cold fingers.”</i><br><b>Describe.</b> Sight and touch details and a simile help you picture the setting; nothing is argued or taught.",
+        "<i>An article tells how airships were invented, gives dates and inventors, then ends: “We should build airships again because they use less fuel than planes.”</i><br><b>Main purpose: inform; second purpose: persuade.</b> Most of the text gives facts; only the ending gives an opinion with a reason."
       ],
       "check": {
-        "question": "“Every school should have a garden. Students learn science outdoors, and fresh vegetables improve lunches.” What is the main purpose?",
-        "answer": "To persuade. “Should” states an opinion, and learning science and better lunches are reasons to agree."
+        "question": "“Three Ways to Keep Your Seedlings Alive: First, water the soil when the top feels dry. Next, place the pot in a sunny window. Finally, turn the pot every day so the stems grow straight.” What is the author’s main purpose?",
+        "answer": "To explain / inform: it teaches how to care for seedlings in steps (first, next, finally). There is no story and no opinion to argue."
       },
-      "image": "assets/2026-10-quiz1/anchor-charts/authors_purpose.png",
-      "imageAlt": "Author's Purpose illustrated anchor chart. The study guide below explains the concepts and examples.",
+      "image": "assets/2026-11-midterm/anchor-charts/authors_purpose.png",
+      "imageAlt": "Author's Purpose anchor chart poster. The study guide below explains each part with five worked examples.",
       "imageLayout": "poster"
     },
     {
       "skill": "text_structure",
       "name": "Text Structure",
       "group": "Midterm focus",
-      "body": "Text structure is the way an author organizes information. A paragraph and the whole text may use different structures, and headings often show how the parts fit together.",
+      "body": "<b>Text structure</b> is the way an author organizes information. Nonfiction often uses one of five structures. Signal words are clues, but the real test is <i>how the ideas connect</i>. Stories, plays, and poems have structures too: <b>chapters</b>, <b>scenes</b>, and <b>stanzas</b> fit together to build the whole work (RL.5.5).",
       "guide": [
         {
-          "label": "Description · topic → details",
-          "text": "Tells what something is like. Clues: for example, such as, includes, is called."
+          "label": "Description",
+          "text": "A topic and its details or features. Signal words: for example, such as, including, also, in addition."
         },
         {
-          "label": "Sequence · first → next → last",
-          "text": "Puts events or steps in order. Clues: first, next, then, once, after, finally, dates."
+          "label": "Sequence / Chronological",
+          "text": "Events or steps in time order. Signal words: first, next, then, after, finally, dates and times."
         },
         {
-          "label": "Cause and effect · why → result",
-          "text": "Explains why something happens and what happens because of it. Clues: because, so, therefore, as a result, if…then."
+          "label": "Compare & Contrast",
+          "text": "How two things are alike and different. Signal words: both, similarly, like, however, but, unlike, on the other hand."
         },
         {
-          "label": "Compare and contrast · alike ↔ different",
-          "text": "Compares two subjects on the same feature. Clues: both, unlike, however, whereas."
+          "label": "Cause & Effect",
+          "text": "Why something happens (cause) and what happens as a result (effect). Signal words: because, so, as a result, therefore, since."
         },
         {
-          "label": "Problem and solution · difficulty → response",
-          "text": "Presents a difficulty and an attempt to solve it. Clues: problem, prevent, to solve, a solution."
+          "label": "Problem & Solution",
+          "text": "A problem is described, then one or more ways to solve it. Signal words: problem, challenge, solve, solution, one answer is."
+        },
+        {
+          "label": "Chapters · Scenes · Stanzas",
+          "text": "Literary structure: chapters build a novel, scenes build a play, stanzas build a poem. Each part adds something: a new event, a change in setting, or a new idea."
         }
       ],
       "steps": [
-        "Identify the ideas being connected.",
-        "Explain their relationship in your own words.",
-        "Use clue words to confirm the structure."
+        "Find the topic. Then ask: what is the author mostly doing with it?",
+        "Circle signal words, but check that they match the whole passage, not just one sentence.",
+        "Sketch a quick organizer: a web, a timeline, a Venn diagram, cause → effect arrows, or problem → solution boxes.",
+        "Explain WHY the author chose that structure: it helps the reader follow steps, compare, or understand a result."
       ],
-      "tip": "“Then” is a clue, not proof. A paragraph with steps in order is sequence; a paragraph that tells WHY the steps happen is cause and effect.",
+      "tip": "One “because” does not make a whole passage cause and effect. Choose the structure that organizes MOST of the text.",
       "ex": [
-        "How a Seed Wakes Up, paragraph 5: the root grows first, next the shoot, then the leaves, and finally the seedling makes food. This is sequence.",
-        "Paragraph 4: the seed coat absorbs water (cause), so the seed swells and splits open (effect)."
+        "<i>“First, soak the bean seeds overnight. Next, plant them two centimeters deep. After about a week, a curled shoot pushes up through the soil.”</i><br><b>Sequence.</b> Steps in time order: first, next, after about a week.",
+        "<i>“Both airships and airplanes carry passengers. However, an airship floats because it is filled with a light gas, while an airplane needs wings and speed to stay up.”</i><br><b>Compare & contrast.</b> “Both” shows a likeness; “however” and “while” show differences.",
+        "<i>“Because the spring rains came late, the soil stayed dry. As a result, many seeds did not sprout until May.”</i><br><b>Cause & effect.</b> Late rain (cause) → dry soil → late sprouting (effects).",
+        "<i>“Rabbits kept eating the school’s lettuce. The students solved the problem by building a fence of chicken wire around the beds.”</i><br><b>Problem & solution.</b> A problem (rabbits) is followed by how it was fixed (a fence).",
+        "<i>A play has three scenes: Scene 1, Mary finds a locked garden; Scene 2, she discovers the key; Scene 3, the garden blooms.</i><br><b>Scenes as structure.</b> Each scene moves the plot forward: problem → discovery → resolution (RL.5.5)."
       ],
       "check": {
-        "question": "“Too many seeds were planted in one row, so the seedlings grew thin and weak.” Which structure fits best?",
-        "answer": "Cause and effect: crowded planting (cause) leads to thin, weak seedlings (effect). “So” is the clue."
+        "question": "“Hot-air balloons and airships both float because they are lighter than the air around them. Unlike a balloon, however, an airship has engines and can be steered.” Which structure is this?",
+        "answer": "Compare and contrast: “both” shows how they are alike, and “unlike” and “however” show how they are different."
       },
-      "image": "assets/2026-10-quiz1/anchor-charts/text_structure.png",
-      "imageAlt": "Text Structure illustrated anchor chart. The study guide below explains the concepts and examples.",
+      "image": "assets/2026-11-midterm/anchor-charts/text_structure.png",
+      "imageAlt": "Text Structure anchor chart poster. The study guide below explains each part with five worked examples.",
       "imageLayout": "poster"
     },
     {
       "skill": "theme",
       "name": "Theme",
       "group": "Midterm focus",
-      "body": "A theme is a message about life that a story, play, or poem develops. Readers infer it from the characters, their choices, how they change, and the outcome.",
+      "body": "The <b>theme</b> is the message or life lesson of a story, play, or poem. It is written as a <b>full sentence</b> that could be true for many people, not just one character. Find it by watching <b>how characters respond to challenges</b> and what they learn, or, in a poem, <b>how the speaker reflects on a topic</b> (RL.5.2).",
       "guide": [
         {
-          "label": "Topic",
-          "text": "A broad subject such as courage, friendship, or grief."
+          "label": "Topic ≠ Theme",
+          "text": "A topic is one or two words (courage, friendship). A theme is a full sentence about that topic: “Courage means acting even when you are afraid.”"
         },
         {
-          "label": "Theme",
-          "text": "A full-sentence message: “Caring for something living can help people heal.”"
+          "label": "Challenge",
+          "text": "What problem does the main character face?"
         },
         {
-          "label": "Evidence",
-          "text": "Actions, changes, and outcomes that support the message, rather than just a matching word."
+          "label": "Response",
+          "text": "How does the character respond? What choices does he or she make?"
+        },
+        {
+          "label": "Outcome & Change",
+          "text": "What happens because of those choices? How has the character changed by the end?"
+        },
+        {
+          "label": "Lesson",
+          "text": "What does the character learn, and what can the reader learn too? Turn it into a sentence that works for anyone."
         }
       ],
       "steps": [
-        "Identify the main character’s challenge.",
-        "Notice the response, change, and outcome.",
-        "Write a message that applies beyond these characters, then support it with details."
+        "Name the topic in one or two words.",
+        "Track the challenge → response → outcome → change.",
+        "Write the theme as a full sentence without character names (use people, we, or you).",
+        "Prove it with two details from the beginning AND the end of the text."
       ],
-      "tip": "A theme is not a plot summary, and it is not one word. More than one theme can fit if the text supports it.",
+      "tip": "Don’t retell the plot (“Mary found a garden”) and don’t write only a topic (“nature”). A theme also isn’t one character’s action; it is a lesson for everyone.",
       "ex": [
-        "Storm over the Kestrel supports the theme that courage means acting even when you are afraid: Nell hesitates and grips the rail, then moves forward to protect the medicine.",
-        "The Garden Behind the Wall supports the theme that bringing something back to life can also bring people back to life: as the garden blooms, Rosa and Grandma Ines both change."
+        "<i>A lonely, angry girl secretly cares for a dying garden. As the plants grow, she makes friends and becomes kind.</i><br><b>Theme:</b> Caring for something outside yourself can help you grow too. <b>Topic:</b> growth, friendship.",
+        "<i>A cabin boy is afraid of heights, but when a stranger’s balloon is in trouble, he climbs out to help and saves the man.</i><br><b>Theme:</b> Courage means doing the right thing even when you are afraid.",
+        "<i>A boy tries to write a poem for a contest. Each version fails, but he keeps adding lines until it becomes his best work.</i><br><b>Theme:</b> Mistakes and hard work are part of creating something good.",
+        "<i>Poem: the speaker watches a frozen pond, then sees the first green buds and hears returning birds in spring.</i><br><b>Theme (speaker reflects):</b> After hard times, hope and new beginnings always return.",
+        "<i>Two friends argue over who will lead a class play. The show goes badly until they agree to share the job.</i><br><b>Theme:</b> People can achieve more by working together than by competing."
       ],
       "check": {
-        "question": "A boy is afraid to sing in the concert, practices every night, and sings his solo with a shaky but strong voice. Which is a stronger theme: “singing” or “Practice can help us face our fears”? Why?",
-        "answer": "“Practice can help us face our fears” is a full message supported by his nightly practice and his solo. “Singing” is only a topic."
+        "question": "Leo laughs at his grandmother’s old-fashioned stories. When he gets lost on a hike, he remembers her advice about following the stream downhill, and he finds his way home. Write the theme, not the topic.",
+        "answer": "Sample: “The wisdom of older people can be valuable, even if it seems old-fashioned.” The topic is respect or wisdom; the theme is the full lesson Leo learns."
       },
-      "image": "assets/2026-10-quiz1/anchor-charts/theme.png",
-      "imageAlt": "Theme illustrated anchor chart. The study guide below explains the concepts and examples.",
+      "image": "assets/2026-11-midterm/anchor-charts/theme.png",
+      "imageAlt": "Theme anchor chart poster. The study guide below explains each part with five worked examples.",
       "imageLayout": "poster"
     },
     {
       "skill": "figurative_language",
       "name": "Figurative Language",
       "group": "Midterm focus",
-      "body": "Figurative language helps readers picture an idea or feel an emotion. Name the type of expression AND explain what it means in this scene.",
+      "body": "<b>Figurative language</b> uses words in an unusual way to create a picture or feeling. The words do NOT mean exactly what they say (that would be <i>literal</i>). For each example: <b>name it → explain what it really means → tell why the author used it</b> (RL.5.4, L.5.5).",
       "guide": [
         {
           "label": "Simile",
-          "text": "Compares unlike things using like or as: “The airship hummed like a giant bee.”"
+          "text": "Compares two unlike things using like or as. “The airship floated like a silver whale.”"
         },
         {
           "label": "Metaphor",
-          "text": "Describes one thing as another without like or as: “The garden is a closed book.”"
+          "text": "Compares by saying one thing IS another, without like or as. “The garden was a sleeping giant.”"
         },
         {
           "label": "Personification",
-          "text": "Gives human qualities to something nonhuman: “The sun leans close and whispers.”"
+          "text": "Gives human actions or feelings to an animal, object, or idea. “The wind tugged at my sleeve.”"
         },
         {
           "label": "Hyperbole",
-          "text": "Exaggerates for effect: “I’ve hummed this song a thousand times today.”"
+          "text": "A huge exaggeration for effect, not meant to be believed. “I’ve told you a million times!”"
         },
         {
           "label": "Idiom",
-          "text": "A familiar phrase with a meaning beyond its words: “It’s stuck in my head” means I can’t stop thinking of it."
+          "text": "A saying whose meaning can’t be figured out from the words. “Break a leg!” means “Good luck!”"
+        },
+        {
+          "label": "Sound devices",
+          "text": "Alliteration repeats beginning sounds (“silent, silver sky”). Onomatopoeia names a sound (buzz, creak, whoosh)."
         }
       ],
       "steps": [
-        "Find the unusual expression.",
-        "Name the type and ask what two things are being compared or what human trait is given.",
-        "Explain how it helps you imagine the scene or understand a feeling or mood."
+        "Notice a phrase that can’t be literally true.",
+        "Name the type: look for like/as (simile), is/was (metaphor), human actions (personification), exaggeration (hyperbole), or a saying (idiom).",
+        "Explain the real meaning in plain words.",
+        "Explain the effect: what does it make you picture or feel?"
       ],
-      "tip": "“Nell looked like her father” is a literal comparison, not a simile. A simile compares two UNLIKE things.",
+      "tip": "Not every “like” is a simile: “I like apples” compares nothing. A simile compares two DIFFERENT kinds of things: “Her voice was like a bell.”",
       "ex": [
-        "“Below her, the ocean waited like an open mouth” is a simile and personification. It makes the ocean feel hungry and dangerous, which builds suspense.",
-        "“You have dirt on your nose and sunshine in your face” uses a metaphor: Rosa is not glowing, but she looks bright and happy."
+        "<i>“The clouds swallowed the airship whole.”</i><br><b>Personification / metaphor.</b> Clouds can’t swallow; it means the ship disappeared completely into thick clouds. It makes the clouds seem huge and dangerous.",
+        "<i>“The tendrils clung to the wall like tiny green hands.”</i><br><b>Simile</b> (uses like). The curly stems hold on tightly, the way small hands would grip.",
+        "<i>“Colin’s room was a prison.”</i><br><b>Metaphor.</b> The room is not a real prison; it shows that Colin feels trapped and lonely there.",
+        "<i>“This suitcase weighs a ton!”</i><br><b>Hyperbole.</b> It doesn’t really weigh 1,000 kg; the speaker means it is very heavy and shows how tired he is.",
+        "<i>“Mom said I was skating on thin ice when I came home late.”</i><br><b>Idiom.</b> “Skating on thin ice” means being close to getting in trouble; it has nothing to do with real ice."
       ],
       "check": {
-        "question": "“The wind growled at the hull all night.” What technique is used, and what does it mean?",
-        "answer": "Personification. Wind cannot growl like an animal or person; the phrase suggests a low, angry, threatening sound."
+        "question": "“The old floorboards groaned as we tiptoed through the silent house.” Name the figurative language and explain its effect.",
+        "answer": "Personification: floorboards can’t groan like a person, so the creaking sounds tired and spooky. It builds a nervous, mysterious mood."
       },
-      "image": "assets/2026-10-quiz1/anchor-charts/figurative_language.png",
-      "imageAlt": "Figurative Language illustrated anchor chart. The study guide below explains the concepts and examples.",
+      "image": "assets/2026-11-midterm/anchor-charts/figurative_language.png",
+      "imageAlt": "Figurative Language anchor chart poster. The study guide below explains each part with five worked examples.",
       "imageLayout": "poster"
     },
     {
       "skill": "character",
       "name": "Character",
       "group": "Midterm focus",
-      "body": "Use a character’s actions, words, thoughts, and how others react to them to infer traits, motivations, and change. In a play, stage directions are a major clue.",
+      "body": "Authors reveal characters <b>directly</b> (the narrator tells you: “Mary was rude”) and <b>indirectly</b> (you infer from what the character does and says). Use the <b>S.T.E.A.L.</b> clues to describe a character’s <b>traits</b>, <b>feelings</b>, <b>motivations</b>, and <b>changes</b>, and compare characters using specific details (RL.5.3).",
       "guide": [
         {
-          "label": "Trait · usual quality",
-          "text": "Brave, responsible, or bitter describes a pattern of behavior."
+          "label": "S · Speech",
+          "text": "What does the character say, and how? (shouts, whispers, teases)"
         },
         {
-          "label": "Feeling · current emotion",
-          "text": "Nervous, relieved, or curious describes an emotion at one moment."
+          "label": "T · Thoughts",
+          "text": "What does the character think, wish, or worry about?"
         },
         {
-          "label": "Motivation · reason for acting",
-          "text": "What a character wants, needs, fears, or values."
+          "label": "E · Effect on others",
+          "text": "How do other characters react to him or her? Do they trust, fear, or avoid this person?"
         },
         {
-          "label": "Change · beginning → ending",
-          "text": "How events change a character’s feelings, actions, or understanding."
+          "label": "A · Actions",
+          "text": "What does the character do, especially when facing a problem?"
+        },
+        {
+          "label": "L · Looks",
+          "text": "What does the character look like? Clothes, face, and body language (a frown, slumped shoulders)."
+        },
+        {
+          "label": "Trait · Feeling · Motivation",
+          "text": "Trait = what someone is like most of the time (stubborn, loyal). Feeling = an emotion right now (nervous). Motivation = why the character acts (wants a friend, wants to be brave)."
         }
       ],
       "steps": [
-        "Choose a trait, feeling, or motivation that answers the question.",
-        "Find an action, thought, line of dialogue, or stage direction as evidence.",
-        "Explain how that evidence supports your inference."
+        "Collect S.T.E.A.L. clues from the text.",
+        "Infer a trait word that fits several clues (curious, not just “nice”).",
+        "Track change: what is the character like at the beginning and at the end, and what caused the change?",
+        "To compare two characters, put the same kind of clue side by side: how each one reacts to the same problem."
       ],
-      "tip": "A character can feel afraid and still act bravely. Do not confuse a temporary feeling with a lasting trait.",
+      "tip": "A feeling is not a trait. Someone who is angry once isn’t an angry person. A trait shows up again and again in the character’s actions and words.",
       "ex": [
-        "Nell is responsible: she reports the loose cover right away and thinks of the children who need the medicine.",
-        "Rosa changes from scornful (“This whole place is dead”) to hopeful and hardworking (she clears the garden and asks Grandma to help)."
+        "<i>“Mary stamped her foot. ‘I won’t go! You can’t make me!’”</i><br><b>Trait: stubborn / spoiled.</b> Clues: Speech (“You can’t make me”) and Action (stamped her foot).",
+        "<i>“Matt glanced at the dark sky, then climbed the ladder anyway, gripping each rung until his knuckles were white.”</i><br><b>Feeling: afraid. Trait: brave.</b> White knuckles show fear (Looks); climbing anyway shows courage (Action).",
+        "<i>“Whenever Dickon walked into the garden, the robin flew down to his shoulder and the other children stopped arguing.”</i><br><b>Trait: gentle and calming.</b> Clue: Effect on others; animals and people relax around him.",
+        "<i>Beginning: Colin refuses to leave his bed. Ending: he walks through the garden and laughs with his friends.</i><br><b>Character change:</b> from fearful and hopeless to confident and hopeful, caused by fresh air and friendship.",
+        "<i>Compare: when the storm hits, Nell rushes to tie down the cover, but Owen hides in the cabin and pretends to sleep.</i><br><b>Contrast (RL.5.3):</b> both face the same problem; Nell is responsible and brave, while Owen avoids danger."
       ],
       "check": {
-        "question": "“Even after the storm flattened his tomato plants, Eli staked each one up again and added a windbreak.” Name a trait and give evidence.",
-        "answer": "Eli is persistent. He repairs every plant after the damage and adds a windbreak to protect them next time."
+        "question": "“Ava handed her last cookie to the new student, then quietly sat back down without saying a word about it.” What trait does this show, and which S.T.E.A.L. clues prove it?",
+        "answer": "Generous and modest. Action: she gives away her last cookie. Speech: she says nothing about it, so she isn’t showing off."
       },
-      "image": "assets/2026-10-quiz1/anchor-charts/character.png",
-      "imageAlt": "Character illustrated anchor chart. The study guide below explains the concepts and examples.",
+      "image": "assets/2026-11-midterm/anchor-charts/character.png",
+      "imageAlt": "Character anchor chart poster. The study guide below explains each part with five worked examples.",
       "imageLayout": "poster"
     },
     {
       "skill": "literary_elements",
       "name": "Literary Elements",
       "group": "Midterm focus",
-      "body": "Literary elements are the building blocks of a story: characters, setting, conflict, and plot. Knowing them helps you explain how one event leads to the next.",
+      "body": "<b>Literary elements</b> are the parts every story or play is built from: <b>characters</b>, <b>setting</b>, <b>conflict</b>, <b>plot</b>, and the <b>narrator’s point of view</b>. Genre changes how these elements are used. That is the Module 2 big question: <i>How does genre affect the way a story is told?</i>",
       "guide": [
         {
-          "label": "Setting · where and when",
-          "text": "The time and place, including the weather and mood. A setting can create danger or change with the characters."
+          "label": "Characters",
+          "text": "The people or animals in the story. The main character (protagonist) faces the problem; an antagonist works against him or her."
         },
         {
-          "label": "Conflict · the problem",
-          "text": "Character vs. character, character vs. nature, character vs. society, or character vs. self (an inner struggle)."
+          "label": "Setting",
+          "text": "Where and when the story happens. A setting can cause the problem (a storm) or create a mood (a dark, quiet house)."
         },
         {
-          "label": "Rising action",
-          "text": "Events that build tension as the character tries to solve the problem."
+          "label": "Conflict",
+          "text": "The main problem. Character vs. character, vs. nature, vs. society, or vs. self (an inner struggle)."
         },
         {
-          "label": "Climax · turning point",
-          "text": "The moment of greatest tension, when the conflict is faced head-on."
+          "label": "Plot",
+          "text": "Exposition (introduce characters and setting) → rising action → climax (turning point) → falling action → resolution."
         },
         {
-          "label": "Falling action and resolution",
-          "text": "What happens after the climax, and how the problem is finally settled."
+          "label": "Point of View",
+          "text": "Who tells the story. First person (I, we: a character tells it) or third person (he, she, they: an outside narrator)."
+        },
+        {
+          "label": "Genre",
+          "text": "Fantasy/adventure (exciting action, unusual worlds), realistic fiction, myth, drama (dialogue and stage directions), poetry. Each genre tells a story in a different way."
         }
       ],
       "steps": [
-        "Name the setting and the main conflict.",
-        "List the key events in order and mark the one with the most tension as the climax.",
-        "Explain how the resolution settles the conflict and what the character has learned."
+        "Name the main character and the setting (time and place).",
+        "Identify the conflict and its type.",
+        "Put the key events on a plot mountain and mark the climax.",
+        "Explain how the resolution settles the conflict and how the genre shaped the telling."
       ],
-      "tip": "The climax is not always the most exciting-sounding sentence; it is the turning point where the conflict is decided. The resolution comes after it.",
+      "tip": "The climax is the TURNING POINT where the conflict is decided, not just the loudest moment. Everything after it is falling action and resolution.",
       "ex": [
-        "Storm over the Kestrel: setting is an airship over a dark ocean during a storm. Conflict is character vs. nature (Nell vs. the storm), with an inner conflict about fear.",
-        "Climax: on her second attempt, Nell catches the cover and ties it down. Resolution: she returns safely, and the captain promises to teach her storm knots."
+        "<i>“High above the clouds in 1910, the airship Aurora hummed through the night.”</i><br><b>Setting:</b> in the sky, at night, in 1910. It suggests an adventure far from help.",
+        "<i>“Nell had to choose: tell the captain she broke the compass, or let the cook take the blame.”</i><br><b>Conflict: character vs. self.</b> Nell struggles with an inner choice about honesty.",
+        "<i>“The storm tore the sail loose, and the ship began to spin toward the sea.”</i><br><b>Conflict: character vs. nature.</b> The storm is the force the characters must fight.",
+        "<i>Mary finds a key (rising action), opens the hidden door (climax: the turning point), and plants seeds with Dickon (falling action); by summer the garden is alive (resolution).</i><br><b>Plot</b> mapped onto the plot mountain.",
+        "<i>“I gripped the rail and stared down at the waves.”</i> vs. <i>“Matt gripped the rail and stared down at the waves.”</i><br><b>Point of view:</b> the first uses <i>I</i> (first person); the second uses <i>Matt</i> (third person)."
       ],
       "check": {
-        "question": "“Maya’s kite tangled in an oak tree. She tried a stick, then a ladder. At last she climbed onto the lowest branch and pulled it free. That evening she flew it in an open field.” Which sentence is the climax?",
-        "answer": "“At last she climbed onto the lowest branch and pulled it free.” That is the turning point where the problem is solved; flying it later is the resolution."
-      }
+        "question": "Sam is too shy to sing in the school show. He practices in front of his dog every night. On show night his hands shake, but he steps onto the stage and sings his solo. Afterward, he signs up for choir. Which event is the climax, and what type of conflict is it?",
+        "answer": "Climax: Sam steps onto the stage and sings. That is the turning point where his problem is decided. Conflict: character vs. self, because his struggle is with his own shyness. Signing up for choir is the resolution."
+      },
+      "image": "assets/2026-11-midterm/anchor-charts/literary_elements.png",
+      "imageAlt": "Literary Elements anchor chart poster. The study guide below explains each part with five worked examples.",
+      "imageLayout": "poster"
     },
     {
       "skill": "poetry",
       "name": "Elements of Poetry",
       "group": "Midterm focus",
-      "body": "Poets use structure and sound to create meaning. Notice how the poem looks, how it sounds, and what it makes you see and feel.",
+      "body": "A poem is built from <b>lines</b> grouped into <b>stanzas</b>. Poets use <b>sound</b> (rhyme, rhythm, repetition) and <b>images</b> (sensory and figurative language) to share a feeling or idea. The <b>speaker</b> is the voice in the poem; it is not always the poet. Stanzas fit together to build the poem’s meaning (RL.5.5).",
       "guide": [
         {
-          "label": "Line and stanza",
+          "label": "Line & Stanza",
           "text": "A line is one row of words. A stanza is a group of lines, like a paragraph in a poem."
         },
         {
-          "label": "Rhyme scheme",
-          "text": "The pattern of end rhymes, labeled with letters: AABB (couplets) or ABAB (every other line)."
+          "label": "Rhyme & Rhyme Scheme",
+          "text": "Rhyme: words that end with the same sound (night/light). Rhyme scheme: the pattern of rhymes at line ends, labeled with letters (AABB, ABAB)."
         },
         {
-          "label": "Rhythm and meter",
-          "text": "The beat you hear when you read aloud. Meter is a regular pattern of stressed and unstressed syllables."
+          "label": "Rhythm & Meter",
+          "text": "Rhythm is the beat you hear when you read aloud. Meter is a regular pattern of stressed and unstressed syllables."
         },
         {
-          "label": "Repetition and refrain",
-          "text": "Repetition repeats a word or phrase. A refrain is a line or group of lines repeated after each stanza."
+          "label": "Repetition & Refrain",
+          "text": "Repetition repeats words or sounds for emphasis. A refrain is a line or stanza repeated regularly, like a song’s chorus."
         },
         {
-          "label": "Sound devices",
-          "text": "Alliteration repeats beginning sounds (drip and drop). Onomatopoeia uses words that sound like what they mean (buzz, splash)."
+          "label": "Imagery & Figurative Language",
+          "text": "Words that appeal to the five senses, plus simile, metaphor, personification, alliteration, and onomatopoeia."
         },
         {
-          "label": "Imagery and speaker",
-          "text": "Imagery appeals to the senses. The speaker is the voice talking in the poem, which may not be the poet."
-        },
-        {
-          "label": "Free verse",
-          "text": "A poem with no regular rhyme or meter. It still uses line breaks, imagery, and repetition."
+          "label": "Speaker · Form",
+          "text": "The speaker is the voice telling the poem. Forms include rhyming poems, free verse (no regular rhyme or meter), narrative poems (tell a story), and limericks."
         }
       ],
       "steps": [
-        "Count the stanzas and label the rhyme scheme of one stanza.",
-        "Read aloud to hear the rhythm, repetition, and sound devices.",
-        "Ask who the speaker is and what message (theme) the details build."
+        "Read the poem aloud twice and listen for the beat and the rhymes.",
+        "Count the stanzas and lines; label the rhyme scheme with letters.",
+        "Mark repeated words or a refrain and ask why they are repeated.",
+        "Find the strongest images; decide what the speaker feels and what the poem’s theme is."
       ],
-      "tip": "Indented or italic repeated lines are usually a refrain, not a new stanza. The speaker is not automatically the poet.",
+      "tip": "Label the rhyme scheme by SOUND, not spelling: “through” and “blue” rhyme, but “cough” and “dough” do not. A new sound always gets the next letter.",
       "ex": [
-        "The Ditty That Wouldn’t Quit uses AABB couplets and the italic refrain “Oh, tum-tiddle-tee…” after every stanza. The refrain itself acts like the song that will not stop.",
-        "Spring Rain uses ABAB rhyme (pane/rain, spill/windowsill), onomatopoeia (pitter, patter, splash), and alliteration (drip and drop)."
+        "<i>“The rain begins to fall (A) / Upon the garden wall (A) / The seeds wake up below (B) / And start to stretch and grow (B)”</i><br><b>Rhyme scheme: AABB.</b> Lines 1-2 rhyme (fall/wall); lines 3-4 rhyme (below/grow).",
+        "<i>“The moon’s a lamp so bright (A) / That hangs above the town (B) / It shines all through the night (A) / Until the sun comes down (B)”</i><br><b>ABAB</b> rhyme scheme (bright/night, town/down), and a <b>metaphor</b>: the moon IS a lamp.",
+        "<i>Every stanza of a poem ends with “And still the poem goes on and on.”</i><br><b>Refrain.</b> The repeated line ties the stanzas together and makes the poem feel endless.",
+        "<i>“Splash! Drip, drip. The puddles plop / as raindrops tap the tin roof top.”</i><br><b>Onomatopoeia</b> (splash, drip, plop, tap) creates the sound of rain; the <b>rhyme</b> plop/top gives it a bouncy rhythm.",
+        "<i>“I stand by the window. / Snow falls without a sound. / I wait for my father’s car.”</i><br><b>Free verse</b> (no rhyme or set beat). The <b>speaker</b> is a child waiting; the quiet imagery shows loneliness and hope."
       ],
       "check": {
-        "question": "“The bees buzz by the busy bush, / The breeze goes swish, the grasses hush.” Name the rhyme pattern and two sound devices.",
-        "answer": "The two lines rhyme (bush/hush), making a couplet. “Bees buzz by the busy bush” is alliteration, and “buzz” and “swish” are onomatopoeia."
-      }
+        "question": "“A cat sat on a mat, (A) / Wearing a tiny hat. (?) / It purred a happy tune, (?) / And napped all afternoon. (?)” Write the rhyme scheme.",
+        "answer": "AABB: mat/hat share the A sound; tune/afternoon share a new B sound."
+      },
+      "image": "assets/2026-11-midterm/anchor-charts/poetry.png",
+      "imageAlt": "Elements of Poetry anchor chart poster. The study guide below explains each part with five worked examples.",
+      "imageLayout": "poster"
     },
     {
       "skill": "drama",

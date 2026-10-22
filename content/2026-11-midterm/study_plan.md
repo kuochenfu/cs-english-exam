@@ -45,7 +45,7 @@ All five topics are generated from the notice, the word list, and standard rules
 | Vocabulary | Generated | 26 words; self-written definitions (no teacher HW1 sheets yet) |
 | Spelling / Phonics | Generated | 3 dictation lists, sound and pattern sorts, KISI-style MCQ sets |
 | Grammar | Generated + textbook | Lessons 4-5 review; Lessons 6-8 textbook exercises copied as MCQ sets (`mng-l6-book`, `mng-l7-book`, `mng-l8-book`: 21 / 28 / 24 items); quick-guide cards aligned to the textbook rule boxes (-ing / -ed spelling and exceptions, -ed pronunciation, time words, the 28-verb irregular table); plus generated L6-8 sets |
-| Reading | Generated | Original passages in the Module 2 genres (adventure, drama, informational, poetry); anchor charts for the 7 notice skills |
+| Reading | Generated | Original passages in the Module 2 genres (adventure, drama, informational, poetry). Anchor charts rebuilt 2026-10-22 from web research: 7 focus skills, each with a new poster, 5 worked examples, and a quick check (see `anchor_charts.md`) |
 | Listening | Generated | 5 original dialogues on Module 2 themes |
 | Oral / Writing | Not in app | App has no oral or writing topic |
 
@@ -55,7 +55,7 @@ Asked the user for these on 2026-10-22:
 
 1. Module 2 HW folder pages (teacher vocabulary definitions, homework passages and sentences)
 2. Into Reading pages for Airborn, The Secret Garden, The Miracle of Spring, The Poem That Will Not End
-3. Module 2 anchor charts (especially Literary Elements and Elements of Poetry)
+3. Module 2 anchor charts. Original research-based charts are in place, but the teacher's versions would still help match the class wording
 4. Know-It, Show-It pp. 26, 30, 34, 37, 42, 47
 5. ~~My Next Grammar Lessons 6-8 pages~~ — received 2026-10-22. Still missing: Grammar Review Quizzes 5-7 (pp. 98-100) and the right-hand practice pages (pp. 26-27, 30-31, 34-35) that were cut off in the photos
 6. Writing prompt / rubric for the personal narrative, if the teacher shared one
