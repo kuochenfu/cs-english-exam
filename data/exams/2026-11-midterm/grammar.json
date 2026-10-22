@@ -1,6 +1,6 @@
 {
   "title": "Grammar — Be, Present Simple & Continuous, Past Simple (My Next Grammar, Lessons 4-8)",
-  "intro": "Mixed review across Lessons 4-8: be verbs, present simple, present continuous, past simple regular and irregular verbs. Tense choice from time clues, hidden subjects, error spotting, and rewrites at the Grade 5 high-standard level.",
+  "intro": "Mixed review across Lessons 4-8: be verbs, present simple, present continuous, past simple regular and irregular verbs. Tense choice from time clues, hidden subjects, error spotting, and rewrites at the Grade 5 high-standard level. Includes the exact textbook exercises from My Next Grammar 2, Lessons 6-8.",
   "explanation": {
     "title": "Be, Present, and Past Tenses Quick Guide",
     "intro": "期中考 Grammar 範圍是 My Next Grammar Book 2 第 4–8 課：be 動詞、現在簡單式、現在進行式、規則動詞過去式、不規則動詞過去式。第 4–5 課是 Quiz 1 複習，重點在第 6–8 課。看時間線索選時態，再看主詞決定單複數。",
@@ -56,20 +56,23 @@
       },
       {
         "term": "L6 -ing Spelling",
-        "formula": "make → making · run → running · lie → lying · visit → visiting · begin → beginning · travel → traveling (US)",
-        "meaning": "字尾不發音的 e 去 e 加 -ing；短母音＋單一子音（run, swim, sit）重複子音；ie 改 y 加 -ing（lie, die, tie）。兩個音節的字，重音在最後一節才重複（begin），重音在前面不重複（visit, open）。美式英文 travel → traveling。",
+        "formula": "sing → singing · study → studying (most verbs: add -ing) · make → making · smile → smiling (consonant + e: drop e) · hit → hitting · run → running · swim → swimming (consonant + vowel + consonant: double) · exceptions: showing, fixing, staying",
+        "meaning": "課本三條規則：大部分動詞直接加 -ing；子音＋e 結尾去 e 加 -ing；子音＋母音＋子音結尾重複最後的子音再加 -ing。例外：字尾是 w、x、y 不重複（showing, fixing, staying）。補充：ie 改 y（lie → lying）；兩音節重音在前不重複（visit → visiting）。",
         "examples": [
           "Dickon is lying in the grass.",
           "We are swimming in the lake.",
           "Mary is visiting the garden again."
         ],
         "verbs": [
+          "singing",
           "making",
+          "smiling",
+          "hitting",
           "running",
-          "lying",
-          "visiting",
-          "beginning",
-          "traveling"
+          "swimming",
+          "showing",
+          "fixing",
+          "staying"
         ]
       },
       {
@@ -91,21 +94,25 @@
       },
       {
         "term": "Simple vs Continuous",
-        "formula": "every day, usually, always, often, never → present simple · now, right now, at the moment, today, Look!, Listen! → present continuous",
+        "formula": "Present simple = habitual action: every day / week / month · on Sundays · in the morning, at night · once / twice a week · Present continuous = temporary action: (right) now · at the moment",
         "meaning": "一般現在式是習慣或事實；現在進行式是此刻正在發生。同一句可能兩個都有：前面說習慣，後面說今天的不同。",
         "examples": [
-          "Kate usually walks to school, but today she is taking the bus.",
-          "Dickon feeds the birds every day. Look! He is feeding a robin now.",
-          "Water freezes at 0°C."
+          "My teacher wears a dress once a week. My teacher is wearing jeans now.",
+          "They walk to school every day. They are going to school by bus now.",
+          "Jack plays basketball on Sundays. Jack is swimming in the pool at the moment."
         ],
         "verbs": [
-          "usually walks",
-          "is taking now"
+          "wears",
+          "is wearing",
+          "walk",
+          "are going",
+          "plays",
+          "is swimming"
         ]
       },
       {
         "term": "L7 Past Simple — -ed Spelling",
-        "formula": "play → played · study → studied · stop → stopped · plan → planned · prefer → preferred · visit → visited · hope → hoped",
+        "formula": "cook → cooked · learn → learned (add -ed) · use → used · wave → waved (e: add -d) · try → tried · worry → worried (consonant + y: y → i + -ed) · drop → dropped · hop → hopped · rub → rubbed (double) · exceptions: showed, fixed, stayed",
         "meaning": "規則動詞過去式加 -ed。字尾 e 只加 -d；子音＋y 改 -ied；母音＋y 直接加 -ed；短母音＋單一子音重複子音（stop, plan, hop）。兩個音節重音在後才重複（prefer, admit），重音在前不重複（visit, open, listen）。seize 是規則動詞：seized。",
         "examples": [
           "The robin hopped along the wall. (hope → hoped 是「希望」)",
@@ -113,12 +120,16 @@
           "The captain seized the rope just in time."
         ],
         "verbs": [
-          "played",
-          "studied",
-          "stopped",
-          "planned",
-          "preferred",
-          "visited",
+          "cooked",
+          "used",
+          "tried",
+          "worried",
+          "dropped",
+          "hopped",
+          "rubbed",
+          "showed",
+          "fixed",
+          "stayed",
           "seized"
         ]
       },
@@ -139,12 +150,12 @@
       },
       {
         "term": "Past Time Words & -ed Sounds",
-        "formula": "yesterday · last night / week / spring · two days ago · in 2019 · when I was young",
-        "meaning": "看到這些時間字就用過去式。-ed 有三種發音：t / d 結尾讀 /id/（wanted, needed）；p, k, s, sh, ch 後面讀 /t/（jumped, watched）；其他讀 /d/（played, opened）。",
+        "formula": "/d/ after voiced sounds: learned, peeled, rubbed · /t/ after voiceless sounds (f, h, k, p, s, x, ch, sh): cooked, dropped, washed · /id/ after t or d: added, visited · time words: yesterday, last…, …ago, in + year",
+        "meaning": "看到 yesterday、last…、…ago、in 2019 就用過去式。-ed 三種唸法：字尾是 t / d 唸 /id/（added, visited, wanted, needed）；無聲子音 f, h, k, p, s, x, ch, sh 後面唸 /t/（cooked, dropped, washed, helped, looked）；有聲音 b, g, l, m, n, r, v, w, y 後面唸 /d/（learned, peeled, rubbed, opened, smelled）。有聲音是喉嚨會震動的音，無聲音只靠嘴巴送氣。",
         "examples": [
-          "We moved to Taipei in 2019.",
-          "I finished my homework two hours ago.",
-          "wanted /id/ · watched /t/ · played /d/"
+          "learned /d/ · cooked /t/ · visited /id/",
+          "opened /d/ · helped /t/ · needed /id/",
+          "We moved to Taipei in 2019."
         ],
         "verbs": [
           "yesterday",
@@ -155,7 +166,7 @@
       },
       {
         "term": "L8 Irregular Verbs Table",
-        "formula": "go → went · see → saw · take → took · bring → brought · buy → bought · catch → caught · think → thought · teach → taught · fly → flew · begin → began · swim → swam · write → wrote · ride → rode · feel → felt · leave → left · hide → hid · shake → shook · grow → grew · throw → threw",
+        "formula": "build → built · buy → bought · catch → caught · come → came · do → did · drink → drank · eat → ate · feel → felt · give → gave · go → went · have → had · hear → heard · know → knew · leave → left · make → made · meet → met · read → read · ride → rode · run → ran · say → said · see → saw · sing → sang · sit → sat · sleep → slept · swim → swam · teach → taught · think → thought · write → wrote · also: take → took · bring → brought · fly → flew · begin → began · grow → grew · throw → threw",
         "meaning": "不規則動詞要背。小心長得像的：brought（帶來）/ bought（買）、thought（想）/ taught（教）。過去式 went / saw / wrote 單獨用；gone / seen / written 是過去分詞，前面要有 have / has，不能單獨當過去式。",
         "examples": [
           "I saw a shooting star last night. (not: I seen)",
@@ -163,25 +174,34 @@
           "The whole airship shook during the storm."
         ],
         "verbs": [
-          "went",
-          "saw",
-          "took",
-          "brought",
+          "built",
           "bought",
           "caught",
-          "thought",
-          "taught",
-          "flew",
-          "began",
-          "swam",
-          "wrote",
-          "rode",
+          "came",
+          "did",
+          "drank",
+          "ate",
           "felt",
+          "gave",
+          "went",
+          "had",
+          "heard",
+          "knew",
           "left",
-          "hid",
-          "shook",
-          "grew",
-          "threw"
+          "made",
+          "met",
+          "read",
+          "rode",
+          "ran",
+          "said",
+          "saw",
+          "sang",
+          "sat",
+          "slept",
+          "swam",
+          "taught",
+          "thought",
+          "wrote"
         ]
       },
       {
@@ -914,6 +934,889 @@
           ],
           "answer": 1,
           "use": "transformation"
+        }
+      ]
+    },
+    {
+      "id": "mng-l6-book",
+      "title": "My Next Grammar L6 — Textbook Practice (pp. 24-25)",
+      "description": "The textbook exercises: present continuous, -ing spelling, and present simple vs. present continuous.",
+      "items": [
+        {
+          "id": "mng6-01",
+          "q": "Present continuous: (not read) The students ____. They're writing.",
+          "choices": [
+            "isn't reading",
+            "don't read",
+            "aren't read",
+            "aren't reading"
+          ],
+          "answer": 3,
+          "use": "negative"
+        },
+        {
+          "id": "mng6-02",
+          "q": "Present continuous: (talk) Amy ____ to her friend on the phone.",
+          "choices": [
+            "is talk",
+            "are talking",
+            "talking",
+            "is talking"
+          ],
+          "answer": 3,
+          "use": "affirmative"
+        },
+        {
+          "id": "mng6-03",
+          "q": "Present continuous: (work) ____ Mr. Morris ____ in his office?",
+          "choices": [
+            "Is / working",
+            "Are / working",
+            "Is / work",
+            "Does / working"
+          ],
+          "answer": 0,
+          "use": "yes/no question"
+        },
+        {
+          "id": "mng6-04",
+          "q": "Present continuous: (not sing) She ____. She's listening to music.",
+          "choices": [
+            "isn't singing",
+            "doesn't singing",
+            "isn't sing",
+            "not singing"
+          ],
+          "answer": 0,
+          "use": "negative"
+        },
+        {
+          "id": "mng6-05",
+          "q": "Write the -ing form: give",
+          "choices": [
+            "gaving",
+            "givving",
+            "giving",
+            "giveing"
+          ],
+          "answer": 2,
+          "use": "drop e"
+        },
+        {
+          "id": "mng6-06",
+          "q": "Write the -ing form: shop",
+          "choices": [
+            "shoping",
+            "shopiing",
+            "shopping",
+            "shopeing"
+          ],
+          "answer": 2,
+          "use": "double consonant"
+        },
+        {
+          "id": "mng6-07",
+          "q": "Write the -ing form: fly",
+          "choices": [
+            "fliing",
+            "flying",
+            "flieing",
+            "flyying"
+          ],
+          "answer": 1,
+          "use": "add -ing"
+        },
+        {
+          "id": "mng6-08",
+          "q": "Write the -ing form: say",
+          "choices": [
+            "saing",
+            "sayying",
+            "saiing",
+            "saying"
+          ],
+          "answer": 3,
+          "use": "add -ing"
+        },
+        {
+          "id": "mng6-09",
+          "q": "Write the -ing form: use",
+          "choices": [
+            "using",
+            "ussing",
+            "usseing",
+            "useing"
+          ],
+          "answer": 0,
+          "use": "drop e"
+        },
+        {
+          "id": "mng6-10",
+          "q": "Write the -ing form: call",
+          "choices": [
+            "calleing",
+            "calling",
+            "caling",
+            "callling"
+          ],
+          "answer": 1,
+          "use": "add -ing"
+        },
+        {
+          "id": "mng6-11",
+          "q": "Write the -ing form: flow",
+          "choices": [
+            "flowwing",
+            "floing",
+            "floweing",
+            "flowing"
+          ],
+          "answer": 3,
+          "use": "exception: w not doubled"
+        },
+        {
+          "id": "mng6-12",
+          "q": "Write the -ing form: leave",
+          "choices": [
+            "leving",
+            "leavving",
+            "leaveing",
+            "leaving"
+          ],
+          "answer": 3,
+          "use": "drop e"
+        },
+        {
+          "id": "mng6-13",
+          "q": "Write the -ing form: win",
+          "choices": [
+            "winnning",
+            "winning",
+            "wining",
+            "wineing"
+          ],
+          "answer": 1,
+          "use": "double consonant"
+        },
+        {
+          "id": "mng6-14",
+          "q": "Write the -ing form: meet",
+          "choices": [
+            "meetting",
+            "meting",
+            "meeteing",
+            "meeting"
+          ],
+          "answer": 3,
+          "use": "add -ing (two vowels)"
+        },
+        {
+          "id": "mng6-15",
+          "q": "Simple or continuous? (walk) Mr. and Mrs. Johnson ____ in the park every morning.",
+          "choices": [
+            "walks",
+            "is walking",
+            "are walking",
+            "walk"
+          ],
+          "answer": 3,
+          "use": "every morning → simple"
+        },
+        {
+          "id": "mng6-16",
+          "q": "Simple or continuous? (not shop) Amy's mom ____ now. She's at home.",
+          "choices": [
+            "aren't shopping",
+            "isn't shop",
+            "isn't shopping",
+            "doesn't shop"
+          ],
+          "answer": 2,
+          "use": "now → continuous"
+        },
+        {
+          "id": "mng6-17",
+          "q": "Simple or continuous? (help) She ____ her brother with his homework every day.",
+          "choices": [
+            "is helping",
+            "are helping",
+            "helps",
+            "help"
+          ],
+          "answer": 2,
+          "use": "every day → simple"
+        },
+        {
+          "id": "mng6-18",
+          "q": "Simple or continuous? (not go) We ____ to school on weekends.",
+          "choices": [
+            "don't go",
+            "aren't going",
+            "doesn't go",
+            "not going"
+          ],
+          "answer": 0,
+          "use": "on weekends → simple"
+        },
+        {
+          "id": "mng6-19",
+          "q": "Simple or continuous? (have) I'll call you back. I ____ lunch right now.",
+          "choices": [
+            "am have",
+            "has",
+            "have",
+            "am having"
+          ],
+          "answer": 3,
+          "use": "right now → continuous"
+        },
+        {
+          "id": "mng6-20",
+          "q": "Simple or continuous? (fly) The birds ____ over the trees now.",
+          "choices": [
+            "are flying",
+            "fly",
+            "is flying",
+            "are fling"
+          ],
+          "answer": 0,
+          "use": "now → continuous"
+        },
+        {
+          "id": "mng6-21",
+          "q": "Simple or continuous? (not take) He ____ the subway every day.",
+          "choices": [
+            "isn't taking",
+            "doesn't take",
+            "don't take",
+            "doesn't takes"
+          ],
+          "answer": 1,
+          "use": "every day → simple"
+        }
+      ]
+    },
+    {
+      "id": "mng-l7-book",
+      "title": "My Next Grammar L7 — Textbook Practice (pp. 28-29)",
+      "description": "The textbook exercises: past tense with did / didn't, -ed spelling, and -ed pronunciation (/t/, /d/, /id/).",
+      "items": [
+        {
+          "id": "mng7-01",
+          "q": "Past tense: (rain) ____ it ____ all day yesterday? Yes, it did.",
+          "choices": [
+            "Did / rained",
+            "Was / rain",
+            "Does / rain",
+            "Did / rain"
+          ],
+          "answer": 3,
+          "use": "did + base"
+        },
+        {
+          "id": "mng7-02",
+          "q": "Past tense: (wait) The plane was late. We ____ for two hours.",
+          "choices": [
+            "waited",
+            "wait",
+            "were wait",
+            "waitted"
+          ],
+          "answer": 0,
+          "use": "add -ed"
+        },
+        {
+          "id": "mng7-03",
+          "q": "Past tense: (not clean) Jenny ____ her room last weekend.",
+          "choices": [
+            "wasn't clean",
+            "didn't clean",
+            "didn't cleaned",
+            "doesn't clean"
+          ],
+          "answer": 1,
+          "use": "didn't + base"
+        },
+        {
+          "id": "mng7-04",
+          "q": "Past tense: (enjoy) ____ you ____ the party yesterday? No, I didn't.",
+          "choices": [
+            "Did / enjoyed",
+            "Do / enjoy",
+            "Did / enjoy",
+            "Were / enjoy"
+          ],
+          "answer": 2,
+          "use": "did + base"
+        },
+        {
+          "id": "mng7-05",
+          "q": "Write the past form: ask",
+          "choices": [
+            "askd",
+            "asket",
+            "askked",
+            "asked"
+          ],
+          "answer": 3,
+          "use": "add -ed"
+        },
+        {
+          "id": "mng7-06",
+          "q": "Write the past form: marry",
+          "choices": [
+            "marryied",
+            "marred",
+            "marryed",
+            "married"
+          ],
+          "answer": 3,
+          "use": "consonant + y → -ied"
+        },
+        {
+          "id": "mng7-07",
+          "q": "Write the past form: hope",
+          "choices": [
+            "hopeed",
+            "hopt",
+            "hoped",
+            "hopped"
+          ],
+          "answer": 2,
+          "use": "e → add -d"
+        },
+        {
+          "id": "mng7-08",
+          "q": "Write the past form: enjoy",
+          "choices": [
+            "enjoyed",
+            "enjoyd",
+            "enjoied",
+            "enjoyyed"
+          ],
+          "answer": 0,
+          "use": "vowel + y → add -ed"
+        },
+        {
+          "id": "mng7-09",
+          "q": "Write the past form: stop",
+          "choices": [
+            "stopeed",
+            "stopt",
+            "stopped",
+            "stoped"
+          ],
+          "answer": 2,
+          "use": "double consonant"
+        },
+        {
+          "id": "mng7-10",
+          "q": "Write the past form: snow",
+          "choices": [
+            "snowed",
+            "snowd",
+            "snowwed",
+            "snoed"
+          ],
+          "answer": 0,
+          "use": "exception: w not doubled"
+        },
+        {
+          "id": "mng7-11",
+          "q": "Write the past form: change",
+          "choices": [
+            "changed",
+            "chainged",
+            "changeed",
+            "changd"
+          ],
+          "answer": 0,
+          "use": "e → add -d"
+        },
+        {
+          "id": "mng7-12",
+          "q": "Write the past form: plan",
+          "choices": [
+            "planed",
+            "planned",
+            "planneed",
+            "plannd"
+          ],
+          "answer": 1,
+          "use": "double consonant"
+        },
+        {
+          "id": "mng7-13",
+          "q": "Write the past form: study",
+          "choices": [
+            "studed",
+            "studyed",
+            "studied",
+            "studieed"
+          ],
+          "answer": 2,
+          "use": "consonant + y → -ied"
+        },
+        {
+          "id": "mng7-14",
+          "q": "Write the past form: reach",
+          "choices": [
+            "reachd",
+            "reached",
+            "reachhed",
+            "reacht"
+          ],
+          "answer": 1,
+          "use": "add -ed"
+        },
+        {
+          "id": "mng7-15",
+          "q": "How do you say the -ed in “opened”?",
+          "choices": [
+            "/t/",
+            "/d/",
+            "/id/"
+          ],
+          "answer": 1,
+          "use": "after a voiced sound → /d/"
+        },
+        {
+          "id": "mng7-16",
+          "q": "How do you say the -ed in “wanted”?",
+          "choices": [
+            "/t/",
+            "/d/",
+            "/id/"
+          ],
+          "answer": 2,
+          "use": "after /t/ or /d/ → /id/"
+        },
+        {
+          "id": "mng7-17",
+          "q": "How do you say the -ed in “helped”?",
+          "choices": [
+            "/t/",
+            "/d/",
+            "/id/"
+          ],
+          "answer": 0,
+          "use": "after a voiceless sound → /t/"
+        },
+        {
+          "id": "mng7-18",
+          "q": "How do you say the -ed in “needed”?",
+          "choices": [
+            "/t/",
+            "/d/",
+            "/id/"
+          ],
+          "answer": 2,
+          "use": "after /t/ or /d/ → /id/"
+        },
+        {
+          "id": "mng7-19",
+          "q": "How do you say the -ed in “smelled”?",
+          "choices": [
+            "/t/",
+            "/d/",
+            "/id/"
+          ],
+          "answer": 1,
+          "use": "after a voiced sound → /d/"
+        },
+        {
+          "id": "mng7-20",
+          "q": "How do you say the -ed in “looked”?",
+          "choices": [
+            "/t/",
+            "/d/",
+            "/id/"
+          ],
+          "answer": 0,
+          "use": "after a voiceless sound → /t/"
+        },
+        {
+          "id": "mng7-21",
+          "q": "How do you say the -ed in “learned”?",
+          "choices": [
+            "/t/",
+            "/d/",
+            "/id/"
+          ],
+          "answer": 1,
+          "use": "after a voiced sound → /d/"
+        },
+        {
+          "id": "mng7-22",
+          "q": "How do you say the -ed in “peeled”?",
+          "choices": [
+            "/t/",
+            "/d/",
+            "/id/"
+          ],
+          "answer": 1,
+          "use": "after a voiced sound → /d/"
+        },
+        {
+          "id": "mng7-23",
+          "q": "How do you say the -ed in “rubbed”?",
+          "choices": [
+            "/t/",
+            "/d/",
+            "/id/"
+          ],
+          "answer": 1,
+          "use": "after a voiced sound → /d/"
+        },
+        {
+          "id": "mng7-24",
+          "q": "How do you say the -ed in “cooked”?",
+          "choices": [
+            "/t/",
+            "/d/",
+            "/id/"
+          ],
+          "answer": 0,
+          "use": "after a voiceless sound → /t/"
+        },
+        {
+          "id": "mng7-25",
+          "q": "How do you say the -ed in “dropped”?",
+          "choices": [
+            "/t/",
+            "/d/",
+            "/id/"
+          ],
+          "answer": 0,
+          "use": "after a voiceless sound → /t/"
+        },
+        {
+          "id": "mng7-26",
+          "q": "How do you say the -ed in “washed”?",
+          "choices": [
+            "/t/",
+            "/d/",
+            "/id/"
+          ],
+          "answer": 0,
+          "use": "after a voiceless sound → /t/"
+        },
+        {
+          "id": "mng7-27",
+          "q": "How do you say the -ed in “added”?",
+          "choices": [
+            "/t/",
+            "/d/",
+            "/id/"
+          ],
+          "answer": 2,
+          "use": "after /t/ or /d/ → /id/"
+        },
+        {
+          "id": "mng7-28",
+          "q": "How do you say the -ed in “visited”?",
+          "choices": [
+            "/t/",
+            "/d/",
+            "/id/"
+          ],
+          "answer": 2,
+          "use": "after /t/ or /d/ → /id/"
+        }
+      ]
+    },
+    {
+      "id": "mng-l8-book",
+      "title": "My Next Grammar L8 — Textbook Practice (pp. 32-33)",
+      "description": "The textbook exercises: irregular past forms, affirmative / negative / question sentences, and the word-bank fill-in.",
+      "items": [
+        {
+          "id": "mng8-01",
+          "q": "Write the past form: buy",
+          "choices": [
+            "boughted",
+            "buyed",
+            "brought",
+            "bought"
+          ],
+          "answer": 3,
+          "use": "irregular (not brought)"
+        },
+        {
+          "id": "mng8-02",
+          "q": "Write the past form: catch",
+          "choices": [
+            "catched",
+            "cought",
+            "caught",
+            "caughted"
+          ],
+          "answer": 2,
+          "use": "irregular"
+        },
+        {
+          "id": "mng8-03",
+          "q": "Write the past form: ride",
+          "choices": [
+            "roded",
+            "rid",
+            "rode",
+            "rided"
+          ],
+          "answer": 2,
+          "use": "irregular"
+        },
+        {
+          "id": "mng8-04",
+          "q": "Write the past form: think",
+          "choices": [
+            "taught",
+            "thinked",
+            "thougt",
+            "thought"
+          ],
+          "answer": 3,
+          "use": "irregular (not taught)"
+        },
+        {
+          "id": "mng8-05",
+          "q": "Write the past form: give",
+          "choices": [
+            "gave",
+            "given",
+            "gived",
+            "gaved"
+          ],
+          "answer": 0,
+          "use": "irregular"
+        },
+        {
+          "id": "mng8-06",
+          "q": "Write the past form: read",
+          "choices": [
+            "readed",
+            "read",
+            "red",
+            "reed"
+          ],
+          "answer": 1,
+          "use": "same spelling, says “red”"
+        },
+        {
+          "id": "mng8-07",
+          "q": "Write the past form: know",
+          "choices": [
+            "known",
+            "knowed",
+            "new",
+            "knew"
+          ],
+          "answer": 3,
+          "use": "irregular"
+        },
+        {
+          "id": "mng8-08",
+          "q": "Write the past form: sleep",
+          "choices": [
+            "sleept",
+            "slept",
+            "slepped",
+            "sleeped"
+          ],
+          "answer": 1,
+          "use": "irregular"
+        },
+        {
+          "id": "mng8-09",
+          "q": "Write the sentence in the past tense (affirmative): They / hear the news",
+          "choices": [
+            "They heard the news.",
+            "They heared the news.",
+            "They hear the news.",
+            "They did heard the news."
+          ],
+          "answer": 0,
+          "use": "hear → heard"
+        },
+        {
+          "id": "mng8-10",
+          "q": "Write the sentence in the past tense (negative): He / buy new shoes",
+          "choices": [
+            "He didn't bought new shoes.",
+            "He wasn't buy new shoes.",
+            "He didn't buy new shoes.",
+            "He doesn't buy new shoes."
+          ],
+          "answer": 2,
+          "use": "didn't + base"
+        },
+        {
+          "id": "mng8-11",
+          "q": "Write the sentence in the past tense (question): you / know the answer",
+          "choices": [
+            "Did you know the answer?",
+            "Were you know the answer?",
+            "Do you know the answer?",
+            "Did you knew the answer?"
+          ],
+          "answer": 0,
+          "use": "Did + base"
+        },
+        {
+          "id": "mng8-12",
+          "q": "Write the sentence in the past tense (affirmative): We / say goodbye",
+          "choices": [
+            "We say goodbye.",
+            "We said goodbye.",
+            "We sayed goodbye.",
+            "We did said goodbye."
+          ],
+          "answer": 1,
+          "use": "say → said"
+        },
+        {
+          "id": "mng8-13",
+          "q": "Write the sentence in the past tense (negative): I / have breakfast",
+          "choices": [
+            "I didn't had breakfast.",
+            "I didn't have breakfast.",
+            "I wasn't have breakfast.",
+            "I don't have breakfast."
+          ],
+          "answer": 1,
+          "use": "didn't + base"
+        },
+        {
+          "id": "mng8-14",
+          "q": "Write the sentence in the past tense (question): she / read the email",
+          "choices": [
+            "Did she readed the email?",
+            "Did she read the email?",
+            "Was she read the email?",
+            "Does she read the email?"
+          ],
+          "answer": 1,
+          "use": "Did + base"
+        },
+        {
+          "id": "mng8-15",
+          "q": "Write the sentence in the past tense (negative): The bus / leave early",
+          "choices": [
+            "The bus didn't left early.",
+            "The bus didn't leave early.",
+            "The bus wasn't leave early.",
+            "The bus doesn't leave early."
+          ],
+          "answer": 1,
+          "use": "didn't + base"
+        },
+        {
+          "id": "mng8-16",
+          "q": "Write the sentence in the past tense (question): you / make a sandwich",
+          "choices": [
+            "Do you make a sandwich?",
+            "Did you made a sandwich?",
+            "Did you make a sandwich?",
+            "Were you make a sandwich?"
+          ],
+          "answer": 2,
+          "use": "Did + base"
+        },
+        {
+          "id": "mng8-17",
+          "q": "Write the sentence in the past tense (affirmative): He / swim in the pool",
+          "choices": [
+            "He swims in the pool.",
+            "He swum in the pool.",
+            "He swimmed in the pool.",
+            "He swam in the pool."
+          ],
+          "answer": 3,
+          "use": "swim → swam"
+        },
+        {
+          "id": "mng8-18",
+          "q": "Word bank (build, drink, eat, feel, leave, see, sleep): Mr. Davis is sleepy. He ____ only five hours last night.",
+          "choices": [
+            "left",
+            "sleeped",
+            "felt",
+            "slept"
+          ],
+          "answer": 3,
+          "use": "sleep → slept"
+        },
+        {
+          "id": "mng8-19",
+          "q": "Word bank (build, drink, eat, feel, leave, see, sleep): We went camping. We ____ many stars in the sky.",
+          "choices": [
+            "saw",
+            "ate",
+            "seen",
+            "seed"
+          ],
+          "answer": 0,
+          "use": "see → saw (not seen)"
+        },
+        {
+          "id": "mng8-20",
+          "q": "Word bank (build, drink, eat, feel, leave, see, sleep): I ____ a model rocket after school. It was fun.",
+          "choices": [
+            "saw",
+            "builded",
+            "ate",
+            "built"
+          ],
+          "answer": 3,
+          "use": "build → built"
+        },
+        {
+          "id": "mng8-21",
+          "q": "Word bank (build, drink, eat, feel, leave, see, sleep): They ____ the party early. They were tired.",
+          "choices": [
+            "slept",
+            "felt",
+            "leaved",
+            "left"
+          ],
+          "answer": 3,
+          "use": "leave → left"
+        },
+        {
+          "id": "mng8-22",
+          "q": "Word bank (build, drink, eat, feel, leave, see, sleep): Amy ____ steak for dinner yesterday.",
+          "choices": [
+            "eaten",
+            "drank",
+            "ate",
+            "eated"
+          ],
+          "answer": 2,
+          "use": "eat → ate"
+        },
+        {
+          "id": "mng8-23",
+          "q": "Word bank (build, drink, eat, feel, leave, see, sleep): He ____ a lot of water after the race.",
+          "choices": [
+            "drunk",
+            "drinked",
+            "ate",
+            "drank"
+          ],
+          "answer": 3,
+          "use": "drink → drank"
+        },
+        {
+          "id": "mng8-24",
+          "q": "Word bank (build, drink, eat, feel, leave, see, sleep): Jack ____ good after the concert. He played the clarinet well.",
+          "choices": [
+            "felt",
+            "feeled",
+            "fell",
+            "left"
+          ],
+          "answer": 0,
+          "use": "feel → felt"
         }
       ]
     },

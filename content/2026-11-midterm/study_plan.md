@@ -3,6 +3,7 @@
 Source photos:
 - `raw/202611/grade5_2026_fall_semester_midterm_notice_and_study_guide.JPG` (midterm notice and study guide)
 - `raw/202609/IMG_5994.JPG` (Fall 2026 spelling & vocabulary list; Weeks 6-8 = Module 2 Weeks 1-3)
+- `raw/202611/grammar_0601.JPG` … `grammar_0802.JPG` (My Next Grammar 2, Lessons 6-8, pp. 24-25, 28-29, 32-33)
 
 App exam id: `2026-11-midterm`
 
@@ -43,7 +44,7 @@ All five topics are generated from the notice, the word list, and standard rules
 | --- | --- | --- |
 | Vocabulary | Generated | 26 words; self-written definitions (no teacher HW1 sheets yet) |
 | Spelling / Phonics | Generated | 3 dictation lists, sound and pattern sorts, KISI-style MCQ sets |
-| Grammar | Generated | Lessons 4-5 review + Lessons 6-8 new |
+| Grammar | Generated + textbook | Lessons 4-5 review; Lessons 6-8 textbook exercises copied as MCQ sets (`mng-l6-book`, `mng-l7-book`, `mng-l8-book`: 21 / 28 / 24 items); quick-guide cards aligned to the textbook rule boxes (-ing / -ed spelling and exceptions, -ed pronunciation, time words, the 28-verb irregular table); plus generated L6-8 sets |
 | Reading | Generated | Original passages in the Module 2 genres (adventure, drama, informational, poetry); anchor charts for the 7 notice skills |
 | Listening | Generated | 5 original dialogues on Module 2 themes |
 | Oral / Writing | Not in app | App has no oral or writing topic |
@@ -56,5 +57,5 @@ Asked the user for these on 2026-10-22:
 2. Into Reading pages for Airborn, The Secret Garden, The Miracle of Spring, The Poem That Will Not End
 3. Module 2 anchor charts (especially Literary Elements and Elements of Poetry)
 4. Know-It, Show-It pp. 26, 30, 34, 37, 42, 47
-5. My Next Grammar Lessons 6-8 pages
+5. ~~My Next Grammar Lessons 6-8 pages~~ — received 2026-10-22. Still missing: Grammar Review Quizzes 5-7 (pp. 98-100) and the right-hand practice pages (pp. 26-27, 30-31, 34-35) that were cut off in the photos
 6. Writing prompt / rubric for the personal narrative, if the teacher shared one
