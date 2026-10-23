@@ -22,7 +22,7 @@ Runtime config: `data/exams/2026-11-midterm/game.json`, enabled by `"game": true
 | Sound Sorter | 100% on a phonics sort game or phonics quiz |
 | Dictation Ace | 100% on a typed dictation list |
 | Time Traveler | 90%+ on a Lesson 6, a Lesson 7, and a Lesson 8 set |
-| Story Navigator | Every reading passage completed |
+| Story Navigator | Every reading passage completed (19 as of 2026-10-23) |
 | Watchful Listener | Every listening dialogue completed |
 | Storm Tamer | Boss Review cleared: every saved missed question answered correctly |
 

@@ -17,7 +17,7 @@ App exam id: `2026-11-midterm`
 ## Scope From Notice
 
 - How to study: Module 2 — Into Reading, Anchor Charts, HW folder, KISI, Worksheet, NB, My Next Grammar
-- Into Reading passages: Airborn, The Secret Garden, The Miracle of Spring, The Poem That Will Not End
+- Into Reading passages: Airborn, The Secret Garden, The Miracle of Spring, The Poem That Will Not End (studied in class; the reading test uses new passages on related themes, per the user 2026-10-23)
 - Spelling: Module 2 Weeks 1-3 words, written from dictated sentences
 - Phonics (Know-It, Show-It): pp. 26 & 30 (/ōō/ and /yōō/), 34 & 37 (/ou/, /ô/, /oi/), 42 & 47 (/ôr/, /âr/, /är/)
 - Vocabulary: all Module 2 Weeks 1-3 words on the vocabulary list
@@ -46,7 +46,7 @@ All five topics were generated from the notice, the word list, and standard rule
 | Vocabulary | Teacher definitions + illustrated | 26 words. The 20 homework words use Mr. Long's HW1 definitions word for word; panic and the 5 bonus words keep self-written ones. Homework fill-in sentences added to `examples[]`. **project** fixed to *shine an image or light outward*; its picture was redrawn as a child projecting a map onto a classroom screen (`image-art/prompts.json`) |
 | Spelling / Phonics | Generated + homework | 3 dictation lists, sound and pattern sorts, KISI-style MCQ sets, plus `m2_hw_spelling_sentences` (HW2 sentences: /ōō/ /yōō/, /oi/ /ou/ /ô/, and look-alikes like dairy/diary, warn/worn) |
 | Grammar | Generated + textbook | Lessons 4-5 review; Lessons 6-8 textbook exercises copied as MCQ sets (`mng-l6-book`, `mng-l7-book`, `mng-l8-book`: 21 / 28 / 24 items); quick-guide cards aligned to the textbook rule boxes (-ing / -ed spelling and exceptions, -ed pronunciation, time words, the 28-verb irregular table); plus generated L6-8 sets; `m2-homework` set from HW2 (present simple, rewrite in present continuous, contents are, homework is uncountable) |
-| Reading | Generated + illustrated + homework | 4 homework passages with the teacher's questions (Finding Prince Deming, Elias's Discovery, Whimsical Tales, Lila's Treehouse; ids `hw_*`). Original passages in the Module 2 genres (adventure, drama, informational, poetry). Anchor charts rebuilt 2026-10-22 from web research: 7 focus skills plus 3 supporting skills now have original illustrated posters. Focus guides keep 5 worked examples and a quick check (see `anchor_charts.md`) |
+| Reading | Generated + illustrated + homework | 19 passages. 4 homework passages with the teacher's questions (ids `hw_*`). 10 new test-style passages added 2026-10-23 (ids `mt_*`), because the test uses unseen passages on related themes, not the Into Reading texts: adventure (The Golden Lantern), honesty folktale (The Clockmaker's Test), realistic fiction (The Rooftop Garden), informational sequence (How Honeybees Wake Up in Spring), persuasive letter (Our School Needs a Garden), problem-solution (A Highway Made Safe for Butterflies, Taiwan's purple crows), poetry pair, play (The Harbor Map), pourquoi tale (Why the Moon Shines at Night), personal narrative (The Note I Almost Didn't Sing). Each is 210-520 words with 11 questions in the HW3 format (true/false, multiple choice, one cited short answer), a bit harder than HW: fact vs opinion, best-supporting sentence, cross-text comparison, turning point, point of view. Original passages in the Module 2 genres (adventure, drama, informational, poetry). Anchor charts rebuilt 2026-10-22 from web research: 7 focus skills plus 3 supporting skills now have original illustrated posters. Focus guides keep 5 worked examples and a quick check (see `anchor_charts.md`) |
 | Listening | Generated | 5 original dialogues on Module 2 themes |
 | Missions & badges | Done 2026-10-22 | 4 daily missions and 10 Module 2 cat & fox badges (see `game.md`) |
 | Oral / Writing | Not in app | App has no oral or writing topic |
@@ -56,7 +56,7 @@ All five topics were generated from the notice, the word list, and standard rule
 Asked the user for these on 2026-10-22:
 
 1. ~~Module 2 HW folder pages~~ — received 2026-10-23 (W1-W3 HW1-HW3), built into all topics except listening
-2. Into Reading pages for Airborn, The Secret Garden, The Miracle of Spring, The Poem That Will Not End
+2. Into Reading pages for Airborn, The Secret Garden, The Miracle of Spring, The Poem That Will Not End (lower priority: the test does not reuse these texts)
 3. Module 2 anchor charts. Original research-based charts are in place, but the teacher's versions would still help match the class wording
 4. Know-It, Show-It pp. 26, 30, 34, 37, 42, 47
 5. ~~My Next Grammar Lessons 6-8 pages~~ — received 2026-10-22. Still missing: Grammar Review Quizzes 5-7 (pp. 98-100) and the right-hand practice pages (pp. 26-27, 30-31, 34-35) that were cut off in the photos

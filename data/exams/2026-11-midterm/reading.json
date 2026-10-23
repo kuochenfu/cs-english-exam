@@ -1492,6 +1492,1252 @@
           "sampleAnswer": "First, Lila spent her summer reading in the treehouse at her grandmother's house. Then a scared squirrel ran in, and instead of shooing it away, she fed it nuts and it became her reading buddy, Ricky. Later, birds and a rabbit started visiting too. Finally, the treehouse was not just a reading space anymore; it became a sanctuary for Lila and her woodland friends."
         }
       ]
+    },
+    {
+      "id": "mt_lantern_balloon",
+      "title": "The Golden Lantern",
+      "skills": [
+        "literary_elements",
+        "character",
+        "figurative_language",
+        "theme"
+      ],
+      "body": "Original practice story. Paragraphs are numbered.\n\n<b>The Golden Lantern</b>\n\n1 Mira had flown in her grandfather's hot-air balloon a dozen times, but always with his hands on the burner and hers safely in her pockets. Today was different. Grandpa Tomas had twisted his ankle on the landing field, and the balloon, the <i>Golden Lantern</i>, still had one job to finish before sunset: carrying a box of medicine across Heron Valley to the doctor in Millbrook.\n\n2 \"The winds are favorable for the next two hours,\" Grandpa said, tapping the weather map with his pencil. \"After that, a storm will roll in from the west. Mr. Ortiz will fly, and you will be his navigator. You know this valley better than he does.\"\n\n3 Mira nodded, but her stomach felt like a jar full of bees.\n\n4 At first, the flight was as smooth as a page turning. Below them, the fields were stitched together like a green-and-gold quilt, and the river flashed silver in the sun. Mr. Ortiz hummed while he worked the burner, and Mira checked the compass every few minutes, calling out landmarks: the red barn, the stone bridge, the windmill with one broken arm.\n\n5 Then the wind changed its mind.\n\n6 It shoved the basket sideways and pushed the balloon toward the dark line of the Thornback Hills. Clouds piled up behind them like dirty laundry. Mr. Ortiz stopped humming. \"We're drifting north,\" he said. \"Too far north. Which way is Millbrook?\"\n\n7 Mira's hands shook as she unfolded the map. The wind seized one corner and nearly tore it away. For a moment, she wanted to say, \"I don't know,\" and let a grown-up decide. But she remembered something Grandpa always told her: \"The sky changes its mood, but the ground never moves. Find the ground.\"\n\n8 She leaned over the edge of the basket and searched. There, far to the east, was the windmill with the broken arm. \"We have to go higher,\" she said. \"Grandpa says that on stormy afternoons, the high wind blows east. If we rise, it will carry us back.\"\n\n9 Mr. Ortiz hesitated, then opened the burner. A roar of flame filled the balloon, and the <i>Golden Lantern</i> climbed. The basket stopped swinging. Slowly, like a ship turning in a harbor, the balloon swung east.\n\n10 Twenty minutes later, they bumped down in the meadow behind the Millbrook clinic. Dr. Ames ran out to meet them, and Mira handed her the box with both arms.\n\n11 That night, when Mira told the story, Grandpa did not say she was brave. He said, \"You were watchful. Brave people sometimes just get lucky. Watchful people know where they are.\" Mira decided she liked that word better.",
+      "questions": [
+        {
+          "q": "True or False: Mira flew the balloon by herself.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "skill": "evidence"
+        },
+        {
+          "q": "True or False: Mira used a landmark to figure out where the balloon was.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "skill": "evidence"
+        },
+        {
+          "q": "True or False: Grandpa Tomas stayed on the ground because of the coming storm.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "skill": "evidence"
+        },
+        {
+          "q": "What is the main conflict of the story?",
+          "choices": [
+            "Mira is afraid of heights and refuses to get into the basket.",
+            "Mira and Mr. Ortiz argue about who is in charge of the balloon.",
+            "The wind blows the balloon off course, and Mira must find the way to Millbrook before the storm.",
+            "The box of medicine falls out of the basket over the Thornback Hills."
+          ],
+          "answer": 2,
+          "skill": "literary_elements"
+        },
+        {
+          "q": "\"Her stomach felt like a jar full of bees.\" What does this simile tell the reader about Mira?",
+          "choices": [
+            "She is hungry because she skipped lunch.",
+            "She is nervous and jittery about the job ahead.",
+            "She is angry that Grandpa cannot fly.",
+            "She feels sick from the motion of the balloon."
+          ],
+          "answer": 1,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "\"Then the wind changed its mind.\" Which type of figurative language is this?",
+          "choices": [
+            "simile",
+            "hyperbole",
+            "onomatopoeia",
+            "personification"
+          ],
+          "answer": 3,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "Which sentence best shows that Mira almost gave up?",
+          "choices": [
+            "\"Mira checked the compass every few minutes, calling out landmarks.\"",
+            "\"For a moment, she wanted to say, 'I don't know,' and let a grown-up decide.\"",
+            "\"She leaned over the edge of the basket and searched.\"",
+            "\"Mira handed her the box with both arms.\""
+          ],
+          "answer": 1,
+          "skill": "evidence"
+        },
+        {
+          "q": "In paragraph 2, the winds are \"favorable.\" What does favorable mean here?",
+          "choices": [
+            "helpful or good for what you want to do",
+            "strong and dangerous",
+            "cold and wet",
+            "always changing direction"
+          ],
+          "answer": 0,
+          "skill": "vocab_context"
+        },
+        {
+          "q": "Why does Grandpa call Mira \"watchful\" instead of \"brave\"?",
+          "choices": [
+            "He thinks Mira only got lucky.",
+            "He did not believe her story.",
+            "He believes paying close attention, not luck, brought them to Millbrook safely.",
+            "He is upset that she flew without him."
+          ],
+          "answer": 2,
+          "skill": "character"
+        },
+        {
+          "q": "Which sentence best states the theme of the story?",
+          "choices": [
+            "Grown-ups always know the best thing to do.",
+            "Staying calm and paying close attention can help you solve a hard problem.",
+            "Never fly a balloon when a storm is coming.",
+            "Maps are more useful than landmarks."
+          ],
+          "answer": 1,
+          "skill": "theme"
+        },
+        {
+          "q": "How does Mira change from paragraph 3 to paragraph 11? Use one detail from the beginning and one from the end.",
+          "type": "short",
+          "sampleAnswer": "At the beginning, Mira is nervous; her stomach \"felt like a jar full of bees,\" and in paragraph 7 she almost lets a grown-up decide. By the end, she has found the windmill, told Mr. Ortiz to go higher, and delivered the medicine, and she is proud to be called \"watchful.\" She changes from unsure to confident.",
+          "skill": "character"
+        }
+      ]
+    },
+    {
+      "id": "mt_clockmaker_test",
+      "title": "The Clockmaker's Test",
+      "skills": [
+        "character",
+        "theme",
+        "literary_elements",
+        "evidence"
+      ],
+      "body": "Original practice folktale. Paragraphs are numbered.\n\n<b>The Clockmaker's Test</b>\n\n1 In the hill town of Vell lived a clockmaker named Master Odile, whose clocks were so precise that the church set its bells by them. When her eyes began to grow tired, she decided to take one apprentice, someone she could teach and one day trust with her shop.\n\n2 Two boys came to her door on the same morning. Jory was the son of a wealthy merchant. He wore a velvet coat, spoke smoothly, and had already read every book about clocks in the town library. Pell was a farmer's son with mud on his boots. He spoke little, but he watched everything.\n\n3 \"I can only teach one of you,\" Master Odile said. \"So I will give you each a test.\"\n\n4 She placed a small brass clock in front of each boy. \"These clocks have stopped. You have until the sunset bell to make them run again. Use any tool in my shop.\" Then she went upstairs and closed her door.\n\n5 Jory opened the back of his clock and laughed. \"This is easy. One gear is cracked.\" He searched the drawers, found a matching gear, and snapped it into place. Within an hour, his clock was ticking.\n\n6 Pell's clock was harder. When he opened it, he found that the mainspring was missing entirely. It was not broken; it was simply gone, as if someone had taken it out on purpose. He searched every drawer twice. There was no spring of the right size anywhere in the shop.\n\n7 Jory leaned over his shoulder. \"You'll never finish,\" he whispered. \"Take the spring from that tall clock by the window. She'll never notice, and you can put it back tomorrow.\"\n\n8 Pell looked at the tall clock for a long moment. Then he shook his head. \"It isn't mine to take.\" He sat down with a sheet of paper and began to draw the missing spring instead: its width, its thickness, and how many times it should coil.\n\n9 When the sunset bell rang, Master Odile came downstairs. Jory's clock ticked proudly. Pell's clock sat silent beside a careful drawing.\n\n10 \"My clock was missing its spring,\" Pell explained. \"There was none in the shop, so I drew what it needs. A blacksmith could make one tomorrow.\"\n\n11 Master Odile smiled. \"There was never a spring in this shop. I took it out myself. Anyone can follow instructions when the answer is waiting in a drawer. I wanted to see what each of you would do when it was not.\" She glanced at the tall clock by the window. \"And I wanted to see who would borrow without asking.\"\n\n12 Jory's face turned the color of a ripe tomato. He had not touched the spring, but he had suggested it, and everyone in the room knew it.\n\n13 The next morning, Pell hung his muddy boots by the door of the clock shop. Jory, to his credit, came back a week later. He did not ask for the job. He asked whether he might learn from Pell.",
+      "questions": [
+        {
+          "q": "True or False: Both clocks had the same problem.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "skill": "evidence"
+        },
+        {
+          "q": "True or False: Pell took the spring from the tall clock by the window.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "skill": "evidence"
+        },
+        {
+          "q": "True or False: Master Odile planned the problem in Pell's clock on purpose.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "skill": "evidence"
+        },
+        {
+          "q": "What was the real purpose of Master Odile's test?",
+          "choices": [
+            "To find out which boy could fix a clock the fastest",
+            "To see how each boy would act when there was no easy answer",
+            "To find out which boy had read more books about clocks",
+            "To get her broken clocks repaired for free"
+          ],
+          "answer": 1,
+          "skill": "literary_elements"
+        },
+        {
+          "q": "How are Jory and Pell different at the beginning of the story?",
+          "choices": [
+            "Jory is confident and knows a lot from books; Pell is quiet and observant.",
+            "Jory is shy and nervous; Pell talks smoothly and wears fine clothes.",
+            "Jory has fixed many clocks before; Pell has never seen a clock.",
+            "Jory is honest; Pell is willing to cheat."
+          ],
+          "answer": 0,
+          "skill": "character"
+        },
+        {
+          "q": "Which sentence best shows that Pell is honest?",
+          "choices": [
+            "\"He spoke little, but he watched everything.\"",
+            "\"He searched every drawer twice.\"",
+            "\"'It isn't mine to take.'\"",
+            "\"Pell hung his muddy boots by the door of the clock shop.\""
+          ],
+          "answer": 2,
+          "skill": "evidence"
+        },
+        {
+          "q": "In paragraph 1, the clocks are so \"precise\" that the church sets its bells by them. What does precise mean?",
+          "choices": [
+            "very expensive",
+            "exact and correct",
+            "very old",
+            "loud and clear"
+          ],
+          "answer": 1,
+          "skill": "vocab_context"
+        },
+        {
+          "q": "\"Jory's face turned the color of a ripe tomato.\" How does Jory feel?",
+          "choices": [
+            "proud",
+            "confused",
+            "embarrassed",
+            "frightened"
+          ],
+          "answer": 2,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "What does paragraph 13 suggest about Jory?",
+          "choices": [
+            "He is still angry and wants revenge.",
+            "He learned from his mistake and was willing to be humble.",
+            "He wants to take the spring after all.",
+            "He has decided to give up clocks forever."
+          ],
+          "answer": 1,
+          "skill": "character"
+        },
+        {
+          "q": "Which lesson does the story teach?",
+          "choices": [
+            "The fastest worker always deserves the reward.",
+            "Rich people cannot be trusted.",
+            "Honesty and careful thinking matter more than a quick success.",
+            "Books are more useful than practice."
+          ],
+          "answer": 2,
+          "skill": "theme"
+        },
+        {
+          "q": "How is this story similar to \"Finding Prince Deming\"? Give two ways.",
+          "type": "short",
+          "sampleAnswer": "In both stories, a wise adult (Master Odile, Hartwig) sets up a test where the easy answer is a trap. In both, a dishonest choice gives a character away: Prince One plants a flower at night, and Jory suggests borrowing the spring. Both teach that honesty matters more than looking successful.",
+          "skill": "theme"
+        }
+      ]
+    },
+    {
+      "id": "mt_rooftop_garden",
+      "title": "The Rooftop Garden",
+      "skills": [
+        "literary_elements",
+        "character",
+        "theme",
+        "figurative_language"
+      ],
+      "body": "Original practice story. Paragraphs are numbered.\n\n<b>The Rooftop Garden</b>\n\n1 When Dev's family moved into apartment 6C, the first thing he noticed was the gray. Gray sidewalks, gray buildings packed so densely that sunlight reached the street only at noon, and a gray sky that seemed to sit on the rooftops like a lid. In his old town, Dev had spent every afternoon outside. Here, he sat by the window, restless and bored, counting pigeons.\n\n2 The second thing he noticed was Mrs. Kowalski in 6D. She was old, wore the same brown sweater every day, and never smiled. When Dev's soccer ball bounced against her door, she opened it, looked down at the ball with contempt, and shut the door without a word.\n\n3 One Saturday, Dev followed a strange smell up the back stairs. It was sweet and green, like cut grass. The stairs ended at a metal door with a rusty fastening. It was not locked. He pushed it open.\n\n4 The roof was full of plants. Tomatoes climbed wooden stakes, beans curled around strings, and pots of herbs crowded every corner. In the middle of it all, wearing her brown sweater, Mrs. Kowalski was watering a row of sunflowers taller than Dev.\n\n5 \"You're not supposed to be up here,\" she said.\n\n6 Dev almost ran. Instead, he heard himself ask, \"Did you grow all this?\"\n\n7 Mrs. Kowalski studied him for a long moment. Then she handed him a watering can. \"The beans are thirsty,\" she said. \"Don't drown them.\"\n\n8 After that, Dev went up to the roof almost every day. Mrs. Kowalski did not talk much, but she taught him things: how to pinch the tops off basil so it grows bushier, how to tell when a tomato is ready, and why you plant marigolds near vegetables to keep insects away. Once, while they were tying up the beans, she told him she had grown up on a farm in Poland. \"When my husband died, I came up here so I would not be sad all day,\" she said. \"The plants did not care that I was grumpy. They just needed water.\"\n\n9 Dev understood. The plants did not care that he was new, either.\n\n10 By the end of summer, the roof had a new row of carrots: Dev's row. On the last warm evening, Mrs. Kowalski carried up two folding chairs, and they sat together watching the sun sink behind the towers, turning the gray buildings orange and pink.\n\n11 \"The city isn't so gray,\" Dev said.\n\n12 \"No,\" said Mrs. Kowalski. \"You just have to know where to look.\" ",
+      "questions": [
+        {
+          "q": "True or False: Dev liked his new neighborhood right away.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "skill": "evidence"
+        },
+        {
+          "q": "True or False: Mrs. Kowalski started the garden because she wanted to sell vegetables.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "skill": "evidence"
+        },
+        {
+          "q": "True or False: Both Dev and Mrs. Kowalski were lonely in some way.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "skill": "character"
+        },
+        {
+          "q": "How does the setting in paragraph 1 affect Dev?",
+          "choices": [
+            "The busy city excites him, so he explores every afternoon.",
+            "The crowded, gray city makes him feel bored and shut in.",
+            "The sunny streets make him want to play soccer.",
+            "The noise of the city keeps him awake at night."
+          ],
+          "answer": 1,
+          "skill": "literary_elements"
+        },
+        {
+          "q": "\"A gray sky that seemed to sit on the rooftops like a lid.\" What feeling does this simile create?",
+          "choices": [
+            "feeling trapped or closed in",
+            "feeling excited",
+            "feeling sleepy",
+            "feeling proud"
+          ],
+          "answer": 0,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "In paragraph 2, Mrs. Kowalski looks at the ball \"with contempt.\" Which clue helps you understand contempt?",
+          "choices": [
+            "She is old and wears a brown sweater.",
+            "She shuts the door without a word.",
+            "She lives in apartment 6D.",
+            "The ball bounces against her door."
+          ],
+          "answer": 1,
+          "skill": "vocab_context"
+        },
+        {
+          "q": "Which sentence best shows that Mrs. Kowalski begins to accept Dev?",
+          "choices": [
+            "\"'You're not supposed to be up here,' she said.\"",
+            "\"Then she handed him a watering can.\"",
+            "\"She was old, wore the same brown sweater every day, and never smiled.\"",
+            "\"Dev almost ran.\""
+          ],
+          "answer": 1,
+          "skill": "evidence"
+        },
+        {
+          "q": "Why does Mrs. Kowalski tell Dev about her husband?",
+          "choices": [
+            "To scare Dev so he will leave the roof",
+            "To explain why the garden matters to her: it helped her through sadness",
+            "To ask Dev to pay for the seeds",
+            "To show that she is still angry about the soccer ball"
+          ],
+          "answer": 1,
+          "skill": "character"
+        },
+        {
+          "q": "What does Mrs. Kowalski mean when she says, \"You just have to know where to look\"?",
+          "choices": [
+            "Dev needs glasses to see the sunset.",
+            "The best view is from the roof, so Dev should stay there.",
+            "Beauty and good things can be found even in places that seem dull.",
+            "Dev should look for his lost soccer ball."
+          ],
+          "answer": 2,
+          "skill": "theme"
+        },
+        {
+          "q": "Which sentence best states the theme?",
+          "choices": [
+            "Cities are worse places to live than small towns.",
+            "Never go into places where you are not allowed.",
+            "Gardening is hard work that few people enjoy.",
+            "Friendship and new beginnings can grow in unexpected places."
+          ],
+          "answer": 3,
+          "skill": "theme"
+        },
+        {
+          "q": "How does Dev's view of Mrs. Kowalski change from paragraph 2 to paragraph 10? Use details from both.",
+          "type": "short",
+          "sampleAnswer": "In paragraph 2, Dev sees Mrs. Kowalski as a grumpy neighbor who looks at his ball with contempt and never smiles. By paragraph 10, she has taught him how to garden and shared her story, and they sit side by side watching the sunset. He now sees her as a friend.",
+          "skill": "character"
+        }
+      ]
+    },
+    {
+      "id": "mt_honeybees_spring",
+      "title": "How Honeybees Wake Up in Spring",
+      "skills": [
+        "authors_purpose",
+        "text_structure",
+        "vocab_context",
+        "evidence"
+      ],
+      "body": "An informational article. Paragraphs are numbered.\n\n<b>How Honeybees Wake Up in Spring</b>\n\n1 On a cold January day, a beehive looks silent and empty. Not a single bee buzzes near the entrance. But inside, thousands of honeybees are very much alive. They are waiting for spring, and when it comes, they will awaken the hive in a careful series of steps.\n\n<b>Surviving the Winter</b>\n2 Honeybees do not hibernate. Instead, when the temperature drops below about 10°C, the bees crowd together into a tight ball called a winter cluster. The queen stays safely in the center. The worker bees around her shiver their flight muscles without moving their wings. This shivering produces heat, keeping the center of the cluster warm even when snow covers the hive. The bees on the cold outer edge slowly trade places with the warmer bees inside, so no bee freezes.\n\n3 Shivering takes energy, and energy comes from food. All winter, the bees eat the honey they stored during summer. A strong hive needs about 20 to 30 kilograms of honey to last until spring. If a beekeeper takes too much honey in the fall, the colony may suffer a food deficiency and starve before the flowers return.\n\n<b>The First Signs of Spring</b>\n4 As the days grow longer in late winter, the queen begins laying a few eggs again, even before the snow melts. The workers must keep these young bees, called brood, very warm, so the cluster works even harder.\n\n5 Then, on the first sunny day above about 12°C, the bees take \"cleansing flights.\" They have not left the hive for months, so they fly out briefly to clean themselves. A beekeeper who sees bees zooming in and out on a warm February afternoon knows the colony has survived.\n\n<b>The Spring Build-Up</b>\n6 When the first flowers bloom, older worker bees become foragers. They collect pollen, which is rich in protein, and nectar, which bees turn into honey. With fresh food arriving, the queen lays more and more eggs, sometimes over 1,500 a day. In only a few weeks, a colony of 10,000 winter bees can grow to more than 40,000.\n\n7 By late spring, the hive may become so crowded that about half the bees leave with the old queen to find a new home. This is called swarming. A swarm hanging from a tree branch may look frightening, but swarming bees are usually calm because they have no hive to defend.\n\n<b>Why It Matters</b>\n8 Spring bees do more than make honey. As they travel from flower to flower, they carry pollen that helps plants make fruit and seeds. Scientists estimate that about one out of every three bites of food we eat depends on pollinators like bees. When a hive wakes up in spring, a whole garden wakes up with it.",
+      "questions": [
+        {
+          "q": "True or False: Honeybees sleep through the winter the way bears do.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "skill": "evidence"
+        },
+        {
+          "q": "True or False: A colony grows much larger in spring than it was in winter.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "skill": "evidence"
+        },
+        {
+          "q": "What is the author's main purpose for writing this article?",
+          "choices": [
+            "To persuade readers to become beekeepers",
+            "To explain how honeybees survive winter and become active in spring",
+            "To tell an entertaining story about a brave queen bee",
+            "To warn readers that bee swarms are dangerous"
+          ],
+          "answer": 1,
+          "skill": "authors_purpose"
+        },
+        {
+          "q": "How is most of the article organized?",
+          "choices": [
+            "Compare and contrast: honeybees and wasps",
+            "Problem and solution: how to stop bees from swarming",
+            "Sequence: what happens in the hive from winter through late spring",
+            "Description only: the parts of a bee's body"
+          ],
+          "answer": 2,
+          "skill": "text_structure"
+        },
+        {
+          "q": "According to paragraph 2, why do the worker bees shiver?",
+          "choices": [
+            "Because they are frightened of the snow",
+            "To produce heat that keeps the cluster warm",
+            "To shake honey out of the comb",
+            "To call the queen to the center"
+          ],
+          "answer": 1,
+          "skill": "text_structure"
+        },
+        {
+          "q": "Which detail best explains why no bee freezes inside the winter cluster?",
+          "choices": [
+            "\"The queen stays safely in the center.\"",
+            "\"A strong hive needs about 20 to 30 kilograms of honey.\"",
+            "\"The bees on the cold outer edge slowly trade places with the warmer bees inside.\"",
+            "\"They fly out briefly to clean themselves.\""
+          ],
+          "answer": 2,
+          "skill": "evidence"
+        },
+        {
+          "q": "In paragraph 3, the colony may \"suffer a food deficiency.\" What does deficiency mean?",
+          "choices": [
+            "a lack of something that is needed",
+            "too much of something",
+            "a kind of sickness from cold weather",
+            "a special winter food"
+          ],
+          "answer": 0,
+          "skill": "vocab_context"
+        },
+        {
+          "q": "Which event happens FIRST, while snow is still on the ground?",
+          "choices": [
+            "The bees take cleansing flights.",
+            "Foragers collect pollen from the first flowers.",
+            "The queen begins laying a few eggs.",
+            "Half the bees swarm with the old queen."
+          ],
+          "answer": 2,
+          "skill": "text_structure"
+        },
+        {
+          "q": "Why does the author include the fact that \"one out of every three bites of food\" depends on pollinators?",
+          "choices": [
+            "To show that bees are important to the food people eat",
+            "To prove that bees eat a lot of food",
+            "To explain why beekeepers take honey in the fall",
+            "To compare bees with other insects"
+          ],
+          "answer": 0,
+          "skill": "authors_purpose"
+        },
+        {
+          "q": "What does the author mean by \"When a hive wakes up in spring, a whole garden wakes up with it\"?",
+          "choices": [
+            "Bees make so much noise that they wake up gardeners.",
+            "Active bees pollinate plants, helping the garden grow fruit and seeds.",
+            "Gardens sleep in winter exactly like bees.",
+            "Bees build their hives inside gardens."
+          ],
+          "answer": 1,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "Describe two ways a honeybee colony changes from winter to late spring. Use details or numbers from the article.",
+          "type": "short",
+          "sampleAnswer": "In winter, the bees stay inside in a tight cluster, shivering to keep warm and eating stored honey. In spring, foragers fly out to collect pollen and nectar, and the queen lays up to 1,500 eggs a day, so a colony of 10,000 bees can grow to more than 40,000. By late spring, it may be so crowded that half the bees swarm away.",
+          "skill": "evidence"
+        }
+      ]
+    },
+    {
+      "id": "mt_school_garden_letter",
+      "title": "Our School Needs a Garden",
+      "skills": [
+        "authors_purpose",
+        "evidence",
+        "text_structure"
+      ],
+      "body": "A persuasive letter. Paragraphs are numbered.\n\n<b>Our School Needs a Garden</b>\n\nDear Principal Chen,\n\n1 My name is Hana Lin, and I am in Class 504. I am writing to ask you to turn the empty dirt lot behind the gym into a school garden. I believe a garden would make our school healthier, smarter, and kinder.\n\n2 First, a garden would help students eat better. Many students in my class skip the vegetables at lunch. However, researchers have found that children who grow vegetables at school are more willing to taste them and even ask for them at home. When you plant a carrot yourself, you really want to know how it tastes!\n\n3 Second, a garden is a classroom without walls. In science, we learned how seeds germinate, but we only looked at pictures. In a garden, we could measure how fast bean plants grow, test which soil holds water best, and watch bees pollinate flowers. Our math teacher could even use the garden to teach area and perimeter when we plan the beds.\n\n4 Third, a garden builds teamwork. Plants need care every day, so students would have to make schedules, share jobs, and depend on one another. At my cousin's school in Tainan, older students teach younger students how to water and weed. My cousin says the garden is the one place where nobody argues about who is in charge.\n\n5 Some people might say that a garden costs too much money or that no one will take care of it during summer vacation. These are reasonable worries. However, the dirt lot is already there, so we would only need seeds, soil, and a few tools. The Parents' Association has already offered to hold a bake sale to pay for them. During the summer, families could sign up to water the garden for one week each, the same way we already take turns caring for the class fish.\n\n6 Right now, the lot behind the gym is just a muddy space where balls get lost. With a little work, it could become the best classroom in our school. Please let Class 504 start planning our garden this spring. I promise we will take good care of it.\n\nSincerely,\nHana Lin, Class 504",
+      "questions": [
+        {
+          "q": "True or False: Hana thinks the garden will cost a lot of money.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "skill": "evidence"
+        },
+        {
+          "q": "True or False: Hana suggests that families take turns watering the garden in summer.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "skill": "evidence"
+        },
+        {
+          "q": "What is the author's main purpose for writing this letter?",
+          "choices": [
+            "To explain how seeds germinate",
+            "To entertain the principal with a story about her cousin",
+            "To persuade the principal to approve a school garden",
+            "To complain about the muddy lot behind the gym"
+          ],
+          "answer": 2,
+          "skill": "authors_purpose"
+        },
+        {
+          "q": "How does Hana organize paragraphs 2-4?",
+          "choices": [
+            "She tells events in the order they happened.",
+            "She gives three reasons, each in its own paragraph, with signal words First, Second, Third.",
+            "She compares two different schools.",
+            "She describes the problem and then lists many solutions."
+          ],
+          "answer": 1,
+          "skill": "text_structure"
+        },
+        {
+          "q": "Which sentence from the letter is a FACT, not an opinion?",
+          "choices": [
+            "\"I believe a garden would make our school healthier, smarter, and kinder.\"",
+            "\"It could become the best classroom in our school.\"",
+            "\"The Parents' Association has already offered to hold a bake sale to pay for them.\"",
+            "\"When you plant a carrot yourself, you really want to know how it tastes!\""
+          ],
+          "answer": 2,
+          "skill": "evidence"
+        },
+        {
+          "q": "What is the main purpose of paragraph 5?",
+          "choices": [
+            "To answer the reasons people might give against a garden",
+            "To describe what the garden will look like",
+            "To give a fourth reason a garden is good",
+            "To thank the Parents' Association"
+          ],
+          "answer": 0,
+          "skill": "text_structure"
+        },
+        {
+          "q": "In paragraph 5, Hana calls the worries \"reasonable.\" What does she mean?",
+          "choices": [
+            "The worries are silly and not worth thinking about.",
+            "The worries are fair and sensible.",
+            "The worries are about money only.",
+            "The worries came from the principal."
+          ],
+          "answer": 1,
+          "skill": "vocab_context"
+        },
+        {
+          "q": "Which evidence best supports Hana's first reason, that a garden would help students eat better?",
+          "choices": [
+            "Students could measure how fast bean plants grow.",
+            "Researchers found that children who grow vegetables are more willing to taste them.",
+            "Older students teach younger students to water and weed.",
+            "The lot behind the gym is a muddy space where balls get lost."
+          ],
+          "answer": 1,
+          "skill": "evidence"
+        },
+        {
+          "q": "What does Hana mean by \"a garden is a classroom without walls\"?",
+          "choices": [
+            "The garden would need a fence.",
+            "Students would have to build a new classroom outside.",
+            "Students could learn subjects like science and math outdoors by doing real tasks.",
+            "The school does not have enough classrooms."
+          ],
+          "answer": 2,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "Why does Hana mention her cousin's school in Tainan?",
+          "choices": [
+            "To give a real example that supports her reason about teamwork",
+            "To show that Tainan schools are better than hers",
+            "To explain where to buy seeds",
+            "To prove that gardens are cheap"
+          ],
+          "answer": 0,
+          "skill": "authors_purpose"
+        },
+        {
+          "q": "Which of Hana's reasons do you think is the strongest? Explain why, using evidence from the letter.",
+          "type": "short",
+          "sampleAnswer": "I think the first reason is strongest because it is supported by research: children who grow vegetables at school are more willing to taste them. Research is stronger evidence than an opinion, and eating healthy food is important for every student.",
+          "skill": "evidence"
+        }
+      ]
+    },
+    {
+      "id": "mt_butterfly_highway",
+      "title": "A Highway Made Safe for Butterflies",
+      "skills": [
+        "text_structure",
+        "authors_purpose",
+        "evidence",
+        "vocab_context"
+      ],
+      "body": "An informational article. Paragraphs are numbered.\n\n<b>A Highway Made Safe for Butterflies</b>\n\n1 Every winter, warm valleys in southern Taiwan fill with an amazing sight. Hundreds of thousands of purple crow butterflies gather on the trees in places such as Maolin in Kaohsiung, where the air stays mild and the hills block the cold winter wind. When sunlight touches their dark wings, they shimmer purple and blue. Scientists call these places \"butterfly valleys.\" Taiwan is one of only two places in the world where so many butterflies spend the winter together. The other is Mexico, where monarch butterflies gather in the mountains.\n\n2 In spring, when the weather becomes favorable, the butterflies leave the valleys and fly north to central and northern Taiwan, where they will lay their eggs. Their journey can be hundreds of kilometers long.\n\n<b>A Dangerous Crossing</b>\n3 Along the way, many butterflies must cross National Freeway No. 3 in Yunlin County. Purple crows usually fly low, only a few meters above the ground. That is exactly the height of passing cars and trucks. For years, thousands of butterflies were hit by vehicles every spring. Local volunteers who counted the butterflies became witnesses to a sad problem: the busy highway lay right across the butterflies' path.\n\n<b>Finding Solutions</b>\n4 In 2007, volunteers, scientists, and highway officials worked together to protect the butterflies. Their first solution was to put up tall nets along the side of the highway. When the butterflies reach the nets, they fly upward to get over them, so they cross the road high above the traffic.\n\n5 Their second solution surprised many people. On the busiest days of the migration, when hundreds of butterflies cross every minute, the highway closes its outer lane for a few hours. Drivers slow down and share the road with the travelers in the air. Volunteers keep counting the butterflies each spring so that officials know exactly when to close the lane.\n\n<b>Results</b>\n6 The results were encouraging. After the nets went up and the lane closures began, far fewer butterflies were killed on the highway. Taiwan became known as the first place in the world to close part of a highway for butterflies.\n\n7 The story of the purple crow shows that when people pay attention, small changes can protect even the smallest travelers. A few meters of netting and a few hours of patience help hundreds of thousands of butterflies finish their journey each spring.",
+      "questions": [
+        {
+          "q": "True or False: The highway is closed completely for the whole spring.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "skill": "evidence"
+        },
+        {
+          "q": "True or False: Volunteers, scientists, and officials worked together on the solutions.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "skill": "evidence"
+        },
+        {
+          "q": "How is most of this article organized?",
+          "choices": [
+            "Sequence: the life cycle of a butterfly from egg to adult",
+            "Problem and solution: butterflies were being hit on a highway, and people found ways to protect them",
+            "Compare and contrast: purple crows and monarchs",
+            "Description: what butterfly wings look like"
+          ],
+          "answer": 1,
+          "skill": "text_structure"
+        },
+        {
+          "q": "Why were so many butterflies hit by vehicles?",
+          "choices": [
+            "They flew at night when drivers could not see them.",
+            "They usually fly low, at about the height of cars and trucks.",
+            "They were attracted to the bright lights of the trucks.",
+            "They rested on the warm road surface."
+          ],
+          "answer": 1,
+          "skill": "text_structure"
+        },
+        {
+          "q": "How do the tall nets help the butterflies?",
+          "choices": [
+            "They catch the butterflies so volunteers can carry them across.",
+            "They block the wind so the butterflies fly faster.",
+            "They make the butterflies fly upward, so they cross high above the traffic.",
+            "They keep the butterflies in the valleys until summer."
+          ],
+          "answer": 2,
+          "skill": "text_structure"
+        },
+        {
+          "q": "According to paragraph 1, why do the butterflies gather in valleys such as Maolin?",
+          "choices": [
+            "The valleys are mild and protected from the cold winter wind.",
+            "The valleys have the most flowers in winter.",
+            "Volunteers feed them there.",
+            "They are trapped there by the highway."
+          ],
+          "answer": 0,
+          "skill": "evidence"
+        },
+        {
+          "q": "In paragraph 3, the volunteers \"became witnesses to a sad problem.\" What does witnesses mean?",
+          "choices": [
+            "people who solve a problem",
+            "people who see something happen",
+            "people who drive on a highway",
+            "people who study insects in a lab"
+          ],
+          "answer": 1,
+          "skill": "vocab_context"
+        },
+        {
+          "q": "Which sentence best shows that the solutions worked?",
+          "choices": [
+            "\"Purple crows usually fly low, only a few meters above the ground.\"",
+            "\"In 2007, volunteers, scientists, and highway officials worked together.\"",
+            "\"After the nets went up and the lane closures began, far fewer butterflies were killed on the highway.\"",
+            "\"Their journey can be hundreds of kilometers long.\""
+          ],
+          "answer": 2,
+          "skill": "evidence"
+        },
+        {
+          "q": "How are Maolin and the mountains of Mexico alike?",
+          "choices": [
+            "Both are on National Freeway No. 3.",
+            "Both are places where huge numbers of butterflies spend the winter.",
+            "Both close highways for butterflies.",
+            "Both are home to purple crow butterflies."
+          ],
+          "answer": 1,
+          "skill": "text_structure"
+        },
+        {
+          "q": "What is the central idea of the article?",
+          "choices": [
+            "Purple crow butterflies are the most beautiful insects in Taiwan.",
+            "Highways should be closed whenever animals are nearby.",
+            "People in Taiwan found clever, simple ways to protect migrating butterflies from traffic.",
+            "Butterflies travel farther than any other insect."
+          ],
+          "answer": 2,
+          "skill": "authors_purpose"
+        },
+        {
+          "q": "Explain the two solutions and how each one helps the butterflies.",
+          "type": "short",
+          "sampleAnswer": "First, tall nets were put up beside the highway. The butterflies fly up to get over them, so they cross high above the cars. Second, on the busiest migration days, the outer lane is closed for a few hours, so fewer vehicles are in the butterflies' path.",
+          "skill": "evidence"
+        }
+      ]
+    },
+    {
+      "id": "mt_two_journey_poems",
+      "title": "Two Poems: The Night Train and What the Seed Knows",
+      "skills": [
+        "poetry",
+        "figurative_language",
+        "theme"
+      ],
+      "body": "Two original poems. Read each one aloud. Lines in italics are a refrain.\n\n<b>Poem 1: The Night Train</b>\n\nOver the river and under the moon,\nthe night train hums its silver tune.\nFarmhouse windows flicker and fade\nas the tracks unroll like a long gray braid.\n      <i>Clickety-clack, clickety-clack,</i>\n      <i>carry me forward and never look back.</i>\n\nPast sleepy towns where the streetlamps glow,\npast fields of rice in a moonlit row,\nthe engine whistles a drowsy song,\nand the dark hills hum as we rush along.\n      <i>Clickety-clack, clickety-clack,</i>\n      <i>carry me forward and never look back.</i>\n\nI press my nose to the window glass\nand count the stations as they pass.\nGrandmother waits where the tracks run out,\nwith a lantern lit and a hug, no doubt.\n      <i>Clickety-clack, clickety-clack,</i>\n      <i>carry me forward and never look back.</i>\n\n<b>Poem 2: What the Seed Knows</b>\n\nAll winter, the seed\nkept its secret\nfolded small\ninside a brown coat.\n\nThe snow pressed down.\nThe cold said, <i>Stay asleep.</i>\nThe seed said nothing.\nIt was listening.\n\nThen the rain came knocking,\nsoft knuckles on the soil,\nand the sun leaned closer,\nwarm as a held hand.\n\nThe seed opened one green eye.\nIt did not hesitate.\nIt pushed\nthrough the dark,\nthrough the stones,\nup\ninto its first morning.",
+      "questions": [
+        {
+          "q": "Which lines are the refrain in \"The Night Train\"?",
+          "choices": [
+            "\"Over the river and under the moon, / the night train hums its silver tune.\"",
+            "\"Clickety-clack, clickety-clack, / carry me forward and never look back.\"",
+            "\"I press my nose to the window glass / and count the stations as they pass.\"",
+            "\"Grandmother waits where the tracks run out.\""
+          ],
+          "answer": 1,
+          "skill": "poetry"
+        },
+        {
+          "q": "What is the rhyme scheme of the first four lines of \"The Night Train\"?",
+          "choices": [
+            "ABAB",
+            "ABCB",
+            "AABB",
+            "There is no rhyme."
+          ],
+          "answer": 2,
+          "skill": "poetry"
+        },
+        {
+          "q": "\"Clickety-clack\" is an example of...",
+          "choices": [
+            "onomatopoeia (a sound word)",
+            "simile",
+            "hyperbole",
+            "alliteration only"
+          ],
+          "answer": 0,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "Who is the speaker of \"The Night Train\"?",
+          "choices": [
+            "the train engine",
+            "Grandmother, waiting at the station",
+            "a traveler riding the train to visit Grandmother",
+            "a farmer watching the train pass"
+          ],
+          "answer": 2,
+          "skill": "poetry"
+        },
+        {
+          "q": "\"The tracks unroll like a long gray braid.\" Which type of figurative language is this?",
+          "choices": [
+            "metaphor",
+            "simile",
+            "personification",
+            "onomatopoeia"
+          ],
+          "answer": 1,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "\"The rain came knocking, / soft knuckles on the soil.\" These lines are an example of...",
+          "choices": [
+            "personification, because the rain is described as knocking like a person",
+            "hyperbole, because the rain is exaggerated",
+            "onomatopoeia, because \"knocking\" is a sound",
+            "a refrain, because the line repeats"
+          ],
+          "answer": 0,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "How is the structure of the two poems different?",
+          "choices": [
+            "Both poems use a refrain and a regular rhyme.",
+            "\"The Night Train\" has rhyme, a steady rhythm, and a refrain; \"What the Seed Knows\" is free verse with no rhyme and lines of different lengths.",
+            "\"What the Seed Knows\" has more stanzas and a refrain.",
+            "\"The Night Train\" is free verse, and \"What the Seed Knows\" rhymes."
+          ],
+          "answer": 1,
+          "skill": "poetry"
+        },
+        {
+          "q": "Why does the poet put the word \"up\" alone on its own line?",
+          "choices": [
+            "Because the poet ran out of room",
+            "To make the poem rhyme",
+            "To make the reader pause and feel the moment the seed finally breaks through",
+            "To show that the seed is lost"
+          ],
+          "answer": 2,
+          "skill": "poetry"
+        },
+        {
+          "q": "What is the mood of \"The Night Train\"?",
+          "choices": [
+            "angry and loud",
+            "calm, steady, and hopeful",
+            "scary and dangerous",
+            "sad and lonely"
+          ],
+          "answer": 1,
+          "skill": "poetry"
+        },
+        {
+          "q": "Which idea do BOTH poems share?",
+          "choices": [
+            "Winter is the best season.",
+            "Trains are faster than plants.",
+            "Each poem describes moving forward toward something new.",
+            "Each poem is about a lost family member."
+          ],
+          "answer": 2,
+          "skill": "theme"
+        },
+        {
+          "q": "How does the seed change from the first stanza to the last stanza of \"What the Seed Knows\"? Quote one line from each.",
+          "type": "short",
+          "sampleAnswer": "In the first stanza, the seed is waiting and hidden; it \"kept its secret / folded small / inside a brown coat.\" By the last stanza, it acts without fear: \"It did not hesitate\" and pushes \"up / into its first morning.\" It changes from patient and still to brave and growing.",
+          "skill": "poetry"
+        }
+      ]
+    },
+    {
+      "id": "mt_harbor_map_play",
+      "title": "The Harbor Map (A Play)",
+      "skills": [
+        "drama",
+        "character",
+        "literary_elements",
+        "evidence"
+      ],
+      "body": "Original practice play. Read the cast list and the stage directions (in italics and parentheses) carefully.\n\n<b>The Harbor Map</b>\n<i>A Play in Two Scenes</i>\n\n<b>CAST OF CHARACTERS</b>\nLENA, age 11, curious and quick to notice things\nOMAR, age 11, Lena's best friend, careful and cautious\nMR. HALE, the museum guard\nDR. PARK, the museum director\n\n<b>SCENE 1</b>\n<i>(A small seaside museum in the morning. Glass cases line the walls. In the center stands an empty display case with a sign: \"The Harbor Map, 1890.\" MR. HALE stands beside it, rubbing his forehead.)</i>\n\nMR. HALE: <i>(to himself)</i> Gone. Just gone. And the case was locked all night.\n\n<i>(LENA and OMAR enter carrying clipboards. They are on a class trip.)</i>\n\nLENA: <i>(pointing)</i> Omar, look! The case is empty. Isn't that the famous map?\n\nOMAR: <i>(pulling her sleeve)</i> Lena, don't touch anything. We'll get in trouble.\n\nMR. HALE: You two. Did you see anyone near this case?\n\nLENA: We just got here. But <i>(she leans close to the glass)</i> there's sand inside the case. And look at the floor.\n\n<i>(She kneels. A trail of small, sandy footprints leads to a side door marked STAFF ONLY.)</i>\n\nOMAR: Those footprints are small. Smaller than mine.\n\nMR. HALE: <i>(frowning)</i> Only staff use that door.\n\n<i>(DR. PARK enters, holding a rolled-up paper.)</i>\n\nDR. PARK: Mr. Hale, why is everyone crowded around... oh dear. <i>(She hesitates, then smiles awkwardly.)</i> I suppose I should explain.\n\n<b>SCENE 2</b>\n<i>(The same room, a few minutes later. DR. PARK unrolls the paper on a table. It is the map.)</i>\n\nDR. PARK: I took the map out early this morning. The paper felt damp, so I carried it to the workroom to dry.\n\nMR. HALE: <i>(sinking into a chair)</i> You might have told me! I nearly called the police.\n\nDR. PARK: I left you a note. <i>(She points to a note on the floor, half hidden under the case.)</i> The wind from the door must have blown it away.\n\nOMAR: And the small footprints?\n\nDR. PARK: <i>(laughing)</i> Mine. I walked on the beach before work, and I have very small feet.\n\nOMAR: <i>(to LENA, teasing)</i> So much for your mystery, detective.\n\nLENA: <i>(thinking)</i> Wait. That explains the footprints on the floor. But Dr. Park, you never stepped inside the case. So how did sand get in there?\n\n<i>(Everyone turns to look. LENA touches the sand inside the case.)</i>\n\nLENA: It's wet. Seawater is getting into the case.\n\nDR. PARK: <i>(slowly)</i> That's why the map felt damp. If we had put it back today, it would have been ruined.\n\nMR. HALE: <i>(to LENA)</i> Young lady, you have sharp eyes.\n\nDR. PARK: This museum needs a new case before the map goes back. And it could use two watchful assistants this summer. <i>(to LENA and OMAR)</i> Interested?\n\nOMAR: <i>(grinning)</i> As long as there are no real thieves.\n\nLENA: <i>(already studying the case)</i> No promises.\n\n<i>(Lights fade.)</i>",
+      "questions": [
+        {
+          "q": "True or False: Dr. Park stole the map from the museum.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "skill": "evidence"
+        },
+        {
+          "q": "True or False: Dr. Park's note was blown away by the wind from the door.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "skill": "evidence"
+        },
+        {
+          "q": "What do the words in italics and parentheses, such as \"(sinking into a chair),\" tell the reader?",
+          "choices": [
+            "what the characters are thinking but not saying",
+            "how the characters move and act, and what the setting looks like",
+            "the lines the audience should say",
+            "the title of each scene"
+          ],
+          "answer": 1,
+          "skill": "drama"
+        },
+        {
+          "q": "What information does the cast of characters give?",
+          "choices": [
+            "the setting of each scene",
+            "the order of events in the play",
+            "the names of the characters and a short description of each",
+            "how the problem is solved"
+          ],
+          "answer": 2,
+          "skill": "drama"
+        },
+        {
+          "q": "What is the main conflict of the play?",
+          "choices": [
+            "Lena and Omar argue about the class trip.",
+            "The famous map is missing, and the characters try to find out what happened to it.",
+            "Mr. Hale wants to quit his job.",
+            "Dr. Park cannot find her note."
+          ],
+          "answer": 1,
+          "skill": "literary_elements"
+        },
+        {
+          "q": "How are Lena and Omar different?",
+          "choices": [
+            "Lena is curious and bold; Omar is careful and worried about getting in trouble.",
+            "Lena is shy; Omar is the one who solves the mystery.",
+            "Lena works at the museum; Omar is a visitor.",
+            "They are exactly alike."
+          ],
+          "answer": 0,
+          "skill": "character"
+        },
+        {
+          "q": "Which stage direction best shows that Dr. Park feels uncomfortable at first?",
+          "choices": [
+            "(laughing)",
+            "(She hesitates, then smiles awkwardly.)",
+            "(slowly)",
+            "(She points to a note on the floor.)"
+          ],
+          "answer": 1,
+          "skill": "drama"
+        },
+        {
+          "q": "Why does Mr. Hale say, \"You might have told me!\"?",
+          "choices": [
+            "He is angry that Lena touched the case.",
+            "He had been worried that the map was stolen.",
+            "He wanted to take the map to the workroom himself.",
+            "He thinks the note was rude."
+          ],
+          "answer": 1,
+          "skill": "character"
+        },
+        {
+          "q": "What does Lena notice that the adults missed?",
+          "choices": [
+            "The footprints were smaller than Omar's.",
+            "The door was marked STAFF ONLY.",
+            "The wet sand inside the case means seawater is leaking in.",
+            "Dr. Park was holding a rolled-up paper."
+          ],
+          "answer": 2,
+          "skill": "evidence"
+        },
+        {
+          "q": "Which sentence best states the theme of the play?",
+          "choices": [
+            "Paying close attention to small details can uncover the truth.",
+            "Never go on a class trip to a museum.",
+            "Adults are always right.",
+            "Old maps are not worth saving."
+          ],
+          "answer": 0,
+          "skill": "theme"
+        },
+        {
+          "q": "How is Lena rewarded at the end of the play, and why does she deserve it? Use details from Scene 2.",
+          "type": "short",
+          "sampleAnswer": "Dr. Park invites Lena and Omar to be \"watchful assistants\" for the summer, and Mr. Hale says Lena has \"sharp eyes.\" She deserves it because she noticed that the sand inside the case was wet, which showed seawater was leaking in. If the map had gone back that day, it would have been ruined.",
+          "skill": "drama"
+        }
+      ]
+    },
+    {
+      "id": "mt_moon_pourquoi",
+      "title": "Why the Moon Shines at Night",
+      "skills": [
+        "literary_elements",
+        "figurative_language",
+        "character",
+        "theme"
+      ],
+      "body": "Original pourquoi tale (a story that explains why something in nature is the way it is). Paragraphs are numbered.\n\n<b>Why the Moon Shines at Night</b>\n\n1 Long ago, when the world was still new, the Moon had no light of her own. She drifted across the night sky like a gray stone, and no one ever looked up at her.\n\n2 Her brother, the Sun, was adored. Every morning, when he climbed over the mountains, the birds sang, the flowers opened, and people hurried outside to greet him. The Sun was proud of his golden robe, and he never let his sister forget it. \"Poor pale sister,\" he would say as they passed at dawn. \"Nobody waits for you.\"\n\n3 Year after year, the Moon's heart filled with contempt for her boastful brother. At last she decided that if she could not be admired, she would take what made him admired.\n\n4 One evening, she hid behind a mountain. When the Sun lay down to rest at the edge of the world, she crept close and attempted to seize his golden robe. But the robe was woven of fire. It burned her hands, and she dropped it with a cry. Ever since, the Moon has carried dark marks on her face where the fire touched her.\n\n5 The Moon fled to the darkest corner of the sky and wept. Her tears fell to the earth as dew, and that is why the grass is wet every morning.\n\n6 Far below, an old fisherwoman named Ula was rowing home late. The night was so dark that she could not see the shore, and the waves were rising. \"Moon,\" she called, \"if only you had a little light, I could find my way.\"\n\n7 \"I have no light,\" the Moon answered sadly. \"I tried to take my brother's, and I only burned myself.\"\n\n8 \"Then do not take it. Borrow it,\" said Ula. \"Your brother shines all day and wastes half his light on empty sky. Turn your face toward him and let his light fall on you. Then project it down to us.\"\n\n9 The Moon had never thought of borrowing what she could not steal. She turned her scarred face toward the place where the Sun was sleeping, and his light washed over her until she glowed silver. She projected that light onto the sea, and a shining road appeared on the water. Ula followed it all the way home.\n\n10 From that night on, the Moon gathered her brother's light and gave it to the travelers, fishermen, and lost children of the night. Some nights she shows her whole face, and some nights only a thin slice, depending on how much light she can catch.\n\n11 The Sun still shines brighter. But the people who are out in the dark love the Moon best, because she shines when they need it most.",
+      "questions": [
+        {
+          "q": "True or False: The Moon succeeded in stealing the Sun's golden robe.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "skill": "evidence"
+        },
+        {
+          "q": "True or False: Ula gave the Moon the idea of borrowing the Sun's light.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "skill": "evidence"
+        },
+        {
+          "q": "A pourquoi tale explains why something in nature happens. Which of these does this tale NOT explain?",
+          "choices": [
+            "why the Moon has dark marks on her face",
+            "why the grass is wet in the morning",
+            "why the Moon changes shape",
+            "why the Sun rises in the east"
+          ],
+          "answer": 3,
+          "skill": "literary_elements"
+        },
+        {
+          "q": "\"She drifted across the night sky like a gray stone.\" What does this simile show about the Moon at the beginning?",
+          "choices": [
+            "She was heavy and fast.",
+            "She was dull and unnoticed.",
+            "She was angry and dangerous.",
+            "She was cold and wet."
+          ],
+          "answer": 1,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "Why does the Moon try to seize the Sun's robe?",
+          "choices": [
+            "She is cold and wants to get warm.",
+            "She wants to give it to Ula.",
+            "She is jealous and wants to be admired the way he is.",
+            "The Sun asked her to hold it."
+          ],
+          "answer": 2,
+          "skill": "character"
+        },
+        {
+          "q": "Which sentence best shows that the Sun is boastful?",
+          "choices": [
+            "\"Every morning, when he climbed over the mountains, the birds sang.\"",
+            "\"'Poor pale sister,' he would say as they passed at dawn. 'Nobody waits for you.'\"",
+            "\"The Sun still shines brighter.\"",
+            "\"When the Sun lay down to rest at the edge of the world...\""
+          ],
+          "answer": 1,
+          "skill": "evidence"
+        },
+        {
+          "q": "In paragraph 8, Ula tells the Moon to \"project it down to us.\" What does project mean here?",
+          "choices": [
+            "to stick out from an edge",
+            "to plan a school assignment",
+            "to shine light outward onto something",
+            "to hide something away"
+          ],
+          "answer": 2,
+          "skill": "vocab_context"
+        },
+        {
+          "q": "What is the turning point of the story?",
+          "choices": [
+            "The Sun lies down to rest.",
+            "The Moon burns her hands on the robe.",
+            "Ula tells the Moon to borrow the light instead of stealing it.",
+            "The Moon shows only a thin slice of her face."
+          ],
+          "answer": 2,
+          "skill": "literary_elements"
+        },
+        {
+          "q": "Which real science fact does the tale match?",
+          "choices": [
+            "The Moon makes its own light.",
+            "The Moon does not make its own light; it reflects light from the Sun.",
+            "The Sun goes to sleep at the edge of the world.",
+            "Dew comes from the Moon."
+          ],
+          "answer": 1,
+          "skill": "literary_elements"
+        },
+        {
+          "q": "Which sentence best states the theme?",
+          "choices": [
+            "You can find your own way to shine by helping others, not by taking what belongs to someone else.",
+            "The strongest always win.",
+            "Never cry in front of other people.",
+            "Brothers and sisters should never talk to each other."
+          ],
+          "answer": 0,
+          "skill": "theme"
+        },
+        {
+          "q": "How does the Moon change from the beginning of the tale to the end? Use one detail from each part.",
+          "type": "short",
+          "sampleAnswer": "At the beginning, the Moon is jealous; she is filled with contempt for her brother and tries to seize his robe. At the end, she borrows his light and gives it to \"travelers, fishermen, and lost children of the night.\" She changes from jealous and selfish to generous and helpful.",
+          "skill": "character"
+        }
+      ]
+    },
+    {
+      "id": "mt_almost_solo",
+      "title": "The Note I Almost Didn't Sing",
+      "skills": [
+        "literary_elements",
+        "figurative_language",
+        "character",
+        "theme"
+      ],
+      "body": "A personal narrative. Paragraphs are numbered.\n\n<b>The Note I Almost Didn't Sing</b>\n\n1 I have always loved singing, but only in places where nobody can hear me: in the shower, in my bedroom with the door closed, or on the walk home when the street is empty. So when Ms. Rivera chose me to sing the solo at our winter concert, I felt as if someone had dropped an ice cube down the back of my shirt.\n\n2 The solo was only four lines long. It came right before the refrain of \"Lights Across the Harbor,\" the last song of the night. After my four lines, the whole choir would join in for the refrain, and I could disappear back into the crowd of voices. Four lines. I told myself I could do anything for four lines.\n\n3 For three weeks, I practiced every day. I sang to my dog, who wagged his tail no matter how many mistakes I made. I sang to my little brother, who covered his ears and then asked me to sing it again. By the last week, I knew the words so well that I sang them in my sleep. At least, that is what my mom said.\n\n4 On the night of the concert, the school hall was packed so densely that people were standing along the walls. I could see my grandmother in the third row, waving a tissue like a tiny flag. My knees felt like they were made of jelly.\n\n5 The choir began the last song. My part came closer and closer, like a train I could hear but not yet see. Ms. Rivera looked at me and nodded. I opened my mouth, and nothing came out.\n\n6 For one second, which felt as long as a whole summer, the hall was silent. I hesitated. I thought about running off the stage. Then I noticed my friend Priya standing next to me. She didn't say anything. She just reached over and squeezed my hand, the way you squeeze someone's hand before jumping into a cold pool.\n\n7 I took a breath and sang. My voice wobbled on the first line, steadied on the second, and by the fourth line it was filling the hall. When the choir burst into the refrain, it felt as if the whole room was singing with me instead of watching me.\n\n8 Afterward, my grandmother hugged me so hard that my glasses went crooked. \"You were wonderful,\" she said. \"But my favorite part was the pause.\"\n\n9 I was confused. \"The pause was when I almost gave up.\"\n\n10 \"Exactly,\" she said. \"And then you didn't.\"\n\n11 I still get nervous before I sing. But now I know that being scared and being brave can happen in the same second.",
+      "questions": [
+        {
+          "q": "True or False: The narrator sang the whole song alone.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "skill": "evidence"
+        },
+        {
+          "q": "True or False: Priya encouraged the narrator without saying a word.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "skill": "evidence"
+        },
+        {
+          "q": "From which point of view is this story told?",
+          "choices": [
+            "first person: the narrator tells her own story using \"I\"",
+            "third person: an outside narrator tells about \"she\"",
+            "second person: the story speaks to \"you\"",
+            "Ms. Rivera tells the story."
+          ],
+          "answer": 0,
+          "skill": "literary_elements"
+        },
+        {
+          "q": "\"I felt as if someone had dropped an ice cube down the back of my shirt.\" What does this show?",
+          "choices": [
+            "The narrator was cold because it was winter.",
+            "The narrator was shocked and nervous about the news.",
+            "The narrator was angry at Ms. Rivera.",
+            "The narrator thought the news was funny."
+          ],
+          "answer": 1,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "\"For one second, which felt as long as a whole summer...\" This is an example of...",
+          "choices": [
+            "onomatopoeia",
+            "personification",
+            "hyperbole",
+            "a refrain"
+          ],
+          "answer": 2,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "In paragraph 2, what is the \"refrain\"?",
+          "choices": [
+            "the four lines the narrator sings alone",
+            "the part of the song that repeats, which the whole choir sings",
+            "the pause before the song begins",
+            "the title of the song"
+          ],
+          "answer": 1,
+          "skill": "vocab_context"
+        },
+        {
+          "q": "Which sentence best shows that the narrator prepared seriously?",
+          "choices": [
+            "\"I have always loved singing.\"",
+            "\"For three weeks, I practiced every day.\"",
+            "\"My knees felt like they were made of jelly.\"",
+            "\"I still get nervous before I sing.\""
+          ],
+          "answer": 1,
+          "skill": "evidence"
+        },
+        {
+          "q": "Why does the grandmother say her favorite part was the pause?",
+          "choices": [
+            "She did not like the song.",
+            "She could not hear the singing from the third row.",
+            "The pause showed that her granddaughter was scared but kept going anyway.",
+            "She thought the pause was part of the music."
+          ],
+          "answer": 2,
+          "skill": "character"
+        },
+        {
+          "q": "How is this narrative organized?",
+          "choices": [
+            "in time order, from the day she was chosen to the night after the concert",
+            "as a list of reasons to join a choir",
+            "as a comparison of two concerts",
+            "as a problem with many possible solutions"
+          ],
+          "answer": 0,
+          "skill": "text_structure"
+        },
+        {
+          "q": "Which sentence best states the theme?",
+          "choices": [
+            "Only people who are never scared should sing solos.",
+            "Courage means acting even when you are afraid.",
+            "Practicing is not important if you have talent.",
+            "Friends should always do the hard work for you."
+          ],
+          "answer": 1,
+          "skill": "theme"
+        },
+        {
+          "q": "Explain the last sentence of the story, \"being scared and being brave can happen in the same second,\" using an event from the narrative.",
+          "type": "short",
+          "sampleAnswer": "When the narrator froze on stage, she was scared and thought about running off. But in that same moment, Priya squeezed her hand and she chose to take a breath and sing. Being brave did not mean she stopped being scared; it meant she sang while she was still afraid.",
+          "skill": "theme"
+        }
+      ]
     }
   ]
 }

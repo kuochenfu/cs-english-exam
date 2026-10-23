@@ -625,6 +625,7 @@ button.passage-card-button {
   border: 2px solid var(--border);
   border-radius: 14px;
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   grid-template-rows: auto 1fr;
   align-self: start;
   text-align: left;
