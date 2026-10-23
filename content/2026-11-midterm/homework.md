@@ -30,7 +30,7 @@ This is the canonical source for the teacher definitions in `vocabulary.json`, t
 | 3 | hesitate | v | to stop and pause before you do something |
 
 Notes:
-- **project** is taught as *to shine an image or light outward*, not "to stick out". The app's earlier meaning and picture were wrong and were replaced 2026-10-23; the picture needs redrawing (see `image-art/prompts.json`).
+- **project** is taught as *to shine an image or light outward*, not "to stick out". The app's earlier meaning and picture were wrong and were replaced 2026-10-23; the replacement illustration shows a child projecting a map onto a classroom screen (see `image-art/prompts.json`).
 - W1 HW1 labels the "very confused, usually when you are sick" row as item 7 **panic**; it is the definition of **delirious** (corrected on the sheet). The teacher gives no definition for panic, so the app keeps its own.
 - The worksheets use 7 + 8 + 5 core words. The shaded bonus words (porthole, matted, tendril, scrawl, ditty) do not appear in homework.
 

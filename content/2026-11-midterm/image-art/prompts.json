@@ -44,10 +44,11 @@
       },
       {
         "word": "project",
-        "image": "assets/2026-11-midterm/vocabulary/project.webp",
-        "imageAlt": "A child shines a projector beam that throws a big picture of a map onto a screen.",
-        "status": "needs regeneration: the 2026-10-22 picture showed the wrong sense (jut out); removed 2026-10-23",
-        "prompt": "Use case: illustration-story. Asset type: one square vocabulary illustration for a Grade 5 English learning app, 1024x1024. Create an original warm hand-painted children's book scene, expressive natural human children, soft brush texture, clean contours, believable objects and anatomy, friendly refined colors on warm ivory, subtle light and shadow. Match the STYLE of the reference, not its particular child, toy or scene. Bold simple visual storytelling, tightly framed main action easy to understand at 192px. No borders, badges, logos, watermark, vocabulary labels, readable letters or numbers. Musical note symbols allowed when relevant. Show the specified meaning of the target word, not another sense. Keep the background quiet and avoid unnecessary props.\nTarget word: project (teacher's meaning: to shine an image or light outward). Scene: A dim classroom; a child aims a small projector so a bright cone of light throws a large simple map picture onto a white screen. Composition emphasizes the beam of light travelling outward and the image appearing on the screen. No school assignment, ledge, or readable text."
+        "image": "assets/2026-11-midterm/vocabulary/project-projection.webp",
+        "imageAlt": "A child uses a projector to shine a beam of light and a map image onto a classroom screen.",
+        "status": "ready: regenerated 2026-10-23 for the teacher-taught projection sense",
+        "prompt": "Use case: illustration-story. Asset type: one square vocabulary illustration for a Grade 5 English learning app, 1024x1024. Create an original warm hand-painted children's book scene, expressive natural human children, soft brush texture, clean contours, believable objects and anatomy, friendly refined colors on warm ivory, subtle light and shadow. Match the STYLE of the reference, not its particular child, toy or scene. Bold simple visual storytelling, tightly framed main action easy to understand at 192px. No borders, badges, logos, watermark, vocabulary labels, readable letters or numbers. Musical note symbols allowed when relevant. Show the specified meaning of the target word, not another sense. Keep the background quiet and avoid unnecessary props.\nTarget word: project (teacher's meaning: to shine an image or light outward). Scene: A dim classroom; a child aims a small projector so a bright cone of light throws a large simple map picture onto a white screen. Composition emphasizes the beam of light travelling outward and the image appearing on the screen. No school assignment, ledge, or readable text.",
+        "regeneratedOn": "2026-10-23"
       },
       {
         "word": "reasonable",
