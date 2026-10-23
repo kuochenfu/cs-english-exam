@@ -1645,7 +1645,9 @@
           "sampleAnswer": "First, flight schools in the United States refused to teach her because she was a woman and Black, so she learned French, saved her money, and went to France to train. Second, training was dangerous and she saw another student die in a crash, but she did not hesitate to climb back into the cockpit and earned her license in 1921.",
           "skill": "evidence"
         }
-      ]
+      ],
+      "image": "assets/2026-11-midterm/passages/bessie-coleman.webp",
+      "imageAlt": "Bessie Coleman in a 1920s leather flying cap and goggles waves from the open cockpit of a biplane above a cheering crowd of different races at a country air show."
     },
     {
       "id": "mt_clockmaker_test",
@@ -1906,7 +1908,9 @@
           "sampleAnswer": "No tomatoes grew because tomato flowers must be shaken or buzzed so the pollen falls into place, and on the space station there were no bees or wind to do it. Ama noticed that the greenhouse was \"completely silent\" with no bees, and Kai found the \"Pollination\" page. They solved it by tapping and brushing each flower with a paintbrush.",
           "skill": "evidence"
         }
-      ]
+      ],
+      "image": "assets/2026-11-midterm/passages/silent-greenhouse.webp",
+      "imageAlt": "Ten-year-old Ama gently brushes a yellow tomato flower with a small paintbrush while her older brother Kai holds a tablet in a space-station greenhouse lit by purple lamps."
     },
     {
       "id": "mt_honeybees_spring",
