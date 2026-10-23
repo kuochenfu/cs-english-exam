@@ -51,6 +51,12 @@ All five topics were generated from the notice, the word list, and standard rule
 | Missions & badges | Done 2026-10-22 | 4 daily missions and 10 Module 2 cat & fox badges (see `game.md`) |
 | Oral / Writing | Not in app | App has no oral or writing topic |
 
+## Reading illustrations (2026-10-23)
+
+The ten new test-style passages (`mt_*`) each have a dedicated 16:9 storybook illustration, shown on both the reading-menu card and the passage page. Images are exported as 1280×720 WebP at quality 86 in `assets/2026-11-midterm/passages/`. The complete scene briefs, alt text, style reference, and built-in `image_gen` prompts are saved in `image-art/reading-prompts.json`.
+
+Scenes follow the authored text: Mira and Mr. Ortiz in a hot-air balloon, Master Odile and two would-be apprentices, Dev with Mrs. Kowalski in her brown sweater, spring honeybees, Hana's garden proposal, Taiwan's purple crow butterflies and roadside nets, the night train paired with a sprouting seed, Lena and Omar at the empty museum case, Ula following moonlight in the pourquoi tale, and the nervous soloist with Priya's support. Passage bodies, question sets, answers, and progress IDs are preserved.
+
 ## Missing Reference Material (log)
 
 Asked the user for these on 2026-10-22:

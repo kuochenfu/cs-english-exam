@@ -1614,7 +1614,9 @@
           "sampleAnswer": "At the beginning, Mira is nervous; her stomach \"felt like a jar full of bees,\" and in paragraph 7 she almost lets a grown-up decide. By the end, she has found the windmill, told Mr. Ortiz to go higher, and delivered the medicine, and she is proud to be called \"watchful.\" She changes from unsure to confident.",
           "skill": "character"
         }
-      ]
+      ],
+      "image": "assets/2026-11-midterm/passages/golden-lantern.webp",
+      "imageAlt": "Mira studies a map in a hot-air balloon while Mr. Ortiz controls the burner above a valley with approaching storm clouds."
     },
     {
       "id": "mt_clockmaker_test",
@@ -1737,7 +1739,9 @@
           "sampleAnswer": "In both stories, a wise adult (Master Odile, Hartwig) sets up a test where the easy answer is a trap. In both, a dishonest choice gives a character away: Prince One plants a flower at night, and Jory suggests borrowing the spring. Both teach that honesty matters more than looking successful.",
           "skill": "theme"
         }
-      ]
+      ],
+      "image": "assets/2026-11-midterm/passages/clockmakers-test.webp",
+      "imageAlt": "An older woman clockmaker watches two boys work on small brass clocks, with a careful drawing beside the boy in simple clothes."
     },
     {
       "id": "mt_rooftop_garden",
@@ -1860,7 +1864,9 @@
           "sampleAnswer": "In paragraph 2, Dev sees Mrs. Kowalski as a grumpy neighbor who looks at his ball with contempt and never smiles. By paragraph 10, she has taught him how to garden and shared her story, and they sit side by side watching the sunset. He now sees her as a friend.",
           "skill": "character"
         }
-      ]
+      ],
+      "image": "assets/2026-11-midterm/passages/rooftop-garden.webp",
+      "imageAlt": "Dev and Mrs. Kowalski in her brown sweater tend beans and vegetables in a rooftop garden above gray apartment buildings."
     },
     {
       "id": "mt_honeybees_spring",
@@ -1985,7 +1991,9 @@
           "sampleAnswer": "In winter, the bees stay inside in a tight cluster, shivering to keep warm and eating stored honey. In spring, foragers fly out to collect pollen and nectar, and the queen lays up to 1,500 eggs a day, so a colony of 10,000 bees can grow to more than 40,000. By late spring, it may be so crowded that half the bees swarm away.",
           "skill": "evidence"
         }
-      ]
+      ],
+      "image": "assets/2026-11-midterm/passages/honeybees-spring.webp",
+      "imageAlt": "Honeybees gather around honeycomb inside a hive while workers fly toward spring flowers as nearby snow melts."
     },
     {
       "id": "mt_school_garden_letter",
@@ -2109,7 +2117,9 @@
           "sampleAnswer": "I think the first reason is strongest because it is supported by research: children who grow vegetables at school are more willing to taste them. Research is stronger evidence than an opinion, and eating healthy food is important for every student.",
           "skill": "evidence"
         }
-      ]
+      ],
+      "image": "assets/2026-11-midterm/passages/school-needs-garden.webp",
+      "imageAlt": "Hana presents a garden proposal to Principal Chen beside the bare dirt lot behind the school gym, while classmates hold seedlings."
     },
     {
       "id": "mt_butterfly_highway",
@@ -2234,7 +2244,9 @@
           "sampleAnswer": "First, tall nets were put up beside the highway. The butterflies fly up to get over them, so they cross high above the cars. Second, on the busiest migration days, the outer lane is closed for a few hours, so fewer vehicles are in the butterflies' path.",
           "skill": "evidence"
         }
-      ]
+      ],
+      "image": "assets/2026-11-midterm/passages/butterfly-highway.webp",
+      "imageAlt": "Purple crow butterflies rise over tall roadside nets while a volunteer counts them and cones close one outer freeway lane."
     },
     {
       "id": "mt_two_journey_poems",
@@ -2362,7 +2374,9 @@
           "sampleAnswer": "In the first stanza, the seed is waiting and hidden; it \"kept its secret / folded small / inside a brown coat.\" By the last stanza, it acts without fear: \"It did not hesitate\" and pushes \"up / into its first morning.\" It changes from patient and still to brave and growing.",
           "skill": "poetry"
         }
-      ]
+      ],
+      "image": "assets/2026-11-midterm/passages/night-train-and-seed.webp",
+      "imageAlt": "A moonlit passenger train travels beside rice fields, blending into a dawn scene of a seed sprouting through soil and stones."
     },
     {
       "id": "mt_harbor_map_play",
@@ -2487,7 +2501,9 @@
           "sampleAnswer": "Dr. Park invites Lena and Omar to be \"watchful assistants\" for the summer, and Mr. Hale says Lena has \"sharp eyes.\" She deserves it because she noticed that the sand inside the case was wet, which showed seawater was leaking in. If the map had gone back that day, it would have been ruined.",
           "skill": "drama"
         }
-      ]
+      ],
+      "image": "assets/2026-11-midterm/passages/harbor-map.webp",
+      "imageAlt": "Lena and Omar examine an empty glass case and sandy footprints in a seaside museum while the guard looks concerned."
     },
     {
       "id": "mt_moon_pourquoi",
@@ -2612,7 +2628,9 @@
           "sampleAnswer": "At the beginning, the Moon is jealous; she is filled with contempt for her brother and tries to seize his robe. At the end, she borrows his light and gives it to \"travelers, fishermen, and lost children of the night.\" She changes from jealous and selfish to generous and helpful.",
           "skill": "character"
         }
-      ]
+      ],
+      "image": "assets/2026-11-midterm/passages/moon-shines-at-night.webp",
+      "imageAlt": "A gentle personified Moon lights a silver path across the sea as the old fisherwoman Ula rows toward home."
     },
     {
       "id": "mt_almost_solo",
@@ -2737,7 +2755,9 @@
           "sampleAnswer": "When the narrator froze on stage, she was scared and thought about running off. But in that same moment, Priya squeezed her hand and she chose to take a breath and sing. Being brave did not mean she stopped being scared; it meant she sang while she was still afraid.",
           "skill": "theme"
         }
-      ]
+      ],
+      "image": "assets/2026-11-midterm/passages/note-almost-didnt-sing.webp",
+      "imageAlt": "A nervous girl with round glasses begins her solo as Priya holds her hand and the choir teacher offers an encouraging cue."
     }
   ]
 }
