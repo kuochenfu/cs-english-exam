@@ -1,6 +1,6 @@
 # Grade 5 Fall Midterm build: retro
 
-Build period: 2026-10-22 to 2026-10-23. Test date: 2026-11-05.
+Build period: 2026-10-22 to 2026-10-23 (homework and reading round on 2026-10-23). Test date: 2026-11-05.
 
 ## What shipped
 
@@ -12,6 +12,11 @@ Build period: 2026-10-22 to 2026-10-23. Test date: 2026-11-05.
 | `f368358` | impeccable audit fixes: contrast tokens, Next button after wrong answers, Andika font, WebP images (44 MB to 6.6 MB), `DESIGN.md` |
 | `f89a6e3` | `game.json`: 4 daily missions and 10 Module 2 badges, all rules covered by tests |
 | `7da1d7d` | Illustrated art: 26 vocabulary pictures, 10 illustrated anchor posters, 10 painted badges |
+| `1ed67d2`, `ec70c34` | Module 2 homework (HW1-HW3): Mr. Long's definitions, 4 `hw_*` passages, `m2-homework` grammar, `m2_hw_spelling_sentences`; `project` corrected to *shine an image or light outward* and redrawn |
+| `77a42ac`, `24a1d36` | 10 new unseen test-style passages (`mt_*`) and their illustrations |
+| `84e0b76` | Illustrations for the 9 original and homework passages: all 19 passages now have art |
+| `8545174` | Fixes from a full two-reviewer content review (examples, synonyms, ambiguous questions, facts in the bee and butterfly passages) |
+| `2469686`, `1ac8e8b` | Golden Lantern and Rooftop Garden replaced by Queen Bess (biography) and The Silent Greenhouse (sci-fi), with new art; Story Navigator now needs 15 passages |
 
 Tests grew from 32 to 38, and every deploy passed them.
 
@@ -36,14 +41,16 @@ Tests grew from 32 to 38, and every deploy passed them.
 1. **Check `git status` before committing.** Another agent may have changed the working tree, so read the diff and validate it before committing.
 2. **Make the art first.** Use the image generator for badges and posters, and keep the full text in the app's guides rather than on the image.
 3. **Write tests for timing behavior.** A test that depends on auto-advance or shuffle must fix the order and assert on the Next button.
-4. **Docs drift.** `AGENTS.md` and parts of `README.md` still describe the April Grade 4 midterm. Update them when architecture or conventions change.
+4. **Ask what the test actually uses.** The reading test uses unseen passages, not the Into Reading texts. Knowing that earlier would have pointed the work at new passages from the start.
+5. **Check new passages against the old ones.** Two new passages repeated the plots of older ones (an airship storm, a hidden garden) and had to be replaced. Compare plots and genres before writing.
+6. **Keep the teacher's wording.** Teacher definitions and homework sentences go in verbatim. Weak teacher answer keys (Whimsical Q1, Elias Q8) stay as written, because the test follows the teacher.
+7. **Docs drift.** `AGENTS.md` and parts of `README.md` still describe the April Grade 4 midterm. Update them when architecture or conventions change.
 
 ## Still open
 
 These are tracked in `study_plan.md`:
 
-- Module 2 homework definitions
-- The four Into Reading texts
+- The four Into Reading texts (low priority: not tested directly)
 - KISI pp. 26/30/34/37/42/47
 - Grammar Review Quizzes 5-7
 - The writing prompt
