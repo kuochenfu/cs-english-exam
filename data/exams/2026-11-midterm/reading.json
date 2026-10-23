@@ -1512,18 +1512,18 @@
       "imageAlt": "Lila reads beside Ricky the squirrel in a deep green treehouse with wooden steps, birds at the window and a rabbit at the entrance."
     },
     {
-      "id": "mt_lantern_balloon",
-      "title": "The Golden Lantern",
+      "id": "mt_bessie_coleman",
+      "title": "Queen Bess: The Pilot Who Would Not Give Up",
       "skills": [
-        "literary_elements",
+        "authors_purpose",
+        "text_structure",
         "character",
-        "figurative_language",
-        "theme"
+        "evidence"
       ],
-      "body": "Original practice story. Paragraphs are numbered.\n\n<b>The Golden Lantern</b>\n\n1 Mira had flown in her grandfather's hot-air balloon a dozen times, but always with his hands on the burner and hers safely in her pockets. Today was different. Grandpa Tomas had twisted his ankle on the landing field, and the balloon, the <i>Golden Lantern</i>, still had one job to finish before sunset: carrying a box of medicine across Heron Valley to the doctor in Millbrook.\n\n2 \"The winds are favorable for the next two hours,\" Grandpa said, tapping the weather map with his pencil. \"After that, a storm will roll in from the west. Mr. Ortiz will fly, and you will be his navigator. You know this valley better than he does.\"\n\n3 Mira nodded, but her stomach felt like a jar full of bees.\n\n4 At first, the flight was as smooth as a page turning. Below them, the fields were stitched together like a green-and-gold quilt, and the river flashed silver in the sun. Mr. Ortiz hummed while he worked the burner, and Mira checked the compass every few minutes, calling out landmarks: the red barn, the stone bridge, the windmill with one broken arm.\n\n5 Then the wind changed its mind.\n\n6 It shoved the basket sideways and pushed the balloon toward the dark line of the Thornback Hills. Clouds piled up behind them like dirty laundry. Mr. Ortiz stopped humming. \"We're drifting north,\" he said. \"Too far north. Which way is Millbrook?\"\n\n7 Mira's hands shook as she unfolded the map. The wind seized one corner and nearly tore it away. For a moment, she wanted to say, \"I don't know,\" and let a grown-up decide. But she remembered something Grandpa always told her: \"The sky changes its mood, but the ground never moves. Find the ground.\"\n\n8 She leaned over the edge of the basket and searched. There, far to the east, was the windmill with the broken arm. \"We have to go higher,\" she said. \"Grandpa says that on stormy afternoons, the high wind blows east. If we rise, it will carry us back.\"\n\n9 Mr. Ortiz hesitated, then opened the burner. A roar of flame filled the balloon, and the <i>Golden Lantern</i> climbed. The basket stopped swinging. Slowly, like a ship turning in a harbor, the balloon swung east.\n\n10 Twenty minutes later, they bumped down in the meadow behind the Millbrook clinic. Dr. Ames ran out to meet them, and Mira handed her the box with both arms.\n\n11 That night, when Mira told the story, Grandpa did not say she was brave. He said, \"You were watchful. Brave people sometimes just get lucky. Watchful people know where they are.\" Mira decided she liked that word better.",
+      "body": "A biography. Paragraphs are numbered.\n\n<b>Queen Bess: The Pilot Who Would Not Give Up</b>\n\n1 In the early 1900s, very few people had ever flown in an airplane, and almost no women had. For a young Black woman in the United States, becoming a pilot seemed impossible. Bessie Coleman refused to accept the word <i>impossible</i>.\n\n<b>A Hard Beginning</b>\n2 Bessie Coleman was born in Texas in 1892, one of thirteen children. Her family was poor, and Bessie spent long days picking cotton in the hot fields. She walked miles each day to a one-room school, where she was especially good at math. When she was older, she saved her money for college, but after only one term her savings ran out, and she had to go home.\n\n3 In 1915, Bessie moved to Chicago to live with her brothers. She worked as a manicurist, cleaning and shaping customers' fingernails. When her brother John came home from World War I, he teased her that in France, even women flew airplanes. Bessie decided right then that she would fly, too.\n\n<b>Doors That Stayed Closed</b>\n4 Bessie applied to flight schools across the United States. Every one of them refused her. Some would not teach women. Others would not teach Black students. Instead of giving up, Bessie made a new plan. A newspaper publisher named Robert Abbott suggested that she study in France, where flight schools were more open. Bessie took French classes at night, saved every coin she could, and in 1920 she sailed across the Atlantic Ocean.\n\n5 Flight training was dangerous. The planes were made of wood, wire, and cloth, and they had no brakes. During her training, Bessie even saw another student die in a crash. She was frightened, but she did not hesitate to climb back into the cockpit. In June 1921, she earned her international pilot's license. She was the first African American woman, and the first woman of African American and Native American heritage, ever to earn one.\n\n<b>Queen Bess in the Sky</b>\n6 Back in the United States, Bessie became a barnstormer, a pilot who performs daring tricks at air shows. Crowds gasped as she flew loops and figure eights and swooped low over the fields. Newspapers called her \"Queen Bess\" and \"Brave Bessie.\"\n\n7 Bessie used her fame to fight unfairness. When she was invited to perform in her home state of Texas, she learned that Black and white visitors would have to enter through separate gates. Bessie refused to fly unless everyone could use the same entrance. The organizers agreed.\n\n8 Bessie's biggest dream was to open a flight school so that other Black Americans could learn to fly without crossing an ocean. Sadly, she died in a plane accident in 1926 while preparing for an air show. She was only thirty-four years old.\n\n<b>A Dream That Kept Flying</b>\n9 Bessie's dream did not end with her. In 1929, a flying club named after her opened in Los Angeles to train Black pilots. In 1995, the United States put her picture on a postage stamp. Today, pilots and astronauts still remember the girl from the cotton fields who refused to let closed doors keep her on the ground.",
       "questions": [
         {
-          "q": "True or False: Mira flew the balloon by herself.",
+          "q": "True or False: Bessie learned to fly at a flight school in the United States.",
           "choices": [
             "True",
             "False"
@@ -1532,7 +1532,7 @@
           "skill": "evidence"
         },
         {
-          "q": "True or False: Mira used a landmark to figure out where the balloon was.",
+          "q": "True or False: Bessie refused to perform until all visitors could use the same entrance.",
           "choices": [
             "True",
             "False"
@@ -1541,100 +1541,111 @@
           "skill": "evidence"
         },
         {
-          "q": "True or False: Grandpa Tomas stayed on the ground because of the coming storm.",
+          "q": "What is the author's main purpose for writing this passage?",
           "choices": [
-            "True",
-            "False"
+            "To persuade readers to become pilots",
+            "To inform readers about the life and achievements of Bessie Coleman",
+            "To entertain readers with a made-up adventure story",
+            "To explain how early airplanes were built"
           ],
           "answer": 1,
-          "skill": "evidence"
+          "skill": "authors_purpose"
         },
         {
-          "q": "What is the main conflict of the story?",
+          "q": "How is this biography mainly organized?",
           "choices": [
-            "Mira is afraid of heights and refuses to get into the basket.",
-            "Mira and Mr. Ortiz argue about who is in charge of the balloon.",
-            "The wind blows the balloon off course, and Mira must find the way to Millbrook before the storm.",
-            "The box of medicine falls out of the basket over the Thornback Hills."
+            "In time order, following Bessie's life from childhood to after her death",
+            "As a comparison of Bessie and her brother John",
+            "As a list of reasons why flying is dangerous",
+            "As a problem and many possible solutions for building planes"
+          ],
+          "answer": 0,
+          "skill": "text_structure"
+        },
+        {
+          "q": "According to paragraph 3, what made Bessie decide to become a pilot?",
+          "choices": [
+            "She read about pilots in a newspaper.",
+            "She saw an air show in Chicago.",
+            "Her brother teased her that women in France flew airplanes.",
+            "Robert Abbott asked her to fly for his newspaper."
           ],
           "answer": 2,
-          "skill": "literary_elements"
+          "skill": "text_structure"
         },
         {
-          "q": "\"Her stomach felt like a jar full of bees.\" What does this simile tell the reader about Mira?",
+          "q": "Why did Bessie go to France to learn to fly?",
           "choices": [
-            "She is hungry because she skipped lunch.",
-            "She is nervous and jittery about the job ahead.",
-            "She is angry that Grandpa cannot fly.",
-            "She feels sick from the motion of the balloon."
+            "Flight schools in the United States refused to teach her because she was a woman and Black.",
+            "She wanted to see where her brother had fought in the war.",
+            "French planes were safer than American planes.",
+            "She already spoke French and wanted to live there."
           ],
-          "answer": 1,
-          "skill": "figurative_language"
+          "answer": 0,
+          "skill": "text_structure"
         },
         {
-          "q": "\"Then the wind changed its mind.\" Which type of figurative language is this?",
+          "q": "Which sentence best shows that Bessie was determined?",
           "choices": [
-            "simile",
-            "hyperbole",
-            "onomatopoeia",
-            "personification"
-          ],
-          "answer": 3,
-          "skill": "figurative_language"
-        },
-        {
-          "q": "Which sentence best shows that Mira almost gave up?",
-          "choices": [
-            "\"Mira checked the compass every few minutes, calling out landmarks.\"",
-            "\"For a moment, she wanted to say, 'I don't know,' and let a grown-up decide.\"",
-            "\"She leaned over the edge of the basket and searched.\"",
-            "\"Mira handed her the box with both arms.\""
+            "\"She worked as a manicurist, cleaning and shaping customers' fingernails.\"",
+            "\"Bessie took French classes at night, saved every coin she could, and in 1920 she sailed across the Atlantic Ocean.\"",
+            "\"Newspapers called her 'Queen Bess' and 'Brave Bessie.'\"",
+            "\"Bessie Coleman was born in Texas in 1892, one of thirteen children.\""
           ],
           "answer": 1,
           "skill": "evidence"
         },
         {
-          "q": "In paragraph 2, the winds are \"favorable.\" What does favorable mean here?",
+          "q": "In paragraph 6, what does barnstormer mean?",
           "choices": [
-            "helpful or good for what you want to do",
-            "strong and dangerous",
-            "cold and wet",
-            "always changing direction"
+            "a person who builds barns on farms",
+            "a pilot who performs daring tricks at air shows",
+            "a strong storm that damages farms",
+            "a newspaper writer who reports on air shows"
           ],
-          "answer": 0,
+          "answer": 1,
           "skill": "vocab_context"
         },
         {
-          "q": "Why does Grandpa call Mira \"watchful\" instead of \"brave\"?",
+          "q": "What does paragraph 7 show about Bessie's character?",
           "choices": [
-            "He thinks Mira only got lucky.",
-            "He did not believe her story.",
-            "He believes paying close attention, not luck, brought them to Millbrook safely.",
-            "He is upset that she flew without him."
+            "She cared only about becoming famous.",
+            "She was afraid to perform in Texas.",
+            "She used her fame to stand up for fairness.",
+            "She did not like the air show organizers."
           ],
           "answer": 2,
           "skill": "character"
         },
         {
-          "q": "Which sentence best states the theme of the story?",
+          "q": "\"She refused to let closed doors keep her on the ground.\" What does this sentence mean?",
           "choices": [
-            "Grown-ups always know the best thing to do.",
-            "Staying calm and paying close attention can help you solve a hard problem.",
-            "Never fly a balloon when a storm is coming.",
-            "Maps are more useful than landmarks."
+            "Bessie was afraid of closed spaces.",
+            "Bessie did not let people who rejected her stop her from reaching her dream of flying.",
+            "Bessie always left doors open before she flew.",
+            "Bessie preferred flying to walking."
           ],
           "answer": 1,
-          "skill": "theme"
+          "skill": "figurative_language"
         },
         {
-          "q": "How does Mira change from paragraph 3 to paragraph 11? Use one detail from the beginning and one from the end.",
+          "q": "What is the central idea of the passage?",
+          "choices": [
+            "Early airplanes were made of wood, wire, and cloth.",
+            "Bessie Coleman became famous because she was born in Texas.",
+            "Bessie Coleman overcame unfair barriers to become a pioneering pilot and inspire others.",
+            "Flight schools in France were the best in the world."
+          ],
+          "answer": 2,
+          "skill": "authors_purpose"
+        },
+        {
+          "q": "Describe two obstacles Bessie faced and explain how she overcame each one. Use details from the passage.",
           "type": "short",
-          "sampleAnswer": "At the beginning, Mira is nervous; her stomach \"felt like a jar full of bees,\" and in paragraph 7 she almost lets a grown-up decide. By the end, she has found the windmill, told Mr. Ortiz to go higher, and delivered the medicine, and she is proud to be called \"watchful.\" She changes from unsure to confident.",
-          "skill": "character"
+          "sampleAnswer": "First, flight schools in the United States refused to teach her because she was a woman and Black, so she learned French, saved her money, and went to France to train. Second, training was dangerous and she saw another student die in a crash, but she did not hesitate to climb back into the cockpit and earned her license in 1921.",
+          "skill": "evidence"
         }
-      ],
-      "image": "assets/2026-11-midterm/passages/golden-lantern.webp",
-      "imageAlt": "Mira studies a map in a hot-air balloon while Mr. Ortiz controls the burner above a valley with approaching storm clouds."
+      ]
     },
     {
       "id": "mt_clockmaker_test",
@@ -1762,129 +1773,140 @@
       "imageAlt": "An older woman clockmaker watches two boys work on small brass clocks, with a careful drawing beside the boy in simple clothes."
     },
     {
-      "id": "mt_rooftop_garden",
-      "title": "The Rooftop Garden",
+      "id": "mt_station_tomatoes",
+      "title": "The Silent Greenhouse",
       "skills": [
         "literary_elements",
         "character",
         "theme",
-        "figurative_language"
+        "evidence"
       ],
-      "body": "Original practice story. Paragraphs are numbered.\n\n<b>The Rooftop Garden</b>\n\n1 When Dev's family moved into apartment 6C, the first thing he noticed was the gray. Gray sidewalks, gray buildings packed so densely that sunlight reached the street only at noon, and a gray sky that seemed to sit on the rooftops like a lid. In his old town, Dev had spent every afternoon outside. Here, he sat by the window, restless and bored, counting pigeons.\n\n2 The second thing he noticed was Mrs. Kowalski in 6D. She was old, wore the same brown sweater every day, and never smiled. When Dev's soccer ball bounced against her door, she opened it, looked down at the ball with contempt, and shut the door without a word.\n\n3 One Saturday, Dev followed a strange smell up the back stairs. It was sweet and green, like cut grass. The stairs ended at a metal door with a rusty fastening. It was not locked. He pushed it open.\n\n4 The roof was full of plants. Tomatoes climbed wooden stakes, beans curled around strings, and pots of herbs crowded every corner. In the middle of it all, wearing her brown sweater, Mrs. Kowalski was watering a row of sunflowers taller than Dev.\n\n5 \"You're not supposed to be up here,\" she said.\n\n6 Dev almost ran. Instead, he heard himself ask, \"Did you grow all this?\"\n\n7 Mrs. Kowalski studied him for a long moment. Then she handed him a watering can. \"The beans are thirsty,\" she said. \"Don't drown them.\"\n\n8 After that, Dev went up to the roof almost every day. Mrs. Kowalski did not talk much, but she taught him things: how to pinch the tops off basil so it grows bushier, how to tell when a tomato is ready, and why you plant marigolds near vegetables to keep insects away. Once, while they were tying up the beans, she told him she had grown up on a farm in Poland. \"When my husband died, I came up here so I would not be sad all day,\" she said. \"The plants did not care that I was grumpy. They just needed water.\"\n\n9 Dev understood. The plants did not care that he was new, either.\n\n10 By the end of summer, the roof had a new row of carrots: Dev's row. On the last warm evening, Mrs. Kowalski carried up two folding chairs, and they sat together watching the sun sink behind the towers, turning the gray buildings orange and pink.\n\n11 \"The city isn't so gray,\" Dev said.\n\n12 \"No,\" said Mrs. Kowalski. \"You just have to know where to look.\" ",
+      "body": "Original science-fiction story. Paragraphs are numbered.\n\n<b>The Silent Greenhouse</b>\n\n1 On Greenhouse Deck 3 of the space station <i>Aurora</i>, everything grew. Lettuce spread in neat green rows under purple lamps. Beans climbed up silver wires. And for the first time, twelve tomato plants were covered in small yellow flowers.\n\n2 \"In three weeks, we'll have the first fresh tomatoes ever grown on <i>Aurora</i>,\" said Kai, who was thirteen and in charge of the deck's daily checklist. His sister Ama, who was ten, was in charge of watering the plants and, according to Kai, of asking too many questions.\n\n3 Three weeks passed. The flowers dried up and fell off. Not a single tomato appeared.\n\n4 Kai panicked. Commander Reyes would inspect the greenhouse in five days. He opened the growing manual on his tablet and worked through it step by step. He tested the water: perfect. He checked the light timer: sixteen hours a day, exactly as the manual said. He mixed extra nutrients into the soil. New flowers opened. Again, they dried up and fell off.\n\n5 \"Maybe the plants are lonely,\" Ama said.\n\n6 Kai rolled his eyes. \"Plants don't get lonely. Go water the beans.\"\n\n7 But Ama kept thinking. She remembered Grandma Esi's garden back on Earth, in Ghana, where she had lived until she was seven. In that garden, there had always been a soft buzzing in the air. Bees had crawled in and out of every flower, their legs dusted with yellow powder.\n\n8 She walked slowly along the tomato rows and looked closely. Nothing buzzed. Nothing crawled. The greenhouse was clean, bright, and completely silent.\n\n9 \"Kai,\" she said, \"where are the bees?\"\n\n10 \"There are no bees on a space station,\" Kai said. \"They would fly into the air vents.\" Then he stopped. He scrolled to the last page of the manual, a page he had skipped because it looked like an extra section nobody needed. Its title was \"Pollination.\"\n\n11 Tomato flowers, the page explained, must be shaken or buzzed so that their pollen falls into the right place inside the flower. Only then can a tomato begin to grow. On Earth, bees and wind do this job. On <i>Aurora</i>, the crew had to do it by hand.\n\n12 That afternoon, Kai and Ama went from flower to flower with Ama's smallest paintbrush, gently tapping and brushing each blossom so the pollen would shake loose. It took two hours. Kai did not say one word about too many questions.\n\n13 Ten days later, the first green tomato appeared, as small as a marble. When Commander Reyes arrived, Kai explained what had happened. \"The manual had the answer,\" he admitted. \"But Ama found the question.\"\n\n14 Commander Reyes smiled and added a new line to the deck checklist: <i>Hand-pollinate tomatoes (Ama).</i>",
       "questions": [
         {
-          "q": "True or False: Dev liked his new neighborhood right away.",
-          "choices": [
-            "True",
-            "False"
-          ],
-          "answer": 1,
-          "skill": "evidence"
-        },
-        {
-          "q": "True or False: Mrs. Kowalski started the garden because she wanted to sell vegetables.",
-          "choices": [
-            "True",
-            "False"
-          ],
-          "answer": 1,
-          "skill": "evidence"
-        },
-        {
-          "q": "True or False: Both Dev and Mrs. Kowalski were lonely in some way.",
+          "q": "True or False: Kai followed the growing manual step by step.",
           "choices": [
             "True",
             "False"
           ],
           "answer": 0,
-          "skill": "character"
+          "skill": "evidence"
         },
         {
-          "q": "How does the setting in paragraph 1 affect Dev?",
+          "q": "True or False: Adding extra nutrients to the soil solved the problem.",
           "choices": [
-            "The busy city excites him, so he explores every afternoon.",
-            "The crowded, gray city makes him feel bored and shut in.",
-            "The sunny streets make him want to play soccer.",
-            "The noise of the city keeps him awake at night."
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "skill": "evidence"
+        },
+        {
+          "q": "What is the main conflict of the story?",
+          "choices": [
+            "Kai and Ama argue about who should water the beans.",
+            "The tomato flowers keep falling off without making fruit, and the children must find out why before the inspection.",
+            "The light timer on the greenhouse deck is broken.",
+            "Bees escape into the station's air vents."
           ],
           "answer": 1,
           "skill": "literary_elements"
         },
         {
-          "q": "\"A gray sky that seemed to sit on the rooftops like a lid.\" What feeling does this simile create?",
+          "q": "How does the setting cause the problem in the story?",
           "choices": [
-            "feeling trapped or closed in",
-            "feeling excited",
-            "feeling sleepy",
-            "feeling proud"
+            "The purple lamps are too bright for tomatoes.",
+            "The station is too cold for plants to grow.",
+            "The clean, sealed space station has no bees or wind to shake the pollen loose.",
+            "The greenhouse is too small for twelve tomato plants."
+          ],
+          "answer": 2,
+          "skill": "literary_elements"
+        },
+        {
+          "q": "How are Kai and Ama different?",
+          "choices": [
+            "Kai follows checklists and the manual; Ama notices details and asks questions.",
+            "Kai asks too many questions; Ama follows every rule.",
+            "Kai does not care about the plants; Ama only cares about the inspection.",
+            "Kai grew up on Earth; Ama has always lived on the station."
           ],
           "answer": 0,
-          "skill": "figurative_language"
+          "skill": "character"
         },
         {
-          "q": "In paragraph 2, Mrs. Kowalski looks at the ball \"with contempt.\" Which clue helps you understand contempt?",
+          "q": "Which detail best explains why Kai panicked in paragraph 4?",
           "choices": [
-            "She is old and wears a brown sweater.",
-            "She shuts the door without a word.",
-            "She lives in apartment 6D.",
-            "The ball bounces against her door."
-          ],
-          "answer": 1,
-          "skill": "vocab_context"
-        },
-        {
-          "q": "Which sentence best shows that Mrs. Kowalski begins to accept Dev?",
-          "choices": [
-            "\"'You're not supposed to be up here,' she said.\"",
-            "\"Then she handed him a watering can.\"",
-            "\"She was old, wore the same brown sweater every day, and never smiled.\"",
-            "\"Dev almost ran.\""
+            "The lettuce was growing in neat rows.",
+            "Commander Reyes would inspect the greenhouse in five days.",
+            "Ama asked too many questions.",
+            "The beans were climbing up silver wires."
           ],
           "answer": 1,
           "skill": "evidence"
         },
         {
-          "q": "Why does Mrs. Kowalski tell Dev about her husband?",
+          "q": "Why is Ama's memory of Grandma Esi's garden important to the plot?",
           "choices": [
-            "To scare Dev so he will leave the roof",
-            "To explain why the garden matters to her: it helped her through sadness",
-            "To ask Dev to pay for the seeds",
-            "To show that she is still angry about the soccer ball"
+            "It makes her homesick, so she stops helping.",
+            "It reminds her that plants on Earth grow faster.",
+            "It gives her the clue that bees were missing from the greenhouse.",
+            "It shows that her grandmother grew tomatoes too."
+          ],
+          "answer": 2,
+          "skill": "literary_elements"
+        },
+        {
+          "q": "Which sentence is the turning point of the story?",
+          "choices": [
+            "\"Three weeks passed.\"",
+            "\"'Kai,' she said, 'where are the bees?'\"",
+            "\"He mixed extra nutrients into the soil.\"",
+            "\"It took two hours.\""
           ],
           "answer": 1,
+          "skill": "literary_elements"
+        },
+        {
+          "q": "What does Kai mean when he says, \"The manual had the answer, but Ama found the question\"?",
+          "choices": [
+            "Ama wrote the manual.",
+            "The manual was wrong, and Ama fixed it.",
+            "The information was in the manual, but Ama's careful observation showed them what to look for.",
+            "Ama asked Commander Reyes for help."
+          ],
+          "answer": 2,
           "skill": "character"
         },
         {
-          "q": "What does Mrs. Kowalski mean when she says, \"You just have to know where to look\"?",
+          "q": "How does Kai change from paragraph 6 to paragraph 13?",
           "choices": [
-            "Dev needs glasses to see the sunset.",
-            "The best view is from the roof, so Dev should stay there.",
-            "Beauty and good things can be found even in places that seem dull.",
-            "Dev should look for his lost soccer ball."
+            "He goes from ignoring Ama's ideas to giving her credit in front of the commander.",
+            "He goes from loving plants to disliking them.",
+            "He goes from following rules to breaking them.",
+            "He does not change at all."
+          ],
+          "answer": 0,
+          "skill": "character"
+        },
+        {
+          "q": "Which sentence best states the theme?",
+          "choices": [
+            "Always follow the manual and never ask questions.",
+            "Space stations are dangerous places for children.",
+            "Careful observation and good questions can solve problems that following steps alone cannot.",
+            "Older siblings are always right."
           ],
           "answer": 2,
           "skill": "theme"
         },
         {
-          "q": "Which sentence best states the theme?",
-          "choices": [
-            "Cities are worse places to live than small towns.",
-            "Never go into places where you are not allowed.",
-            "Gardening is hard work that few people enjoy.",
-            "Friendship and new beginnings can grow in unexpected places."
-          ],
-          "answer": 3,
-          "skill": "theme"
-        },
-        {
-          "q": "How does Dev's view of Mrs. Kowalski change from paragraph 2 to paragraph 10? Use details from both.",
+          "q": "Explain why no tomatoes grew at first and how Kai and Ama solved the problem. Use details from paragraphs 8-12.",
           "type": "short",
-          "sampleAnswer": "In paragraph 2, Dev sees Mrs. Kowalski as a grumpy neighbor who looks at his ball with contempt and never smiles. By paragraph 10, she has taught him how to garden and shared her story, and they sit side by side watching the sunset. He now sees her as a friend.",
-          "skill": "character"
+          "sampleAnswer": "No tomatoes grew because tomato flowers must be shaken or buzzed so the pollen falls into place, and on the space station there were no bees or wind to do it. Ama noticed that the greenhouse was \"completely silent\" with no bees, and Kai found the \"Pollination\" page. They solved it by tapping and brushing each flower with a paintbrush.",
+          "skill": "evidence"
         }
-      ],
-      "image": "assets/2026-11-midterm/passages/rooftop-garden.webp",
-      "imageAlt": "Dev and Mrs. Kowalski in her brown sweater tend beans and vegetables in a rooftop garden above gray apartment buildings."
+      ]
     },
     {
       "id": "mt_honeybees_spring",

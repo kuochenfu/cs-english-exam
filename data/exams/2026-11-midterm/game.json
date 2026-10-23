@@ -106,9 +106,9 @@
     {
       "id": "story_navigator",
       "name": "Story Navigator",
-      "desc": "Complete every reading passage.",
+      "desc": "Complete 15 reading passages.",
       "image": "assets/badges/2026-11-midterm/story_navigator.webp",
-      "rule": { "type": "activities", "category": "reading", "count": "all" }
+      "rule": { "type": "activities", "category": "reading", "count": 15 }
     },
     {
       "id": "watchful_listener",

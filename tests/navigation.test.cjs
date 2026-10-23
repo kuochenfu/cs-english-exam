@@ -562,12 +562,13 @@ test('each midterm badge unlocks exactly at its rule and only once', () => {
   assert.equal(h.badge('time_traveler'), false);
   h.done('grammar:mng-l8-book', 100);
   assert.equal(h.badge('time_traveler'), true);
-  // Story Navigator and Watchful Listener: every passage / dialogue.
+  // Story Navigator: 15 passages. Watchful Listener: every dialogue.
   const passages = midterm.reading.passages.map(p => p.id);
-  passages.slice(0, -1).forEach(id => h.done('reading:' + id, 60));
-  h.done('reading:' + passages.at(-1), 60, '{reviewOnly:true}');
+  assert.ok(passages.length > 15);
+  passages.slice(0, 14).forEach(id => h.done('reading:' + id, 60));
+  h.done('reading:' + passages[14], 60, '{reviewOnly:true}');
   assert.equal(h.badge('story_navigator'), false);
-  h.done('reading:' + passages.at(-1), 60);
+  h.done('reading:' + passages[14], 60);
   assert.equal(h.badge('story_navigator'), true);
   const dialogues = midterm.listening.dialogues.map(d => d.id);
   dialogues.slice(0, -1).forEach(id => h.done('listen:' + id, 60));
