@@ -57,6 +57,8 @@ The ten new test-style passages (`mt_*`) each have a dedicated 16:9 storybook il
 
 Scenes follow the authored text: Mira and Mr. Ortiz in a hot-air balloon, Master Odile and two would-be apprentices, Dev with Mrs. Kowalski in her brown sweater, spring honeybees, Hana's garden proposal, Taiwan's purple crow butterflies and roadside nets, the night train paired with a sprouting seed, Lena and Omar at the empty museum case, Ula following moonlight in the pourquoi tale, and the nervous soloist with Priya's support. Passage bodies, question sets, answers, and progress IDs are preserved.
 
+The original nine passages now also have individual illustrations, completing coverage for all 19 readings. These include Nell clipped to the airship safety line, Rosa and Theo gardening with Grandma Ines, seed germination, Bartholomew humming beside the kettle and dog, a classroom scene for the purpose/structure excerpts, Hartwig giving seeds to the two claimants, adult Elias with a bronze mechanical unicorn, Miss Finch reading during a blizzard, and Lila reading beside Ricky in a deep green treehouse with wooden stairs. The original-nine prompts and alt text, including the stair correction, are saved in `image-art/original-reading-prompts.json`. These nine assets use the same 1280×720 WebP format and are shown in the menu and passage pages.
+
 ## Missing Reference Material (log)
 
 Asked the user for these on 2026-10-22:

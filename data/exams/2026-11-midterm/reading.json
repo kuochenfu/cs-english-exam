@@ -617,7 +617,9 @@
           "sampleAnswer": "At the beginning, Nell feels like an outsider whose job is to \"stay out of the way.\" By the end, after bravely tying down the cargo cover, the captain praises her and she feels that the Kestrel \"truly belonged to her, too.\" She changes from feeling unimportant to feeling like a real member of the crew.",
           "skill": "character"
         }
-      ]
+      ],
+      "image": "assets/2026-11-midterm/passages/storm-over-the-kestrel.webp",
+      "imageAlt": "Nell, securely clipped to a safety line, reaches for a loose cargo cover on an airship catwalk above a stormy sea."
     },
     {
       "id": "garden_behind_the_wall",
@@ -734,7 +736,9 @@
           "sampleAnswer": "In Scene 1, Rosa is bitter about her new home; the stage direction (with contempt) shows she says \"This whole place is dead\" scornfully. By Scene 2 she has worked hard to bring the garden back, and she happily asks, \"Will you help us, Grandma?\" (laughing and wiping her nose). She changes from scornful and unhappy to hopeful, caring, and connected to her grandmother.",
           "skill": "character"
         }
-      ]
+      ],
+      "image": "assets/2026-11-midterm/passages/garden-behind-the-wall.webp",
+      "imageAlt": "Rosa and Theo garden beside Grandma Ines, who reaches for seeds near the pink roses and open gate of a stone-walled yard."
     },
     {
       "id": "how_a_seed_wakes_up",
@@ -851,7 +855,9 @@
           "sampleAnswer": "First, the seed coat absorbs water, so the seed swells and the coat splits open. Then the root pushes downward to anchor the plant and draw water. Next, a shoot curls upward and breaks through the soil, and its first leaves unfold. Finally, the leaves use sunlight to make food through photosynthesis, so the seedling feeds itself.",
           "skill": "text_structure"
         }
-      ]
+      ],
+      "image": "assets/2026-11-midterm/passages/how-a-seed-wakes-up.webp",
+      "imageAlt": "Four stages of seed germination show roots growing downward and a shoot opening its first leaves above spring soil."
     },
     {
       "id": "three_poems",
@@ -979,7 +985,9 @@
           "sampleAnswer": "In Poem 2, the poet writes that April arrives \"soft-footed, knocking on the door of every seed\" and that \"the sun leans close and whispers, Yes.\" Giving April and the sun human actions makes spring seem gentle and kind, like a friend waking the seeds up. (Poem 3: \"Spring is singing her first song\" and \"Every gutter hums along\" make spring sound joyful, like a person making music.)",
           "skill": "poetry"
         }
-      ]
+      ],
+      "image": "assets/2026-11-midterm/passages/ditties-gardens-and-rain.webp",
+      "imageAlt": "Bartholomew hums beside a howling dog and steaming kettle as spring rain falls beyond a window with a curling green tendril."
     },
     {
       "id": "purpose_structure_practice",
@@ -1095,7 +1103,9 @@
           "sampleAnswer": "Excerpt 4 uses sequence: it gives steps in order with clue words like \"first,\" \"next,\" \"then,\" and \"finally.\" Excerpt 7 uses problem and solution: the problem is that students trampled the plants, and the solution is the fence, signs, and path the garden club built.",
           "skill": "text_structure"
         }
-      ]
+      ],
+      "image": "assets/2026-11-midterm/passages/purpose-and-structure-practice.webp",
+      "imageAlt": "Two children study wordless balloon and airship pictures beside a sprouting bean jar and a climbing pea plant near a school garden."
     },
     {
       "id": "hw_finding_prince_deming",
@@ -1207,7 +1217,9 @@
           "skill": "evidence",
           "sampleAnswer": "Hartwig never used magic, so no flower should have grown. Prince One lied about being the prince and was so worried that he secretly planted a flower in the moonlight. That flower is what showed he was the imposter, so his own lie gave him away."
         }
-      ]
+      ],
+      "image": "assets/2026-11-midterm/passages/finding-prince-deming.webp",
+      "imageAlt": "Hartwig gives ordinary seeds to two young men in dusty cloaks beside a patch of black soil, with King Bo and the castle behind them."
     },
     {
       "id": "hw_elias_discovery",
@@ -1319,7 +1331,9 @@
           "skill": "literary_elements",
           "sampleAnswer": "Elias, an inventor in gray Gearford, found an abandoned mechanical unicorn in a hole in the forest. He wanted to bring it back to its former beauty, but it was rusty and its gears needed repair. So he visited the forest every day to polish, oil, and tighten it. Then he brought the Mechanicorn back to Gearford, where it amazed everyone and showed that beauty can be found anywhere."
         }
-      ]
+      ],
+      "image": "assets/2026-11-midterm/passages/elias-discovery.webp",
+      "imageAlt": "Adult inventor Elias offers a pocket watch to a bronze clockwork unicorn with blue gemstone eyes in a mossy forest hollow."
     },
     {
       "id": "hw_whimsical_tales",
@@ -1369,7 +1383,9 @@
           "skill": "character",
           "sampleAnswer": "Instead of panicking and complaining, she hosts a reading session for the children stuck in her store. This shows she is calm, kind, and imaginative, because she turns a problem into a magical afternoon of stories."
         }
-      ]
+      ],
+      "image": "assets/2026-11-midterm/passages/whimsical-tales.webp",
+      "imageAlt": "Miss Finch reads aloud to children in a warm bookstore while snow swirls outside the city-facing window."
     },
     {
       "id": "hw_lila_treehouse",
@@ -1491,7 +1507,9 @@
           "skill": "literary_elements",
           "sampleAnswer": "First, Lila spent her summer reading in the treehouse at her grandmother's house. Then a scared squirrel ran in, and instead of shooing it away, she fed it nuts and it became her reading buddy, Ricky. Later, birds and a rabbit started visiting too. Finally, the treehouse was not just a reading space anymore; it became a sanctuary for Lila and her woodland friends."
         }
-      ]
+      ],
+      "image": "assets/2026-11-midterm/passages/lila-treehouse.webp",
+      "imageAlt": "Lila reads beside Ricky the squirrel in a deep green treehouse with wooden steps, birds at the window and a rabbit at the entrance."
     },
     {
       "id": "mt_lantern_balloon",
