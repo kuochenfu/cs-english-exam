@@ -14,9 +14,8 @@
         "I have to check the contents of the drink before I drink it."
       ],
       "synonyms": [
-        "load",
-        "cargo",
-        "items"
+        "items",
+        "things inside"
       ],
       "forms": [
         "contents"
@@ -85,7 +84,7 @@
       "examples": [
         "The captain waited for favorable weather before taking off.",
         "Sunny skies and a light breeze made conditions favorable for a picnic.",
-        "The judges gave her science fair poster a favorable review.",
+        "The light, steady wind was favorable for sailing across the lake.",
         "A favorable report from the doctor meant he could rejoin the team.",
         "The weather was favorable for flying a kite in the park."
       ],
@@ -185,13 +184,13 @@
       "examples": [
         "With a high fever, my brother was delirious and didn't know where he was.",
         "The sailor had gone three days without water and was delirious when they found him.",
-        "The fans were delirious with joy when their team won the championship.",
+        "After two days of high fever, Grandpa was delirious and called me by my dad's name.",
         "Matt sat beside the delirious old man and listened to his mumbled words."
       ],
       "synonyms": [
         "confused",
         "feverish",
-        "frenzied"
+        "muddled"
       ],
       "antonyms": [
         "lucid",
@@ -241,7 +240,7 @@
       "antonyms": [
         "quit",
         "abandon",
-        "neglect"
+        "give up"
       ],
       "image": "assets/2026-11-midterm/vocabulary/attempt.webp",
       "imageAlt": "A child tries hard to push open a heavy garden gate."
@@ -256,7 +255,7 @@
         "The robin's song awakened Mary early in the morning.",
         "The smell of pancakes awakens me every Saturday.",
         "Colin was afraid the noise would awaken the whole house.",
-        "Fresh air and sunshine slowly awakened Colin's interest in the world."
+        "Bears awaken from their long winter sleep when spring arrives."
       ],
       "synonyms": [
         "wake",
@@ -336,7 +335,7 @@
       "synonyms": [
         "puzzling",
         "strange",
-        "secret"
+        "unexplained"
       ],
       "antonyms": [
         "obvious",
@@ -363,10 +362,6 @@
         "lead",
         "chair",
         "oversee"
-      ],
-      "antonyms": [
-        "follow",
-        "obey"
       ],
       "image": "assets/2026-11-midterm/vocabulary/preside.webp",
       "imageAlt": "A student leads a small council meeting while classmates listen."
@@ -456,9 +451,8 @@
         "Thin tendrils reached out from the vine toward the sunlight."
       ],
       "synonyms": [
-        "shoot",
-        "runner",
-        "vine"
+        "coil",
+        "curl"
       ],
       "image": "assets/2026-11-midterm/vocabulary/tendril.webp",
       "imageAlt": "A thin curling pea-plant stem wraps around a wooden support."
@@ -500,7 +494,7 @@
         "A catchy refrain makes a song easy to remember.",
         "Our class poem has two refrains that we read aloud together.",
         "Each time the refrain came back, the audience clapped along.",
-        "During his song, the whole audience joined in for the refrain, singing the same catchy line each time it came around."
+        "During his song, the whole audience joined in for the refrain, singing the same catchy line together each time it came around."
       ],
       "synonyms": [
         "chorus",
@@ -543,9 +537,9 @@
       "example": "Seize the rope before the boat drifts away!",
       "examples": [
         "The eagle seized a fish from the river.",
-        "She seizes every chance to read a new poem.",
+        "The police seized the stolen bikes from the thief's garage.",
         "The guards seized the thief by the arm.",
-        "Don't wait for luck; seize the moment and try out for the team.",
+        "Fear seized him when the sea monster rose from the waves.",
         "Backstage, his little sister tried to seize his trophy before he even got a chance to hold it!"
       ],
       "synonyms": [
@@ -571,8 +565,8 @@
         "Under the watchful eye of her coach, Mia practiced her flips.",
         "Stay watchful when you cross a busy street.",
         "The watchful mother bird never left her chicks alone.",
-        "A watchful reader notices the small clues in a mystery.",
-        "His teacher reminded him to be watchful during rehearsal, looking closely for any mistakes in the dance routine."
+        "The watchful fox kept looking in different directions because she heard noises behind the bushes.",
+        "His teacher reminded him to be watchful during rehearsal, watching closely for any mistakes in the group's dance routine."
       ],
       "synonyms": [
         "alert",
@@ -601,8 +595,7 @@
       ],
       "synonyms": [
         "scribble",
-        "jot",
-        "doodle"
+        "jot"
       ],
       "image": "assets/2026-11-midterm/vocabulary/scrawl.webp",
       "imageAlt": "A hand writes hurried, messy pencil marks on a napkin."

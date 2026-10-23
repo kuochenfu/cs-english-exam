@@ -645,7 +645,7 @@
           "choices": [
             "ue",
             "iew",
-            "ew",
+            "ui",
             "u_e"
           ],
           "answer": 1
@@ -693,7 +693,7 @@
         {
           "q": "<b>naughty</b> — which letters spell the /ô/ sound?",
           "choices": [
-            "au",
+            "al",
             "aw",
             "ough",
             "augh"
@@ -1097,6 +1097,30 @@
           "answer": 2
         },
         {
+          "q": "Circle the sound: <i>All the <b>glue</b> in the world couldn't put Humpty together again.</i> Which sound does <b>glue</b> have?",
+          "choices": [
+            "/ōō/ as in <i>moon</i>",
+            "/yōō/ as in <i>cute</i>"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Circle the sound: <i>I don't want to <b>confuse</b> you.</i> Which sound does <b>confuse</b> have?",
+          "choices": [
+            "/ōō/ as in <i>moon</i>",
+            "/yōō/ as in <i>cute</i>"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Circle the sound: <i>You <b>lose</b>, I win!</i> Which sound does <b>lose</b> have?",
+          "choices": [
+            "/ōō/ as in <i>moon</i>",
+            "/yōō/ as in <i>cute</i>"
+          ],
+          "answer": 0
+        },
+        {
           "q": "It was so high that I could barely see the bird ____ through the sky.",
           "choices": [
             "sore",
@@ -1137,7 +1161,7 @@
           "answer": 1
         },
         {
-          "q": "The judge decided to ____ the thief because he was just stealing to get food for his family.",
+          "q": "The judge decided to ____ the thief from his crimes because he was just stealing to get food for his family.",
           "choices": [
             "pardone",
             "pardon",
