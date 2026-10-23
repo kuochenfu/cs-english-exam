@@ -17,7 +17,8 @@
         "spell:m2_w1_oo_yoo_sort", "spell:m2_w1_oo_yoo_pattern_sort", "spell:m2_w2_ou_aw_oi_sort",
         "spell:m2_w2_ou_oi_pattern_sort", "spell:m2_w2_aw_pattern_sort", "spell:m2_w3_r_controlled_sort",
         "spell:m2_w3_r_pattern_sort", "spell:m2_find_vowel_sound", "spell:m2_vowel_letters_same_sound",
-        "spell:m2_spelled_correctly"
+        "spell:m2_spelled_correctly",
+        "spell:m2_hw_spelling_sentences"
       ]
     },
     {
@@ -27,7 +28,8 @@
       "match": [
         "grammar:mng-l6-book", "grammar:mng-l7-book", "grammar:mng-l8-book",
         "grammar:l6-present-continuous", "grammar:l7-past-regular", "grammar:l8-past-irregular",
-        "grammar:tense-mix"
+        "grammar:tense-mix",
+        "grammar:m2-homework"
       ],
       "minPct": 70
     },
@@ -78,7 +80,7 @@
         "spell:m2_w1_oo_yoo_sort", "spell:m2_w1_oo_yoo_pattern_sort", "spell:m2_w2_ou_aw_oi_sort",
         "spell:m2_w2_ou_oi_pattern_sort", "spell:m2_w2_aw_pattern_sort", "spell:m2_w3_r_controlled_sort",
         "spell:m2_w3_r_pattern_sort", "spell:m2_find_vowel_sound", "spell:m2_vowel_letters_same_sound",
-        "spell:m2_spelled_correctly"
+        "spell:m2_spelled_correctly", "spell:m2_hw_spelling_sentences"
       ] }
     },
     {

@@ -4,6 +4,7 @@ Source photos:
 - `raw/202611/grade5_2026_fall_semester_midterm_notice_and_study_guide.JPG` (midterm notice and study guide)
 - `raw/202609/IMG_5994.JPG` (Fall 2026 spelling & vocabulary list; Weeks 6-8 = Module 2 Weeks 1-3)
 - `raw/202611/grammar_0601.JPG` … `grammar_0802.JPG` (My Next Grammar 2, Lessons 6-8, pp. 24-25, 28-29, 32-33)
+- `raw/202611/IMG_7063.JPG` … `IMG_7076.JPG` (Module 2 HW folder, Weeks 1-3 HW1-HW3; transcribed in `homework.md`)
 
 App exam id: `2026-11-midterm`
 
@@ -36,16 +37,16 @@ App exam id: `2026-11-midterm`
 
 Shaded (bonus) vocabulary words on the list: delirious, porthole, matted, tendril, scrawl, ditty. Week 3 spelling has 11 words.
 
-## Status (2026-10-22)
+## Status (2026-10-23)
 
-All five topics are generated from the notice, the word list, and standard rules, at the Grade 5 high standard (see the Quiz 1 plan for benchmarks). None is built from Module 2 homework yet.
+All five topics were generated from the notice, the word list, and standard rules, at the Grade 5 high standard (see the Quiz 1 plan for benchmarks). On 2026-10-23 the Module 2 homework was added on top (see `homework.md`).
 
 | Topic | Status | Notes |
 | --- | --- | --- |
-| Vocabulary | Generated + illustrated | 26 words, each with a meaning-specific storybook illustration and alt text; self-written definitions (no teacher HW1 sheets yet). Image prompts: `image-art/prompts.json` |
-| Spelling / Phonics | Generated | 3 dictation lists, sound and pattern sorts, KISI-style MCQ sets |
-| Grammar | Generated + textbook | Lessons 4-5 review; Lessons 6-8 textbook exercises copied as MCQ sets (`mng-l6-book`, `mng-l7-book`, `mng-l8-book`: 21 / 28 / 24 items); quick-guide cards aligned to the textbook rule boxes (-ing / -ed spelling and exceptions, -ed pronunciation, time words, the 28-verb irregular table); plus generated L6-8 sets |
-| Reading | Generated + illustrated | Original passages in the Module 2 genres (adventure, drama, informational, poetry). Anchor charts rebuilt 2026-10-22 from web research: 7 focus skills plus 3 supporting skills now have original illustrated posters. Focus guides keep 5 worked examples and a quick check (see `anchor_charts.md`) |
+| Vocabulary | Teacher definitions + illustrated | 26 words. The 20 homework words use Mr. Long's HW1 definitions word for word; panic and the 5 bonus words keep self-written ones. Homework fill-in sentences added to `examples[]`. **project** fixed to *shine an image or light outward*; its picture was removed and needs redrawing (`image-art/prompts.json`) |
+| Spelling / Phonics | Generated + homework | 3 dictation lists, sound and pattern sorts, KISI-style MCQ sets, plus `m2_hw_spelling_sentences` (HW2 sentences: /ōō/ /yōō/, /oi/ /ou/ /ô/, and look-alikes like dairy/diary, warn/worn) |
+| Grammar | Generated + textbook | Lessons 4-5 review; Lessons 6-8 textbook exercises copied as MCQ sets (`mng-l6-book`, `mng-l7-book`, `mng-l8-book`: 21 / 28 / 24 items); quick-guide cards aligned to the textbook rule boxes (-ing / -ed spelling and exceptions, -ed pronunciation, time words, the 28-verb irregular table); plus generated L6-8 sets; `m2-homework` set from HW2 (present simple, rewrite in present continuous, contents are, homework is uncountable) |
+| Reading | Generated + illustrated + homework | 4 homework passages with the teacher's questions (Finding Prince Deming, Elias's Discovery, Whimsical Tales, Lila's Treehouse; ids `hw_*`). Original passages in the Module 2 genres (adventure, drama, informational, poetry). Anchor charts rebuilt 2026-10-22 from web research: 7 focus skills plus 3 supporting skills now have original illustrated posters. Focus guides keep 5 worked examples and a quick check (see `anchor_charts.md`) |
 | Listening | Generated | 5 original dialogues on Module 2 themes |
 | Missions & badges | Done 2026-10-22 | 4 daily missions and 10 Module 2 cat & fox badges (see `game.md`) |
 | Oral / Writing | Not in app | App has no oral or writing topic |
@@ -54,7 +55,7 @@ All five topics are generated from the notice, the word list, and standard rules
 
 Asked the user for these on 2026-10-22:
 
-1. Module 2 HW folder pages (teacher vocabulary definitions, homework passages and sentences)
+1. ~~Module 2 HW folder pages~~ — received 2026-10-23 (W1-W3 HW1-HW3), built into all topics except listening
 2. Into Reading pages for Airborn, The Secret Garden, The Miracle of Spring, The Poem That Will Not End
 3. Module 2 anchor charts. Original research-based charts are in place, but the teacher's versions would still help match the class wording
 4. Know-It, Show-It pp. 26, 30, 34, 37, 42, 47

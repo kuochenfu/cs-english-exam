@@ -540,6 +540,253 @@
   ],
   "practiceSets": [
     {
+      "id": "m2-homework",
+      "title": "Module 2 Homework — Present Simple, Present Continuous, Contents / Homework",
+      "description": "The grammar from Mr. Long's M2 homework: present simple (W1 HW2), rewriting in present continuous (W2 HW2), and the two corrections on the homework: contents takes are, and homework is uncountable.",
+      "items": [
+        {
+          "id": "hw-01",
+          "q": "Marianne ____ to school in the morning. (not walk)",
+          "choices": [
+            "don't walk",
+            "doesn't walk",
+            "doesn't walks",
+            "not walks"
+          ],
+          "answer": 1,
+          "use": "he/she → doesn't + base"
+        },
+        {
+          "id": "hw-02",
+          "q": "The monkeys ____ in the park after class. (play)",
+          "choices": [
+            "plays",
+            "is playing",
+            "play",
+            "playes"
+          ],
+          "answer": 2,
+          "use": "plural → base verb"
+        },
+        {
+          "id": "hw-03",
+          "q": "My father ____ dinner for us on Sundays. (cook)",
+          "choices": [
+            "cook",
+            "cooks",
+            "cookes",
+            "is cook"
+          ],
+          "answer": 1,
+          "use": "he → verb + s"
+        },
+        {
+          "id": "hw-04",
+          "q": "The dog ____ loudly when someone knocks on the door. (bark)",
+          "choices": [
+            "barks",
+            "bark",
+            "barkes",
+            "is bark"
+          ],
+          "answer": 0,
+          "use": "it → verb + s"
+        },
+        {
+          "id": "hw-05",
+          "q": "I always ____ my homework before dinner. (do)",
+          "choices": [
+            "does",
+            "do",
+            "doing",
+            "am do"
+          ],
+          "answer": 1,
+          "use": "I → base verb"
+        },
+        {
+          "id": "hw-06",
+          "q": "The teacher ____ the lesson clearly. (not explain)",
+          "choices": [
+            "don't explain",
+            "doesn't explains",
+            "doesn't explain",
+            "isn't explain"
+          ],
+          "answer": 2,
+          "use": "he/she → doesn't + base"
+        },
+        {
+          "id": "hw-07",
+          "q": "My sister and I ____ our grandparents every weekend. (visit)",
+          "choices": [
+            "visits",
+            "visit",
+            "visites",
+            "is visiting"
+          ],
+          "answer": 1,
+          "use": "sister and I = we → base"
+        },
+        {
+          "id": "hw-08",
+          "q": "Freddy ____ very fast in races. (run)",
+          "choices": [
+            "run",
+            "runes",
+            "runs",
+            "running"
+          ],
+          "answer": 2,
+          "use": "he → verb + s"
+        },
+        {
+          "id": "hw-09",
+          "q": "The sun ____ in the east. (rise)",
+          "choices": [
+            "rise",
+            "rises",
+            "rising",
+            "is rise"
+          ],
+          "answer": 1,
+          "use": "fact → present simple"
+        },
+        {
+          "id": "hw-10",
+          "q": "Change to present continuous: \"My girlfriend and I were watching the movie in the theater.\"",
+          "choices": [
+            "My girlfriend and I is watching the movie in the theater right now.",
+            "My girlfriend and I are watching the movie in the theater right now.",
+            "My girlfriend and I am watching the movie in the theater right now.",
+            "My girlfriend and I watching the movie in the theater right now."
+          ],
+          "answer": 1,
+          "use": "___ and I = we → are"
+        },
+        {
+          "id": "hw-11",
+          "q": "Change to present continuous: \"The sun will come up tomorrow.\"",
+          "choices": [
+            "The sun is coming up now.",
+            "The sun are coming up now.",
+            "The sun is come up now.",
+            "The sun comes up now."
+          ],
+          "answer": 0,
+          "use": "is + -ing, change the time word"
+        },
+        {
+          "id": "hw-12",
+          "q": "Change to present continuous: \"Why do you laugh at such a silly joke?\"",
+          "choices": [
+            "Why do you laughing at such a silly joke right now?",
+            "Why you are laughing at such a silly joke right now?",
+            "Why are you laughing at such a silly joke right now?",
+            "Why is you laughing at such a silly joke right now?"
+          ],
+          "answer": 2,
+          "use": "question: are + you + -ing"
+        },
+        {
+          "id": "hw-13",
+          "q": "Change to present continuous: \"I don't enjoy eating pizza; it's gross!\"",
+          "choices": [
+            "I'm not enjoying eating pizza; it's gross!",
+            "I don't enjoying eating pizza; it's gross!",
+            "I'm not enjoy eating pizza; it's gross!",
+            "I amn't enjoying eating pizza; it's gross!"
+          ],
+          "answer": 0,
+          "use": "negative: am not + -ing"
+        },
+        {
+          "id": "hw-14",
+          "q": "Change to present continuous: \"Your parents usually talk so loudly.\"",
+          "choices": [
+            "Your parents is talking so loudly right now.",
+            "Your parents usually are talk so loudly.",
+            "Your parents are talking so loudly right now.",
+            "Your parents talking so loudly right now."
+          ],
+          "answer": 2,
+          "use": "usually → right now"
+        },
+        {
+          "id": "hw-15",
+          "q": "The contents of my backpack ____ homework, a pencil case, and a water bottle.",
+          "choices": [
+            "is",
+            "are",
+            "was",
+            "be"
+          ],
+          "answer": 1,
+          "use": "contents = plural → are"
+        },
+        {
+          "id": "hw-16",
+          "q": "The contents of the old trunk ____ a mystery to everyone.",
+          "choices": [
+            "was",
+            "is",
+            "were",
+            "has been"
+          ],
+          "answer": 2,
+          "use": "contents = plural → were"
+        },
+        {
+          "id": "hw-17",
+          "q": "Which sentence is correct?",
+          "choices": [
+            "I have three homeworks tonight.",
+            "I have a lot of homework tonight.",
+            "I have many homeworks tonight.",
+            "I have a homework tonight."
+          ],
+          "answer": 1,
+          "use": "homework is uncountable"
+        },
+        {
+          "id": "hw-18",
+          "q": "My homework ____ on the kitchen table.",
+          "choices": [
+            "are",
+            "were",
+            "is",
+            "be"
+          ],
+          "answer": 2,
+          "use": "uncountable → singular verb"
+        },
+        {
+          "id": "hw-19",
+          "q": "Find the mistake: \"The contents of the box is broken, so we sent it back.\"",
+          "choices": [
+            "contents → content",
+            "is → are",
+            "broken → broke",
+            "sent → send"
+          ],
+          "answer": 1,
+          "use": "contents = plural → are"
+        },
+        {
+          "id": "hw-20",
+          "q": "How much ____ did the teacher give you?",
+          "choices": [
+            "homeworks",
+            "homework",
+            "a homework",
+            "homeworking"
+          ],
+          "answer": 1,
+          "use": "how much + uncountable"
+        }
+      ]
+    },
+    {
       "id": "l4-be-review",
       "title": "Lesson 4 Review — Present and Past: Be",
       "description": "Quiz 1 review: am / is / are / was / were with hidden subjects, there is / are, tags, short answers, and error spotting.",

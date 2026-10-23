@@ -1049,6 +1049,204 @@
           "answer": 3
         }
       ]
+    },
+    {
+      "id": "m2_hw_spelling_sentences",
+      "title": "Spelling & Phonics — Homework Sentences (Weeks 1-3)",
+      "quiz": true,
+      "intro": "Sentences from Mr. Long's homework. Choose the correctly spelled word that fits. Watch out for look-alikes such as dairy / diary and warn / worn, and listen for /oi/, /ou/, and /ô/.",
+      "items": [
+        {
+          "q": "All the ____ in the world couldn't put Humpty together again.",
+          "choices": [
+            "glue",
+            "glew",
+            "gloo",
+            "glu"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "I don't want to ____ you, so I will say it simply.",
+          "choices": [
+            "confuze",
+            "confuse",
+            "confews",
+            "confuss"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "You ____, I win!",
+          "choices": [
+            "loose",
+            "loze",
+            "lose",
+            "lous"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Buttercup is wearing a ____ that Wesley brought back for her when he was a pirate.",
+          "choices": [
+            "jewl",
+            "juel",
+            "jewel",
+            "jool"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "It was so high that I could barely see the bird ____ through the sky.",
+          "choices": [
+            "sore",
+            "soar",
+            "sor",
+            "soare"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "There are cows everywhere because this is a ____ farm.",
+          "choices": [
+            "diary",
+            "dairy",
+            "dairey",
+            "dary"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "The teacher didn't even ____ me. He just sent me to Student Affairs.",
+          "choices": [
+            "worn",
+            "warn",
+            "wharn",
+            "warne"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "____ of that castle. Many people say it is full of ghosts.",
+          "choices": [
+            "Biware",
+            "Beware",
+            "Bewear",
+            "Beaware"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "The judge decided to ____ the thief because he was just stealing to get food for his family.",
+          "choices": [
+            "pardone",
+            "pardon",
+            "pardin",
+            "parden"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Are you ____ that we have a test tomorrow?",
+          "choices": [
+            "award",
+            "aware",
+            "awear",
+            "awair"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "I just need to rest to recover from the ____ of being on the alien ship.",
+          "choices": [
+            "orderal",
+            "ordeal",
+            "ordeel",
+            "ordel"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Everyone climbed ____ the airship before it took off.",
+          "choices": [
+            "abord",
+            "aboard",
+            "abourd",
+            "aborde"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Look out for look-alikes! Which word means a book where you write about your day?",
+          "choices": [
+            "dairy",
+            "diary",
+            "diery",
+            "dairey"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Which word has the /oi/ sound? <i>Her voice is wonderful. She sings beautifully.</i>",
+          "choices": [
+            "voice",
+            "wonderful",
+            "sings",
+            "beautifully"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which word has the /ou/ sound? <i>She was naughty, and now she is in trouble.</i>",
+          "choices": [
+            "naughty",
+            "now",
+            "trouble",
+            "was"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Which word has the /ô/ sound, as in <i>saw</i>? <i>She was naughty, and now she is in trouble.</i>",
+          "choices": [
+            "naughty",
+            "now",
+            "trouble",
+            "she"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which word has the /oi/ sound? <i>The Queen is the leader of the royal family.</i>",
+          "choices": [
+            "Queen",
+            "leader",
+            "royal",
+            "family"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Which word has the /ou/ sound? <i>The cat pounced on the vermin and ate it.</i>",
+          "choices": [
+            "cat",
+            "pounced",
+            "vermin",
+            "ate"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Look out for look-alikes! Which word means a prize you win?",
+          "choices": [
+            "aware",
+            "award",
+            "awared",
+            "awarde"
+          ],
+          "answer": 1
+        }
+      ]
     }
   ]
 }

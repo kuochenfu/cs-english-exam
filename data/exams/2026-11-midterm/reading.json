@@ -1096,6 +1096,402 @@
           "skill": "text_structure"
         }
       ]
+    },
+    {
+      "id": "hw_finding_prince_deming",
+      "title": "Finding Prince Deming (Week 1 HW)",
+      "skills": [
+        "literary_elements",
+        "character",
+        "theme",
+        "figurative_language"
+      ],
+      "body": "Module 2 Week 1 homework passage (HW3). Paragraphs are numbered.\n\n1 \"Hartwig!\" Old King Bo called. He had a puzzling problem and needed his quick-witted advisor to help him untangle it.\n\n2 \"What is it, Your Majesty?\" asked Hartwig as he hurried into the throne room.\n\n3 \"Two young men have come to the castle, both claiming to be Prince Deming from the North Forest. As you know, the true Prince Deming will eventually be crowned king and will start studying with me tomorrow. How will I tell which is the true prince and which is an imposter, or faker, who is pretending to be the prince?\"\n\n4 \"First, tell me about them,\" Hartwig said.\n\n5 \"This morning, both men arrived dressed in dusty cloaks,\" King Bo began. \"They had traveled from the same direction, and their faces had tired lines across them.\"\n\n6 \"Did you speak with them separately?\" Hartwig asked.\n\n7 \"Yes, I asked each of them about the North Forest, and both said the pine trees there are so tall they look like prickly green mountains. They gave the same answers to every question I asked. Each claimed he'd met the other prince while traveling and that the other had followed him to the castle hoping to steal his place.\" He groaned in dismay. \"How will I know which one to trust with my secrets?\"\n\n8 After thinking briefly, Hartwig explained his idea to the king, who nodded in approval.\n\n9 That afternoon, Hartwig commanded the two princes to follow him across the drawbridge and down a grassy hill to a patch of black soil. Then Hartwig took some little seeds from a silky pouch and whispered in a mysterious voice, \"Ebba-ebba-ebba-bee.\"\n\n10 The princes stared at Hartwig, <u>their eyes the size of dinner plates</u>. They knew Hartwig had amazing powers and almost expected the seeds to magically change into a terrifying creature.\n\n11 Facing them with a hint of a smile, Hartwig handed each prince a seed. \"You must each plant one seed. In the morning, there will be a purple flower growing that will reveal the true Prince Deming.\"\n\n12 <i>So he does use magic to find his answers,</i> Prince One thought as he nervously dropped a seed into the earth.\n\n13 Prince Two planted his seed and thought Hartwig's spells must be powerful.\n\n14 \"When the sun rises tomorrow, we'll return here with King Bo,\" Hartwig explained as the two princes kept staring at the black soil.\n\n15 As soon as the morning sun's rays poked into the castle windows, the two princes scrambled from their beds. They found Hartwig and King Bo waiting for them. They marched down the grassy hill again.\n\n16 When they reached the patch of soil, only one purple flower bobbed slightly in the gentle morning breeze, and it stood where Prince One had planted his seed.\n\n17 \"Look!\" Prince One boasted. \"Your magic spells proved that I am the true prince.\"\n\n18 Hartwig chuckled. \"But there was no magic spell. Your seed has grown because you crept outside in the moonlight and planted the purple flower. I watched you from the tower. In fact, that blossom proves you are an imposter. Only an imposter would worry about the flower not growing.\"\n\n19 \"You tricked me!\" roared Prince One.\n\n20 Hartwig shook his head and said, \"Your own lie has tricked you.\"\n\n21 Prince One stomped off like an angry bull.\n\n22 Then King Bo turned toward Prince Two and said, \"We've found the true Prince Deming.\"\n\n23 \"I will try to be a good student, Your Majesty,\" Prince Deming said as he bowed before the king.",
+      "questions": [
+        {
+          "q": "True or False: Both young men gave the same answers about the North Forest.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "skill": "evidence"
+        },
+        {
+          "q": "True or False: Hartwig used magic to discover the imposter.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "skill": "evidence"
+        },
+        {
+          "q": "True or False: The real Prince Deming showed patience and honesty.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "skill": "character"
+        },
+        {
+          "q": "What was King Bo's main conflict in the story?",
+          "choices": [
+            "He didn't know how to plant seeds.",
+            "He couldn't decide which prince was real.",
+            "He was afraid of Hartwig's magic.",
+            "He wanted to build a new castle."
+          ],
+          "answer": 1,
+          "skill": "literary_elements"
+        },
+        {
+          "q": "How did Hartwig solve the problem?",
+          "choices": [
+            "He asked both princes to fight with swords.",
+            "He gave them a test with \"magic\" seeds.",
+            "He traveled to the North Forest himself.",
+            "He locked both men in the tower."
+          ],
+          "answer": 1,
+          "skill": "literary_elements"
+        },
+        {
+          "q": "What does Hartwig's plan show about his character?",
+          "choices": [
+            "He is lazy.",
+            "He is tricky but wise.",
+            "He is mean to both princes.",
+            "He believes in real magic."
+          ],
+          "answer": 1,
+          "skill": "character"
+        },
+        {
+          "q": "Why did the imposter prince plant a flower at night?",
+          "choices": [
+            "He wanted to fool Hartwig into believing he was the real prince.",
+            "He wanted to decorate the castle garden.",
+            "He was trying to be kind to the other prince.",
+            "He believed the soil was magic."
+          ],
+          "answer": 0,
+          "skill": "character"
+        },
+        {
+          "q": "What lesson does the story teach?",
+          "choices": [
+            "Lying and cheating will expose you in the end.",
+            "Magic is the best way to solve problems.",
+            "Kings should always trust strangers.",
+            "Growing flowers takes a long time."
+          ],
+          "answer": 0,
+          "skill": "theme"
+        },
+        {
+          "q": "Read the sentence from paragraph 10: \"The princes stared at Hartwig, <u>their eyes the size of dinner plates</u>.\" What does the underlined phrase suggest?",
+          "choices": [
+            "The princes are greedy.",
+            "The princes are amused.",
+            "The princes are puzzled.",
+            "The princes are frightened."
+          ],
+          "answer": 3,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "Why does Hartwig say, \"Your own lie has tricked you\"? Use a detail from the story.",
+          "type": "short",
+          "skill": "evidence",
+          "sampleAnswer": "Hartwig never used magic, so no flower should have grown. Prince One lied about being the prince and was so worried that he secretly planted a flower in the moonlight. That flower is what showed he was the imposter, so his own lie gave him away."
+        }
+      ]
+    },
+    {
+      "id": "hw_elias_discovery",
+      "title": "Elias's Discovery (Week 2 HW)",
+      "skills": [
+        "literary_elements",
+        "figurative_language",
+        "theme",
+        "character"
+      ],
+      "body": "Module 2 Week 2 homework passage (HW3). Paragraphs are numbered.\n\n1 Once upon a time, in a gray-colored city called Gearford, there was a man named Elias Thornfield. He loved making things that moved like they were alive. One day, he followed an old map to a mysterious hole in the forest filled with gadgets and secrets from inventors forgotten a long time ago.\n\n2 As Elias explored deeper into the pit, he suddenly discovered a unicorn unlike any he had ever seen before. This unicorn had a bronze coat with gears and metal on it. Its eyes sparkled like blue gems. His heart broke seeing how it had been abandoned and left to rust.\n\n3 Elias approached the unicorn cautiously, feeling amazed and a little scared. The unicorn looked at him with curious eyes and made a soft humming sound, a language made of gears and steam. Elias offered the unicorn a pocket watch as a gift. <u>When the unicorn took it, its quiet whirring of gears was a warm golden sunbeam of friendship.</u>\n\n4 Elias was now determined to bring the unicorn, whom he named the \"Mechanicorn,\" back to its former beauty. He visited the forest every day, polishing its metal coat and gemstone eyes and oiling and tightening its gears. When the Mechanicorn was ready, he brought it back to Gearford, where everyone was amazed by what Elias had found. It roamed the city streets, bringing happiness and excitement to everyone it encountered with its magical colorful glow.\n\n5 Elias Thornfield and the Mechanicorn became a legend in the city of Gearford. They showed that even in a noisy city full of smoky machines, there can still be magic. It reminded everyone that beauty and wonder can be found anywhere, even in unexpected places.",
+      "questions": [
+        {
+          "q": "True or False: Elias Thornfield lived in a colorful and bright city.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "skill": "evidence"
+        },
+        {
+          "q": "True or False: Elias felt only excitement and no fear when he first saw the unicorn.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "skill": "evidence"
+        },
+        {
+          "q": "True or False: Elias worked patiently every day to repair and care for the Mechanicorn.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "skill": "character"
+        },
+        {
+          "q": "When Elias first saw the unicorn, its eyes sparkled like ____.",
+          "choices": [
+            "gold coins",
+            "blue gems",
+            "a pocket watch",
+            "smoky machines"
+          ],
+          "answer": 1,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "Elias gave the unicorn a ____ as a gift, which showed his kindness.",
+          "choices": [
+            "map",
+            "bronze coat",
+            "pocket watch",
+            "can of oil"
+          ],
+          "answer": 2,
+          "skill": "evidence"
+        },
+        {
+          "q": "The Mechanicorn reminded the people of Gearford that beauty and wonder can be found ____.",
+          "choices": [
+            "only in forests",
+            "anywhere",
+            "only in old maps",
+            "nowhere in a city"
+          ],
+          "answer": 1,
+          "skill": "theme"
+        },
+        {
+          "q": "Which type of figurative language is the last sentence of paragraph 3 (\"its quiet whirring of gears was a warm golden sunbeam of friendship\")?",
+          "choices": [
+            "idiom",
+            "hyperbole",
+            "simile",
+            "metaphor"
+          ],
+          "answer": 3,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "What is the main conflict of the story?",
+          "choices": [
+            "Elias could not find his way back to Gearford.",
+            "Elias had to decide whether to help the abandoned unicorn or not.",
+            "The people of Gearford refused to believe in magic.",
+            "The unicorn was too dangerous to repair."
+          ],
+          "answer": 1,
+          "skill": "literary_elements"
+        },
+        {
+          "q": "What message do Elias and the Mechanicorn bring to Gearford at the end of the story?",
+          "choices": [
+            "Machines will always be stronger than people.",
+            "Magic can only exist in forests far away.",
+            "Beauty and wonder can be found anywhere, even in unexpected places.",
+            "Cities are too noisy for magic to exist."
+          ],
+          "answer": 2,
+          "skill": "theme"
+        },
+        {
+          "q": "Summarize \"Elias's Discovery\" in 3-4 sentences. Use Somebody, Wanted, But, So, Then.",
+          "type": "short",
+          "skill": "literary_elements",
+          "sampleAnswer": "Elias, an inventor in gray Gearford, found an abandoned mechanical unicorn in a hole in the forest. He wanted to bring it back to its former beauty, but it was rusty and its gears needed repair. So he visited the forest every day to polish, oil, and tighten it. Then he brought the Mechanicorn back to Gearford, where it amazed everyone and showed that beauty can be found anywhere."
+        }
+      ]
+    },
+    {
+      "id": "hw_whimsical_tales",
+      "title": "Whimsical Tales (Week 2 HW)",
+      "skills": [
+        "literary_elements",
+        "character"
+      ],
+      "body": "Module 2 Week 2 homework passage (HW3, Part B). Paragraphs are numbered.\n\n1 Miss Eleanor Finch sat in her small bookstore, \"Whimsical Tales,\" nestled in the heart of the busy city. Surrounded by the hum of traffic and the distant buzz of city life, her store was an oasis of calm and imagination. Most locals knew of Miss Finch's love for fantasy and her ability to recommend the perfect book for any mood.\n\n2 One winter afternoon, the city experienced a sudden snowstorm. Instead of panicking and complaining, Miss Finch decided to host an impromptu reading session for the children stuck in her store. \"Every snowflake tells a story,\" she said, \"just like every book on these shelves.\" The children listened in wonder, their afternoon transformed by the magic of stories and snow.",
+      "questions": [
+        {
+          "q": "How does the setting contribute to the plot?",
+          "choices": [
+            "The snowstorm pushes people away from the bookstore.",
+            "The city's buzz makes the bookstore a noisy place.",
+            "The bookstore offers calmness contrasting the city's hustle, making it special.",
+            "The heart of the city is known for fantasy books."
+          ],
+          "answer": 2,
+          "skill": "literary_elements"
+        },
+        {
+          "q": "Which character trait best describes Miss Eleanor Finch?",
+          "choices": [
+            "grumpy",
+            "imaginative",
+            "strict",
+            "forgetful"
+          ],
+          "answer": 1,
+          "skill": "character"
+        },
+        {
+          "q": "The text calls the store \"an oasis of calm.\" What does this metaphor mean?",
+          "choices": [
+            "The store is in the middle of a desert.",
+            "The store sells water and plants.",
+            "The store is a peaceful place surrounded by a busy, noisy city.",
+            "The store is closed during snowstorms."
+          ],
+          "answer": 2,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "How does Miss Finch react to the sudden snowstorm? What does this show about her?",
+          "type": "short",
+          "skill": "character",
+          "sampleAnswer": "Instead of panicking and complaining, she hosts a reading session for the children stuck in her store. This shows she is calm, kind, and imaginative, because she turns a problem into a magical afternoon of stories."
+        }
+      ]
+    },
+    {
+      "id": "hw_lila_treehouse",
+      "title": "Lila's Treehouse (Week 3 HW)",
+      "skills": [
+        "literary_elements",
+        "theme",
+        "figurative_language"
+      ],
+      "body": "Module 2 Week 3 homework passage (HW3). Paragraphs are numbered.\n\n1 Lila loved spending her summers at her grandmother's house, especially because of the enormous treehouse in the backyard. The treehouse was painted a deep shade of green and had wooden steps leading up to it. Every morning, Lila would rush up to read her books, often accompanied by the chirping of birds and the rustling of leaves.\n\n2 One day, while reading, a small squirrel dashed into the treehouse, obviously scared. Instead of shooing it away, Lila gently coaxed the squirrel closer with some nuts, creating a little bond. By the end of the summer, the squirrel, which she named Ricky, became her reading buddy, often curling up beside her as she lost herself in her stories.\n\n3 As the summer progressed, the treehouse became a hub of activity. Not only did Lila and Ricky spend time there, but the word spread, and other animals also began to visit. Birds would perch on the window ledges, singing their hearts out, while sometimes, a curious rabbit would peek through the entrance, its nose twitching. Lila made sure to keep a small stash of seeds and nuts for her visitors. The treehouse wasn't just a reading space anymore; it became a sanctuary for Lila and her woodland friends, a place of harmony and connection.",
+      "questions": [
+        {
+          "q": "True or False: The treehouse was only used for reading books.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "skill": "evidence"
+        },
+        {
+          "q": "True or False: Lila made friends with a squirrel named Ricky by feeding it nuts.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "skill": "evidence"
+        },
+        {
+          "q": "True or False: The story's central idea is that the treehouse was painted green and had wooden steps.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "skill": "theme"
+        },
+        {
+          "q": "The treehouse changed from a reading space to a ____ for Lila and her woodland friends.",
+          "choices": [
+            "playground",
+            "sanctuary",
+            "library",
+            "hiding place for nuts"
+          ],
+          "answer": 1,
+          "skill": "evidence"
+        },
+        {
+          "q": "Where is the main setting of the story?",
+          "choices": [
+            "Lila's school library",
+            "Her grandmother's backyard treehouse",
+            "A forest far from her house",
+            "A spaceship full of animals"
+          ],
+          "answer": 1,
+          "skill": "literary_elements"
+        },
+        {
+          "q": "What is the main conflict of the story?",
+          "choices": [
+            "Lila had to paint the treehouse before summer ended.",
+            "A scared squirrel entered the treehouse, and Lila had to decide whether to chase it away or befriend it.",
+            "The treehouse was too small for all of her books.",
+            "The rabbit wanted to be the king of the treehouse."
+          ],
+          "answer": 1,
+          "skill": "literary_elements"
+        },
+        {
+          "q": "What is the main plot of the story?",
+          "choices": [
+            "Lila spends her summer reading in the treehouse and gradually turns it into a place where animals feel welcome.",
+            "Lila only plays games with animals in the yard.",
+            "Lila's grandmother builds a new treehouse.",
+            "Ricky the squirrel takes over the treehouse as his own."
+          ],
+          "answer": 0,
+          "skill": "literary_elements"
+        },
+        {
+          "q": "What is the theme, or message, of the story?",
+          "choices": [
+            "Treehouses are fun places to climb.",
+            "Friendship and kindness can create harmony with nature.",
+            "Reading is more important than making friends.",
+            "Animals can talk if you listen carefully."
+          ],
+          "answer": 1,
+          "skill": "theme"
+        },
+        {
+          "q": "The birds \"sang their hearts out.\" What does this phrase mean?",
+          "choices": [
+            "The birds were very tired after singing.",
+            "The birds sang loudly and joyfully.",
+            "The birds sang only a little.",
+            "The birds lost their hearts while singing."
+          ],
+          "answer": 1,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "\"Its nose twitching\" is an example of...",
+          "choices": [
+            "hyperbole (exaggeration)",
+            "personification (giving animals human-like actions)",
+            "imagery (descriptive language appealing to the senses)",
+            "onomatopoeia (sound words)"
+          ],
+          "answer": 2,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "Write a 3-4 sentence summary of the story. Use First, Then, Finally.",
+          "type": "short",
+          "skill": "literary_elements",
+          "sampleAnswer": "First, Lila spent her summer reading in the treehouse at her grandmother's house. Then a scared squirrel ran in, and instead of shooing it away, she fed it nuts and it became her reading buddy, Ricky. Later, birds and a rabbit started visiting too. Finally, the treehouse was not just a reading space anymore; it became a sanctuary for Lila and her woodland friends."
+        }
+      ]
     }
   ]
 }
