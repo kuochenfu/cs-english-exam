@@ -1,16 +1,16 @@
 # cs-english-exam
 
-A small, static web app to help a Grade 5 student prepare for English tests. It holds several test sets: the spring 2026 Grade 4 midterm (HMH **Into Reading, Module 6**), Grade 5 Fall Quiz 1, and the current **Grade 5 Fall Midterm (Module 2, Weeks 1–3, 2026-11-05)**. The topic table below describes the original April set; each test's own counts are in `content/<exam-id>/`. No build step, no dependencies — just open it in a browser.
+A small, static web app to help a Grade 5 student prepare for English tests. It holds every test set so far: the spring 2026 Grade 4 midterm, May test, and final (HMH **Into Reading**, Modules 6–8), Grade 5 Fall Quiz 1, and the current **Grade 5 Fall Midterm (Module 2, Weeks 1–3, 2026-11-05)**, which opens first. The topic table below describes the current midterm; each test's own notes are in `content/<exam-id>/`. No build step, no dependencies — just open it in a browser.
 
 ## Topics
 
 | | Topic | What it does |
 |---|---|---|
-| 📖 | **Vocabulary** | 24 Module 6 words across 3 modes: word→definition, definition→word, and fill-in-the-blank |
-| 🔤 | **Phonics & Spelling** | TTS dictation for the 3 weekly spelling lists, plus drag-to-bin sort games for /k/·/ng/·/kw/, final /j/·/s/, and prefixes re-/un-/dis- |
-| ✏️ | **Grammar** | 20 multiple-choice items on modal verbs (My Next Grammar, Lesson 14) |
-| 📚 | **Reading** | Anchor charts + per-passage single-page scrollable quizzes |
-| 👂 | **Listening** | TTS-played dialogues with two voices, replay button on every question, and an MCQ quiz |
+| 📖 | **Vocabulary** | 26 illustrated Module 2 words in 6 modes (word→definition, definition→word, fill-in-the-blank, synonyms, antonyms, word forms), plus 4 illustrated worksheet sets from the teacher's review packet: definitions, two story clozes, and use-the-word |
+| 🔤 | **Phonics & Spelling** | TTS dictation for the 3 weekly lists (/ōō/·/yōō/, /ou/·/ô/·/oi/, /ôr/·/âr/·/är/), 7 drag-to-bin sort games, and 6 multiple-choice sets, including the review packet's circle-the-spelling and choose-the-sound pages |
+| ✏️ | **Grammar** | My Next Grammar Lessons 6–8 (present continuous, regular and irregular past) in 12 sets: textbook pages, homework, generated review, rewrites, and tense mix, with a quick guide |
+| 📚 | **Reading** | 10 illustrated anchor charts and 20 illustrated passages on one scrollable page each (220 questions, 11 skills), including a drama, figurative-language, and main-idea notes page from the review packet |
+| 👂 | **Listening** | 5 TTS-played dialogues with two voices, replay button on every question, and an MCQ quiz |
 
 Per-topic best scores are saved in `localStorage` by test id, so practice from different tests does not overwrite itself.
 
@@ -36,15 +36,19 @@ The voice picker on the dictation and listening screens auto-ranks Premium voice
 
 ```
 raw/        # original photos, grouped by source month
-content/    # markdown transcriptions of raw/ + reading anchor charts
+content/    # transcriptions of raw/, study plans, retros, image prompts (per exam)
 data/
   exams.json              # test picker metadata
-  exams/<exam-id>/*.json  # runtime JSON consumed by the app
-index.html  # shell
+  exams/<exam-id>/*.json  # runtime JSON consumed by the app (+ optional game.json)
+assets/     # fonts, badges, and per-exam WebP art (vocabulary, passages, anchor charts, packet)
+tests/      # dependency-free Node regression suite
+index.html  # shell (holds APP_VERSION)
 app.js      # everything (router, quiz engine, TTS layer)
 styles.css
+DESIGN.md   # design tokens and visual rules
 STUDY_GUIDE.md
 CLAUDE.md   # notes for working in this repo with Claude Code
+AGENTS.md   # the same notes for Codex and other agents (keep in sync)
 ```
 
 `raw/` is read-only source material. `content/*.md` are human-readable transcriptions. `data/exams/<exam-id>/*.json` is the runtime source of truth — edit those to add or change practice items. See [`CLAUDE.md`](CLAUDE.md) for architecture notes.
@@ -55,6 +59,10 @@ CLAUDE.md   # notes for working in this repo with Claude Code
 - **Vocab / spelling / grammar / listening**: edit the matching file under `data/exams/<exam-id>/`. Schemas are obvious from existing entries.
 - **Reading passage**: add an object to `data/exams/<exam-id>/reading.json` `passages[]`. Each question has a `skill` field that must match a key in the top-level `skills` map.
 - **Phonics sort game**: add a list to `data/exams/<exam-id>/spelling.json` with `sortGame: true` and a `groups` map of `groupName → [words]`.
+- **Multiple-choice spelling set**: add a list with `quiz: true`, an optional `intro`, and `items[{q, choices, answer}]`.
+- **Teacher vocabulary worksheet**: add a set to `vocabulary.json` `practiceSets[]` (`id`, `title`, `description`, `items[{q, choices, answer}]`).
+- **Pictures**: spelling quiz lists, vocabulary practice sets, and reading passages accept `image` + `imageAlt` (16:9 WebP).
+- After any JS, CSS, or data change, bump `APP_VERSION` in `index.html`.
 
 ## Navigation and releases
 
@@ -97,6 +105,6 @@ First independent answers, hints, corrections, and rechecks are reported separat
 
 ## Grade 5 Fall Midterm
 
-`2026-11-midterm` covers Module 2 Weeks 1–3 with 26 illustrated vocabulary words, 3 dictation lists with sort games and phonics quizzes, My Next Grammar Lessons 6–8 (textbook sets plus generated review), 5 reading passages with 10 illustrated anchor charts (7 focus skills with five worked examples each), and 5 listening dialogues.
+`2026-11-midterm` covers Module 2 Weeks 1–3; the topic table above lists its contents. The reading test uses unseen passages, so most of the 20 passages are original test-style practice alongside the teacher's homework passages. The teacher's homework (HW1–HW3) and the review packet photographed on 2026-11-03 are built in with the teacher's own wording. The packet's answer key and the student's errors are in [`review_packet.md`](content/2026-11-midterm/review_packet.md).
 
 It is the first test with its own `game.json`: four daily missions (reading, dictation/phonics, Lessons 6–8 grammar at 70%+, and a bonus that alternates vocabulary and listening) and ten Module 2 cat & fox badges. Rules and art notes: [`content/2026-11-midterm/game.md`](content/2026-11-midterm/game.md). Study plan and missing materials: [`study_plan.md`](content/2026-11-midterm/study_plan.md). Build retro: [`retro.md`](content/2026-11-midterm/retro.md). Visual design tokens: [`DESIGN.md`](DESIGN.md).

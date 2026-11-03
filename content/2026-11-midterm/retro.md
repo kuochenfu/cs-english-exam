@@ -55,7 +55,7 @@ Tests grew from 32 to 40, and every deploy passed them.
 6. **Keep the teacher's wording.** Teacher definitions and homework sentences go in verbatim. Weak teacher answer keys (Whimsical Q1, Elias Q8) stay as written, because the test follows the teacher.
 7. **Grade the photos too.** When teacher photos contain the student's answers, list the errors next to the answer key. That list is the most useful thing to review right before a test.
 8. **Check a tool's version before blaming the account.** When a CLI rejects every model, look at its version and how it was installed (npm vs. brew) first.
-9. **Docs drift.** `AGENTS.md` and parts of `README.md` still describe the April Grade 4 midterm. Update them when architecture or conventions change.
+9. **Docs drift.** `README.md` still described the April Grade 4 midterm, and the agent notes lacked worksheet sets and set images. All three were brought up to date on 2026-11-03. Update them when architecture or conventions change.
 
 ## Still open
 
