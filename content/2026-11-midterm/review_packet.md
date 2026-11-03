@@ -12,6 +12,10 @@ Photographed 2026-11-03, two days before the 2026-11-05 midterm. The pages are a
 | IMG_7235 bottom | Answer the question using the underlined word (panic, delirious, hesitate) | Vocabulary → *Answer Using the Word* (MCQ “which answer uses the word correctly”, plus five more packet words) |
 | IMG_7236–7237 | Notes with blanks: elements of drama, hyperbole, metaphor, onomatopoeia, idiom, main-idea strategies | Reading → *Review Packet — Drama, Figurative Language & Main Idea Notes* (`rp_drama_figurative_notes`, new skill `main_idea`) |
 
+## Illustrations
+
+Each of the seven sets has a 16:9 storybook illustration in `assets/2026-11-midterm/packet/` (1280×720 WebP, q86), made with Codex's built-in `image_gen` through `codex exec`, using the flying-bathtub passage art as the style reference. Prompts and alt text: `image-art/packet-prompts.json`. Vocabulary worksheet sets show the picture as a menu card; every set shows it as a banner above each question.
+
 ## Answer key
 
 **Circle the correct spelling:** 1 glue, 2 youth, 3 accuse, 4 cruise, 5 jewel, 6 avenue, 7 assume, 8 confuse, 9 route, 10 view, 11 launch, 12 choose, 13 sprawl, 14 avoid, 15 moist, 16 coward, 17 haunt, 18 awkward, 19 naughty, 20 saucer, 21 pounce, 22 poison, 23 glory, 24 torch, 25 aware, 26 aboard, 27 soar, 28 beware, 29 dairy, 30 ordeal, 31 pardon, 32 barely, 33 absorb, 34 stairway.

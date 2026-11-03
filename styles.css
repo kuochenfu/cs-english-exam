@@ -674,6 +674,19 @@ button.passage-card-button:hover {
   font-size: 0.9rem;
 }
 
+.set-banner {
+  display: block;
+  width: 100%;
+  max-width: 440px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 2px solid var(--border);
+  background: var(--paper);
+  margin: 4px auto 14px;
+}
+
 button.passage-review-button {
   width: 100%;
   margin: 0;

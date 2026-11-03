@@ -1584,7 +1584,9 @@
           ],
           "answer": 0
         }
-      ]
+      ],
+      "image": "assets/2026-11-midterm/packet/circle-spelling.webp",
+      "imageAlt": "A girl looks through a magnifying glass and circles the middle of three picture cards, with a glue bottle, a jewel, a cruise ship, a soaring eagle, a torch and a teacup floating around her."
     },
     {
       "id": "m2_packet_choose_sound",
@@ -1942,7 +1944,9 @@
           ],
           "answer": 1
         }
-      ]
+      ],
+      "image": "assets/2026-11-midterm/packet/choose-sound.webp",
+      "imageAlt": "Two children fit colored puzzle pieces into a wooden toy train while picture clouds show a soaring eagle, a sprawling cat, a moist chocolate cake, a pouncing kitten, people boarding a ship and a country road."
     }
   ]
 }

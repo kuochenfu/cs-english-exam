@@ -626,4 +626,11 @@ test('midterm review-packet spelling and reading sets are valid', () => {
   assert.deepEqual(lists.map(l => l.items.length), [34, 35]);
   const notes = midterm.reading.passages.find(p => p.id === 'rp_drama_figurative_notes');
   for (const q of notes.questions) assert.ok(midterm.reading.skills[q.skill], q.q);
+  for (const set of [...lists, ...midterm.vocabulary.practiceSets, notes]) {
+    assert.ok(set.image && fs.existsSync(set.image), set.id + ' image');
+    assert.ok(set.imageAlt, set.id + ' alt');
+  }
+  const h = midtermHarness();
+  h.run(`phonicsQuiz(data.spelling.lists.find(l => l.id === 'm2_packet_circle_spelling'))`);
+  assert.match(h.element('app').innerHTML, /class="set-banner" src="assets\/2026-11-midterm\/packet\/circle-spelling\.webp"/);
 });

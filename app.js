@@ -898,6 +898,10 @@ function runQuiz(topicId, title, items, getQ, options = {}) {
   step();
 }
 
+// Optional 16:9 illustration on a practice set or list (`image`, `imageAlt`), shown above each question.
+function setBanner(set) {
+  return set?.image ? `<img class="set-banner" src="${esc(set.image)}" alt="${esc(set.imageAlt || "")}" width="1280" height="720" decoding="async">` : "";
+}
 function shuffle(a) { for (let i=a.length-1;i>0;i--) { const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
 
 function emptyTopic(title) {
@@ -1181,7 +1185,7 @@ function vocabularyTopic(context = {}) {
   // mirror the teacher's worksheets (definition matching, story cloze, use-the-word).
   const packetSets = (data.vocabulary.practiceSets || []).filter(set => set.items?.length);
   const startSet = (set, items = set.items) => runQuiz(vocabKey(`set:${set.id}`), set.title, items, (it) => ({
-    prompt: it.q, choices: it.choices, answer: it.answer
+    prompt: it.q, choices: it.choices, answer: it.answer, extra: setBanner(set)
   }), {parents: vocabOptions("set").parents, itemId: it => it.q, itemLabel: it => it.q});
 
   renderContent(`
@@ -1202,14 +1206,20 @@ function vocabularyTopic(context = {}) {
       ${missedAnt ? `<button class="ghost" id="r5">Review Antonyms (${missedAnt})</button>` : ""}
       ${missedForm ? `<button class="ghost" id="r6">Review Word Forms (${missedForm})</button>` : ""}
       ${packetSets.length ? `<h3 class="section-label">Worksheet practice</h3>
-      <div class="practice-list">
+      <div class="passage-card-grid">
         ${packetSets.map((set, idx) => {
           const p = readProgress(vocabKey(`set:${set.id}`));
           const miss = missedCount(vocabKey(`set:${set.id}`));
-          return `<div class="practice-set">
-            <button data-vocab-set="${idx}">${esc(set.title)}${p ? ` · Best ${p.best}%` : ""}</button>
-            ${set.description ? `<div class="practice-desc">${esc(set.description)}</div>` : ""}
-            ${miss ? `<button class="ghost review-button" data-vocab-set-review="${idx}">Review missed (${miss})</button>` : ""}
+          return `<div class="passage-choice">
+            <button class="passage-card-button" data-vocab-set="${idx}">
+              ${set.image ? `<img src="${esc(set.image)}" alt="${esc(set.imageAlt || set.title)}" loading="lazy" decoding="async" width="640" height="360">` : `<span class="passage-card-fallback">📝</span>`}
+              <span class="passage-card-copy">
+                <span class="passage-card-title">${esc(set.title)}</span>
+                ${set.description ? `<span class="passage-card-meta">${esc(set.description)}</span>` : ""}
+                ${p ? `<span class="passage-card-meta">Best ${p.best}%</span>` : ""}
+              </span>
+            </button>
+            ${miss ? `<button class="ghost passage-review-button" data-vocab-set-review="${idx}">Review missed (${miss})</button>` : ""}
           </div>`;
         }).join("")}
       </div>` : ""}
@@ -1285,7 +1295,7 @@ function phonicsQuiz(list, reviewOnly = false) {
     prompt: it.q,
     choices: it.choices,
     answer: it.answer,
-    extra: list.intro ? `<p class="exam-label">${esc(list.intro)}</p>` : ""
+    extra: setBanner(list) + (list.intro ? `<p class="exam-label">${esc(list.intro)}</p>` : "")
   }), {
     progressId: list.practiceWeek ? `${topicId}:week${list.practiceWeek}` : topicId,
     itemId: it => it.q,

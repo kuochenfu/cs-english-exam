@@ -1,0 +1,73 @@
+{
+ "generator": "Codex built-in image_gen (codex exec)",
+ "generatedOn": "2026-11-03",
+ "export": {
+  "format": "WebP",
+  "size": [
+   1280,
+   720
+  ],
+  "quality": 86
+ },
+ "styleReferences": [
+  "assets/2026-10-quiz1/passages/the_flying_bathtub.jpg"
+ ],
+ "items": [
+  {
+   "id": "m2_packet_circle_spelling",
+   "kind": "spelling",
+   "image": "assets/2026-11-midterm/packet/circle-spelling.webp",
+   "imageAlt": "A girl looks through a magnifying glass and circles the middle of three picture cards, with a glue bottle, a jewel, a cruise ship, a soaring eagle, a torch and a teacup floating around her.",
+   "prompt": "Use case: illustration-story. Asset type: a landscape banner illustration and menu thumbnail for a Grade 5 English review worksheet. Create ONE finished 16:9 landscape image, 1536x864. Warm polished hand-painted children's storybook art with soft brush textures, believable anatomy, rich but gentle colors, expressive characters and thoughtful light. The attached image is a STYLE reference only; do not copy its flying bathtub, dog, characters or composition. Keep main faces and meaningful objects in the central 80% so it reads on a small 16:9 card; leave breathing room. ABSOLUTELY no letters, words, numbers, readable writing, labels, captions, answers, border, logo or watermark anywhere (cards, pages and signs must be blank or show only squiggles/pictures). Scene: A curious Grade 5 student, an East Asian girl with a ponytail, leans over a classroom desk holding a big magnifying glass over three paper cards laid in a row; she is circling the middle card with a red pencil while the other two cards look slightly wobbly. Around the desk float small pictures that match packet words: a glue bottle, a sparkling jewel, a cruise ship, an eagle soaring, a torch, a saucer with a teacup. Cosy sunny classroom.",
+   "status": "complete"
+  },
+  {
+   "id": "m2_packet_choose_sound",
+   "kind": "spelling",
+   "image": "assets/2026-11-midterm/packet/choose-sound.webp",
+   "imageAlt": "Two children fit colored puzzle pieces into a wooden toy train while picture clouds show a soaring eagle, a sprawling cat, a moist chocolate cake, a pouncing kitten, people boarding a ship and a country road.",
+   "prompt": "Use case: illustration-story. Asset type: a landscape banner illustration and menu thumbnail for a Grade 5 English review worksheet. Create ONE finished 16:9 landscape image, 1536x864. Warm polished hand-painted children's storybook art with soft brush textures, believable anatomy, rich but gentle colors, expressive characters and thoughtful light. The attached image is a STYLE reference only; do not copy its flying bathtub, dog, characters or composition. Keep main faces and meaningful objects in the central 80% so it reads on a small 16:9 card; leave breathing room. ABSOLUTELY no letters, words, numbers, readable writing, labels, captions, answers, border, logo or watermark anywhere (cards, pages and signs must be blank or show only squiggles/pictures). Scene: Playful scene of sound-building: a boy and a girl in a bright classroom fit colorful wooden puzzle pieces (blank, no letters) into gaps in a long wooden word-train. Picture vignettes of the sentences drift around them: an eagle soaring high, a cat sprawled on a sunny windowsill, a moist chocolate cake slice, a cat pouncing on a toy mouse, a ship with passengers walking aboard, a scenic countryside road.",
+   "status": "complete"
+  },
+  {
+   "id": "packet_definitions",
+   "kind": "vocab",
+   "image": "assets/2026-11-midterm/packet/definitions.webp",
+   "imageAlt": "In a library corner a boy yawns awake beside a restless puppy, a watchful owl, a judge presiding at a podium, an open gift box showing its contents and a cat with matted fur.",
+   "prompt": "Use case: illustration-story. Asset type: a landscape banner illustration and menu thumbnail for a Grade 5 English review worksheet. Create ONE finished 16:9 landscape image, 1536x864. Warm polished hand-painted children's storybook art with soft brush textures, believable anatomy, rich but gentle colors, expressive characters and thoughtful light. The attached image is a STYLE reference only; do not copy its flying bathtub, dog, characters or composition. Keep main faces and meaningful objects in the central 80% so it reads on a small 16:9 card; leave breathing room. ABSOLUTELY no letters, words, numbers, readable writing, labels, captions, answers, border, logo or watermark anywhere (cards, pages and signs must be blank or show only squiggles/pictures). Scene: Vocabulary word-match scene in a cosy library corner: a Grade 5 boy just awakening from a nap at a table stretches and yawns; nearby a restless puppy wriggles, a stray cat with matted fur, a watchful owl on a shelf, a judge-like teacher presiding at a small podium, a mysterious wrapped box with its contents peeking out, and a densely packed bookshelf. The scene feels like a friendly picture dictionary come to life, calm and warm.",
+   "status": "complete"
+  },
+  {
+   "id": "packet_story_shrine",
+   "kind": "vocab",
+   "image": "assets/2026-11-midterm/packet/ancient-shrine.webp",
+   "imageAlt": "A hooded young adventurer with a lantern steps toward the carved stone entrance of an ancient shrine in a dense jungle at dusk while a golden haze of music drifts out.",
+   "prompt": "Use case: illustration-story. Asset type: a landscape banner illustration and menu thumbnail for a Grade 5 English review worksheet. Create ONE finished 16:9 landscape image, 1536x864. Warm polished hand-painted children's storybook art with soft brush textures, believable anatomy, rich but gentle colors, expressive characters and thoughtful light. The attached image is a STYLE reference only; do not copy its flying bathtub, dog, characters or composition. Keep main faces and meaningful objects in the central 80% so it reads on a small 16:9 card; leave breathing room. ABSOLUTELY no letters, words, numbers, readable writing, labels, captions, answers, border, logo or watermark anywhere (cards, pages and signs must be blank or show only squiggles/pictures). Scene: A densely forested jungle at dusk. A mysterious hooded young adventurer with a lantern hesitates at the stone threshold of an ancient, forgotten shrine covered in moss and carved swirling symbols (abstract patterns only, not letters). A faint glowing musical haze drifts out of the dark entrance as if a haunting little song is echoing inside. Atmospheric, intriguing but not scary for children.",
+   "status": "complete"
+  },
+  {
+   "id": "packet_story_dog",
+   "kind": "vocab",
+   "image": "assets/2026-11-midterm/packet/mr-thompson-dog.webp",
+   "imageAlt": "A kind old man in a flat cap kneels in a sunny village park and gently reaches toward a stray dog with matted fur, with bowls of water and food beside him.",
+   "prompt": "Use case: illustration-story. Asset type: a landscape banner illustration and menu thumbnail for a Grade 5 English review worksheet. Create ONE finished 16:9 landscape image, 1536x864. Warm polished hand-painted children's storybook art with soft brush textures, believable anatomy, rich but gentle colors, expressive characters and thoughtful light. The attached image is a STYLE reference only; do not copy its flying bathtub, dog, characters or composition. Keep main faces and meaningful objects in the central 80% so it reads on a small 16:9 card; leave breathing room. ABSOLUTELY no letters, words, numbers, readable writing, labels, captions, answers, border, logo or watermark anywhere (cards, pages and signs must be blank or show only squiggles/pictures). Scene: A kind, watchful old man with a white beard, cardigan and flat cap kneels in a clean village park on a sunny morning, gently reaching out his hand to a restless stray dog with matted, messy fur. A bowl of water and some food sit beside him. Trees, a bench and a path; a few village residents smile in the distance. Gentle, compassionate mood.",
+   "status": "complete"
+  },
+  {
+   "id": "packet_use_the_word",
+   "kind": "vocab",
+   "image": "assets/2026-11-midterm/packet/use-the-word.webp",
+   "imageAlt": "A girl answers a question aloud in class while thought bubbles show a frightened child in the dark, a feverish child in bed and a child hesitating on a diving board; a teacher listens with a clipboard.",
+   "prompt": "Use case: illustration-story. Asset type: a landscape banner illustration and menu thumbnail for a Grade 5 English review worksheet. Create ONE finished 16:9 landscape image, 1536x864. Warm polished hand-painted children's storybook art with soft brush textures, believable anatomy, rich but gentle colors, expressive characters and thoughtful light. The attached image is a STYLE reference only; do not copy its flying bathtub, dog, characters or composition. Keep main faces and meaningful objects in the central 80% so it reads on a small 16:9 card; leave breathing room. ABSOLUTELY no letters, words, numbers, readable writing, labels, captions, answers, border, logo or watermark anywhere (cards, pages and signs must be blank or show only squiggles/pictures). Scene: A speaking-test moment in a bright classroom: a Grade 5 girl stands beside her desk answering a question aloud, one finger raised as she thinks, with three soft thought bubbles above her showing tiny pictures: a child in a panic as the lights go out, a sick child delirious in bed with a fever and swirling stars, and a child hesitating at the edge of a diving board. A friendly teacher listens with a clipboard (blank).",
+   "status": "complete"
+  },
+  {
+   "id": "rp_drama_figurative_notes",
+   "kind": "reading",
+   "image": "assets/2026-11-midterm/packet/drama-figurative.webp",
+   "imageAlt": "Two children act a play on a school stage, a hero with a lantern and a sneaky villain, surrounded by a boy with a giant feast, a clock in a thief's mask, cats and dogs floating down with umbrellas, a buzzing bee and a sizzling pan.",
+   "prompt": "Use case: illustration-story. Asset type: a landscape banner illustration and menu thumbnail for a Grade 5 English review worksheet. Create ONE finished 16:9 landscape image, 1536x864. Warm polished hand-painted children's storybook art with soft brush textures, believable anatomy, rich but gentle colors, expressive characters and thoughtful light. The attached image is a STYLE reference only; do not copy its flying bathtub, dog, characters or composition. Keep main faces and meaningful objects in the central 80% so it reads on a small 16:9 card; leave breathing room. ABSOLUTELY no letters, words, numbers, readable writing, labels, captions, answers, border, logo or watermark anywhere (cards, pages and signs must be blank or show only squiggles/pictures). Scene: A school stage with red curtains: two children act a play scene, one as the protagonist holding a lantern and one as a sneaky antagonist, with simple painted set scenery. Around the stage, playful figurative-language vignettes: a boy rubbing his belly beside a giant cartoon horse-sized plate (hyperbole), a clock wearing a little thief's mask sneaking away with a moment (metaphor), cats and dogs gently floating down with umbrellas from a rain cloud (idiom), and a buzzing bee and a sizzling frying pan (onomatopoeia).",
+   "status": "complete"
+  }
+ ]
+}

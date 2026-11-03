@@ -787,7 +787,9 @@
           ],
           "answer": 1
         }
-      ]
+      ],
+      "image": "assets/2026-11-midterm/packet/definitions.webp",
+      "imageAlt": "In a library corner a boy yawns awake beside a restless puppy, a watchful owl, a judge presiding at a podium, an open gift box showing its contents and a cat with matted fur."
     },
     {
       "id": "packet_story_shrine",
@@ -864,7 +866,9 @@
           ],
           "answer": 3
         }
-      ]
+      ],
+      "image": "assets/2026-11-midterm/packet/ancient-shrine.webp",
+      "imageAlt": "A hooded young adventurer with a lantern steps toward the carved stone entrance of an ancient shrine in a dense jungle at dusk while a golden haze of music drifts out."
     },
     {
       "id": "packet_story_dog",
@@ -981,7 +985,9 @@
           ],
           "answer": 3
         }
-      ]
+      ],
+      "image": "assets/2026-11-midterm/packet/mr-thompson-dog.webp",
+      "imageAlt": "A kind old man in a flat cap kneels in a sunny village park and gently reaches toward a stray dog with matted fur, with bowls of water and food beside him."
     },
     {
       "id": "packet_use_the_word",
@@ -1068,7 +1074,9 @@
           ],
           "answer": 1
         }
-      ]
+      ],
+      "image": "assets/2026-11-midterm/packet/use-the-word.webp",
+      "imageAlt": "A girl answers a question aloud in class while thought bubbles show a frightened child in the dark, a feverish child in bed and a child hesitating on a diving board; a teacher listens with a clipboard."
     }
   ]
 }
