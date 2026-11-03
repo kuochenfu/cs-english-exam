@@ -598,3 +598,32 @@ test('Spring in Bloom needs all missions finished on 3 different days', () => {
   assert.equal(h.badge('spring_bloom'), true);
   assert.equal(h.run('Object.keys(ensureExamGame().missionDays).length'), 3);
 });
+
+test('midterm vocabulary shows the review-packet worksheets and records misses per set', () => {
+  const h = midtermHarness();
+  h.run('vocabularyTopic()');
+  const sets = midterm.vocabulary.practiceSets;
+  assert.equal(h.buttons().filter(b => 'vocabSet' in b.dataset).length, sets.length);
+  for (const set of sets) for (const it of set.items) {
+    assert.equal(new Set(it.choices).size, it.choices.length, it.q);
+    assert.ok(it.answer >= 0 && it.answer < it.choices.length, it.q);
+  }
+  h.buttons().find(b => b.dataset.vocabSet === '0').onclick();
+  assert.equal(h.choices().length, 4);
+  const answer = h.run('currentScreen.title') === sets[0].title;
+  assert.ok(answer);
+  const html = h.element('app').innerHTML;
+  const item = sets[0].items.find(it => html.includes(it.q));
+  const wrong = h.choices().find(b => html.includes(`data-idx="${b.dataset.idx}"`) && +b.dataset.idx !== item.answer);
+  wrong.onclick();
+  assert.equal(h.run(`missedItems('vocab:set:${sets[0].id}').length`), 1);
+  h.run('vocabularyTopic()');
+  assert.ok(h.buttons().some(b => b.dataset.vocabSetReview === '0'));
+});
+
+test('midterm review-packet spelling and reading sets are valid', () => {
+  const lists = midterm.spelling.lists.filter(l => l.id.startsWith('m2_packet_'));
+  assert.deepEqual(lists.map(l => l.items.length), [34, 35]);
+  const notes = midterm.reading.passages.find(p => p.id === 'rp_drama_figurative_notes');
+  for (const q of notes.questions) assert.ok(midterm.reading.skills[q.skill], q.q);
+});

@@ -9,7 +9,8 @@
     "poetry": "Elements of Poetry",
     "drama": "Elements of Drama",
     "evidence": "Text Evidence",
-    "vocab_context": "Vocabulary in Context"
+    "vocab_context": "Vocabulary in Context",
+    "main_idea": "Main (Central) Idea"
   },
   "anchorChartsIntro": "Start with the seven Midterm focus skills. Each chart has a poster, a how-to guide, five worked examples, and a quick check. The supporting charts after them cover drama, text evidence, and vocabulary in context. These are original study guides that supplement your classroom charts.",
   "anchorCharts": [
@@ -2802,6 +2803,255 @@
       ],
       "image": "assets/2026-11-midterm/passages/note-almost-didnt-sing.webp",
       "imageAlt": "A nervous girl with round glasses begins her solo as Priya holds her hand and the choir teacher offers an encouraging cue."
+    },
+    {
+      "id": "rp_drama_figurative_notes",
+      "title": "Review Packet — Drama, Figurative Language & Main Idea Notes",
+      "skills": [
+        "drama",
+        "figurative_language",
+        "main_idea"
+      ],
+      "body": "Review packet notes. Fill in each numbered blank in your head, then answer the questions below.\n\n<b>Elements of Drama</b>\nDrama is a genre of literature and performing arts that involves the portrayal of fictional or real-life stories through the actions, dialogue, and emotions of characters. The elements of drama encompass various components that contribute to the overall structure and impact of a dramatic work.\n\n<b>Plot:</b> The plot is (1) ________ that make up the story. It typically consists of an introduction, rising action, (2) ________, falling action, and (3) ________. The plot is the framework upon which the rest of the elements are built.\n\n<b>Character:</b> Characters are the individuals who populate the story. They have distinct (4) ________, motivations, and roles within the narrative. Characters are often categorized as protagonists (main characters) and antagonists (opposing characters), but there can be a range of supporting characters as well.\n\n<b>Setting:</b> The setting refers to (5) ________ in which the story unfolds. It can include physical locations, historical context, and the overall environment that influences the (6) ________.\n\n<b>Theme:</b> The theme is (7) ________ of the drama. It often explores universal human experiences, values, or societal issues. Themes can be explicit or implicit and may be open to interpretation.\n\n<b>Dialogue:</b> Dialogue is (8) ________ between characters. It is a primary tool for revealing character traits, advancing the plot, and conveying emotions and conflicts.\n\n<b>Conflict:</b> Conflict is a central element in drama. It can take various forms, such as internal conflicts within characters (emotional or moral dilemmas) or external conflicts between characters (often involving opposing goals or values). Conflict drives the plot and creates (9) ________.\n\n<b>Figurative Language</b>\n<b>Hyperbole</b> is a figure of speech characterized by (10) ________. It is used to create emphasis, evoke strong emotions, or make a point more vividly, often by describing something as larger, smaller, more intense, or more extreme than it actually is. For example, saying \"I'm so hungry I could eat a horse\" is a hyperbolic way to express extreme hunger.\n\n<b>A metaphor</b> is a figure of speech that makes a direct comparison between two unrelated or dissimilar things by asserting that one thing is another. Unlike a simile, which uses \"like\" or \"as\" to make a comparison, a metaphor asserts the comparison directly. For instance, \"Time is a thief\" is a metaphor, suggesting that time steals moments from our lives.\n\n<b>Onomatopoeia</b> is a figure of speech in which words imitate or resemble the sounds they describe. Examples of onomatopoeic words include \"buzz,\" \"sizzle,\" \"meow,\" and \"whisper.\"\n\n<b>An idiom</b> is a phrase or expression whose meaning is not deducible from the individual words it contains. For example, \"it's raining cats and dogs\" is an idiom, meaning it's raining heavily, not that animals are falling from the sky.\n\n<b>Main (Central) Idea</b>\nThe main idea is the central point or the most important message the author wants to convey. To identify it, you can follow these strategies:\n(11) ________: In many academic and informational texts, the central idea is often presented in the thesis statement, which is usually found in the introduction.\n(12) ________: Each paragraph may have its own central idea or topic sentence that contributes to the overall central idea. Topic sentences are typically found at the beginning of paragraphs.\n(13) ________: The central idea may also be summarized or restated in the concluding paragraph.\n(14) ________: Throughout the passage, key words or phrases related to the central idea may be repeated or emphasized.",
+      "questions": [
+        {
+          "q": "Blank (1): The plot is ________ that make up the story.",
+          "choices": [
+            "the central message",
+            "the conversation between characters",
+            "the sequence of events",
+            "the time and place"
+          ],
+          "answer": 2,
+          "skill": "drama"
+        },
+        {
+          "q": "Blanks (2) and (3): introduction, rising action, ____, falling action, and ____.",
+          "choices": [
+            "resolution; climax",
+            "conflict; theme",
+            "setting; dialogue",
+            "climax; resolution"
+          ],
+          "answer": 3,
+          "skill": "drama"
+        },
+        {
+          "q": "Blank (4): Characters have distinct ________, motivations, and roles.",
+          "choices": [
+            "plots",
+            "stage directions",
+            "settings",
+            "personalities (traits)"
+          ],
+          "answer": 3,
+          "skill": "drama"
+        },
+        {
+          "q": "Blank (5): The setting refers to ________ in which the story unfolds.",
+          "choices": [
+            "the main problem",
+            "the list of characters",
+            "the lesson of the story",
+            "the time and place"
+          ],
+          "answer": 3,
+          "skill": "drama"
+        },
+        {
+          "q": "Blank (6): ...the overall environment that influences the ________.",
+          "choices": [
+            "characters and events of the story",
+            "author's purpose",
+            "sound effects only",
+            "title of the play"
+          ],
+          "answer": 0,
+          "skill": "drama"
+        },
+        {
+          "q": "Blank (7): The theme is ________ of the drama.",
+          "choices": [
+            "the most exciting moment",
+            "the place where it happens",
+            "the opening scene",
+            "the central message or lesson"
+          ],
+          "answer": 3,
+          "skill": "theme"
+        },
+        {
+          "q": "Blank (8): Dialogue is ________ between characters.",
+          "choices": [
+            "the stage directions",
+            "the change in setting",
+            "the fight",
+            "the conversation (spoken words)"
+          ],
+          "answer": 3,
+          "skill": "drama"
+        },
+        {
+          "q": "Blank (9): Conflict drives the plot and creates ________.",
+          "choices": [
+            "a happy ending every time",
+            "tension and suspense",
+            "the cast of characters",
+            "rhyme and rhythm"
+          ],
+          "answer": 1,
+          "skill": "drama"
+        },
+        {
+          "q": "Blank (10): Hyperbole is a figure of speech characterized by ________.",
+          "choices": [
+            "comparing with like or as",
+            "giving human traits to objects",
+            "extreme exaggeration",
+            "words that copy sounds"
+          ],
+          "answer": 2,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "Blank (11): The central idea is often in the thesis statement, usually found in the introduction. Strategy name:",
+          "choices": [
+            "Read the introduction (find the thesis statement)",
+            "Look at each paragraph's topic sentence",
+            "Look for repeated key words",
+            "Read the conclusion"
+          ],
+          "answer": 0,
+          "skill": "main_idea"
+        },
+        {
+          "q": "Blank (12): Each paragraph may have its own central idea at its beginning. Strategy name:",
+          "choices": [
+            "Look for repeated key words",
+            "Look at the topic sentence of each paragraph",
+            "Read the conclusion",
+            "Read the introduction (find the thesis statement)"
+          ],
+          "answer": 1,
+          "skill": "main_idea"
+        },
+        {
+          "q": "Blank (13): The central idea may be summarized or restated at the end. Strategy name:",
+          "choices": [
+            "Read the conclusion",
+            "Read the introduction (find the thesis statement)",
+            "Look at the topic sentence of each paragraph",
+            "Look for repeated key words"
+          ],
+          "answer": 0,
+          "skill": "main_idea"
+        },
+        {
+          "q": "Blank (14): Key words or phrases are repeated or emphasized throughout. Strategy name:",
+          "choices": [
+            "Read the conclusion",
+            "Look at the pictures only",
+            "Count the paragraphs",
+            "Look for repeated key words and phrases"
+          ],
+          "answer": 3,
+          "skill": "main_idea"
+        },
+        {
+          "q": "In a play, the character who works against the main character is the ________.",
+          "choices": [
+            "protagonist",
+            "supporting character",
+            "narrator",
+            "antagonist"
+          ],
+          "answer": 3,
+          "skill": "drama"
+        },
+        {
+          "q": "Mia cannot decide whether to tell the truth or protect her best friend. What kind of conflict is this?",
+          "choices": [
+            "internal conflict (a moral dilemma inside a character)",
+            "no conflict",
+            "external conflict between two characters",
+            "a conflict with the setting"
+          ],
+          "answer": 0,
+          "skill": "drama"
+        },
+        {
+          "q": "Which sentence is a <b>hyperbole</b>?",
+          "choices": [
+            "My backpack groaned when I dropped it.",
+            "My backpack is blue with a red zipper.",
+            "My backpack weighs a thousand tons today.",
+            "My backpack is as heavy as a bag of rocks."
+          ],
+          "answer": 2,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "Which sentence is a <b>metaphor</b>, not a simile?",
+          "choices": [
+            "The class visited the zoo after lunch.",
+            "The classroom was as loud as a zoo.",
+            "The classroom was like a zoo after lunch.",
+            "The classroom was a zoo after lunch."
+          ],
+          "answer": 3,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "Which sentence uses <b>onomatopoeia</b>?",
+          "choices": [
+            "The bacon was a crispy treasure.",
+            "I could eat a mountain of bacon.",
+            "The bacon smelled as good as a bakery.",
+            "The bacon sizzled in the pan."
+          ],
+          "answer": 3,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "\"Don't worry, the test was <b>a piece of cake</b>.\" What does the idiom mean?",
+          "choices": [
+            "It was very easy.",
+            "It was sweet and delicious.",
+            "It was about baking.",
+            "It was only one part of a test."
+          ],
+          "answer": 0,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "Why is \"it's raining cats and dogs\" an idiom?",
+          "choices": [
+            "Its meaning (raining heavily) cannot be worked out from the individual words.",
+            "It imitates the sound of rain.",
+            "It uses like or as to compare two things.",
+            "It is a real event where animals fall from the sky."
+          ],
+          "answer": 0,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "\"Time is a thief.\" What does this metaphor suggest?",
+          "choices": [
+            "Someone stole a clock.",
+            "Clocks are expensive.",
+            "Time is a person who commits crimes.",
+            "Time quietly takes moments from our lives."
+          ],
+          "answer": 3,
+          "skill": "figurative_language"
+        },
+        {
+          "q": "Write your own hyperbole about being tired, then explain what it really means.",
+          "skill": "figurative_language",
+          "type": "short",
+          "sampleAnswer": "\"I'm so tired I could sleep for a hundred years.\" It really means I am very, very tired and want to sleep a long time."
+        }
+      ]
     }
   ]
 }

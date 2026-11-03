@@ -1271,6 +1271,678 @@
           "answer": 1
         }
       ]
+    },
+    {
+      "id": "m2_packet_circle_spelling",
+      "title": "Review Packet — Circle the Correctly Spelled Word",
+      "quiz": true,
+      "intro": "Circle the correctly spelled word for each question.",
+      "items": [
+        {
+          "q": "1. Which word is spelled correctly?",
+          "choices": [
+            "gloo",
+            "gleu",
+            "glue"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "2. Which word is spelled correctly?",
+          "choices": [
+            "youth",
+            "yooth",
+            "yewth"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "3. Which word is spelled correctly?",
+          "choices": [
+            "acjewse",
+            "accuse",
+            "akkewse"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "4. Which word is spelled correctly?",
+          "choices": [
+            "cruise",
+            "crewce",
+            "croose"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "5. Which word is spelled correctly?",
+          "choices": [
+            "jowel",
+            "jewel",
+            "juwel"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "6. Which word is spelled correctly?",
+          "choices": [
+            "avanew",
+            "annanue",
+            "avenue"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "7. Which word is spelled correctly?",
+          "choices": [
+            "aschumi",
+            "ashume",
+            "assume"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "8. Which word is spelled correctly?",
+          "choices": [
+            "confjuce",
+            "confuse",
+            "confucius"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "9. Which word is spelled correctly?",
+          "choices": [
+            "route",
+            "ruote",
+            "roote"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "10. Which word is spelled correctly?",
+          "choices": [
+            "veiw",
+            "vjew",
+            "view"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "11. Which word is spelled correctly?",
+          "choices": [
+            "lounch",
+            "launch",
+            "launsh"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "12. Which word is spelled correctly?",
+          "choices": [
+            "chewse",
+            "cheuse",
+            "choose"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "13. Which word is spelled correctly?",
+          "choices": [
+            "sprawl",
+            "spraol",
+            "spawrl"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "14. Which word is spelled correctly?",
+          "choices": [
+            "aviod",
+            "avoid",
+            "avrild"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "15. Which word is spelled correctly?",
+          "choices": [
+            "mioste",
+            "moiste",
+            "moist"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "16. Which word is spelled correctly?",
+          "choices": [
+            "coward",
+            "crwded",
+            "cauword"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "17. Which word is spelled correctly?",
+          "choices": [
+            "huant",
+            "hount",
+            "haunt"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "18. Which word is spelled correctly?",
+          "choices": [
+            "aukword",
+            "awkward",
+            "awkword"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "19. Which word is spelled correctly?",
+          "choices": [
+            "nawghty",
+            "nowghty",
+            "naughty"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "20. Which word is spelled correctly?",
+          "choices": [
+            "saucer",
+            "suacer",
+            "causer"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "21. Which word is spelled correctly?",
+          "choices": [
+            "pouwce",
+            "pounce",
+            "pawnse"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "22. Which word is spelled correctly?",
+          "choices": [
+            "poysen",
+            "poison",
+            "piosun"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "23. Which word is spelled correctly?",
+          "choices": [
+            "glory",
+            "glery",
+            "glury"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "24. Which word is spelled correctly?",
+          "choices": [
+            "turch",
+            "torch",
+            "terch"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "25. Which word is spelled correctly?",
+          "choices": [
+            "awaire",
+            "awair",
+            "aware"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "26. Which word is spelled correctly?",
+          "choices": [
+            "abored",
+            "aboard",
+            "abaord"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "27. Which word is spelled correctly?",
+          "choices": [
+            "soar",
+            "saor",
+            "soare"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "28. Which word is spelled correctly?",
+          "choices": [
+            "bewear",
+            "bewere",
+            "beware"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "29. Which word is spelled correctly?",
+          "choices": [
+            "dairy",
+            "daery",
+            "diray"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "30. Which word is spelled correctly?",
+          "choices": [
+            "odreal",
+            "ordeal",
+            "ordael"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "31. Which word is spelled correctly?",
+          "choices": [
+            "parden",
+            "pardon",
+            "parton"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "32. Which word is spelled correctly?",
+          "choices": [
+            "bearly",
+            "baerly",
+            "barely"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "33. Which word is spelled correctly?",
+          "choices": [
+            "absrob",
+            "absurb",
+            "absorb"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "34. Which word is spelled correctly?",
+          "choices": [
+            "stairway",
+            "staerway",
+            "stiarway"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "m2_packet_choose_sound",
+      "title": "Review Packet — Choose the Sound to Complete the Word",
+      "quiz": true,
+      "intro": "Choose the correct sound to complete the word. Sound bank: ar, ue, ou, u_e, ew, ui, aw, oo, au, oi, ow, air, are, or, oar. A sound can be used more than once.",
+      "items": [
+        {
+          "q": "1. The athlete basked in the gl<b>___</b>y of winning the gold medal.",
+          "choices": [
+            "air",
+            "ar",
+            "oar",
+            "or"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "2. I need to buy some d<b>___</b>y products like milk and cheese from the store.",
+          "choices": [
+            "are",
+            "or",
+            "air",
+            "oar"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "3. The eagle can s<b>___</b> high in the sky with its powerful wings.",
+          "choices": [
+            "or",
+            "ar",
+            "oar",
+            "are"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "4. I climbed the st<b>___</b>way to reach the top floor of the building.",
+          "choices": [
+            "ar",
+            "air",
+            "are",
+            "oar"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "5. The cat likes to spr<b>___</b>l out on the sunny windowsill.",
+          "choices": [
+            "ou",
+            "au",
+            "ow",
+            "aw"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "6. The cake was so m<b>___</b>st and delicious; I couldn't resist another slice.",
+          "choices": [
+            "au",
+            "ow",
+            "aw",
+            "oi"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "7. She placed the teacup on the s<b>___</b>cer to catch any drips.",
+          "choices": [
+            "oi",
+            "aw",
+            "au",
+            "ow"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "8. The old painting was sold at the <b>___</b>ction for a high price.",
+          "choices": [
+            "au",
+            "aw",
+            "oi",
+            "ow"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "9. I need to use gl<b>___</b> to fix this broken toy.",
+          "choices": [
+            "ou",
+            "ue",
+            "ew",
+            "oo"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "10. You can ch<b>___</b>se between pizza or pasta for dinner tonight.",
+          "choices": [
+            "oo",
+            "u_e",
+            "ui",
+            "ue"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "11. We went on a relaxing cr<b>___</b>se to a tropical island.",
+          "choices": [
+            "ew",
+            "ui",
+            "u_e",
+            "ou"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "12. Don't ass<b>_</b>m<b>_</b> things without asking for more information.",
+          "choices": [
+            "u_e",
+            "ue",
+            "ew",
+            "oo"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "13. In our y<b>___</b>th, we often have many dreams and ambitions.",
+          "choices": [
+            "ew",
+            "ue",
+            "oo",
+            "ou"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "14. Be c<b>___</b>ful not to lose your keys; it can be frustrating to find them.",
+          "choices": [
+            "ar",
+            "air",
+            "or",
+            "are"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "15. The sparkling j<b>___</b>el in her necklace caught everyone's attention.",
+          "choices": [
+            "oo",
+            "ue",
+            "ew",
+            "ui"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "16. I am aw<b>___</b> of the importance of recycling to protect the environment.",
+          "choices": [
+            "oar",
+            "air",
+            "are",
+            "or"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "17. I had to p<b>___</b>don my friend for accidentally breaking my favorite mug.",
+          "choices": [
+            "ar",
+            "air",
+            "oar",
+            "or"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "18. He used a t<b>___</b>ch to find his way through the dark cave.",
+          "choices": [
+            "or",
+            "oar",
+            "ar",
+            "air"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "19. Plants abs<b>___</b>b water and sunlight to grow.",
+          "choices": [
+            "or",
+            "are",
+            "oar",
+            "air"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "20. They plan to l<b>___</b>nch a new product next month.",
+          "choices": [
+            "aw",
+            "ow",
+            "au",
+            "oi"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "21. The ghostly sounds in the old house h<b>___</b>nt my dreams.",
+          "choices": [
+            "au",
+            "oi",
+            "aw",
+            "ow"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "22. The cat likes to p<b>___</b>nce on its toy mouse during playtime.",
+          "choices": [
+            "ou",
+            "ow",
+            "oi",
+            "au"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "23. Be careful not to touch any p<b>___</b>son ivy; it can cause a rash.",
+          "choices": [
+            "oi",
+            "ow",
+            "aw",
+            "ou"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "24. It was an <b>___</b>kward moment when I tripped in front of everyone.",
+          "choices": [
+            "ou",
+            "ow",
+            "au",
+            "aw"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "25. To stay safe, it's important to av<b>___</b>d walking on thin ice.",
+          "choices": [
+            "ou",
+            "oi",
+            "ow",
+            "au"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "26. The n<b>___</b>ghty child drew on the walls with crayons.",
+          "choices": [
+            "aw",
+            "oi",
+            "ou",
+            "au"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "27. The cow<b>___</b>d ran away from the scary noise in the dark forest.",
+          "choices": [
+            "air",
+            "are",
+            "oar",
+            "ar"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "28. We were excited to be ab<b>___</b>d the ship for our vacation.",
+          "choices": [
+            "oar",
+            "or",
+            "are",
+            "air"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "29. Surviving the storm at sea was a frightening <b>___</b>deal.",
+          "choices": [
+            "or",
+            "are",
+            "ar",
+            "oar"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "30. I b<b>___</b>ly had time to finish my homework before dinner.",
+          "choices": [
+            "or",
+            "oar",
+            "are",
+            "air"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "31. Bew<b>___</b> of the dog; it may bark if you get too close.",
+          "choices": [
+            "or",
+            "air",
+            "oar",
+            "are"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "32. He didn't want to acc<b>_</b>s<b>_</b> his friend of taking his toy without proof.",
+          "choices": [
+            "oo",
+            "ui",
+            "ou",
+            "u_e"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "33. The mountain offered a breathtaking vi<b>___</b> of the valley below.",
+          "choices": [
+            "ew",
+            "ue",
+            "oo",
+            "u_e"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "34. The complex directions can conf<b>_</b>s<b>_</b> anyone trying to find the right path.",
+          "choices": [
+            "ui",
+            "ue",
+            "u_e",
+            "oo"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "35. We took a scenic r<b>___</b>te through the countryside on our road trip.",
+          "choices": [
+            "ew",
+            "ou",
+            "u_e",
+            "ui"
+          ],
+          "answer": 1
+        }
+      ]
     }
   ]
 }

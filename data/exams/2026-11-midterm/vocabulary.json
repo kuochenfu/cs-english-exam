@@ -620,5 +620,455 @@
       "image": "assets/2026-11-midterm/vocabulary/ditty.webp",
       "imageAlt": "Two children sing a short cheerful tune with a ukulele."
     }
+  ],
+  "practiceSets": [
+    {
+      "id": "packet_definitions",
+      "title": "Review Packet — Write the Word for Each Definition",
+      "description": "The packet's 16 definitions. Two word banks of eight; each word is used once.",
+      "items": [
+        {
+          "q": "1. Which word means: <i>\"Becoming conscious or aware, often from sleep or realization.\"</i>",
+          "choices": [
+            "panic",
+            "matted",
+            "awakening",
+            "deficiency"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "2. Which word means: <i>\"In constant movement or unease, unable to relax.\"</i>",
+          "choices": [
+            "awakening",
+            "restless",
+            "matted",
+            "watchful"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "3. Which word means: <i>\"Tangled, entwined, or densely compacted.\"</i>",
+          "choices": [
+            "deficiency",
+            "matted",
+            "favorable",
+            "watchful"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "4. Which word means: <i>\"Sudden, overwhelming fear or anxiety leading to loss of control.\"</i>",
+          "choices": [
+            "favorable",
+            "panic",
+            "restless",
+            "deficiency"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "5. Which word means: <i>\"Alert and paying close attention, always on the lookout for danger.\"</i>",
+          "choices": [
+            "restrain",
+            "watchful",
+            "awakening",
+            "panic"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "6. Which word means: <i>\"A lack or insufficiency of a required element.\"</i>",
+          "choices": [
+            "awakening",
+            "favorable",
+            "panic",
+            "deficiency"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "7. Which word means: <i>\"Beneficial or advantageous in a specific context.\"</i>",
+          "choices": [
+            "awakening",
+            "panic",
+            "matted",
+            "favorable"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "8. Which word means: <i>\"To hold back or limit actions or impulses.\"</i>",
+          "choices": [
+            "watchful",
+            "favorable",
+            "restrain",
+            "panic"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "9. Which word means: <i>\"To briefly pause or delay in taking action due to uncertainty or doubt.\"</i>",
+          "choices": [
+            "presiding",
+            "hesitate",
+            "reasonable",
+            "mysterious"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "10. Which word means: <i>\"Logical and fair, based on sound judgment or common sense.\"</i>",
+          "choices": [
+            "seized",
+            "reasonable",
+            "contents",
+            "delirious"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "11. Which word means: <i>\"The items or material contained within a box or a book.\"</i>",
+          "choices": [
+            "hesitate",
+            "delirious",
+            "contents",
+            "mysterious"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "12. Which word means: <i>\"Difficult to understand or explain, often involving unknown factors.\"</i>",
+          "choices": [
+            "seized",
+            "contents",
+            "presiding",
+            "mysterious"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "13. Which word means: <i>\"In a state of mental confusion, often due to illness or extreme emotion.\"</i>",
+          "choices": [
+            "delirious",
+            "reasonable",
+            "seized",
+            "presiding"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "14. Which word means: <i>\"Occupying a position of authority or control in a formal or official capacity.\"</i>",
+          "choices": [
+            "reasonable",
+            "contents",
+            "presiding",
+            "densely"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "15. Which word means: <i>\"Closely packed or concentrated, with little space between elements.\"</i>",
+          "choices": [
+            "mysterious",
+            "delirious",
+            "densely",
+            "hesitate"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "16. Which word means: <i>\"To take hold of something suddenly or forcibly, often with determination.\"</i>",
+          "choices": [
+            "densely",
+            "seized",
+            "hesitate",
+            "delirious"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "packet_story_shrine",
+      "title": "Review Packet — Story: The Ancient Shrine",
+      "description": "Choose the word that completes each blank in the shrine story. Bank: attempted, scrawled, ditty, deficiency, densely, mysterious, hesitate(d), reasonable.",
+      "items": [
+        {
+          "q": "Blank 1: Once upon a time in a ____ forested area, a mysterious figure attempted to unravel the secrets of an ancient, forgotten shrine.",
+          "choices": [
+            "mysterious",
+            "hesitated",
+            "densely",
+            "ditty"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Blank 2: Once upon a time in a densely forested area, a ____ figure attempted to unravel the secrets of an ancient, forgotten shrine.",
+          "choices": [
+            "attempted",
+            "reasonable",
+            "mysterious",
+            "scrawled"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Blank 3: ...a mysterious figure ____ to unravel the secrets of an ancient, forgotten shrine.",
+          "choices": [
+            "attempted",
+            "reasonable",
+            "hesitated",
+            "ditty"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Blank 4: With a ____ sense of caution, the adventurer hesitated before crossing the threshold.",
+          "choices": [
+            "hesitated",
+            "reasonable",
+            "deficiency",
+            "ditty"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Blank 5: With a reasonable sense of caution, the adventurer ____ before crossing the threshold, knowing that there might be a deficiency of information about what lay inside.",
+          "choices": [
+            "densely",
+            "attempted",
+            "hesitated",
+            "deficiency"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Blank 6: ...knowing that there might be a ____ of information about what lay inside.",
+          "choices": [
+            "densely",
+            "scrawled",
+            "deficiency",
+            "mysterious"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Blank 7: As they ventured deeper into the shrine, a haunting ____ echoed through the chambers, growing louder with each step. The source of the eerie melody remained a mystery.",
+          "choices": [
+            "densely",
+            "mysterious",
+            "scrawled",
+            "ditty"
+          ],
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "packet_story_dog",
+      "title": "Review Packet — Story: Mr. Thompson and the Stray Dog",
+      "description": "Choose the word for each blank. matted, favorable, and restless are each used twice.",
+      "items": [
+        {
+          "q": "Blank 1: In a quiet village, there was a kind and ____ old man named Mr. Thompson.",
+          "choices": [
+            "restrain",
+            "witness",
+            "restless",
+            "watchful"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Blank 2: He was always ____ over the park, making sure it was clean and safe for everyone.",
+          "choices": [
+            "presiding",
+            "watchful",
+            "favorable",
+            "restrain"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Blank 3: One sunny morning, he was taking a stroll when he became a ____ to a rather unusual scene.",
+          "choices": [
+            "presiding",
+            "witness",
+            "restless",
+            "delirious"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Blank 4: In the middle of the park, he spotted a stray dog with its fur all ____ and messy.",
+          "choices": [
+            "restrain",
+            "witness",
+            "matted",
+            "presiding"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Blank 5: The poor dog seemed ____ and was running around in a delirious manner.",
+          "choices": [
+            "presiding",
+            "restless",
+            "matted",
+            "witness"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Blank 6: The poor dog seemed restless and was running around in a ____ manner.",
+          "choices": [
+            "witness",
+            "restless",
+            "restrain",
+            "delirious"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Blank 7: With a ____ and compassionate heart, he decided to act.",
+          "choices": [
+            "presiding",
+            "witness",
+            "watchful",
+            "favorable"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Blank 8: He approached the dog carefully, trying to ____ his fear, and then gently reached out his hand.",
+          "choices": [
+            "favorable",
+            "restless",
+            "delirious",
+            "restrain"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Blank 9: Together, they formed a special bond. The dog's ____ energy began to subside.",
+          "choices": [
+            "restless",
+            "restrain",
+            "presiding",
+            "watchful"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Blank 10: ...and its ____ fur looked better after some care and attention.",
+          "choices": [
+            "restrain",
+            "restless",
+            "watchful",
+            "matted"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Blank 11: The park became an even more ____ place for all, thanks to Mr. Thompson's kindness.",
+          "choices": [
+            "watchful",
+            "presiding",
+            "restless",
+            "favorable"
+          ],
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "packet_use_the_word",
+      "title": "Review Packet — Answer Using the Word",
+      "description": "Pick the answer that uses the underlined word correctly. Then say or write your own answer with the word.",
+      "items": [
+        {
+          "q": "Have you ever experienced a moment of intense <u>panic</u> that you can vividly recall?<br><small class=\"exam-label\">Which answer uses <b>panic</b> correctly?</small>",
+          "choices": [
+            "My panic was a small bag that I carried to school.",
+            "When the lights went out in the crowded mall, I felt a wave of panic and could not think where the exit was.",
+            "We panic the cookies before we put them in the oven.",
+            "I felt panic, so I calmly finished my puzzle and took a nap."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "When was the last time you felt <u>delirious</u> and started saying things that didn't make any sense?<br><small class=\"exam-label\">Which answer uses <b>delirious</b> correctly?</small>",
+          "choices": [
+            "I was delirious when I carefully checked every answer on my test.",
+            "I felt delirious because I had a good night's sleep and a healthy breakfast.",
+            "When I had a very high fever last winter, I was so delirious that I asked my mom why the ceiling was singing.",
+            "My sister delirious the plates after dinner."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Why did you <u>hesitate</u> to answer the question during the speaking test?<br><small class=\"exam-label\">Which answer uses <b>hesitate</b> correctly?</small>",
+          "choices": [
+            "I hesitated because I answered right away without stopping.",
+            "I hesitated because I was not sure which word to use, so I paused to think before I spoke.",
+            "I hesitated the question into small pieces.",
+            "I hesitate is the name of the speaking test."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Why might a student feel <u>restless</u> on the last day before a holiday?<br><small class=\"exam-label\">Which answer uses <b>restless</b> correctly?</small>",
+          "choices": [
+            "A student might feel restless because they are calm and sleeping peacefully.",
+            "A student feels restless when they relax quietly on the sofa all day.",
+            "A student might restless their homework into the bin.",
+            "A student might feel restless because they are so excited that they cannot sit still in class."
+          ],
+          "answer": 3
+        },
+        {
+          "q": "How can a lifeguard stay <u>watchful</u> at a busy pool?<br><small class=\"exam-label\">Which answer uses <b>watchful</b> correctly?</small>",
+          "choices": [
+            "A lifeguard stays watchful by scanning the water all the time so they notice anyone who needs help.",
+            "A lifeguard is watchful when they fall asleep in the sun.",
+            "A lifeguard stays watchful by reading a comic book with their back to the pool.",
+            "A lifeguard watchful the water with a bucket."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What could you do to <u>restrain</u> yourself from eating all the cookies?<br><small class=\"exam-label\">Which answer uses <b>restrain</b> correctly?</small>",
+          "choices": [
+            "Restrain is the box the cookies come in.",
+            "I could restrain myself by putting the cookies on a high shelf and only taking one after dinner.",
+            "I would restrain to the store to buy more cookies.",
+            "I could restrain myself by eating every cookie as fast as I can."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "What is a <u>reasonable</u> bedtime for a fifth grader on a school night?<br><small class=\"exam-label\">Which answer uses <b>reasonable</b> correctly?</small>",
+          "choices": [
+            "I reasonable my bed every morning.",
+            "A reasonable bedtime is four in the morning, so I can play games all night.",
+            "Reasonable is when I go to bed in the bathtub.",
+            "A reasonable bedtime is about nine o'clock, because it gives me enough sleep for school."
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Have you ever been a <u>witness</u> to something surprising?<br><small class=\"exam-label\">Which answer uses <b>witness</b> correctly?</small>",
+          "choices": [
+            "I witness my shoes every morning before school.",
+            "Yes, I was a witness when a bird flew into our classroom and landed on the teacher's desk.",
+            "My witness is a kind of sandwich I eat at lunch.",
+            "Yes, I was a witness because I was asleep and did not see anything."
+          ],
+          "answer": 1
+        }
+      ]
+    }
   ]
 }

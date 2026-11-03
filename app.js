@@ -1177,6 +1177,13 @@ function vocabularyTopic(context = {}) {
     return { prompt: `Which word means the <b>OPPOSITE</b> of <b>${w.word}</b> (${w.pos})?`, choices, answer: choices.indexOf(answer) };
   }, vocabOptions("antonym"));
 
+  // vocabulary.json `practiceSets[{id, title, description, items[{q, choices, answer}]}]`
+  // mirror the teacher's worksheets (definition matching, story cloze, use-the-word).
+  const packetSets = (data.vocabulary.practiceSets || []).filter(set => set.items?.length);
+  const startSet = (set, items = set.items) => runQuiz(vocabKey(`set:${set.id}`), set.title, items, (it) => ({
+    prompt: it.q, choices: it.choices, answer: it.answer
+  }), {parents: vocabOptions("set").parents, itemId: it => it.q, itemLabel: it => it.q});
+
   renderContent(`
     <div class="panel">
       <h2>📖 Vocabulary</h2>
@@ -1194,7 +1201,29 @@ function vocabularyTopic(context = {}) {
       ${missedSyn ? `<button class="ghost" id="r4">Review Synonyms (${missedSyn})</button>` : ""}
       ${missedAnt ? `<button class="ghost" id="r5">Review Antonyms (${missedAnt})</button>` : ""}
       ${missedForm ? `<button class="ghost" id="r6">Review Word Forms (${missedForm})</button>` : ""}
+      ${packetSets.length ? `<h3 class="section-label">Worksheet practice</h3>
+      <div class="practice-list">
+        ${packetSets.map((set, idx) => {
+          const p = readProgress(vocabKey(`set:${set.id}`));
+          const miss = missedCount(vocabKey(`set:${set.id}`));
+          return `<div class="practice-set">
+            <button data-vocab-set="${idx}">${esc(set.title)}${p ? ` · Best ${p.best}%` : ""}</button>
+            ${set.description ? `<div class="practice-desc">${esc(set.description)}</div>` : ""}
+            ${miss ? `<button class="ghost review-button" data-vocab-set-review="${idx}">Review missed (${miss})</button>` : ""}
+          </div>`;
+        }).join("")}
+      </div>` : ""}
     </div>`);
+  document.querySelectorAll("button[data-vocab-set]").forEach(b => {
+    b.onclick = () => startSet(packetSets[+b.dataset.vocabSet]);
+  });
+  document.querySelectorAll("button[data-vocab-set-review]").forEach(b => {
+    b.onclick = () => {
+      const set = packetSets[+b.dataset.vocabSetReview];
+      const ids = new Set(missedItems(vocabKey(`set:${set.id}`)).map(m => m.id));
+      startSet(set, set.items.filter(it => ids.has(it.q)));
+    };
+  });
   if (quiz1Enabled()) bindQuiz1Modes("vocab", context);
   $("m1").onclick = () => startDefinition();
   $("m2").onclick = () => startWord();

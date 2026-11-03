@@ -59,6 +59,10 @@ Scenes follow the authored text: Bessie Coleman waving from a 1920s biplane abov
 
 The original nine passages now also have individual illustrations, completing coverage for all 19 readings. These include Nell clipped to the airship safety line, Rosa and Theo gardening with Grandma Ines, seed germination, Bartholomew humming beside the kettle and dog, a classroom scene for the purpose/structure excerpts, Hartwig giving seeds to the two claimants, adult Elias with a bronze mechanical unicorn, Miss Finch reading during a blizzard, and Lila reading beside Ricky in a deep green treehouse with wooden stairs. The original-nine prompts and alt text, including the stair correction, are saved in `image-art/original-reading-prompts.json`. These nine assets use the same 1280×720 WebP format and are shown in the menu and passage pages.
 
+## Review packet (2026-11-03)
+
+`raw/202611/IMG_7232-7237` is the teacher's midterm review packet. Its formats are now in the app: two spelling sets (circle the spelling, choose the sound), four vocabulary worksheet sets (definitions, two story clozes, use-the-word), and a reading notes page on drama, figurative language, and main-idea strategies. Transcription, answer key, and the student's packet errors: `review_packet.md`.
+
 ## Missing Reference Material (log)
 
 Asked the user for these on 2026-10-22:
