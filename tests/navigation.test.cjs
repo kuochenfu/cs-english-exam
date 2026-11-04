@@ -123,6 +123,21 @@ test('navigation stops speech and prevents delayed dialogue autoplay', () => {
   assert.ok(h.cancelCount() > before);
 });
 
+test('playing a dialogue queues every line without throwing', () => {
+  const h = harness(); h.context.window.speechSynthesis = h.context.speechSynthesis;
+  const spoken = [];
+  h.context.speechSynthesis.speak = u => spoken.push(u);
+  h.context.SpeechSynthesisUtterance = function(text) { this.text = text; };
+  h.run('playDialogue(fixture.listening.dialogues[0])');
+  h.element('play').onclick();
+  const lines = h.context.fixture.listening.dialogues[0].lines;
+  assert.equal(spoken.length, lines.length);
+  assert.equal(spoken[0].text, `${lines[0].speaker}: ${lines[0].text}`);
+  assert.ok(spoken.every(u => u.rate === 0.9));
+  [...h.timers.values()].forEach(fn => fn());
+  assert.equal(spoken.length, lines.length * 2);
+});
+
 test('data requests revalidate browser cache', async () => {
   const h = harness(); let options;
   h.context.fetch = async (url, opts) => { options = opts; return {ok:true, json:async () => ({})}; };

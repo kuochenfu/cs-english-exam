@@ -1897,7 +1897,7 @@ function playDialogue(dialogue, reviewOnly = false) {
     dialogue.lines.forEach((line) => {
       const u = new SpeechSynthesisUtterance(`${line.speaker}: ${line.text}`);
       u.voice = voiceFor(line.speaker) || selectedVoice;
-      u.rate = rate;
+      u.rate = 0.9;
       u.lang = u.voice?.lang || "en-US";
       speechSynthesis.speak(u);
     });
