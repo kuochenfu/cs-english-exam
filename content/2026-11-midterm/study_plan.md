@@ -37,6 +37,10 @@ App exam id: `2026-11-midterm`
 
 Shaded (bonus) vocabulary words on the list: delirious, porthole, matted, tendril, scrawl, ditty. Week 3 spelling has 11 words.
 
+### Module 1 review sets (added 2026-11-08)
+
+The midterm Vocabulary menu also carries three worksheet-style sets, `m1_review_week1` … `m1_review_week3` ("Module 1 Review — Week N"), so the 30 Module 1 words (Quiz 1, `raw/202609/IMG_5994.JPG` Weeks 1-3) stay fresh. Each set asks every word twice: definition → word (three same-part-of-speech Module 1 distractors), then one of the word's curated Quiz 1 `contexts[]` sentences with its explanation (alternating base form and word form). Week 1 = 18 items, Week 2 = 22, Week 3 = 20. Source of truth for definitions and sentences: `data/exams/2026-10-quiz1/vocabulary.json` and `content/2026-10-quiz1/recall_practice.md`. Banner prompts: `image-art/m1-review-prompts.json`.
+
 ## Status (2026-10-23)
 
 All five topics were generated from the notice, the word list, and standard rules, at the Grade 5 high standard (see the Quiz 1 plan for benchmarks). On 2026-10-23 the Module 2 homework was added on top (see `homework.md`).

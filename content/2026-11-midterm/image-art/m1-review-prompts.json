@@ -1,0 +1,41 @@
+{
+ "generator": "Codex built-in image_gen (codex exec)",
+ "generatedOn": "2026-11-08",
+ "export": {
+  "format": "WebP",
+  "size": [
+   1280,
+   720
+  ],
+  "quality": 86
+ },
+ "styleReferences": [
+  "assets/2026-10-quiz1/passages/the_flying_bathtub.jpg"
+ ],
+ "items": [
+  {
+   "id": "m1_review_week1",
+   "kind": "vocabulary",
+   "image": "assets/2026-11-midterm/packet/m1-review-week1.webp",
+   "imageAlt": "Two children in an old inventor's workshop watch a toy steam locomotive puff along a track, beside a brass phonograph, a glowing light bulb, a wind-up gadget and a metal cylinder.",
+   "prompt": "Use case: illustration-story. Asset type: a landscape banner illustration and menu thumbnail for a Grade 5 English review worksheet. Create ONE finished 16:9 landscape image, 1536x864. Warm polished hand-painted children's storybook art with soft brush textures, believable anatomy, rich but gentle colors, expressive characters and thoughtful light. The attached image is a STYLE reference only; do not copy its flying bathtub, dog, characters or composition. Keep main faces and meaningful objects in the central 80% so it reads on a small 16:9 card; leave breathing room. ABSOLUTELY no letters, words, numbers, readable writing, labels, captions, answers, border, logo or watermark anywhere (cards, pages and signs must be blank or show only squiggles/pictures). Scene: A busy, sunny inventor's workshop in the early 1900s. A Grade 5 boy in goggles and a Grade 5 girl with braids admire inventions: a small toy steam locomotive chugging along a track and puffing steam, an old brass phonograph with a big flower-shaped horn, a glowing incandescent light bulb on the workbench, a little wind-up gadget, and a shiny metal cylinder. A sputtering kettle-like engine coughs a small puff of smoke in the corner.",
+   "status": "complete"
+  },
+  {
+   "id": "m1_review_week2",
+   "kind": "vocabulary",
+   "image": "assets/2026-11-midterm/packet/m1-review-week2.webp",
+   "imageAlt": "An inspector with a clipboard hangs a gold medal on a smiling girl on an auditorium stage while a photographer takes her picture; through the window a boy pushes a wheelbarrow through irrigated fields.",
+   "prompt": "Use case: illustration-story. Asset type: a landscape banner illustration and menu thumbnail for a Grade 5 English review worksheet. Create ONE finished 16:9 landscape image, 1536x864. Warm polished hand-painted children's storybook art with soft brush textures, believable anatomy, rich but gentle colors, expressive characters and thoughtful light. The attached image is a STYLE reference only; do not copy its flying bathtub, dog, characters or composition. Keep main faces and meaningful objects in the central 80% so it reads on a small 16:9 card; leave breathing room. ABSOLUTELY no letters, words, numbers, readable writing, labels, captions, answers, border, logo or watermark anywhere (cards, pages and signs must be blank or show only squiggles/pictures). Scene: A grand, traditional school auditorium with red velvet seats and a stage. A kind inspector with a clipboard (blank) watches as a Grade 5 girl proudly receives a prestigious golden medal on stage; a photographer with an old camera on a tripod photographs the moment. Through a tall window you can see green farm fields being irrigated by small channels of water, and a boy carefully maneuvering a wheelbarrow between the rows.",
+   "status": "complete"
+  },
+  {
+   "id": "m1_review_week3",
+   "kind": "vocabulary",
+   "image": "assets/2026-11-midterm/packet/m1-review-week3.webp",
+   "imageAlt": "An eccentric inventor and a girl cheer as a boy drives their propeller prototype race car down a hill, while a distinguished judge in a bow tie claps beside a sketchbook of car drawings.",
+   "prompt": "Use case: illustration-story. Asset type: a landscape banner illustration and menu thumbnail for a Grade 5 English review worksheet. Create ONE finished 16:9 landscape image, 1536x864. Warm polished hand-painted children's storybook art with soft brush textures, believable anatomy, rich but gentle colors, expressive characters and thoughtful light. The attached image is a STYLE reference only; do not copy its flying bathtub, dog, characters or composition. Keep main faces and meaningful objects in the central 80% so it reads on a small 16:9 card; leave breathing room. ABSOLUTELY no letters, words, numbers, readable writing, labels, captions, answers, border, logo or watermark anywhere (cards, pages and signs must be blank or show only squiggles/pictures). Scene: An eccentric, cheerful inventor with wild white hair and mismatched socks proudly shows two passionate Grade 5 students a prototype soap-box race car with a small propeller. The car is accelerating down a gentle hill, leaving swirls of dust. On a nearby table sit sketches (only squiggles and drawings, no writing) of how the idea was conceived, and a distinguished-looking judge in a bow tie smiles and claps.",
+   "status": "complete"
+  }
+ ]
+}

@@ -1077,6 +1077,663 @@
       ],
       "image": "assets/2026-11-midterm/packet/use-the-word.webp",
       "imageAlt": "A girl answers a question aloud in class while thought bubbles show a frightened child in the dark, a feverish child in bed and a child hesitating on a diving board; a teacher listens with a clipboard."
+    },
+    {
+      "id": "m1_review_week1",
+      "title": "Module 1 Review — Week 1",
+      "description": "Quiz 1 words: chug, cylinder, flop, gadget, incandescent, locomotive, patent, sputter, phonograph. Meaning first, then each word in a sentence.",
+      "image": "assets/2026-11-midterm/packet/m1-review-week1.webp",
+      "imageAlt": "Two children in an old inventor's workshop watch a toy steam locomotive puff along a track, beside a brass phonograph, a glowing light bulb, a wind-up gadget and a metal cylinder.",
+      "items": [
+        {
+          "q": "1. Which word means: <i>\"to move slowly while making a puffing or thumping sound, like an engine\"</i>",
+          "choices": [
+            "photograph",
+            "chug",
+            "specialize",
+            "irrigate"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "2. Which word means: <i>\"something with circular ends and straight sides\"</i>",
+          "choices": [
+            "contribution",
+            "inspector",
+            "acceleration",
+            "cylinder"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "3. Which word means: <i>\"a huge failure\"</i>",
+          "choices": [
+            "auditorium",
+            "flop",
+            "cylinder",
+            "phonograph"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "4. Which word means: <i>\"a small electronic device or machine\"</i>",
+          "choices": [
+            "inspector",
+            "auditorium",
+            "phonograph",
+            "gadget"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "5. Which word means: <i>\"producing light from a glowing wire inside a bulb\"</i>",
+          "choices": [
+            "prestigious",
+            "incandescent",
+            "impoverished",
+            "passionate"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "6. Which word means: <i>\"a train engine that pulls train cars\"</i>",
+          "choices": [
+            "objective",
+            "inspector",
+            "cylinder",
+            "locomotive"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "7. Which word means: <i>\"a document to protect an invention\"</i>",
+          "choices": [
+            "impulse",
+            "patent",
+            "objective",
+            "flop"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "8. Which word means: <i>\"to work unevenly with popping noises\"</i>",
+          "choices": [
+            "conceive",
+            "sputter",
+            "chug",
+            "specialize"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "9. Which word means: <i>\"an early machine that played recorded sound from a spinning disk or cylinder\"</i>",
+          "choices": [
+            "patent",
+            "cylinder",
+            "phonograph",
+            "acceleration"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "10. The old train began to ____ slowly uphill with a steady puffing sound.",
+          "choices": [
+            "sputter",
+            "chug",
+            "irrigate",
+            "photograph"
+          ],
+          "answer": 1,
+          "explanation": "A steady puffing sound suggests slow, regular movement."
+        },
+        {
+          "q": "11. The artist made three paper ____ with round ends for her model.",
+          "choices": [
+            "contributions",
+            "patents",
+            "objectives",
+            "cylinders"
+          ],
+          "answer": 3,
+          "explanation": "Three requires a plural noun; each paper shape has circular ends."
+        },
+        {
+          "q": "12. Nobody bought the invention, so its first sale was a ____.",
+          "choices": [
+            "locomotive",
+            "patent",
+            "cylinder",
+            "flop"
+          ],
+          "answer": 3,
+          "explanation": "Nobody buying it makes the sale a failure."
+        },
+        {
+          "q": "13. The shop sells several kitchen ____, including a small electric peeler.",
+          "choices": [
+            "impulses",
+            "gadgets",
+            "auditoriums",
+            "circumstances"
+          ],
+          "answer": 1,
+          "explanation": "Several requires the plural of gadget."
+        },
+        {
+          "q": "14. The ____ bulb produced light when the wire inside grew hot.",
+          "choices": [
+            "eccentric",
+            "incandescent",
+            "impoverished",
+            "passionate"
+          ],
+          "answer": 1,
+          "explanation": "The hot glowing wire is the clue."
+        },
+        {
+          "q": "15. Two powerful ____ pulled the long train up the mountain.",
+          "choices": [
+            "patents",
+            "locomotives",
+            "phonographs",
+            "objectives"
+          ],
+          "answer": 1,
+          "explanation": "Two requires a plural; these are train engines."
+        },
+        {
+          "q": "16. The inventor applied for a ____ to protect her new invention.",
+          "choices": [
+            "flop",
+            "patent",
+            "phonograph",
+            "cylinder"
+          ],
+          "answer": 1,
+          "explanation": "This document protects an invention."
+        },
+        {
+          "q": "17. The engine ____ twice yesterday and then stopped working.",
+          "choices": [
+            "sputtered",
+            "specialized",
+            "photographed",
+            "irrigated"
+          ],
+          "answer": 0,
+          "explanation": "Yesterday calls for past tense; the engine ran unevenly."
+        },
+        {
+          "q": "18. The antique ____ played recorded music through a large horn.",
+          "choices": [
+            "phonograph",
+            "objective",
+            "locomotive",
+            "patent"
+          ],
+          "answer": 0,
+          "explanation": "An early machine for playing recorded sound is a phonograph."
+        }
+      ]
+    },
+    {
+      "id": "m1_review_week2",
+      "title": "Module 1 Review — Week 2",
+      "description": "Quiz 1 words: auditorium, elite, inspector, objective, photograph, prestigious, specialize, traditional, impoverished, irrigate, maneuver. Meaning first, then each word in a sentence.",
+      "image": "assets/2026-11-midterm/packet/m1-review-week2.webp",
+      "imageAlt": "An inspector with a clipboard hangs a gold medal on a smiling girl on an auditorium stage while a photographer takes her picture; through the window a boy pushes a wheelbarrow through irrigated fields.",
+      "items": [
+        {
+          "q": "1. Which word means: <i>\"a large room where people gather to watch events\"</i>",
+          "choices": [
+            "locomotive",
+            "circumstance",
+            "flop",
+            "auditorium"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "2. Which word means: <i>\"the best or most skilled members in a group\"</i>",
+          "choices": [
+            "traditional",
+            "impoverished",
+            "elite",
+            "passionate"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "3. Which word means: <i>\"someone who checks something carefully for problems\"</i>",
+          "choices": [
+            "impulse",
+            "inspector",
+            "contribution",
+            "acceleration"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "4. Which word means: <i>\"a goal\"</i>",
+          "choices": [
+            "contribution",
+            "objective",
+            "locomotive",
+            "impulse"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "5. Which word means: <i>\"to take a picture with a camera; a picture taken with a camera\"</i>",
+          "choices": [
+            "conceive",
+            "irrigate",
+            "photograph",
+            "chug"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "6. Which word means: <i>\"well-known and respected because of high quality or success\"</i>",
+          "choices": [
+            "prestigious",
+            "traditional",
+            "passionate",
+            "elite"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "7. Which word means: <i>\"to focus on one particular subject, skill, or type of work\"</i>",
+          "choices": [
+            "irrigate",
+            "conceive",
+            "specialize",
+            "sputter"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "8. Which word means: <i>\"when something is done a certain way for a long time\"</i>",
+          "choices": [
+            "distinguished",
+            "passionate",
+            "prestigious",
+            "traditional"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "9. Which word means: <i>\"very poor\"</i>",
+          "choices": [
+            "incandescent",
+            "prestigious",
+            "eccentric",
+            "impoverished"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "10. Which word means: <i>\"to bring water to dry land through pipes, ditches, or channels so crops can grow\"</i>",
+          "choices": [
+            "chug",
+            "photograph",
+            "irrigate",
+            "specialize"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "11. Which word means: <i>\"to move something skillfully or carefully into a position\"</i>",
+          "choices": [
+            "specialize",
+            "chug",
+            "sputter",
+            "maneuver"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "12. The audience sat facing the stage in the school ____.",
+          "choices": [
+            "auditorium",
+            "patent",
+            "prototype",
+            "impulse"
+          ],
+          "answer": 0,
+          "explanation": "A large room for an audience and performances is an auditorium."
+        },
+        {
+          "q": "13. The coach selected an ____ group of the country's best swimmers.",
+          "choices": [
+            "eccentric",
+            "incandescent",
+            "impoverished",
+            "elite"
+          ],
+          "answer": 3,
+          "explanation": "The best swimmers form an elite group."
+        },
+        {
+          "q": "14. The safety ____ checked every wire for problems.",
+          "choices": [
+            "phonograph",
+            "locomotive",
+            "prototype",
+            "inspector"
+          ],
+          "answer": 3,
+          "explanation": "This person's job is to check carefully for problems."
+        },
+        {
+          "q": "15. The team wrote down two ____: finish the robot and test it.",
+          "choices": [
+            "auditoriums",
+            "phonographs",
+            "cylinders",
+            "objectives"
+          ],
+          "answer": 3,
+          "explanation": "Two goals require the plural form."
+        },
+        {
+          "q": "16. Please ____ the bird with your camera before it flies away.",
+          "choices": [
+            "photograph",
+            "irrigate",
+            "specialize",
+            "conceive"
+          ],
+          "answer": 0,
+          "explanation": "Using a camera to take a picture is to photograph."
+        },
+        {
+          "q": "17. The university is ____ because of its excellent teaching and respected research.",
+          "choices": [
+            "eccentric",
+            "incandescent",
+            "prestigious",
+            "impoverished"
+          ],
+          "answer": 2,
+          "explanation": "High quality and respect make an institution prestigious."
+        },
+        {
+          "q": "18. The doctor chose to ____ in treating heart disease.",
+          "choices": [
+            "specialize",
+            "irrigate",
+            "sputter",
+            "photograph"
+          ],
+          "answer": 0,
+          "explanation": "Focusing on one field of work means specializing in it."
+        },
+        {
+          "q": "19. The family prepares the same ____ meal every New Year.",
+          "choices": [
+            "elite",
+            "incandescent",
+            "traditional",
+            "impoverished"
+          ],
+          "answer": 2,
+          "explanation": "A custom repeated over many years is traditional."
+        },
+        {
+          "q": "20. The ____ family was so poor that it could not afford food.",
+          "choices": [
+            "elite",
+            "incandescent",
+            "prestigious",
+            "impoverished"
+          ],
+          "answer": 3,
+          "explanation": "Being very poor is the key clue."
+        },
+        {
+          "q": "21. Last week, the farmer ____ the dry field through new water channels.",
+          "choices": [
+            "irrigated",
+            "conceived",
+            "specialized",
+            "photographed"
+          ],
+          "answer": 0,
+          "explanation": "Last week requires past tense; water channels supply the field."
+        },
+        {
+          "q": "22. The driver had to ____ the bus carefully through the narrow gap.",
+          "choices": [
+            "maneuver",
+            "irrigate",
+            "photograph",
+            "specialize"
+          ],
+          "answer": 0,
+          "explanation": "Carefully steering into position means maneuvering."
+        }
+      ]
+    },
+    {
+      "id": "m1_review_week3",
+      "title": "Module 1 Review — Week 3",
+      "description": "Quiz 1 words: acceleration, circumstance, conceive, contribution, distinguished, evidently, impulse, passionate, prototype, eccentric. Meaning first, then each word in a sentence.",
+      "image": "assets/2026-11-midterm/packet/m1-review-week3.webp",
+      "imageAlt": "An eccentric inventor and a girl cheer as a boy drives their propeller prototype race car down a hill, while a distinguished judge in a bow tie claps beside a sketchbook of car drawings.",
+      "items": [
+        {
+          "q": "1. Which word means: <i>\"the act of speeding up\"</i>",
+          "choices": [
+            "gadget",
+            "auditorium",
+            "prototype",
+            "acceleration"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "2. Which word means: <i>\"a condition or situation that affects what happens\"</i>",
+          "choices": [
+            "impulse",
+            "prototype",
+            "circumstance",
+            "flop"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "3. Which word means: <i>\"to form an idea or plan in your mind\"</i>",
+          "choices": [
+            "conceive",
+            "irrigate",
+            "chug",
+            "specialize"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "4. Which word means: <i>\"something you give or do to help make something happen\"</i>",
+          "choices": [
+            "flop",
+            "objective",
+            "auditorium",
+            "contribution"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "5. Which word means: <i>\"respected and admired because of great achievements\"</i>",
+          "choices": [
+            "incandescent",
+            "distinguished",
+            "impoverished",
+            "prestigious"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "6. Which word means: <i>\"clearly or obviously, based on what can be seen or known\"</i>",
+          "choices": [
+            "evidently",
+            "photograph",
+            "distinguished",
+            "sputter"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "7. Which word means: <i>\"a sudden strong desire to do something\"</i>",
+          "choices": [
+            "gadget",
+            "impulse",
+            "flop",
+            "auditorium"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "8. Which word means: <i>\"having a strong feeling of excitement or love for something\"</i>",
+          "choices": [
+            "prestigious",
+            "incandescent",
+            "passionate",
+            "impoverished"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "9. Which word means: <i>\"the first model of something, made to test an idea before it is made in large numbers\"</i>",
+          "choices": [
+            "auditorium",
+            "prototype",
+            "circumstance",
+            "flop"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "10. Which word means: <i>\"unusual or odd in behavior or appearance\"</i>",
+          "choices": [
+            "traditional",
+            "prestigious",
+            "distinguished",
+            "eccentric"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "11. The car's ____ increased its speed from a stop to a fast pace.",
+          "choices": [
+            "circumstance",
+            "acceleration",
+            "objective",
+            "prototype"
+          ],
+          "answer": 1,
+          "explanation": "An increase in speed is acceleration."
+        },
+        {
+          "q": "12. Several unexpected ____ forced the team to change its plan.",
+          "choices": [
+            "phonographs",
+            "cylinders",
+            "circumstances",
+            "locomotives"
+          ],
+          "answer": 2,
+          "explanation": "Several requires the plural of circumstance."
+        },
+        {
+          "q": "13. The inventor tried to ____ a new idea for saving water.",
+          "choices": [
+            "photograph",
+            "conceive",
+            "sputter",
+            "irrigate"
+          ],
+          "answer": 1,
+          "explanation": "Forming an idea in the mind means conceiving it."
+        },
+        {
+          "q": "14. The class thanked everyone for their generous ____ to the food drive.",
+          "choices": [
+            "locomotives",
+            "cylinders",
+            "contributions",
+            "phonographs"
+          ],
+          "answer": 2,
+          "explanation": "Several gifts or acts of help are contributions."
+        },
+        {
+          "q": "15. The ____ scientist was admired for years of important discoveries.",
+          "choices": [
+            "traditional",
+            "impoverished",
+            "distinguished",
+            "incandescent"
+          ],
+          "answer": 2,
+          "explanation": "Achievements that earn respect make a person distinguished."
+        },
+        {
+          "q": "16. The empty plate showed that the puppy had ____ eaten its dinner.",
+          "choices": [
+            "never",
+            "rarely",
+            "tomorrow",
+            "evidently"
+          ],
+          "answer": 3,
+          "explanation": "The empty plate is evidence for the conclusion."
+        },
+        {
+          "q": "17. He bought the toy on a sudden ____, without thinking first.",
+          "choices": [
+            "impulse",
+            "cylinder",
+            "phonograph",
+            "patent"
+          ],
+          "answer": 0,
+          "explanation": "A sudden urge to act without planning is an impulse."
+        },
+        {
+          "q": "18. The ____ gardener loved caring for plants more than anything else.",
+          "choices": [
+            "passionate",
+            "impoverished",
+            "incandescent",
+            "traditional"
+          ],
+          "answer": 0,
+          "explanation": "A deep love and enthusiasm for an activity is passionate."
+        },
+        {
+          "q": "19. The team built a ____ to test its design before making the final product.",
+          "choices": [
+            "patent",
+            "circumstance",
+            "prototype",
+            "objective"
+          ],
+          "answer": 2,
+          "explanation": "The first model used to test a design is a prototype."
+        },
+        {
+          "q": "20. The inventor was considered ____ because of her unusual habits and ideas.",
+          "choices": [
+            "incandescent",
+            "eccentric",
+            "traditional",
+            "impoverished"
+          ],
+          "answer": 1,
+          "explanation": "Unusual habits and ideas are the clue."
+        }
+      ]
     }
   ]
 }

@@ -683,3 +683,17 @@ test('a full round saves right/wrong counts that the vocabulary menu shows', () 
   h.run(`vocabularyTopic()`);
   assert.match(h.element('app').innerHTML, /Last 1\/2 right · Best 50%/);
 });
+
+test('midterm Module 1 review sets cover all 30 Quiz 1 words, twice each', () => {
+  const sets = midterm.vocabulary.practiceSets.filter(s => s.id.startsWith('m1_review_week'));
+  assert.deepEqual(sets.map(s => s.items.length), [18, 22, 20]);
+  const words = fixture.vocabulary.words.map(w => w.word);
+  const answers = sets.flatMap(s => s.items.map(it => it.choices[it.answer]));
+  for (const w of words) assert.ok(answers.filter(a => a.toLowerCase().startsWith(w.slice(0, 4))).length >= 2, w);
+  for (const s of sets) for (const it of s.items) {
+    assert.equal(it.choices.length, 4); assert.ok(it.answer >= 0 && it.answer < 4, it.q);
+  }
+  const h = midtermHarness();
+  h.run(`vocabularyTopic()`);
+  assert.match(h.element('app').innerHTML, /Module 1 Review — Week 2/);
+});

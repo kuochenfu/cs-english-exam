@@ -22,6 +22,8 @@ Build period: 2026-10-22 to 2026-10-23 (homework and reading round on 2026-10-23
 
 Tests grew from 32 to 40, and every deploy passed them.
 
+- 2026-11-08: Module 1 review sets (one per Module 1 week, 60 items) added to the midterm Vocabulary worksheet grid, built from the Quiz 1 definitions and curated context sentences. Worksheet sets now show an item's `explanation` after an answer. The quiz engine gained a question counter, live right/wrong tally, an early-end button and a full answer record.
+
 ## What went well
 
 - **Data-driven missions and badges.** `game.json` and `evaluateBadgeRule()` let a test define its own game without touching the defaults. The art swap in `7da1d7d` was a data-only change: it replaced image paths, and the badge IDs, rules and saved progress stayed as they were.

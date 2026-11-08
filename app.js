@@ -1214,7 +1214,7 @@ function vocabularyTopic(context = {}) {
   // mirror the teacher's worksheets (definition matching, story cloze, use-the-word).
   const packetSets = (data.vocabulary.practiceSets || []).filter(set => set.items?.length);
   const startSet = (set, items = set.items, review = false) => runQuiz(vocabKey(`set:${set.id}`), set.title, items, (it) => ({
-    prompt: it.q, choices: it.choices, answer: it.answer, extra: setBanner(set)
+    prompt: it.q, choices: it.choices, answer: it.answer, explanation: it.explanation, extra: setBanner(set)
   }), {reviewOnly: review, parents: vocabOptions("set").parents, itemId: it => it.q, itemLabel: it => it.q});
 
   // Each mode button shows its question count and the record of the last full round.
