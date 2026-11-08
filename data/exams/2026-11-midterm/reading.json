@@ -566,10 +566,10 @@
         {
           "q": "Which choice best describes the setting of the story?",
           "choices": [
-            "A busy island hospital on a sunny morning",
-            "A ship's cargo hold during a calm night at sea",
+            "A busy island hospital at Port Ivy on a bright, sunny morning",
+            "A ship's cargo hold on a calm, starry night far out at sea",
             "An airship flying over the ocean at night during a storm",
-            "A harbor where an airship is being repaired"
+            "A harbor at dawn where the airship is tied up for repairs"
           ],
           "answer": 2,
           "skill": "literary_elements"
@@ -578,9 +578,9 @@
           "q": "What is the main conflict in the story?",
           "choices": [
             "Nell must secure the loose cargo cover before the storm ruins the medicine.",
-            "Nell and Captain Osei argue about who should steer the airship.",
-            "Mr. Lund refuses to help Nell polish the brass.",
-            "The hospital at Port Ivy does not want the medicine."
+            "Nell and Captain Osei argue about who should steer the airship through the storm.",
+            "Mr. Lund refuses to help Nell polish the brass before the storm.",
+            "The hospital at Port Ivy sends word that it no longer needs the crates of medicine."
           ],
           "answer": 0,
           "skill": "literary_elements"
@@ -599,10 +599,10 @@
         {
           "q": "In paragraph 1, the author writes that the airship \"hummed over the dark ocean like a giant bee that had lost its way home.\" What does this simile suggest?",
           "choices": [
-            "The airship is covered in yellow and black stripes.",
+            "The airship is painted with yellow and black stripes, so from far away it looks just like a bee.",
             "The airship makes a steady buzzing sound and seems lonely and out of place over the huge, empty ocean.",
-            "The crew of the airship is lost and cannot find Port Ivy.",
-            "The airship moves quickly from flower to flower."
+            "The airship moves quickly and wildly from place to place, the way a bee flies from flower to flower.",
+            "The airship is flying low and fast, getting ready to land on an island covered with flowers."
           ],
           "answer": 1,
           "skill": "figurative_language"
@@ -610,10 +610,10 @@
         {
           "q": "In paragraph 8, \"Below her, the ocean waited like an open mouth.\" How does this sentence affect the mood of the story?",
           "choices": [
-            "It makes the scene feel peaceful and calm.",
-            "It shows that Nell is hungry after her long night.",
+            "It makes the scene feel peaceful, as if the ocean is resting quietly below.",
+            "It shows that Nell is hungry and wishes she had eaten more at supper.",
             "It builds suspense by making the ocean seem hungry and dangerous.",
-            "It explains how deep the ocean is below the ship."
+            "It explains exactly how deep the ocean is below the bottom of the ship."
           ],
           "answer": 2,
           "skill": "figurative_language"
@@ -622,9 +622,9 @@
           "q": "Read this sentence from paragraph 8: \"At the first post she <b>hesitated</b>, gripping the rail so tightly that her knuckles turned white.\" What does <b>hesitated</b> mean?",
           "choices": [
             "Paused because she felt unsure or afraid",
-            "Ran ahead without thinking",
-            "Shouted for help",
-            "Slipped and almost fell"
+            "Ran ahead quickly without stopping to think",
+            "Shouted loudly to the captain for help",
+            "Slipped on the wet metal and nearly fell over"
           ],
           "answer": 0,
           "skill": "vocab_context"
@@ -632,9 +632,9 @@
         {
           "q": "Which sentence from the story best explains <b>why</b> Nell keeps moving forward on the catwalk?",
           "choices": [
-            "\"The catwalk was a narrow ribbon of metal stretched along the side of the ship.\"",
-            "\"Her heart hammered.\"",
-            "\"Rain stung her face.\"",
+            "\"The catwalk was a narrow ribbon of metal stretched along the side of the ship. The wind seized Nell's jacket and tried to drag her into the sky.\"",
+            "\"At the first post she hesitated, gripping the rail so tightly that her knuckles turned white.\"",
+            "\"On her second, she caught it and pulled with all her weight. Rain stung her face. Her arms burned.\"",
             "\"She thought of the hospital at Port Ivy and of the children who would wake up tomorrow needing the medicine in those crates.\""
           ],
           "answer": 3,
@@ -643,10 +643,10 @@
         {
           "q": "Which choice best describes Captain Osei, based on paragraphs 4-7 and 11?",
           "choices": [
-            "Careless, because he sends a child outside without any rules",
+            "Careless, because he sends a child out onto the catwalk in a storm without any rules",
             "Calm and fair, because he stays steady in the storm and trusts Nell with clear safety orders",
-            "Angry, because he scolds Nell when she returns",
-            "Nervous, because he cannot decide what to do"
+            "Angry, because he scolds Nell for going outside when she returns to the bridge",
+            "Nervous, because he panics when he hears about the cover and cannot decide what to do"
           ],
           "answer": 1,
           "skill": "character"
@@ -655,7 +655,7 @@
           "q": "Which statement best expresses a theme of the story?",
           "choices": [
             "Airships are dangerous and should not fly in storms.",
-            "Children should always stay out of the way of adults.",
+            "Children should stay out of the way and let the adults handle every problem.",
             "Courage means acting to help others even when you are afraid.",
             "Medicine is the most important cargo a ship can carry."
           ],
@@ -685,9 +685,9 @@
         {
           "q": "What is the main purpose of the <b>Cast of Characters</b> at the beginning of the play?",
           "choices": [
-            "To tell how the play will end",
-            "To describe the setting of Scene 2",
-            "To give the actors' lines in order",
+            "To tell the audience how the play will end before it begins",
+            "To describe what the yard looks like in Scene 1 and Scene 2",
+            "To list all of the actors' lines in the order they are spoken",
             "To introduce who the characters are before the action begins"
           ],
           "answer": 3,
@@ -697,9 +697,9 @@
           "q": "In Scene 1, Rosa says, <i>(with contempt)</i> \"This whole place is dead.\" What does <b>with contempt</b> tell the actor playing Rosa to do?",
           "choices": [
             "Say the line with scorn, as if the garden is worthless",
-            "Whisper the line kindly to Theo",
-            "Shout the line with joy",
-            "Say the line while crying"
+            "Whisper the line kindly, as if sharing a secret",
+            "Shout the line with joy, as if the garden is a wonderful surprise",
+            "Say the line while crying, as if she misses her grandpa"
           ],
           "answer": 0,
           "skill": "vocab_context"
@@ -707,10 +707,10 @@
         {
           "q": "Read the stage direction: <i>(leaning closer, curious in spite of herself)</i>. What does it reveal about Rosa at this moment?",
           "choices": [
-            "She is angry that Theo climbed over the wall.",
+            "She is angry that Theo climbed over the wall and is now poking around in her yard.",
             "She is starting to become interested in the garden, even though she did not want to be.",
-            "She is afraid the vines will hurt her.",
-            "She already knows everything about plants."
+            "She is afraid the tangled vines will hurt her, so she wants to stay away from them.",
+            "She already knows everything about plants and wants to show Theo how much she knows."
           ],
           "answer": 1,
           "skill": "drama"
@@ -718,10 +718,10 @@
         {
           "q": "Theo says, \"The vines are <b>matted</b> on top, but look underneath.\" Which meaning of <b>matted</b> fits this line?",
           "choices": [
-            "Brightly colored",
-            "Neatly trimmed",
+            "Brightly colored all over",
+            "Neatly trimmed and short",
             "Thickly tangled together",
-            "Freshly planted"
+            "Freshly planted in rows"
           ],
           "answer": 2,
           "skill": "vocab_context"
@@ -729,10 +729,10 @@
         {
           "q": "Why does the playwright divide the play into two scenes?",
           "choices": [
-            "To introduce a new set of characters in Scene 2",
+            "To bring in a new set of characters who were not part of Scene 1",
             "To show that time has passed and the garden and characters have changed",
-            "To move the story to a different country",
-            "To give the audience a break before the climax"
+            "To move the story from Grandma's yard to a garden in a different country",
+            "To give the audience a short break so they can rest before the ending"
           ],
           "answer": 1,
           "skill": "drama"
@@ -741,9 +741,9 @@
           "q": "Theo says, \"It isn't dead. It's sleeping.\" What does this line show about Theo?",
           "choices": [
             "He is hopeful and can see possibilities that others miss.",
-            "He is lazy and does not want to work in the garden.",
-            "He wants to trick Rosa.",
-            "He thinks the garden should be torn down."
+            "He is lazy and does not want to help Rosa work in the garden.",
+            "He knows nothing about plants and is only guessing.",
+            "He thinks the dead garden should be torn down and paved over."
           ],
           "answer": 0,
           "skill": "character"
@@ -751,10 +751,10 @@
         {
           "q": "Grandma Ines tells Rosa, \"When you came here, you were as gray as this yard.\" What does this simile suggest about Rosa when she first arrived?",
           "choices": [
-            "She was wearing gray clothes.",
-            "She was covered in dust from the yard.",
+            "She was wearing old gray clothes that matched the stone wall.",
+            "She was covered in gray dust from the long trip to the house.",
             "She was unhappy and lifeless, like the neglected garden.",
-            "She was older than she looked."
+            "She was much older and wiser than she looked to Grandma."
           ],
           "answer": 2,
           "skill": "figurative_language"
@@ -762,9 +762,9 @@
         {
           "q": "Which line from Scene 2 best supports the idea that Grandma Ines has changed?",
           "choices": [
-            "\"What have you done?\"",
-            "\"He planted these the year your mother was born.\"",
-            "\"I thought they had died with him.\"",
+            "\"When you came here, you were as gray as this yard. Now look at you.\"",
+            "\"He planted these the year your mother was born. I thought they had died with him.\"",
+            "\"Will you help us, Grandma? You must know where everything belongs.\"",
             "\"I have been sitting still for far too long. Bring me that packet of seeds.\""
           ],
           "answer": 3,
@@ -773,10 +773,10 @@
         {
           "q": "Which statement best expresses a theme of the play?",
           "choices": [
-            "Old houses should always be repaired.",
+            "Old houses and yards need lots of repairs before a family can move in.",
             "Bringing something back to life can help people heal and grow closer.",
-            "Children should never touch things without asking.",
-            "Gardens need water and sunlight to grow."
+            "Children should ask before touching things that belong to someone else.",
+            "Gardens need plenty of water and sunlight before they can grow and bloom."
           ],
           "answer": 1,
           "skill": "theme"
@@ -805,9 +805,9 @@
         {
           "q": "What is the author's main purpose for writing this article?",
           "choices": [
-            "To persuade readers to plant a garden this spring",
-            "To entertain readers with a story about a seed",
-            "To compare winter and summer weather",
+            "To persuade readers to plant a vegetable garden this spring",
+            "To entertain readers with a story about a sleepy seed",
+            "To compare the parts of a seed with the parts of a plant",
             "To explain how and why seeds begin to grow in spring"
           ],
           "answer": 3,
@@ -827,10 +827,10 @@
         {
           "q": "According to paragraph 4, what happens <b>because</b> the seed coat absorbs water?",
           "choices": [
-            "The soil becomes warmer.",
+            "Warmer soil speeds up changes in the seed.",
             "The seed swells and its coat splits open.",
-            "The seed goes into dormancy.",
-            "The leaves begin photosynthesis."
+            "The seed rests in a state of dormancy.",
+            "The root pushes down to draw in water."
           ],
           "answer": 1,
           "skill": "text_structure"
@@ -838,10 +838,10 @@
         {
           "q": "Which sentence from the article best supports the idea that dormancy helps a seed survive?",
           "choices": [
-            "\"The embryo is the baby plant.\"",
-            "\"This resting state is called dormancy.\"",
+            "\"When the season changes, that plant will awaken and push its way toward the light.\"",
+            "\"If seeds are planted too densely, the seedlings crowd one another and compete for water and light, so many grow weak and thin.\"",
             "\"If a seed sprouted during a warm week in December, the next hard frost would kill the tender young plant.\"",
-            "\"In spring, melting snow and rain soak the soil.\""
+            "\"Gardeners prevent these problems by spacing seeds carefully and enriching the soil with compost.\""
           ],
           "answer": 2,
           "skill": "evidence"
@@ -850,9 +850,9 @@
           "q": "Why does the author write that \"the cold works like a calendar\" in paragraph 3?",
           "choices": [
             "To help readers understand that a long cold period tells the seed when winter is over",
-            "To show that seeds can read dates",
-            "To persuade readers that winter is the best season",
-            "To describe what a calendar looks like"
+            "To show that a seed sprouts on the same date every year, no matter what the weather is like",
+            "To explain that cold weather helps the seed coat soak up more of the melting snow and rain",
+            "To persuade readers to check a calendar before they plant their garden seeds each winter"
           ],
           "answer": 0,
           "skill": "authors_purpose"
@@ -860,9 +860,9 @@
         {
           "q": "In paragraph 4, a seed grows \"only when conditions are <b>favorable</b>.\" Which words from the paragraph best help you understand <b>favorable</b>?",
           "choices": [
-            "\"melting snow and rain soak the soil\"",
-            "\"its coat splits open\"",
-            "\"chemical changes inside the seed\"",
+            "\"At the same time, warmer soil speeds up the chemical changes inside the seed.\"",
+            "\"Because the seed coat absorbs this water, the seed swells and its coat splits open.\"",
+            "\"In spring, melting snow and rain soak the soil.\"",
             "\"It needs three things: water, oxygen, and the right temperature.\""
           ],
           "answer": 3,
@@ -871,9 +871,9 @@
         {
           "q": "In paragraph 6, seeds planted too <b>densely</b> \"crowd one another.\" What does <b>densely</b> mean?",
           "choices": [
-            "Deep under the soil",
+            "Deep down under the soil",
             "Packed closely together",
-            "Very slowly",
+            "Very slowly over time",
             "In bright sunlight"
           ],
           "answer": 1,
@@ -894,9 +894,9 @@
           "q": "How does the heading \"When Things Go Wrong\" help the reader?",
           "choices": [
             "It signals that paragraph 6 will describe problems seeds can face and how gardeners prevent them.",
-            "It tells the reader that the article is a story with a sad ending.",
-            "It shows that the author is about to list the parts of a seed.",
-            "It explains the meaning of germinate."
+            "It tells the reader that the article is really a made-up story about one little seed with a sad ending.",
+            "It shows that paragraph 6 will list the three main parts of a seed and explain what each part does.",
+            "It signals that the next paragraph will explain how a long cold period tells a seed that winter is over."
           ],
           "answer": 0,
           "skill": "text_structure"
@@ -904,10 +904,10 @@
         {
           "q": "What is the central idea of the whole article?",
           "choices": [
-            "Every seed has three parts: a seed coat, an embryo, and stored food.",
-            "Gardeners should space seeds carefully and add compost to the soil.",
+            "A seed has three main parts, a seed coat, an embryo, and stored food, that each do a different job.",
+            "Gardeners can help seedlings grow strong by spacing seeds carefully and adding compost to the soil.",
             "A seed starts to grow only after a chain of signals, such as cold, water, oxygen, and warmth, tells it the time is right.",
-            "Spring is one sudden change that wakes up every plant at the same moment."
+            "Spring is one sudden change that wakes up every seed at once, as soon as the first warm day arrives."
           ],
           "answer": 2,
           "skill": "main_idea"
@@ -958,9 +958,9 @@
           "q": "In Poem 1, which lines are the <b>refrain</b>?",
           "choices": [
             "\"On Monday, Bartholomew learned a new ditty, / A silly old tune about Pete and his kitty.\"",
-            "\"He tried to restrain it; he pressed his lips tight\"",
+            "\"He tried to restrain it; he pressed his lips tight, / But it buzzed in his bones like a bee in the night.\"",
             "\"Oh, tum-tiddle-tee and a tum-tiddle-toe, / Once it gets started, it won't let you go!\"",
-            "\"So now that you've read it, I'm sorry to say\""
+            "\"So now that you've read it, I'm sorry to say, / You'll be humming it, too, for the rest of the day.\""
           ],
           "answer": 2,
           "skill": "poetry"
@@ -990,9 +990,9 @@
         {
           "q": "Read the line from Poem 1: \"But it buzzed in his bones like a bee in the night.\" Which poetic devices does this line use?",
           "choices": [
-            "Metaphor and refrain",
-            "Personification only",
-            "Rhyme scheme and stanza",
+            "Metaphor, refrain, and free verse",
+            "Idiom, stanza, and rhyme scheme",
+            "Hyperbole, idiom, and a refrain",
             "Simile, alliteration, and onomatopoeia"
           ],
           "answer": 3,
@@ -1001,10 +1001,10 @@
         {
           "q": "In Poem 1, \"He tried to <b>restrain</b> it; he pressed his lips tight.\" What does <b>restrain</b> mean?",
           "choices": [
-            "To sing loudly",
+            "To sing it loudly for everyone to hear",
             "To hold back or keep under control",
-            "To write down",
-            "To teach to someone else"
+            "To write it down on a piece of paper",
+            "To teach the song to someone else"
           ],
           "answer": 1,
           "skill": "vocab_context"
@@ -1013,9 +1013,9 @@
           "q": "How does the speaker in the final stanza of Poem 1 make the poem humorous?",
           "choices": [
             "The speaker tells the reader directly that the ditty will now be stuck in the reader's head, too.",
-            "The speaker explains how Bartholomew finally forgot the song.",
-            "The speaker describes what Pete's kitty looks like.",
-            "The speaker apologizes to Bartholomew's teacher."
+            "The speaker explains how Bartholomew finally forgot the song after a long night of sleep.",
+            "The speaker describes what Pete's kitty looks like and how it howls along with the dog.",
+            "The speaker says sorry to Bartholomew's teacher for all the humming during class."
           ],
           "answer": 0,
           "skill": "poetry"
@@ -1023,10 +1023,10 @@
         {
           "q": "In Poem 2, \"the garden is a closed book / no one has learned to read.\" What does this metaphor suggest?",
           "choices": [
-            "The garden is full of old books.",
-            "Nobody visits the garden in winter.",
+            "The garden is full of old books that were buried under the frost.",
+            "Nobody wants to visit the garden during the long, cold winter.",
             "In winter, the life inside the garden is hidden and mysterious.",
-            "The garden is too difficult to take care of."
+            "The garden is too difficult for anyone to take care of."
           ],
           "answer": 2,
           "skill": "figurative_language"
@@ -1034,9 +1034,9 @@
         {
           "q": "Why is Poem 2 an example of <b>free verse</b>, while Poem 3 is not?",
           "choices": [
-            "Poem 2 has more stanzas than Poem 3.",
-            "Poem 2 uses figurative language, and Poem 3 does not.",
-            "Poem 2 is about a garden, and Poem 3 is about rain.",
+            "Poem 2 has a refrain that repeats, while Poem 3 has no refrain at all.",
+            "Poem 2 uses figurative language, and Poem 3 does not use any.",
+            "Poem 2 is about a garden in spring, and Poem 3 is about rain.",
             "Poem 2 has no regular rhyme scheme or steady beat, while Poem 3 has both."
           ],
           "answer": 3,
@@ -1099,9 +1099,9 @@
           "q": "Excerpt 1: Which words are the strongest clues to the author's purpose?",
           "choices": [
             "\"should\" and \"Start your window garden this weekend!\"",
-            "\"a pot of soil\" and \"a packet of seeds\"",
-            "\"plant\" and \"windowsill\"",
-            "\"Fresh herbs\" and \"meals\""
+            "\"a pot of soil,\" \"a packet of seeds,\" and \"a movie ticket\"",
+            "\"one plant on a windowsill\" and \"Fresh herbs\"",
+            "\"Caring for a plant,\" \"herbs,\" and \"a pot of soil\""
           ],
           "answer": 0,
           "skill": "authors_purpose"
@@ -1120,8 +1120,8 @@
         {
           "q": "Excerpt 3 (Gus the squirrel): What is the author's main purpose?",
           "choices": [
-            "To persuade readers to protect their gardens from squirrels",
-            "To inform readers about how tulips grow",
+            "To persuade readers to keep squirrels away",
+            "To teach readers how tulips grow",
             "To explain how to plant tulip bulbs",
             "To entertain readers with a funny story"
           ],
@@ -1132,9 +1132,9 @@
           "q": "Excerpt 4 (bean in a jar): Which text structure does the author use?",
           "choices": [
             "Sequence",
-            "Cause and effect",
-            "Compare and contrast",
-            "Problem and solution"
+            "Cause/effect",
+            "Compare/contrast",
+            "Description"
           ],
           "answer": 0,
           "skill": "text_structure"
@@ -1165,8 +1165,8 @@
           "q": "Excerpt 7 (school garden): Which text structure does the author use?",
           "choices": [
             "Problem and solution",
-            "Description",
-            "Sequence",
+            "Cause and effect",
+            "Sequence (time order)",
             "Compare and contrast"
           ],
           "answer": 0,
@@ -1178,7 +1178,7 @@
             "To persuade; problem and solution",
             "To inform; sequence (chronological order)",
             "To entertain; compare and contrast",
-            "To inform; cause and effect"
+            "To inform; cause and effect (what led to what)"
           ],
           "answer": 1,
           "skill": "authors_purpose"
@@ -1197,10 +1197,10 @@
         {
           "q": "Excerpt 6 (hydrogen and helium): Which sentence best states the main idea?",
           "choices": [
-            "Hydrogen is the lightest gas.",
-            "Early airships were exciting to fly.",
+            "Hydrogen and helium are both light gases that catch fire very easily.",
+            "Early airships were safe to fly because they were filled with hydrogen.",
             "Modern airships use helium because hydrogen catches fire too easily.",
-            "Airships today are filled with hydrogen to make them lighter."
+            "Airships today are filled with hydrogen so that they can float higher."
           ],
           "answer": 2,
           "skill": "main_idea"
@@ -1477,10 +1477,10 @@
         {
           "q": "The text calls the store \"an oasis of calm.\" What does this metaphor mean?",
           "choices": [
-            "The store is in the middle of a desert.",
-            "The store sells water and plants.",
+            "The store is in the middle of a hot, dry desert far from the city.",
+            "The store sells water and plants to tired people from the busy city.",
             "The store is a peaceful place surrounded by a busy, noisy city.",
-            "The store is closed during snowstorms."
+            "The store is a loud, crowded place, just like the busy city streets."
           ],
           "answer": 2,
           "skill": "figurative_language"
@@ -1663,10 +1663,10 @@
         {
           "q": "What is the author's main purpose for writing this passage?",
           "choices": [
-            "To persuade readers to become pilots",
+            "To persuade readers to fight unfairness the way Bessie did",
             "To inform readers about the life and achievements of Bessie Coleman",
-            "To entertain readers with a made-up adventure story",
-            "To explain how early airplanes were built"
+            "To entertain readers with a made-up story about a daring pilot",
+            "To explain how early airplanes were built from wood, wire, and cloth"
           ],
           "answer": 1,
           "skill": "authors_purpose"
@@ -1675,9 +1675,9 @@
           "q": "How is this biography mainly organized?",
           "choices": [
             "In time order, following Bessie's life from childhood to after her death",
-            "As a comparison of Bessie and her brother John",
-            "As a list of reasons why flying is dangerous",
-            "As a problem and many possible solutions for building planes"
+            "As a comparison of Bessie's life in Texas and her life in Chicago",
+            "As a list of reasons why flight training in the 1920s was dangerous",
+            "As a problem and solution about how to build safer airplanes with brakes"
           ],
           "answer": 0,
           "skill": "text_structure"
@@ -1685,10 +1685,10 @@
         {
           "q": "According to paragraph 3, what made Bessie decide to become a pilot?",
           "choices": [
-            "She read about pilots in a newspaper.",
-            "She saw an air show in Chicago.",
+            "She read about women pilots in Robert Abbott's newspaper in Chicago.",
+            "She watched a pilot fly loops and figure eights at an air show in Chicago.",
             "Her brother teased her that women in France flew airplanes.",
-            "Robert Abbott asked her to fly for his newspaper."
+            "Robert Abbott asked her to fly airplanes for his Chicago newspaper."
           ],
           "answer": 2,
           "skill": "text_structure"
@@ -1697,9 +1697,9 @@
           "q": "Why did Bessie go to France to learn to fly?",
           "choices": [
             "Flight schools in the United States refused to teach her because she was a woman and Black.",
-            "She wanted to see where her brother had fought in the war.",
-            "French planes were safer than American planes.",
-            "She already spoke French and wanted to live there."
+            "She wanted to visit France, the country where her brother John had served during World War I.",
+            "French planes had brakes and were much safer than the wooden planes used in the United States.",
+            "She already spoke French very well and wanted to move to Paris to work as a manicurist there."
           ],
           "answer": 0,
           "skill": "text_structure"
@@ -1707,10 +1707,10 @@
         {
           "q": "Which sentence best shows that Bessie was determined?",
           "choices": [
-            "\"She worked as a manicurist, cleaning and shaping customers' fingernails.\"",
+            "\"When her brother John came home from World War I, he teased her that in France, even women flew airplanes.\"",
             "\"Bessie took French classes at night, saved every coin she could, and in 1920 she sailed across the Atlantic Ocean.\"",
-            "\"Newspapers called her 'Queen Bess' and 'Brave Bessie.'\"",
-            "\"Bessie Coleman was born in Texas in 1892, one of thirteen children.\""
+            "\"When she was invited to perform in her home state of Texas, she learned that Black and white visitors would have to enter through separate gates.\"",
+            "\"Back in the United States, Bessie became a barnstormer, a pilot who performs daring tricks at air shows.\""
           ],
           "answer": 1,
           "skill": "evidence"
@@ -1718,9 +1718,9 @@
         {
           "q": "In paragraph 6, what does barnstormer mean?",
           "choices": [
-            "a person who builds barns on farms",
+            "a farmer who builds barns and stores hay in them",
             "a pilot who performs daring tricks at air shows",
-            "a strong storm that damages farms",
+            "a strong storm that sweeps across farm fields",
             "a newspaper writer who reports on air shows"
           ],
           "answer": 1,
@@ -1740,10 +1740,10 @@
         {
           "q": "\"She refused to let closed doors keep her on the ground.\" What does this sentence mean?",
           "choices": [
-            "Bessie was afraid of closed spaces.",
+            "Bessie was afraid of small, closed spaces, so she felt happier up in the open sky.",
             "Bessie did not let people who rejected her stop her from reaching her dream of flying.",
-            "Bessie always left doors open before she flew.",
-            "Bessie preferred flying to walking."
+            "Bessie always left the hangar doors open so she could take off quickly.",
+            "Bessie liked flying better than walking, so she spent as little time on the ground as she could."
           ],
           "answer": 1,
           "skill": "figurative_language"
@@ -1751,10 +1751,10 @@
         {
           "q": "What is the central idea of the passage?",
           "choices": [
-            "Early airplanes were made of wood, wire, and cloth.",
-            "Bessie Coleman became famous because she was born in Texas.",
+            "Early airplanes were made of wood, wire, and cloth, so flight training in the 1920s was very dangerous.",
+            "Bessie Coleman became famous mainly because she worked hard picking cotton in the fields of Texas.",
             "Bessie Coleman overcame unfair barriers to become a pioneering pilot and inspire others.",
-            "Flight schools in France were the best in the world."
+            "Flight schools in France were more open than American schools, so many women from Texas went there."
           ],
           "answer": 2,
           "skill": "main_idea"
@@ -1762,10 +1762,10 @@
         {
           "q": "What is the main idea of paragraph 4?",
           "choices": [
-            "Robert Abbott was a newspaper publisher.",
+            "Robert Abbott was a newspaper publisher who helped Bessie learn to speak French.",
             "When every U.S. flight school refused her, Bessie found another way to learn to fly.",
-            "Some flight schools would not teach women.",
-            "Bessie sailed across the Atlantic Ocean in 1920."
+            "Some flight schools in the United States would not teach women or Black students.",
+            "Bessie sailed across the Atlantic Ocean in 1920 to see where her brother fought."
           ],
           "answer": 1,
           "skill": "main_idea"
@@ -1774,9 +1774,9 @@
           "q": "Which choice is the best summary of the whole biography?",
           "choices": [
             "Bessie Coleman grew up poor, trained in France after U.S. schools refused her, became a famous pilot who fought unfairness, and inspired Black pilots after her death.",
-            "Bessie Coleman was born in Texas in 1892, was one of thirteen children, and was good at math.",
-            "Flight training in the 1920s was dangerous because the planes had no brakes.",
-            "Bessie Coleman became famous for flying loops and figure eights at air shows."
+            "Bessie Coleman was born in Texas in 1892, was one of thirteen children, picked cotton in hot fields, and was especially good at math in school.",
+            "Flight training in the 1920s was dangerous because planes were made of wood, wire, and cloth, had no brakes, and sometimes crashed.",
+            "Bessie Coleman became famous for flying loops and figure eights at air shows, where newspapers called her Queen Bess and Brave Bessie."
           ],
           "answer": 0,
           "skill": "main_idea"
@@ -1832,10 +1832,10 @@
         {
           "q": "What was the real purpose of Master Odile's test?",
           "choices": [
-            "To find out which boy could fix a clock the fastest",
+            "To find out which boy could fix a broken clock the fastest",
             "To see how each boy would act when there was no easy answer",
-            "To find out which boy had read more books about clocks",
-            "To get her broken clocks repaired for free"
+            "To find out which boy had read the most books about clocks",
+            "To get two stopped clocks repaired without paying anyone"
           ],
           "answer": 1,
           "skill": "literary_elements"
@@ -1844,9 +1844,9 @@
           "q": "How are Jory and Pell different at the beginning of the story?",
           "choices": [
             "Jory is confident and knows a lot from books; Pell is quiet and observant.",
-            "Jory is shy and nervous; Pell talks smoothly and wears fine clothes.",
-            "Jory has fixed many clocks before; Pell has never seen a clock.",
-            "Jory is honest; Pell is willing to cheat."
+            "Jory is shy and speaks little; Pell talks smoothly and wears a velvet coat.",
+            "Jory has fixed many clocks before; Pell has never even seen a clock up close.",
+            "Jory is honest and careful; Pell is willing to take things that are not his."
           ],
           "answer": 0,
           "skill": "character"
@@ -1854,10 +1854,10 @@
         {
           "q": "Which sentence best shows that Pell is honest?",
           "choices": [
-            "\"He spoke little, but he watched everything.\"",
+            "\"...he watched everything.\"",
             "\"He searched every drawer twice.\"",
             "\"'It isn't mine to take.'\"",
-            "\"Pell hung his muddy boots by the door of the clock shop.\""
+            "\"Pell's clock was harder.\""
           ],
           "answer": 2,
           "skill": "evidence"
@@ -1867,7 +1867,7 @@
           "choices": [
             "very expensive",
             "exact and correct",
-            "very old",
+            "very old and rare",
             "loud and clear"
           ],
           "answer": 1,
@@ -1887,10 +1887,10 @@
         {
           "q": "What does paragraph 13 suggest about Jory?",
           "choices": [
-            "He is still angry and wants revenge.",
+            "He is still angry at Pell and wants to get revenge on him.",
             "He learned from his mistake and was willing to be humble.",
-            "He wants to take the spring after all.",
-            "He has decided to give up clocks forever."
+            "He secretly plans to take the spring from the tall clock.",
+            "He has given up on clocks and wants a different job instead."
           ],
           "answer": 1,
           "skill": "character"
@@ -1898,10 +1898,10 @@
         {
           "q": "Which lesson does the story teach?",
           "choices": [
-            "The fastest worker always deserves the reward.",
-            "Rich people cannot be trusted.",
+            "The fastest worker is the one who deserves the reward most.",
+            "People from rich families cannot be trusted to tell the truth.",
             "Honesty and careful thinking matter more than a quick success.",
-            "Books are more useful than practice."
+            "Reading many books is more useful than practicing with tools."
           ],
           "answer": 2,
           "skill": "theme"
@@ -1948,10 +1948,10 @@
         {
           "q": "What is the main conflict of the story?",
           "choices": [
-            "Kai and Ama argue about who should water the beans.",
+            "Kai and Ama keep arguing about who should water the beans, and Kai must finish the checklist before the inspection.",
             "The tomato flowers keep falling off without making fruit, and the children must find out why before the inspection.",
-            "The light timer on the greenhouse deck is broken.",
-            "Bees escape into the station's air vents."
+            "The light timer on the deck stops working, and the children must fix it before the plants dry up and die.",
+            "Bees escape from the greenhouse into the air vents, and the children must catch them before the commander arrives."
           ],
           "answer": 1,
           "skill": "literary_elements"
@@ -1959,10 +1959,10 @@
         {
           "q": "How does the setting cause the problem in the story?",
           "choices": [
-            "The purple lamps are too bright for tomatoes.",
-            "The station is too cold for plants to grow.",
+            "The purple lamps on the deck are too bright, so the tomato flowers dry up and fall.",
+            "The station is too cold for tomatoes, so the flowers freeze before they can grow.",
             "The clean, sealed space station has no bees or wind to shake the pollen loose.",
-            "The greenhouse is too small for twelve tomato plants."
+            "The greenhouse is too small for twelve plants, so they cannot get enough water."
           ],
           "answer": 2,
           "skill": "literary_elements"
@@ -1971,9 +1971,9 @@
           "q": "How are Kai and Ama different?",
           "choices": [
             "Kai follows checklists and the manual; Ama notices details and asks questions.",
-            "Kai asks too many questions; Ama follows every rule.",
-            "Kai does not care about the plants; Ama only cares about the inspection.",
-            "Kai grew up on Earth; Ama has always lived on the station."
+            "Kai asks too many questions about the plants; Ama follows every rule in the manual.",
+            "Kai does not care about the plants at all; Ama only cares about the inspection.",
+            "Kai grew up in Grandma Esi's garden on Earth; Ama has always lived on the station."
           ],
           "answer": 0,
           "skill": "character"
@@ -1981,10 +1981,10 @@
         {
           "q": "Which detail best explains why Kai panicked in paragraph 4?",
           "choices": [
-            "The lettuce was growing in neat rows.",
+            "Ama was ten and in charge of watering the plants every day.",
             "Commander Reyes would inspect the greenhouse in two weeks.",
-            "Ama asked too many questions.",
-            "The beans were climbing up silver wires."
+            "The light timer ran sixteen hours a day, just as the manual said.",
+            "Lettuce spread in neat green rows under the purple lamps."
           ],
           "answer": 1,
           "skill": "evidence"
@@ -1992,10 +1992,10 @@
         {
           "q": "Why is Ama's memory of Grandma Esi's garden important to the plot?",
           "choices": [
-            "It makes her homesick, so she stops helping.",
-            "It reminds her that plants on Earth grow faster.",
+            "It makes her so homesick for Ghana that she stops helping Kai.",
+            "It reminds her that plants on Earth grow faster than plants in space.",
             "It gives her the clue that bees were missing from the greenhouse.",
-            "It shows that her grandmother grew tomatoes too."
+            "It shows that her grandmother grew tomatoes in her garden in Ghana."
           ],
           "answer": 2,
           "skill": "literary_elements"
@@ -2003,10 +2003,10 @@
         {
           "q": "Which sentence is the turning point of the story?",
           "choices": [
-            "\"Three weeks passed.\"",
+            "\"The flowers dried up and fell off.\"",
             "\"'Kai,' she said, 'where are the bees?'\"",
             "\"He mixed extra nutrients into the soil.\"",
-            "\"It took two hours.\""
+            "\"Plants don't get lonely. Go water the beans.\""
           ],
           "answer": 1,
           "skill": "literary_elements"
@@ -2014,10 +2014,10 @@
         {
           "q": "What does Kai mean when he says, \"The manual had the answer, but Ama found the question\"?",
           "choices": [
-            "Ama wrote the manual.",
-            "The manual was wrong, and Ama fixed it.",
+            "Ama secretly wrote the last page of the manual, so she already knew the answer to the problem.",
+            "The manual had the wrong answer, and Ama fixed the mistake by remembering her grandmother's garden.",
             "The information was in the manual, but Ama's careful observation showed them what to look for.",
-            "Ama asked Commander Reyes for help."
+            "Kai found the answer in the manual by himself, and Ama only asked Commander Reyes what to do."
           ],
           "answer": 2,
           "skill": "character"
@@ -2026,9 +2026,9 @@
           "q": "How does Kai change from paragraph 6 to paragraph 13?",
           "choices": [
             "He goes from ignoring Ama's ideas to giving her credit in front of the commander.",
-            "He goes from loving plants to disliking them.",
-            "He goes from following rules to breaking them.",
-            "He does not change at all."
+            "He goes from caring about the plants to not caring whether any tomatoes grow at all.",
+            "He goes from following the manual to breaking the rules to hide his mistake from Reyes.",
+            "He goes from giving Ama credit to taking all of the credit for himself in front of Reyes."
           ],
           "answer": 0,
           "skill": "character"
@@ -2036,10 +2036,10 @@
         {
           "q": "Which sentence best states the theme?",
           "choices": [
-            "Always follow the manual and never ask questions.",
-            "Space stations are dangerous places for children.",
+            "Following every step in the manual exactly is the best way to solve any problem you face.",
+            "Space stations are dangerous places for children, so adults should do all of the work.",
             "Careful observation and good questions can solve problems that following steps alone cannot.",
-            "Older siblings are always right."
+            "Older brothers and sisters know more, so younger ones should do what they are told."
           ],
           "answer": 2,
           "skill": "theme"
@@ -2087,10 +2087,10 @@
         {
           "q": "What is the author's main purpose for writing this article?",
           "choices": [
-            "To persuade readers to become beekeepers",
+            "To persuade readers to become beekeepers and protect the bees in their town",
             "To explain how honeybees survive winter and become active in spring",
-            "To tell an entertaining story about a brave queen bee",
-            "To warn readers that bee swarms are dangerous"
+            "To tell an entertaining story about a brave queen bee and her busy hive",
+            "To warn readers that bee swarms hanging from tree branches are dangerous"
           ],
           "answer": 1,
           "skill": "authors_purpose"
@@ -2098,10 +2098,10 @@
         {
           "q": "How is most of the article organized?",
           "choices": [
-            "Compare and contrast: honeybees and wasps",
-            "Problem and solution: how to stop bees from swarming",
+            "Compare and contrast: how honeybees and wasps survive the winter",
+            "Problem and solution: how beekeepers can stop bees from swarming",
             "Sequence: what happens in the hive from winter through late spring",
-            "Description only: the parts of a bee's body"
+            "Description: the parts of a bee's body and what each part does"
           ],
           "answer": 2,
           "skill": "text_structure"
@@ -2109,10 +2109,10 @@
         {
           "q": "According to paragraph 2, why do the worker bees shiver?",
           "choices": [
-            "Because they are frightened of the snow",
+            "Because they are frightened of the cold snow",
             "To produce heat that keeps the cluster warm",
-            "To shake honey out of the comb",
-            "To call the queen to the center"
+            "To shake the stored honey out of the wax comb",
+            "To signal the queen to move to the warm center"
           ],
           "answer": 1,
           "skill": "text_structure"
@@ -2120,10 +2120,10 @@
         {
           "q": "Which detail best explains why no bee freezes inside the winter cluster?",
           "choices": [
-            "\"The queen stays safely in the center.\"",
-            "\"A strong hive needs about 20 to 30 kilograms of honey.\"",
+            "\"A strong hive needs about 20 to 30 kilograms of honey to last until spring.\"",
+            "\"A beekeeper who sees bees zooming in and out on a warm February afternoon knows the colony has survived.\"",
             "\"The bees on the cold outer edge slowly trade places with the warmer bees inside.\"",
-            "\"They fly out briefly to clean themselves.\""
+            "\"They collect pollen, which is rich in protein, and nectar, which bees turn into honey.\""
           ],
           "answer": 2,
           "skill": "evidence"
@@ -2132,9 +2132,9 @@
           "q": "In paragraph 3, the colony may \"suffer a food deficiency.\" What does deficiency mean?",
           "choices": [
             "a lack of something that is needed",
-            "too much of something",
+            "too much of something that is needed",
             "a kind of sickness from cold weather",
-            "a special winter food"
+            "a special food bees eat in winter"
           ],
           "answer": 0,
           "skill": "vocab_context"
@@ -2143,7 +2143,7 @@
           "q": "Which event happens FIRST, while snow is still on the ground?",
           "choices": [
             "The bees take cleansing flights.",
-            "Foragers collect pollen from the first flowers.",
+            "Foragers gather pollen from new flowers.",
             "The queen begins laying a few eggs.",
             "Half the bees swarm with the old queen."
           ],
@@ -2154,9 +2154,9 @@
           "q": "Why does the author include the fact that \"one out of every three bites of food\" depends on pollinators?",
           "choices": [
             "To show that bees are important to the food people eat",
-            "To prove that bees eat a lot of food",
+            "To prove that bees eat a lot of the food that people grow",
             "To explain why beekeepers take honey in the fall",
-            "To compare bees with other insects"
+            "To compare bees with other insects that pollinate plants"
           ],
           "answer": 0,
           "skill": "authors_purpose"
@@ -2164,10 +2164,10 @@
         {
           "q": "What does the author mean by \"When a hive wakes up in spring, a whole garden wakes up with it\"?",
           "choices": [
-            "Bees make so much noise that they wake up gardeners.",
+            "Bees make so much noise in spring that they wake up gardeners.",
             "Active bees pollinate plants, helping the garden grow fruit and seeds.",
-            "Gardens sleep in winter exactly like bees.",
-            "Bees build their hives inside gardens."
+            "Gardens rest all winter and wake up in spring exactly like bees do.",
+            "Bees build new hives in gardens when they swarm in late spring."
           ],
           "answer": 1,
           "skill": "figurative_language"
@@ -2176,9 +2176,9 @@
           "q": "What is the central idea of the article?",
           "choices": [
             "Honeybees survive winter by working together, then build up the colony step by step in spring, which also helps plants grow.",
-            "Beekeepers should never take honey from a hive in the fall.",
-            "Swarming bees may look frightening, but they are usually calm.",
-            "Honeybees sleep all winter and wake up only when the first flowers bloom."
+            "Beekeepers should not take too much honey in the fall, or the colony may starve before spring comes.",
+            "Swarming bees hanging from a tree branch may look frightening, but they are usually calm and gentle.",
+            "Honeybees hibernate all winter and wake up only when the first flowers bloom and foragers go out."
           ],
           "answer": 0,
           "skill": "main_idea"
@@ -2186,10 +2186,10 @@
         {
           "q": "What is the main idea of paragraph 6?",
           "choices": [
-            "Pollen is rich in protein.",
+            "Pollen from the first spring flowers is rich in protein for the bees.",
             "Fresh food from spring flowers lets the colony grow very quickly.",
-            "The queen can lay over 1,500 eggs in a single day.",
-            "Only the oldest worker bees are able to make honey."
+            "The queen can lay more than 1,500 eggs in just a single day in spring.",
+            "Older worker bees stay inside the hive to keep the young brood warm."
           ],
           "answer": 1,
           "skill": "main_idea"
@@ -2199,8 +2199,8 @@
           "choices": [
             "The bees stay warm in a shivering cluster and trade places, and they eat stored honey for the energy they need.",
             "The queen stays in the center of the cluster while the workers fly out to find food.",
-            "A strong hive needs about 20 to 30 kilograms of honey to last until spring.",
-            "Beekeepers keep the hive warm in winter so that the bees do not freeze."
+            "A strong hive needs about 20 to 30 kilograms of honey to last all winter until spring.",
+            "Beekeepers keep the hive warm in winter with blankets so that the bees do not freeze."
           ],
           "answer": 0,
           "skill": "main_idea"
@@ -2247,7 +2247,7 @@
         {
           "q": "What is the author's main purpose for writing this letter?",
           "choices": [
-            "To explain how seeds germinate",
+            "To explain how seeds germinate in a garden",
             "To entertain the principal with a story about her cousin",
             "To persuade the principal to approve a school garden",
             "To complain about the muddy lot behind the gym"
@@ -2258,10 +2258,10 @@
         {
           "q": "How does Hana organize paragraphs 2-4?",
           "choices": [
-            "She tells events in the order they happened.",
+            "She tells the events of building her cousin's garden in the order they happened.",
             "She gives three reasons, each in its own paragraph, with signal words First, Second, Third.",
-            "She compares two different schools.",
-            "She describes the problem and then lists many solutions."
+            "She compares her school with her cousin's school in Tainan, paragraph by paragraph.",
+            "She describes one problem, the muddy lot, and then lists many ways to solve it."
           ],
           "answer": 1,
           "skill": "text_structure"
@@ -2270,7 +2270,7 @@
           "q": "Which sentence from the letter is a FACT, not an opinion?",
           "choices": [
             "\"I believe a garden would make our school healthier, smarter, and kinder.\"",
-            "\"It could become the best classroom in our school.\"",
+            "\"With a little work, it could become the best classroom in our school.\"",
             "\"The Parents' Association has already offered to hold a bake sale to pay for them.\"",
             "\"When you plant a carrot yourself, you really want to know how it tastes!\""
           ],
@@ -2281,9 +2281,9 @@
           "q": "What is the main purpose of paragraph 5?",
           "choices": [
             "To answer the reasons people might give against a garden",
-            "To describe what the garden will look like",
-            "To give a fourth reason a garden is good",
-            "To thank the Parents' Association"
+            "To describe what the garden beds will look like in spring",
+            "To give a fourth reason that a garden is good for students",
+            "To thank the Parents' Association for its bake sale"
           ],
           "answer": 0,
           "skill": "text_structure"
@@ -2291,7 +2291,7 @@
         {
           "q": "In paragraph 5, Hana calls the worries \"reasonable.\" What does she mean?",
           "choices": [
-            "The worries are silly and not worth thinking about.",
+            "The worries are silly and not worth it.",
             "The worries are fair and sensible.",
             "The worries are about money only.",
             "The worries came from the principal."
@@ -2302,10 +2302,10 @@
         {
           "q": "Which evidence best supports Hana's first reason, that a garden would help students eat better?",
           "choices": [
-            "Students could measure how fast bean plants grow.",
+            "Students could measure how fast bean plants grow and test which kind of soil holds water best.",
             "Researchers found that children who grow vegetables are more willing to taste them.",
-            "Older students teach younger students to water and weed.",
-            "The lot behind the gym is a muddy space where balls get lost."
+            "Older students at her cousin's school in Tainan teach younger students how to water and weed.",
+            "The Parents' Association has offered to hold a bake sale to pay for the seeds, soil, and tools."
           ],
           "answer": 1,
           "skill": "evidence"
@@ -2313,10 +2313,10 @@
         {
           "q": "What does Hana mean by \"a garden is a classroom without walls\"?",
           "choices": [
-            "The garden would need a fence.",
-            "Students would have to build a new classroom outside.",
+            "The garden would not need a fence around it, because it is already hidden behind the gym.",
+            "Students would have to build a brand-new classroom outside, right next to the garden beds.",
             "Students could learn subjects like science and math outdoors by doing real tasks.",
-            "The school does not have enough classrooms."
+            "The school does not have enough classrooms, so some of the classes would have to meet outside."
           ],
           "answer": 2,
           "skill": "figurative_language"
@@ -2325,9 +2325,9 @@
           "q": "Why does Hana mention her cousin's school in Tainan?",
           "choices": [
             "To give a real example that supports her reason about teamwork",
-            "To show that Tainan schools are better than hers",
-            "To explain where to buy seeds",
-            "To prove that gardens are cheap"
+            "To show that schools in Tainan are better than her own school",
+            "To explain where the class could buy seeds, soil, and tools",
+            "To prove that a garden would not cost the school much money"
           ],
           "answer": 0,
           "skill": "authors_purpose"
@@ -2335,10 +2335,10 @@
         {
           "q": "Which sentence states the main idea that the rest of the letter supports with reasons?",
           "choices": [
-            "\"My name is Hana Lin, and I am in Class 504.\"",
+            "\"My cousin says the garden is the one place where nobody argues about who is in charge.\"",
             "\"Many students in my class skip the vegetables at lunch.\"",
             "\"I believe a garden would make our school healthier, smarter, and kinder.\"",
-            "\"I promise we will take good care of it.\""
+            "\"The Parents' Association has already offered to hold a bake sale to pay for them.\""
           ],
           "answer": 2,
           "skill": "main_idea"
@@ -2346,10 +2346,10 @@
         {
           "q": "What is the main idea of paragraph 4?",
           "choices": [
-            "Plants need care every day.",
+            "Plants need care every day, even during summer vacation.",
             "Caring for a garden together would teach students teamwork.",
-            "Hana's cousin goes to a school in Tainan.",
-            "Older students should always be in charge of younger students."
+            "Hana's cousin goes to a school with a garden in Tainan.",
+            "Older students should be in charge of the younger students."
           ],
           "answer": 1,
           "skill": "main_idea"
@@ -2397,10 +2397,10 @@
         {
           "q": "How is most of this article organized?",
           "choices": [
-            "Sequence: the life cycle of a butterfly from egg to adult",
+            "Sequence: the life cycle of a purple crow butterfly, from the egg to the adult",
             "Problem and solution: butterflies were being hit on a highway, and people found ways to protect them",
-            "Compare and contrast: purple crows and monarchs",
-            "Description: what butterfly wings look like"
+            "Compare and contrast: how purple crows in Taiwan and monarchs in Mexico spend winter",
+            "Description: what the purple and blue wings of crow butterflies look like in sunlight"
           ],
           "answer": 1,
           "skill": "text_structure"
@@ -2408,10 +2408,10 @@
         {
           "q": "Why were so many butterflies hit by vehicles?",
           "choices": [
-            "They flew at night when drivers could not see them.",
+            "They flew at night, when drivers could not see them on the dark road.",
             "They usually fly low, at about the height of cars and trucks.",
-            "They were attracted to the bright lights of the trucks.",
-            "They rested on the warm road surface."
+            "They were attracted to the bright lights on the front of the big trucks.",
+            "They rested on the warm road surface to soak up heat from the sun."
           ],
           "answer": 1,
           "skill": "text_structure"
@@ -2420,9 +2420,9 @@
           "q": "How do the tall nets help the butterflies?",
           "choices": [
             "They catch the butterflies so volunteers can carry them across.",
-            "They block the wind so the butterflies fly faster.",
+            "They block the cold wind so the butterflies can fly faster.",
             "They make the butterflies fly upward, so they cross high above the traffic.",
-            "They keep the butterflies in the valleys until summer."
+            "They keep the butterflies in the valleys until the lane closes."
           ],
           "answer": 2,
           "skill": "text_structure"
@@ -2431,9 +2431,9 @@
           "q": "According to paragraph 1, why do the butterflies gather in valleys such as Maolin?",
           "choices": [
             "The valleys are mild and protected from the cold winter wind.",
-            "The valleys have the most flowers in winter.",
-            "Volunteers feed them there.",
-            "They are trapped there by the highway."
+            "The valleys have more flowers for them to feed on than anywhere else.",
+            "Volunteers feed them there and count them carefully every winter.",
+            "They are trapped there by the tall nets along the busy highway."
           ],
           "answer": 0,
           "skill": "evidence"
@@ -2452,10 +2452,10 @@
         {
           "q": "Which sentence best shows that the solutions worked?",
           "choices": [
-            "\"Purple crows usually fly low, only a few meters above the ground.\"",
-            "\"In 2007, volunteers, scientists, and highway officials worked together.\"",
+            "\"In 2007, volunteers, scientists, and highway officials worked together to protect the butterflies.\"",
+            "\"Volunteers keep counting the butterflies each spring so that officials know exactly when to close the lane.\"",
             "\"After the nets went up and the lane closures began, far fewer butterflies were killed on the highway.\"",
-            "\"Their journey can be hundreds of kilometers long.\""
+            "\"Taiwan is one of the few places in the world where so many butterflies spend the winter together.\""
           ],
           "answer": 2,
           "skill": "evidence"
@@ -2463,10 +2463,10 @@
         {
           "q": "How are Maolin and the mountains of Mexico alike?",
           "choices": [
-            "Both are on National Freeway No. 3.",
+            "Both are places along National Freeway No. 3 in Yunlin County, Taiwan.",
             "Both are places where huge numbers of butterflies spend the winter.",
-            "Both close highways for butterflies.",
-            "Both are home to purple crow butterflies."
+            "Both close part of a highway when the butterflies travel.",
+            "Both are home to the purple crow butterflies of Taiwan."
           ],
           "answer": 1,
           "skill": "text_structure"
@@ -2474,10 +2474,10 @@
         {
           "q": "What is the central idea of the article?",
           "choices": [
-            "Purple crow butterflies are the most beautiful insects in Taiwan.",
-            "Highways should be closed whenever animals are nearby.",
+            "Purple crow butterflies gather in warm valleys and shimmer purple and blue in sunlight.",
+            "Volunteers count the butterflies each spring to learn how many cross the highway.",
             "People in Taiwan found clever, simple ways to protect migrating butterflies from traffic.",
-            "Butterflies travel farther than any other insect."
+            "Butterflies fly hundreds of kilometers from southern Taiwan to lay eggs in the north."
           ],
           "answer": 2,
           "skill": "main_idea"
@@ -2485,10 +2485,10 @@
         {
           "q": "What is the main idea of paragraph 3?",
           "choices": [
-            "Purple crow butterflies fly only a few meters above the ground.",
+            "Purple crow butterflies usually fly only a few meters above the ground.",
             "The butterflies' low flight path crossed a busy highway, so many were killed by traffic.",
-            "Volunteers count the butterflies every spring.",
-            "National Freeway No. 3 is in Yunlin County."
+            "Volunteers began counting the butterflies so officials would know when to close the lane.",
+            "National Freeway No. 3 is a busy highway that runs through Yunlin County."
           ],
           "answer": 1,
           "skill": "main_idea"
@@ -2530,7 +2530,7 @@
             "\"Over the river and under the moon, / the night train hums its silver tune.\"",
             "\"Clickety-clack, clickety-clack, / carry me forward and never look back.\"",
             "\"I press my nose to the window glass / and count the stations as they pass.\"",
-            "\"Grandmother waits where the tracks run out.\""
+            "\"Grandmother waits where the tracks run out, / with a lantern lit and a hug, no doubt.\""
           ],
           "answer": 1,
           "skill": "poetry"
@@ -2541,7 +2541,7 @@
             "ABAB",
             "ABCB",
             "AABB",
-            "There is no rhyme."
+            "ABBA"
           ],
           "answer": 2,
           "skill": "poetry"
@@ -2550,9 +2550,9 @@
           "q": "\"Clickety-clack\" is an example of...",
           "choices": [
             "onomatopoeia (a sound word)",
-            "simile",
-            "hyperbole",
-            "alliteration only"
+            "simile (a comparison using like)",
+            "hyperbole (a big exaggeration)",
+            "metaphor (a direct comparison)"
           ],
           "answer": 0,
           "skill": "figurative_language"
@@ -2560,10 +2560,10 @@
         {
           "q": "Who is the speaker of \"The Night Train\"?",
           "choices": [
-            "the train engine",
-            "Grandmother, waiting at the station",
+            "the train engine, describing its own long trip",
+            "Grandmother, waiting at the station with a lantern",
             "a traveler riding the train to visit Grandmother",
-            "a farmer watching the train pass"
+            "a farmer watching the train pass by his fields at night"
           ],
           "answer": 2,
           "skill": "poetry"
@@ -2583,9 +2583,9 @@
           "q": "\"The rain came knocking, / soft knuckles on the soil.\" These lines are an example of...",
           "choices": [
             "personification, because the rain is described as knocking like a person",
-            "hyperbole, because the rain is exaggerated",
-            "onomatopoeia, because \"knocking\" is a sound",
-            "a refrain, because the line repeats"
+            "hyperbole, because the rain is exaggerated to seem much stronger than it is",
+            "simile, because the rain is compared to knuckles using the word like",
+            "a refrain, because the same line repeats at the end of every stanza"
           ],
           "answer": 0,
           "skill": "figurative_language"
@@ -2593,10 +2593,10 @@
         {
           "q": "How is the structure of the two poems different?",
           "choices": [
-            "Both poems use a refrain and a regular rhyme.",
+            "Both poems use a refrain and a regular rhyme; \"The Night Train\" has short lines, while \"What the Seed Knows\" has long, even lines.",
             "\"The Night Train\" has rhyme, a steady rhythm, and a refrain; \"What the Seed Knows\" is free verse with no rhyme and lines of different lengths.",
-            "\"What the Seed Knows\" has more stanzas and a refrain.",
-            "\"The Night Train\" is free verse, and \"What the Seed Knows\" rhymes."
+            "\"What the Seed Knows\" has rhyme, a steady beat, and a refrain; \"The Night Train\" is free verse with no rhyme and uneven lines.",
+            "\"The Night Train\" has more stanzas and a refrain; \"What the Seed Knows\" has fewer stanzas but rhymes in every line."
           ],
           "answer": 1,
           "skill": "poetry"
@@ -2604,10 +2604,10 @@
         {
           "q": "Why does the poet put the word \"up\" alone on its own line?",
           "choices": [
-            "Because the poet ran out of room",
-            "To make the poem rhyme",
+            "Because the poet ran out of room at the end of the line and had to start again below",
+            "To make the poem rhyme with the word \"morning\" in the line below it",
             "To make the reader pause and feel the moment the seed finally breaks through",
-            "To show that the seed is lost"
+            "To show that the seed is lost and alone in the dark under the stones"
           ],
           "answer": 2,
           "skill": "poetry"
@@ -2615,10 +2615,10 @@
         {
           "q": "What is the mood of \"The Night Train\"?",
           "choices": [
-            "angry and loud",
+            "angry, loud, and impatient",
             "calm, steady, and hopeful",
-            "scary and dangerous",
-            "sad and lonely"
+            "scary, dark, and dangerous",
+            "sad, lonely, and gloomy"
           ],
           "answer": 1,
           "skill": "poetry"
@@ -2626,10 +2626,10 @@
         {
           "q": "Which idea do BOTH poems share?",
           "choices": [
-            "Winter is the best season.",
-            "Trains are faster than plants.",
+            "Each poem shows that winter is the best season of the year.",
+            "Each poem shows that trains move faster than growing plants.",
             "Each poem describes moving forward toward something new.",
-            "Each poem is about a lost family member."
+            "Each poem is about a family member who has been lost."
           ],
           "answer": 2,
           "skill": "theme"
@@ -2676,10 +2676,10 @@
         {
           "q": "What do the words in italics and parentheses, such as \"(sinking into a chair),\" tell the reader?",
           "choices": [
-            "what the characters are thinking but not saying",
+            "what the characters are secretly thinking but never say out loud",
             "how the characters move and act, and what the setting looks like",
-            "the lines the audience should say",
-            "the title of each scene"
+            "the lines that the audience should say out loud during the play",
+            "the title of each scene and the name of the person who wrote it"
           ],
           "answer": 1,
           "skill": "drama"
@@ -2687,10 +2687,10 @@
         {
           "q": "What information does the cast of characters give?",
           "choices": [
-            "the setting of each scene",
-            "the order of events in the play",
+            "the setting of each scene and what time of day it takes place",
+            "the order of the events in the play from beginning to end",
             "the names of the characters and a short description of each",
-            "how the problem is solved"
+            "how the problem of the missing map is finally solved"
           ],
           "answer": 2,
           "skill": "drama"
@@ -2698,10 +2698,10 @@
         {
           "q": "What is the main conflict of the play?",
           "choices": [
-            "Lena and Omar argue about the class trip.",
+            "Lena and Omar argue about whether they should keep going on the class trip.",
             "The famous map is missing, and the characters try to find out what happened to it.",
-            "Mr. Hale wants to quit his job.",
-            "Dr. Park cannot find her note."
+            "Mr. Hale wants to quit his job because the museum is too small and quiet.",
+            "Dr. Park loses the note she left and spends the whole play searching for it."
           ],
           "answer": 1,
           "skill": "literary_elements"
@@ -2710,9 +2710,9 @@
           "q": "How are Lena and Omar different?",
           "choices": [
             "Lena is curious and bold; Omar is careful and worried about getting in trouble.",
-            "Lena is shy; Omar is the one who solves the mystery.",
-            "Lena works at the museum; Omar is a visitor.",
-            "They are exactly alike."
+            "Lena is shy and quiet; Omar is the one who notices the sand and solves the mystery.",
+            "Lena works at the museum as a guard; Omar is a student visiting on a class trip.",
+            "Lena is careful and worried about trouble; Omar is curious and bold."
           ],
           "answer": 0,
           "skill": "character"
@@ -2720,10 +2720,10 @@
         {
           "q": "Which stage direction best shows that Dr. Park feels uncomfortable at first?",
           "choices": [
-            "(laughing)",
+            "(DR. PARK enters, holding a rolled-up paper.)",
             "(She hesitates, then smiles awkwardly.)",
-            "(slowly)",
-            "(She points to a note on the floor, half hidden under the case.)"
+            "(DR. PARK unrolls the paper on a table.)",
+            "(MR. HALE stands beside it, rubbing his forehead.)"
           ],
           "answer": 1,
           "skill": "drama"
@@ -2731,10 +2731,10 @@
         {
           "q": "Why does Mr. Hale say, \"You might have told me!\"?",
           "choices": [
-            "He is angry that Lena touched the case.",
+            "He is angry that Lena touched the glass case.",
             "He had been worried that the map was stolen.",
-            "He wanted to take the map to the workroom himself.",
-            "He thinks the note was rude."
+            "He wanted to carry the map to the workroom himself.",
+            "He thinks Dr. Park's note was rude and too short."
           ],
           "answer": 1,
           "skill": "character"
@@ -2742,10 +2742,10 @@
         {
           "q": "What does Lena notice that the adults missed?",
           "choices": [
-            "The footprints were smaller than Omar's.",
-            "The door was marked STAFF ONLY.",
+            "Dr. Park was holding the missing map rolled up in her hand.",
+            "Mr. Hale had left the glass case unlocked during the night.",
             "The wet sand inside the case means seawater is leaking in.",
-            "Dr. Park was holding a rolled-up paper."
+            "The note from Dr. Park was hidden on the floor under the case."
           ],
           "answer": 2,
           "skill": "evidence"
@@ -2754,9 +2754,9 @@
           "q": "Which sentence best states the theme of the play?",
           "choices": [
             "Paying close attention to small details can uncover the truth.",
-            "Never go on a class trip to a museum.",
-            "Adults are always right.",
-            "Old maps are not worth saving."
+            "Students on a class trip should keep their hands off museum displays.",
+            "Adults know best, so children should leave mysteries to them.",
+            "Old maps are too fragile and are not worth saving in museums."
           ],
           "answer": 0,
           "skill": "theme"
@@ -2825,10 +2825,10 @@
         {
           "q": "Why does the Moon try to seize the Sun's robe?",
           "choices": [
-            "She is cold and wants to get warm.",
-            "She wants to give it to Ula.",
+            "She is cold at night and wants the robe to keep herself warm.",
+            "She wants to give the robe to Ula so the fisherwoman can see.",
             "She is jealous and wants to be admired the way he is.",
-            "The Sun asked her to hold it."
+            "The Sun asked her to hold his robe while he rested for the night."
           ],
           "answer": 2,
           "skill": "character"
@@ -2836,10 +2836,10 @@
         {
           "q": "Which sentence best shows that the Sun is boastful?",
           "choices": [
-            "\"Every morning, when he climbed over the mountains, the birds sang.\"",
+            "\"Every morning, when he climbed over the mountains, the birds sang, the flowers opened...\"",
             "\"'Poor pale sister,' he would say as they passed at dawn. 'Nobody waits for you.'\"",
-            "\"The Sun still shines brighter.\"",
-            "\"When the Sun lay down to rest at the edge of the world...\""
+            "\"The Sun still shines brighter. But the people who are out in the dark love the Moon best...\"",
+            "\"When the Sun lay down to rest at the edge of the world, she crept close...\""
           ],
           "answer": 1,
           "skill": "evidence"
@@ -2847,10 +2847,10 @@
         {
           "q": "In paragraph 8, Ula tells the Moon to \"project it down to us.\" What does project mean here?",
           "choices": [
-            "to stick out from an edge",
-            "to plan a school assignment",
+            "to stick out past the edge of something",
+            "to plan a big assignment for school",
             "to shine light outward onto something",
-            "to hide something away"
+            "to hide something away where no one sees"
           ],
           "answer": 2,
           "skill": "vocab_context"
@@ -2858,10 +2858,10 @@
         {
           "q": "What is the turning point of the story?",
           "choices": [
-            "The Sun lies down to rest.",
-            "The Moon burns her hands on the robe.",
+            "The Sun teases his sister at dawn, saying nobody waits for her.",
+            "The Moon weeps in a dark corner, and her tears fall as dew.",
             "Ula tells the Moon to borrow the light instead of stealing it.",
-            "The Moon shows only a thin slice of her face."
+            "The Moon shows only a thin slice of her face on some nights."
           ],
           "answer": 2,
           "skill": "literary_elements"
@@ -2869,10 +2869,10 @@
         {
           "q": "Which real science fact does the tale match?",
           "choices": [
-            "The Moon makes its own light.",
+            "The Moon makes its own light, which is why it glows silver at night.",
             "The Moon does not make its own light; it reflects light from the Sun.",
-            "The Sun goes to sleep at the edge of the world.",
-            "Dew comes from the Moon."
+            "The Sun goes to sleep at the edge of the world when night comes.",
+            "Dew on the grass comes from water that falls down from the Moon."
           ],
           "answer": 1,
           "skill": "literary_elements"
@@ -2881,9 +2881,9 @@
           "q": "Which sentence best states the theme?",
           "choices": [
             "You can find your own way to shine by helping others, not by taking what belongs to someone else.",
-            "The strongest always win.",
-            "Never cry in front of other people.",
-            "Brothers and sisters should never talk to each other."
+            "The brightest one wins in the end, so the others should stay out of the way and not complain.",
+            "If you cry in front of other people, they will laugh at you, so you should hide your tears.",
+            "Brothers and sisters who tease each other should stop talking until they learn to get along."
           ],
           "answer": 0,
           "skill": "theme"
@@ -2932,8 +2932,8 @@
           "choices": [
             "first person: the narrator tells her own story using \"I\"",
             "third person: an outside narrator tells about \"she\"",
-            "second person: the story speaks to \"you\"",
-            "Ms. Rivera tells the story."
+            "second person: the story speaks directly to \"you\"",
+            "third person limited: we only know what Ms. Rivera thinks"
           ],
           "answer": 0,
           "skill": "literary_elements"
@@ -2941,10 +2941,10 @@
         {
           "q": "\"I felt as if someone had dropped an ice cube down the back of my shirt.\" What does this show?",
           "choices": [
-            "The narrator was cold because it was winter.",
+            "The narrator was cold because the concert was in winter.",
             "The narrator was shocked and nervous about the news.",
-            "The narrator was angry at Ms. Rivera.",
-            "The narrator thought the news was funny."
+            "The narrator was angry at Ms. Rivera for choosing her.",
+            "The narrator thought the news was a funny joke."
           ],
           "answer": 1,
           "skill": "figurative_language"
@@ -2963,10 +2963,10 @@
         {
           "q": "In paragraph 2, what is the \"refrain\"?",
           "choices": [
-            "the four lines the narrator sings alone",
+            "the four lines that the narrator practices and sings alone",
             "the part of the song that repeats, which the whole choir sings",
-            "the pause before the song begins",
-            "the title of the song"
+            "the quiet pause just before the narrator starts her solo",
+            "the title of the last song the choir performs that night"
           ],
           "answer": 1,
           "skill": "vocab_context"
@@ -2974,7 +2974,7 @@
         {
           "q": "Which sentence best shows that the narrator prepared seriously?",
           "choices": [
-            "\"I have always loved singing.\"",
+            "\"I could see my grandmother in the third row...\"",
             "\"For three weeks, I practiced every day.\"",
             "\"My knees felt like they were made of jelly.\"",
             "\"I still get nervous before I sing.\""
@@ -2985,10 +2985,10 @@
         {
           "q": "Why does the grandmother say her favorite part was the pause?",
           "choices": [
-            "She did not like the song.",
-            "She could not hear the singing from the third row.",
+            "She did not like the song, so she was glad when the singing stopped.",
+            "She could not hear the singing well from her seat in the third row.",
             "The pause showed that her granddaughter was scared but kept going anyway.",
-            "She thought the pause was part of the music."
+            "She thought the pause was a planned part of the music Ms. Rivera wrote."
           ],
           "answer": 2,
           "skill": "character"
@@ -2997,9 +2997,9 @@
           "q": "How is this narrative organized?",
           "choices": [
             "in time order, from the day she was chosen to the moments right after the concert",
-            "as a list of reasons to join a choir",
-            "as a comparison of two concerts",
-            "as a problem with many possible solutions"
+            "as a list of reasons why every student should join the school choir",
+            "as a comparison of her first winter concert and her second one",
+            "as a description of the school hall, from the stage to the back walls"
           ],
           "answer": 0,
           "skill": "text_structure"
@@ -3039,7 +3039,7 @@
           "q": "Blank (1): The plot is ________ that make up the story.",
           "choices": [
             "the central message",
-            "the conversation between characters",
+            "the talk between characters",
             "the sequence of events",
             "the time and place"
           ],
@@ -3060,9 +3060,9 @@
         {
           "q": "Blank (4): Characters have distinct ________, motivations, and roles.",
           "choices": [
-            "plots",
+            "settings (places)",
             "stage directions",
-            "settings",
+            "themes (lessons)",
             "personalities (traits)"
           ],
           "answer": 3,
@@ -3083,9 +3083,9 @@
           "q": "Blank (6): ...the overall environment that influences the ________.",
           "choices": [
             "characters and events of the story",
-            "author's purpose",
-            "sound effects only",
-            "title of the play"
+            "author's reason for writing the drama",
+            "title and length of the play",
+            "rhyme and rhythm of the lines"
           ],
           "answer": 0,
           "skill": "drama"
@@ -3095,7 +3095,7 @@
           "choices": [
             "the most exciting moment",
             "the place where it happens",
-            "the opening scene",
+            "the very first scene of the play",
             "the central message or lesson"
           ],
           "answer": 3,
@@ -3104,9 +3104,9 @@
         {
           "q": "Blank (8): Dialogue is ________ between characters.",
           "choices": [
-            "the stage directions",
-            "the change in setting",
-            "the fight",
+            "the directions for actors",
+            "the change in time or place",
+            "the struggle or problem faced",
             "the conversation (spoken words)"
           ],
           "answer": 3,
@@ -3139,8 +3139,8 @@
           "choices": [
             "Read the introduction (find the thesis statement)",
             "Look at each paragraph's topic sentence",
-            "Look for repeated key words",
-            "Read the conclusion"
+            "Look for key words that repeat in the passage",
+            "Read the conclusion (find the summary at the end)"
           ],
           "answer": 0,
           "skill": "main_idea"
@@ -3148,9 +3148,9 @@
         {
           "q": "Blank (12): Each paragraph may have its own central idea at its beginning. Strategy name:",
           "choices": [
-            "Look for repeated key words",
+            "Look for key words repeated through the passage",
             "Look at the topic sentence of each paragraph",
-            "Read the conclusion",
+            "Read the conclusion (the last paragraph)",
             "Read the introduction (find the thesis statement)"
           ],
           "answer": 1,
@@ -3160,8 +3160,8 @@
           "q": "Blank (13): The central idea may be summarized or restated at the end. Strategy name:",
           "choices": [
             "Read the conclusion",
-            "Read the introduction (find the thesis statement)",
-            "Look at the topic sentence of each paragraph",
+            "Read the introduction",
+            "Look at topic sentences",
             "Look for repeated key words"
           ],
           "answer": 0,
@@ -3170,9 +3170,9 @@
         {
           "q": "Blank (14): Key words or phrases are repeated or emphasized throughout. Strategy name:",
           "choices": [
-            "Read the conclusion",
-            "Look at the pictures only",
-            "Count the paragraphs",
+            "Read the conclusion at the end",
+            "Read the introduction paragraph",
+            "Check each paragraph's topic sentence",
             "Look for repeated key words and phrases"
           ],
           "answer": 3,
@@ -3193,9 +3193,9 @@
           "q": "Mia cannot decide whether to tell the truth or protect her best friend. What kind of conflict is this?",
           "choices": [
             "internal conflict (a moral dilemma inside a character)",
-            "no conflict",
-            "external conflict between two characters",
-            "a conflict with the setting"
+            "no conflict (Mia is calm and sure of her choice)",
+            "external conflict (a fight between two characters)",
+            "external conflict (a struggle with a storm)"
           ],
           "answer": 0,
           "skill": "drama"
@@ -3239,7 +3239,7 @@
             "It was very easy.",
             "It was sweet and delicious.",
             "It was about baking.",
-            "It was only one part of a test."
+            "It was only part of a test."
           ],
           "answer": 0,
           "skill": "figurative_language"
@@ -3248,9 +3248,9 @@
           "q": "Why is \"it's raining cats and dogs\" an idiom?",
           "choices": [
             "Its meaning (raining heavily) cannot be worked out from the individual words.",
-            "It imitates the sound of rain.",
-            "It uses like or as to compare two things.",
-            "It is a real event where animals fall from the sky."
+            "It imitates the sound of heavy rain hitting the roof, like pitter-patter.",
+            "It uses like or as to compare the falling rain to running cats and dogs.",
+            "It describes a real event in which animals actually fall from the sky."
           ],
           "answer": 0,
           "skill": "figurative_language"
@@ -3258,9 +3258,9 @@
         {
           "q": "\"Time is a thief.\" What does this metaphor suggest?",
           "choices": [
-            "Someone stole a clock.",
-            "Clocks are expensive.",
-            "Time is a person who commits crimes.",
+            "Someone stole a clock from the classroom wall.",
+            "Clocks are expensive, so thieves like to take them.",
+            "Time is a real person who steals and commits crimes.",
             "Time quietly takes moments from our lives."
           ],
           "answer": 3,

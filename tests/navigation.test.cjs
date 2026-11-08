@@ -864,3 +864,14 @@ test('midterm Word Forms sentences keep the time clues that make one form correc
     assert.ok(all.includes(s), s);
   assert.deepEqual([...midterm.vocabulary.words.find(w => w.word === 'porthole').synonyms], ['window']);
 });
+
+test('midterm reading: the correct choice is not usually the longest (no length giveaway)', () => {
+  let total = 0, longest = 0;
+  for (const p of midterm.reading.passages) for (const q of p.questions) {
+    if (!q.choices || q.choices.length < 3) continue;
+    const L = q.choices.map(c => c.length), max = Math.max(...L);
+    total++;
+    if (L[q.answer] === max && L.filter(l => l === max).length === 1) longest++;
+  }
+  assert.ok(longest / total <= 0.35, `${longest}/${total} correct answers are the longest choice`);
+});
