@@ -1,6 +1,6 @@
 # Grade 5 Fall Midterm build: retro
 
-Build period: 2026-10-22 to 2026-10-23 (homework and reading round on 2026-10-23), plus a review-packet round on 2026-11-03. Test date: 2026-11-05.
+Build period: 2026-10-22 to 2026-10-23 (homework and reading round on 2026-10-23), plus a review-packet round on 2026-11-03 and a vocabulary-and-reading round on 2026-11-08 (see the last section). Test date: 2026-11-05; vocabulary and reading still to be scheduled.
 
 ## What shipped
 
@@ -21,11 +21,6 @@ Build period: 2026-10-22 to 2026-10-23 (homework and reading round on 2026-10-23
 | `211c508` | Seven storybook illustrations for the packet sets, made through `codex exec`; worksheet sets render as picture cards, and every set shows a banner above each question |
 
 Tests grew from 32 to 40, and every deploy passed them.
-
-- 2026-11-08: Module 1 review sets (one per Module 1 week, 60 items) added to the midterm Vocabulary worksheet grid, built from the Quiz 1 definitions and curated context sentences. Worksheet sets now show an item's `explanation` after an answer. The quiz engine gained a question counter, live right/wrong tally, an early-end button and a full answer record.
-- 2026-11-08: Reading answer log and a skill-based Reading Report (first-try accuracy per skill, trend, wrong choices, 0-2 short-answer ratings). Main Idea grew from 4 to 20 multiple-choice questions so the report can judge it.
-- 2026-11-08: Vocabulary review. Definitions match the teacher list and the four packet sets match the packet key. Fixed: 26 of the app's own example sentences gained time or number clues so Word Forms has one correct inflection (teacher homework sentences unchanged); new `avoid` lists stop attempt/hesitate, restrain/seize, ditty/refrain, reasonable/favorable and the reasonable/delirious synonym-antonym family from appearing as a second correct answer; `port` dropped as a porthole synonym.
-- 2026-11-08: Reading review (four parallel reviewers, every finding re-checked against the text or photos). No wrong answer keys; all nonfiction facts confirmed. Fixed: Lila's Treehouse was missing teacher Q4 and half of Q5 (IMG_7064); the review-packet notes page now has the teacher's full wording (IMG_7236-7237); The Silent Greenhouse timeline (inspection "in two weeks", not five days) and tomato timing; a plot hole in The Clockmaker's Test (how Odile heard the whisper); poem intros that called spoken lines "refrains"; a misquoted stage direction, a skill tag, two sample answers, a grammar slip, the cleansing-flight temperature (10°C), and the endosperm generalization. Then 134 app-written questions got rewritten distractors (same keys, parallel form, built from passage details): the correct choice is now the single longest in 27% of 3+-choice questions (was 72%) and the median correct/wrong length ratio is 1.01 (was 1.5). Teacher homework questions were not changed. A test keeps the longest-is-correct rate at or under 35%.
 
 ## What went well
 
@@ -66,6 +61,8 @@ Tests grew from 32 to 40, and every deploy passed them.
 
 These are tracked in `study_plan.md`:
 
+- Skill-targeted reading practice ("practice only Theme"), deferred until the Reading Report has real first-try data
+- Spelling review for the midterm (deferred by the user on 2026-11-08)
 - The four Into Reading texts (low priority: not tested directly)
 - KISI pp. 26/30/34/37/42/47
 - Grammar Review Quizzes 5-7
@@ -74,3 +71,50 @@ These are tracked in `study_plan.md`:
 - Where the two Pachamanca photos belong
 
 The app still has no oral or writing practice.
+
+## Vocabulary and reading round (2026-11-08)
+
+Started from user feedback that Vocabulary practice felt endless and kept no record of right and wrong answers. It grew into a progress-and-measurement round plus a full content review of both topics.
+
+### What shipped
+
+| Commit | What |
+| --- | --- |
+| `3d04078` | `runQuiz`: "Question N of M", live ✅/❌ tally, **End round** after the first answer, a full answer record on the finish screen, **Redo the N wrong**. Full rounds save last right/total; early ends and review rounds never change the best score. Vocabulary menu shows each mode's last and best result |
+| `ea2a1cd` | Module 1 review sets (`m1_review_week1-3`, 60 items) built from the Quiz 1 definitions and curated `contexts[]`, with three new banners; worksheet items can carry an `explanation` |
+| `e9e40e1` | Reading answer log (`cs-english-exam-reading-log`) and **Reading Report**: first-try accuracy per skill (Strong ≥80%, Needs practice 60–79%, Focus <60%, judged after 8), trend, recent wrong choices, 0–2 parent ratings for short answers; passage cards show first try and best |
+| `a9e96f7` | 14 new Main Idea questions on the six informational passages; two central-idea questions retagged. Main Idea: 4 → 20 |
+| `6c5912f` | Main (Central) Idea anchor chart and poster (tabletop = main idea, legs = key details) using the teacher's four find-it strategies |
+| `6cac875` | Vocabulary and Reading speak the picked answer once; a correct answer waits for the speech; **Read my answer** toggle |
+| `cdb92ca` | Vocabulary review: 26 Word Forms sentences gained time/number clues; per-word `avoid[]` for look-alike distractors; `port` removed |
+| `878d0aa` | Reading review: restored teacher Lila Q4/Q5 and the full packet-notes wording; fixed the Greenhouse timeline, the Clockmaker plot hole, poem intros, and eight small items. No answer key was wrong |
+| `f8b2156` | 134 app-written questions got new distractors. Correct-is-longest 72% → 27%, median length ratio 1.5 → 1.01; a test holds it at ≤35% |
+| `498a697` | Seed Q6 asks for the meaning of *favorable* (the context-clue version had several defensible answers) |
+
+Tests grew from 43 to 54.
+
+### What went well
+
+- **Measure before judging.** Counting choice lengths across all 186 questions exposed a giveaway (the correct answer was the longest 72% of the time) that no question-by-question read had noticed in three earlier rounds.
+- **Parallel review, then verify.** Four reviewers each took a passage group and answered every question before reading the key. Every finding was re-checked against the passage or the teacher's photo before any edit; the two teacher-material gaps (Lila Q4, the cut packet wording) were only visible by going back to `raw/`.
+- **Patch files plus a shared checker.** The distractor rewrite ran as four agents writing patch files, not editing `reading.json`. One `check.py` enforced the same rules (keys unchanged, lengths within 75–130%, longest/shortest rate 15–35%), so the merge was mechanical and the review could focus on meaning.
+- **Mutation-checking the new test.** The `avoid` test was run once against a copy of the app with the fix disabled; it failed as expected, proving it guards the bug.
+- **Small data hooks over new engines.** `avoid[]`, `explanation` on worksheet items, and `speakChoice` reused the existing quiz engine instead of adding modes.
+
+### What did not go well
+
+- **Generated questions were never checked for a second correct answer.** Word Forms sentences without a time clue, look-alike Fill-in-the-Blank pairs, and the reasonable/delirious synonym clash had been live since the midterm build.
+- **Writers lengthen the right answer.** Both human-style and generated items made the key the most careful, longest choice. It went unnoticed until measured.
+- **Two passages had logic holes** (a five-day deadline that needed two weeks; a teacher who heard a whisper through a closed door). Close readers would have been confused.
+- **`codex exec -i` is variadic.** It swallowed the prompt as another image path ("No prompt provided via stdin"); piping the prompt on stdin fixed it.
+- **Harness quirks again.** Cross-realm `deepEqual` failed on arrays; a reused DOM stub kept the Submit button disabled; headless `scrollIntoView` produced blank screenshots.
+
+### Lessons
+
+1. **Measure answer-choice length** whenever MCQs are written or edited; keep the test that caps correct-is-longest at 35%.
+2. **For every generated question, ask "could another choice also be right?"** Give Word Forms sentences a tense or number clue, and use `avoid[]` for words that fit the same blanks.
+3. **Verify teacher material against `raw/`, not only against `content/`.** The transcription itself had dropped a question.
+4. **Delegate review with a scope and a checker, then verify every finding.** Agents report; only checked findings get applied.
+5. **Record first tries separately.** Retries measure memory; the Reading Report only judges a skill from first tries.
+6. **Pipe long prompts to `codex exec` on stdin** when attaching images with `-i`.
+
