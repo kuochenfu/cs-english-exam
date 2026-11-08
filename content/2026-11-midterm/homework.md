@@ -171,14 +171,15 @@ Teacher corrections on Yui's answers: "The contents of my backpack **is**" → *
 1. True or False: The treehouse was only used for reading books. — **False**
 2. True or False: Lila made friends with a squirrel named Ricky by feeding it nuts. — **True**
 3. True or False: The story's central idea is that the treehouse was painted green and had wooden steps. — **False**
-4. The treehouse changed from a reading space to a ____ for Lila and her woodland friends. — **sanctuary**
-5. Where is the main setting of the story? — **Her grandmother's backyard treehouse**
-6. What is the main conflict of the story? — **A scared squirrel entered the treehouse, and Lila had to decide whether to chase it away or befriend it.**
-7. What is the main plot of the story? — **Lila spends her summer reading in the treehouse and gradually turns it into a place where animals feel welcome.**
-8. What is the theme, or message, of the story? — **Friendship and kindness can create harmony with nature.**
-9. The birds "sang their hearts out." What does this phrase mean? — **The birds sang loudly and joyfully.**
-10. "Its nose twitching" is an example of... — **imagery (descriptive language appealing to the senses)**
-11. Write a 3-4 sentence summary of the story. Use First, Then, Finally.
+4. At first, Lila used the treehouse for ____. Later, she shared it with ____ and other ____. — **reading / Ricky / animals**
+5. The treehouse changed from a ____ space to a ____ for Lila and her woodland friends. — **reading / sanctuary**
+6. Where is the main setting of the story? — **Her grandmother's backyard treehouse**
+7. What is the main conflict of the story? — **A scared squirrel entered the treehouse, and Lila had to decide whether to chase it away or befriend it.**
+8. What is the main plot of the story? — **Lila spends her summer reading in the treehouse and gradually turns it into a place where animals feel welcome.**
+9. What is the theme, or message, of the story? — **Friendship and kindness can create harmony with nature.**
+10. The birds "sang their hearts out." What does this phrase mean? — **The birds sang loudly and joyfully.**
+11. "Its nose twitching" is an example of... — **imagery (descriptive language appealing to the senses)**
+12. Write a 3-4 sentence summary of the story. Use First, Then, Finally.
    - Sample: First, Lila spent her summer reading in the treehouse at her grandmother's house. Then a scared squirrel ran in, and instead of shooing it away, she fed it nuts and it became her reading buddy, Ricky. Later, birds and a rabbit started visiting too. Finally, the treehouse was not just a reading space anymore; it became a sanctuary for Lila and her woodland friends.
 
 Transcription fixes: in *Finding Prince Deming* ¶8 the sheet says "the kind" (king); in *Whimsical Tales* ¶1 "distance buzz" (distant); the *Lila* passage names the squirrel "Toby" once in ¶3 (Ricky), says "singing their heart out" (the question says "hearts"), and the question quotes "Their noses twitching" (the text says "its nose twitching"). The app uses the corrected wording.
