@@ -933,7 +933,10 @@ button.replay { margin: 0 0 8px; }
 .quiz-tally { display: inline-flex; gap: 14px; font-weight: bold; }
 .tally-good { color: var(--good); }
 .tally-bad { color: var(--bad); }
-button.quiz-end { display: block; margin: 20px 0 0; }
+.quiz-tools { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.quiz-tools button { margin: 0; }
+button.speak-toggle { margin: 0 0 8px; }
+.quiz-tools button.speak-toggle { margin: 0; }
 
 .result-summary {
   display: flex;

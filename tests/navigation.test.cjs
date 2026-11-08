@@ -765,3 +765,64 @@ test('Main Idea anchor chart exists with a poster, and the report link opens tha
   assert.equal((html.match(/<details class="anchor-chart" open>/g) || []).length, 1);
   assert.match(html, /<details class="anchor-chart" open>\s*<summary>Main \(Central\) Idea/);
 });
+
+function speechHarness() {
+  const h = midtermHarness();
+  const spoken = [];
+  h.context.window.speechSynthesis = true;
+  h.context.speechSynthesis = { cancel() {}, getVoices() { return []; }, speak(u) { spoken.push(u); } };
+  h.context.SpeechSynthesisUtterance = function (text) { this.text = text; };
+  h.spoken = spoken;
+  return h;
+}
+
+test('vocabulary reads the chosen answer aloud and waits for it before the next question', () => {
+  const h = speechHarness();
+  h.run(`runQuiz('vocab:word', 'Practice', [{word:'one'},{word:'two'}], w => ({prompt:w.word, choices:['<b>yes</b>','no'], answer:0}), {speakChoice:true});`);
+  assert.match(h.element('app').innerHTML, /Read my answer: On/);
+  h.choices().find(b => b.dataset.idx === '0').onclick();
+  assert.equal(h.spoken.at(-1).text, 'yes');
+  assert.match(h.element('app').innerHTML, /Question <b>1<\/b>/, 'still on question 1 while speaking');
+  h.spoken.at(-1).onend();
+  h.flush();
+  assert.match(h.element('app').innerHTML, /Question <b>2<\/b>/);
+});
+
+test('speech ending after leaving the quiz cannot change the screen; the toggle turns speech off', () => {
+  const h = speechHarness();
+  h.run(`runQuiz('vocab:word', 'Practice', [{word:'one'},{word:'two'}], w => ({prompt:w.word, choices:['yes','no'], answer:0}), {speakChoice:true});`);
+  h.choices().find(b => b.dataset.idx === '0').onclick();
+  h.run('renderHome()');
+  const home = h.element('app').innerHTML;
+  h.spoken.at(-1).onend();
+  h.flush();
+  assert.equal(h.element('app').innerHTML, home);
+
+  h.run(`runQuiz('vocab:word', 'Practice', [{word:'one'},{word:'two'}], w => ({prompt:w.word, choices:['yes','no'], answer:0}), {speakChoice:true});`);
+  h.element('speak-toggle').onclick();
+  assert.equal(h.saved.get('cs-english-exam-speak-choice'), 'off');
+  const count = h.spoken.length;
+  h.choices().find(b => b.dataset.idx === '0').onclick();
+  assert.equal(h.spoken.length, count);
+  h.flush();
+  assert.match(h.element('app').innerHTML, /Question <b>2<\/b>/);
+});
+
+test('vocabulary modes turn on speech; other topics do not; reading speaks a picked option', () => {
+  const h = speechHarness();
+  h.run('vocabularyTopic()');
+  h.element('m1').onclick();
+  assert.match(h.element('app').innerHTML, /speak-toggle/);
+  h.run(`runQuiz('grammar', 'Grammar', [{q:'a'}], it => ({prompt:'a', choices:['x','y'], answer:0}))`);
+  assert.doesNotMatch(h.element('app').innerHTML, /speak-toggle/);
+
+  const inputs = [];
+  h.context.document.querySelectorAll = sel => sel === '.qa-choice input' ? inputs : [];
+  h.run(`readPassage({id:'demo',title:'Demo',skills:[],body:'Read.',questions:[{q:'Which?',skill:'evidence',choices:['The <i>first</i> one','Two'],answer:0}]})`);
+  assert.match(h.element('app').innerHTML, /speak-toggle/);
+  const input = { checked: true, closest: () => ({ querySelector: () => ({ innerHTML: 'The <i>first</i> one' }) }) };
+  inputs.push(input);
+  h.run(`readPassage({id:'demo',title:'Demo',skills:[],body:'Read.',questions:[{q:'Which?',skill:'evidence',choices:['The <i>first</i> one','Two'],answer:0}]})`);
+  input.onchange();
+  assert.equal(h.spoken.at(-1).text, 'The first one');
+});

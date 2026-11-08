@@ -11,6 +11,7 @@ const VOICE_KEY = "cs-english-exam-voice";
 const EXAM_KEY = "cs-english-exam-current-exam";
 const SEEN_KEY = "cs-english-exam-seen-exams";
 const READING_LOG_KEY = "cs-english-exam-reading-log";
+const SPEAK_CHOICE_KEY = "cs-english-exam-speak-choice";
 // Set in index.html; appended to every data fetch so GitHub Pages' cache never serves stale JSON.
 const APP_VERSION = window.APP_VERSION || "";
 const progress = JSON.parse(localStorage.getItem(STORE_KEY) || "{}");
@@ -295,15 +296,44 @@ if ("speechSynthesis" in window) {
   speechSynthesis.onvoiceschanged = loadVoices;
 }
 
-function speak(text, rate = 0.9) {
+function speak(text, rate = 0.9, onEnd = null) {
   if (!("speechSynthesis" in window)) return;
   const u = new SpeechSynthesisUtterance(text);
+  if (onEnd) { u.onend = onEnd; u.onerror = onEnd; }
   if (selectedVoice) u.voice = selectedVoice;
   u.rate = rate;
   u.pitch = 1.0;
   u.lang = selectedVoice?.lang || "en-US";
   speechSynthesis.cancel();
   speechSynthesis.speak(u);
+}
+
+// Read the chosen answer aloud (Vocabulary and Reading). On by default; the child can turn it off.
+function speakChoicesOn() {
+  try { return localStorage.getItem(SPEAK_CHOICE_KEY) !== "off"; } catch { return true; }
+}
+function speakChoiceToggleHTML() {
+  if (!("speechSynthesis" in window)) return "";
+  const on = speakChoicesOn();
+  return `<button type="button" class="ghost small speak-toggle" id="speak-toggle" aria-pressed="${on}">${on ? "🔊 Read my answer: On" : "🔇 Read my answer: Off"}</button>`;
+}
+function bindSpeakChoiceToggle() {
+  const b = $("speak-toggle");
+  if (!b) return;
+  b.onclick = () => {
+    const on = !speakChoicesOn();
+    try { localStorage.setItem(SPEAK_CHOICE_KEY, on ? "on" : "off"); } catch {}
+    if (!on) speechSynthesis.cancel();
+    b.setAttribute("aria-pressed", String(on));
+    b.textContent = on ? "🔊 Read my answer: On" : "🔇 Read my answer: Off";
+  };
+}
+// Speaks the choice once; returns true when speech started.
+function speakChoice(html, onEnd = null) {
+  const text = String(html).replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+  if (!text || !speakChoicesOn() || !("speechSynthesis" in window)) return false;
+  speak(text, 0.9, onEnd);
+  return true;
 }
 
 function voicePicker() {
@@ -834,6 +864,7 @@ function runQuiz(topicId, title, items, getQ, options = {}) {
   const itemLabel = options.itemLabel || ((item) => item.word || item.q || "Question");
 
   function step() {
+    if (options.speakChoice && "speechSynthesis" in window) speechSynthesis.cancel();
     if (i >= order.length) return finish();
     const item = items[order[i]];
     const { prompt, choices, answer, extra, explanation } = getQ(item);
@@ -852,13 +883,23 @@ function runQuiz(topicId, title, items, getQ, options = {}) {
           ${choiceOrder.map(idx => `<button data-idx="${idx}">${choices[idx]}</button>`).join("")}
         </div>
         <div class="feedback" id="fb" role="status" aria-live="polite"></div>
-        ${i > 0 ? `<button type="button" class="ghost small quiz-end" id="quiz-end">End round · see results</button>` : ""}
+        <div class="quiz-tools">
+          ${i > 0 ? `<button type="button" class="ghost small" id="quiz-end">End round · see results</button>` : ""}
+          ${options.speakChoice ? speakChoiceToggleHTML() : ""}
+        </div>
       </div>`);
     if ($("quiz-end")) $("quiz-end").onclick = () => finish(true);
+    if (options.speakChoice) bindSpeakChoiceToggle();
     document.querySelectorAll(".choices button").forEach(b => {
       b.onclick = () => {
         const picked = +b.dataset.idx;
         const isCorrect = picked === answer;
+        const epoch = screenEpoch;
+        let speechDone = false, afterSpeech = null;
+        const spoke = !!options.speakChoice && speakChoice(choices[picked], () => {
+          speechDone = true;
+          if (afterSpeech && epoch === screenEpoch) afterSpeech();
+        });
         const id = String(itemId(item));
         document.querySelectorAll(".choices button").forEach(x => {
           x.disabled = true;
@@ -885,8 +926,15 @@ function runQuiz(topicId, title, items, getQ, options = {}) {
           let moved=false;
           $("quiz-next").onclick=()=>{if(moved)return;moved=true;i++;step();};
           $("quiz-next").focus();
-        } else {
+        } else if (!spoke) {
           scheduleScreen(() => { i++; step(); }, 700);
+        } else {
+          // Let the spoken answer finish before the next question; fall back if onend never fires.
+          let moved = false;
+          const go = () => { if (moved || epoch !== screenEpoch) return; moved = true; i++; step(); };
+          afterSpeech = () => scheduleScreen(go, 300);
+          if (speechDone) afterSpeech();
+          scheduleScreen(go, 7000);
         }
       };
     });
@@ -1094,7 +1142,7 @@ function vocabularyTopic(context = {}) {
   if (!words.length) return emptyTopic("Vocabulary");
   const vocabKey = name => `vocab:${name}`;
   const reviewCount = name => missedItems(vocabKey(name)).filter(m => words.some(w => w.word === m.id)).length;
-  const vocabOptions = (name, reviewOnly = false) => ({reviewOnly, progressId: `${vocabKey(name)}${quiz1Enabled() && context.week ? ':week'+context.week : ''}`, parents:[...topicParents(context), {title:'Vocabulary',render:()=>vocabularyTopic(context)}], itemId:w=>w.word, itemLabel:w=>w.word});
+  const vocabOptions = (name, reviewOnly = false) => ({reviewOnly, speakChoice: true, progressId: `${vocabKey(name)}${quiz1Enabled() && context.week ? ':week'+context.week : ''}`, parents:[...topicParents(context), {title:'Vocabulary',render:()=>vocabularyTopic(context)}], itemId:w=>w.word, itemLabel:w=>w.word});
   const missedDef = reviewCount("definition");
   const missedWord = reviewCount("word");
   const missedBlank = reviewCount("blank");
@@ -1219,7 +1267,7 @@ function vocabularyTopic(context = {}) {
   const packetSets = (data.vocabulary.practiceSets || []).filter(set => set.items?.length);
   const startSet = (set, items = set.items, review = false) => runQuiz(vocabKey(`set:${set.id}`), set.title, items, (it) => ({
     prompt: it.q, choices: it.choices, answer: it.answer, explanation: it.explanation, extra: setBanner(set)
-  }), {reviewOnly: review, parents: vocabOptions("set").parents, itemId: it => it.q, itemLabel: it => it.q});
+  }), {reviewOnly: review, speakChoice: true, parents: vocabOptions("set").parents, itemId: it => it.q, itemLabel: it => it.q});
 
   // Each mode button shows its question count and the record of the last full round.
   const roundRecord = (p) => p ? `Last ${p.lastTotal ? `${p.lastCorrect}/${p.lastTotal} right` : `${p.lastScore}%`} · Best ${p.best}%` : "Not tried yet";
@@ -1781,6 +1829,7 @@ function readPassage(passage, reviewOnly = false) {
         <button id="stop-passage" class="ghost">⏹ Stop</button>
       </div>
       <h3>Questions</h3>
+      ${speakChoiceToggleHTML()}
       <p class="hint">Read the passage above (you can scroll back any time), pick one answer for each question, then click <b>Submit all answers</b> at the bottom.</p>
       ${reviewOnly ? `<p class="review-note">Reviewing missed questions only.</p>` : ""}
       ${questions.map((q, qi) => `
@@ -1806,6 +1855,10 @@ function readPassage(passage, reviewOnly = false) {
     speak(plain);
   };
   $("stop-passage").onclick = () => speechSynthesis.cancel();
+  bindSpeakChoiceToggle();
+  document.querySelectorAll(".qa-choice input").forEach(input => {
+    input.onchange = () => { if (input.checked) speakChoice(input.closest(".qa-choice").querySelector("span").innerHTML); };
+  });
 
   $("submit-all").onclick = () => {
     if ($("submit-all").disabled) return;
