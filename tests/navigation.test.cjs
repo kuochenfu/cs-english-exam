@@ -649,3 +649,37 @@ test('midterm review-packet spelling and reading sets are valid', () => {
   h.run(`phonicsQuiz(data.spelling.lists.find(l => l.id === 'm2_packet_circle_spelling'))`);
   assert.match(h.element('app').innerHTML, /class="set-banner" src="assets\/2026-11-midterm\/packet\/circle-spelling\.webp"/);
 });
+
+test('quiz shows question count and tally; ending early keeps the record but saves no best score', () => {
+  const h = harness();
+  h.run(`runQuiz('vocab:word', 'Practice', [{word:'one'},{word:'two'},{word:'three'}], w => ({prompt:'Pick for '+w.word, choices:['yes','no'], answer:0}), {progressId:'vocab:word'});`);
+  assert.match(h.element('app').innerHTML, /Question <b>1<\/b> of 3/);
+  assert.doesNotMatch(h.element('app').innerHTML, /quiz-end/);
+  h.choices().find(b => b.dataset.idx === '1').onclick();
+  assert.equal(h.element('tally-bad').textContent, 1);
+  h.element('quiz-next').onclick();
+  assert.match(h.element('app').innerHTML, /Question <b>2<\/b> of 3/);
+  h.element('quiz-end').onclick();
+  const html = h.element('app').innerHTML;
+  assert.match(html, /Round ended/);
+  assert.match(html, /1 of 3 answered/);
+  assert.match(html, /Answer record \(1\)/);
+  assert.match(html, /you said: <s>no<\/s>/);
+  assert.equal(h.run(`readProgress('vocab:word')`), null);
+});
+
+test('a full round saves right/wrong counts that the vocabulary menu shows', () => {
+  const h = harness();
+  h.run(`runQuiz('vocab:word', 'Practice', [{word:'one'},{word:'two'}], w => ({prompt:w.word, choices:['yes','no'], answer:0}), {progressId:'vocab:word'});`);
+  h.choices().find(b => b.dataset.idx === '0').onclick(); h.flush();
+  h.choices().find(b => b.dataset.idx === '1').onclick(); h.element('quiz-next').onclick();
+  const p = h.run(`readProgress('vocab:word')`);
+  assert.equal(p.lastCorrect, 1); assert.equal(p.lastTotal, 2); assert.equal(p.best, 50);
+  assert.match(h.element('app').innerHTML, /Answer record \(2\)/);
+  h.element('finish-missed').onclick();
+  assert.match(h.element('app').innerHTML, /Question <b>1<\/b> of 1/);
+  h.choices().find(b => b.dataset.idx === '0').onclick(); h.flush();
+  assert.equal(h.run(`readProgress('vocab:word')`).best, 50, 'redo-wrong round does not raise best');
+  h.run(`vocabularyTopic()`);
+  assert.match(h.element('app').innerHTML, /Last 1\/2 right · Best 50%/);
+});
