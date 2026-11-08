@@ -747,7 +747,8 @@
       "skills": [
         "authors_purpose",
         "text_structure",
-        "vocab_context"
+        "vocab_context",
+        "main_idea"
       ],
       "body": "An informational article. Paragraphs are numbered.\n\n<b>How a Seed Wakes Up</b>\n\n1 All winter long, a seed can lie in the cold ground looking as lifeless as a pebble. Yet inside its hard coat, a tiny plant is waiting. When the season changes, that plant will awaken and push its way toward the light. How does a seed know when it is time to grow? The answer lies in a series of signals from its surroundings.\n\n<b>Waiting for the Right Moment</b>\n2 A seed has three main parts. The seed coat is a tough outer layer that protects everything inside. The embryo is the baby plant. The endosperm, or stored food, gives the embryo energy until it can make its own. These parts allow a seed to survive for months, or even years, without growing at all. This resting state is called dormancy.\n\n3 Dormancy protects the seed. If a seed sprouted during a warm week in December, the next hard frost would kill the tender young plant. Therefore, many seeds will not grow until they have gone through a long stretch of cold. The cold works like a calendar, telling the seed that winter has truly passed.\n\n<b>The Signals of Spring</b>\n4 A seed begins to grow, or germinate, only when conditions are favorable. It needs three things: water, oxygen, and the right temperature. In spring, melting snow and rain soak the soil. Because the seed coat absorbs this water, the seed swells and its coat splits open. At the same time, warmer soil speeds up the chemical changes inside the seed.\n\n<b>From Seed to Seedling</b>\n5 Germination follows a predictable order. First, the root pushes downward. It anchors the plant and begins drawing water from the soil. Next, a shoot curls upward toward the surface. Once the shoot breaks through the soil, its first leaves unfold. Finally, the leaves begin to use sunlight to make food, a process called photosynthesis. The stored food is used up, and the seedling now feeds itself.\n\n<b>When Things Go Wrong</b>\n6 Not every seed succeeds. If seeds are planted too densely, the seedlings crowd one another and compete for water and light, so many grow weak and thin. A seedling may also suffer from a deficiency of nutrients. For example, a plant without enough nitrogen often develops pale yellow leaves. Gardeners prevent these problems by spacing seeds carefully and enriching the soil with compost.\n\n7 It is reasonable to think of spring as one sudden change, but for a seed, it is a careful chain of events. Each step depends on the one before it. The next time you notice green shoots poking through the soil, remember that each one waited, tested its world, and began at exactly the right moment.",
       "questions": [
@@ -849,6 +850,39 @@
           ],
           "answer": 0,
           "skill": "text_structure"
+        },
+        {
+          "q": "What is the central idea of the whole article?",
+          "choices": [
+            "Every seed has three parts: a seed coat, an embryo, and stored food.",
+            "Gardeners should space seeds carefully and add compost to the soil.",
+            "A seed starts to grow only after a chain of signals, such as cold, water, oxygen, and warmth, tells it the time is right.",
+            "Spring is one sudden change that wakes up every plant at the same moment."
+          ],
+          "answer": 2,
+          "skill": "main_idea"
+        },
+        {
+          "q": "Which sentence states the main idea of paragraph 3?",
+          "choices": [
+            "\"If a seed sprouted during a warm week in December, the next hard frost would kill the tender young plant.\"",
+            "\"The cold works like a calendar, telling the seed that winter has truly passed.\"",
+            "\"Therefore, many seeds will not grow until they have gone through a long stretch of cold.\"",
+            "\"Dormancy protects the seed.\""
+          ],
+          "answer": 3,
+          "skill": "main_idea"
+        },
+        {
+          "q": "A reader wants to check the central idea by finding where the author sums it up at the end. Which paragraph should the reader look at?",
+          "choices": [
+            "Paragraph 2",
+            "Paragraph 5",
+            "Paragraph 7",
+            "Paragraph 6"
+          ],
+          "answer": 2,
+          "skill": "main_idea"
         },
         {
           "q": "Explain what happens to a seed from the moment it absorbs water until the seedling can feed itself. Use at least three steps from the article, in order.",
@@ -995,7 +1029,8 @@
       "title": "Author's Purpose and Text Structure Practice",
       "skills": [
         "authors_purpose",
-        "text_structure"
+        "text_structure",
+        "main_idea"
       ],
       "body": "Practice set. Read each short excerpt, then decide the author's purpose and how the text is organized.\n\n<b>Author's purpose:</b> persuade (convince), inform or explain (teach facts, show how or why), entertain (tell a story or poem).\n<b>Text structures:</b> description, sequence, cause and effect, compare and contrast, problem and solution.\n\n<b>Excerpt 1.</b> Every family should grow at least one plant on a windowsill. Caring for a plant teaches children patience and responsibility. Fresh herbs make meals taste better. Best of all, a pot of soil and a packet of seeds cost less than a movie ticket. Start your window garden this weekend!\n\n<b>Excerpt 2.</b> Pea plants climb by using tendrils, thin curling threads that wrap around anything they touch. A single tendril can coil around a string in less than an hour. Tendrils help the plant lift its leaves toward the sunlight without growing a thick, heavy stem.\n\n<b>Excerpt 3.</b> Gus the squirrel had a plan. Every night he crept into Mrs. Patel's flowerbed, dug up one tulip bulb, and buried it in the neighbor's yard. By April, the neighbor had a mysterious row of red tulips, and Mrs. Patel had a very bare garden and a very puzzled face.\n\n<b>Excerpt 4.</b> To grow a bean in a jar, first fold a wet paper towel and press it against the inside of a clear jar. Next, slide a bean between the towel and the glass. Then place the jar in a warm, sunny spot. After about five days, you will witness a root poking out. Finally, watch for the first green leaves.\n\n<b>Excerpt 5.</b> Hot-air balloons and airships both float because they are lighter than the air around them. However, a hot-air balloon can only drift wherever the wind blows it. An airship, unlike a balloon, has engines and a rudder, so a pilot can steer it in any direction.\n\n<b>Excerpt 6.</b> Hydrogen is the lightest gas, but it catches fire very easily. As a result, early airships that were filled with hydrogen were dangerous to fly. For this reason, modern airships are filled with helium, a gas that does not burn.\n\n<b>Excerpt 7.</b> Every recess, students ran straight through the school garden and trampled the young plants. The garden club decided to take action for their spring project. They built a low wooden fence, painted bright signs, and made a stone path around the beds. Within a week, the plants were growing safely again.\n\n<b>Excerpt 8.</b> In September 1783, two French brothers sent a hot-air balloon into the sky carrying a sheep, a duck, and a rooster. The animals landed safely about eight minutes later. Two months after that, in November, two men made the first free flight in one of the brothers' balloons and drifted over Paris for about twenty-five minutes.",
       "questions": [
@@ -1097,6 +1132,28 @@
           ],
           "answer": 1,
           "skill": "authors_purpose"
+        },
+        {
+          "q": "Excerpt 2 (pea tendrils): What is the main idea?",
+          "choices": [
+            "Tendrils help pea plants climb toward the sunlight.",
+            "A tendril can coil around a string in less than an hour.",
+            "Pea plants need thick, heavy stems to hold up their leaves.",
+            "Pea plants grow best when people tie them to strings."
+          ],
+          "answer": 0,
+          "skill": "main_idea"
+        },
+        {
+          "q": "Excerpt 6 (hydrogen and helium): Which sentence best states the main idea?",
+          "choices": [
+            "Hydrogen is the lightest gas.",
+            "Early airships were exciting to fly.",
+            "Modern airships use helium because hydrogen catches fire too easily.",
+            "Airships today are filled with hydrogen to make them lighter."
+          ],
+          "answer": 2,
+          "skill": "main_idea"
         },
         {
           "q": "Excerpts 4 and 7 both describe things people do with plants, but they are organized differently. Explain the structure of each and give one clue from each excerpt.",
@@ -1519,7 +1576,8 @@
         "authors_purpose",
         "text_structure",
         "character",
-        "evidence"
+        "evidence",
+        "main_idea"
       ],
       "body": "A biography. Paragraphs are numbered.\n\n<b>Queen Bess: The Pilot Who Would Not Give Up</b>\n\n1 In the early 1900s, very few people had ever flown in an airplane, and almost no women had. For a young Black woman in the United States, becoming a pilot seemed impossible. Bessie Coleman refused to accept the word <i>impossible</i>.\n\n<b>A Hard Beginning</b>\n2 Bessie Coleman was born in Texas in 1892, one of thirteen children. Her family was poor, and Bessie spent long days picking cotton in the hot fields. She walked miles each day to a one-room school, where she was especially good at math. When she was older, she saved her money for college, but after only one term her savings ran out, and she had to go home.\n\n3 In 1915, Bessie moved to Chicago to live with her brothers. She worked as a manicurist, cleaning and shaping customers' fingernails. When her brother John came home from World War I, he teased her that in France, even women flew airplanes. Bessie decided right then that she would fly, too.\n\n<b>Doors That Stayed Closed</b>\n4 Bessie applied to flight schools across the United States. Every one of them refused her. Some would not teach women. Others would not teach Black students. Instead of giving up, Bessie made a new plan. A newspaper publisher named Robert Abbott suggested that she study in France, where flight schools were more open. Bessie took French classes at night, saved every coin she could, and in 1920 she sailed across the Atlantic Ocean.\n\n5 Flight training was dangerous. The planes were made of wood, wire, and cloth, and they had no brakes. During her training, Bessie even saw another student die in a crash. She was frightened, but she did not hesitate to climb back into the cockpit. In June 1921, she earned her international pilot's license. She was the first African American woman, and the first woman of African American and Native American heritage, ever to earn one.\n\n<b>Queen Bess in the Sky</b>\n6 Back in the United States, Bessie became a barnstormer, a pilot who performs daring tricks at air shows. Crowds gasped as she flew loops and figure eights and swooped low over the fields. Newspapers called her \"Queen Bess\" and \"Brave Bessie.\"\n\n7 Bessie used her fame to fight unfairness. When she was invited to perform in her home state of Texas, she learned that Black and white visitors would have to enter through separate gates. Bessie refused to fly unless everyone could use the same entrance. The organizers agreed.\n\n8 Bessie's biggest dream was to open a flight school so that other Black Americans could learn to fly without crossing an ocean. Sadly, she died in a plane accident in 1926 while preparing for an air show. She was only thirty-four years old.\n\n<b>A Dream That Kept Flying</b>\n9 Bessie's dream did not end with her. In 1929, a flying club named after her opened in Los Angeles to train Black pilots. In 1995, the United States put her picture on a postage stamp. Today, pilots and astronauts still remember the girl from the cotton fields who refused to let closed doors keep her on the ground.",
       "questions": [
@@ -1638,7 +1696,29 @@
             "Flight schools in France were the best in the world."
           ],
           "answer": 2,
-          "skill": "authors_purpose"
+          "skill": "main_idea"
+        },
+        {
+          "q": "What is the main idea of paragraph 4?",
+          "choices": [
+            "Robert Abbott was a newspaper publisher.",
+            "When every U.S. flight school refused her, Bessie found another way to learn to fly.",
+            "Some flight schools would not teach women.",
+            "Bessie sailed across the Atlantic Ocean in 1920."
+          ],
+          "answer": 1,
+          "skill": "main_idea"
+        },
+        {
+          "q": "Which choice is the best summary of the whole biography?",
+          "choices": [
+            "Bessie Coleman grew up poor, trained in France after U.S. schools refused her, became a famous pilot who fought unfairness, and inspired Black pilots after her death.",
+            "Bessie Coleman was born in Texas in 1892, was one of thirteen children, and was good at math.",
+            "Flight training in the 1920s was dangerous because the planes had no brakes.",
+            "Bessie Coleman became famous for flying loops and figure eights at air shows."
+          ],
+          "answer": 0,
+          "skill": "main_idea"
         },
         {
           "q": "Describe two obstacles Bessie faced and explain how she overcame each one. Use details from the passage.",
@@ -1920,7 +2000,8 @@
         "authors_purpose",
         "text_structure",
         "vocab_context",
-        "evidence"
+        "evidence",
+        "main_idea"
       ],
       "body": "An informational article. Paragraphs are numbered.\n\n<b>How Honeybees Wake Up in Spring</b>\n\n1 On a cold January day, a beehive looks silent and empty. Not a single bee buzzes near the entrance. But inside, thousands of honeybees are very much alive. They are waiting for spring, and when it comes, they will awaken the hive in a careful series of steps.\n\n<b>Surviving the Winter</b>\n2 Honeybees do not hibernate. Instead, when the temperature drops below about 14°C, the bees crowd together into a tight ball called a winter cluster. The queen stays safely in the center. The worker bees around her shiver their flight muscles without moving their wings. This shivering produces heat, keeping the center of the cluster warm even when snow covers the hive. The bees on the cold outer edge slowly trade places with the warmer bees inside, so no bee freezes.\n\n3 Shivering takes energy, and energy comes from food. All winter, the bees eat the honey they stored during summer. A strong hive needs about 20 to 30 kilograms of honey to last until spring. If a beekeeper takes too much honey in the fall, the colony may suffer a food deficiency and starve before the flowers return.\n\n<b>The First Signs of Spring</b>\n4 As the days grow longer in late winter, the queen begins laying a few eggs again, even before the snow melts. The workers must keep these young bees, called brood, very warm, so the cluster works even harder.\n\n5 Then, on the first sunny day above about 12°C, the bees take \"cleansing flights.\" They have not left the hive for months, so they fly out briefly to clean themselves. A beekeeper who sees bees zooming in and out on a warm February afternoon knows the colony has survived.\n\n<b>The Spring Build-Up</b>\n6 When the first flowers bloom, older worker bees become foragers. They collect pollen, which is rich in protein, and nectar, which bees turn into honey. With fresh food arriving, the queen lays more and more eggs, sometimes over 1,500 a day. In about two months, a colony of 10,000 winter bees can grow to more than 40,000.\n\n7 By late spring, the hive may become so crowded that about half the bees leave with the old queen to find a new home. This is called swarming. A swarm hanging from a tree branch may look frightening, but swarming bees are usually calm because they have no hive to defend.\n\n<b>Why It Matters</b>\n8 Spring bees do more than make honey. As they travel from flower to flower, they carry pollen that helps plants make fruit and seeds. Scientists estimate that about one out of every three bites of food we eat depends on pollinators like bees. When a hive wakes up in spring, a whole garden wakes up with it.",
       "questions": [
@@ -2031,6 +2112,39 @@
           "skill": "figurative_language"
         },
         {
+          "q": "What is the central idea of the article?",
+          "choices": [
+            "Honeybees survive winter by working together, then build up the colony step by step in spring, which also helps plants grow.",
+            "Beekeepers should never take honey from a hive in the fall.",
+            "Swarming bees may look frightening, but they are usually calm.",
+            "Honeybees sleep all winter and wake up only when the first flowers bloom."
+          ],
+          "answer": 0,
+          "skill": "main_idea"
+        },
+        {
+          "q": "What is the main idea of paragraph 6?",
+          "choices": [
+            "Pollen is rich in protein.",
+            "Fresh food from spring flowers lets the colony grow very quickly.",
+            "The queen can lay over 1,500 eggs in a single day.",
+            "Only the oldest worker bees are able to make honey."
+          ],
+          "answer": 1,
+          "skill": "main_idea"
+        },
+        {
+          "q": "Which choice is the best summary of the section \"Surviving the Winter\" (paragraphs 2-3)?",
+          "choices": [
+            "The bees stay warm in a shivering cluster and trade places, and they eat stored honey for the energy they need.",
+            "The queen stays in the center of the cluster while the workers fly out to find food.",
+            "A strong hive needs about 20 to 30 kilograms of honey to last until spring.",
+            "Beekeepers keep the hive warm in winter so that the bees do not freeze."
+          ],
+          "answer": 0,
+          "skill": "main_idea"
+        },
+        {
           "q": "Describe two ways a honeybee colony changes from winter to late spring. Use details or numbers from the article.",
           "type": "short",
           "sampleAnswer": "In winter, the bees stay inside in a tight cluster, shivering to keep warm and eating stored honey. In spring, foragers fly out to collect pollen and nectar, and the queen lays up to 1,500 eggs a day, so a colony of 10,000 bees can grow to more than 40,000. By late spring, it may be so crowded that half the bees swarm away.",
@@ -2046,7 +2160,8 @@
       "skills": [
         "authors_purpose",
         "evidence",
-        "text_structure"
+        "text_structure",
+        "main_idea"
       ],
       "body": "A persuasive letter. Paragraphs are numbered.\n\n<b>Our School Needs a Garden</b>\n\nDear Principal Chen,\n\n1 My name is Hana Lin, and I am in Class 504. I am writing to ask you to turn the empty dirt lot behind the gym into a school garden. I believe a garden would make our school healthier, smarter, and kinder.\n\n2 First, a garden would help students eat better. Many students in my class skip the vegetables at lunch. However, researchers have found that children who grow vegetables at school are more willing to taste them and even ask for them at home. When you plant a carrot yourself, you really want to know how it tastes!\n\n3 Second, a garden is a classroom without walls. In science, we learned how seeds germinate, but we only looked at pictures. In a garden, we could measure how fast bean plants grow, test which soil holds water best, and watch bees pollinate flowers. Our math teacher could even use the garden to teach area and perimeter when we plan the beds.\n\n4 Third, a garden builds teamwork. Plants need care every day, so students would have to make schedules, share jobs, and depend on one another. At my cousin's school in Tainan, older students teach younger students how to water and weed. My cousin says the garden is the one place where nobody argues about who is in charge.\n\n5 Some people might say that a garden costs too much money or that no one will take care of it during summer vacation. These are reasonable worries. However, the dirt lot is already there, so we would only need seeds, soil, and a few tools. The Parents' Association has already offered to hold a bake sale to pay for them. During the summer, families could sign up to water the garden for one week each, the same way we already take turns caring for the class fish.\n\n6 Right now, the lot behind the gym is just a muddy space where balls get lost. With a little work, it could become the best classroom in our school. Please let Class 504 start planning our garden this spring. I promise we will take good care of it.\n\nSincerely,\nHana Lin, Class 504",
       "questions": [
@@ -2157,6 +2272,28 @@
           "skill": "authors_purpose"
         },
         {
+          "q": "Which sentence states the main idea that the rest of the letter supports with reasons?",
+          "choices": [
+            "\"My name is Hana Lin, and I am in Class 504.\"",
+            "\"Many students in my class skip the vegetables at lunch.\"",
+            "\"I believe a garden would make our school healthier, smarter, and kinder.\"",
+            "\"I promise we will take good care of it.\""
+          ],
+          "answer": 2,
+          "skill": "main_idea"
+        },
+        {
+          "q": "What is the main idea of paragraph 4?",
+          "choices": [
+            "Plants need care every day.",
+            "Caring for a garden together would teach students teamwork.",
+            "Hana's cousin goes to a school in Tainan.",
+            "Older students should always be in charge of younger students."
+          ],
+          "answer": 1,
+          "skill": "main_idea"
+        },
+        {
           "q": "Which of Hana's reasons do you think is the strongest? Explain why, using evidence from the letter.",
           "type": "short",
           "sampleAnswer": "I think the first reason is strongest because it is supported by research: children who grow vegetables at school are more willing to taste them. Research is stronger evidence than an opinion, and eating healthy food is important for every student.",
@@ -2173,7 +2310,8 @@
         "text_structure",
         "authors_purpose",
         "evidence",
-        "vocab_context"
+        "vocab_context",
+        "main_idea"
       ],
       "body": "An informational article. Paragraphs are numbered.\n\n<b>A Highway Made Safe for Butterflies</b>\n\n1 Every winter, warm valleys in southern Taiwan fill with an amazing sight. Hundreds of thousands of purple crow butterflies gather on the trees in places such as Maolin in Kaohsiung, where the air stays mild and the hills block the cold winter wind. When sunlight touches their dark wings, they shimmer purple and blue. Scientists call these places \"butterfly valleys.\" Taiwan is one of the few places in the world where so many butterflies spend the winter together. Another famous one is Mexico, where monarch butterflies gather in the mountains.\n\n2 In spring, when the weather becomes favorable, the butterflies leave the valleys and fly north to central and northern Taiwan, where they will lay their eggs. Their journey can be hundreds of kilometers long.\n\n<b>A Dangerous Crossing</b>\n3 Along the way, many butterflies must cross National Freeway No. 3 in Yunlin County. Purple crows usually fly low, only a few meters above the ground. That is exactly the height of passing cars and trucks. For years, thousands of butterflies were hit by vehicles every spring. Local volunteers who counted the butterflies became witnesses to a sad problem: the busy highway lay right across the butterflies' path.\n\n<b>Finding Solutions</b>\n4 In 2007, volunteers, scientists, and highway officials worked together to protect the butterflies. Their first solution was to put up tall nets along the side of the highway. When the butterflies reach the nets, they fly upward to get over them, so they cross the road high above the traffic.\n\n5 Their second solution surprised many people. On the busiest days of the migration, when hundreds of butterflies cross every minute, the highway closes its outer lane for a few hours. Drivers slow down and share the road with the travelers in the air. Volunteers keep counting the butterflies each spring so that officials know exactly when to close the lane.\n\n<b>Results</b>\n6 The results were encouraging. After the nets went up and the lane closures began, far fewer butterflies were killed on the highway. Taiwan became known as the first place in the world to close part of a highway for butterflies.\n\n7 The story of the purple crow shows that when people pay attention, small changes can protect even the smallest travelers. A few meters of netting and a few hours of patience help hundreds of thousands of butterflies finish their journey each spring.",
       "questions": [
@@ -2281,7 +2419,29 @@
             "Butterflies travel farther than any other insect."
           ],
           "answer": 2,
-          "skill": "authors_purpose"
+          "skill": "main_idea"
+        },
+        {
+          "q": "What is the main idea of paragraph 3?",
+          "choices": [
+            "Purple crow butterflies fly only a few meters above the ground.",
+            "The butterflies' low flight path crossed a busy highway, so many were killed by traffic.",
+            "Volunteers count the butterflies every spring.",
+            "National Freeway No. 3 is in Yunlin County."
+          ],
+          "answer": 1,
+          "skill": "main_idea"
+        },
+        {
+          "q": "Which detail is LEAST important to the central idea of the article?",
+          "choices": [
+            "Tall nets make the butterflies fly up and over the traffic.",
+            "The highway closes its outer lane on the busiest migration days.",
+            "Far fewer butterflies were killed after the changes began.",
+            "Monarch butterflies gather in the mountains of Mexico."
+          ],
+          "answer": 3,
+          "skill": "main_idea"
         },
         {
           "q": "Explain the two solutions and how each one helps the butterflies.",

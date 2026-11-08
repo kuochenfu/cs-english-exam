@@ -746,3 +746,12 @@ test('reading skill levels follow the 80/60 thresholds and need 8 first tries', 
   assert.equal(h.run('readingSkillLevel(10, 60).label'), 'Needs practice');
   assert.equal(h.run('readingSkillLevel(10, 59).label'), 'Focus here');
 });
+
+test('midterm Main Idea has enough multiple-choice questions for the Reading Report to judge it', () => {
+  const qs = midterm.reading.passages.flatMap(p => p.questions.filter(q => q.skill === 'main_idea' && q.choices).map(q => ({ p, q })));
+  assert.ok(qs.length >= 16, `only ${qs.length}`);
+  for (const { p, q } of qs) {
+    assert.ok(p.skills.includes('main_idea'), p.id + ' tags main_idea');
+    assert.equal(new Set(q.choices).size, q.choices.length, q.q);
+  }
+});

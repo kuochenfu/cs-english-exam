@@ -37,6 +37,10 @@ App exam id: `2026-11-midterm`
 
 Shaded (bonus) vocabulary words on the list: delirious, porthole, matted, tendril, scrawl, ditty. Week 3 spelling has 11 words.
 
+### Main Idea questions (added 2026-11-08)
+
+The Reading Report needs 8 first-try questions before it judges a skill, and Main Idea had only the 4 review-packet strategy blanks. 14 new `main_idea` questions were added to the six informational passages (Seed 3, Honeybees 3, Butterflies 2, Queen Bess 2, School Garden 2, Purpose & Structure excerpts 2): central idea of the whole text, main idea of one paragraph, best summary of a section or the whole text, the thesis sentence, where the conclusion restates the idea, and the detail least tied to the central idea. The existing "What is the central idea…" questions in Queen Bess and Butterflies moved from `authors_purpose` to `main_idea`. Main Idea now has 20 multiple-choice questions. There is still no Main Idea anchor chart; the strategies are on the review-packet notes page.
+
 ### Module 1 review sets (added 2026-11-08)
 
 The midterm Vocabulary menu also carries three worksheet-style sets, `m1_review_week1` … `m1_review_week3` ("Module 1 Review — Week N"), so the 30 Module 1 words (Quiz 1, `raw/202609/IMG_5994.JPG` Weeks 1-3) stay fresh. Each set asks every word twice: definition → word (three same-part-of-speech Module 1 distractors), then one of the word's curated Quiz 1 `contexts[]` sentences with its explanation (alternating base form and word form). Week 1 = 18 items, Week 2 = 22, Week 3 = 20. Source of truth for definitions and sentences: `data/exams/2026-10-quiz1/vocabulary.json` and `content/2026-10-quiz1/recall_practice.md`. Banner prompts: `image-art/m1-review-prompts.json`.

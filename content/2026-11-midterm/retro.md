@@ -23,6 +23,7 @@ Build period: 2026-10-22 to 2026-10-23 (homework and reading round on 2026-10-23
 Tests grew from 32 to 40, and every deploy passed them.
 
 - 2026-11-08: Module 1 review sets (one per Module 1 week, 60 items) added to the midterm Vocabulary worksheet grid, built from the Quiz 1 definitions and curated context sentences. Worksheet sets now show an item's `explanation` after an answer. The quiz engine gained a question counter, live right/wrong tally, an early-end button and a full answer record.
+- 2026-11-08: Reading answer log and a skill-based Reading Report (first-try accuracy per skill, trend, wrong choices, 0-2 short-answer ratings). Main Idea grew from 4 to 20 multiple-choice questions so the report can judge it.
 
 ## What went well
 
