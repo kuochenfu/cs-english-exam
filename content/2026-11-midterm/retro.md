@@ -24,6 +24,7 @@ Tests grew from 32 to 40, and every deploy passed them.
 
 - 2026-11-08: Module 1 review sets (one per Module 1 week, 60 items) added to the midterm Vocabulary worksheet grid, built from the Quiz 1 definitions and curated context sentences. Worksheet sets now show an item's `explanation` after an answer. The quiz engine gained a question counter, live right/wrong tally, an early-end button and a full answer record.
 - 2026-11-08: Reading answer log and a skill-based Reading Report (first-try accuracy per skill, trend, wrong choices, 0-2 short-answer ratings). Main Idea grew from 4 to 20 multiple-choice questions so the report can judge it.
+- 2026-11-08: Vocabulary review. Definitions match the teacher list and the four packet sets match the packet key. Fixed: 26 of the app's own example sentences gained time or number clues so Word Forms has one correct inflection (teacher homework sentences unchanged); new `avoid` lists stop attempt/hesitate, restrain/seize, ditty/refrain, reasonable/favorable and the reasonable/delirious synonym-antonym family from appearing as a second correct answer; `port` dropped as a porthole synonym.
 
 ## What went well
 

@@ -1156,8 +1156,11 @@ function vocabularyTopic(context = {}) {
   // Distractors share the word's part of speech when enough exist, so the student
   // cannot eliminate choices by grammar alone (e.g. a noun blank with verb options).
   const posKey = (w) => String(w.pos || "").split(/[\s/]+/)[0].toLowerCase();
+  // A word's optional `avoid` list names words/phrases that also fit its questions; they are never offered as wrong choices.
+  const avoidSet = (w) => new Set((w.avoid || []).map(a => a.toLowerCase()));
   const wrongsFor = (w, n = 3) => {
-    const others = words.filter(x => x.word !== w.word);
+    const avoid = avoidSet(w);
+    const others = words.filter(x => x.word !== w.word && !avoid.has(x.word.toLowerCase()));
     const same = others.filter(x => posKey(x) === posKey(w));
     const pool = same.length >= n ? same : others;
     return shuffle(pool).slice(0, n);
@@ -1242,7 +1245,7 @@ function vocabularyTopic(context = {}) {
   const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
   const startSynonym = (items = synWords, review = false) => runQuiz(vocabKey("synonym"), "Synonyms", items, (w) => {
     const answer = pick(w.synonyms);
-    const avoid = new Set([w.word.toLowerCase(), ...w.synonyms.map(s => s.toLowerCase())]);
+    const avoid = new Set([w.word.toLowerCase(), ...w.synonyms.map(s => s.toLowerCase()), ...avoidSet(w)]);
     // Distractors are other words' antonyms (strong "opposite direction" traps) plus other vocab words.
     const pool = [];
     words.forEach(x => { if (x.word !== w.word) { pool.push(x.word, ...(x.antonyms || [])); } });
@@ -1252,7 +1255,7 @@ function vocabularyTopic(context = {}) {
   }, vocabOptions("synonym", review));
   const startAntonym = (items = antWords, review = false) => runQuiz(vocabKey("antonym"), "Antonyms (Opposites)", items, (w) => {
     const answer = pick(w.antonyms);
-    const avoid = new Set([w.word.toLowerCase(), ...w.antonyms.map(s => s.toLowerCase())]);
+    const avoid = new Set([w.word.toLowerCase(), ...w.antonyms.map(s => s.toLowerCase()), ...avoidSet(w)]);
     // Include one of the word's own synonyms as a tempting "same meaning" trap when available.
     const trap = (w.synonyms || []).filter(s => !avoid.has(s.toLowerCase()));
     const pool = [];

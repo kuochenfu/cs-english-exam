@@ -826,3 +826,41 @@ test('vocabulary modes turn on speech; other topics do not; reading speaks a pic
   input.onchange();
   assert.equal(h.spoken.at(-1).text, 'The first one');
 });
+
+test('midterm vocabulary never offers a second correct answer as a distractor (avoid lists)', () => {
+  const h = midtermHarness();
+  const pairs = [
+    [/OPPOSITE<\/b> of <b>delirious/, ['sensible', 'logical', 'reasonable', 'fair']],
+    [/SAME<\/b> as <b>reasonable/, ['rational', 'lucid', 'clear-headed']],
+  ];
+  const blankPairs = { attempt: 'hesitate', hesitate: 'attempt', restrain: 'seize', seize: 'restrain', ditty: 'refrain', refrain: 'ditty', reasonable: 'favorable', favorable: 'reasonable' };
+  const answerOf = {};
+  for (const w of midterm.vocabulary.words) for (const s of [w.example, ...(w.examples || [])]) answerOf[s.replace(new RegExp(`\\b${w.word}\\w*`, 'i'), '____')] = w.word;
+  for (let round = 0; round < 15; round++) {
+    for (const mode of ['m3', 'm4', 'm5']) {
+      h.run('vocabularyTopic()');
+      h.element(mode).onclick();
+      for (let q = 0; q < 30; q++) {
+        const html = h.element('app').innerHTML;
+        const m = html.match(/<div class="question">([\s\S]*?)<\/div>/);
+        if (!m) break;
+        const choices = [...html.matchAll(/<button data-idx="\d+">([^<]*)<\/button>/g)].map(x => x[1].toLowerCase());
+        for (const [re, bad] of pairs) if (re.test(m[1])) for (const b of bad) assert.ok(!choices.includes(b), `${m[1]} offers ${b}`);
+        const target = answerOf[m[1]];
+        if (target && blankPairs[target]) assert.ok(!choices.includes(blankPairs[target]), `${m[1]} offers ${blankPairs[target]}`);
+        h.choices()[0].onclick();
+        if (h.element('app').innerHTML.includes('id="quiz-next"')) h.element('quiz-next').onclick(); else h.flush();
+      }
+    }
+  }
+});
+
+test('midterm Word Forms sentences keep the time clues that make one form correct', () => {
+  const all = midterm.vocabulary.words.flatMap(w => [w.example, ...(w.examples || [])]);
+  for (const s of ['Every night, the lighthouse projects a bright beam across the dark sea and guides the ships home.',
+                   'Yesterday, the robin\'s song awakened Mary early in the morning.',
+                   'My little brother scrawls his name on every drawing he makes.',
+                   'Both fastenings on my backpack broke, so my books fell out.'])
+    assert.ok(all.includes(s), s);
+  assert.deepEqual([...midterm.vocabulary.words.find(w => w.word === 'porthole').synonyms], ['window']);
+});

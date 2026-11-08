@@ -98,6 +98,9 @@
         "harmful",
         "unhelpful"
       ],
+      "avoid": [
+        "reasonable"
+      ],
       "image": "assets/2026-11-midterm/vocabulary/favorable.webp",
       "imageAlt": "Sunny skies and a gentle wind help an airship travel smoothly."
     },
@@ -134,12 +137,12 @@
       "word": "project",
       "pos": "v",
       "definition": "to shine an image or light outward",
-      "example": "Mr. Long projected the map onto the classroom screen.",
+      "example": "Yesterday, Mr. Long projected the map onto the classroom screen.",
       "examples": [
-        "The lighthouse projects a bright beam across the dark sea.",
-        "We projected the movie onto a white sheet in the backyard.",
-        "The flashlight projects a circle of light on the cave wall.",
-        "The airship's searchlight projected a beam down through the fog."
+        "Every night, the lighthouse projects a bright beam across the dark sea and guides the ships home.",
+        "Last Saturday, we projected the movie onto a white sheet in the backyard.",
+        "When I switch it on, the flashlight projects a circle of light on the cave wall.",
+        "Last night, the airship's searchlight projected a beam down through the fog."
       ],
       "synonyms": [
         "shine",
@@ -172,6 +175,13 @@
         "foolish",
         "absurd"
       ],
+      "avoid": [
+        "delirious",
+        "favorable",
+        "rational",
+        "lucid",
+        "clear-headed"
+      ],
       "image": "assets/2026-11-midterm/vocabulary/reasonable.webp",
       "imageAlt": "Two children make a fair choice by sharing strawberries equally."
     },
@@ -197,6 +207,12 @@
         "clear-headed",
         "rational"
       ],
+      "avoid": [
+        "reasonable",
+        "sensible",
+        "logical",
+        "fair"
+      ],
       "image": "assets/2026-11-midterm/vocabulary/delirious.webp",
       "imageAlt": "A feverish child looks confused while a caring adult stays nearby."
     },
@@ -209,12 +225,11 @@
       "examples": [
         "Sunlight streamed through the cabin's porthole in the morning.",
         "Each passenger cabin on the airship has two portholes.",
-        "Rain streaked across the portholes as the ship sailed through the storm.",
+        "Rain streaked across all the portholes as the ship sailed through the storm.",
         "She pressed her nose against the cold glass of the porthole."
       ],
       "synonyms": [
-        "window",
-        "port"
+        "window"
       ],
       "image": "assets/2026-11-midterm/vocabulary/porthole.webp",
       "imageAlt": "A child looks at the ocean through a round brass ship window."
@@ -226,10 +241,10 @@
       "definition": "to try to do something",
       "example": "Mary will attempt to open the rusty garden door.",
       "examples": [
-        "Colin attempted to stand up by himself for the first time.",
-        "Every day she attempts a harder puzzle than the day before.",
+        "Yesterday, Colin attempted to stand up by himself for the first time.",
+        "These days, she attempts a harder puzzle each morning and is getting faster.",
         "Do not attempt to climb the wall without a ladder.",
-        "The robin attempted to pull a worm from the hard ground.",
+        "Yesterday, the robin attempted to pull a worm from the hard ground.",
         "He made an attempt to climb the tall tree."
       ],
       "synonyms": [
@@ -242,6 +257,9 @@
         "abandon",
         "give up"
       ],
+      "avoid": [
+        "hesitate"
+      ],
       "image": "assets/2026-11-midterm/vocabulary/attempt.webp",
       "imageAlt": "A child tries hard to push open a heavy garden gate."
     },
@@ -252,8 +270,8 @@
       "definition": "to wake up",
       "example": "In spring, the garden begins to awaken after the long winter.",
       "examples": [
-        "The robin's song awakened Mary early in the morning.",
-        "The smell of pancakes awakens me every Saturday.",
+        "Yesterday, the robin's song awakened Mary early in the morning.",
+        "The smell of pancakes awakens me every Saturday, and I run to the kitchen.",
         "Colin was afraid the noise would awaken the whole house.",
         "Bears awaken from their long winter sleep when spring arrives."
       ],
@@ -307,7 +325,7 @@
       "example": "The rusty fastening on the garden gate would not budge.",
       "examples": [
         "Mary felt along the ivy until her fingers found the fastening of the door.",
-        "The fastenings on my backpack broke, so my books fell out.",
+        "Both fastenings on my backpack broke, so my books fell out.",
         "Check that all the fastenings on your life jacket are tight.",
         "The old trunk had a brass fastening shaped like a bird.",
         "The broken fastening on my backpack made it hard to close."
@@ -352,10 +370,10 @@
       "definition": "to be in charge of a meeting or event",
       "example": "The principal will preside over the awards ceremony.",
       "examples": [
-        "Mrs. Medlock presided over the servants of the great house.",
-        "A judge presides over the courtroom.",
-        "The mayor presided at the opening of the new park.",
-        "Our class captain presides over every student council meeting.",
+        "Long ago, Mrs. Medlock presided over the servants of the great house.",
+        "A judge presides over the courtroom and makes sure the trial is fair.",
+        "Last Sunday, the mayor presided at the opening of the new park.",
+        "Our class captain presides over every student council meeting and keeps it short.",
         "Our boss presided over the meeting last December."
       ],
       "synonyms": [
@@ -374,8 +392,8 @@
       "example": "Dickon had to restrain the excited fox cub.",
       "examples": [
         "Mary could hardly restrain her excitement when she found the key.",
-        "The nurse restrained Colin from jumping out of bed.",
-        "A strong seat belt restrains each passenger during a crash.",
+        "Yesterday, the nurse restrained Colin from jumping out of bed.",
+        "A strong seat belt restrains each passenger and keeps them safe in a crash.",
         "He bit his lip to restrain a laugh during the quiet assembly.",
         "The teacher had to restrain the puppy from running out the door."
       ],
@@ -388,6 +406,9 @@
         "release",
         "free",
         "unleash"
+      ],
+      "avoid": [
+        "seize"
       ],
       "image": "assets/2026-11-midterm/vocabulary/restrain.webp",
       "imageAlt": "A child holds a leash to keep an excited puppy safely back from the road."
@@ -445,7 +466,7 @@
       "definition": "a thin, curling stem that a climbing plant uses to wrap around and hold onto things",
       "example": "Green tendrils of ivy curled around the garden wall.",
       "examples": [
-        "A pea plant wraps its tendrils around the fence as it grows.",
+        "A pea plant wraps its many tendrils around the fence as it grows.",
         "Mary gently pulled a tendril away from the hidden door.",
         "The tendril of the grapevine coiled tightly around the stick.",
         "Thin tendrils reached out from the vine toward the sunlight."
@@ -464,9 +485,9 @@
       "definition": "to stop and pause before you do something",
       "example": "If you need help, don't hesitate to ask.",
       "examples": [
-        "The poet hesitated before reading her poem aloud to the class.",
+        "Yesterday, the poet hesitated before reading her poem aloud to the class.",
         "Mia hesitates every time she has to dive off the high board.",
-        "He hesitated at the door, unsure whether to knock.",
+        "Last night, he hesitated at the door, unsure whether to knock.",
         "When the bell rang, no one hesitated to rush outside.",
         "When it was finally his turn to go on stage, Ben didn't hesitate."
       ],
@@ -479,6 +500,9 @@
         "rush",
         "proceed",
         "plunge"
+      ],
+      "avoid": [
+        "attempt"
       ],
       "image": "assets/2026-11-midterm/vocabulary/hesitate.webp",
       "imageAlt": "A child pauses uncertainly before knocking on a classroom door."
@@ -499,6 +523,9 @@
       "synonyms": [
         "chorus",
         "repetition"
+      ],
+      "avoid": [
+        "ditty"
       ],
       "image": "assets/2026-11-midterm/vocabulary/refrain.webp",
       "imageAlt": "The same golden chorus returns after a different blue verse in a children's song."
@@ -536,9 +563,9 @@
       "definition": "to grab suddenly and firmly",
       "example": "Seize the rope before the boat drifts away!",
       "examples": [
-        "The eagle seized a fish from the river.",
-        "The police seized the stolen bikes from the thief's garage.",
-        "The guards seized the thief by the arm.",
+        "The eagle seized a fish from the river and flew away.",
+        "Last week, the police seized the stolen bikes from the thief's garage.",
+        "The guards seized the thief by the arm and led him away.",
         "Fear seized him when the sea monster rose from the waves.",
         "Backstage, his little sister tried to seize his trophy before he even got a chance to hold it!"
       ],
@@ -551,6 +578,9 @@
         "release",
         "drop",
         "loosen"
+      ],
+      "avoid": [
+        "restrain"
       ],
       "image": "assets/2026-11-midterm/vocabulary/seize.webp",
       "imageAlt": "A hand quickly grabs a rope to keep a boat from drifting away."
@@ -586,10 +616,10 @@
       "word": "scrawl",
       "pos": "v",
       "definition": "to write or draw something quickly and messily",
-      "example": "He scrawled a poem on a paper napkin.",
+      "example": "Last night, he scrawled a poem on a paper napkin.",
       "examples": [
         "Don't scrawl your answers; write neatly so the teacher can read them.",
-        "My little brother scrawls his name on every drawing.",
+        "My little brother scrawls his name on every drawing he makes.",
         "She grabbed a pen to scrawl a quick note before the bus came.",
         "The poet was scrawling new lines in her notebook as fast as she could think."
       ],
@@ -616,6 +646,9 @@
         "jingle",
         "tune",
         "song"
+      ],
+      "avoid": [
+        "refrain"
       ],
       "image": "assets/2026-11-midterm/vocabulary/ditty.webp",
       "imageAlt": "Two children sing a short cheerful tune with a ukulele."
