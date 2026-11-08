@@ -697,3 +697,52 @@ test('midterm Module 1 review sets cover all 30 Quiz 1 words, twice each', () =>
   h.run(`vocabularyTopic()`);
   assert.match(h.element('app').innerHTML, /Module 1 Review — Week 2/);
 });
+
+test('reading submissions log first tries by skill; the report judges skills and saves short-answer ratings', () => {
+  const h = midtermHarness();
+  const passage = `{id:'demo',title:'Demo',skills:[],body:'Read.',questions:[
+    {q:'Q1?',skill:'theme',choices:['A','B'],answer:0},
+    {q:'Q2?',skill:'theme',choices:['A','B'],answer:0},
+    {q:'Why?',skill:'evidence',type:'short',sampleAnswer:'Because of the rain.'}]}`;
+  const submit = picks => {
+    h.run(`readPassage(${passage})`);
+    h.context.document.querySelector = sel => {
+      if (sel.startsWith('.qa-block')) return { querySelectorAll: () => [] };
+      const m = sel.match(/input\[name="q(\d)"\]:checked/);
+      if (m) return { value: String(picks[+m[1]]) };
+      if (sel.startsWith('textarea')) return { value: 'It rained <b>hard</b>.', disabled: false };
+      return null;
+    };
+    h.context.document.createElement = () => ({ style: {}, scrollIntoView() {} });
+    h.element('app').insertBefore = () => {};
+    h.element('submit-all').disabled = false;
+    h.element('submit-all').onclick();
+  };
+  submit([0, 1]);
+  submit([0, 0]);
+  const log = h.run('examReadingLog()');
+  assert.equal(JSON.stringify(log.attempts.map(a => a.first)), '[true,false]');
+  assert.equal(JSON.stringify(log.attempts[0].answers.map(a => a.ok)), '[true,false,null]');
+  h.run('readingReport()');
+  let html = h.element('app').innerHTML;
+  assert.match(html, /first-try correct \(1\/2\)/);
+  assert.match(html, /Too few yet/);
+  assert.match(html, /all tries incl\. retries: 75%/);
+  assert.match(html, /It rained &lt;b&gt;hard&lt;\/b&gt;\./, 'short answers are escaped');
+  assert.match(html, /1 to rate/);
+  h.buttons().find(b => b.dataset.rate === '0' && b.dataset.score === '2').onclick();
+  assert.equal(h.run(`examReadingLog().ratings['demo::Why?']`), 2);
+  html = h.element('app').innerHTML;
+  assert.match(html, /<b>2\.0<\/b>/);
+  h.run('readingTopic()');
+  assert.doesNotMatch(h.element('app').innerHTML, /First try/, 'demo is not in the midterm bank');
+});
+
+test('reading skill levels follow the 80/60 thresholds and need 8 first tries', () => {
+  const h = harness();
+  assert.equal(h.run('readingSkillLevel(0, 0).label'), 'Not tried');
+  assert.equal(h.run('readingSkillLevel(7, 100).label'), 'Too few yet');
+  assert.equal(h.run('readingSkillLevel(8, 80).label'), 'Strong');
+  assert.equal(h.run('readingSkillLevel(10, 60).label'), 'Needs practice');
+  assert.equal(h.run('readingSkillLevel(10, 59).label'), 'Focus here');
+});

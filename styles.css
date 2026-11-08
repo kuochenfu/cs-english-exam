@@ -976,3 +976,85 @@ button.mode-button {
   text-align: left;
 }
 .mode-meta { font-weight: normal; font-size: 0.9rem; opacity: 0.95; }
+
+/* ---------- Reading Report ---------- */
+.report-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+  margin: 8px 0 12px;
+}
+.report-summary > div {
+  background: var(--info-bg);
+  border: 2px solid var(--info-line);
+  border-radius: 14px;
+  padding: 12px 14px;
+  color: var(--info-ink);
+}
+.report-summary b { display: block; font-size: 1.6rem; color: var(--text); }
+.report-summary span { font-size: 0.9rem; }
+
+.skill-list { display: grid; gap: 8px; }
+.skill-row {
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  background: var(--card);
+}
+.skill-row > summary {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  grid-template-areas: "name level score" "meter meter meter";
+  gap: 6px 12px;
+  align-items: center;
+  padding: 12px 14px;
+  cursor: pointer;
+  list-style: none;
+}
+.skill-row > summary::-webkit-details-marker { display: none; }
+.skill-name { grid-area: name; font-weight: bold; }
+.skill-name::before { content: "▸ "; color: var(--muted); }
+.skill-row[open] .skill-name::before { content: "▾ "; }
+.skill-score { grid-area: score; color: var(--muted); font-variant-numeric: tabular-nums; }
+.skill-level {
+  grid-area: level;
+  font-size: 0.85rem;
+  font-weight: bold;
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+.skill-level.level-strong { background: var(--good-soft); color: var(--good); }
+.skill-level.level-practice { background: var(--gold-bg); color: var(--gold-ink); }
+.skill-level.level-focus { background: var(--bad-soft); color: var(--bad); }
+.skill-level.level-few { background: var(--locked-bg); color: var(--locked-ink); }
+.skill-meter {
+  grid-area: meter;
+  height: 8px;
+  border-radius: 6px;
+  background: var(--border);
+  overflow: hidden;
+}
+.skill-meter > span { display: block; height: 100%; width: var(--w); background: var(--locked-ink); }
+.skill-meter > .level-strong { background: var(--good-line); }
+.skill-meter > .level-practice { background: var(--gold-line); }
+.skill-meter > .level-focus { background: var(--bad-line); }
+.skill-detail { padding: 0 14px 12px; }
+.skill-detail p { margin: 6px 0; }
+.wrong-list { margin: 4px 0 10px; padding-left: 20px; }
+.wrong-list li { margin: 6px 0; }
+.wrong-list s { color: var(--bad); }
+
+.short-list { padding-left: 20px; }
+.short-list > li { margin: 0 0 16px; padding-bottom: 12px; border-bottom: 2px solid var(--border); }
+.short-list p { margin: 4px 0; }
+.short-response {
+  background: var(--paper);
+  border-left: 4px solid var(--info-strong);
+  padding: 8px 12px;
+  border-radius: 8px;
+  white-space: pre-wrap;
+}
+.rate-row { display: flex; gap: 8px; }
+button.rate { min-width: 52px; margin: 4px 0 0; padding: 8px 14px; }
+@media (max-width: 520px) {
+  .skill-row > summary { grid-template-columns: 1fr auto; grid-template-areas: "name name" "level score" "meter meter"; }
+}

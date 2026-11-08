@@ -10,6 +10,7 @@ const GAME_KEY = "cs-english-exam-game";
 const VOICE_KEY = "cs-english-exam-voice";
 const EXAM_KEY = "cs-english-exam-current-exam";
 const SEEN_KEY = "cs-english-exam-seen-exams";
+const READING_LOG_KEY = "cs-english-exam-reading-log";
 // Set in index.html; appended to every data fetch so GitHub Pages' cache never serves stale JSON.
 const APP_VERSION = window.APP_VERSION || "";
 const progress = JSON.parse(localStorage.getItem(STORE_KEY) || "{}");
@@ -18,6 +19,9 @@ const game = JSON.parse(localStorage.getItem(GAME_KEY) || "{}");
 const saveProgress = () => localStorage.setItem(STORE_KEY, JSON.stringify(progress));
 const saveMissed = () => localStorage.setItem(MISSED_KEY, JSON.stringify(missed));
 const saveGame = () => localStorage.setItem(GAME_KEY, JSON.stringify(game));
+// Per-exam reading answer log: {attempts:[{passageId,title,at,review,first,answers[]}], ratings:{"<passageId>::<q>": 0|1|2}}
+const readingLog = JSON.parse(localStorage.getItem(READING_LOG_KEY) || "{}");
+const saveReadingLog = () => localStorage.setItem(READING_LOG_KEY, JSON.stringify(readingLog));
 const esc = (value = "") => String(value).replace(/[&<>"']/g, ch => ({
   "&": "&amp;",
   "<": "&lt;",
@@ -1656,6 +1660,7 @@ function readingTopic(context = {}) {
       <h2>📚 Reading Comprehension</h2>
       <p>Choose what to do:</p>
       ${charts.length ? `<button id="charts">📋 Anchor Charts (review skills)</button>` : ""}
+      ${passages.length ? `<button id="reading-report" class="ghost">📊 Reading Report</button>` : ""}
       ${passages.length ? `<h3>Then practice with a passage:</h3>
       <div class="passage-card-grid">
       ${passages.map((p,i) => {
@@ -1667,7 +1672,7 @@ function readingTopic(context = {}) {
             ${p.image ? `<img src="${p.image}" alt="${esc(p.imageAlt || p.title)}" loading="lazy" decoding="async" width="640" height="360">` : `<span class="passage-card-fallback">📖</span>`}
             <span class="passage-card-copy">
               <span class="passage-card-title">${esc(p.title)}</span>
-              ${prog ? `<span class="passage-card-meta">Best ${prog.best}%</span>` : ""}
+              ${passageRecordHTML(p, prog)}
             </span>
           </button>
           ${miss ? `<button class="ghost passage-review-button" data-review-p="${i}">Review missed (${miss})</button>` : ""}
@@ -1675,7 +1680,8 @@ function readingTopic(context = {}) {
       }).join("")}
       </div>` : ""}
     </div>`);
-  if ($("charts")) $("charts").onclick = showAnchorCharts;
+  if ($("charts")) $("charts").onclick = () => showAnchorCharts();
+  if ($("reading-report")) $("reading-report").onclick = readingReport;
   document.querySelectorAll("button[data-p]").forEach(b => {
     b.onclick = () => readPassage(data.reading.passages[+b.dataset.p]);
   });
@@ -1684,8 +1690,8 @@ function readingTopic(context = {}) {
   });
 }
 
-function showAnchorCharts() {
-  enterScreen("Anchor Charts", showAnchorCharts, topicTrail("reading"));
+function showAnchorCharts(openSkill = "") {
+  enterScreen("Anchor Charts", () => showAnchorCharts(openSkill), topicTrail("reading"));
   const defaultCharts = [
     { name: "Ideas and Support",
       body: "<b>Main idea</b> = what a paragraph is mostly about. <b>Support</b> = the details, facts, or examples that prove it.<br><br>Ask: What is this paragraph telling me? Which sentences give proof?",
@@ -1735,7 +1741,7 @@ function showAnchorCharts() {
     <div class="panel">
       <h2>📋 Anchor Charts</h2>
       ${data.reading.anchorChartsIntro ? `<p>${esc(data.reading.anchorChartsIntro)}</p>` : ""}
-      ${charts.map((c, i) => `<details class="anchor-chart" ${i === 0 ? "open" : ""}>
+      ${charts.map((c, i) => `<details class="anchor-chart" ${(openSkill && charts.some(x => x.skill === openSkill) ? c.skill === openSkill : i === 0) ? "open" : ""}>
         <summary>${esc(c.name)}${c.group ? `<span class="tag">${esc(c.group)}</span>` : ""}</summary>
         <div class="anchor-chart-content ${c.image ? (c.imageLayout === "poster" ? "has-poster" : "has-image") : ""}">
           ${c.image ? `<figure class="anchor-chart-figure"><a href="${esc(c.image)}" target="_blank" rel="noopener" aria-label="Open ${esc(c.name)} chart full size"><img class="anchor-chart-image" src="${esc(c.image)}" alt="${esc(c.imageAlt || c.name)}" loading="lazy" decoding="async" ${c.imageLayout === "poster" ? 'width="1024" height="1536"' : ""}></a><figcaption><a href="${esc(c.image)}" target="_blank" rel="noopener">Open chart full size ↗</a></figcaption></figure>` : ""}
@@ -1813,6 +1819,11 @@ function readPassage(passage, reviewOnly = false) {
       return;
     }
     $("reading-validation").textContent = "";
+    const passageId = passage.id || passage.title;
+    const log = examReadingLog();
+    // First try = not a review round, and no earlier score or log entry for this passage.
+    const firstTry = !reviewOnly && !readProgress(topicId) && !log.attempts.some(a => a.passageId === passageId);
+    const answers = [];
     let correct = 0;
     const missed = [];
     let unanswered = 0;
@@ -1826,6 +1837,7 @@ function readPassage(passage, reviewOnly = false) {
         shortAnswers++;
         const response = document.querySelector(`textarea[name="q${qi}"]`);
         if (!response.value.trim()) blankShortAnswers++;
+        answers.push({ q: q.q, skill: q.skill, short: response.value.trim(), sample: q.sampleAnswer || "" });
         response.disabled = true;
         fb.innerHTML = `Sample answer: <b>${q.sampleAnswer || "Answers may vary. Use details from the passage."}</b>`;
         fb.className = "feedback good";
@@ -1833,6 +1845,7 @@ function readPassage(passage, reviewOnly = false) {
       }
 
       const picked = document.querySelector(`input[name="q${qi}"]:checked`);
+      answers.push({ q: q.q, skill: q.skill, ok: !!picked && +picked.value === q.answer, picked: picked ? q.choices[+picked.value] : "", answer: q.choices[q.answer] });
       // Highlight choices
       block.querySelectorAll("label").forEach(lab => {
         const v = +lab.querySelector("input").value;
@@ -1861,7 +1874,10 @@ function readPassage(passage, reviewOnly = false) {
 
     const total = questions.filter(q => q.choices).length;
     const pct = total ? Math.round((correct/total)*100) : 0;
-    writeProgress(topicId, pct);
+    log.attempts.push({ passageId, title: passage.title, at: new Date().toISOString(), review: !!reviewOnly, first: firstTry, answers });
+    if (log.attempts.length > 400) log.attempts.splice(0, log.attempts.length - 400);
+    saveReadingLog();
+    writeProgress(topicId, pct, total ? { correct, total } : null);
     const reward = recordGameCompletion(topicId, pct, correct, total || questions.length, { reviewOnly });
 
     // Show summary at top, scroll to it
@@ -1880,6 +1896,139 @@ function readPassage(passage, reviewOnly = false) {
     $("submit-all").disabled = true;
     $("submit-all").style.opacity = "0.5";
   };
+}
+
+// ---------- Reading Report (parent view) ----------
+// Measures comprehension by skill from FIRST tries only: the test uses unseen passages,
+// so a retry measures memory, not reading. Retries are shown separately.
+const READING_MIN_JUDGE = 8;
+function examReadingLog() {
+  const id = currentExam?.id || "default";
+  if (!readingLog[id]) readingLog[id] = { attempts: [], ratings: {} };
+  readingLog[id].ratings ||= {};
+  return readingLog[id];
+}
+function firstReadingAttempt(passageId) {
+  return examReadingLog().attempts.find(a => a.passageId === passageId && a.first);
+}
+function passageRecordHTML(p, prog) {
+  const first = firstReadingAttempt(p.id || p.title);
+  const mc = first ? first.answers.filter(x => x.short === undefined) : [];
+  const parts = [];
+  if (first && mc.length) parts.push(`First try ${mc.filter(x => x.ok).length}/${mc.length}`);
+  if (prog) parts.push(`Best ${prog.best}%`);
+  return parts.length ? `<span class="passage-card-meta">${parts.join(" · ")}</span>` : "";
+}
+const plainText = (html = "") => String(html).replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+function readingSkillLevel(n, pct) {
+  if (!n) return { cls: "level-few", label: "Not tried" };
+  if (n < READING_MIN_JUDGE) return { cls: "level-few", label: "Too few yet" };
+  if (pct >= 80) return { cls: "level-strong", label: "Strong" };
+  if (pct >= 60) return { cls: "level-practice", label: "Needs practice" };
+  return { cls: "level-focus", label: "Focus here" };
+}
+function readingReport() {
+  enterScreen("Reading Report", readingReport, topicTrail("reading"));
+  const log = examReadingLog();
+  const skills = data.reading.skills || {};
+  const passages = data.reading.passages || [];
+  const charts = data.reading.anchorCharts || [];
+  const pct = (c, n) => n ? Math.round(c / n * 100) : 0;
+  const withTime = a => a.answers.map(x => ({ ...x, at: a.at, title: a.title, passageId: a.passageId }));
+  const firstMC = log.attempts.filter(a => a.first).flatMap(withTime).filter(x => x.short === undefined);
+  const allMC = log.attempts.flatMap(withTime).filter(x => x.short === undefined);
+  const bank = {};
+  passages.forEach(p => p.questions.forEach(q => { if (q.choices) bank[q.skill] = (bank[q.skill] || 0) + 1; }));
+
+  if (!log.attempts.length) {
+    renderContent(`
+      <div class="panel">
+        <h2>📊 Reading Report</h2>
+        <p>No reading answers are recorded yet. Finish a passage and the report fills in here.</p>
+        <p class="hint">The report counts first tries on each passage, grouped by reading skill. Passages finished before this report existed show only their best score.</p>
+      </div>`);
+    return;
+  }
+
+  const rows = Object.keys({ ...bank, ...Object.fromEntries(firstMC.map(x => [x.skill, 1])) }).map(id => {
+    const first = firstMC.filter(x => x.skill === id);
+    const all = allMC.filter(x => x.skill === id);
+    const c = first.filter(x => x.ok).length;
+    const row = { id, label: skills[id] || id, n: first.length, c, pct: pct(c, first.length), allN: all.length, allPct: pct(all.filter(x => x.ok).length, all.length), bank: bank[id] || 0 };
+    if (first.length >= READING_MIN_JUDGE) {
+      const sorted = [...first].sort((a, b) => a.at.localeCompare(b.at));
+      const half = Math.floor(sorted.length / 2);
+      const early = sorted.slice(0, half), late = sorted.slice(half);
+      row.trend = [pct(early.filter(x => x.ok).length, early.length), pct(late.filter(x => x.ok).length, late.length)];
+    }
+    row.wrong = all.filter(x => !x.ok).sort((a, b) => b.at.localeCompare(a.at)).slice(0, 5);
+    row.level = readingSkillLevel(row.n, row.pct);
+    return row;
+  }).sort((a, b) => {
+    const ja = a.n >= READING_MIN_JUDGE, jb = b.n >= READING_MIN_JUDGE;
+    if (ja !== jb) return ja ? -1 : 1;
+    return ja ? a.pct - b.pct : b.n - a.n;
+  });
+
+  const firstPassages = new Set(log.attempts.filter(a => a.first).map(a => a.passageId));
+  const firstC = firstMC.filter(x => x.ok).length;
+
+  // Short answers: latest response per question, rated 0-2 by a parent.
+  const shortMap = new Map();
+  log.attempts.forEach(a => withTime(a).filter(x => x.short !== undefined).forEach(x => shortMap.set(`${x.passageId}::${x.q}`, x)));
+  const shorts = [...shortMap.entries()].map(([key, x]) => ({ key, ...x, rating: log.ratings[key] })).sort((a, b) => b.at.localeCompare(a.at));
+  const rated = shorts.filter(x => x.rating !== undefined);
+  const unrated = shorts.length - rated.length;
+  const avg = rated.length ? (rated.reduce((s, x) => s + x.rating, 0) / rated.length).toFixed(1) : null;
+
+  renderContent(`
+    <div class="panel">
+      <h2>📊 Reading Report</h2>
+      <div class="report-summary">
+        <div><b>${firstPassages.size} / ${passages.length}</b><span>passages tried</span></div>
+        <div><b>${firstMC.length ? pct(firstC, firstMC.length) + "%" : "—"}</b><span>first-try correct (${firstC}/${firstMC.length})</span></div>
+        <div><b>${avg ?? "—"}</b><span>short-answer avg (out of 2)${unrated ? ` · ${unrated} to rate` : ""}</span></div>
+      </div>
+      <p class="hint">Skills use <b>first tries only</b>, because the test uses passages the student has not seen. Strong = 80%+, Needs practice = 60–79%, Focus here = under 60%. A skill needs ${READING_MIN_JUDGE} first-try questions before it is judged.</p>
+
+      <h3>By reading skill</h3>
+      <div class="skill-list">
+        ${rows.map(r => `<details class="skill-row">
+          <summary>
+            <span class="skill-name">${esc(r.label)}</span>
+            <span class="skill-level ${r.level.cls}">${r.level.label}</span>
+            <span class="skill-score">${r.n ? `${r.c}/${r.n} · ${r.pct}%` : "Not tried"}</span>
+            <span class="skill-meter" aria-hidden="true"><span class="${r.level.cls}" style="--w:${r.n ? r.pct : 0}%"></span></span>
+          </summary>
+          <div class="skill-detail">
+            <p>First tries: <b>${r.n}</b> of ${r.bank} questions in this test's passages${r.allN > r.n ? ` · all tries incl. retries: ${r.allPct}% (${r.allN})` : ""}.</p>
+            ${r.trend ? `<p>Trend (earlier half → recent half of first tries): <b>${r.trend[0]}% → ${r.trend[1]}%</b> ${r.trend[1] > r.trend[0] ? "↗" : r.trend[1] < r.trend[0] ? "↘" : "→"}</p>` : ""}
+            ${r.wrong.length ? `<p><b>Recent wrong answers</b></p><ul class="wrong-list">${r.wrong.map(w => `<li><span class="result-q">${esc(w.title)}: ${esc(plainText(w.q))}</span><br>Chose: <s>${esc(plainText(w.picked) || "(blank)")}</s> · Answer: <b>${esc(plainText(w.answer))}</b></li>`).join("")}</ul>` : r.n ? "<p>No wrong answers recorded for this skill.</p>" : ""}
+            ${charts.some(c => c.skill === r.id) ? `<button class="ghost small" data-chart-skill="${esc(r.id)}">📋 Open the ${esc(r.label)} anchor chart</button>` : ""}
+          </div>
+        </details>`).join("")}
+      </div>
+
+      <h3>Short answers</h3>
+      ${shorts.length ? `<p class="hint">Rate each answer: <b>0</b> = does not answer the question, <b>1</b> = answers it but without text evidence, <b>2</b> = answers it and uses evidence from the passage.</p>
+      <ol class="short-list">${shorts.map((x, i) => `<li>
+        <p class="result-q">${esc(x.title)} · ${esc(skills[x.skill] || x.skill)}</p>
+        <p><b>${esc(plainText(x.q))}</b></p>
+        <p class="short-response">${x.short ? esc(x.short) : "<i>(left blank)</i>"}</p>
+        <p class="hint">Sample: ${esc(plainText(x.sample) || "Answers may vary.")}</p>
+        <div class="rate-row" role="group" aria-label="Rate this answer">${[0, 1, 2].map(n => `<button class="rate ${x.rating === n ? "selected" : "ghost"}" data-rate="${i}" data-score="${n}" aria-pressed="${x.rating === n}">${n}</button>`).join("")}</div>
+      </li>`).join("")}</ol>` : `<p class="hint">No short answers written yet.</p>`}
+    </div>`);
+  document.querySelectorAll("button[data-chart-skill]").forEach(b => { b.onclick = () => showAnchorCharts(b.dataset.chartSkill); });
+  document.querySelectorAll("button[data-rate]").forEach(b => {
+    b.onclick = () => {
+      log.ratings[shorts[+b.dataset.rate].key] = +b.dataset.score;
+      saveReadingLog();
+      const y = window.scrollY || 0;
+      readingReport();
+      window.scrollTo({ top: y, behavior: "instant" });
+    };
+  });
 }
 
 // ---------- Listening ----------
