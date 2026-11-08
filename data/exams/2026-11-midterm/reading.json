@@ -12,7 +12,7 @@
     "vocab_context": "Vocabulary in Context",
     "main_idea": "Main (Central) Idea"
   },
-  "anchorChartsIntro": "Start with the seven Midterm focus skills. Each chart has a poster, a how-to guide, five worked examples, and a quick check. The supporting charts after them cover drama, text evidence, and vocabulary in context. These are original study guides that supplement your classroom charts.",
+  "anchorChartsIntro": "Start with the seven Midterm focus skills. Each chart has a poster, a how-to guide, five worked examples, and a quick check. The supporting charts after them cover drama, main idea, text evidence, and vocabulary in context. These are original study guides that supplement your classroom charts.",
   "anchorCharts": [
     {
       "skill": "authors_purpose",
@@ -420,6 +420,56 @@
       },
       "image": "assets/2026-11-midterm/anchor-charts/drama-illustrated.webp",
       "imageAlt": "Illustrated Elements of Drama study poster with visual examples and key reading strategies. The complete explanation and practice follow below.",
+      "imageLayout": "poster"
+    },
+    {
+      "skill": "main_idea",
+      "name": "Main (Central) Idea",
+      "group": "Supporting skill",
+      "body": "The <b>main idea</b> (or <b>central idea</b>) is the most important point the author wants you to understand about the topic. The <b>topic</b> is a word or two (<i>owls</i>). The main idea is a <b>full sentence</b> about the topic (<i>Owls have special features that help them hunt at night.</i>). <b>Key details</b> are the facts and examples that hold it up, like legs under a tabletop. A longer text can have two or more main ideas, and a good summary tells the main ideas with the key details, not every fact (RI.5.2).",
+      "guide": [
+        {
+          "label": "Topic",
+          "text": "Who or what the text is about, in a word or two: owls, honeybees, Bessie Coleman."
+        },
+        {
+          "label": "Main idea",
+          "text": "A complete sentence that tells the most important point about the topic. It covers MOST of the text, not one part."
+        },
+        {
+          "label": "Key details",
+          "text": "Facts, examples, numbers, and quotes that support the main idea. Each one is true, but each one is only a piece."
+        },
+        {
+          "label": "Stated or implied",
+          "text": "Stated: one sentence says it (often a topic sentence or the thesis). Implied: no sentence says it, so you put the details together and write it yourself."
+        },
+        {
+          "label": "Summary",
+          "text": "A short retelling in your own words: the main idea plus the most important details, in order, with no opinions."
+        }
+      ],
+      "steps": [
+        "Read the introduction. Look for the thesis statement: the sentence that tells what the whole text will prove or explain.",
+        "Read the topic sentence of each paragraph. It is often the first sentence and tells that paragraph's main idea.",
+        "Look for key words or phrases that repeat or are emphasized throughout the text.",
+        "Read the conclusion. The central idea is often summed up or restated at the end.",
+        "Test your sentence: does every important detail support it? If a detail does not fit, your idea is too small. If it could describe almost any text, it is too big."
+      ],
+      "tip": "A choice can be TRUE and appear in the text and still be wrong. A single fact is a detail. The main idea is the one choice that covers MOST of the text.",
+      "ex": [
+        "<i>Topic:</i> owls. <i>Main idea:</i> “Owls have special features that help them hunt at night.” <i>Key details:</i> big eyes see in the dark; soft feathers fly silently; sharp ears hear tiny sounds.<br><b>Topic vs. main idea.</b> “Owls” is only the topic. The main idea is a full sentence, and all three details support it.",
+        "<i>“Sea otters use tools. They float on their backs and crack shells with rocks. Some otters even keep a favorite rock in a pocket of loose skin under their arm.”</i><br><b>Stated at the start.</b> The first sentence is the topic sentence. The other two sentences are details that prove it.",
+        "<i>“Weeds covered the paths. The gate hung from one hinge. Nobody had watered the roses in weeks. The old garden badly needed someone to care for it.”</i><br><b>Stated at the end.</b> The last sentence sums up the details, like a conclusion does.",
+        "<i>“Kites rose over the field. Families spread blankets on the grass. A band played near the lake while children lined up for ice cream.”</i><br><b>Implied.</b> No sentence says it, so put the details together: <i>The park was full of people enjoying a festival.</i>",
+        "<i>An article explains that city trees give shade, clean the air, and soften traffic noise.</i><br><b>Too small:</b> “Trees give shade.” (one detail) · <b>Too big:</b> “Plants are important.” (could be any text) · <b>Just right:</b> “Planting trees makes city streets cooler, cleaner, and quieter.”"
+      ],
+      "check": {
+        "question": "“Camels are built for life in the desert. Their wide feet keep them from sinking into sand. Long, thick eyelashes block blowing dust. A camel can also go many days without drinking.” What is the main idea, and which strategy finds it fastest?",
+        "answer": "Camels have body features that help them live in the desert. The first sentence is the topic sentence (strategy 2), and every other sentence is a key detail that supports it."
+      },
+      "image": "assets/2026-11-midterm/anchor-charts/main_idea-illustrated.webp",
+      "imageAlt": "Illustrated Main Idea poster: an owl sits on a table whose top holds the main idea and whose three legs hold the key details, with four ways to find the main idea below. The complete explanation and practice follow below.",
       "imageLayout": "poster"
     },
     {

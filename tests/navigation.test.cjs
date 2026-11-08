@@ -755,3 +755,13 @@ test('midterm Main Idea has enough multiple-choice questions for the Reading Rep
     assert.equal(new Set(q.choices).size, q.choices.length, q.q);
   }
 });
+
+test('Main Idea anchor chart exists with a poster, and the report link opens that chart', () => {
+  const chart = midterm.reading.anchorCharts.find(c => c.skill === 'main_idea');
+  assert.ok(chart && fs.existsSync(chart.image) && chart.ex.length === 5 && chart.check);
+  const h = midtermHarness();
+  h.run(`showAnchorCharts('main_idea')`);
+  const html = h.element('app').innerHTML;
+  assert.equal((html.match(/<details class="anchor-chart" open>/g) || []).length, 1);
+  assert.match(html, /<details class="anchor-chart" open>\s*<summary>Main \(Central\) Idea/);
+});
